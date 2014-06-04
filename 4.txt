@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModeTour>
+<search><![CDATA[4
+88
+
+
+201406
+2014-06-05 오전 12:00:00
+2015-06-05 오전 12:00:00]]></search><Error><![CDATA[Common.DBController.Execute()-varchar 값 '88
+'을(를) 데이터 형식 int(으)로 변환하지 못했습니다.]]></Error>
+<Paging TotalProduct='' TotalPage='' Page='1' />
+
+
+<MonthList><Item Year="2014" Month="06"></Item><Item Year="2014" Month="07"></Item><Item Year="2014" Month="08"></Item><Item Year="2014" Month="09"></Item><Item Year="2014" Month="10"></Item><Item Year="2014" Month="11"></Item><Item Year="2014" Month="12"></Item><Item Year="2015" Month="01"></Item><Item Year="2015" Month="02"></Item><Item Year="2015" Month="03"></Item><Item Year="2015" Month="04"></Item><Item Year="2015" Month="05"></Item></MonthList>
+</ModeTour>
