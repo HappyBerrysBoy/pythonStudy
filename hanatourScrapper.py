@@ -10,6 +10,7 @@ import xmltodict
 import time, datetime
 from time import localtime, strftime
 from datetime import timedelta
+import urllib2
 
 mainpage = requests.get('http://www.modetour.com/').text
 
@@ -110,15 +111,21 @@ productListFile.close()
 productSet = set()
 productListFile = open('modeProductList.txt')
 for each_line in productListFile:
-    productListGet = requests.get(each_line).text
-    #productListXml = xmltodict.parse(requests.get(each_line).text)
+    productListGet = urllib2.urlopen(each_line).read()#requests.get(each_line).text
+    productListXml = xmltodict.parse(productListGet)
     tmpFile = open('ProductCode' + each_line[each_line.find('AN=') + len('AN='):each_line.find('&Ct=')] + '.txt', 'w')
-    print >> tmpFile, productListGet
+    print >> tmpFile, productListXml
     tmpFile.close()
+    #print(type(productListXml))
+    for tmpXml in productListXml['ModeTour']['Product']:
+        productSet.add(tmpXml['@Pcode'])
+    #print(productListXml['ModeTour']['Product'][0]['@Pcode'])
+    print(len(productSet))
     break
 productListFile.close()
 
 """ xmltodict 사용법..
+>>> doc = xmltodict.parse(
 <mydocument has="an attribute">
 ...   <and>
 ...     <many>elements</many>
