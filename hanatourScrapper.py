@@ -73,6 +73,8 @@ menuHoney = overseasMainUrls.pop()
 menuFree= overseasMainUrls.pop()
 menuPackage = overseasMainUrls.pop()
 
+travle_kind = 'package'
+
 try:
     packageResponse = requests.get(menuPackage).text
     packageResponse = packageResponse[packageResponse.find('<div class="submain">'):packageResponse.find('<div class="total_categories">')]
@@ -114,10 +116,6 @@ urlErr = 0
 subUrls = open('modePackageUrls.txt')
 productListFile = open('modeProductList.txt', 'w')
 
-
-con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-cursor = con.cursor()
-
 for each_line in subUrls:
     anCode = each_line[each_line.find('location=') + len('location=LOC'):each_line.find('&location1=')]
     themeCode = each_line[each_line.find('Theme=') + len('Theme='):each_line.find('&Theme1=')]
@@ -154,10 +152,11 @@ for each_line in subUrls:
                 #>>> con.close() 
                 #insert into t_prd values (product_seq.nextval,'' ,'4','【론섬+씨푸드+시암니라밋쇼】푸켓 5일 《카론 초특급》힐튼아카디아 디럭스가든룸','OZ5H','',to_date('20140607'),'5','','THE88','','',549000,'',to_date('20140611'),'','green')
                 
-                try:
+                try:                
+                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+
                     tree = xmltodict.parse(requests.get(tmpUrl).text)
                     for t in tree['ModeSangPum']['SangList']:
-                        print('=======================================================')
                         tag_div = ''
                         reg_div = anCode
                         prd_nm = t['SName']['#text']
@@ -170,18 +169,19 @@ for each_line in subUrls:
                         #arr_time = t['SArrivalTime']
                         arr_time = ''
                         tr_term = t['SDay']
-                        tr_div = ''
+                        tr_div = themeCode
                         sel_dt = ''
-                        dmst_div = themeCode
+                        dmst_div = travle_kind
                         prd_fee = t['SPrice']
                         prd_status = t['SDetailState']['#text']
                         prd_url = ''
                         
-                        query = "insert into product_test values (product_seq.nextval, " + tag_div + "," + reg_div + "," + prd_nm + "," + air_cd + "," + st_city
-                        query += ",to_date('" + st_dt + "')," + tr_term + "," + tr_div + "," + dmst_div + "," + sel_dt + "," + st_time + "," + prd_fee + "," + prd_url
-                        query += ",to_date('" + arr_day + "')," + arr_time + "," + prd_status + ")"
+                        query = "insert into product_test values (product_seq.nextval, '" + tag_div + "','" + reg_div + "','" + prd_nm + "','" + air_cd + "','" + st_city
+                        query += "',to_date('" + st_dt + "'),'" + tr_term + "','" + tr_div + "','" + dmst_div + "','" + sel_dt + "','" + st_time + "'," + prd_fee + ",'" + prd_url
+                        query += "',to_date('" + arr_day + "'),'" + arr_time + "','" + prd_status + "')"
                         
-                        print(query)
+                        #print(query)
+                        cursor = con.cursor()
                         cursor.execute(query)
                         con.commit()
                         #print(t['SName']['#text'])
@@ -198,13 +198,13 @@ for each_line in subUrls:
                         #print(t['SstartTime'])
                         #print(t['SArrivalTime'])
                         #print(t['SDetailState']['#text'])
-                    
-                    normalCnt += 1
-                    break
                 except:
-                    parcingErr += 1                    
-                
-                normalCnt += 1
+                    parcingErr += 1
+                    pass
+                finally:
+                    cursor.close()
+                    con.close()
+                    normalCnt += 1
         except:
             print('error....')
             print(pcode)
@@ -219,13 +219,9 @@ for each_line in subUrls:
         productListOpener.close()
         
     sleep(sleepTime)
-    break
-    
 
-cursor.close()
-con.close()
-
-
+print('Normal Process: ' + str(normalCnt) + ', Parcing Error: ' + str(parcingErr) + ', URL Error: ' + str(urlErr))
+print "End : %s" % time.ctime()   
 """
 subUrls.close()
 productListFile.close()
