@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModeTour>
+<Paging TotalProduct='1' TotalPage='1' Page='1' />
+<Product Pcode="ATP107" MinDay="5" MaxDay="6" MinPrice="239000" MaxPrice="2079000" StMon="06">
+    <Image><![CDATA[/eagle/photoimg/2228/sfile/kosamedbestimg.jpg]]></Image>
+    <Name><![CDATA[[숨겨진보석] 방콕/코사멧/파타야 5/6일]]></Name>
+    <Content><![CDATA[숨겨진 보석 &#39;코사멧&#39;에서 여유로운 시간을...]]></Content>
+</Product>
+
+<MonthList><Item Year="2014" Month="06"></Item><Item Year="2014" Month="07"></Item><Item Year="2014" Month="08"></Item><Item Year="2014" Month="09"></Item><Item Year="2014" Month="10"></Item><Item Year="2014" Month="11"></Item><Item Year="2014" Month="12"></Item><Item Year="2015" Month="01"></Item><Item Year="2015" Month="02"></Item><Item Year="2015" Month="03"></Item><Item Year="2015" Month="04"></Item><Item Year="2015" Month="05"></Item></MonthList>
+</ModeTour>

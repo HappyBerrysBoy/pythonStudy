@@ -6,6 +6,26 @@ Created on Fri Jun 06 10:26:20 2014
 """
 
 import requests
+from xml import parsers
+import xml.etree.ElementTree as ET
+import xmltodict
 
-r = requests.post('http://hnctech73.iptime.org:9000/berthJson?atb=&vvd_status=&atd=201406060600&cct=&etb=&etd=&in_vvd_opr=&opr=&out_vvd_opr=&route=&terminal_id=&vsl_name=&vvd=')
-print(r.text)
+tmpUrl = 'http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=07&Pcode=ACP201&Pd=&Type=01&term=201406061800%5E201506060000'
+tree = xmltodict.parse(requests.get(tmpUrl).text)
+print(len(tree['ModeSangPum']['SangList']))
+for t in tree['ModeSangPum']['SangList']:
+    print(t['SName']['#text'])
+    print(t['SNight'])
+    print(t['SDay'])
+    print(t['SPrice'])
+    print(t['SAirCode'])
+    print(t['SAirName'])
+    print(t['SPriceDay']['#text'])
+    print(t['SArrivalDay']['#text'])
+    print(t['SPriceNum']['#text'])
+    print(t['SMeet'])
+    print(t['SstartAir'])
+    print(t['SstartTime'])
+    print(t['SDetailState']['#text'])
+    print('=======================================================')
+    
