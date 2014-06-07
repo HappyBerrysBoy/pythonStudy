@@ -273,6 +273,7 @@ for each_line in subUrls:
                         #con.close()
                     normalCnt += 1
                 
+                break
         except:
             print >> parcingErrorFile, pcode
             print >> parcingErrorFile, '================================================================================='
