@@ -12,16 +12,71 @@ from time import localtime, strftime, sleep
 from datetime import timedelta
 import urllib2
 import re
-from xml import parsers
 import cx_Oracle
 
-print "Start : %s" % time.ctime()
+
+#classes..
+class subMain():
+    def __init__(self):
+        self.thing = 0
+    
+    def getParam(self, line):
+        #dicts = dict()
+        self.startLocation = line[line.find('startLocation=') + len('startLocation='):line.find('amp;') - 1]
+        line = line[line.find('amp;') + len('amp;'):]
+        #print(line)
+        self.id = line[line.find('id=') + len('id='):line.find('amp;') - 1]
+        line = line[line.find('amp;') + len('amp;'):]
+        #print(line)
+        self.type = line[line.find('type=') + len('type='):line.find('amp;') - 1]
+        line = line[line.find('amp;') + len('amp;'):]
+        #print(line)
+        self.MLoc = line[line.find('MLoc=') + len('MLoc='):line.find(' ') - 1]
+        return self
+    
+    def printToString(self):
+        print('SubMain ==> startlocation:' + self.startLocation + ', id:' + self.id + ', type:' + self.type + ', Mloc:' + self.MLoc)
+        
+    def makeURL(self):
+        return 'http://www.modetour.com/Package/subMain2.aspx?startLocation=' + self.startLocation + '&id=' + self.id + '&type=' + self.type + '&MLoc=' + self.MLoc
+
+class subList():
+    def __init__(self):
+        self.thing = 0
+    
+    def getParam(self, line):
+        self.startLocation = line[line.find('startLocation=') + len('startLocation='):line.find('amp;') - 1]
+        line = line[line.find('amp;') + len('amp;'):]
+        self.location = line[line.find('location=') + len('location='):line.find('amp;') - 1]
+        line = line[line.find('amp;') + len('amp;'):]
+        self.location1 = line[line.find('location1=') + len('location1='):line.find('amp;') - 1]
+        line = line[line.find('amp;') + len('amp;'):]
+        if line.find('Theme=') > -1:
+            self.Theme = line[line.find('Theme=') + len('Theme='):line.find('amp;') - 1]
+            line = line[line.find('amp;') + len('amp;'):]
+        else:
+            self.Theme = ''
+
+        if line.find('Theme1=') > -1:
+            self.Theme1 = line[line.find('Theme1=') + len('Theme1='):line.find('amp;') - 1]
+            line = line[line.find('amp;') + len('amp;'):]
+        else:
+            self.Theme1 = ''
+        self.MLoc = line[line.find('MLoc=') + len('MLoc='):line.find(' ') - 1]
+        return self
+    
+    def printToString(self):
+        print('SubList ==> startlocation:' + self.startLocation + ', location:' + self.location + ', location1:' + self.location1 + ', Theme:' + self.Theme + ', Theme1:' + self.Theme1 + ', Mloc:' + self.MLoc)
+        
+    def makeURL(self):
+        return 'http://www.modetour.com/Package/List.aspx?startLocation=' + self.startLocation + '&location=' + self.location + '&location1=' + self.location1 + '&Theme=' + self.Theme + '&Theme1=' + self.Theme1 + '&MLoc=' + self.MLoc
+
+
+print "Scraping Start : %s" % time.ctime()
 sleepTime = 0.5
 
-try:
-    mainpage = requests.get('http://www.modetour.com/').text
-except:
-    print('Error Mainpage Loading...')
+mainpage = ''
+mainpage = requests.get('http://www.modetour.com/').text
 
 overseas = mainpage[mainpage.find('<div class="overseas">'):mainpage.find('<div class="domestic">')]
 domestics = mainpage[mainpage.find('<div class="domestic">'):mainpage.find('<div class="total_categories">')]
@@ -99,22 +154,28 @@ for each_line in openPackageFile:
 subUrls.close()
 openPackageFile.close()
 
+# 시간 변수들..
 today = datetime.date.today()
 nextYear = today + timedelta(days=365)
 nextTime = nextYear.timetuple()
 time = time.localtime()
 fromDate = strftime("%Y", time) + strftime("%m", time) + strftime("%d", time) + strftime("%H", time) + strftime("%M", time)
 toDate = strftime("%Y", nextTime) + strftime("%m", nextTime) + strftime("%d", nextTime) + strftime("%H", nextTime) + strftime("%M", nextTime)
-thisMonth = strftime("%Y", time) + strftime("%m", time)#str(time.tm_year) + str(time.tm_mon)
+thisMonth = strftime("%Y", time) + strftime("%m", time)
     
-    
+
 idx = 0
 normalCnt = 0
 parcingErr = 0
+parcingErr2 = 0
 urlErr = 0
-#productList = list()
+productList = list()
+productList.append('START')
 subUrls = open('modePackageUrls.txt')
 productListFile = open('modeProductList.txt', 'w')
+urlErrorFile = open('urlErrorFile.txt', 'w')
+parcingErrorFile = open('parcingErrorFile.txt', 'w')
+parcingErrorFile2 = open('parcingErrorFile2.txt', 'w')
 
 for each_line in subUrls:
     anCode = each_line[each_line.find('location=') + len('location=LOC'):each_line.find('&location1=')]
@@ -123,108 +184,125 @@ for each_line in subUrls:
     productUrl = 'http://www.modetour.com/XML/Package/Get_ProductList.aspx?AN=' + anCode + '&Ct=&DateTerm=' + fromDate + '%5E' + toDate + '&PL=1000&Pd=&Pn=1&S=' + thisMonth + '&TN=' + themeCode
     
     try:
-        print('URL : ' + productUrl)
+        print('Product URL : ' + productUrl)
         productListOpener = urllib2.urlopen(productUrl)
         productListGet = productListOpener.read()
-        
         try:
             pcodeList = re.findall(r'\bPcode="[\w]*', productListGet)
-
+            
             for pcode in pcodeList:
                 detailProduct = pcode.split('"')[1]
-                print('detailProduct : ' + detailProduct)
-                #if productList.count(detailProduct) == 0:
+                type(detailProduct)
+                #print('detailProduct : ' + detailProduct)
                 
-                #productList.add(detailProduct)
-                #print('productList : ' + productList)
-                
-                tmpUrl = 'http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=' + strftime("%m", time) + '&Pcode=' + detailProduct + '&Pd=&Type=01&term=' + fromDate + '%5E' + toDate
-                print('Detail Product URL : ' + tmpUrl)
-                
-                #import cx_Oracle
-                #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-                #>>> cursor = con.cursor()
-                #>>> cursor.execute("select * from tab")
-                #<cx_Oracle.Cursor on <cx_Oracle.Connection to bigtour@hnctech73.iptime.org:1521/ora11g>>
-                #>>> print cursor.fetchall()
-                #[('T_PRD', 'TABLE', None), ('T_PRD_DTL', 'TABLE', None)]
-                #>>> cursor.close()
-                #>>> con.close() 
-                #insert into t_prd values (product_seq.nextval,'' ,'4','【론섬+씨푸드+시암니라밋쇼】푸켓 5일 《카론 초특급》힐튼아카디아 디럭스가든룸','OZ5H','',to_date('20140607'),'5','','THE88','','',549000,'',to_date('20140611'),'','green')
-                
-                try:                
-                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-
-                    tree = xmltodict.parse(requests.get(tmpUrl).text)
-                    for t in tree['ModeSangPum']['SangList']:
-                        tag_div = ''
-                        reg_div = anCode
-                        prd_nm = t['SName']['#text']
-                        air_cd = t['SAirCode']
-                        st_city = ''
-                        st_dt = t['SPriceDay']['#text']
-                        #st_time = t['SstartTime']
-                        st_time = ''
-                        arr_day = t['SArrivalDay']['#text']
-                        #arr_time = t['SArrivalTime']
-                        arr_time = ''
-                        tr_term = t['SDay']
-                        tr_div = themeCode
-                        sel_dt = ''
-                        dmst_div = travle_kind
-                        prd_fee = t['SPrice']
-                        prd_status = t['SDetailState']['#text']
-                        prd_url = ''
-                        
-                        query = "insert into product_test values (product_seq.nextval, '" + tag_div + "','" + reg_div + "','" + prd_nm + "','" + air_cd + "','" + st_city
-                        query += "',to_date('" + st_dt + "'),'" + tr_term + "','" + tr_div + "','" + dmst_div + "','" + sel_dt + "','" + st_time + "'," + prd_fee + ",'" + prd_url
-                        query += "',to_date('" + arr_day + "'),'" + arr_time + "','" + prd_status + "')"
-                        
-                        #print(query)
-                        cursor = con.cursor()
-                        cursor.execute(query)
-                        con.commit()
-                        #print(t['SName']['#text'])
-                        #print(t['SNight'])
-                        #print(t['SDay'])
-                        #print(t['SPrice'])
-                        #print(t['SAirCode'])
-                        #print(t['SAirName'])
-                        #print(t['SPriceDay']['#text'])
-                        #print(t['SArrivalDay']['#text'])
-                        #print(t['SPriceNum']['#text'])
-                        #print(t['SMeet'])
-                        #print(t['SstartAir'])
-                        #print(t['SstartTime'])
-                        #print(t['SArrivalTime'])
-                        #print(t['SDetailState']['#text'])
-                except:
-                    parcingErr += 1
-                    pass
-                finally:
-                    cursor.close()
-                    con.close()
+                if productList.count(detailProduct) == 0:
+                    productList.append(detailProduct)
+                    #print('productList : ' + productList)
+                    
+                    tmpUrl = 'http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=' + strftime("%m", time) + '&Pcode=' + detailProduct + '&Pd=&Type=01&term=' + fromDate + '%5E' + toDate
+                    print('Detail Product URL : ' + tmpUrl)
+                    
+                    #import cx_Oracle
+                    #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                    #>>> cursor = con.cursor()
+                    #>>> cursor.execute("select * from tab")
+                    #<cx_Oracle.Cursor on <cx_Oracle.Connection to bigtour@hnctech73.iptime.org:1521/ora11g>>
+                    #>>> print cursor.fetchall()
+                    #[('T_PRD', 'TABLE', None), ('T_PRD_DTL', 'TABLE', None)]
+                    #>>> cursor.close()
+                    #>>> con.close() 
+                    #insert into t_prd values (product_seq.nextval,'' ,'4','【론섬+씨푸드+시암니라밋쇼】푸켓 5일 《카론 초특급》힐튼아카디아 디럭스가든룸','OZ5H','',to_date('20140607'),'5','','THE88','','',549000,'',to_date('20140611'),'','green')
+                    
+                    try:                
+                        #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+    
+                        detailUrl = requests.get(tmpUrl).text
+                        tree = xmltodict.parse(detailUrl)
+                        for t in tree['ModeSangPum']['SangList']:
+                            tag_div = ''
+                            reg_div = anCode
+                            prd_nm = t['SName']['#text']
+                            air_cd = t['SAirCode']
+                            st_city = ''
+                            st_dt = t['SPriceDay']['#text']
+                            #st_time = t['SstartTime']
+                            st_time = ''
+                            arr_day = t['SArrivalDay']['#text']
+                            #arr_time = t['SArrivalTime']
+                            arr_time = ''
+                            tr_term = t['SDay']
+                            tr_div = themeCode
+                            sel_dt = ''
+                            dmst_div = travle_kind
+                            prd_fee = t['SPrice']
+                            prd_status = t['SDetailState']['#text']
+                            prd_url = ''
+                            
+                            query = "insert into product_test values (product_seq.nextval, '" + tag_div + "','" + reg_div + "','" + prd_nm + "','" + air_cd + "','" + st_city
+                            query += "',to_date('" + st_dt + "'),'" + tr_term + "','" + tr_div + "','" + dmst_div + "','" + sel_dt + "','" + st_time + "'," + prd_fee + ",'" + prd_url
+                            query += "',to_date('" + arr_day + "'),'" + arr_time + "','" + prd_status + "')"
+                            
+                            print >> productListFile, query
+                            #print(query)
+                            #DB에 입력하는 쿼리..
+                            #cursor = con.cursor()
+                            #cursor.execute(query)
+                            #con.commit()
+                            #print(t['SName']['#text'])
+                            #print(t['SNight'])
+                            #print(t['SDay'])
+                            #print(t['SPrice'])
+                            #print(t['SAirCode'])
+                            #print(t['SAirName'])
+                            #print(t['SPriceDay']['#text'])
+                            #print(t['SArrivalDay']['#text'])
+                            #print(t['SPriceNum']['#text'])
+                            #print(t['SMeet'])
+                            #print(t['SstartAir'])
+                            #print(t['SstartTime'])
+                            #print(t['SArrivalTime'])
+                            #print(t['SDetailState']['#text'])
+                    except:
+                        parcingErr2 += 1
+                        print >> parcingErrorFile2, 'Pacing Error Url : ' + tmpUrl
+                        print >> parcingErrorFile2, detailUrl
+                        print >> parcingErrorFile2, '================================================================================='
+                        pass
+                    #finally:
+                        #cursor.close()
+                        #con.close()
                     normalCnt += 1
+                
         except:
-            print('error....')
-            print(pcode)
+            print >> parcingErrorFile, pcode
+            print >> parcingErrorFile, '================================================================================='
             parcingErr += 1
             pass
         #print(productListXml['ModeTour']['Product'][0]['@Pcode'])
     except urllib2.URLError as err:
-        print "URLError({0}): {1}".format(err.errno, err.strerror)
+        #print "URLError({0}): {1}".format(err.errno, err.strerror)
+        print >> urlErrorFile, productUrl
+        print >> urlErrorFile, '================================================================================='
         urlErr += 1
         pass
     finally:
         productListOpener.close()
         
     sleep(sleepTime)
+    break
 
-print('Normal Process: ' + str(normalCnt) + ', Parcing Error: ' + str(parcingErr) + ', URL Error: ' + str(urlErr))
-print "End : %s" % time.ctime()   
-"""
 subUrls.close()
 productListFile.close()
+urlErrorFile.close()
+parcingErrorFile.close()
+parcingErrorFile2.close()
+
+print("==========Product List==========")
+print(productList)
+print('Normal Process: ' + str(normalCnt) + ', Parcing Error: ' + str(parcingErr) + ', Parcing Error2 : ' + str(parcingErr2) + ', URL Error: ' + str(urlErr))
+print "End : %s" % datetime.date.today()
+"""
+
 #aa = requests.get("http://www.modetour.com/Package/List.aspx?startLocation=ICN&location=LOC4&location1=LOC4^LOC3&Theme=THE88&Theme1=THE88&MLoc=01")
 #http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=06&Pcode=ATE101&Pd=&Type=01&term=201406060000%5E201506052359
 #http://www.modetour.com/XML/Package/Get_ProductList.aspx?AN=4&Ct=&DateTerm=201406052346%5E201506042359&PL=1000&Pd=&Pn=1&S=201406&TN=THE88 ==> AN 값이 뭐지?? 전체보기.. PL 값을 최대로... Pn은 페이지 번호.. 1로 설정
@@ -334,59 +412,4 @@ green : 대기예약(여유 죄석이 없거나 출발이 임박하여 예약가
 기타색.. : 예약마감(판매가 종료된 상품입니다. 다른 상품이나 다른 날짜를 이용해 주시기 바랍니다)
 """
 
-#classes..
-class subMain():
-    def __init__(self):
-        self.thing = 0
-    
-    def getParam(self, line):
-        #dicts = dict()
-        self.startLocation = line[line.find('startLocation=') + len('startLocation='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        #print(line)
-        self.id = line[line.find('id=') + len('id='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        #print(line)
-        self.type = line[line.find('type=') + len('type='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        #print(line)
-        self.MLoc = line[line.find('MLoc=') + len('MLoc='):line.find(' ') - 1]
-        return self
-    
-    def printToString(self):
-        print('SubMain ==> startlocation:' + self.startLocation + ', id:' + self.id + ', type:' + self.type + ', Mloc:' + self.MLoc)
-        
-    def makeURL(self):
-        return 'http://www.modetour.com/Package/subMain2.aspx?startLocation=' + self.startLocation + '&id=' + self.id + '&type=' + self.type + '&MLoc=' + self.MLoc
-
-class subList():
-    def __init__(self):
-        self.thing = 0
-    
-    def getParam(self, line):
-        self.startLocation = line[line.find('startLocation=') + len('startLocation='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        self.location = line[line.find('location=') + len('location='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        self.location1 = line[line.find('location1=') + len('location1='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        if line.find('Theme=') > -1:
-            self.Theme = line[line.find('Theme=') + len('Theme='):line.find('amp;') - 1]
-            line = line[line.find('amp;') + len('amp;'):]
-        else:
-            self.Theme = ''
-
-        if line.find('Theme1=') > -1:
-            self.Theme1 = line[line.find('Theme1=') + len('Theme1='):line.find('amp;') - 1]
-            line = line[line.find('amp;') + len('amp;'):]
-        else:
-            self.Theme1 = ''
-        self.MLoc = line[line.find('MLoc=') + len('MLoc='):line.find(' ') - 1]
-        return self
-    
-    def printToString(self):
-        print('SubList ==> startlocation:' + self.startLocation + ', location:' + self.location + ', location1:' + self.location1 + ', Theme:' + self.Theme + ', Theme1:' + self.Theme1 + ', Mloc:' + self.MLoc)
-        
-    def makeURL(self):
-        return 'http://www.modetour.com/Package/List.aspx?startLocation=' + self.startLocation + '&location=' + self.location + '&location1=' + self.location1 + '&Theme=' + self.Theme + '&Theme1=' + self.Theme1 + '&MLoc=' + self.MLoc
 
