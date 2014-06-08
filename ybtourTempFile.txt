@@ -1,0 +1,147 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function fnBkView(){		//////// 상품 비교하기
+		var obj = document.frmCart;
+		var i =0 ;  
+		count=0 ;
+
+		obj.msgindex2.value = "";	
+
+		obj.msgindex.value ="";
+		while (i < obj.elements.length)
+		{
+			if ((obj.elements[i].name == "goods_id" ) && (obj.elements[i].checked)){     
+				obj.msgindex.value += obj.elements[i].value + ",";
+				count++;
+			}
+		 i++;
+		}
+
+
+		if (count!=2){
+			alert('상품비교는 2개를 선택하셔야 가능합니다. ');
+			return;
+		}
+
+
+		for (var i = 0 ;i < obj.goods_id.length ;i++ )
+		{
+			if (obj.goods_id[i].checked == true)
+			{
+				obj.msgindex2.value += obj.goods_id2[i].value + ",";	
+
+//				alert(obj.goods_id2[i].value);
+			}
+		}		
+
+	//	return;
+
+		obj.action = "/mypage/cart/compare.asp";
+		obj.target = "winOpen";
+		window.open("","winOpen","width=990,height=700, scrollbars=yes");
+
+		obj.submit();
+
+	}
+//-->
+</SCRIPT>
+<!-- 상품비교 list -->
+<form method="post" name="frmCart">
+	<div id="list_view" class="list_view">
+		<p>- 2가지 상품을 선택하여 비교하실 수 있습니다&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			-&nbsp;&nbsp;<img src="/images/sub/icon.gif" alt="상/하 화살표" title="상/하 화살표" /> 를 클릭하시면 원하시는 정렬순으로 보실 수 있습니다.
+		</p>
+
+		<input type="hidden" name="msgindex">
+		<input type="hidden" name="msgindex2">
+		<a href="javascript:;" class="btn" onclick="fnBkView();"><img src="/images/sub/btn_compare.gif" alt="선택상품 비교하기" title="선택상품 비교하기" /></a>
+		<table id="data_list_table" class="tablesorter">
+			<colgroup>
+				<col width="7%" /><col width="14%" /><col width="7%" /><col width="36%" /><col width="12%" /><col width="12%" /><col width="12%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th class="sun">선택</th>
+					<th class=header>출/도착시간</th>
+					<th class=header>항공</th>
+					<th class=header>상품명</th>
+					<th>여행기간</th>
+					<th class=header>상품가격</th>
+					<th>예약상태</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+				
+					<td><input type="checkbox" name="goods_id" value="20140744922;" class="ir" /><input type="hidden"  name="goods_id2" value="20140744922"/></td>
+					<td><span class="blue">07/03 (목) 09:30</span><br /><span>07/11 (금) 07:35</span></td>
+					<td><span class="logo" title="대한항공" alt="대한항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201407&ev_seq=44922&good_cd=150201467">[KE연합]프랑스 완전일주9일</a></td>
+					<td><span>
+					8박9일
+					
+					</span></td>
+					<td class="blue">3,690,000원 
+					
+					</td>
+					<td class="red">예약가능</td>
+				</tr>
+
+				<tr>
+				
+					<td><input type="checkbox" name="goods_id" value="20140744921;" class="ir" /><input type="hidden"  name="goods_id2" value="20140744921"/></td>
+					<td><span class="blue">07/17 (목) 13:05</span><br /><span>07/25 (금) 14:50</span></td>
+					<td><span class="logo" title="대한항공" alt="대한항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201407&ev_seq=44921&good_cd=150201467">[KE연합]프랑스 완전일주9일</a></td>
+					<td><span>
+					8박9일
+					
+					</span></td>
+					<td class="blue">3,690,000원 
+					
+					</td>
+					<td class="red">예약가능</td>
+				</tr>
+
+				<!--tr class="bg"><!-- 배경컬러 있는것 클래스 생성// -->
+					<!--td><input type="checkbox" /></td>
+					<td><span class="blue">01/15 (일) 23:55</span><br /><span>01/21 (토) 16:30</span></td>
+					<td><span class="logo"><img src="/Images/sub/ticket/@airlines.png" class="png24" /></span></td>
+					<td class="lt"><a href="#">[세이버][하모니+]테마가 있는 스위스일주 7일</a></td>
+					<td><span>7박8일</span></td>
+					<td class="blue">3,290,000원</td>
+					<td class="red">예약가능</td>
+				</tr-->
+			</tbody>
+		</table>
+	</div>
+	</form>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	$(document).ready(function() 
+		{
+			$("#data_list_table").tablesorter({
+				sortList: [[1,0], [5,0]], 
+				headers: {
+					0 : { sorter : false }
+				}
+			});
+		}
+	); 
+//-->
+</SCRIPT>
+	<!--// 상품비교 list -->
+	
