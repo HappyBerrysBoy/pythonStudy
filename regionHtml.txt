@@ -1,0 +1,355 @@
+<div id="list_proviewM">
+            <div id="list_type">
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5081')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/PYX/image/17692_3.jpg" alt="FIVE STAR 쉐라톤 호텔에서의 편안한 숙박" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [방콕 힐튼UP/파타야의 쉐라톤_씨푸드 Buffet Dinner] 방콕/파타야_산호섬+플로팅마켓 5일</a></span><br/><a href="#n">FIVE STAR 쉐라톤 호텔에서의 편안한 숙박</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5081</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">429,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5081_2014-06-14"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5081" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5081')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP1991')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/CNX/image/279500_2.jpg" alt="소규모 단체가 이용하기 좋은 상품으로 편안하고 아늑한 공간에서의 즐거운 일정" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [리수롯지1박_고산족체험] 치앙마이/치앙라이/메팔루앙 + 정글트래킹 5일</a></span><br/><a href="#n">소규모 단체가 이용하기 좋은 상품으로 편안하고 아늑한 공간에서의 즐거운 일정</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP1991</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">699,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP1991_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP1991" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP1991')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP251')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/PYX/image/563050_2.jpg" alt="방콕 + 파타야 한번에 즐기는 자유여행 상품입니다." />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [色이 다른 이곳 쉐라톤_ 씨푸드 Buffet Dinner] 방콕/파타야_방콕1박 제공+자유여행 5일</a></span><br/><a href="#n">방콕 + 파타야 한번에 즐기는 자유여행 상품입니다.</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP251</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">349,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP251_2014-06-14"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP251" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP251')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5043')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/PYX/image/283212_3.jpg" alt="태국의 유명한 현지 맛집만을 찾아 매 식사마다 선보이는 진정한 현지식 체험" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [맛으로 방콕을 스캔하다] 방콕/파타야_아로마스파+태국맛집 5일</a></span><br/><a href="#n">태국의 유명한 현지 맛집만을 찾아 매 식사마다 선보이는 진정한 현지식 체험</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5043</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>4박5일</span>
+                            <span class="price">669,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5043_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5043" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5043')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5072')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/PYX/image/566553_3.jpg" alt="차오프라야 강변 경치를 감상하며 즐기는 선상 런치크루즈상품" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [차오프라야 강을 따라] 방콕/파타야_선상 런치크루즈+야간시티투어 5일</a></span><br/><a href="#n">차오프라야 강변 경치를 감상하며 즐기는 선상 런치크루즈상품</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5072</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">249,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5072_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5072" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5072')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP199')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/CNX/image/555246_2.jpg" alt="때묻지 않은 자연과 독특한 고유의 문화가 조화를 이룬 치앙마이 관광" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [자연이 들려주는 노랫말] 치앙마이/치앙라이/메팔루앙 + 룽아룬온천욕 5/6일</a></span><br/><a href="#n">때묻지 않은 자연과 독특한 고유의 문화가 조화를 이룬 치앙마이 관광</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP199</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">429,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP199_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP199" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP199')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5046')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/BKK/image/557393_2.jpg" alt="파타야에서 머물며 즐기는 여유로운 일정 " />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [ONLY 파타야에서 잠드는 이밤] 파타야_산호섬+라타나코신 민속마을 5일 </a></span><br/><a href="#n">파타야에서 머물며 즐기는 여유로운 일정 </a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5046</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">289,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5046_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5046" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5046')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5000')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/PYX/image/283202_2.jpg" alt="유니크하고 심플한 호텔에서의 편안한 휴식과 알찬 일정이 돋보이는 상품" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [방콕 힐튼UP/더 자인호텔] 방콕/파타야_왕궁관광+산호섬+전통안마 5일</a></span><br/><a href="#n">유니크하고 심플한 호텔에서의 편안한 휴식과 알찬 일정이 돋보이는 상품</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5000</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">349,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5000_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5000" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5000')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5053')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/PYX/image/569251_3.jpg" alt="색다른 컨셉 하드락 호텔에서의 즐거움" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [떠나라 청춘이여_하드락] 방콕/파타야_야간시티투어+베이욕뷔폐 5일</a></span><br/><a href="#n">색다른 컨셉 하드락 호텔에서의 즐거움</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5053</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">439,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5053_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5053" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5053')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP9999')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/CNX/image/565573_2.jpg" alt="전세기 항공 알찬 일정으로 떠나는 치앙마이 여행" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [Andante 천천히 걷는 여행] 치앙마이/치앙라이/원주민마을 탐방 + 유황온천욕 5/6일</a></span><br/><a href="#n">전세기 항공 알찬 일정으로 떠나는 치앙마이 여행</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP9999</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">349,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP9999_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP9999" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP9999')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5005')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/BKK/image/17219_2.jpg" alt="효도 여행 상품으로 편안한 고급 호텔, 가이드팁포함+쇼핑센터방문 2회제한" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [부모님을 위한_더 자인호텔] 방콕/파타야_왕궁관광+베이욕뷔폐 5일</a></span><br/><a href="#n">효도 여행 상품으로 편안한 고급 호텔, 가이드팁포함+쇼핑센터방문 2회제한</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5005</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>4박5일</span>
+                            <span class="price">559,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5005_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5005" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5005')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5034')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/PYX/image/314499_3.jpg" alt="가든씨뷰 리조트에서 즐기는 즐겁고 편안한 여행" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [방콕 힐튼UP/해변가 위치_가든씨뷰 리조트] 방콕/파타야_왕궁관광+산호섬 5일</a></span><br/><a href="#n">가든씨뷰 리조트에서 즐기는 즐겁고 편안한 여행</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5034</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">279,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5034_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5034" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5034')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5060')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/PYX/image/311717_2.jpg" alt="태국내 최대 워터파크 시설의 센타라 그랜드 미라지 리조트에서의 즐거운 시간" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [소리없이 성큼 다가온 여름_센타라 그랜드 미라지 비치 리조트] 파타야_ 워터파크+코끼리트래킹 5일</a></span><br/><a href="#n">태국내 최대 워터파크 시설의 센타라 그랜드 미라지 리조트에서의 즐거운 시간</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5060</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">479,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5060_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5060" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5060')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5094')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/BKK/image/564700_2.jpg" alt="기존상품과 달리 파타야 돌핀 월드 / 카오키여우 오픈주를 관광하는 품격과 실속을 동시에 지닌 알찬 일정" />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [아이와 함께하는 가족여행] 방콕/파타야_돌핀 월드+카오키여우 오픈주 5일</a></span><br/><a href="#n">기존상품과 달리 파타야 돌핀 월드 / 카오키여우 오픈주를 관광하는 품격과 실속을 동시에 지닌 알찬 일정</a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5094</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">329,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5094_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5094" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5094')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('APP5099')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="pro_check">
+                        <img width="88" height="66" src="http://contents.verygoodtour.com/content/330/TH/0000/PYX/image/559334_2.jpg" alt="요트타고 즐기는 스노쿨링 및 바다낚시 체험 " />
+                    </div>
+                    <div class="pro_contents">
+                    <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                        <p class="content"><span class="title"><a href="#n"> [바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일</a></span><br/><a href="#n">요트타고 즐기는 스노쿨링 및 바다낚시 체험 </a></p>
+                        <p style="margin-top:7px;">
+                            <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>APP5099</span>
+                            <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>3박5일</span>
+                            <span class="price">419,000<span>원</span> ~ </span>
+                        </p>
+                    </div>
+                    <div class="bt" style="margin-top:0;">
+                        <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                        <p class="close" id="startday_APP5099_2014-06-12"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event"><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_APP5099" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_APP5099')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<script type="text/javascript" src="/Scripts/jquery-paging-0.1.7.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //페이지 영역 바인딩
+        

@@ -1,0 +1,2158 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="온라인투어,여행,여행사,할인항공권,해외호텔" />
+	<meta name="description" content="온라인투어,여행,여행사,할인항공권,해외호텔" />
+	<title>대한민국 대표 여행기업 (주)온라인투어</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="//static.onlinetour.co.kr/ri/jquery/plugins/ui/css/cupertino/jquery-ui-1.10.2.custom.css" />
+	<link rel="stylesheet" type="text/css" href="//static.onlinetour.co.kr/ri/jquery/plugins/ui/css/onlinetour/jquery.ui.theme.css" />
+	<link rel="stylesheet" type="text/css" href="//static.onlinetour.co.kr/ri/jquery/plugins/ui/css/onlinetour/jquery.ui.datepicker.css" />
+	<link rel="stylesheet" type="text/css" href="/css/ui_layout.css" />
+	<link rel="stylesheet" type="text/css" href="/css/top3.css" />
+	<link rel="stylesheet" type="text/css" href="/css/popup.css" />
+	<link rel="stylesheet" type="text/css" href="/css/search.css" />
+	<script type="text/javascript" src="//static.onlinetour.co.kr/ri/jquery/core/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="//static.onlinetour.co.kr/ri/jquery/plugins/hashchange/js/jquery.ba-hashchange.js"></script>
+	<script type="text/javascript" src="//static.onlinetour.co.kr/ri/jquery/plugins/ui/js/jquery-ui-1.10.2.custom.js"></script>
+	<script type="text/javascript" src="//static.onlinetour.co.kr/ri/jquery/plugins/ui/i18n/jquery.ui.datepicker-ko.js"></script>
+	<script type="text/javascript" src="//static.onlinetour.co.kr/ri/jquery/plugins/ui/js/jquery.ui.datepicker.default.js"></script>
+	<script type="text/javascript" src="/flight/js/jquery.tmpl.v1.0.0.min.js"></script>
+	<script type="text/javascript" src="/js/ui_lib.js"></script>
+	<script type="text/javascript" src="/js/main2.js"></script>
+	<script type="text/javascript" src="/js/jes.js"></script>
+	<script type="text/javascript" src="/web/resources/banner/popup.js"></script>
+	<script type="text/javascript" src="/web/resources/hotel/hotel_main.js"></script>
+	<script type="text/javascript">
+		document.domain = "onlinetour.co.kr";
+		var sgl = 1;
+		var dbl = 0;
+		var twn = 0;
+		var trp = 0;
+		var quad = 0;
+		var night = 1;
+
+		jQuery("document").ready(function(){
+			
+			jQuery("input[name=cityNm]").click(function(){
+				jQuery("#mainCity").attr("style","position:absolute;top:70px;left:70px;z-index:99999999;width:510px;");
+			});
+			
+/* 			if ( document.cookie.indexOf( 'main_top_banner' ) == -1 ) {			
+				$("#banner").show();
+			}else{
+				$("#banner").hide();
+			} */
+			
+		});
+		
+		
+		function bannerhide(){
+			/* var now = new Date();
+			now.setDate( now.getDate() + 1 );
+			document.cookie = 'main_top_banner; path=/; expires=' + now.toGMTString() + ';';	 */		
+			$("#banner").hide();
+		}
+		
+		function open()
+		{
+			$("#banner_close").hide();
+			$("#banner_open").show();
+			$("#banner_button_open").hide();
+			$("#banner_button_close").show();
+		}
+		
+		function close()
+		{
+			$("#banner_close").show();
+			$("#banner_open").hide();
+			$("#banner_button_open").show();
+			$("#banner_button_close").hide();
+		}
+	</script>
+	
+	<style type="text/css">
+		#mainCity li { float: left; width: 75px; }
+	</style>
+</head>
+<!-- 상단 배너 추가 20140513 -->
+<!-- <div class="topbanner_wrap"" id="banner" >
+	<div class="inner_banner" id="top_banner_img">
+		
+	</div>
+	<a href="javascript:bannerhide();" class="btn_close"><img src="//img.onlinetour.co.kr/2014/main/banner_top/btn_close.png" alt="닫기" /></a> 
+</div>
+ -->
+<div class="topbanner_wrap" id="banner">
+<div class="inner_banner">
+		<!-- 원래 배너 -->
+		<div id="banner_open">
+			
+		</div>
+		<!-- 접은 배너 -->
+		<div id="banner_close" style="display:none;">
+			
+		</div>
+		<!-- 접기,열기 버튼 -->
+		<div class="btn">
+			<div id="banner_button_close">
+				<a href="javascript:close();"><img src="//img.onlinetour.co.kr/2014/main/banner_top/btn_close_up.png" alt="접기" /></a>
+			</div>
+			<div id="banner_button_open" style="display:none;">
+				<a href="javascript:open();"><img src="//img.onlinetour.co.kr/2014/main/banner_top/btn_open_down.png" alt="열기" /></a>
+			</div>
+		</div>
+	</div>
+	 
+</div>
+	
+<!-- //상단 배너 추가 20140513 -->
+<body class="index">
+	<div id="mainTop">
+		<div id="ot_top">
+			<h1 id="ot_logo" style="top:0px; left:300px;">
+				<a href="http://www.onlinetour.co.kr/"><img src="//img.onlinetour.co.kr/2013/main/logo/logo_basic.gif" alt="Onlinetour" style="border:0px;"/></a>
+			</h1>
+			<script type="text/javascript">
+				jQuery.ajax( {
+					headers: { 
+						'Accept': 'application/xml'
+					},
+					url: '/web/banner?positionCode=312',
+					dataType: 'xml',
+					success: function( xml ) {
+						var $container = jQuery( '#ot_logo' );
+						jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+							var $dto = jQuery( this );
+							var $img = jQuery("<img>", {"src": $dto.find( 'bannerContent' ).text() , "alt": $dto.find( 'bannerTitle' ).text() });
+							var $a = jQuery("<a></a>", {
+								"href": $dto.find( 'link' ).text()
+							}).html( $img );
+							$container.html( $a );
+							return false;
+						} );
+					}
+				} );
+ 				
+				jQuery.ajax( {
+					headers: { 
+						'Accept': 'application/xml'
+					},
+					url: '/web/banner?positionCode=361',
+					dataType: 'xml',
+					success: function( xml ) {
+						var $container = jQuery( '#banner_open' );
+						jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+							var $dto = jQuery( this );
+							var $img = jQuery("<img>", {"src": $dto.find( 'bannerContent' ).text() , "alt": $dto.find( 'bannerTitle' ).text() });
+							var $a = jQuery("<a></a>", {
+								"href": $dto.find( 'link' ).text()
+							}).html( $img );
+							$container.html( $a );
+							
+							
+							var background_img = $dto.find( 'bannerContent2' ).text();
+							document.getElementById("banner").style.backgroundImage = "url("+background_img+")"; 
+							
+							return false;
+						} );
+					}
+				} ); 
+				
+				jQuery.ajax( {
+					headers: { 
+						'Accept': 'application/xml'
+					},
+					url: '/web/banner?positionCode=362',
+					dataType: 'xml',
+					success: function( xml ) {
+						var $container = jQuery( '#banner_close' );
+						jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+							var $dto = jQuery( this );
+							var $img = jQuery("<img>", {"src": $dto.find( 'bannerContent' ).text() , "alt": $dto.find( 'bannerTitle' ).text() });
+							var $a = jQuery("<a></a>", {
+								"href": $dto.find( 'link' ).text()
+							}).html( $img );
+							$container.html( $a );
+							
+							return false;
+						} );
+					}
+				} ); 
+				
+				
+			</script>
+			<ul id="ot_site_link">
+				
+					
+					
+						<li class="first_child"><a href="https://www.onlinetour.co.kr/sso/login.do?type=onlinetour&skin=pc" target="_top"><img src="//img.onlinetour.co.kr/layout/ot_site_link01.gif" alt="로그인" /></a></li>
+						<li><a href="https://www.onlinetour.co.kr/web/member/join/agree"><img src="//img.onlinetour.co.kr/layout/ot_site_link02.gif" alt="회원가입" /></a></li>
+					
+				
+				<li><a href="http://www.onlinetour.co.kr/my_page/MyReservationList.asp"><img src="//img.onlinetour.co.kr/gnb/snb_Mu04.gif" alt="마이페이지" /></a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/customercenter/faq"><img src="//img.onlinetour.co.kr/layout/ot_site_link04.gif" alt="고객센터" /></a></li>
+				<li><a href="http://www.onlinetour.co.kr/event/main.asp"><img src="//img.onlinetour.co.kr/layout/ot_site_link05.gif" alt="이벤트" /></a></li>
+			</ul>
+			<!-- 검색 바 -->
+			<div class="search_boxbar mainbar">
+				<div class="box_text">
+					<input type="text" name="keyword" value="" />
+				</div>
+				<div class="btn_search">
+					<img src="//img.onlinetour.co.kr/search/new/btn/btn_searchbar_search.gif" alt="검색" class="goSearch" style="cursor:hand"/>
+				</div>
+			</div>
+			<!-- //검색 바 -->
+			<!--ot_navi {{-->
+			<div id="ot_navi02">
+				<div id="visa"><a href="http://www.onlinetour.co.kr/insurance/insurance.asp"><span></span>보험/비자</a></div>
+				<div id="pass"><a href="http://www.onlinetour.co.kr/rail_pass/eurpass_eurail.asp"><span></span>철도패스/할인권</a></div>
+				<!--ot_menu {{-->
+				<ul id="ot_menu">
+					<li id="n_air">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main"><span></span>항공</a>
+						<ul>
+							<li><a href="http://www.onlinetour.co.kr/flight/international/main/Main">실시간</a></li>
+							<li><a href="http://www.onlinetour.co.kr/flight/international/dcair/DcairList">공동구매/단체항공권</a></li>
+							<li><a href="http://www.onlinetour.co.kr/flight/international/booking/SpcDiscountListCar">인기항공</a></li>
+							<li><a href="http://www.onlinetour.co.kr/flight/international/booking/SpcDiscountListRegion">지방출발</a></li>
+							<li><a href="http://www.onlinetour.co.kr/flight/international/etc/AirCustom">맞춤항공</a></li>
+							<li><a href="http://www.onlinetour.co.kr/flight/domestic/main/Main">국내항공</a></li>
+							<li><a href="http://www.onlinetour.co.kr/flight/international/etc/AirCorpRequest">법인/단체여행</a></li>
+							<li><a href="http://www.rentalcars.com/Home.do?affiliateCode=onlinetour&adplat=flightsubtab" target="_blank">해외렌터카</a></li>
+						</ul>
+					</li>
+					<li id="n_hotel">
+						<a href="http://www.onlinetour.co.kr/web/hotel"><span></span>호텔</a>
+						<ul>
+							<li><a href="http://www.onlinetour.co.kr/web/hotel">해외호텔</a></li>
+							<li><a href="http://hotel.onlinetour.co.kr/kmain.asp">국내호텔</a></li>
+							<li><a href="http://hotel.onlinetour.co.kr/kcondo.asp">국내콘도</a></li>
+							<li><a href="http://hotel.onlinetour.co.kr/kpension.asp">국내펜션</a></li>
+							<li><a href="http://hotel.onlinetour.co.kr/booking/groupbooking.asp">맞춤/단체</a></li>
+							<li><a href="http://www.rentalcars.com/Home.do?affiliateCode=onlinetour&adplat=hotelsubtab" target="_blank">해외렌터카</a></li>
+						</ul>
+					</li>
+					<li id="n_pack">
+						<a href="http://www.onlinetour.co.kr/web/tour?region_cd=1"><span></span>해외패키지</a>
+						<ul>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=1">전체</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=110">동남아</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=120">일본</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=130">중국</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=140">괌&amp;사이판</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=150">남태평양</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=160">유럽</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=170">미주&amp;특수</a></li>
+							<li><a href="http://www.onlinetour.co.kr/customercenter/ask_list.asp?flag=T">묻고답하기</a></li>
+						</ul>
+					</li>
+					<li id="n_free">
+						<a href="http://www.onlinetour.co.kr/web/tour?region_cd=7"><span></span>해외자유배낭</a>
+						<ul>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=7">전체</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=710">동남아</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=720">일본</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=730">중국</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=760">유럽</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=770">미주&amp;특수</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=750">남태평양</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=740">괌&amp;사이판</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=7TR">트레킹</a></li>
+							<li><a href="http://www.rentalcars.com/Home.do?affiliateCode=onlinetour&adplat=airtelsubtab" target="_blank">해외렌터카</a></li>
+							<li><a href="http://www.onlinetour.co.kr/customercenter/ask_list.asp?flag=T">묻고답하기</a></li>
+						</ul>
+					</li>
+					<li id="n_golf">
+						<a href="http://www.onlinetour.co.kr/web/tour?region_cd=3"><span></span>골프</a>
+						<ul>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=3">전체</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=330">중국</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=320">일본</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=310">동남아</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=340">괌&amp;사이판</a></li>
+							<li><a href="http://www.onlinetour.co.kr/customercenter/ask_list.asp?flag=T">묻고답하기</a></li>
+						</ul>
+					</li>
+					<li id="n_honey">
+						<a href="http://www.onlinetour.co.kr/web/tour?region_cd=2"><span></span>허니문</a>
+						<ul>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=2">전체</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=230">미주</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=240">몰디브</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=210">태국</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=220">발리</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=215">필리핀</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=245">유럽</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=246">호주&amp;피지</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=225">괌&amp;사이판</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=247">칸쿤&amp;특수</a></li>
+							<li><a href="http://www.onlinetour.co.kr/customercenter/ask_list.asp?flag=T">묻고답하기</a></li>
+						</ul>
+					</li>
+					<li id="n_busan">
+						<a href="http://www.onlinetour.co.kr/web/tour?region_cd=D"><span></span>부산출발</a>
+						<ul>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=D">해외패키지</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=8">해외자유여행</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=BE1BE17">국내제주여행</a></li>
+							<li><a href="http://www.onlinetour.co.kr/customercenter/ask_list.asp?flag=T">묻고답하기</a></li>
+						</ul>
+					</li>
+					<li id="n_travel">
+						<a href="http://www.onlinetour.co.kr/flight/domestic/main/Main"><span></span>국내여행</a>
+						<ul>
+							<li><a href="http://www.onlinetour.co.kr/flight/domestic/main/Main">항공</a></li>
+							<li><a href="http://hotel.onlinetour.co.kr/kmain.asp">호텔</a></li>
+							<li><a href="http://hotel.onlinetour.co.kr/kcondo.asp">콘도</a></li>
+							<li><a href="http://hotel.onlinetour.co.kr/kpension.asp">펜션</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=BE1">제주여행</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/tour?region_cd=BF1">테마여행</a></li>
+							<li><a href="http://www.onlinetour.co.kr/web/rentalcar">제주렌터카</a></li>
+							<li><a href="http://www.onlinetour.co.kr/tour_goods/group_tour.asp">맞춤/단체</a></li>
+							<li><a href="http://www.onlinetour.co.kr/customercenter/ask_list.asp?flag=D">묻고답하기</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!--}} ot_menu-->
+			</div>
+			<!--}} ot_navi-->
+			<script type="text/javascript">
+				new ot.mainMenu( jQuery( '#ot_menu' ) );
+			</script>
+		<!--ot_intro {{-->
+		<div id="ot_intro" style="position:absolute;left:0px;top:40px;">
+			<embed src="//img.onlinetour.co.kr/top/ban_maintop_aa.swf" width="200" height="27" wmode="transparent" />	
+		</div>
+		<!--}} ot_intro-->
+	</div>
+	<!--메인 {{-->
+	<div id="main">
+		<!--1단 {{-->
+		<div class="flight_area">
+			<!--실시간예약 {{-->
+			<div id="main_flight_area" class="fl quick_search box_basic">
+				<div class="reserv fl"><h3>실시간예약</h3></div>
+				<ul class="fl">
+					<li class="a1_on cursor" id="a1" onclick="javascript:changeSearchTab('1' ,'a');"><h3>항공</h3></li>
+					<li class="a2 cursor" id="a2" onclick="javascript:changeSearchTab('2' ,'a');"><h3>호텔</h3></li>
+					<!--li class="a3 cursor" id="a3" onclick="javascript:changeSearchTab('3' ,'a');"><h3>여행</h3></li-->
+				</ul>
+				<br class="clr_ns" />
+
+				<!--항공 {{-->
+				<!-- 
+					top3.css 에서 search_box 스타일 지우기
+				 -->
+				<!-- 왕복 -->
+				<div id="flight">
+					<form name="searchRT" method="get" action="/flight/international/booking/FareSearch">
+					</form>
+					<form name="searchMD" method="get" action="/flight/international/booking/FareSearch" style="display: none;">
+					</form>
+				</div>
+				<!-- 항공설정 {{-->
+				<form name="oltProperies" style="border: 0; border-width: 0;">
+					<script type="text/javascript" src="/flight/common/JavaScriptUtil/calendar.js"></script>
+				</form>
+				<script type="text/javascript" src="/flight/js/util.js"></script>
+				<script type="text/javascript" src="/flight/js/oltCalendar.js"></script>
+				<script type="text/javascript" src="/flight/js/flightSearchCity.js"></script>
+				<script type="text/javascript" src="/flight/js/flightSearchScript.js"></script>
+				<!--}} 항공설정-->
+
+				<!--호텔 {{-->
+				<div class="search_box" id="hotel" style="display: none; padding-left:8px;">
+					<form name="searchFrm" id="searchFrm" method="get" action="/web/hotel/hotel_city_list">
+						<input type="hidden" name="MODE" value="search" />
+						<input type="hidden" name="nationCd" id="nationCd" value="" />
+						<input type="hidden" name="nationalCd" value="KR" />
+						<input type="hidden" name="hCode" id="hCode" value="" />
+						<input type="hidden" name="page" id="page" value="" />
+						<input type="hidden" name="sorting" id="sorting" value="" />
+						<input type="hidden" name="cityCd" id="cityCd" value="" />
+						<input type="hidden" name="quad" id="quad" value="0" />
+						<input type="hidden" name="gubun" id="gubun" value="" />
+						<input type="hidden" name="supply" id="supply" value="" />
+						<input type="hidden" name="showMode" id="showMode" value="" />
+						<input type="hidden" name="rmGrade" id="rmGrade" value="" />
+						<input type="hidden" name="cityLocCd" id="cityLocCd" value="" />
+						<input type="hidden" name="listsearchkey" id="listsearchkey" />
+						<input type="hidden" name="reviewclick" id="reviewclick" />
+						<input type="hidden" name="hEnm" id="hEnm" />
+						<dl>
+							<dt class="blue other"><span class="vt-2">도시선택</span></dt>
+							<dd class="other">
+								<input type="text" name="cityNm" class="text1 gray3" value = "예,Tokyo" onclick="if ( this.value == '예,Tokyo' ) { this.value = ''; this.style.color = '#3b3b3b'; }" readonly="readonly" />
+								<a href="#" onclick="jQuery('input[name=cityNm]').click()"><img src="//img.onlinetour.co.kr/top/ico_sch.gif" width="18" height="18" alt="검색" class="dr_city_img" onclick="if ( document.dolFrm.cityNm.value == '예,Tokyo' ) { document.dolFrm.cityNm.value = ''; document.dolFrm.cityNm.style.color = '#3b3b3b'; }" /></a>
+							</dd>
+						</dl>
+						<dl>
+							<dt class="blue">호텔등급</dt>
+							<dd>
+								<select id="grade" name="grade" class="top_select">
+									<option value="">전체</option>
+									<option value="2">☆☆~</option>
+									<option value="3">☆☆☆~</option>
+									<option value="4">☆☆☆☆~</option>
+									<option value="5">☆☆☆☆☆</option>
+								</select>
+							</dd>
+						</dl>
+						
+						<dl>
+							<dt class="blue" style="padding-left:1px;letter-spacing:-1px;">체크인</dt>
+							<dd>
+								<input type="text" class="text2 fs11 gray2" name="checkIn" id="checkIn" style="width:48px;" value="14/06/17">
+								<select id="night" name="night" class="select_h" onchange="selectAddDay();" style="width:42px;">
+								
+									<option value="1">1박</option>
+								
+									<option value="2">2박</option>
+								
+									<option value="3">3박</option>
+								
+									<option value="4">4박</option>
+								
+									<option value="5">5박</option>
+								
+									<option value="6">6박</option>
+								
+									<option value="7">7박</option>
+								
+									<option value="8">8박</option>
+								
+									<option value="9">9박</option>
+								
+									<option value="10">10박</option>
+								
+									<option value="11">11박</option>
+								
+									<option value="12">12박</option>
+								
+									<option value="13">13박</option>
+								
+									<option value="14">14박</option>
+								
+									<option value="15">15박</option>
+								
+									<option value="16">16박</option>
+								
+									<option value="17">17박</option>
+								
+									<option value="18">18박</option>
+								
+									<option value="19">19박</option>
+								
+									<option value="20">20박</option>
+								
+									<option value="21">21박</option>
+								
+									<option value="22">22박</option>
+								
+									<option value="23">23박</option>
+								
+									<option value="24">24박</option>
+								
+									<option value="25">25박</option>
+								
+									<option value="26">26박</option>
+								
+									<option value="27">27박</option>
+								
+									<option value="28">28박</option>
+								
+									<option value="29">29박</option>
+								
+									<option value="30">30박</option>
+								
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt class="blue" style="padding-left:1px;letter-spacing:-1px;">체크아웃</dt>
+							<dd>
+								<input type="text" id="checkOut" name="checkOut" class="text2 gray2 fs11" style="width:48px;" value="14/06/18" onclick="jsCalendar( 'document.dolFrm.checkout', '3' ); addDate();" readonly="readonly" />
+							</dd>
+						</dl>
+						<dl>
+							<dt class="blue">룸타입<a class="question" href="javascript:fnRoomTypeView_pop();">[?]</a></dt>
+							<dd class="blue fs11">
+								<span class="stit">싱글</span>
+								<select id="sgl" name="sgl" class="select_hs ml_1">
+								
+									<option value="0" >0</option>
+								
+									<option value="1" selected>1</option>
+								
+									<option value="2" >2</option>
+								
+									<option value="3" >3</option>
+								
+									<option value="4" >4</option>
+								
+									<option value="5" >5</option>
+								
+									<option value="6" >6</option>
+								
+									<option value="7" >7</option>
+								
+									<option value="8" >8</option>
+								
+									<option value="9" >9</option>
+								</select><span class="stit">더블</span>
+								<select id="dbl" name="dbl" class="select_hs ml_1">
+								
+									<option value="0">0</option>
+								
+									<option value="1">1</option>
+								
+									<option value="2">2</option>
+								
+									<option value="3">3</option>
+								
+									<option value="4">4</option>
+								
+								</select>
+								<br />
+								<span class="stit pt05">트윈</span>
+								<select id="twn" name="twn" class="select_hs ml_1 pt05">
+								
+									<option value="0">0</option>
+								
+									<option value="1">1</option>
+								
+									<option value="2">2</option>
+								
+									<option value="3">3</option>
+								
+									<option value="4">4</option>
+								
+								</select><span class="stit pt05">3인</span>
+								<select id="trp" name="trp" class="select_hs ml_1 pt05">
+								
+									<option value="0">0</option>
+								
+									<option value="1">1</option>
+								
+									<option value="2">2</option>
+								
+									<option value="3">3</option>
+								
+								</select>
+							</dd>
+						</dl>
+						<dl class="hotel_name">
+							<dt class="blue">호텔명</dt>
+							<dd>
+								<input type="text" id="hotelNm" class="text3 gray3 fs11" name="hotelNm" value="영문호텔명만 가능" style="ime-mode: disabled;" onclick="this.value = ''; this.style.color = '#3b3b3b';" />
+							</dd>
+						</dl>
+
+						<div class="search_h">
+							<a name="submit" href="javascript:fnSubmitMain();" class="fr int"><img src="//static.onlinetour.co.kr/flight/image/skin01/btn/btn_kairSearch.gif" alt="검색" /></a>
+						</div>
+					</form>
+					<form name="DolFrm" action="">
+						<input type="hidden" name="cityLocCd" />
+					</form>
+					
+					
+					
+				</div>
+				<!--}} 호텔-->
+			</div>
+			<div id="mainCity" class="popBorder" style="position:absolute;background-color:white; width:510px; display:none; z-index: 99">
+						<div class="top01">
+							<h1 class="h1"><img src="//static.onlinetour.co.kr/hotel/image/skin01/title/tit_H1popMa01.gif" alt="도시검색" /></h1>
+							<span class="closeT"><img src="//static.onlinetour.co.kr/hotel/image/popup/ico_closePop.gif" alt="닫기" onClick="" style="cursor:pointer;" align='absmiddle'/></span>
+						</div>
+						<div class="content01">
+							<p class="txtT02">도시이름 검색은 한글명, 영문명, 도시코드 모두 가능 합니다. </p>
+							<div class="bxGray02">
+								<p class="schBox">
+									<input type="text" name="keyWord" class="input04 inputSch" value=""/> 
+									<img name="keyWordBtn" src="//static.onlinetour.co.kr/hotel/image/skin01/btn/btn_searchPop.gif" class="btnSch" alt="검색" style="cursor:pointer"/>
+									<span class="txtSch">예) 도쿄, Tokyo</span>
+								</p>
+							</div>
+							<div id="result" style="display:none">
+								<table class=hBoard01_pop>
+									<thead>
+										<tr>
+											<th width="145" class=bl1>한글명</th>
+											<th width="198">영문명</th>
+											<th width="*"  class="br1 left01">국가명</th>
+										</tr>
+									</thead>
+								</table>
+								
+								<div class="bxBlue01_pop" style="height: 173px; overflow-x: no; overflow-y: scroll;">
+									<table id="cityresult" class="hBoard01_pop"></table>
+								</div>
+							</div>
+							<div id="result_1">
+								<h3 class="h3_pop">주요도시 바로선택</h3>
+								<table class="wBoard04_pop">
+									<tr areaCd="0" ><th width="60">일본</th><td style="line-height:20px;"></td></tr>
+									<tr areaCd="1" ><th>중국</th><td style="line-height:20px;"></td></tr>
+									<tr areaCd="2" ><th>아시아</th><td style="line-height:20px;"></td></tr>
+									<tr areaCd="3"><th>미국/<br/>캐나다</th><td style="line-height:20px;"></td></tr>
+									<tr areaCd="4"><th>유럽</th><td style="line-height:20px;"></td></tr>
+									<tr areaCd="5"><th>남태평양</th><td style="line-height:20px;"></td></tr>
+									<tr areaCd="6"><th>기타지역</th><td style="line-height:20px;"></td></tr>
+								</table>
+							</div>
+						</div>
+					</div>
+			<!--}} 실시간예약-->
+
+			<!-- 상단 우측 UI -->
+			<div class="flight_area_right">
+			
+			<!--세계최저가 항공호텔 {{-->
+			<div class="fl row_content">
+				<div class="row_top">
+					<div class="title"><h3>세계최저가 항공호텔</h3></div>
+					<div class="flight_on" id="flight_tab_top" onmouseover="tabChange( 'flight' );"><h3>항공</h3></div>
+					<div class="hotel" id="hotel_tab_top" onmouseover="tabChange( 'hotel' );"><h3>호텔</h3></div>
+				</div>
+				<div class="content" id="flight_tab" style="display: block;">
+				
+					
+						<div class="tab fl">
+						
+							
+								<div class="tc title"><img alt="중국/일본" src="//img.onlinetour.co.kr/main/new_top/title_s_1.gif"></div>
+							
+							
+							
+						
+						<div class="fl tab_list">
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=PEK">북경</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=PEK">9만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a class="blue2 b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=PVG">상해(푸동)</a>
+					</div>
+					<div class="s_right">
+						<a class="orange b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=PVG">13만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=SHA">상해(홍차오)</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=SHA">16만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=NRT">도쿄(나리타)</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=NRT">3만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a class="blue2 b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=HND">도쿄(하네다)</a>
+					</div>
+					<div class="s_right">
+						<a class="orange b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=HND">18만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=KIX">오사카</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=KIX">3만</a>
+					</div>
+					<br class="clr_ns">
+					
+							</div>
+							<br class="clr_ns">
+						</div>
+					
+				
+					
+						<div class="tab fl">
+						
+							
+							
+								<div class="tc title"><img alt="동남아/남태평양" src="//img.onlinetour.co.kr/main/new_top/title_s_2.gif"></div>
+							
+							
+						
+						<div class="fl tab_list">
+					
+					<div class="s_left">
+						<a class="blue2 b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=HKG">홍콩</a>
+					</div>
+					<div class="s_right">
+						<a class="orange b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=HKG">9만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=SIN">싱가포르</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=SIN">20만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=BKK">방콕</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=BKK">9만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=MNL">마닐라</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=MNL">9만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=SGN">호치민</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=SGN">27만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a class="blue2 b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=SYD">시드니</a>
+					</div>
+					<div class="s_right">
+						<a class="orange b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=SYD">24만</a>
+					</div>
+					<br class="clr_ns">
+					
+							</div>
+							<br class="clr_ns">
+						</div>
+					
+				
+					
+						<div class="tab fl">
+						
+							
+							
+							
+								<div class="tc title"><img alt="유럽/미주" src="//img.onlinetour.co.kr/main/new_top/title_s_3.gif"></div>
+							
+						
+						<div class="fl tab_list">
+					
+					<div class="s_left">
+						<a class="blue2 b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=LHR">런던(히드로)</a>
+					</div>
+					<div class="s_right">
+						<a class="orange b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=LHR">33만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=CDG">파리(CDG)</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=CDG">24만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a class="blue2 b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=LAX">LA</a>
+					</div>
+					<div class="s_right">
+						<a class="orange b" href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=LAX">45만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=JFK">뉴욕(JFK)</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=JFK">49만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=YVR">밴쿠버</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=YVR">49만</a>
+					</div>
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=YYZ">토론토</a>
+					</div>
+					<div class="s_right">
+						<a href="http://www.onlinetour.co.kr/flight/international/main/Main?arr_code=YYZ">60만</a>
+					</div>
+					<br class="clr_ns">
+					
+							</div>
+							<br class="clr_ns">
+						</div>
+					
+				
+				</div>
+				<div class="content" id="hotel_tab" style="display: none;">
+				
+					
+						<div class="tab fl">
+							
+								
+									<div class="tc title"><img alt="중국/일본" src="//img.onlinetour.co.kr/main/new_top/title_s_1.gif"></div>
+								
+								
+								
+							
+							<div class="fl tab_list">
+					
+					<div class="s_left"><a class="blue2 b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=8&cityCd=PEK" title="북경">북경</a></div>
+					
+						
+							<div class="s_right"><a class="orange b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=8&cityCd=PEK" title="북경"><img src="//img.onlinetour.co.kr/top/ico_dollar_orange.gif" width="10" height="11" alt="달러" class="po_r_1" />22</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=8&cityCd=SHA" title="상해">상해</a></div>
+					
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=8&cityCd=SHA" title="상해"><img src="//img.onlinetour.co.kr/top/ico_dollar_gray.gif" width="10" height="11" alt="달러" class="po_r_1" />20.1</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=8&cityCd=CAN" title="광주">광주</a></div>
+					
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=8&cityCd=CAN" title="광주"><img src="//img.onlinetour.co.kr/top/ico_dollar_gray.gif" width="10" height="11" alt="달러" class="po_r_1" />28.8</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a class="blue2 b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=9&cityCd=TYO" title="도쿄">도쿄</a></div>
+					
+						
+						
+							<div class="s_right"><a class="orange b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=9&cityCd=TYO" title="도쿄"><img src="//img.onlinetour.co.kr/top/ico_yen_orange.gif" width="10" height="11" alt="엔" class="po_r_1" />2,764.1</a></div>
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=9&cityCd=OSA" title="오사카">오사카</a></div>
+					
+						
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=9&cityCd=OSA" title="오사카"><img src="//img.onlinetour.co.kr/top/ico_yen_gray.gif" width="10" height="11" alt="엔" class="po_r_1" />2,950.9</a></div>
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=9&cityCd=OKA" title="오키나와">오키나와</a></div>
+					
+						
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=9&cityCd=OKA" title="오키나와"><img src="//img.onlinetour.co.kr/top/ico_yen_gray.gif" width="10" height="11" alt="엔" class="po_r_1" />5,204.8</a></div>
+						
+						
+					
+					<br class="clr_ns">
+					
+								</div>
+							<br class="clr_ns" />
+						</div>
+					
+				
+					
+						<div class="tab fl">
+							
+								
+								
+									<div class="tc title"><img alt="동남아/남태평양" src="//img.onlinetour.co.kr/main/new_top/title_s_2.gif"></div>
+								
+								
+							
+							<div class="fl tab_list">
+					
+					<div class="s_left"><a class="blue2 b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=HKG" title="홍콩">홍콩</a></div>
+					
+						
+							<div class="s_right"><a class="orange b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=HKG" title="홍콩"><img src="//img.onlinetour.co.kr/top/ico_dollar_orange.gif" width="10" height="11" alt="달러" class="po_r_1" />31.5</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=SIN" title="싱가포르">싱가포르</a></div>
+					
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=SIN" title="싱가포르"><img src="//img.onlinetour.co.kr/top/ico_dollar_gray.gif" width="10" height="11" alt="달러" class="po_r_1" />33.6</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=BKK" title="방콕">방콕</a></div>
+					
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=BKK" title="방콕"><img src="//img.onlinetour.co.kr/top/ico_dollar_gray.gif" width="10" height="11" alt="달러" class="po_r_1" />14.7</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=MNL" title="마닐라">마닐라</a></div>
+					
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=MNL" title="마닐라"><img src="//img.onlinetour.co.kr/top/ico_dollar_gray.gif" width="10" height="11" alt="달러" class="po_r_1" />0.8</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=SGN" title="호치민">호치민</a></div>
+					
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=7&cityCd=SGN" title="호치민"><img src="//img.onlinetour.co.kr/top/ico_dollar_gray.gif" width="10" height="11" alt="달러" class="po_r_1" />20.8</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a class="blue2 b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=11&cityCd=SYD" title="시드니">시드니</a></div>
+					
+						
+							<div class="s_right"><a class="orange b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=11&cityCd=SYD" title="시드니"><img src="//img.onlinetour.co.kr/top/ico_dollar_orange.gif" width="10" height="11" alt="달러" class="po_r_1" />39.5</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+								</div>
+							<br class="clr_ns" />
+						</div>
+					
+				
+					
+						<div class="tab fl">
+							
+								
+								
+								
+									<div class="tc title"><img alt="유럽/미주" src="//img.onlinetour.co.kr/main/new_top/title_s_3.gif"></div>
+								
+							
+							<div class="fl tab_list">
+					
+					<div class="s_left"><a class="blue2 b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=10&cityCd=LON" title="런던">런던</a></div>
+					
+						
+						
+						
+							<div class="s_right"><a class="orange b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=10&cityCd=LON" title="런던"><img src="//img.onlinetour.co.kr/top/ico_euro_orange.gif" width="10" height="11" alt="유로" class="po_r_1" />20</a></div>
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=10&cityCd=PAR" title="파리">파리</a></div>
+					
+						
+						
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=10&cityCd=PAR" title="파리"><img src="//img.onlinetour.co.kr/top/ico_euro_gray.gif" width="10" height="11" alt="유로" class="po_r_1" />38.2</a></div>
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a class="blue2 b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=12&cityCd=LAX" title="LA">LA</a></div>
+					
+						
+							<div class="s_right"><a class="orange b" href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=12&cityCd=LAX" title="LA"><img src="//img.onlinetour.co.kr/top/ico_dollar_orange.gif" width="10" height="11" alt="달러" class="po_r_1" />47.8</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=12&cityCd=NYC" title="뉴욕">뉴욕</a></div>
+					
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=12&cityCd=NYC" title="뉴욕"><img src="//img.onlinetour.co.kr/top/ico_dollar_gray.gif" width="10" height="11" alt="달러" class="po_r_1" />69.7</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=12&cityCd=YVR" title="밴쿠버">밴쿠버</a></div>
+					
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=12&cityCd=YVR" title="밴쿠버"><img src="//img.onlinetour.co.kr/top/ico_dollar_gray.gif" width="10" height="11" alt="달러" class="po_r_1" />42.5</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+				
+					
+					<div class="s_left"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=12&cityCd=YTO" title="토론토">토론토</a></div>
+					
+						
+							<div class="s_right"><a href="http://www.onlinetour.co.kr/web/hotel/hotel_main?areaCd=12&cityCd=YTO" title="토론토"><img src="//img.onlinetour.co.kr/top/ico_dollar_gray.gif" width="10" height="11" alt="달러" class="po_r_1" />62.4</a></div>
+						
+						
+						
+					
+					<br class="clr_ns">
+					
+								</div>
+							<br class="clr_ns" />
+						</div>
+					
+					
+				</div>
+				<div class="content_b" id="lowest_price_banner" style="bottom:15px;left:4px;">
+				</div>
+				<script type="text/javascript">
+					jQuery.ajax( {
+						headers: { 
+							'Accept': 'application/xml'
+						},
+						url: '/web/banner?positionCode=150',
+						dataType: 'xml',
+						success: function( xml ) {
+							var $container = jQuery( '#lowest_price_banner' );
+							jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+								var $dto = jQuery( this );
+								var $img = jQuery("<img>", {"src": $dto.find( 'bannerContent' ).text() , "alt": $dto.find( 'bannerTitle' ).text() });
+								var $a = jQuery("<a></a>", {
+									"href": $dto.find( 'link' ).text(),
+									"target": $dto.find( 'target' ).text(),
+									"style": "padding-left:3px;"
+								}).html( $img );
+								
+								$container.append($a);
+							} );
+						}
+					} );
+				</script>
+			</div>
+			<!--}} 세계최저가 항공호텔-->
+
+			<!--항공 뉴스/이벤트 {{-->
+			<div class="fl event">
+				<div class="title"><h3>항공 뉴스/이벤트</h3></div>
+				<div class="content">
+					<!-- 땡처리 항공 {{-->
+					<div class="flight_ban">
+						<div class="ddang_banner ddang_air" style="cursor:pointer;">
+							<div class="ddang_air_title"><img src="//img.onlinetour.co.kr/banner/ddang/sale_air_title01.gif" /></div>
+							<div class="more"><a href="#"><img src="//img.onlinetour.co.kr/banner/ddang/sale_air_more.gif" /></a></div>
+							<div class="product" style="overflow:hidden;width:166px;height:46px;"></div>
+						</div>
+						<script type="text/javascript">
+							// 땡처리 항공 배너 롤링 스크립트
+							var rotate_ddang_air_banner = function () {
+								next = jQuery('div.ddang_air div.product table:visible').next();
+								if(jQuery('div.ddang_air div.product table:visible').is(':last-child')) {
+									next = jQuery('div.ddang_air div.product table:first-child');
+								}
+								jQuery('div.ddang_air div.product table:visible').hide();
+								jQuery(next).show();
+							}
+
+							jQuery().ready( function() {
+								// 로딩 이미지
+								jQuery('div.ddang_air div.product').append('<img src="/images/ajax-loader-ddang_airhotel.gif" id="ddang_air_loader" style="position:absolute;top:13px;left:75px;">');
+
+								// 땡처리 항공 데이터 가져오기
+								jQuery.getJSON('/web/home/ddang?type=flight&callback=?', function(json) {
+									var fares = json['result'];
+									jQuery(fares).each(function() {
+										var fare = jQuery(this)[0];
+										var rate0 = parseInt(fare.price / 100000);
+										var rate1 = parseInt((fare.price / 10000) % 10);
+
+										var date = new Date();
+										var air_year = date.getFullYear();
+										var air_month = date.getMonth() + 1;
+										air_month = air_month < 10 ? '0' + air_month : air_month;		
+										
+										if (fare.startMonth) {
+											air_year = fare.startMonth.substr(0,4);
+											air_month = fare.startMonth.substr(4,2);
+										}
+
+										var html = ''
+											+ '<table style="display:none;" citycd="' + fare.cityCd + '" areacd="' + fare.areaNm + '" start_month="' + air_month + '" start_year="' + air_year + '">'
+												+ '<colgroup>'
+													+ '<col style="width:73px">'
+													+ '<col>'
+													+ '<col>'
+												+ '</colgroup>'
+												+ '<tr>'
+													+ '<th>'
+													+ '<span class="air_logo"><img src="//img.onlinetour.co.kr/air_logo/AP_' + fare.carrier.toLowerCase() + '03.gif"></span>'
+													+ '<span>' + fare.nmKor + '</span></th>'
+													+ '<td class="num">'
+													+ '<img src="//img.onlinetour.co.kr/banner/ddang/sale_num_0' + rate0 + '.gif" /> '
+													+ '<img src="//img.onlinetour.co.kr/banner/ddang/sale_num_0' + rate1 + '.gif" />'
+													+ '</td>'
+													+ '<td class="unit">만</td>'
+												+ '</tr>'
+											+ '</table>';
+
+										jQuery('div.ddang_air div.product').append(html);
+									});
+
+									jQuery('div.ddang_air div.product #ddang_air_loader').remove();
+									jQuery('div.ddang_air div.product table:first').show();
+
+									// 땡처리 항공 배너 롤링 인터벌 설정
+									setInterval( rotate_ddang_air_banner, 2500 );
+
+									// 땡처리 항공 이동 링크 생성
+									jQuery('div.ddang_air').click( function() {
+										var ddang_table = jQuery('div.ddang_air div.product table:visible');
+										var redirect_url = 'http://www.onlinetour.co.kr/flight/international/dcair/DcairList?TabGubun=' + ddang_table.attr('areacd') + '&nowMonth=' + ddang_table.attr('start_month') + '&nowYear=' + ddang_table.attr('start_year') + '&SelectedCityCd=' + ddang_table.attr('citycd');
+										if ( ddang_table.attr('citycd') == 'ITM' ) {
+											location.href = redirect_url + '&airSect=GMP';
+										} else {
+											location.href = redirect_url + '&airSect=ICN';
+										}
+									});
+								});
+							});
+						</script>
+					</div>
+					<!--}} 땡처리 항공 -->
+					<!--뉴스/이벤트 {{-->
+					<div class="flight_event">
+						<ul></ul>
+					</div>
+					<script type="text/javascript">
+						jQuery.ajax( {
+							headers: { 
+								'Accept': 'application/xml'
+							},
+							url: '/web/banner?positionCode=233',
+							dataType: 'xml',
+							success: function( xml ) {
+								var $container = jQuery( '.flight_event ul' );
+								jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+									var $dto = jQuery( this );							
+									var $a = jQuery("<a></a>", {
+										"href": $dto.find( 'link' ).text(),
+										"target": $dto.find( 'target' ).text()
+									}).html( $dto.find( 'bannerTitle' ).text() );
+									
+									$container.append(jQuery("<li></li>").append($a));
+								} );
+							}
+						} );
+					</script>
+					<!--}} 뉴스/이벤트-->
+				</div>
+			</div>
+			<!--}} 항공 뉴스/이벤트-->
+			</div>
+			<!-- //상단 우측 UI -->
+		</div>
+		<br class="clr_ns"/>
+		<!--}} 1단-->
+
+		<!--2단 {{-->
+		<div id="main_hotel_area" class="hotel_area fl">
+			<!--추천 이벤트 {{-->
+			<div class="hotel_left fl" style="position: relative; height: 100%;">
+				<div id="recommend_event">
+					<div style="width: 190px;">
+						<h4 class="hotel_left_title" style="height: 18px; overflow: hidden;">추천 이벤트</h4>
+						<ul style="position: absolute; top: -2px; right: -5px;">
+							<li class="h1_on cursor" id="h1" onclick="changeSearchTab_hotel( '1', 'h' );"><h5>자유</h5></li>
+							<li class="h2 cursor" id="h2" onclick="changeSearchTab_hotel( '2', 'h' );"><h5>패키지</h5></li>
+							<li class="h3 cursor" id="h3" onclick="changeSearchTab_hotel( '3', 'h' );"><h5>홈쇼핑</h5></li>
+						</ul>
+					</div>
+					<script type="text/javascript">
+						jQuery.ajax( {
+							headers: { 
+								'Accept': 'application/xml'
+							},
+							url: '/web/banner?positionCode=70',
+							dataType: 'xml',
+							success: function( xml ) {
+								var $container = jQuery( '#recommend_event' );
+								var idx = 1;
+								jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+									var $dto = jQuery( this );
+
+									var $span;
+									if (idx == 1) {
+										$span = jQuery("<span></span>", {"id": "hotel_left_ban_" + idx});
+									} else {
+										$span = jQuery("<span></span>", {"id": "hotel_left_ban_" + idx, "style": "display:none;"});
+									}
+
+									var $img = jQuery("<img>", {"src": $dto.find( 'bannerContent' ).text()});
+									var $a = jQuery("<a></a>", {
+										"href": $dto.find( 'link' ).text(),
+										"target": $dto.find( 'target' ).text()
+									}).html( $img );
+
+									$container.append($span.html($a));
+									idx++;
+								} );
+								jQuery( '#recommend_event ul li' ).get( Math.floor( Math.random() * 3 ) ).click();
+							}
+						} );
+					</script>
+				</div>
+			</div>
+			<!--}} 추천 이벤트-->
+
+			<!--중앙 배너 {{-->
+			<div class="hotel_center fl">
+				<div id="center_big_banner_type2" class="bigBanner">
+					<div class="article">
+						<a href="#"><img src ="/images/ajax-loader-ddang_airhotel.gif" style="position:relative;top:105px;left:230px;"></a>
+					</div>
+					<div class="frame">
+						<a href="#"><img src="//img.onlinetour.co.kr/swf/Main/main_bigbanner_line.gif" /></a>
+					</div>
+					<ul>
+					</ul>
+				</div>
+				<script type="text/javascript">
+					jQuery ( document ).ready ( function () {
+						jQuery.ajax( {
+							headers: {
+								'Accept': 'application/xml'
+							},
+							url: '/web/banner?positionCode=68',
+							dataType: 'xml',
+							success: function( xml ) {
+								
+								var $container = jQuery( '.hotel_center' );
+								
+								var total_size = jQuery( xml ).find( 'bannerDto' ).size();
+								var random_idx = Math.floor(Math.random() * total_size);
+								jQuery('#center_big_banner_type2 ul').attr('current_idx', random_idx);
+								
+								jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+									var $dto = jQuery( this );
+									var $a = jQuery("<a></a>", {
+										"href": $dto.find( 'link' ).text(),
+										"imgfile": $dto.find( 'bannerContent' ).text(),
+										"target": $dto.find( 'target' ).text(),
+										"time": $dto.find( 'duration' ).text()
+									});
+									var ii = i+1;
+									$a.append('<img src="//img.onlinetour.co.kr/icon/big_banner_num' + ( ii < 10 ? '0' + ii : ii ) + '.gif" />');
+									$container.find( '#center_big_banner_type2 ul' ).append(jQuery("<li style='margin-right:5px;'></li>").append($a));
+								} );
+								
+								var centerBigBanner = new imgRolling();
+								centerBigBanner.init( jQuery( "#center_big_banner_type2" ), centerBigBanner );
+								jQuery('#center_big_banner_type2 .article img').attr('style', '');
+							}
+						} );
+					} );
+				</script>
+			</div>
+			<!--}} 중앙 배너-->
+
+			<!--호텔 뉴스/이벤트 {{-->
+			<div class="hotel_right fl">
+				<div class="new_tit"><h3>호텔 뉴스/이벤트</h3></div>
+				<div class="content">
+					<!-- 땡처리 호텔 {{-->
+					<div class="hotel_ban">
+						<div class="ddang_banner ddang_hotel" style="cursor:pointer;">
+							<div class="title"><img src="//img.onlinetour.co.kr/banner/ddang/sale_hotel_title.gif" /></div>
+							<!-- 하단 #product 내부에 땡처리 컨텐츠 자동 추가됨 -->
+							<div class="product" style="overflow:hidden;width:166px;height:46px;"></div>
+							<div class="more"><a href="#"><img src="//img.onlinetour.co.kr/banner/ddang/sale_hotel_more.gif" /></a></div>
+						</div>
+						
+						<script type="text/javascript">
+							// 땡처리 호텔 배너 롤링 스크립트
+							var rotate_ddang_hotel_banner = function () {
+								next = jQuery('div.ddang_hotel div.product table:visible').next();
+								if(jQuery('div.ddang_hotel div.product table:visible').is(':last-child')) {
+									next = jQuery('div.ddang_hotel div.product table:first-child');
+								}
+								jQuery('div.ddang_hotel div.product table:visible').hide();
+								jQuery(next).show();
+							}
+							
+							// 땡처리 호텔 전용 날짜 표현 변환
+							function dateFormatter(date) {
+								var fmtDate = date.getDate().toString();
+								var fmtMonth = date.getMonth() + 1;
+								fmtMonth = fmtMonth < 10 ? '0' + fmtMonth.toString() : fmtMonth.toString();
+								var fmtYear = date.getFullYear().toString();
+								fmtYear = fmtYear.substr(2,2);
+								var fmtData = fmtYear + '/' + fmtMonth + '/' + fmtDate;
+							
+								return fmtData;
+							}
+							
+							jQuery().ready( function() {
+								jQuery('div.ddang_hotel div.product').append('<img src ="/images/ajax-loader-ddang_airhotel.gif" id="ddang_hotel_loader" style="position:absolute;top:13px;left:75px;">');
+							
+								// 땡처리 호텔 데이터 가져오기
+								jQuery.getJSON('/web/home/ddang?type=hotel&callback=?', function(json) {
+									var hotels = json['result'];
+									jQuery(hotels).each(function() {
+										var hotel = jQuery(this)[0];
+
+										// Knm 길이 문제로 영문자 LA 표시
+										if (hotel.cityCd == 'LAX') {
+											hotel.cityKnm = 'LA';
+										}
+
+										var rate0 = parseInt(hotel.price / 10);
+										var rate1 = parseInt(hotel.price % 10);
+										var html = ''
+										+ '<table style="display:none;"' + 'nationcd="' + hotel.nationCd + '" citycd="' + hotel.cityCd + '">'
+											+ '<colgroup>'
+												+ '<col style="width:73px">'
+												+ '<col>'
+												+ '<col>'
+											+ '</colgroup>'
+											+ '<tr>'
+												+ '<th><span>' + hotel.cityKnm + '</span></th>'
+												+ '<td class="num">'
+												+ '<img src="//img.onlinetour.co.kr/banner/ddang/sale_num_0' + rate0 + '.gif" /> '
+												+ '<img src="//img.onlinetour.co.kr/banner/ddang/sale_num_0' + rate1 + '.gif" />'
+												+ '</td>'
+												+ '<td class="unit">만</td>'
+											+ '</tr>'
+										+ '</table>';
+							
+										jQuery('div.ddang_hotel div.product').append(html);
+									});
+									
+									jQuery('div.ddang_hotel div.product #ddang_hotel_loader').remove();
+									jQuery('div.ddang_hotel div.product table:first').show();
+									
+									// 땡처리 호텔 배너 롤링 인터벌 설정
+									setInterval( rotate_ddang_hotel_banner, 2500 );
+							
+									// 호텔 체크인/체크아웃 날짜 지정
+									var date = new Date();
+									var checkinDate = new Date(Date.parse(date) + 7 * 1000 * 60 * 60 * 24);
+									while (checkinDate.getDay() != 4 ) {
+										checkinDate = new Date(Date.parse(checkinDate) + 1000 * 60 * 60 * 24);
+									}
+									var checkoutDate = new Date(Date.parse(checkinDate) + 1000 * 60 * 60 * 24);
+
+									checkinDate = dateFormatter(checkinDate);
+									checkoutDate = dateFormatter(checkoutDate);
+
+									// 땡처리 호텔 이동 링크 생성
+									jQuery('div.ddang_hotel').click( function() {
+										location.href = 'http://www.onlinetour.co.kr/web/hotel/hotel_city_list?nationalCd=KR&nationCd=' + jQuery('div.ddang_hotel div.product table:visible').attr('nationcd') + '&cityCd=' + jQuery('div.ddang_hotel div.product table:visible').attr('citycd') + '&sorting=onlyprice&checkin=' + encodeURIComponent(checkinDate) + '&checkout=' + encodeURIComponent(checkoutDate) + '&nights=1&sgl=1';
+									});
+								});
+							});
+						</script>
+					</div>
+					<!--}} 땡처리 호텔 -->
+					<!--뉴스/이벤트 {{-->
+					<div class="hotel_event">
+						<ul>
+						</ul>
+					</div>
+					<script type="text/javascript">
+						jQuery.ajax( {
+							headers: { 
+								'Accept': 'application/xml'
+							},
+							url: '/web/banner?positionCode=234',
+							dataType: 'xml',
+							success: function( xml ) {
+								var $container = jQuery( '.hotel_event ul' );
+								jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+									var $dto = jQuery( this );							
+									var $a = jQuery("<a></a>", {
+										"href": $dto.find( 'link' ).text(),
+										"target": $dto.find( 'target' ).text()
+									}).html( $dto.find( 'bannerTitle' ).text() );
+									
+									$container.append(jQuery("<li></li>").append($a));
+								} );
+							}
+						} );
+					</script>
+					<!--}} 뉴스/이벤트-->
+				</div>
+			</div>
+			<!--}} 호텔 뉴스/이벤트-->
+		</div>
+		<br class="clr_ns"/>
+		<!--}} 2단-->
+
+		<!--3단 {{-->
+		<div class="tour_area">
+			<!--좌측 배너 {{-->
+			<div class="tour_left fl">
+				<div id="main_small_banner_type2" class="smallBanner">
+					<div class="article">
+						<a href="#"><img src ="/images/ajax-loader-ddang_airhotel.gif" style="position:relative;top:105px;left:230px;"></a>
+					</div>
+					<ul>
+					</ul>
+				</div>
+				<script type="text/javascript">
+					jQuery ( document ).ready ( function () {
+						jQuery.ajax( {
+							headers: {
+								'Accept': 'application/xml'
+							},
+							url: '/web/banner?positionCode=69',
+							dataType: 'xml',
+							success: function( xml ) {
+								
+								var $container = jQuery( '.tour_left' );
+								
+								var total_size = jQuery( xml ).find( 'bannerDto' ).size();
+								var random_idx = Math.floor(Math.random() * total_size);
+								jQuery('#main_small_banner_type2 ul').attr('current_idx', random_idx);
+								
+								jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+									var $dto = jQuery( this );
+									var $a = jQuery("<a></a>", {
+										"href": $dto.find( 'link' ).text(),
+										"imgfile": $dto.find( 'bannerContent' ).text(),
+										"time": $dto.find( 'duration' ).text()
+									});
+									var ii = i+1;
+									$a.append('<img src="//img.onlinetour.co.kr/icon/small_banner_num' + ( ii < 10 ? '0' + ii : ii ) + '.gif" />');
+									$container.find( '#main_small_banner_type2 ul' ).append(jQuery("<li style='margin-right:1px;'></li>").append($a));
+								} );
+								
+								var mainSmallBanner = new imgRolling();
+								mainSmallBanner.init( jQuery( "#main_small_banner_type2" ), mainSmallBanner );
+								jQuery('#main_small_banner_type2 .article img').attr('style', '');
+							}
+						} );
+					} );
+				</script>
+			</div>
+			<!--}} 좌측 배너-->
+
+			<!--해외패키지 {{ -->
+			<div class="tour_center fl">
+				<div class="pack_tit">
+					<div class="tit"><h3>패키지</h3></div>
+					<div class="t1 cursor" id="t1" onclick="set_recommend('1', '10', '1');"><h3>동남아</h3></div>
+					<div class="t3 cursor" id="t3" onclick="set_recommend('1', '30', '1');"><h3>중국</h3></div>
+					<div class="t2 cursor" id="t2" onclick="set_recommend('1', '20', '1');"><h3>일본</h3></div>
+					<div class="t6 cursor" id="t6" onclick="set_recommend('1', '60', '1');"><h3>유럽</h3></div>
+					<div class="t4 cursor" id="t4" onclick="set_recommend('1', '40', '1');"><h3>괌/사이판</h3></div>
+					<div class="t5 cursor" id="t5" onclick="set_recommend('1', '50', '1');"><h3>남태평양</h3></div>
+					<div class="t7 cursor" id="t7" onclick="set_recommend('1', '70', '1');"><h3>미주/특수</h3></div>
+				</div>
+				<br class="clr_ns"/>
+
+				<!--상품 {{-->
+				<div id="MainPackArea"></div>
+				<!--}} 상품-->
+			</div>
+			<!--}} 해외패키지-->
+
+			<!--여행 뉴스/이벤트 {{-->
+			<div class="tour_right fl">
+				<div class="content" id="tour_news_event">
+					<div class="new_tit" onclick="javascript:location.href='http://www.onlinetour.co.kr/event/main.asp?req_good_type_cd=1&get_event_gu=a3';"><h3>여행 뉴스/이벤트</h3></div>
+					<ul></ul>
+				</div>
+				<script type="text/javascript">
+					jQuery.ajax( {
+						headers: { 
+							'Accept': 'application/xml'
+						},
+						url: '/web/banner?positionCode=148',
+						dataType: 'xml',
+						success: function( xml ) {
+							var $container = jQuery( '#tour_news_event ul' );
+							jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+								var $dto = jQuery( this );
+								var $a = jQuery("<a></a>", {
+									"href": $dto.find( 'link' ).text(),
+									"target": $dto.find( 'target' ).text()
+								});
+								if ( i == 0 ) {
+									var $img = jQuery("<img>", { "src": $dto.find( 'bannerContent' ).text() });
+									$a.html( $img );
+									$container.append(jQuery("<div>", {"class": "tour_ban"}).append($a));
+								} else {
+									$a.html( $dto.find( 'bannerTitle' ).text() );
+									$container.append(jQuery("<li></li>").append($a));
+								}
+							} );
+						}
+					} );
+				</script>
+			</div>
+			<!--}}여행 뉴스/이벤트-->
+		</div>
+		<br class="clr_ns"/>
+		<!--}} 3단-->
+
+		<!--4단 {{-->
+		<div class="tour_area" style="position: relative;">
+			<!--자유배낭 특가 {{-->
+			<div id="airtel_special_price_container" class="tour_left fl">
+				<ul>
+					<li class="b1_on"><h3>자유배낭 특가</h3></li>
+					<li class="b2"><h3>소셜보다 싸다!</h3></li>
+				</ul>
+				<br class="clr_ns"/>
+				<div class="tour_sale_box">
+				</div>
+				<script type="text/javascript">
+					jQuery.ajax( {
+						headers: { 
+							'Accept': 'application/xml'
+						},
+						url: '/web/banner?positionCode=149',
+						dataType: 'xml',
+						success: function( xml ) {
+							var $container = jQuery( '.tour_sale_box' );
+							var $div;
+							jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+								var $dto = jQuery( this );
+								if ( (i+1) % 2 == 1) {
+									if ( i / 2 == 0 ) {
+										$div = jQuery("<div></div>", { "id": "tour_sale_" + (i/2), "class": "tour_sale" });
+									} else {
+										$div = jQuery("<div></div>", { "id": "tour_sale_" + (i/2), "class": "tour_sale", "style": "display:none;" });
+									}
+									
+									var original_data = $dto.find( 'bannerTitle' ).text();
+									var data = original_data.split("|");
+
+									var $inner_div = jQuery("<div>", { "class": "thum_img" });
+									$inner_div.append(jQuery("<img>", { "src": $dto.find( 'bannerContent' ).text() } ));
+
+									var $inner_span = jQuery("<span>", { "class": "speech_bb" });
+									for (var j=0; j < data[4].length; j++){
+										$inner_span.append(jQuery("<img>", { "src": "//img.onlinetour.co.kr/2012_imgtest/num" + data[4].charAt(j) + ".gif" }));
+									}
+									$inner_span.append(jQuery("<img>", { "src": "//img.onlinetour.co.kr/2012_imgtest/icon_percent.gif" }));
+									$inner_div.append($inner_span);
+									
+									$div.append($inner_div);
+									
+									var $inner_dl = jQuery("<dl>", { "class": "thum_text" });
+									var $dt = jQuery("<dt></dt>").html( jQuery("<a></a>", {"href": $dto.find( 'bannerLink' ).text() }).html( data[0] + "<br><b>" + data[1] + "</b>" ));
+									$inner_dl.append($dt);
+									var $cost_dd = jQuery("<dd></dd>", {"class": "cost_price"}).html(jQuery("<a></a>", {"href": $dto.find( 'bannerLink' ).text() }).html( "<span>원가 : </span>"+ data[2]) );
+									var $sale_dd = jQuery("<dd></dd>", {"class": "sale_price"}).html(jQuery("<a></a>", {"href": $dto.find( 'bannerLink' ).text() }).html( "<span>세일가 : </span>"+ data[3]) );
+									$inner_dl.append($cost_dd);
+									$inner_dl.append($sale_dd);
+									
+									$div.append($inner_dl);
+								} else {
+									var $p = jQuery("<p></p>");
+									var $a = jQuery("<a></a>", {
+										"href": $dto.find( 'link' ).text(),
+										"target": $dto.find( 'target' ).text()
+									});
+									var $img = jQuery("<img>", { "src": $dto.find( 'bannerContent' ).text(), "style" : "margin: -1px;" });
+									$div.append($p.html($a.html( $img )));
+									
+									$container.append($div);
+								}								
+							} );
+						}
+					} );
+				</script>
+				<script type="text/javascript">
+					function changeAirtelSpecialPrice( idx ) {
+						jQuery( '#airtel_special_price_container .tour_sale' ).hide();
+						jQuery( '#airtel_special_price_container #tour_sale_' + idx ).show();
+						jQuery( '#airtel_special_price_container li' ).each( function( i ) {
+							var c = 'b' + ( i + 1 );
+							jQuery( this ).addClass( ( idx == i ) ? c + '_on' : c );
+							jQuery( this ).removeClass( ( idx == i ) ? c : c + '_on' );
+						} );
+					}
+					try {
+						changeAirtelSpecialPrice( Math.floor( Math.random() * jQuery( '#airtel_special_price_container .tour_sale' ).length ) );
+						jQuery( '#airtel_special_price_container li' ).each( function( idx ) {
+							jQuery( this )
+								.css( 'cursor', 'pointer' )
+								.click( function() {
+									changeAirtelSpecialPrice( idx );
+								} )
+							;
+						} );
+					} catch( e ) {
+					}
+				</script>
+			</div>
+			<!--}} 자유배낭 특가-->
+
+			<!--해외자유배낭 {{-->
+			<div class="tour_center fl">
+				<div class="free_tit">
+					<div class="tit"><h3>자유여행</h3></div>
+					<div class="t1 cursor" id="f1" onclick="set_recommend('7', '10', '1');"><h3>동남아</h3></div>
+					<div class="t3 cursor" id="f3" onclick="set_recommend('7', '30', '1');"><h3>중국</h3></div>
+					<div class="t2 cursor" id="f2" onclick="set_recommend('7', '20', '1');"><h3>일본</h3></div>
+					<div class="t6 cursor" id="f6" onclick="set_recommend('7', '60', '1');"><h3>유럽</h3></div>
+					<div class="t4 cursor" id="f4" onclick="set_recommend('7', '40', '1');"><h3>괌/사이판</h3></div>
+					<div class="t5 cursor" id="f5" onclick="set_recommend('7', '50', '1');"><h3>남태평양</h3></div>
+					<div class="t7 cursor" id="f7" onclick="set_recommend('7', '70', '1');"><h3>미주</h3></div>
+				</div>
+				<br class="clr_ns"/>
+
+				<!--상품 {{-->
+				<div id="MainFreeArea">
+
+				</div>
+				<!--}} 상품-->
+				<script type="text/javascript">
+					// 초기 로딩
+					var rand1 = (Math.floor(Math.random() * 7) + 1).toString();
+					var rand2 = (Math.floor(Math.random() * 7) + 1).toString();
+					set_recommend('1', rand1 + '0', '1');
+					set_recommend('7', rand2 + '0', '1');
+					function set_recommend(good_type_cd, area_cd, page) {
+						if (good_type_cd == '1') {
+							jQuery('.pack_tit div.cursor').each(function() {
+								for (var i=1;i<jQuery('.pack_tit div.cursor').length+1; i++) {
+									jQuery(this).removeClass('t' + i + '_on');
+								}
+							});
+							jQuery('#t' + area_cd.charAt(0)).addClass('t' + area_cd.charAt(0) + '_on');
+							jQuery('#MainPackArea').load( '/web/home/recommend?good_type_cd=' + good_type_cd + '&area_cd=' + area_cd + '&page=' + page );
+						} else {
+							jQuery('.free_tit div.cursor').each(function() {
+								for (var i=1;i<jQuery('.free_tit div.cursor').length+1; i++) {
+									jQuery(this).removeClass('t' + i + '_on');
+								}
+							});
+							jQuery('#f' + area_cd.charAt(0)).addClass('t' + area_cd.charAt(0) + '_on');
+							jQuery('#MainFreeArea').load( '/web/home/recommend?good_type_cd=' + good_type_cd + '&area_cd=' + area_cd + '&page=' + page );
+						}
+					}
+				</script>
+			</div>
+			<!--}} 해외자유배낭-->
+
+			<!-- 골프,허니문,국내 뉴스/이벤트 {{-->
+			<div class="tour_right fl">
+				<div class="content">
+					<dl class="domestic">
+						<dd class="d1_on cursor fl" id="d1" onclick="javascript:changeDomTab('1')"><h3>골프</h3></dd>
+						<dd class="d2 cursor fl" id="d2" onclick="javascript:changeDomTab('2')"><h3>국내</h3></dd>
+						<dd class="d3 cursor fl" id="d3" onclick="javascript:changeDomTab('3')"><h3>허니문</h3></dd>
+					</dl>
+					<br class="clr_ns"/>
+					<!-- 골프 -->
+					<div id="DivProductArea1" style="display:block;">
+						<ul></ul>
+					</div>
+					<!-- 허니문 -->
+					<div id="DivProductArea2" style="display:none;">
+						<ul></ul>
+					</div>
+					<!-- 국내 -->
+					<div id="DivProductArea3" style="display:none;">
+						<ul></ul>
+					</div>
+					<script type="text/javascript">
+						function set_news_event(xml, $container) {
+							jQuery( xml ).find( 'bannerDto' ).each( function( i ) {
+								var $dto = jQuery( this );
+								var $a = jQuery("<a></a>", {
+									"href": $dto.find( 'link' ).text(),
+									"target": $dto.find( 'target' ).text()
+								});
+								if ( i == 0 ) {
+									var $img = jQuery("<img>", { "src": $dto.find( 'bannerContent' ).text() });
+									$a.html( $img );
+									$container.append(jQuery("<div>", {"class": "tour_ban"}).append($a));
+								} else {
+									$a.html( $dto.find( 'bannerTitle' ).text() );
+									$container.append(jQuery("<li></li>").append($a));
+								}
+							} );
+						}
+						jQuery.ajax( {
+							headers: { 
+								'Accept': 'application/xml'
+							},
+							url: '/web/banner?positionCode=235',
+							dataType: 'xml',
+							success: function( xml ) {
+								set_news_event( xml, jQuery( '#DivProductArea1 ul' ) );
+							}
+						} );
+								
+						jQuery.ajax( {
+							headers: { 
+								'Accept': 'application/xml'
+							},
+							url: '/web/banner?positionCode=237',
+							dataType: 'xml',
+							success: function( xml ) {
+								set_news_event( xml, jQuery( '#DivProductArea2 ul' ) );
+							}
+						} );
+								
+						jQuery.ajax( {
+							headers: { 
+								'Accept': 'application/xml'
+							},
+							url: '/web/banner?positionCode=236',
+							dataType: 'xml',
+							success: function( xml ) {
+								set_news_event( xml, jQuery( '#DivProductArea3 ul' ) );
+							}
+						} );						
+					</script>
+				</div>
+			</div>
+			<!--}} 골프,허니문,국내 뉴스/이벤트-->
+		</div>
+		<br class="clr_ns"/>
+		<!--}} 4단-->
+	</div>
+	<!--}} 메인-->
+
+	<!--하단 {{-->
+	<div id="ot_bottom">
+		<div class="random_banner" id="random_banner">
+			<div class="prev">
+				<img src="//img.onlinetour.co.kr/icon/ico_btl.gif" alt="prev" />
+			</div>
+			<div class="next">
+				<img src="//img.onlinetour.co.kr/icon/ico_btr.gif" alt="next" />
+			</div>
+			<ul>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_22.gif" alt="한국능률협회 우수콜센터 수상" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_20.gif" alt="웹어워드코리아 우수상" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_18.gif" alt="대지털경영혁신대상 지식경제부 장관상" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_17.gif" alt="모범여성기업인 국무총리 표창" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_15.gif" alt="모범중소기업인 지식경제부 장관 표창" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_14.gif" alt="대한민국대표브랜드대상 대상수상" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_08.gif" alt="조선일보주최 브랜드대상 대상수상" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_09.gif" alt="기술보증기금 성공기업인상" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_10.gif" alt="한국일보주최 대표브랜드 대상수상" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_12.gif" alt="한국관광명가연구원 혁신관광서비스 브랜드" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_07.gif" alt="중소기업청 지정 벤처기업" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_06.gif" alt="기술혁신형 중소기업" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_05.gif" alt="서울경제신문 지정 우수벤처기업" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_04.gif" alt="일간스포츠 지정 우수벤처기업" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_03.gif" alt="IATA" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_02.gif" alt="서울보증보험 5억원 보증보험가입" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_01.gif" alt="소프트웨어 정품사용 모범기업" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_19.gif" alt="CHARTIS 개인정보보호배상 책임보험" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_21.gif" alt="일자리창출 우수기업" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_23.gif" alt="취업하고싶은기업" /></li>
+				<li><img src="//img.onlinetour.co.kr/main/footer/f_ptnr_24.gif" alt="대한상공회의소회장 표창" /></li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="/js/foot_banner.js"></script>
+		<div id="ot_footer">
+			<div id="ot_footer_logo">
+				<img src="//img.onlinetour.co.kr/main/footer/footer_logo1.gif" alt="onlinetour.co.kr" />
+			</div>
+			<ul id="ot_footer_link">
+				<li class="first_child"><a href="http://www.onlinetour.co.kr/web/company"><img src="//img.onlinetour.co.kr/main/footer/f_menu01.gif" alt="회사소개" /></a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/adver"><img src="//img.onlinetour.co.kr/main/footer/f_menu02.gif" alt="광고안내" /></a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/rules/overseas"><img src="//img.onlinetour.co.kr/main/footer/f_menu03.gif" alt="여행/서비스약관" /></a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/rules/insurance"><img src="//img.onlinetour.co.kr/main/footer/f_menu04.gif" alt="해외여행보험" /></a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/rules/privacy"><img src="//img.onlinetour.co.kr/main/footer/f_menu05.gif" alt="개인정보취급방침" /></a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/rules/disclaimer"><img src="//img.onlinetour.co.kr/main/footer/f_menu06.gif" alt="책임한계와 법적고지" /></a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/popup/spam" onclick="window.open( this.href, 'emailPop', 'width=550,height=237,resizable=yes' ); return false;"><img src="//img.onlinetour.co.kr/main/footer/f_menu07.gif" alt="이메일/고객정보추출거부정책" /></a></li>
+			</ul>
+			<address>
+				<img usemap="#bottomEmail" src="//img.onlinetour.co.kr/main/footer/copyright4.gif" />
+				<map id="bottomEmail" name="bottomEmail">
+					<area shape="rect" coords="499,0,558,16" href="#" target="_blank" onclick="window.open( 'http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=1108143912', 'communicationViewPopup', 'width=750,height=700' ); return false;" />
+					<area shape="rect" coords="253,60,373,70" href="mailto:hostmaster@onlinetour.co.kr" />
+				</map>
+				<span class="irt">
+					100-770 서울시 중구 남대문로2가 118번지 한진빌딩 9층 (주)온라인투어 대표이사 : 박혜원<br />
+					사업자등록 : 110-81-43912 일반여행업 신고번호 : 제796호 통신판매업 신고번호 : 제 중구-02407호<br />
+					Copyright Since 2000 Onlinetour Co.LTD. All Rights Reserved. hostmaster@onlinetour.co.kr
+				</span>
+			</address>
+			<p>(주)온라인투어 대표이사의 사전 서면 승인없이 사이트의 정보,컨텐츠,UI등을 전재, 전송, 스크래핑하는 행위는 목적여하를 불문하고 민형사상의 처벌대상이 됩니다.</p>
+			<div id="ot_footer_tel">
+				<img src="//img.onlinetour.co.kr/main/footer/f_tel2.gif" alt="" />
+				<div class="irt">
+					대표전화번호<br />
+					항공 : 02-3705-8282, FAX : 02-3705-8390, 호텔 : 02-3705-8290, FAX : 02-3705-8390
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--}} 하단-->
+	
+	<!--우측 날개배너 {{-->
+	<div id="ban_right">
+		<!--상단 배너 {{-->
+		<div class="banner_type10">
+			<div id="site_banner_1"></div>
+			<script type="text/javascript">
+				jQuery.ajax( {
+					headers: { 
+						'Accept': 'application/xml'
+					},
+					url: '/web/banner?positionCode=1',
+					dataType: 'xml',
+					success: function( xml ) {
+						var $container = jQuery( '#site_banner_1' );
+						var total_size = jQuery( xml ).find( 'bannerDto' ).length;
+						var random_idx = Math.floor(Math.random() * total_size);
+						var $dto = jQuery( xml ).find( 'bannerDto' ).eq(random_idx-1);
+						var $a = jQuery("<a></a>", {
+							"href": $dto.find( 'link' ).text(),
+							"target": $dto.find( 'target' ).text()
+						});							
+						var $img = jQuery("<img>", { "src": $dto.find( 'bannerContent' ).text() });
+						$a.html( $img );
+						$container.append($a);
+					}
+				} );
+			</script>
+		</div>
+		<!--}} 상단 배너-->
+		
+		<!--고객센터 {{-->
+		<div class="customer_center">
+			<div class="title"><img alt="고객센터" src="//img.onlinetour.co.kr/skin01/main/customer_title01.gif"> </div>
+			<ul>
+				<li class="first_child"><a href="http://www.onlinetour.co.kr/web/customercenter/faq">자주하는질문</a></li> 
+				<li><a href="http://www.onlinetour.co.kr/customercenter/ask_list.asp">묻고답하기</a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/customercenter/notice">공지사항</a></li>
+				<li><a href="http://www.onlinetour.co.kr/customercenter/my_travels.asp">나의여행기</a></li> 
+				<li><a href="http://www.onlinetour.co.kr/web/customercenter/bank">전화/입금</a></li>
+				<li><a href="http://www.onlinetour.co.kr/event/view.asp?idx=2563&amp;_c_=23557">할인쿠폰</a></li> 
+				<li><a href="http://www.onlinetour.co.kr/web/customercenter/card_guide">무이자할부</a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/customercenter/certificate">여행상품권</a></li>
+				<li><a href="http://www.onlinetour.co.kr/web/customercenter/immigration">여행정보센터</a></li>
+			</ul>
+		</div>
+		<!--}} 고객센터-->
+		
+		<!--중간 배너 {{-->
+		<div id="site_banner_2" style="margin-top: -20px;"></div>
+		<script type="text/javascript">
+			jQuery.ajax( {
+				headers: { 
+					'Accept': 'application/xml'
+				},
+				url: '/web/banner?positionCode=2',
+				dataType: 'xml',
+				success: function( xml ) {
+					var $container = jQuery( '#site_banner_2' );
+					var total_size = jQuery( xml ).find( 'bannerDto' ).length;
+					var random_idx = Math.floor(Math.random() * total_size);
+					var $dto = jQuery( xml ).find( 'bannerDto' ).eq(random_idx-1);
+					var $a = jQuery("<a></a>", {
+						"href": $dto.find( 'link' ).text(),
+						"target": $dto.find( 'target' ).text()
+					});							
+					var $img = jQuery("<img>", { "src": $dto.find( 'bannerContent' ).text() });
+					$a.html( $img );
+					$container.append($a);
+				}
+			} );
+		</script>
+		<!--}} 중간 배너-->
+
+		<!--하단 배너 {{-->
+		<div id="site_banner_3" style="margin-top: 7px;"></div>
+		<script type="text/javascript">
+			jQuery.ajax( {
+				headers: { 
+					'Accept': 'application/xml'
+				},
+				url: '/web/banner?positionCode=3',
+				dataType: 'xml',
+				success: function( xml ) {
+					var $container = jQuery( '#site_banner_3' );
+					var total_size = jQuery( xml ).find( 'bannerDto' ).length;
+					var random_idx = Math.floor(Math.random() * total_size);
+					var $dto = jQuery( xml ).find( 'bannerDto' ).eq(random_idx-1);
+					var $a = jQuery("<a></a>", {
+						"href": $dto.find( 'link' ).text(),
+						"target": $dto.find( 'target' ).text()
+					});							
+					var $img = jQuery("<img>", { "src": $dto.find( 'bannerContent' ).text() });
+					$a.html( $img );
+					$container.append($a);
+				}
+			} );
+		</script>
+		<!--}} 하단 배너-->
+
+		<div  style="margin-top: 5px;;display:none" id="todaygood">
+			<DIV id=goodshistory>
+				<DIV class="goodshistoryTop tc">
+					<DIV class=goodshistoryHead>
+						<H6>오늘본상품</H6>전체<EM id=goodshistoryTotal></EM>건
+					</DIV>
+					<DIV id=goodshistoryBody class=tc>
+		
+					</DIV>	
+					<DIV class=goodshistoryBottom></DIV>
+				</DIV>		
+			</DIV>
+		</div>
+
+		<script type="text/javascript">
+			  var cookiename = getCookie("TODAY_GOODS");
+	
+			  var strArray = cookiename.split("@&@");
+			  
+			  //alert(strArray[1]);
+			  
+			  if(cookiename.length > 0)
+			  {
+				 	 $("#todaygood").show();
+			  
+			  
+					  //alert(cookiename.replace("</a>:","</a>"));
+					  
+					 //alert(cookiename2);
+					 
+					 var goodhtmls;
+					 
+					 for(i=0;i<strArray.length;i++)
+					{
+						 if(i<1)
+						{
+							 goodhtmls = strArray[i];
+						}else{
+						 	goodhtmls = goodhtmls + strArray[i]; 
+						}
+					}
+					 
+					// alert(goodhtmls);
+					 	 
+					  $("#goodshistoryBody").html(goodhtmls);
+					  $("#goodshistoryTotal").html(strArray.length); 
+			  }
+			  
+			 function getCookie(name) {
+			     var cname = name + '=';
+			     var dc    = document.cookie;
+			     
+			     if (dc.length > 0 ) {
+			         begin = dc.indexOf(cname);
+			         if (begin != -1) {
+			             begin = begin + cname.length;
+			             end   = dc.indexOf(';', begin);
+
+			             if (end == -1) end = dc.length;
+			             return unescape(dc.substring(begin,end));
+			         }
+			     }
+			     return null;
+			 }
+				 
+	 </script>
+	 		
+		<!--SNS 버튼 {{-->
+		<ul class="sns_menu main_sns">
+			<li><a href="http://www.onlinetour.co.kr/web/banner/3675/move" target="_blank"><img alt="페이스북" src="//img.onlinetour.co.kr/search/new/btn/sns_facebook_icon2.gif"></a></li>
+			<li><a href="http://www.onlinetour.co.kr/web/banner/3676/move" target="_blank"><img alt="블로그" src="//img.onlinetour.co.kr/search/new/btn/sns_blog_icon2.gif"> </a></li>
+		</ul>
+		<!--}} SNS 버튼-->
+	</div>
+	<!--}} 우측 날개배너-->
+	
+	<div id="overlay_search" style="position: absolute; z-index: 10; display: none;">
+		<iframe id="search_iframe" src="about:blank" frameborder="0" scrolling="no" name="search_iframe" bgcolor="#ffffff" style="background-color: #ffffff;"></iframe>
+	</div>
+	<div id="onlinetour_overlay" class="hidden" style="display:none;z-index:1;"></div>
+	<iframe id="onlinetour_iframe" src="about:blank" width="0" height="0" frameborder="0" scrolling="no" bgcolor="#FFFFFF" style="position: absolute; display: none; z-index: 2; background-color: #ffffff;"></iframe>
+
+	<!-- 팝업 배너 {{-->
+	<script type="text/javascript">
+		jQuery( document ).ready( function() {
+			loadPopup( '151' );
+		} );
+	</script>
+	<!--}} 팝업 배너 -->
+
+	<!-- 통합검색 {{-->
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery(".goSearch").click(function() {
+				var keyword = encodeURIComponent( jQuery("input[name='keyword']").val() );
+				url = "/web/search?keyword=" + keyword
+				jQuery(location).attr("href", url);
+			});
+	
+			jQuery("input[name=keyword]").keyup(function(e) {
+				if (e.keyCode == 13) {
+					var keyword = encodeURIComponent( jQuery("input[name='keyword']").val() );
+					url = "/web/search?keyword=" + keyword
+					jQuery(location).attr("href", url);
+				}
+			});
+		});
+	</script>
+	<!--}} 통합검색 -->
+</div>
+
+<!--호텔 검색 로딩 {{-->
+<div id="bodyLoading" style="display:none ; background-color: white">
+	<table width="100%" height="100%" cellpadding="0" cellspacing="0" align="center" border="0">
+	<tr>
+	<td valign="middle" align="center">
+		<div id="loading_search_area" style="position: absolute; top:500px; left: 0; width: 100%; margin-top: -250px; text-align: center;">
+			<img src="//img.onlinetour.co.kr/loading_b.gif" alt="" />
+		</div>
+	</td>
+	</tr>
+	</table>
+</div>
+<!--}} 호텔 검색 로딩-->
+
+<!-- acecounter -->
+<script type="text/javascript" src="//static.onlinetour.co.kr/ri/acecounter/20130312/acecounter_0_site_script.js"></script>
+<script type="text/javascript">
+	_id = '';
+	_gd = '';
+	_ct = '';
+	_pd = '';
+	_amt = '';
+</script>
+<script type="text/javascript" src="//static.onlinetour.co.kr/ri/acecounter/20130312/acecounter_1_script.js"></script>
+<!-- end acecounter -->
+
+<!-- googleAnalytics -->
+<script type="text/javascript" src="//static.onlinetour.co.kr/ri/googleAnalytics/20130312/googleAnalytics.js"></script>
+<!-- end googleAnalytics -->
+
+</body>
+</html>

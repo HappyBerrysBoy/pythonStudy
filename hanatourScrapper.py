@@ -5,154 +5,75 @@ Created on Wed Jun 04 00:08:33 2014
 @author: KSC
 """
 
-import requests
-import xmltodict
 import time, datetime
-from time import localtime, strftime, sleep
+from time import localtime, strftime
 from datetime import timedelta
 import urllib2
-import re
 import cx_Oracle
 
+#fnSetMstList({"head":{"tot_cnt":"17","pub_area_code":"A","pub_country":"TH","pub_city":"","dept_code":"","DY_LIST":"","page_num":"1","page_len":"20","flatfile_yn":"N"}, 
+#"cont":[
+#{"sort_no":"0","pkg_mst_code":"AAP700","sMonth":"201406","min_amt":"199000","max_amt":"1269000","mst_name":"방콕/파타야 4,5,6일[부산출발] 특가 상품",
+#"t_content":"특가 이벤트 상품으로 저렴한 금액으로 즐기는 여행입니다.","img_seq":"P000294303","dy_list":"1,2,3,4,5,6,7","content":"특가 이벤트 상품으로 저렴한 금액으로 즐기는 여행입니다.","tour_day":"5~6",
+#"start_dy":"매일","orderSeq":""},
 
-#classes..
-class subMain():
+class clsPackage():
     def __init__(self):
-        self.thing = 0
+        self.tot_cnt = 0
+        self.pub_area_code = ''
+        self.pub_country = ''
+        self.pub_city = ''
+        self.dept_code = ''
+        self.DY_LIST = ''
+        self.page_num = ''
+        self.page_len = ''
+        self.flatfile_yn = ''
+        self.productList = list()
     
-    def getParam(self, line):
-        #dicts = dict()
-        self.startLocation = line[line.find('startLocation=') + len('startLocation='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        #print(line)
-        self.id = line[line.find('id=') + len('id='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        #print(line)
-        self.type = line[line.find('type=') + len('type='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        #print(line)
-        self.MLoc = line[line.find('MLoc=') + len('MLoc='):line.find(' ') - 1]
-        return self
-    
-    def printToString(self):
-        print('SubMain ==> startlocation:' + self.startLocation + ', id:' + self.id + ', type:' + self.type + ', Mloc:' + self.MLoc)
+    def toString(self):
+        print 'tot_cnt:'+self.tot_cnt+',pub_area_code:'+self.pub_area_code+',pub_country:'+self.pub_country+',pub_city:'+self.pub_city+',dept_code:'+self.dept_code+',DY_LIST:'+self.DY_LIST+',page_num:'+self.page_num+',page_len:'+self.page_len+',flatfile_yn:'+self.flatfile_yn
         
-    def makeURL(self):
-        return 'http://www.modetour.com/Package/subMain2.aspx?startLocation=' + self.startLocation + '&id=' + self.id + '&type=' + self.type + '&MLoc=' + self.MLoc
-
-class subList():
+class clsProduct():
     def __init__(self):
-        self.thing = 0
-    
-    def getParam(self, line):
-        self.startLocation = line[line.find('startLocation=') + len('startLocation='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        self.location = line[line.find('location=') + len('location='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        self.location1 = line[line.find('location1=') + len('location1='):line.find('amp;') - 1]
-        line = line[line.find('amp;') + len('amp;'):]
-        if line.find('Theme=') > -1:
-            self.Theme = line[line.find('Theme=') + len('Theme='):line.find('amp;') - 1]
-            line = line[line.find('amp;') + len('amp;'):]
-        else:
-            self.Theme = ''
-
-        if line.find('Theme1=') > -1:
-            self.Theme1 = line[line.find('Theme1=') + len('Theme1='):line.find('amp;') - 1]
-            line = line[line.find('amp;') + len('amp;'):]
-        else:
-            self.Theme1 = ''
-        self.MLoc = line[line.find('MLoc=') + len('MLoc='):line.find(' ') - 1]
-        return self
-    
-    def printToString(self):
-        print('SubList ==> startlocation:' + self.startLocation + ', location:' + self.location + ', location1:' + self.location1 + ', Theme:' + self.Theme + ', Theme1:' + self.Theme1 + ', Mloc:' + self.MLoc)
+        self.sort_no = ''
+        self.pkg_mst_code = ''
+        self.sMonth = ''
+        self.min_amt = ''
+        self.max_amt = ''
+        self.mst_name = ''
+        self.t_content = ''
+        self.img_seq = ''
+        self.dy_list = ''
+        self.content = ''
+        self.tour_day = ''
+        self.start_dy = ''
+        self.orderSeq = ''
         
-    def makeURL(self):
-        return 'http://www.modetour.com/Package/List.aspx?startLocation=' + self.startLocation + '&location=' + self.location + '&location1=' + self.location1 + '&Theme=' + self.Theme + '&Theme1=' + self.Theme1 + '&MLoc=' + self.MLoc
+    def toString(self):
+        print 'sort_no:'+self.sort_no+',pkg_mst_code:'+self.pkg_mst_code+',sMonth:'+self.sMonth+',min_amt:'+self.min_amt+',max_amt:'+self.max_amt+',mst_name:'+self.mst_name+',t_content:'+self.t_content+',img_seq:'+self.img_seq+',dy_list:'+self.dy_list+',content:'+self.content+',tour_day:'+self.tour_day+',start_dy:'+self.start_dy+',orderSeq:'+self.orderSeq
 
+class clsDetailProduct():
+    def __init__(self):
+        self.pcode = ''
+        self.sday = ''
+        self.stime = ''
+        self.aday = ''
+        self.atime = ''
+        self.acode = ''
+        self.aline = ''
+        self.tday = ''
+        self.grade = ''
+        self.gname = ''
+        self.pname = ''
+        self.amt = ''
+        self.lminute = ''
 
-print "Scraping Start : %s" % time.ctime()
-sleepTime = 0.5
+    def toString(self):
+        print 'pcode:'+self.pcode+',sday:'+self.sday+',stime:'+self.stime+',aday:'+self.aday+',atime:'+self.atime+',acode:'+self.acode+',aline:'+self.aline+',tday:'+self.tday+',grade:'+self.grade+',gname:'+self.gname+',pname:'+self.pname+',amt:'+self.amt+',lminute:'+self.lminute
 
-mainpage = ''
-mainpage = requests.get('http://www.modetour.com/').text
+def valueParcing(html, idx1, idx2):
+    return html[html.find(idx1) + len(idx1):html.find(idx2)]
 
-overseas = mainpage[mainpage.find('<div class="overseas">'):mainpage.find('<div class="domestic">')]
-domestics = mainpage[mainpage.find('<div class="domestic">'):mainpage.find('<div class="total_categories">')]
-
-overseasFile = open('overseas.txt', 'w')
-domesticsFile = open('domestics.txt', 'w')
-
-print >> overseasFile, overseas
-print >> domesticsFile, domestics
-
-overseasFile.close()
-domesticsFile.close()
-#print(overseas)
-#print('=========================================================================================================================================')
-#print(domestics)
-
-openOverseas = open('overseas.txt')
-openDomestics = open('domestics.txt')
-
-#전체 List 말고 대표 메뉴만 가도 다 나오는듯...
-overseasMainUrls = list()
-overseasMainUrlsFile = open('mainUrls.txt', 'w')
-for each_line in openOverseas:
-    if each_line.strip()[:3] == '<li':
-        if each_line.find('subMain') > -1 and each_line.find('span') > -1:
-        #print(each_line.strip())
-            submain = subMain()
-            result = submain.getParam(each_line)
-            #submain.printToString()
-            #print(submain.makeURL())
-            print >> overseasMainUrlsFile, submain.makeURL()
-            overseasMainUrls.append(submain.makeURL())
-        """elif each_line.find('List') > -1:
-            sublist = subList()
-            result = sublist.getParam(each_line)
-            #sublist.printToString()
-            #print(sublist.makeURL())
-            print >> mainUrls, sublist.makeURL()
-            overseasMainUrls.append(submain.makeURL())"""
-overseasMainUrlsFile.close()
-openOverseas.close()
-openDomestics.close()
-
-menuDistrict = overseasMainUrls.pop()
-menuPremium = overseasMainUrls.pop()
-menuCruise = overseasMainUrls.pop()
-menuGolf = overseasMainUrls.pop()
-menuHoney = overseasMainUrls.pop()
-menuFree= overseasMainUrls.pop()
-menuPackage = overseasMainUrls.pop()
-
-travle_kind = 'package'
-
-try:
-    packageResponse = requests.get(menuPackage).text
-    packageResponse = packageResponse[packageResponse.find('<div class="submain">'):packageResponse.find('<div class="total_categories">')]
-    menuPackageFile = open('packageUrls.txt', 'w')
-    print >> menuPackageFile, packageResponse
-    menuPackageFile.close()
-except:
-    print('Error Second Page Loading...')
-
-#print(packageResponse)
-
-subUrls = open('modePackageUrls.txt', 'w')
-openPackageFile = open('packageurls.txt')
-for each_line in openPackageFile:
-    if each_line.strip()[:3] == '<dt' or each_line.strip()[:3] == '<dd':
-        #print(each_line)
-        sublist = subList()
-        result = sublist.getParam(each_line)
-        #print(sublist.makeURL())
-        #print >> subUrls, each_line
-        print >> subUrls, sublist.makeURL()
-subUrls.close()
-openPackageFile.close()
 
 # 시간 변수들..
 today = datetime.date.today()
@@ -162,255 +83,212 @@ time = time.localtime()
 fromDate = strftime("%Y", time) + strftime("%m", time) + strftime("%d", time) + strftime("%H", time) + strftime("%M", time)
 toDate = strftime("%Y", nextTime) + strftime("%m", nextTime) + strftime("%d", nextTime) + strftime("%H", nextTime) + strftime("%M", nextTime)
 thisMonth = strftime("%Y", time) + strftime("%m", time)
-    
 
-idx = 0
-normalCnt = 0
-parcingErr = 0
-parcingErr2 = 0
-urlErr = 0
-productList = list()
-productList.append('START')
-subUrls = open('modePackageUrls.txt')
-productListFile = open('modeProductList.txt', 'w')
-urlErrorFile = open('urlErrorFile.txt', 'w')
-parcingErrorFile = open('parcingErrorFile.txt', 'w')
-parcingErrorFile2 = open('parcingErrorFile2.txt', 'w')
+mode = 'P' # w:honeymoon, p:packages, g:golf, c:cruise
+packagesUrl = 'http://www.hanatour.com/asp/booking/oversea/oversea-main.asp?hanacode=overseas_M_bi'
+honeymoonUrl = 'http://www.hanatour.com/asp/booking/honeymoon/hr-main.asp?hanacode=main_q_pack_honey'
+golfUrl = 'http://www.hanatour.com/asp/booking/golf/golf-main.asp?hanacode=main_q_pack_golf'
+cruiseUrl = 'http://www.hanatour.com/asp/booking/cruise/cruise-main.asp?hanacode=main_q_pack_cruise'
 
-for each_line in subUrls:
-    anCode = each_line[each_line.find('location=') + len('location=LOC'):each_line.find('&location1=')]
-    themeCode = each_line[each_line.find('Theme=') + len('Theme='):each_line.find('&Theme1=')]
-    #print('LOC : ' + anCode + ', Theme : ' + themeCode + ', Fromdate : ' + fromDate + ', ToDate : ' + toDate + ', thisMonth : ' + thisMonth)
-    productUrl = 'http://www.modetour.com/XML/Package/Get_ProductList.aspx?AN=' + anCode + '&Ct=&DateTerm=' + fromDate + '%5E' + toDate + '&PL=1000&Pd=&Pn=1&S=' + thisMonth + '&TN=' + themeCode
-    
-    try:
-        print('Product URL : ' + productUrl)
-        productListOpener = urllib2.urlopen(productUrl)
-        productListGet = productListOpener.read()
-        try:
-            pcodeList = re.findall(r'\bPcode="[\w]*', productListGet)
-            
-            for pcode in pcodeList:
-                detailProduct = pcode.split('"')[1]
-                type(detailProduct)
-                #print('detailProduct : ' + detailProduct)
-                
-                if productList.count(detailProduct) == 0:
-                    productList.append(detailProduct)
-                    #print('productList : ' + productList)
-                    
-                    tmpUrl = 'http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=' + strftime("%m", time) + '&Pcode=' + detailProduct + '&Pd=&Type=01&term=' + fromDate + '%5E' + toDate
-                    print('Detail Product URL : ' + tmpUrl)
-                    
-                    #import cx_Oracle
-                    #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-                    #>>> cursor = con.cursor()
-                    #>>> cursor.execute("select * from tab")
-                    #<cx_Oracle.Cursor on <cx_Oracle.Connection to bigtour@hnctech73.iptime.org:1521/ora11g>>
-                    #>>> print cursor.fetchall()
-                    #[('T_PRD', 'TABLE', None), ('T_PRD_DTL', 'TABLE', None)]
-                    #>>> cursor.close()
-                    #>>> con.close() 
-                    #insert into t_prd values (product_seq.nextval,'' ,'4','【론섬+씨푸드+시암니라밋쇼】푸켓 5일 《카론 초특급》힐튼아카디아 디럭스가든룸','OZ5H','',to_date('20140607'),'5','','THE88','','',549000,'',to_date('20140611'),'','green')
-                    
-                    try:                
-                        #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-    
-                        detailUrl = requests.get(tmpUrl).text
-                        tree = xmltodict.parse(detailUrl)
-                        for t in tree['ModeSangPum']['SangList']:
-                            tag_div = ''
-                            reg_div = anCode
-                            prd_nm = t['SName']['#text']
-                            air_cd = t['SAirCode']
-                            st_city = ''
-                            st_dt = t['SPriceDay']['#text']
-                            #st_time = t['SstartTime']
-                            st_time = ''
-                            arr_day = t['SArrivalDay']['#text']
-                            #arr_time = t['SArrivalTime']
-                            arr_time = ''
-                            tr_term = t['SDay']
-                            tr_div = themeCode
-                            sel_dt = ''
-                            dmst_div = travle_kind
-                            prd_fee = t['SPrice']
-                            prd_status = t['SDetailState']['#text']
-                            prd_url = ''
-                            
-                            query = "insert into product_test values (product_seq.nextval, '" + tag_div + "','" + reg_div + "','" + prd_nm + "','" + air_cd + "','" + st_city
-                            query += "',to_date('" + st_dt + "'),'" + tr_term + "','" + tr_div + "','" + dmst_div + "','" + sel_dt + "','" + st_time + "'," + prd_fee + ",'" + prd_url
-                            query += "',to_date('" + arr_day + "'),'" + arr_time + "','" + prd_status + "')"
-                            
-                            print >> productListFile, query
-                            #print(query)
-                            #DB에 입력하는 쿼리..
-                            #cursor = con.cursor()
-                            #cursor.execute(query)
-                            #con.commit()
-                            #print(t['SName']['#text'])
-                            #print(t['SNight'])
-                            #print(t['SDay'])
-                            #print(t['SPrice'])
-                            #print(t['SAirCode'])
-                            #print(t['SAirName'])
-                            #print(t['SPriceDay']['#text'])
-                            #print(t['SArrivalDay']['#text'])
-                            #print(t['SPriceNum']['#text'])
-                            #print(t['SMeet'])
-                            #print(t['SstartAir'])
-                            #print(t['SstartTime'])
-                            #print(t['SArrivalTime'])
-                            #print(t['SDetailState']['#text'])
-                    except:
-                        parcingErr2 += 1
-                        print >> parcingErrorFile2, 'Pacing Error Url : ' + tmpUrl
-                        print >> parcingErrorFile2, detailUrl
-                        print >> parcingErrorFile2, '================================================================================='
-                        pass
-                    #finally:
-                        #cursor.close()
-                        #con.close()
-                    normalCnt += 1
-                
-                break
-        except:
-            print >> parcingErrorFile, pcode
-            print >> parcingErrorFile, '================================================================================='
-            parcingErr += 1
-            pass
-        #print(productListXml['ModeTour']['Product'][0]['@Pcode'])
-    except urllib2.URLError as err:
-        #print "URLError({0}): {1}".format(err.errno, err.strerror)
-        print >> urlErrorFile, productUrl
-        print >> urlErrorFile, '================================================================================='
-        urlErr += 1
-        pass
-    finally:
-        productListOpener.close()
-        
-    sleep(sleepTime)
-    break
+packagesUrlHtml = urllib2.urlopen(packagesUrl).read()
+packagesUrlList = packagesUrlHtml[packagesUrlHtml.find('</form><span class="free_go">'):packagesUrlHtml.find('</dl></div></div>')]
 
-subUrls.close()
-productListFile.close()
-urlErrorFile.close()
-parcingErrorFile.close()
-parcingErrorFile2.close()
+packagesUrlList = packagesUrlList.replace('http://', '\r\nhttp://')
+packagesUrlFile = open('packagesUrlFile.txt', 'w')
+print >> packagesUrlFile, packagesUrlList
+packagesUrlFile.close()
 
-print("==========Product List==========")
-print(productList)
-print('Normal Process: ' + str(normalCnt) + ', Parcing Error: ' + str(parcingErr) + ', Parcing Error2 : ' + str(parcingErr2) + ', URL Error: ' + str(urlErr))
-print "End : %s" % datetime.date.today()
-"""
-
-#aa = requests.get("http://www.modetour.com/Package/List.aspx?startLocation=ICN&location=LOC4&location1=LOC4^LOC3&Theme=THE88&Theme1=THE88&MLoc=01")
-#http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=06&Pcode=ATE101&Pd=&Type=01&term=201406060000%5E201506052359
-#http://www.modetour.com/XML/Package/Get_ProductList.aspx?AN=4&Ct=&DateTerm=201406052346%5E201506042359&PL=1000&Pd=&Pn=1&S=201406&TN=THE88 ==> AN 값이 뭐지?? 전체보기.. PL 값을 최대로... Pn은 페이지 번호.. 1로 설정
-#====> AN 값은... location 값을 쓰면 됨...(LOC 빼고..)
-
-idx = 0
-normalCnt = 0
-parcingErr = 0
-urlErr = 0
-productSet = set()
-try:
-    productListFile = open('modeProductList.txt')
-    for each_line in productListFile:
-        print(str(idx) + '++++++++++++++++++++++++++++')
-        idx += 1
-        try:
-            fileName = 'ProductCode' + each_line[each_line.find('AN=') + len('AN='):each_line.find('&Ct=')] + '.txt'
-            tmpFile = open(fileName, 'w')
-            
-            print('URL : ' + each_line)
-            productListOpener = urllib2.urlopen(each_line)
-            productListGet = productListOpener.read()#requests.get(each_line).text
-            #productListGet = requests.get(each_line).text
+exceptFile = open('hanatourException.txt', 'w')
+packageRealUrlList = open('packageRealUrlFile.txt', 'w')
+packagesUrlList = open('packagesUrlFile.txt')
+currCountry = ''
+for packageUrl in packagesUrlList:
+    #print packageUrl
+    if packageUrl.find('/productPackage/pk-') > -1 and packageUrl.find('etc_code=' + mode) > -1:
+        #print 'original : ' + packageUrl
+        if packageUrl.find('target="_self') > -1 and mode == 'P':
+            currCountry = packageUrl.split('>')[1].split('<')[0]
+            print 'currcountry : ' + currCountry
+        else:
+            #print packageUrl
+            jsonUrl = ''
+            if mode == 'P':
+                jsonUrl = packageUrl.split("'")[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
+            else:
+                jsonUrl = packageUrl.split('"')[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
+            print jsonUrl
+            print >> packageRealUrlList, jsonUrl
+            #http://www.hanatour.com/asp/booking/productpackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=HKT&etc_code=W&hanacode=honey_GNB_HKT
             try:
-                pcodeList = re.findall(r'\bPcode="[\w]*', productListGet)
-                print('list length : ' + str(len(pcodeList)))
-                for pcode in pcodeList:
-                    #print('PCode : ' + pcode)
-                    print >> tmpFile, pcode.split('"')[1]
-                    productSet.add(pcode.split('"')[1])
-                    normalCnt += 1
+                packageClass = clsPackage()
+                print >> exceptFile, jsonUrl
+                html = urllib2.urlopen(jsonUrl).read()
+                packageClass.tot_cnt = valueParcing(html, 'tot_cnt":"', '","pub')
+                packageClass.pub_area_code = valueParcing(html, 'pub_area_code":"', '","pub_country')
+                packageClass.pub_country = valueParcing(html, 'pub_country":"', '","pub_city')
+                packageClass.pub_city = valueParcing(html, 'pub_city":"', '","dept_code')
+                packageClass.dept_code = valueParcing(html, 'dept_code":"', '","DY_LIST')
+                packageClass.DY_LIST = valueParcing(html, 'DY_LIST":"', '","page_num')
+                packageClass.page_num = valueParcing(html, 'page_num":"', '","page_len')
+                packageClass.page_len = valueParcing(html, 'page_len":"', '","flatfile_yn')
+                packageClass.flatfile_yn = valueParcing(html, 'flatfile_yn":"', '"}, "cont"')
+                #packageClass.toString()
+                contents = html[html.find('[{"sort_no":') + 1:html.find('] })')].replace('{', '\r\n{')
+                contentsFile = open('contentsFile.txt', 'w')
+                print >> contentsFile, contents
+                contentsFile.close()
+                contentsList = open('contentsFile.txt')
+                
+                saveFile = open('hanatourProductList.txt', 'w')                
+                for product in contentsList:
+                    #print product
+                    if len(product.strip()) < 1:
+                        continue
+                    productClass = clsProduct()
+                    productClass.sort_no = valueParcing(product, 'sort_no":"', '","pkg_mst_code')
+                    productClass.pkg_mst_code = valueParcing(product, 'pkg_mst_code":"', '","sMonth')
+                    productClass.sMonth = valueParcing(product, 'sMonth":"', '","min_amt')
+                    productClass.min_amt = valueParcing(product, 'min_amt":"', '","max_amt')
+                    productClass.max_amt = valueParcing(product, 'max_amt":"', '","mst_name')
+                    productClass.mst_name = valueParcing(product, 'mst_name":"', '","t_content')
+                    productClass.t_content = valueParcing(product, 't_content":"', '","img_seq')
+                    productClass.img_seq = valueParcing(product, 'img_seq":"', '","dy_list')
+                    productClass.dy_list = valueParcing(product, 'dy_list":"', '","content')
+                    productClass.content = valueParcing(product, 'content":"', '","tour_day')
+                    productClass.tour_day = valueParcing(product, 'tour_day":"', '","start_dy')
+                    productClass.start_dy = valueParcing(product, 'start_dy":"', '","orderSeq')
+                    productClass.orderSeq = valueParcing(product, 'orderSeq":"', '"}')
+                    #productClass.toString()
+                    cityCode = jsonUrl[jsonUrl.find('&hanacode=') + len('&hanacode='):]
+                    detailProductUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-11001-list.asp?'
+                    detailProductUrl += 'area=' + packageClass.pub_area_code + '&pub_country=' +packageClass.pub_country+ '&pub_city=' + packageClass.pub_city
+                    detailProductUrl += '&tour_scheduled_year='+strftime("%Y", time)+'&tour_scheduled_month='+strftime("%m", time)+'&tour_scheduled_day=&pkg_code=&tour_old_year='+strftime("%Y", time)
+                    detailProductUrl += '&tour_old_month='+strftime("%m", time)+'&pkg_mst_code='+productClass.pkg_mst_code
+                    detailProductUrl += '&tour_scheduled_dt='+strftime("%Y", time)+'-'+strftime("%m", time)+'&etc_code=P&hanacode='+ cityCode
+                    print 'last url.....: ' + detailProductUrl
+                    
+                    print >> exceptFile, detailProductUrl
+                    detailProducthtml = urllib2.urlopen(detailProductUrl).read()
+                    
+                    #cont":[{"pcode":"PPP411140612KE5","sdate":"06/12 (목) 20:50","adate":"06/16 (월) 08:05","acode":"KE","aline":"대한항공","tday":"5","grade":"12","gname":"하나팩클래식","pname":"팔라우 5일[Luxury]팔라우퍼시픽리조트[용궁+유네스코+젤리피쉬]","amt":"1999000","lminute":"2"},                    
+                    
+                    if detailProducthtml.find('[{"pcode"') < 0:
+                        continue
+                    temp = detailProducthtml[detailProducthtml.find('[{"pcode"') + 1:detailProducthtml.find('] })')].replace('{', '\r\n{')
+                    detailProductFile = open('detailProductFile.txt', 'w')
+                    print >> detailProductFile, temp
+                    detailProductFile.close()
+                    
+                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")                    
+                    detailProductList = open('detailProductFile.txt')
+                    #idx = 1;
+                    try:
+                        
+                        for detailProduct in detailProductList:
+                            #print 'detail Product : ' + detailProduct
+                            if len(detailProduct.strip()) < 1:
+                                continue
+                            detailClass = clsDetailProduct()
+                            detailClass.pcode = valueParcing(detailProduct, 'pcode":"', '","sdate')
+                            sDate = valueParcing(detailProduct, 'sdate":"', '","adate')
+                            aDate = valueParcing(detailProduct, 'adate":"', '","acode')
+                            detailClass.sday = strftime("%Y", time) + '/' + sDate.split('(')[0].strip()
+                            detailClass.stime = sDate.split(')')[1].strip()
+                            detailClass.aday = strftime("%Y", time) + '/' + aDate.split('(')[0].strip()
+                            detailClass.atime = aDate.split(')')[1].strip()
+                            detailClass.acode = valueParcing(detailProduct, 'acode":"', '","aline')
+                            detailClass.aline = valueParcing(detailProduct, 'aline":"', '","tday')
+                            detailClass.tday = valueParcing(detailProduct, 'tday":"', '","grade')
+                            detailClass.grade = valueParcing(detailProduct, 'grade":"', '","gname')
+                            detailClass.gname = valueParcing(detailProduct, 'gname":"', '","pname').decode('utf-8')
+                            detailClass.pname = valueParcing(detailProduct, 'pname":"', '","amt').decode('utf-8')
+                            detailClass.amt = valueParcing(detailProduct, 'amt":"', '","lminute')
+                            detailClass.lminute = valueParcing(detailProduct, 'lminute":"', '"}')
+                            
+                            lastUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-12000.asp?pkg_code=' + detailClass.pcode
+                            #detailClass.toString()
+                            #print idx
+                            #idx += 1
+                            #query = "insert into product_test values(product_seq.nextval,'hanatour','"
+                            #query += cityCode + "','" + detailClass.pname + "','" + 
+                            
+                           # query = "insert into product_test values (product_seq.nextval, '" + tag_div + "','" + reg_div + "','" + prd_nm + "','" + air_cd + "','" + st_city
+                            #query += "',to_date('" + st_dt + "'),'" + tr_term + "','" + tr_div + "','" + dmst_div + "','" + sel_dt + "','" + st_time + "'," + prd_fee + ",'" + prd_url
+                            #query += "',to_date('" + arr_day + "'),'" + arr_time + "','" + prd_status + "')"                        
+                            
+                            query = "insert into product_test values (product_seq.nextval, 'hanatour','" + cityCode[len(cityCode)-3:] + "','" + detailClass.pname + "','ICN',"
+                            query += "to_date('" + detailClass.sday + "'),'" + detailClass.tday + "','package','',to_char(sysdate, 'yyyymmdd'),''," + detailClass.amt + ",'" + lastUrl
+                            query += "',to_date('" + detailClass.aday + "'),'','" + detailClass.lminute + "','" + detailClass.acode +"')"
+                            
+                            #print >> saveFile, query
+                            cursor = con.cursor()
+                            cursor.execute(query)
+                            con.commit()
+                            #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                        #>>> cursor = con.cursor()
+                        #>>> cursor.execute("select * from tab")
+                        #<cx_Oracle.Cursor on <cx_Oracle.Connection to bigtour@hnctech73.iptime.org:1521/ora11g>>
+                        #>>> print cursor.fetchall()
+                        #[('T_PRD', 'TABLE', None), ('T_PRD_DTL', 'TABLE', None)]
+                        #>>> cursor.close()
+                        #>>> con.close() 
+                    except:
+                        print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
+                        pass
+                    finally:
+                        detailProductList.close()
+                        con.close() 
+                    
+                contentsList.close()
+                saveFile.close()
             except:
-                print('error....')
-                print(pcode)
-                parcingErr += 1
+                print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
                 pass
-            #print(productListXml['ModeTour']['Product'][0]['@Pcode'])
-        except urllib2.URLError as err:
-            print "URLError({0}): {1}".format(err.errno, err.strerror)
-            urlErr += 1
-            pass
-        finally:
-            tmpFile.close()
-            productListOpener.close()
             
-        print("Set length : " + str(len(productSet)))
-        sleep(sleepTime)
-        break
-except urllib2.URLError as err:
-    print "URLError22({0}): {1}".format(err.errno, err.strerror)
-finally:
-    productListFile.close()
-
-print('Normal Process: ' + str(normalCnt) + ', Parcing Error: ' + str(parcingErr) + ', URL Error: ' + str(urlErr))
-print(productSet)
-#http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=06&Pcode=ATE101&Pd=&Type=01&term=201406060000%5E201506052359
-#productUrl = 'http://www.modetour.com/XML/Package/Get_ProductList.aspx?AN=' + anCode + '&Ct=&DateTerm=' + fromDate + '%5E' + toDate + '&PL=1000&Pd=&Pn=1&S=' + thisMonth + '&TN=' + themeCode
-normalCnt = 0
-parcingErr = 0
-urlErr = 0
-# Oracle Interface...
-#import cx_Oracle
-#>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-#>>> cursor = con.cursor()
-#>>> cursor.execute("select * from tab")
-#<cx_Oracle.Cursor on <cx_Oracle.Connection to bigtour@hnctech73.iptime.org:1521/ora11g>>
-#>>> print cursor.fetchall()
-#[('T_PRD', 'TABLE', None), ('T_PRD_DTL', 'TABLE', None)]
-#>>> cursor.close()
-#>>> con.close()
-print('========================== Inquiry... Detail Product List ===================================')
-try:
-    for detailProduct in productSet:
-        tmpUrl = 'http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=' + strftime("%m", time) + '&Pcode=' + detailProduct + '&Pd=&Type=01&term=' + fromDate + '%5E' + toDate
-        print(tmpUrl)
+            #break
         
-        try:
-            tree = xmltodict.parse(requests.get(tmpUrl).text)
-            for t in tree['ModeSangPum']['SangList']:
-                print('=======================================================')        
-                print(t['SName']['#text'])
-                print(t['SNight'])
-                print(t['SDay'])
-                print(t['SPrice'])
-                print(t['SAirCode'])
-                print(t['SAirName'])
-                print(t['SPriceDay']['#text'])
-                print(t['SArrivalDay']['#text'])
-                print(t['SPriceNum']['#text'])
-                print(t['SMeet'])
-                print(t['SstartAir'])
-                print(t['SstartTime'])
-                print(t['SDetailState']['#text'])
-            
-            normalCnt += 1
-        except:
-            parcingErr += 1
-except:
-    urlErr += 1
+packagesUrlList.close()
+packageRealUrlList.close()
+exceptFile.close()
 
-print('Normal Process: ' + str(normalCnt) + ', Parcing Error: ' + str(parcingErr) + ', URL Error: ' + str(urlErr))
+#productPackage/pk- 값이 존재하고... etc_code=P 인것..이 패키지
+#pkg_mst_code 값이 있는 경우는.. 바로 세부조회 내용임...(날짜 선택하는..) 이런 경우도 있김 있음..
+#etc_code=W/P/A/B/K/Y/J/C  'W' : honeymoon, 'A': free, 'P' : package, 'B' : AirTel, 'K' : Tracking, 'Y' : Leports, 'J' : 성지순례, 'C' : Cruise
+#</form><span class="free_go">
+#</dl></div></div>
 """
-""" State 색별 상태..
-red : 출발확정(최소 출발인원 이상 예약이 되어있는 상품으로서 예약과 동시에 출발이 가능합니다. 단, 예약자의 일부가 취소되어 최소 출발인원에 미치지 못할 경우, 행사가 진행되지 못할 수도 있습니다.)
-blue : 예약가능(여유 좌석 내에서 예약이 가능하지만, 단체의 예약인원이 최소 출발인원에 미달하여 출발 여부는 미정인 상태입니다. 최소 출발인원 이상 예약될 경우 출발가능으로 변경됩니다.)
-green : 대기예약(여유 죄석이 없거나 출발이 임박하여 예약가능 시간이 지나 담당자와의 확인이 필요한 상황입니다.)
-기타색.. : 예약마감(판매가 종료된 상품입니다. 다른 상품이나 다른 날짜를 이용해 주시기 바랍니다)
-"""
-
-
+http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?
+callback=jQuery18307540583240417797_1402302755082
+&area=A
+&pub_country=TH
+&pub_city=BKK
+&tour_scheduled_year=2014
+&tour_scheduled_month=06
+&tour_scheduled_day=
+&pkg_code=
+&tour_old_year=2014
+&tour_old_month=06
+&start_city=
+&cost_cont_div=
+&cost_cont_code=
+&start_air_code=
+&subject=
+&product_name=
+&goods_property=
+&cost_code=
+&cost_name=
+&pkg_mst_code=
+&product_property=
+&ad_code=
+&goods_grade=
+&re_subject=
+&sort_value=
+&tour_scheduled_dt=2014-06
+&promo_doumi_code=
+&etc_code=P
+&hanacode=overseas_GNB_AE_TH_NKK
+&dy_list=
+&dept_code=
+&adult_smin_amt=
+&adult_smax_amt=
+&_=1402302755495"""

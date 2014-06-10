@@ -11,6 +11,8 @@ import re
 import time, datetime
 from time import localtime, strftime, sleep
 from datetime import timedelta
+import cx_Oracle
+import sys
 
 class classPackage():
     def __init__(self):
@@ -46,6 +48,7 @@ fromDate = strftime("%Y", time) + strftime("%m", time) + strftime("%d", time) + 
 toDate = strftime("%Y", nextTime) + strftime("%m", nextTime) + strftime("%d", nextTime) + strftime("%H", nextTime) + strftime("%M", nextTime)
 thisMonth = strftime("%Y", time) + strftime("%m", time)
 
+exceptFile = open('ybtourException.txt', 'w')
 ml1List = list()
 ml2List = list()
 ml3List = list()
@@ -54,6 +57,7 @@ try:
     print '===========================================MainUrl==========================================='
     mainUrl = defaultUrl + 'ML=1&MCD='
     print 'Main URL : ' + mainUrl
+    print >> exceptFile, mainUrl
     packageListXml = urllib2.urlopen(mainUrl).read()
     packageListDict = xmltodict.parse(packageListXml)
     
@@ -80,6 +84,7 @@ try:
             subUrl = defaultUrl + 'ML=2&MCD=' + package.menuCode
             print 'Sub URL : ' + subUrl
             
+            print >> exceptFile, subUrl
             packageSub1ListXml = urllib2.urlopen(subUrl).read()
             packageSub1ListDict = xmltodict.parse(packageSub1ListXml)
             
@@ -96,7 +101,7 @@ try:
                     print '===========================================Sub2 URL==========================================='
                     sub2Url = defaultUrl + 'ML=3&MCD=' + subpackage.menuCode
                     print 'Sub2 URL : ' + sub2Url
-                    
+                    print >> exceptFile, sub2Url
                     packageSub2ListXml = urllib2.urlopen(sub2Url).read()
                     packageSub2ListDict = xmltodict.parse(packageSub2ListXml)
                     
@@ -114,10 +119,11 @@ try:
                             defaultproductListUrl = 'http://www.ybtour.co.kr/Goods/' + urlMap[package.menuCode] + '/list.asp?sub_area_cd=' + str(sub2package.sbar)
                             print 'List URL : ' + defaultproductListUrl
                             
+                            print >> exceptFile, defaultproductListUrl
                             productList = urllib2.urlopen(defaultproductListUrl).read()
                             codeList = re.findall(r"goodFocus\w*", productList)
                             
-                            today = today.replace(month = today.month + 1)
+                            #today = today.replace(month = today.month + 1)
                             
                             for pcode in codeList:
                                 detailProduct = pcode.split('s')[1]
@@ -125,6 +131,7 @@ try:
                                 detailProductUrl = 'http://www.ybtour.co.kr/Goods/' + urlMap[package.menuCode] + '/inc_evList_ajax.asp?goodCD=' + detailProduct + '&startDT=' + thisMonth
                                 print 'Detail Product URL : ' + detailProductUrl
                                 
+                                print >> exceptFile, detailProductUrl
                                 detailProductHtml = urllib2.urlopen(detailProductUrl).read()
                                 tempFile = open('ybtourTempFile.txt', 'w')
                                 print >> tempFile, detailProductHtml
@@ -142,67 +149,91 @@ try:
                                 self.status = ''
                                 self.period = ''                                
                                 """
-                                
-                                detailProductList = open('ybtourTempFile.txt')
-                                flag = False
-                                
-                                ybtourproductfile = open('ybtourproductfile.txt', 'a')
-                                for parcer in detailProductList:
-                                    clsProduct = classProduct()
 
-                                    if parcer.strip()[:len('<td><input type="checkbox"')] == '<td><input type="checkbox"':
-                                        flag = True
+                                try:
+                                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                                    detailProductList = open('ybtourTempFile.txt')
+                                    flag = False
+                                    ybtourproductfile = open('ybtourproductfile.txt', 'a')
+                                    clsProduct = classProduct()
                                     
-                                    if flag:
-                                        if parcer.strip()[:len('<td><span class="blue">')] == '<td><span class="blue">':
-                                            spliter = parcer.strip().split(' ')
-                                            clsProduct.departDay = spliter[1].split('>')[1]
-                                            clsProduct.departTime = spliter[3].split('<')[0]
-                                            clsProduct.arriveDay = spliter[4].split('>')[2]
-                                            clsProduct.arriveTime = spliter[6].split('<')[0]
-                                            print >> ybtourproductfile, 'departday:' + str(clsProduct.departDay) + ', departtime:'  + str(clsProduct.departTime) + ', arrDay:' + str(clsProduct.arriveDay) + ', arrTime:' + str(clsProduct.arriveTime)
-                                        elif parcer.strip()[:len('<td><span class="logo"')] == '<td><span class="logo"':
-                                            spliter = parcer.strip().split(' ')
-                                            clsProduct.airCode = spliter[2].split('"')[1]
-                                            print >> ybtourproductfile, 'airCode:' + clsProduct.airCode
-                                        elif parcer.strip()[:len('<td class="lt"><a href="')] == '<td class="lt"><a href="':
-                                            spliter = parcer.strip().split(' ')
-                                            clsProduct.url = 'http://www.ybtour.co.kr' + spliter[2].split('"')[1]
-                                            spliter = parcer.strip().split('>')
-                                            clsProduct.productName = spliter[2].split('<')[0]
-                                            print >> ybtourproductfile, 'URL:' + clsProduct.url + ', Name:' + clsProduct.productName
-                                        elif parcer.find('박') > -1:
-                                            clsProduct.period = parcer.strip()
-                                            print >> ybtourproductfile, 'Period:' + clsProduct.period
-                                        elif parcer.strip()[:len('<td class="blue">')] == '<td class="blue">':
-                                            spliter = parcer.strip().split('>')
-                                            clsProduct.price = spliter[1].split('원')[0].replace(',', '')
-                                            print >> ybtourproductfile, 'Price:' + clsProduct.price
-                                        elif parcer.find('출발확정') > -1 or parcer.find('예약마감') > -1 or parcer.find('예약가능') > -1:
-                                            spliter = parcer.strip().split('>')
-                                            clsProduct.status = spliter[1].split('<')[0]
-                                            print >> ybtourproductfile, 'Status:' + clsProduct.status
-                                        elif parcer.strip() == '</tr>':
-                                            flag = False
+                                    for parcer in detailProductList:
                                         
-                                    #productClassList.append(clsProduct)
-                                ybtourproductfile.close()
-                                detailProductList.close()
-                            
-                            break
+                                        if parcer.strip()[:len('<td><input type="checkbox"')] == '<td><input type="checkbox"':
+                                            flag = True
+                                            clsProduct = classProduct()
+                                        
+                                        if flag:
+                                            if parcer.strip()[:len('<td><span class="blue">')] == '<td><span class="blue">':
+                                                spliter = parcer.strip().split(' ')
+                                                clsProduct.departDay = spliter[1].split('>')[1]
+                                                clsProduct.departTime = spliter[3].split('<')[0]
+                                                clsProduct.arriveDay = spliter[4].split('>')[2]
+                                                clsProduct.arriveTime = spliter[6].split('<')[0]
+                                                print >> ybtourproductfile, 'departday:' + str(clsProduct.departDay) + ', departtime:'  + str(clsProduct.departTime) + ', arrDay:' + str(clsProduct.arriveDay) + ', arrTime:' + str(clsProduct.arriveTime)
+                                            elif parcer.strip()[:len('<td><span class="logo"')] == '<td><span class="logo"':
+                                                spliter = parcer.strip().split(' ')
+                                                clsProduct.airCode = spliter[2].split('"')[1].decode('utf-8')
+                                                print >> ybtourproductfile, 'airCode:' + clsProduct.airCode
+                                            elif parcer.strip()[:len('<td class="lt"><a href="')] == '<td class="lt"><a href="':
+                                                spliter = parcer.strip().split(' ')
+                                                clsProduct.url = 'http://www.ybtour.co.kr' + spliter[2].split('"')[1]
+                                                spliter = parcer.strip().split('>')
+                                                clsProduct.productName = spliter[2].split('<')[0].replace("'", '').decode('utf-8')
+                                                print >> ybtourproductfile, 'URL:' + clsProduct.url + ', Name:' + clsProduct.productName
+                                            elif parcer.find('박') > -1 and len(parcer) < 9:
+                                                clsProduct.period = parcer.strip()[:1]
+                                                print >> ybtourproductfile, 'Period:' + clsProduct.period
+                                            elif parcer.strip()[:len('<td class="blue">')] == '<td class="blue">' and parcer.find('</td>') < 0:
+                                                spliter = parcer.strip().split('>')
+                                                clsProduct.price = spliter[1].split('원')[0].replace(',', '')
+                                                print >> ybtourproductfile, 'Price:' + clsProduct.price
+                                            elif parcer.find('출발확정') > -1 or parcer.find('예약마감') > -1 or parcer.find('예약가능') > -1:
+                                                spliter = parcer.strip().split('>')
+                                                clsProduct.status = spliter[1].split('<')[0].decode('utf-8')
+                                                print >> ybtourproductfile, 'Status:' + clsProduct.status
+                                            elif parcer.strip() == '</tr>':
+                                                flag = False
+                                                query = "insert into product_test values (product_seq.nextval, 'ybtour','" + str(subpackage.menuCode) + "','" + str(clsProduct.productName) + "','ICN',"
+                                                query += "to_date('" + strftime("%Y", time)+'/'+str(clsProduct.departDay) + "'),'" + str(clsProduct.period) + "','"+str(urlMap[package.menuCode])+"','',to_char(sysdate, 'yyyymmdd'),'',"
+                                                query += str(clsProduct.price) + ",'" + str(clsProduct.url) + "',to_date('" + strftime("%Y", time)+'/'+str(clsProduct.arriveDay) + "'),'','" 
+                                                query += str(clsProduct.status) + "','" + str(clsProduct.airCode) + "')"
+                                                cursor = con.cursor()
+                                                cursor.execute(query)
+                                                con.commit()
+                                            
+                                        #productClassList.append(clsProduct)
+                                    
+                                except:
+                                    print "Parcing or Query Error:", sys.exc_info()[0]
+                                    print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
+                                    pass
+                                finally:
+                                    ybtourproductfile.close()
+                                    detailProductList.close()
+                                    con.close()
+                            #break
+                    except ValueError as err:
+                        print 'err message : ' + err.message
                     except:
-                        print 'ML3 Parcing Error'
-                    
-                    break
+                        print "ML3 Parcing Error:", sys.exc_info()[0]
+                        print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
+                        pass
+                    #break
             except:
-                print 'ML2 Parcing Error'            
-            
+                print "ML2 Parcing error:", sys.exc_info()[0]
+                print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
+                pass
             break
     except:
-        print 'ML1 Parcing Error'
+        print "ML1 Parcing error:", sys.exc_info()[0]
+        print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
+        pass
 except:
-    print('urllib2 Error(Main) : ' + mainUrl)
-
+    print "urllib2 Error(Main) error:", sys.exc_info()[0]
+    print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
+finally:
+    exceptFile.close()
 
 
 
