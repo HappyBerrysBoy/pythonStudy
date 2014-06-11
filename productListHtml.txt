@@ -1,347 +1,155 @@
 
         <tr class="table_ov first">
-            <td class="pro_date">06/12 (목) 17:35<br/><span>06/16 (월) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_LJ01.gif" alt='진에어'/><br/>진에어</td>
+            <td class="pro_date">06/12 (목) 20:25<br/><span>06/16 (월) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140612LJ', '3')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_진에어항공</td>
-            <td class="pro_price">419,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140612LJ', '3');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140612TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140612TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/12 (목) 18:20<br/><span>06/16 (월) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140612OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140612OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/12 (목) 17:40<br/><span>06/16 (월) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/13 (금) 20:25<br/><span>06/17 (화) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140612KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140612KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140613TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140613TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/13 (금) 18:20<br/><span>06/17 (화) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140613OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140613OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/13 (금) 17:40<br/><span>06/17 (화) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/14 (<span style="color:blue">토</span>) 20:25<br/><span>06/18 (수) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140613KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140613KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140614TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140614TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/14 (<span style="color:blue">토</span>) 18:20<br/><span>06/18 (수) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140614OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140614OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/14 (<span style="color:blue">토</span>) 17:40<br/><span>06/18 (수) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/15 (<span style="color:red">일</span>) 20:25<br/><span>06/19 (목) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140614KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140614KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140615TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140615TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/15 (<span style="color:red">일</span>) 18:20<br/><span>06/19 (목) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140615OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140615OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/15 (<span style="color:red">일</span>) 17:40<br/><span>06/19 (목) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/16 (월) 20:25<br/><span>06/20 (금) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140615KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140615KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140616TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140616TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/16 (월) 18:20<br/><span>06/20 (금) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140616OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140616OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/16 (월) 17:40<br/><span>06/20 (금) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/17 (화) 20:25<br/><span>06/21 (<span style="color:blue">토</span>) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140616KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140616KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140617TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140617TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/17 (화) 18:20<br/><span>06/21 (<span style="color:blue">토</span>) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140617OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140617OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/17 (화) 17:40<br/><span>06/21 (<span style="color:blue">토</span>) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/18 (수) 20:25<br/><span>06/22 (<span style="color:red">일</span>) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140617KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140617KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140618TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140618TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/18 (수) 17:35<br/><span>06/22 (<span style="color:red">일</span>) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_LJ01.gif" alt='진에어'/><br/>진에어</td>
+            <td class="pro_date">06/19 (목) 20:25<br/><span>06/23 (월) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140618LJ', '3')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_진에어항공</td>
-            <td class="pro_price">419,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140618LJ', '3');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140619TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140619TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/18 (수) 18:20<br/><span>06/22 (<span style="color:red">일</span>) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140618OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140618OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/18 (수) 17:40<br/><span>06/22 (<span style="color:red">일</span>) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/20 (금) 20:25<br/><span>06/24 (화) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140618KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140618KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140620TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140620TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/19 (목) 17:35<br/><span>06/23 (월) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_LJ01.gif" alt='진에어'/><br/>진에어</td>
+            <td class="pro_date">06/21 (<span style="color:blue">토</span>) 20:25<br/><span>06/25 (수) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140619LJ', '3')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_진에어항공</td>
-            <td class="pro_price">419,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140619LJ', '3');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140621TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140621TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/19 (목) 18:20<br/><span>06/23 (월) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140619OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140619OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/19 (목) 17:40<br/><span>06/23 (월) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/22 (<span style="color:red">일</span>) 20:25<br/><span>06/26 (목) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140619KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140619KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140622TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140622TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/20 (금) 18:20<br/><span>06/24 (화) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140620OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140620OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/20 (금) 17:40<br/><span>06/24 (화) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/23 (월) 20:25<br/><span>06/27 (금) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140620KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140620KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140623TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140623TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/21 (<span style="color:blue">토</span>) 18:20<br/><span>06/25 (수) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140621OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140621OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/21 (<span style="color:blue">토</span>) 17:40<br/><span>06/25 (수) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/24 (화) 20:25<br/><span>06/28 (<span style="color:blue">토</span>) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140621KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140621KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140624TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140624TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/22 (<span style="color:red">일</span>) 18:20<br/><span>06/26 (목) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140622OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140622OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/22 (<span style="color:red">일</span>) 17:40<br/><span>06/26 (목) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/25 (수) 20:25<br/><span>06/29 (<span style="color:red">일</span>) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140622KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140622KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140625TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140625TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/23 (월) 18:20<br/><span>06/27 (금) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140623OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140623OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/23 (월) 17:40<br/><span>06/27 (금) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/26 (목) 20:25<br/><span>06/30 (월) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140623KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140623KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140626TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140626TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/24 (화) 18:20<br/><span>06/28 (<span style="color:blue">토</span>) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140624OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140624OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/24 (화) 17:40<br/><span>06/28 (<span style="color:blue">토</span>) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/27 (금) 20:25<br/><span>07/01 (화) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140624KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140624KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140627TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140627TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/25 (수) 17:35<br/><span>06/29 (<span style="color:red">일</span>) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_LJ01.gif" alt='진에어'/><br/>진에어</td>
+            <td class="pro_date">06/28 (<span style="color:blue">토</span>) 20:25<br/><span>07/02 (수) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140625LJ', '3')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_진에어항공</td>
-            <td class="pro_price">419,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140625LJ', '3');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140628TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140628TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/25 (수) 18:20<br/><span>06/29 (<span style="color:red">일</span>) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140625OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140625OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/25 (수) 17:40<br/><span>06/29 (<span style="color:red">일</span>) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td class="pro_date">06/29 (<span style="color:red">일</span>) 20:25<br/><span>07/03 (목) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140625KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140625KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140629TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">299,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140629TW', '4');"><span title="13 석" style="background-position:0 -90px" >13</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/26 (목) 17:35<br/><span>06/30 (월) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_LJ01.gif" alt='진에어'/><br/>진에어</td>
+            <td class="pro_date">06/30 (월) 20:25<br/><span>07/04 (금) 08:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
             <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140626LJ', '3')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_진에어항공</td>
-            <td class="pro_price">419,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140626LJ', '3');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/26 (목) 18:20<br/><span>06/30 (월) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140626OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140626OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/26 (목) 17:40<br/><span>06/30 (월) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140626KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140626KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/27 (금) 18:20<br/><span>07/01 (화) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140627OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140627OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/27 (금) 17:40<br/><span>07/01 (화) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140627KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140627KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/28 (<span style="color:blue">토</span>) 18:20<br/><span>07/02 (수) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140628OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140628OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/28 (<span style="color:blue">토</span>) 17:40<br/><span>07/02 (수) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140628KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140628KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/29 (<span style="color:red">일</span>) 18:20<br/><span>07/03 (목) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140629OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140629OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/29 (<span style="color:red">일</span>) 17:40<br/><span>07/03 (목) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140629KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140629KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/30 (월) 18:20<br/><span>07/04 (금) 06:50</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_OZ01.gif" alt='아시아나항공'/><br/>아시아나항공</td>
-            <td>4박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140630OZ', '4')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_아시아나항공</td>
-            <td class="pro_price">549,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140630OZ', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/30 (월) 17:40<br/><span>07/04 (금) 06:00</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP5099-140630KE', '5')" style="cursor:pointer">[바람따라 요트타고] 방콕/파타야_요트투어+아로마스파 5일_대한항공</td>
-            <td class="pro_price">599,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP5099-140630KE', '5');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_detail tl" onclick="DetailPage('APP6002-140630TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
+            <td class="pro_price">269,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140630TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
     <script type="text/javascript">
     //<![CDATA[

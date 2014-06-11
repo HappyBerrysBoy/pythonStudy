@@ -212,14 +212,14 @@ try:
                                     ybtourproductfile.close()
                                     detailProductList.close()
                                     con.close()
-                            #break
+                            break
                     except ValueError as err:
                         print 'err message : ' + err.message
                     except:
                         print "ML3 Parcing Error:", sys.exc_info()[0]
                         print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
                         pass
-                    #break
+                    break
             except:
                 print "ML2 Parcing error:", sys.exc_info()[0]
                 print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
