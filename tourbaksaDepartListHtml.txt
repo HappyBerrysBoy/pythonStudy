@@ -1,0 +1,230 @@
+<div class="list"  id="itemList" >
+					
+						<div class="tabCon ship01">
+							<div class="pointBox">
+								<div>
+									
+									<h3>물빛 고운 세부_힐링 태교여행 3박 5일 </h3>
+									<p class="price">
+										
+												<span class="colorOrg">839,000원</span> ~ 1,109,000원
+												
+										<!--<span class="itemNum">[APNS1]</span>-->
+									</p>
+								</div>
+								<img src="http://image.tourbaksa.com/New/item/2014/5/20140528093315.jpg" alt=""  width='129' height='82'/>
+							</div>
+								<ul class="itemList">
+								<li>
+									<div id="ItemGroupAPNS1_1">
+										<div class="leftSide">
+											<h4><!--<a href="javascript:Loding_items('APNS', '1', '1', '20140601', 'false', this);">-->[필리핀항공] 필리핀 국적기로 떠나는 힐링 세부 태교여행 3박 5일</h4>
+											<p class="note">플랜테이션 베이, 샹그릴라 리조트 등 선택!</p>
+											<div>
+												<span class="detail">3박5일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/PR.gif" onerror="this.src='/images/item/air/default.gif';"  class="imgVC" alt="필리핀항공" /> 필리핀항공</span><span class="itemNum detail">APNS1-1</span>
+											</div>
+										</div>
+										<div class="rightSide">
+											<p class="price">
+												
+														<span class="colorOrg2">839,000원</span> ~ 1,109,000원
+														
+											</p>
+											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('APNS', '1', '1', '20140601', 'false', this);">출발일 보기</button></div>
+										</div>
+									</div>
+									<div style="display:none;" id="DetailAPNS1_1" ></div>
+								</li>
+					</ul>
+	</div>
+
+					</div>
+				</div>
+				<!-- // -->
+
+			</div><!-- //content -->
+		</article><!-- //contentArea innerWrap -->
+
+		<div class="etcWrap">
+	<ul class="etcCenter innerWrap">
+		<li><a href="http://onlyu.tourbaksa.com/" target="_blank"><img src="/images/main/ico_01.gif" alt="맞춤여행" /></a></li>
+		<li><a href="http://group.tourbaksa.com/" target="_blank"><img src="/images/main/ico_02.gif" alt="기업회원문의" /></a></li>
+		<li><a href="/CustomerCenter/insurance/insurance.asp"><img src="/images/main/ico_03.gif" alt="여행자보험" /></a></li>
+		<li><a href="/customerCenter/pokect_wifi.asp"><img src="/images/main/ico_04.gif" alt="해외로밍" /></a></li>
+		<li><a href="/submain/?sq=12&subkind=1"><img src="/images/main/ico_05.gif" alt="해외자유" /></a></li>
+		<li><a href="/submain/?sq=28&subkind=1"><img src="/images/main/ico_06.gif" alt="해외패키지" /></a></li>
+		<li><a href="http://booking.tourbaksa.com"><img src="/images/main/ico_07.gif" alt="해외호텔" /></a></li>
+		<li><a href="http://air.tourbaksa.com"><img src="/images/main/ico_08.gif" alt="해외항공" /></a></li>
+		<li><a href="/submain/areaindex.asp?sq=61&subkind=2"><img src="/images/main/ico_09.gif" alt="국내여행" /></a></li>
+		<li><a href="/pass/"><img src="/images/main/ico_10.gif" alt="패스/티켓" /></a></li>
+		<li><a href="/rent/"><img src="/images/main/ico_11.gif" alt="렌터카" /></a></li>
+	</ul>
+</div><!-- //etcCenter -->
+	</section><!-- contentArea -->
+	<hr />
+	
+
+<!-- 퀵메뉴 닫힘상태 수정 20130814 -->
+<!-- 문제가 생길 경우 닫기 : 비 반응 페이지는 이 부분이 없어야 정상 적임.-->
+<aside class="sideArea">
+	<a href="#" class="sideOpen"><img src="/images/common/bul_01_close.png" alt="사이드영역 닫기" /></a>
+	<div class="sideInnerWrap">
+
+		<div class="innerWrap">
+			<h2 class="hidden">사이드컨텐츠 영역</h2>
+			<div class="sideWarp">
+				<dl class="areaSelect">
+					<dt><label for="start">기본출발지</label></dt>
+					<dd>
+						<select id="start" onchange="javascript:siteArea(this.value)">
+							<option value="S" selected>서울</option>
+							<option value="B" >부산</option>
+							<option value="D" >대구</option>
+						</select>
+					</dd>
+				</dl>
+
+				<!-- //20131022 : 환율 추가 -->
+			
+				<section class="todayGood">
+					<div class="inner">
+						<h3>오늘본상품</h3>
+
+
+						<ul>
+						<li>오늘 본 상품이 없습니다.</li>
+						</ul>
+
+						<div class="center">
+							<a href="#"><img src="/images/common/bul_left_01.gif" alt="이전페이지 보기" id="sidebarPrev" /></a><!-- 2013-09-17 img id추가 -->
+							<span class="page"><span id="curPage">1</span>/<span id="maxPage">2</span></span> <!-- 2013-09-17 span id추가 -->
+							<a href="#"><img src="/images/common/bul_right_01.gif" alt="다음페이지 보기" id="sidebarNext" /></a><!-- 2013-09-17 img id추가 -->
+						</div>
+					</div>
+					<p class="btnTop"><a href="javascript:ScrollMove('wrapper');">TOP</a></p>
+				</section>
+
+			</div>
+		</div>
+
+		<ul class="innerWrapClose">
+			<li class="quick01">
+				<a href="#"><img src="/images/common/ico_quick01_off.png" alt="기본출발지" /></a>
+			</li>
+			<li class="quick02">
+				<a href="#"><img src="/images/common/ico_quick02_off.png" alt="오늘 본 상품" /></a>
+			</li>
+			<li class="quick03">
+				<a href="javascript:ScrollMove('wrapper');"><img src="/images/common/ico_quick03_off.png" alt="위로 가기" /></a>
+			</li>
+		</ul>
+	</div>
+</aside><!-- //sideArea -->
+
+	<!-- //contentArea -->
+	<hr />
+		<!-- footer -->
+	<footer id="footer">
+		<h2 class="hidden">푸터영역</h2>
+		<div class="footMenuWrap">
+			<div class="innerWrap">
+				<h3 class="hidden">여행박사 공용 푸터</h3>
+				<ul>
+					<li><a href="http://corp.tourbaksa.com/" target="_blank">회사소개</a></li>
+					<li><a href="http://csr.tourbaksa.com/" target="_blank">사회공헌</a></li>
+					<li><a href="/corp/TermsConditions.asp?gubun=AG1">여행약관</a></li>
+					<li><a href="/corp/TermsConditions.asp?gubun=AG3">서비스이용약관</a></li>
+					<li class="personal_info"><a href="/corp/TermsConditions.asp?gubun=AG4">개인정보취급방침</a></li>
+					<li><a href="/corp/alliance/service_adjoin_list.asp">제휴및광고문의</a></li>
+					<li><a href="http://corp.tourbaksa.com/map/map_01_1.asp" target="_blank">찾아오시는길</a></li>
+				</ul>
+				<a href="javascript:ScrollMove('wrapper');" class="btnTop">TOP</a>
+			</div>
+		</div>
+
+		<div class="copyRight innerWrap clearfix">
+			<h2><img src="/images/common/logo_footer.gif" alt="여행박사" /></h2>
+			<div class="inner">
+				<address><!-- 마크업 수정 : 2013-09-05 -->
+					<span>㈜여행박사 │ 대표 : 주성진 황주영 │ 본사 : 서울시 용산구 한강대로 324 부산지사 : 부산광역시 중구 대청로 148 </span>
+					<span>사업자등록번호 : 105-87-26271 │ 통신판매업신고번호 : 제2010 서울용산 00927호 │ 부가통신사업 신고번호 : 021922 </span>
+					<span>대표전화 : 서울 070-7017-2100 부산 070-7012-7000 │ 팩스 : 02-6008-5717 </span>
+					<span>우리 회사는 15억원의 보증보험에 가입되어 있습니다. </span>
+				</address><!-- //마크업 수정 : 2013-09-05 -->
+				<em>Copyright(c) TOURBAKSA.COM All Rights Reserved.</em>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+</div><!-- //wrap -->
+
+<!-- AceCounter 스크립트 변수 확인 -->
+<script language='javascript'>
+var _ag   = '0' ;         // 로그인사용자 나이
+var _id   = '';    		// 로그인사용자 아이디
+var _mr   = '';        	// 로그인사용자 결혼여부 ('single' , 'married' )
+var _gd   = '';         // 로그인사용자 성별 ('man' , 'woman')
+var _skey = '' ;        // 내부검색어
+
+var _jn = '' ;          //  가입탈퇴 ( 'join','withdraw' )
+var _jid = '' ;			// 가입시입력한 ID
+
+var _ud1 = '' ;			// 사용자 정의변수 1 ( 1 ~ 10 정수값)
+var _ud2 = '' ;			// 사용자 정의변수 2 ( 1 ~ 10 정수값)
+var _ud3 = '' ;			// 사용자 정의변수 3 ( 1 ~ 10 정수값)
+</script>
+
+<!-- AceCounter END -->
+<!-- AceCounter Log Gathering Script V.70.2012052201 -->
+<script language='javascript'>
+if(typeof HL_GUL == 'undefined'){
+var HL_GUL = 'ngc3.nsm-corp.com';var HL_GPT='80'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+HL_GUL:"http://"+HL_GUL+":"+HL_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://ngc3.nsm-corp.com:80/?uid=CP6B37934613322&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End -->
+
+
+<!--프리미엄 로그 분석 -->
+
+<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_3fc9c1c1bed5";
+if (!_nasa) var _nasa={};
+wcs.inflow();
+wcs_do(_nasa);
+</script>
+
+<div id="wp_tg_cts" style="display:none;"></div>
+<script type="text/javascript">
+var wp_conf = 'ti=20040&v=1&device=web&r=1';
+</script>
+<script type="text/javascript" async defer
+src="//astg.widerplanet.com/js/wp_astg_2.2_common_home.js"></script>
+<!-- AD Plus Retargeting Script Start -->
+<script language="javascript">
+var retUrl = "/amc/js/wiseRtSvcVisit.pj?adv=786&ad=air123&cate=airtelbaksa";
+var sUrl = 'adsvc2.wisenut.co.kr';
+var nUrl = 'adimg.wisenut.co.kr';
+b=document.location.protocol+(document.location.protocol=="http:"?"//"+nUrl+retUrl:"//"+sUrl+retUrl);
+document.write("<div id='wisenut_ad_div' style='display:none;'></div>");
+var a=document.createElement("IFRAME");
+if(a){a.width="1px";a.height="1px";a.style.display="none";a.src=b;var
+c=document.getElementById("wisenut_ad_div");if(c!=null&&c.appendChild){c.appendChild(a);}}
+</script>
+<!-- AD Plus Retargeting Script End -->
+
+<!-- RealClick 리얼타겟팅 Checking Script V.20130115 Start hoon-->
+<script type='text/javascript'>
+function loadrtgJS(b,c){var d=document.getElementsByTagName("head")[0],a=document.createElement("script");a.type="text/javascript";null!=c&&(a.charset="euc-kr");a.src=b;d.appendChild(a)}function load_rtg(b){loadrtgJS(("https:"==document.location.protocol?" https://":" http://")+b,"euc-kr")}load_rtg("event.realclick.co.kr/rtarget/rtget.js?rtcode=tourbaksa2");
+</script>
+<!-- RealClick 리얼타겟팅 Checking Script V.20130115 End -->
+
+
+</body>
+</html>
+

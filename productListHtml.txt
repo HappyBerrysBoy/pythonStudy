@@ -1,155 +1,27 @@
 
         <tr class="table_ov first">
-            <td class="pro_date">06/12 (목) 20:25<br/><span>06/16 (월) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140612TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140612TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_date">06/12 (목) 16:50<br/><span>06/17 (화) 20:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td>4박 6일</td> 
+            <td class="pro_detail tl" onclick="DetailPage('PPP902-140612', '1')" style="cursor:pointer">[부산에서 출발하는~] 호주 시드니/골드코스트 6일_대한항공 (연합)</td>
+            <td class="pro_price">1,990,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('PPP902-140612', '1');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/13 (금) 20:25<br/><span>06/17 (화) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140613TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140613TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_date">06/19 (목) 16:50<br/><span>06/24 (화) 20:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td>4박 6일</td> 
+            <td class="pro_detail tl" onclick="DetailPage('PPP902-140619', '1')" style="cursor:pointer">[부산에서 출발하는~] 호주 시드니/골드코스트 6일_대한항공 (연합)</td>
+            <td class="pro_price">1,990,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('PPP902-140619', '1');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
         <tr class="table_ov ">
-            <td class="pro_date">06/14 (<span style="color:blue">토</span>) 20:25<br/><span>06/18 (수) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140614TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140614TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/15 (<span style="color:red">일</span>) 20:25<br/><span>06/19 (목) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140615TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140615TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/16 (월) 20:25<br/><span>06/20 (금) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140616TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140616TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/17 (화) 20:25<br/><span>06/21 (<span style="color:blue">토</span>) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140617TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140617TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/18 (수) 20:25<br/><span>06/22 (<span style="color:red">일</span>) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140618TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140618TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/19 (목) 20:25<br/><span>06/23 (월) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140619TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140619TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/20 (금) 20:25<br/><span>06/24 (화) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140620TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140620TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/21 (<span style="color:blue">토</span>) 20:25<br/><span>06/25 (수) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140621TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140621TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/22 (<span style="color:red">일</span>) 20:25<br/><span>06/26 (목) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140622TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140622TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/23 (월) 20:25<br/><span>06/27 (금) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140623TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140623TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/24 (화) 20:25<br/><span>06/28 (<span style="color:blue">토</span>) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140624TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140624TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/25 (수) 20:25<br/><span>06/29 (<span style="color:red">일</span>) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140625TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140625TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/26 (목) 20:25<br/><span>06/30 (월) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140626TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140626TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/27 (금) 20:25<br/><span>07/01 (화) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140627TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140627TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/28 (<span style="color:blue">토</span>) 20:25<br/><span>07/02 (수) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140628TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140628TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/29 (<span style="color:red">일</span>) 20:25<br/><span>07/03 (목) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140629TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">299,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140629TW', '4');"><span title="13 석" style="background-position:0 -90px" >13</span></a></td>
-        </tr>
-        <tr class="table_ov ">
-            <td class="pro_date">06/30 (월) 20:25<br/><span>07/04 (금) 08:40</span></td>
-            <td class="pro_air"><img src="/images/air_logo/air_TW01.gif" alt='티웨이항공'/><br/>티웨이항공</td>
-            <td>3박 5일</td> 
-            <td class="pro_detail tl" onclick="DetailPage('APP6002-140630TW', '4')" style="cursor:pointer">[티웨이 항공_연합 상품] 방콕/파타야_알카자쇼+야간시티투어 5일</td>
-            <td class="pro_price">269,000원</td>
-            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('APP6002-140630TW', '4');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
+            <td class="pro_date">06/26 (목) 16:50<br/><span>07/01 (화) 20:40</span></td>
+            <td class="pro_air"><img src="/images/air_logo/air_KE01.gif" alt='대한항공'/><br/>대한항공</td>
+            <td>4박 6일</td> 
+            <td class="pro_detail tl" onclick="DetailPage('PPP902-140626', '1')" style="cursor:pointer">[부산에서 출발하는~] 호주 시드니/골드코스트 6일_대한항공 (연합)</td>
+            <td class="pro_price">1,990,000원</td>
+            <td class="pro_condition"><a href="javascript:void(0);"  onclick="DetailPage('PPP902-140626', '1');"><span title="16 석" style="background-position:0 -90px" >16</span></a></td>
         </tr>
     <script type="text/javascript">
     //<![CDATA[

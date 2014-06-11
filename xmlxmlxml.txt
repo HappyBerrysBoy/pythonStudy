@@ -1,0 +1,14 @@
+<tbody id="ViewItemList_JTBS82_1" name="ViewItemList_JTBS82_1" >					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42444&Good_YY=JTBS&Good_SEQ=82&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
+<td class="startDate">06.13(금) </td>						
+<td class="price">249,000원</td>						
+<td class="status"><span class="">&nbsp;</td>						
+<td class="reservation"><button class="deBtn type3" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42444&Good_YY=JTBS&Good_SEQ=82&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약마감</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42445&Good_YY=JTBS&Good_SEQ=82&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
+<td class="startDate">06.20(금) </td>						
+<td class="price">269,000원</td>						
+<td class="status"><span class="status type0">대기예약</td>						
+<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42445&Good_YY=JTBS&Good_SEQ=82&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr class="lastTr"  style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42446&Good_YY=JTBS&Good_SEQ=82&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
+<td class="startDate">06.27(금) </td>						
+<td class="price">249,000원</td>						
+<td class="status"><span class="">&nbsp;</td>						
+<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42446&Good_YY=JTBS&Good_SEQ=82&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>				</tbody>			</table>			<p></p>			<input type="hidden" name="ItemCntAll_JTBS82_1"  id="ItemCntAll_JTBS82_1"    value="1">			<input type="hidden" name="ItemCnt_JTBS82_1"  id="ItemCnt_JTBS82_1"   value="0">			<div id="itemBlockJTBS82_1" name="itemBlockJTBS82_1" style="display:none;width:0px;height:0px;"></div>
+		</div>	</div></div>]]></Results>

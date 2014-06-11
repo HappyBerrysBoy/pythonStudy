@@ -11,27 +11,33 @@ import time, datetime
 from time import localtime, strftime, sleep
 from datetime import timedelta
 import cx_Oracle
+import sys
 
-class classPackage():
-    def __init__(self):
-        self.thing = 0
-        self.menuCode = ''
-        self.menuName = ''
-        self.goodTypeCode = ''
-        self.sbar = ''
 
-class classProduct():
+class clsProductGroup():
     def __init__(self):
-        self.departDay = ''
-        self.departTime = ''
-        self.arriveDay = ''
-        self.arriveTime = ''
-        self.airCode = ''
-        self.productName = ''
+        self.name = ''
+        self.menucode = ''
         self.url = ''
-        self.price = ''
-        self.status = ''
+
+class clsProduct():
+    def __init__(self):
+        self.sDay = ''
+        self.sTime = ''
+        self.aDay = ''
+        self.aTime = ''
+        self.aCode = ''
         self.period = ''
+        self.code = ''
+        self.status = ''
+        self.name = ''
+        self.price = ''
+        self.booked = ''
+        self.url = ''
+        
+    def toString(self):
+        return 'Code:'+self.code+',sDay:'+self.sDay+',sTime:'+self.sTime+',aDay:'+self.aDay+',aTime:'+self.aTime+',aCode:'+self.aCode+',Period:'+self.period+',status:'+self.status+',name:'+self.name+',price:'+self.price+',booked:'+self.booked
+
 
 
 today = datetime.date.today()
@@ -43,65 +49,46 @@ toDate = strftime("%Y", nextTime) + strftime("%m", nextTime) + strftime("%d", ne
 thisMonth = strftime("%Y", time) + strftime("%m", time)
 
     
-detailProductHtml = urllib2.urlopen('http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=180201411&startDT=201406').read()
-tempFile = open('ybtourTempFile.txt', 'w')
-print >> tempFile, detailProductHtml
-tempFile.close()
+productListHtml = urllib2.urlopen('http://www.verygoodtour.com/Product/Package/PackageItem?MasterCode=APP5081&Month=06&Year=2014').read()
+productListHtmlFile = open('productListHtml.txt', 'w')
+print >> productListHtmlFile, productListHtml
+productListHtmlFile.close()
 
-con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-detailProductList = open('ybtourTempFile.txt')
-flag = False
-ybtourproductfile = open('ybtourproductfile.txt', 'w')
-clsProduct = classProduct()
-
-for parcer in detailProductList:
-    
-    if parcer.strip()[:len('<td><input type="checkbox"')] == '<td><input type="checkbox"':
-        flag = True
-        clsProduct = classProduct()
-    
-    if flag:
-        if parcer.strip()[:len('<td><span class="blue">')] == '<td><span class="blue">':
-            spliter = parcer.strip().split(' ')
-            clsProduct.departDay = spliter[1].split('>')[1]
-            clsProduct.departTime = spliter[3].split('<')[0]
-            clsProduct.arriveDay = spliter[4].split('>')[2]
-            clsProduct.arriveTime = spliter[6].split('<')[0]
-            print >> ybtourproductfile, 'departday:' + str(clsProduct.departDay) + ', departtime:'  + str(clsProduct.departTime) + ', arrDay:' + str(clsProduct.arriveDay) + ', arrTime:' + str(clsProduct.arriveTime)
-        elif parcer.strip()[:len('<td><span class="logo"')] == '<td><span class="logo"':
-            spliter = parcer.strip().split(' ')
-            clsProduct.airCode = spliter[2].split('"')[1].decode('utf-8')
-            print >> ybtourproductfile, 'airCode:' + clsProduct.airCode
-        elif parcer.strip()[:len('<td class="lt"><a href="')] == '<td class="lt"><a href="':
-            spliter = parcer.strip().split(' ')
-            clsProduct.url = 'http://www.ybtour.co.kr' + spliter[2].split('"')[1]
-            spliter = parcer.strip().split('>')
-            clsProduct.productName = spliter[2].split('<')[0].replace("'", '').decode('utf-8')
-            print >> ybtourproductfile, 'URL:' + clsProduct.url + ', Name:' + clsProduct.productName
-        elif parcer.find('박') > -1 and len(parcer) < 9:
-            clsProduct.period = parcer.strip()[:1]
-            print >> ybtourproductfile, 'Period:' + clsProduct.period
-        elif parcer.strip()[:len('<td class="blue">')] == '<td class="blue">' and parcer.find('</td>') < 0:
-            spliter = parcer.strip().split('>')
-            clsProduct.price = spliter[1].split('원')[0].replace(',', '')
-            print >> ybtourproductfile, 'Price:' + clsProduct.price
-        elif parcer.find('출발확정') > -1 or parcer.find('예약마감') > -1 or parcer.find('예약가능') > -1:
-            spliter = parcer.strip().split('>')
-            clsProduct.status = spliter[1].split('<')[0].decode('utf-8')
-            print >> ybtourproductfile, 'Status:' + clsProduct.status
-        elif parcer.strip() == '</tr>':
-            flag = False
-            query = "insert into product_test values (product_seq.nextval, 'ybtour','overseas','" + str(clsProduct.productName) + "','ICN',"
-            query += "to_date('" + strftime("%Y", time)+'/'+str(clsProduct.departDay) + "'),'" + str(clsProduct.period) + "','','',to_char(sysdate, 'yyyymmdd'),'',"
-            query += str(clsProduct.price) + ",'" + str(clsProduct.url) + "',to_date('" + strftime("%Y", time)+'/'+str(clsProduct.arriveDay) + "'),'','"
-            query += str(clsProduct.status) + "','" + str(clsProduct.airCode) + "')"
-            print query
-            cursor = con.cursor()
-            cursor.execute(query)
-            con.commit()
-            
-        #productClassList.append(clsProduct)
-    
-ybtourproductfile.close()
-detailProductList.close()
+#최종 상품들 잡아넣자..
+con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")                    
+productCls = clsProduct()
+productListHtml = open('productListHtml.txt')
+for product in productListHtml:
+    if product.find('class="pro_date"') > -1:
+        productCls = clsProduct()
+        productCls.sDay = strftime("%Y", time) + '/' + product.split('pro_date">')[1].split('(')[0].strip()
+        productCls.sTime = product.split('<br/>')[0].split(')')[1].strip()
+        productCls.aDay = strftime("%Y", time) + '/' + product.split('<span>')[1].split('(')[0].strip()
+        productCls.aTime = product.split('<span>')[1].split(')')[1].split('<')[0].strip()
+    elif product.find('class="pro_air"') > -1:
+        productCls.aCode = product.split('</td>')[0].split('<br/>')[1].decode('utf-8')
+    elif product.find('박') > -1 and product.find('class=') < 0:
+        productCls.period = product.split('>')[1].split('박')[0]
+    elif product.find('class="pro_detail tl"') > -1:
+        productCls.code = product.split("DetailPage('")[1].split("'")[0]
+        productCls.url = 'http://www.verygoodtour.com/Product/Package/PackageDetail?ProCode=' + productCls.code + '&MenuCode=1010201'
+        #http://www.verygoodtour.com/Product/Package/PackageDetail?ProCode=APP5099-140612LJ&MenuCode=1010201
+        tmp = len(product.split('</td>')[0].split('>'))
+        productCls.name = product.split('</td>')[0].split('>')[tmp - 1].decode('utf-8')
+    elif product.find('class="pro_price"') > -1:
+        productCls.price = product.split('원')[0].split('>')[1].replace(',', '')
+    elif product.find('class="pro_condition"') > -1:
+        productCls.booked = product.split('title="')[1].split('"')[0].strip().decode('utf-8')
+    elif product.find('</tr>') > -1:
+        #query... 등등
+        query = "insert into product_test values (product_seq.nextval, 'vgtour','bangkok','" + productCls.name + "','ICN',"
+        query += "to_date('" + productCls.sDay + "'),'" + productCls.period + "','package','',to_char(sysdate, 'yyyymmdd'),''," + productCls.price + ",'" + productCls.url
+        query += "',to_date('" + productCls.aDay + "'),'','" + productCls.booked + "','" + productCls.aCode +"')"
+        print 'query ::: ' + query
+        cursor = con.cursor()
+        cursor.execute(query)
+        con.commit()
+        #print >> productListFile, productCls.toString()
+productListHtml.close()
+cursor.close()
 con.close()

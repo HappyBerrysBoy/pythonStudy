@@ -1,0 +1,339 @@
+<div class="menuList">
+				<ul id="city1">
+					<li>
+						<a href="/submain/?sq=12&subkind=1">해외자유</a>
+						<ul>
+							<li><a href="/SubMain/Areaindex.asp?sq=11&subkind=2">일본</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=15&subkind=2">동남아</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=17&subkind=2">중국/홍콩/대만</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=18&subkind=2">유럽</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=19&subkind=2">남태평양/미주/호주</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/submain/?sq=28&subkind=1">해외패키지</a>
+						<ul>
+							<li><a href="/SubMain/Areaindex.asp?sq=25&subkind=2">일본</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=26&subkind=2">동남아</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=27&subkind=2">중국/홍콩/대만</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=29&subkind=2">유럽</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=30&subkind=2">남태평양/미주/호주</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/submain/Areaindex.asp?sq=61&subkind=2">국내여행</a>
+						<ul>
+							<li><a href="/submain/Areaindex.asp?sq=61&subkind=2">제주여행</a></li>
+							<li><a href="/submain/Areaindex.asp?sq=61&subkind=2">내륙/섬여행</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/submain/areaindex.asp?sq=38&subkind=2">허니문</a>
+						<ul>
+							<li><a href="/submain/areaindex.asp?sq=38&subkind=2">동남아</a></li>
+							<!-- <li><a href="/submain/areaindex.asp?sq=38&subkind=2">홍콩</a></li> -->
+							<li><a href="/submain/areaindex.asp?sq=38&subkind=2">남태평양/미주/호주</a></li>
+							<li><a href="/submain/areaindex.asp?sq=38&subkind=2">일본</a></li>
+							<li><a href="/submain/areaindex.asp?sq=38&subkind=2">유럽</a></li>
+						</ul>
+					</li>
+					<li class="lineRight">
+						<a href="/submain/areaindex.asp?sq=41&subkind=2">골프</a>
+						<ul>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">일본</a></li>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">동남아</a></li>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">중국</a></li>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">남태평양</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://booking.tourbaksa.com">해외호텔</a>
+						<ul>
+							<li><a href="http://booking.tourbaksa.com/?subject=2&sch_ryokans=N">일본호텔</a></li>
+							<li><a href="http://booking.tourbaksa.com/?subject=2&sch_ryokans=Y">일본료칸</a></li>
+							<li><a href="http://booking.tourbaksa.com/item/?subject=290&sch_Area1Code=290&sch_Area2Code=291">대만호텔</a></li>
+							<li><a href="/hotel/hoteltrees/?v_path=D">동남아호텔</a></li>
+							<li><a href="/hotel/hoteltrees/?v_path=E">유럽호텔</a></li>
+							<li><a href="/hotel/hoteltrees/?v_path=U">미주호텔</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://air.tourbaksa.com">해외항공</a>
+						<ul>
+							<li><a href="http://air.tourbaksa.com">해외항공권예약(서울)</a></li>
+							<li><a href="http://air.tourbaksa.com/airticket/index.asp?DepDefault=PUS">해외항공권예약(부산)</a></li>
+							<li><a href="http://air.tourbaksa.com/grouptour/">단체항공권 문의</a></li>
+							<li><a href="http://air.tourbaksa.com/options/">특별서비스 신청</a></li>
+							<!-- <li><a href="http://air.tourbaksa.com">해외항공권 예약</a></li>
+							<li><a href="http://air.tourbaksa.com">특가 할인항공권</a></li>
+							<li><a href="http://air2.tourbaksa.com/grouptour/">단체항공권 문의</a></li>
+							<li><a href="http://air2.tourbaksa.com/options/">특별서비스 신청</a></li> -->
+						</ul>
+					</li>
+					<li>
+						<a href="/Pass/">패스/티켓</a>
+						<ul>
+							<li><a href="/Pass/">일본패스/티켓</a></li>
+							<li><a href="/euro/promotion/eurailsail.asp?siteCode=EU">유럽패스</a></li>
+							<li><a href="/Pass/coupon.asp">할인쿠폰</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/rent/">렌터카</a>
+						<ul>
+							<li><a href="/rent/">일본렌터카</a></li>
+						</ul>
+					</li>
+					<li class="lineRight">
+						<a href="/submain/areaindex.asp?sq=70&subkind=2">크루즈</a>
+						<ul>
+							<li><a href="/item/?M1=7&M2=552&M3=698&M4=0&M5=0">크루즈 Only</a></li>
+							<li><a href="/item/?M1=7&M2=553&M3=581&M4=0&M5=0">크루즈 패키지</a></li>
+							<!-- <li><a href="/submain/areaindex.asp?sq=44&subkind=2">크루즈허니문</a></li>
+							<li><a href="/submain/areaindex.asp?sq=44&subkind=2">크루즈 Only</a></li>
+							<li><a href="#"></a></li> -->
+						</ul>
+					</li>
+					<li class="lineLast">
+						<a href="/submain/areaindex.asp?sq=42&subkind=2">키즈투어</a>
+						<ul>
+							<li><a href="/item/?M1=5&M2=316&M3=320&M4=0&M5=0">패키지</a></li>
+							<li><a href="/item/?M1=5&M2=317&M3=322&M4=0&M5=0">자유여행</a></li>
+							<li><a href="/item/?M1=5&M2=318&M3=325&M4=0&M5=0">태교여행</a></li>
+							<li><a href="/item/?M1=5&M2=613&M3=614&M4=0&M5=0">국내여행</a></li>
+						</ul>
+					</li>
+					<li class="lineLast">
+						<a href="/submain/areaindex.asp?sq=43&subkind=2">레저/스포츠</a>
+						<ul>
+							<li><a href="/item/?M1=6&M2=337&M3=340&M4=0&M5=0">스키</a></li>
+							<li><a href="/item/?M1=6&M2=338&M3=347&M4=0&M5=0">스쿠버다이빙</a></li>
+							<li><a href="/item/?M1=6&M2=545&M3=546&M4=0&M5=0">트레킹</a></li>
+							<li><a href="/item/?M1=6&M2=548&M3=549&M4=0&M5=0">MTB/사이클</a></li>
+							<li><a href="/item/?M1=6&M2=550&M3=551&M4=0&M5=0">낚시/캠핑</a></li>
+						</ul>
+					</li>
+
+				</ul>
+				<ul id="city2" style="display:none;">
+					<li>
+						<a href="/SubMain/index.asp?sq=13&subkind=1">해외자유</a>
+						<ul>
+							<li><a href="/SubMain/Areaindex.asp?sq=20&subkind=2">일본</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=21&subkind=2">동남아</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=22&subkind=2">중국/홍콩/대만</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=23&subkind=2">유럽</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=24&subkind=2">남태평양/미주</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/SubMain/index.asp?sq=31&subkind=1">해외패키지</a>
+						<ul>
+							<li><a href="/SubMain/Areaindex.asp?sq=32&subkind=2">일본</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=33&subkind=2">동남아</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=34&subkind=2">중국/홍콩/대만</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=35&subkind=2">유럽</a></li>
+							<li><a href="/SubMain/Areaindex.asp?sq=36&subkind=2">남태평양/미주</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="submain/areaindex.asp?sq=62&subkind=2">국내여행</a>
+						<ul>
+							<li><a href="/item/?M1=474&M2=583&M3=588&M4=603&M5=0">제주여행</a></li>
+							<li><a href="/item/?M1=474&M2=583&M3=589&M4=592&M5=0">내륙/섬여행</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/submain/areaindex.asp?sq=39&subkind=2">허니문</a>
+						<ul>
+							<li><a href="/submain/areaindex.asp?sq=39&subkind=2">동남아</a></li>
+							<li><a href="/submain/areaindex.asp?sq=39&subkind=2">홍콩</a></li>
+							<li><a href="/submain/areaindex.asp?sq=39&subkind=2">남태평양/미주/호주</a></li>
+							<li><a href="/submain/areaindex.asp?sq=39&subkind=2">일본</a></li>
+							<li><a href="/submain/areaindex.asp?sq=39&subkind=2">유럽</a></li>
+						</ul>
+					</li>
+					<li class="lineRight">
+						<a href="/submain/areaindex.asp?sq=41&subkind=2">골프</a>
+						<ul>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">일본</a></li>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">동남아</a></li>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">중국</a></li>
+							<!-- <li><a href="/submain/areaindex.asp?sq=41&subkind=2">남태평양</a></li>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">국내</a></li> -->
+						</ul>
+					</li>
+					<li>
+						<a href="http://booking.tourbaksa.com">해외호텔</a>
+						<ul>
+							<li><a href="http://booking.tourbaksa.com/?subject=2&sch_ryokans=N">일본호텔</a></li>
+							<li><a href="http://booking.tourbaksa.com/?subject=2&sch_ryokans=Y">일본료칸</a></li>
+							<li><a href="http://booking.tourbaksa.com/item/?subject=290&sch_Area1Code=290&sch_Area2Code=291">대만호텔</a></li>
+							<li><a href="/hotel/hoteltrees/?v_path=D">동남아호텔</a></li>
+							<li><a href="/hotel/hoteltrees/?v_path=E">유럽호텔</a></li>
+							<li><a href="/hotel/hoteltrees/?v_path=U">미주호텔</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://air.tourbaksa.com">해외항공</a>
+						<ul>
+							<li><a href="http://air.tourbaksa.com">해외항공권예약(서울)</a></li>
+							<li><a href="http://air.tourbaksa.com/airticket/index.asp?DepDefault=PUS">해외항공권예약(부산)</a></li>
+							<li><a href="http://air.tourbaksa.com/grouptour/">단체항공권 문의</a></li>
+							<li><a href="http://air.tourbaksa.com/options/">특별서비스 신청</a></li>
+							<!-- <li><a href="http://air.tourbaksa.com">해외항공권 예약</a></li>
+							<li><a href="http://air.tourbaksa.com">특가 할인항공권</a></li>
+							<li><a href="http://air2.tourbaksa.com/grouptour/">단체항공권 문의</a></li>
+							<li><a href="http://air2.tourbaksa.com/options/">특별서비스 신청</a></li> -->
+						</ul>
+					</li>
+					<li>
+						<a href="/Pass/">패스/티켓</a>
+						<ul>
+							<li><a href="/Pass/">일본패스/티켓</a></li>
+							<li><a href="/euro/promotion/eurailsail.asp?siteCode=EU">유럽패스</a></li>
+							<li><a href="/Pass/coupon.asp">할인쿠폰</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/rent/">렌터카</a>
+						<ul>
+							<li><a href="/rent/">일본렌터카</a></li>
+						</ul>
+					</li>
+					<li class="lineRight">
+						<a href="/submain/areaindex.asp?sq=70&subkind=2">크루즈</a>
+						<ul>
+							<li><a href="/item/index.asp?M1=7&M2=552&M3=0&M4=0&M5=0">크루즈 패키지</a></li>
+							<li><a href="/item/index.asp?M1=7&M2=553&M3=580&M4=0&M5=0">크루즈 자유여행</a></li>
+							<!-- <li><a href="/submain/areaindex.asp?sq=44&subkind=2">크루즈허니문</a></li>
+							<li><a href="/submain/areaindex.asp?sq=44&subkind=2">크루즈 Only</a></li>
+							<li><a href="#"></a></li> -->
+						</ul>
+					</li>
+					<li class="lineLast">
+						<a href="/submain/areaindex.asp?sq=42&subkind=2">키즈투어</a>
+						<ul>
+							<li><a href="/item/?M1=5&M2=316&M3=320&M4=0&M5=0">패키지</a></li>
+							<li><a href="/item/?M1=5&M2=317&M3=322&M4=0&M5=0">자유여행</a></li>
+							<li><a href="/item/?M1=5&M2=318&M3=325&M4=0&M5=0">태교여행</a></li>
+							<li><a href="/item/?M1=5&M2=613&M3=614&M4=0&M5=0">국내여행</a></li>
+						</ul>
+					</li>
+					<li class="lineLast">
+						<a href="/submain/areaindex.asp?sq=43&subkind=2">레저/스포츠</a>
+						<ul>
+							<li><a href="/item/?M1=6&M2=337&M3=340&M4=0&M5=0">스키</a></li>
+							<li><a href="/item/?M1=6&M2=338&M3=347&M4=0&M5=0">스쿠버다이빙</a></li>
+							<li><a href="/item/?M1=6&M2=545&M3=546&M4=0&M5=0">트레킹</a></li>
+							<li><a href="/item/?M1=6&M2=548&M3=549&M4=0&M5=0">MTB/사이클</a></li>
+							<li><a href="/item/?M1=6&M2=550&M3=551&M4=0&M5=0">낚시/캠핑</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="city3" style="display:none;">
+					<li>
+						<a href="/SubMain/index.asp?sq=14&subkind=1">해외자유</a>
+						<ul>
+							<li><a href="/item/?M1=1&M2=127&M3=170&M4=171&M5=0">일본</a></li>
+							<li><a href="/item/?M1=1&M2=127&M3=367&M4=0&M5=0">홍콩</a></li>
+							<li><a href="/item/?M1=1&M2=127&M3=528&M4=0&M5=0">싱가포르</a></li>
+							<li><a href="/item/?M1=1&M2=127&M3=529&M4=0&M5=0">베트남/캄보디아</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/SubMain/index.asp?sq=37&subkind=1">해외패키지</a>
+						<ul>
+							<li><a href="/item/?M1=2&M2=179&M3=233&M4=236&M5=0">일본</a></li>
+							<li><a href="/item/?M1=2&M2=179&M3=234&M4=243&M5=245">동남아</a></li>
+							<li><a href="/item/?M1=2&M2=179&M3=235&M4=468&M5=0">중국</a></li>
+							<li><a href="/item/?M1=2&M2=179&M3=473&M4=577&M5=0">유럽</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="submain/areaindex.asp?sq=62&subkind=2">국내여행</a>
+						<ul>
+							<li><a href="/item/?M1=474&M2=583&M3=588&M4=603&M5=0">제주여행</a></li>
+							<li><a href="/item/?M1=474&M2=583&M3=589&M4=592&M5=0">내륙/섬여행</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/submain/areaindex.asp?sq=40&subkind=1">허니문</a>
+					</li>
+					<li class="lineRight">
+						<a href="/submain/areaindex.asp?sq=41&subkind=2">골프</a>
+						<ul>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">국내</a></li>
+							<li><a href="/submain/areaindex.asp?sq=41&subkind=2">해외</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://booking.tourbaksa.com">해외호텔</a>
+						<ul>
+							<li><a href="http://booking.tourbaksa.com/?subject=2&sch_ryokans=N">일본호텔</a></li>
+							<li><a href="http://booking.tourbaksa.com/?subject=2&sch_ryokans=Y">일본료칸</a></li>
+							<li><a href="http://booking.tourbaksa.com/item/?subject=290&sch_Area1Code=290&sch_Area2Code=291">대만호텔</a></li>
+							<li><a href="/hotel/hoteltrees/?v_path=D">동남아호텔</a></li>
+							<li><a href="/hotel/hoteltrees/?v_path=E">유럽호텔</a></li>
+							<li><a href="/hotel/hoteltrees/?v_path=U">미주호텔</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="http://air.tourbaksa.com">해외항공</a>
+						<ul>
+							<li><a href="http://air.tourbaksa.com">해외항공권예약(서울)</a></li>
+							<li><a href="http://air.tourbaksa.com/airticket/index.asp?DepDefault=PUS">해외항공권예약(부산)</a></li>
+							<li><a href="http://air.tourbaksa.com/grouptour/">단체항공권 문의</a></li>
+							<li><a href="http://air.tourbaksa.com/options/">특별서비스 신청</a></li>
+							<!-- <li><a href="http://air.tourbaksa.com">해외항공권 예약</a></li>
+							<li><a href="http://air.tourbaksa.com">특가 할인항공권</a></li>
+							<li><a href="http://air2.tourbaksa.com/grouptour/">단체항공권 문의</a></li>
+							<li><a href="http://air2.tourbaksa.com/options/">특별서비스 신청</a></li> -->
+						</ul>
+					</li>
+					<li>
+						<a href="/Pass/">패스/티켓</a>
+						<ul>
+							<li><a href="/Pass/">일본패스/티켓</a></li>
+							<li><a href="/euro/promotion/eurailsail.asp?siteCode=EU">유럽패스</a></li>
+							<li><a href="/Pass/coupon.asp">할인쿠폰</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/rent/">렌터카</a>
+						<ul>
+							<li><a href="/rent/">일본렌터카</a></li>
+						</ul>
+					</li>
+					<li class="lineRight">
+						<a href="/submain/areaindex.asp?sq=70&subkind=2">크루즈</a>
+						<ul>
+							<li><a href="/item/index.asp?M1=7&M2=552&M3=0&M4=0&M5=0">크루즈 패키지</a></li>
+							<li><a href="/item/index.asp?M1=7&M2=553&M3=580&M4=0&M5=0">크루즈 자유여행</a></li>
+							<!-- <li><a href="/submain/areaindex.asp?sq=44&subkind=2">크루즈허니문</a></li>
+							<li><a href="/submain/areaindex.asp?sq=44&subkind=2">크루즈 Only</a></li>
+							<li><a href="#"></a></li> -->
+						</ul>
+					</li>
+					<li class="lineLast">
+						<a href="/submain/areaindex.asp?sq=42&subkind=2">키즈투어</a>
+						<ul>
+							<li><a href="/item/?M1=5&M2=316&M3=320&M4=0&M5=0">패키지</a></li>
+							<li><a href="/item/?M1=5&M2=317&M3=322&M4=0&M5=0">자유여행</a></li>
+							<li><a href="/item/?M1=5&M2=318&M3=325&M4=0&M5=0">태교여행</a></li>
+							<li><a href="/item/?M1=5&M2=613&M3=614&M4=0&M5=0">국내여행</a></li>
+						</ul>
+					</li>
+					<li class="lineLast">
+						<a href="/submain/areaindex.asp?sq=43&subkind=2">레저/스포츠</a>
+						<ul>
+							<li><a href="/item/?M1=6&M2=337&M3=340&M4=0&M5=0">스키</a></li>
+							<li><a href="/item/?M1=6&M2=338&M3=347&M4=0&M5=0">스쿠버다이빙</a></li>
+							<li><a href="/item/?M1=6&M2=545&M3=546&M4=0&M5=0">트레킹</a></li>
+							<li><a href="/item/?M1=6&M2=548&M3=549&M4=0&M5=0">MTB/사이클</a></li>
+							<li><a href="/item/?M1=6&M2=550&M3=551&M4=0&M5=0">낚시/캠핑</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<ul class="etcMenu">
