@@ -1,0 +1,835 @@
+<div id="Leftmenu" style="align:left;">
+    <!-- 유럽 -->
+    <div class="1Depth" style="padding:5px 0; width:195px"><a href="/friday/eu/index.asp"><img src="/friday/images/tour_friday_01_on.gif" alt="유럽" width="195" height="20" border="0" onClick="javascript:explain(document.all.menu1);" style="cursor:hand"></a></div>
+    <div class="Submenu" id="menu1" >
+        <!-- 서유럽 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/EU_01_off.gif" alt="서유럽" width="195" height="18"></div>
+            <div class="3Depth" style="padding-top:5px;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=FR" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','/friday/images/EU_01_1_on.gif',0)"><img src="/friday/images/EU_01_1_off.gif" alt="프랑스" name="Image33" width="30"  border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=IT" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','/friday/images/EU_01_2_on.gif',0)"><img src="/friday/images/EU_01_2_off.gif" alt="이태리" name="Image34" width="30"  border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=CH" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','/friday/images/EU_01_3_on.gif',0)"><img src="/friday/images/EU_01_3_off.gif" alt="스위스" name="Image36" width="30"  border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=ES" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','/friday/images/EU_01_6_on.gif',0)"><img src="/friday/images/EU_01_6_off.gif" alt="스페인/포르투칼" name="Image42" width="75" height="17" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=DE" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','/friday/images/EU_01_5_on.gif',0)"><img src="/friday/images/EU_01_5_off.gif" alt="독일/베네룩스" name="Image41" width="65" height="17" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=GB" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image40','','/friday/images/EU_01_9_on.gif',0)"><img src="/friday/images/EU_01_9_off.gif" alt="영국/아일랜드/아이슬란드" name="Image40"  border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 동유럽 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/EU_02_off.gif" alt="동유럽" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <!--<tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=40&sub_area_cd=2402&nat_cd=CZ" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2402','','/friday/images/EU_02_2_on.gif',0)"><img src="/friday/images/EU_02_2_off.gif" alt="체코/오스트리아/헝가리" name="Image2402" width="113" height="17" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=40&sub_area_cd=2402&nat_cd=PL" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24021','','/friday/images/EU_02_3_on.gif',0)"><img src="/friday/images/EU_02_3_off.gif" alt="폴란드/크로아티아/슬로베니아" name="Image24021" width="143" height="17" border="0"></a></td>
+                    </tr>-->
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                        	<a href="/friday/list/index.asp?menuId=DA&step_area=40&sub_area_cd=2402&nat_cd=CZ" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image025','','/friday/images/EU_02_5_on.gif',0)"><img src="/friday/images/EU_02_5_off.gif" alt="체코/오스트리아" name="Image025"  border="0"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                        	<a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=HU" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image026','','/friday/images/EU_02_6_on.gif',0)"><img src="/friday/images/EU_02_6_off.gif" alt="폴란드/헝가리/슬로바키아" name="Image026"  border="0"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                        	<a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=HR" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image027','','/friday/images/EU_02_7_on.gif',0)"><img src="/friday/images/EU_02_7_off.gif" alt="크로아티아/발칸" name="Image027"  border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 북유럽 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/EU_03_off.gif" alt="북유럽" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=40&sub_area_cd=2410" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2410','','/friday/images/EU_03_3_on.gif',0)"><img src="/friday/images/EU_03_3_off.gif" alt="러시아" name="Image2410" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=40&sub_area_cd=2403" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2403','','/friday/images/EU_03_2_on.gif',0)"><img src="/friday/images/EU_03_2_off.gif" alt="노르웨이/스웨덴/핀란드/덴마크" name="Image2403" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 지중해 -->
+        <div class="2Depth_F">
+            <div><img src="/friday/images/EU_04_off.gif" alt="지중해" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=TR" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','/friday/images/menu_on_80.gif',0)"><img src="/friday/images/menu_off_80.gif" alt="터키" name="Image37" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="5" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=GR" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37gr','','/friday/images/oc_c_0311_02ov.gif',0)"><img src="/friday/images/oc_c_0311_02.gif" alt="그리스" name="Image37gr" border="0"></a></a><img src="/friday/images/ver_line.gif" width="1" hspace="5" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=EG" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37eg','','/friday/images/oc_c_0311_04ov.gif',0)"><img src="/friday/images/oc_c_0311_04.gif" alt="이집트" name="Image37eg" border="0"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=40&sub_area_cd=2413" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2411eg','','/friday/images/menu_on_90.gif',0)"><img src="/friday/images/menu_off_90.gif" alt="터키플러스" name="Image2411eg" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="5" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=40&sub_area_cd=2412" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2411','','/friday/images/oc_c_0311_07ov.gif',0)"><img src="/friday/images/oc_c_0311_07.gif" alt="두바이플러스" name="Image2411" border="0"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <!-- <a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=AE" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37ae','','/friday/images/oc_c_0311_06ov.gif',0)"><img src="/friday/images/oc_c_0311_06.gif" alt="두바이" name="Image37ae" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="5" alt=""> -->
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=GR&sub_area_cd=2411" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2411gr','','/friday/images/oc_c_0311_03ov.gif',0)"><img src="/friday/images/oc_c_0311_03.gif" alt="그리스플러스" name="Image2411gr" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="5" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=EG&sub_area_cd=2411" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2411eg','','/friday/images/oc_c_0311_05ov.gif',0)"><img src="/friday/images/oc_c_0311_05.gif" alt="이집트플러스" name="Image2411eg" border="0"></a>
+                            <!--터키플러스
+				/friday/images/menu_on_90.gif / menu_off_90.gif
+				-->
+                            <!-- <br><a href="/friday/list/index.asp?menuId=DA&step_area=40&nat_cd=GR" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','/friday/images/menu_on_81.gif',0)"><img src="/friday/images/menu_off_81.gif" alt="그리스/이집트/두바이" name="Image38" border="0"></a> -->
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- 일본 -->
+    <div class="1Depth" style="padding:5px 0; width:195px"><!-- <img src="/friday/images/tour_friday_04_off.gif" alt="일본" width="195" height="20" border="0" onclick="javascript:explain(document.all.menu4);" style="cursor:hand"> --><a href="/friday/japan/"><img src="/friday/images/tour_friday_04_off.gif" alt="일본" width="195" height="20" border="0" style="cursor:hand"></a></div>
+    <div class="Submenu" id="menu4" style="DISPLAY: none">
+        <!-- 동경 -->
+		<div class="2Depth"  style="padding:5px 0; width:195px">
+			<div><img src="/friday/images/JP_nsub1.gif" alt="동일본" width="195" height="18"></div>
+			<div class="3Depth">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2361&city_cd=TYO" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2361','','/friday/images/JP_n_01_on.gif',0)"><img src="/friday/images/JP_n_01_off.gif" alt="동경" name="Image2361" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2362" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2362','','/friday/images/JP_n_02_on.gif',0)"><img src="/friday/images/JP_n_02_off.gif" alt="하코네료칸" name="Image2362" height="17" border="0"></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+        <!--오사카 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/JP_nsub2.gif" alt="오사카" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2363" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2363','','/friday/images/JP_n_03_on.gif',0)"><img src="/friday/images/JP_n_03_off.gif" alt="오사카" name="Image2363" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2364" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2364','','/friday/images/JP_n_04_on.gif',0)"><img src="/friday/images/JP_n_04_off.gif" alt="교토" name="Image2364" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2365" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2365','','/friday/images/JP_n_05_on.gif',0)"><img src="/friday/images/JP_n_05_off.gif" alt="교토 아라시야마" name="Image2365" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2366" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2366','','/friday/images/JP_n_06_on.gif',0)"><img src="/friday/images/JP_n_06_off.gif" alt="고베" name="Image2366" height="17" border="0"></a></td>
+					</tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 큐슈 -->
+        <div class="2Depth_F">
+            <div><img src="/friday/images/JP_nsub3.gif" alt="큐슈" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2367" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2367','','/friday/images/JP_n_07_on.gif',0)"><img src="/friday/images/JP_n_07_off.gif" alt="후쿠오카" name="Image2367" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2368" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2368','','/friday/images/JP_n_08_on.gif',0)"><img src="/friday/images/JP_n_08_off.gif" alt="구마모토" name="Image2368" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2369" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2369','','/friday/images/JP_n_09_on.gif',0)"><img src="/friday/images/JP_n_09_off.gif" alt="뱃부" name="Image2369" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2370" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2370','','/friday/images/JP_n_10_on.gif',0)"><img src="/friday/images/JP_n_10_off.gif" alt="사가" name="Image2370" height="17" border="0"></a></td>
+					</tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 북해도/아키타 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/JP_nsub4.gif" alt="북해도/아키타" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2371" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2371','','/friday/images/JP_n_11_on.gif',0)"><img src="/friday/images/JP_n_11_off.gif" alt="삿포로" name="Image2371" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2372" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2372','','/friday/images/JP_n_12_on.gif',0)"><img src="/friday/images/JP_n_12_off.gif" alt="노보리베츠" name="Image2372" height="17" border="0"></a></td>
+					</tr>
+					<!-- <tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2373" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2373','','/friday/images/JP_n_13_on.gif',0)"><img src="/friday/images/JP_n_13_off.gif" alt="후라노" name="Image2373" height="17" border="0"></a></td>
+					</tr> -->
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2374" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2374','','/friday/images/JP_n_14_on.gif',0)"><img src="/friday/images/JP_n_14_off.gif" alt="아키타" name="Image2374" height="17" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2374" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2375','','/friday/images/JP_n_15_on.gif',0)"><img src="/friday/images/JP_n_15_off.gif" alt="아오모리" name="Image2375" height="17" border="0"></a></td>
+					</tr>
+                </table>
+            </div>
+        </div>
+
+		<!-- 오키나와/플러스 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/JP_nsub5.gif" alt="오키나와/플러스" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2376" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2376','','/friday/images/JP_n_16_on.gif',0)"><img src="/friday/images/JP_n_16_off.gif" alt="오키나와" name="Image2376" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2377" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2377','','/friday/images/JP_n_17_on.gif',0)"><img src="/friday/images/JP_n_17_off.gif" alt="두도시" name="Image2377" height="17" border="0"></a></td>
+					</tr>
+                </table>
+            </div>
+        </div>
+
+		<!-- 시코쿠/돗토리 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/JP_nsub6.gif" alt="시코쿠/돗토리" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<!-- <tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2378" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2378','','/friday/images/JP_n_18_on.gif',0)"><img src="/friday/images/JP_n_18_off.gif" alt="시코쿠" name="Image2378" height="17" border="0"></a></td>
+					</tr> -->
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2379" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2379','','/friday/images/JP_n_19_on.gif',0)"><img src="/friday/images/JP_n_19_off.gif" alt="돗토리" name="Image2379" height="17" border="0"></a></td>
+					</tr>
+					<tr>
+						<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=30&sub_area_cd=2380" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2380','','/friday/images/JP_n_20_on.gif',0)"><img src="/friday/images/JP_n_20_off.gif" alt="나고야" name="Image2380" height="17" border="0"></a></td>
+					</tr>
+                </table>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- 중국 -->
+    <div class="1Depth" style="padding:5px 0; width:195px"><img src="/friday/images/tour_friday_03_off.gif" alt="중국" width="195" height="20" border="0" onClick="javascript:explain(document.all.menu3);" style="cursor:hand"></div>
+    <div class="Submenu" id="menu3" style="DISPLAY: none">
+
+
+        <!--중국 관광-->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/CH_1_off.gif" alt="중국-관광" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=20&nat_cd=CN&city_cd=SHA" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image95','','/friday/images/CH_01_1_on.gif',0)"><img src="/friday/images/CH_01_1_off.gif" alt="상해" name="Image95" width="20" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=20&nat_cd=CN&city_cd=BJS" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image96','','/friday/images/CH_01_2_on.gif',0)"><img src="/friday/images/CH_01_2_off.gif" alt="북경" name="Image96" width="20" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=20&nat_cd=CN&city_cd=TAO" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image97','','/friday/images/CH_01_3_on.gif',0)"><img src="/friday/images/CH_01_3_off.gif" alt="청도" name="Image97" width="20" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="10" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=20&sub_area_cd=2211" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image99','','/friday/images/CH_01_5_on.gif',0)"><img src="/friday/images/CH_01_5_off.gif" alt="서안" name="Image99" width="20" border="0"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=20&nat_cd=CN&city_cd=KMG" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image199','','/friday/images/CH_01_11_on.gif',0)"><img src="/friday/images/CH_01_11_off.gif" alt="곤명" name="Image199" width="20" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=20&nat_cd=CN&city_cd=WEH" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image100','','/friday/images/CH_01_6_on.gif',0)"><img src="/friday/images/CH_01_6_off.gif" alt="대련/연태/위해" name="Image100" width="69" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=20&sub_area_cd=2220" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image122','','/friday/images/ch_15_on.gif',0)"><img src="/friday/images/ch_15_off.gif" alt="광주/심천" name="Image122"  border="0"></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=20&sub_area_cd=2209" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image98','','/friday/images/CH_01_4_on.gif',0)"><img src="/friday/images/CH_01_4_off.gif" alt="해남도" name="Image98" width="30" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=20&sub_area_cd=2210" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image102','','/friday/images/CH_01_8_on.gif',0)"><img src="/friday/images/CH_01_8_off.gif" alt="기타지역" name="Image102" width="39" border="0"></a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+        <!--중국 테마-->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/CH_2_off.gif" alt="중국-테마" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F203" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image101','','/friday/images/CH_01_7_on.gif',0)" target="_blank"><img src="/friday/images/CH_01_7_off.gif" alt="골프" name="Image101" width="20" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=20&sub_area_cd=2201" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image112','','/friday/images/CH_01_12_on.gif',0)"><img src="/friday/images/CH_01_12_off.gif" alt="중국싱글즈" name="Image112"  border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=20&sub_area_cd=2219" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image112','','/friday/images/CH_1_10_on.gif',0)"><img src="/friday/images/CH_1_10_off.gif" alt="가족여행" name="Image112"  border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <!--중국 중국플러스-->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/CH_3_off.gif" alt="중국플러스" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=20&sub_area_cd=2205" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image113','','/friday/images/CH_1_11_on.gif',0)"><img src="/friday/images/CH_1_11_off.gif" alt="상해플러스" name="Image113" width="50" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="10" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=20&sub_area_cd=2206" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image114','','/friday/images/CH_1_12_on.gif',0)"><img src="/friday/images/CH_1_12_off.gif" alt="북경플러스" name="Image114" width="50" border="0"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=20&sub_area_cd=2207" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image115','','/friday/images/CH_1_13_on.gif',0)"><img src="/friday/images/CH_1_13_off.gif" alt="청도플러스" name="Image115" width="50" border="0"></a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <!-- 중국 -->
+        
+
+    </div>
+
+
+
+
+
+
+
+    <!-- 동남아 -->
+    <div class="1Depth" style="padding:5px 0; width:195px"><a href="/friday/asia/index.asp?menuId=DA"><img src="/friday/images/tour_friday_02_off.gif" alt="동남아" width="195" height="20" border="0" style="cursor:hand"></a><!-- <img src="/friday/images/tour_friday_02_off.gif" alt="동남아" width="195" height="20" border="0" onClick="javascript:explain(document.all.menu2);" style="cursor:hand"> --></div>
+    <div class="Submenu"  id="menu2" style="DISPLAY: none">
+
+
+        <!-- 홍콩/마카오 -->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/friday_asia_sub01.gif" alt="홍콩/마카오" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="http://www.naeiltour.co.kr/hongkong_new/friday/index.asp?indexID=AA&sub_area_cd=2108&spec_cd=&banner=menu1" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image60','','/friday/images/EA_01_1_on.gif',0)"><img src="/friday/images/EA_01_1_off.gif" alt="홍콩" name="Image60"  border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/hongkong_new/friday/index.asp?indexID=AB&sub_area_cd=2107&spec_cd=&banner=menu6" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image63','','/friday/images/EA_01_4_on.gif',0)"><img src="/friday/images/EA_01_4_off.gif" alt="마카오" name="Image63" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="http://www.naeiltour.co.kr/hongkong_new/friday/index.asp?indexID=BA&sub_area_cd=2109&mem_cd=10&banner=menu2" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image75','','/friday/images/EA_03_1_on.gif',0)"><img src="/friday/images/EA_03_1_off.gif" alt="홍콩플러스" name="Image75" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+         <!-- 대만 -->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/friday_asia_sub05.gif" alt="대만" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2104" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2109','','/friday/images/friday_asia_menu_on13.gif',0)"><img src="/friday/images/friday_asia_menu_off13.gif" alt="타이페이" name="Image2109" border="0"></a>
+                          </td>
+                        </tr>
+                        <tr>
+                        	<td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2117" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2110','','/friday/images/friday_asia_menu_on14.gif',0)"><img src="/friday/images/friday_asia_menu_off14.gif" alt="테마(온천/트래킹)" name="Image2110" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        
+
+        <!-- 필리핀 -->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/friday_asia_sub03.gif" alt="필리핀" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2105" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2102','','/friday/images/friday_asia_menu_on06.gif',0)"><img src="/friday/images/friday_asia_menu_off06.gif" alt="마닐라" name="Image2102" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2115" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2103','','/friday/images/friday_asia_menu_on07.gif',0)"><img src="/friday/images/friday_asia_menu_off07.gif" alt="세부" name="Image2103" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2116" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21160','','/friday/images/friday_asia_menu_on101129.gif',0)"><img src="/friday/images/friday_asia_menu_off101129.gif" alt="보라카이" name="Image21160" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 태국 -->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/friday_asia_sub04.gif" alt="태국" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2102" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2105','','/friday/images/friday_asia_menu_on30.gif',0)"><img src="/friday/images/friday_asia_menu_off30.gif" alt="방콕" name="Image2105" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2127" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2127','','/friday/images/friday_asia_menu_on31.gif',0)"><img src="/friday/images/friday_asia_menu_off31.gif" alt="파타야" name="Image2127" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2113" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2106','','/friday/images/friday_asia_menu_on10.gif',0)"><img src="/friday/images/friday_asia_menu_off10.gif" alt="푸켓 리조트여행 | 풀빌라 | 테마여행 | 허니문" name="Image2106" border="0"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2128" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2128','','/friday/images/friday_asia_menu_on32.gif',0)"><img src="/friday/images/friday_asia_menu_off32.gif" alt="치앙마이" name="Image2128" border="0"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2114" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2107','','/friday/images/friday_asia_menu_on12.gif',0)"><img src="/friday/images/friday_asia_menu_off12.gif" alt="크라비/코사무이/후아인" name="Image2107" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- 싱가폴 -->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/friday_asia_sub02.gif" alt="싱가폴" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2103" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2100','','/friday/images/friday_asia_menu_on04.gif',0)"><img src="/friday/images/friday_asia_menu_off04.gif" alt="싱가폴" name="Image2100" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2154" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2101','','/friday/images/friday_asia_menu_on05.gif',0)"><img src="/friday/images/friday_asia_menu_off05.gif" alt="싱가폴 플러스" name="Image2101" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 말레이시아 -->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/friday_asia_sub09.gif" alt="말레이시아" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2111" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2118','','/friday/images/friday_asia_menu_on22.gif',0)"><img src="/friday/images/friday_asia_menu_off22.gif" alt="쿠알라룸푸" name="Image2118" border="0"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2119" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2119','','/friday/images/friday_as_menu_on02.gif ',0)"><img src="/friday/images/friday_as_menu_off02.gif" alt="코타키나발루" name="Image2119" border="0"></a> <img src="/friday/images/ver_line.gif" width="1" hspace="4" alt=""> <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2125" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2125','','/friday/images/friday_asia_menu_on51.gif',0)"><img src="/friday/images/friday_asia_menu_off51.gif" alt="랑카위" name="Image2125" border="0"></a> <img src="/friday/images/ver_line.gif" width="1" hspace="4" alt=""> <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2155" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2155','','/friday/images/friday_asia_menu_on52.gif',0)"><img src="/friday/images/friday_asia_menu_off52.gif" alt="페낭" name="Image2155" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+       
+
+        <!-- 인도네시아 -->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/friday_asia_sub08.gif" alt="인도네시아" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2120" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21201','','/friday/images/friday_asia_menu_on29.gif',0)"><img src="/friday/images/friday_asia_menu_off29.gif" alt="발리" name="Image21201" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2132" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21321','','/friday/images/friday_asia_menu_on28.gif',0)"><img src="/friday/images/friday_asia_menu_off28.gif" alt="발리" name="Image21321" border="0"></a><!--<a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2120" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2111','','/friday/images/friday_asia_menu_on19_101224.gif',0)"><img src="/friday/images/friday_asia_menu_off19_101224.gif" alt="발리" name="Image2111" border="0"></a>-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2121" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2112','','/friday/images/friday_asia_menu_on20.gif',0)"><img src="/friday/images/friday_asia_menu_off20.gif" alt="자카르타" name="Image2112" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+			<!-- 베트남 -->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/friday_asia_sub061.gif" alt="베트남/라오스/캄보디아" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2106" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2114','','/friday/images/friday_asia_menu_on15.gif',0)"><img src="/friday/images/friday_asia_menu_off15.gif" alt="하노이" name="Image2114" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="4" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2118" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22118','','/friday/images/friday_asia_menu_2118_on.jpg',0)"><img src="/friday/images/friday_asia_menu_2118.jpg" alt="호치민/나짱" name="Image22118" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="4" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2129" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2129','','/friday/images/friday_asia_menu_2129_on.jpg',0)"><img src="/friday/images/friday_asia_menu_2129.jpg" alt="다낭/나짱" name="Image2129" border="0"></a>
+														
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                        	<a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2112" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12112','','/friday/images/friday_asia_menu_on25.gif',0)"><img src="/friday/images/friday_asia_menu_25.gif" alt="앙코르와트" name="Image12112" border="0"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                        	<a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2131" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2131','','/friday/images/friday_asia_menu_on162.gif',0)"><img src="/friday/images/friday_asia_menu_off162.gif" alt="루앙프라방/비엔티엔/방비엥" name="Image2131" border="0"></a>
+                        </td>
+                      </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+        <!-- 동남아플러스 -->
+        <div class="2Depth_A_F">
+            <div><img src="/friday/images/friday_asia_sub10.gif" alt="플러스" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2130" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2120','','/friday/images/friday_asia_menu_on24.gif',0)"><img src="/friday/images/friday_asia_menu_off24.gif" alt="동남아플러스" name="Image2120" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- 미국/캐나다 -->
+    <div class="1Depth" style="padding:5px 0; width:195px"><a href="/friday/america/"><img src="/friday/images/tour_friday_28_off.gif" alt="미국/캐나다" width="195" height="20" border="0"  style="cursor:hand"></a><!--onClick="javascript:explain(document.all.menu6);"--></div>
+    <div class="Submenu" id="menu6" style="DISPLAY: none">
+
+        <!-- 하와이 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/US_top_01.gif" alt="하와이" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2507" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2507','','/friday/images/US_01_3_on.gif',0)"><img src="/friday/images/US_01_3_off.gif" alt="하와이" name="Imagehnl" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2505" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2505','','/friday/images/US_01_07_on.gif',0)"><img src="/friday/images/US_01_07_off.gif" alt="하와이기타" name="Image2505" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2518" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2518','','/friday/images/US_01_20_on.gif',0)"><img src="/friday/images/US_01_20_off.gif" alt="하와이+미동서부" name="Image2518" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+		<!-- 칸쿤+미국스페셜 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/US_top_07.gif" alt="칸쿤+미국스페셜" ></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2530" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2530','','/friday/images/US_01_19_on.gif',0)"><img src="/friday/images/US_01_19_off.gif" alt="칸쿤+미국스페셜" name="Image2530" height="17" border="0"></a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <!-- 미서부 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/US_top_02.gif" alt="하와이" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2508" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagesfo','','/friday/images/US_01_01_on.gif',0)"><img src="/friday/images/US_01_01_off.gif" alt="샌프란시스코" name="Imagesfo" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><!-- <a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2509" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagelax','','/friday/images/US_01_03_on.gif',0)"><img src="/friday/images/US_01_03_off.gif" alt="로스앤젤레스" name="Imagelax" border="0"></a> --><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2509" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagelax','','/friday/images/US_01_15_on.gif',0)"><img src="/friday/images/US_01_15_off.gif" alt="로스앤젤레스" name="Imagelax" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2510" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagelas','','/friday/images/US_01_02_on.gif',0)"><img src="/friday/images/US_01_02_off.gif" alt="라스베가스" name="Imagelas" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><!-- <a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2511" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2511','','/friday/images/US_01_08_on.gif',0)"><img src="/friday/images/US_01_08_off.gif" alt="라스베가스/LA" name="Image2511" border="0"></a> --><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2511" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2511','','/friday/images/US_01_16_on.gif',0)"><img src="/friday/images/US_01_16_off.gif" alt="라스베가스/LA" name="Image2511" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2512" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2512','','/friday/images/US_01_09_on.gif',0)"><img src="/friday/images/US_01_09_off.gif" alt="라스베가스/SFO" name="Image2512" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><!-- <a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2513" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2513','','/friday/images/US_01_10_on.gif',0)"><img src="/friday/images/US_01_10_off.gif" alt="LA/SFO" name="Image2513" border="0"></a><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2513" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2513','','/friday/images/US_01_17_on.gif',0)"><img src="/friday/images/US_01_17_off.gif" alt="LA/SFO" name="Image2513" border="0"></a> --></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 미동부 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/US_top_03.gif" alt="하와이" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2514" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2514','','/friday/images/US_01_11_on.gif',0)"><img src="/friday/images/US_01_11_off.gif" alt="뉴욕" name="Image2514" border="0"></a></td>
+                    </tr>
+					<tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2515" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2515','','/friday/images/US_01_12_on.gif',0)"><img src="/friday/images/US_01_12_off.gif" alt="시카고/워싱턴" name="Image2515" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+		<!-- 미주+캐나다 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/US_top_06.gif" alt="미주+캐나다" ></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2522" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2522','','/friday/images/US_01_18_on.gif',0)"><img src="/friday/images/US_01_18_off.gif" alt="미주+캐나다" name="Image2522" height="17" border="0"></a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <!-- 괌사이판 -->
+        <!--<div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_03_off.gif" alt="괌사이판" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=70&sub_area_cd=2702" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2702','','/friday/images/SP_03_2_on.gif',0)"><img src="/friday/images/SP_03_2_off.gif" alt="괌" name="Image2702" height="17" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=70&sub_area_cd=2703" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2703','','/friday/images/SP_03_3_on.gif',0)"><img src="/friday/images/SP_03_3_off.gif" alt="사이판" name="Image2703" height="17" border="0"></a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>-->
+
+
+
+    </div>
+
+	<!-- 캐나다 -->
+	<div class="1Depth" style="padding:5px 0; width:195px"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2516&au_chk_cd=CAN"><img src="/friday/images/tour_friday_30_off.gif" alt="캐나다" width="195" height="20" border="0" onClick="javascript:explain(document.all.menu5);" style="cursor:hand"></a></div>
+    <div class="Submenu" id="menu14" style="DISPLAY: none">
+
+		
+
+        <!-- 캐나다 -->
+		<div class="2Depth"  style="padding:0px 0; width:195px">
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2516&au_chk_cd=CAN" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2516','','/friday/images/CA_01_on.gif',0)"><img src="/friday/images/CA_01_off.gif" alt="밴쿠버" name="Image2516" border="0"></a></td>
+                    </tr>
+					 <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2521&au_chk_cd=CAN" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2521','','/friday/images/CA_02_on.gif',0)"><img src="/friday/images/CA_02_off.gif" alt="캘거리/에드먼튼/록키" name="Image2521" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2517&au_chk_cd=CAN" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2517','','/friday/images/CA_04_on.gif',0)"><img src="/friday/images/CA_04_off.gif" alt="토론토/나이아가라" name="Image2517" border="0"></a></td>
+                    </tr>
+					<tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2551&au_chk_cd=CAN" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2551','','/friday/images/CA_05_on.gif',0)"><img src="/friday/images/CA_05_off.gif" alt="몬트리올/퀘백" name="Image2551" border="0"></a></td>
+                    </tr>
+					<tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=50&sub_area_cd=2522&au_chk_cd=CAN" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2522','','/friday/images/US_01_18_on.gif',0)"><img src="/friday/images/US_01_18_off.gif" alt="미주+캐나다" name="Image2522" height="17" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>  
+	</div>
+
+	<!-- 괌/사이판 /팔라우 -->
+    <div class="1Depth" style="padding:5px 0; width:195px"><a href="/friday/list/index.asp?menuId=DA&step_area=70&sub_area_cd=2702&au_chk_cd=GSP"><img src="/friday/images/tour_friday_29_off.gif" alt="괌/사이판 /팔라우" width="195" height="20" border="0" onClick="javascript:explain(document.all.menu5);" style="cursor:hand"></a></div>
+    <div class="Submenu" id="menu13" style="DISPLAY: none">
+
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=70&sub_area_cd=2702&au_chk_cd=GSP" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2702','','/friday/images/SP_03_2_on.gif',0)"><img src="/friday/images/SP_03_2_off.gif" alt="괌" name="Image2702" height="17" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt="">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=70&sub_area_cd=2703&au_chk_cd=GSP" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2703','','/friday/images/SP_03_3_on.gif',0)"><img src="/friday/images/SP_03_3_off.gif" alt="사이판" name="Image2703" height="17" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt="">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2134&au_chk_cd=GSP" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2134','','/friday/images/SP_04_6_on.gif',0)"><img src="/friday/images/SP_04_6_off.gif" alt="팔라우" name="Image2134" height="17" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>  
+	</div>
+		
+
+
+    <!-- 남태평양 -->
+    <div class="1Depth" style="padding:5px 0; width:195px"><a href="/friday/oceania/?au_chk_cd=AUS"><img src="/friday/images/tour_friday_18_off.gif" alt="호주" width="195" height="20" border="0" onClick="javascript:explain(document.all.menu5);" style="cursor:hand"></a></div>
+    <div class="Submenu" id="menu5" style="DISPLAY: none">
+        <!-- 호주동부 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_a1.gif" alt="호주동부" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=AUS&sub_area_cd=2640" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2604','','/friday/images/SP_a1_on.gif',0)"><img src="/friday/images/SP_a1_off.gif" alt="호주동부" name="Image2604" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 호주 동부 플러스 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_a2.gif" alt="호주 동부 플러스" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=AUS&sub_area_cd=2641" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2606','','/friday/images/SP_a2_01_on.gif',0)"><img src="/friday/images/SP_a2_01_off.gif" alt="시드니/멜번" name="Image2606" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=AUS&sub_area_cd=2642" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2610','','/friday/images/SP_a_02_on.gif',0)"><img src="/friday/images/SP_a_02_off.gif" alt="시드니/브리스번(골트코스트)" name="Image2610" border="0"></a></td>
+                    </tr>
+					<tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=AUS&sub_area_cd=2643" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2611','','/friday/images/SP_a_03_on.gif',0)"><img src="/friday/images/SP_a_03_off.gif" alt="시드니/케언즈" name="Image2611" border="0"></a></td>
+                    </tr>
+					<tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=AUS&sub_area_cd=2644" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2605','','/friday/images/SP_a2_04_on.gif',0)"><img src="/friday/images/SP_a2_04_off.gif" alt="케언즈/브리즈번/멜번" name="Image2605" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>        
+
+        <!-- 호주서부 및 아웃백 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_a3.gif" alt="호주서부 및 아웃백" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=AUS&sub_area_cd=2645" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2607','','/friday/images/SP_a_11_on.gif',0)"><img src="/friday/images/SP_a_11_off.gif" alt="퍼스/에어즈락/타즈매니아" name="Image2607" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 호주 + 뉴질랜드 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_a4.gif" alt="호주 + 뉴질랜드" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=AUS&sub_area_cd=2646" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2617','','/friday/images/SP_a4_on.gif',0)"><img src="/friday/images/SP_a4_off.gif" alt="호주 + 뉴질랜드" name="Image2617" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="1Depth" style="padding:5px 0; width:195px"><img src="/friday/images/tour_friday_19_off.gif" alt="뉴질랜드" width="195" height="20" border="0" onClick="javascript:explain(document.all.menu10);" style="cursor:hand"></div>
+    <div class="Submenu" id="menu10" style="DISPLAY: none">
+        <!-- 뉴질랜드 -->
+
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_60_01.gif" alt="뉴질랜드 북섬"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=NEZ&sub_area_cd=2618" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2618','','/friday/images/SP_60_01_on.gif',0)"><img src="/friday/images/SP_60_01_off.gif" alt="호클랜드" name="Image2618" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_60_02.gif" alt="뉴질랜드 남섬"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=NEZ&sub_area_cd=2619" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2619','','/friday/images/SP_60_02_on.gif',0)"><img src="/friday/images/SP_60_02_off.gif" alt="크라이스처치" name="Image2619" border="0"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=NEZ&sub_area_cd=2620" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2620','','/friday/images/SP_60_03_on.gif',0)"><img src="/friday/images/SP_60_03_off.gif" alt="퀸즈타운" name="Image2620" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_60_03.gif" alt="뉴질랜드 남북섬"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=NEZ&sub_area_cd=2621" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2621','','/friday/images/SP_60_04_on.gif',0)"><img src="/friday/images/SP_60_04_off.gif" alt="남북일주" name="Image2621" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="1Depth" style="padding:5px 0; width:195px"><img src="/friday/images/tour_friday_20_off.gif" alt="뉴칼/피지/몰디브" width="195" height="20" border="0" onClick="javascript:explain(document.all.menu11);" style="cursor:hand"></div>
+    <div class="Submenu" id="menu11" style="DISPLAY: none">
+
+        <!-- 뉴칼레도니아 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_04_off.gif" alt="뉴칼레도니아" width="195" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=NPM&sub_area_cd=2602" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image145','','/friday/images/SP_04_1_on.gif',0)"><img src="/friday/images/SP_04_1_off.gif" alt="누메아/일데팡" name="Image145" width="65" height="17" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 피지 -->
+        <div class="2Depth"  style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/SP_60_1.jpg" alt="피지" height="18"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=60&au_chk_cd=NPM&sub_area_cd=2609" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2609','','/friday/images/SP_60_1_on.gif',0)"><img src="/friday/images/SP_60_1_off.gif" alt="피지" name="Image2609" border="0"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 몰디브 -->
+        <div class="2Depth_A" style="padding:5px 0; width:195px">
+            <div><img src="/friday/images/friday_asia_sub11.gif" alt="몰디브" width="195"></div>
+            <div class="3Depth">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                            <a href="/friday/list/index.asp?menuId=DA&step_area=10&au_chk_cd=NPM&sub_area_cd=2126" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2126','','/friday/images/friday_ma_menu_on04.gif',0)"><img src="/friday/images/friday_ma_menu_off04.gif" alt="몰디브" name="Image2126" border="0"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- 인도/네팔 -->
+    
+  	<div class="1Depth" style="padding:5px 0; width:195px"><img src="/friday/images/tour_friday_13_off.gif" alt="인도/네팔" width="195" height="20" border="0" onClick="javascript:explain(document.all.menu9);" style="cursor:hand"></div>
+    <div class="Submenu" id="menu9" style="DISPLAY: none">
+  	
+
+
+        <div class="3Depth_2">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=90&sub_area_cd=2901" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2901','','/friday/images/ND_01_1_on.gif',0)"><img src="/friday/images/ND_01_1_off.gif" alt="델리" name="Image2901" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=90&sub_area_cd=2902" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2902','','/friday/images/friday_asia_menu_off53.gif',0)"><img src="/friday/images/friday_asia_menu_off53.gif" alt="뭄바이/첸나이/켈커타" name="Image2902" border="0"></a><!--<img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=90&sub_area_cd=2903" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2903','','/friday/images/ND_01_3_on.gif',0)"><img src="/friday/images/ND_01_3_off.gif" alt="첸나이/켈커타" name="Image2903" border="0"></a>--></td>
+                </tr>
+                <tr>
+                    <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/friday/list/index.asp?menuId=DA&step_area=90&sub_area_cd=2904" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2904','','/friday/images/ND_01_4_on.gif',0)"><img src="/friday/images/ND_01_4_off.gif" alt="네팔" name="Image2904" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=10&sub_area_cd=2157" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2910','','/friday/images/friday_asia_menu_off54.gif',0)"><img src="/friday/images/friday_asia_menu_off54.gif" alt="콜롬보" name="Image2910" border="0"></a>
+					<!--<img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=90&sub_area_cd=2905" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2905','','/friday/images/ND_01_5_on.gif',0)"><img src="/friday/images/ND_01_5_off.gif" alt="인도/네팔플러스" name="Image2905" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/friday/list/index.asp?menuId=DA&step_area=90&sub_area_cd=2907" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2907','','/friday/images/ND_01_6_on.gif',0)"><img src="/friday/images/ND_01_6_off.gif" alt="테마" name="Image2907" border="0"></a>--></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+    
+
+    <!-- 부산출발 -->
+    <div class="1Depth" style="padding:5px 0; width:195px"><a href="/naeil21/"><img src="/friday/images/tour_friday_14_off.gif" alt="부산출발" width="195" height="20" border="0"></a></div>
+
+
+
+
+    <!-- 크루즈 금까기 -->
+    <div class="1Depth" style="padding:5px 0; width:195px"><a href="/cruise/" target="_blank"/><img src="/friday/images/tour_friday_17_off.gif" alt="크루즈 금까기"width="195" height="20" border="0" style="cursor:hand"></a></div><!-- onClick="javascript:explain(document.all.menu7);"-->
+    <div class="Submenu" id="menu7" style="DISPLAY: none">
+
+
+        <!-- 크루즈 금까기 -->
+        <div class="3Depth_2">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;"><a href="/cruise/friday/friday.asp?area=40&sub_area_cd=D401" target="_blank" onMouseOver="MM_swapImage('Image160','','/friday/images/CR_01_1_on.gif',0)" onMouseOut="MM_swapImgRestore()"><img src="/friday/images/CR_01_1_off.gif" alt="유럽/지중해" name="Image160" width="54" height="17" border="0"></a><img src="/friday/images/ver_line.gif" width="1" hspace="8" alt=""><a href="/cruise/friday/friday.asp?area=40&sub_area_cd=D402" target="_blank" onMouseOver="MM_swapImage('Image161','','/friday/images/CR_01_2_on.gif',0)" onMouseOut="MM_swapImgRestore()"><img src="/friday/images/CR_01_2_off.gif" alt="북유럽" name="Image161" width="30" height="17" border="0"></a></td>
+                </tr>
+                <tr>
+                    <td class="3Depth_R" style="padding-right:10px;padding-top:5px;text-align:right;">
+                        <a href="/cruise/friday/friday.asp?area=50" target="_blank" onMouseOver="MM_swapImage('Image162','','/friday/images/CR_01_3_on.gif',0)" onMouseOut="MM_swapImgRestore()"><img src="/friday/images/CR_01_3_off.gif" alt="미주/캐나다" name="Image162" width="54" height="17" border="0"></a><!--img src="/friday/images/ver_line.gif" width="1" hspace="8"><a href="/cruise/friday/friday.asp?area=10" target="_blank" onMouseOver="MM_swapImage('Image163','','/friday/images/CR_01_4_on.gif',0)" onMouseOut="MM_swapImgRestore()"><img src="/friday/images/CR_01_4_off.gif" alt="아시아" name="Image163" width="30" height="17" border="0"></a>-->
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+	
+
+    </div>
+    
+  <div class="1Depth" style="padding:5px 0; width:195px"><a href="/friday/theme/index.asp?menuId=DA"><img src="/friday/images/theme_off.gif" alt="테마금까기" width="195" height="20" border="0"></a></div>
+
+
+
+</div>
+
+
+<!-- 좌측메뉴 끝 -->
+
+
+
+
