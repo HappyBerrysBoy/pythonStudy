@@ -1,52 +1,48 @@
 <div class="leftArea">
 	<h2 class="hidden">LNB</h2>
-	<nav id="lnb" class="lnb0">
+	<nav id="lnb" class="lnb0"><!-- 2013-09-02 class추가 및 마크업 수정 -->
 
 		<div class="topTitleArea">
-			<h3 class="">레저/스포츠</h3>
+			<h3 class="">해외자유</h3>
 		</div>
 		<ul class="clearfix">
-
-			<li class="">
-				<h4><a >트레킹</a></h4>
-
-				<ul class="subMenu sub3Depth">
-					<li class="subM01"><a >일본</a>
-						<ul class="sub4Depth clearfix">
-							<li class="subS01"><a href='/item/?M1=6&M2=337&M3=818&M4=819&M5=0'  target="_self" >큐슈 올레길</a>
-							</li>
-							<li class="subS02"><a href='/item/?M1=6&M2=337&M3=818&M4=823&M5=0'  target="_self" >큐슈</a>
-							</li>
-							<li class="subS03"><a href='/item/?M1=6&M2=337&M3=818&M4=820&M5=0'  target="_self" >야쿠시마</a>
-							</li>
-							<li class="subS04"><a href='/item/?M1=6&M2=337&M3=818&M4=825&M5=0'  target="_self" >기타지역</a>
-							</li>
-						</ul>
-					</li>
-					<li class="subM02 end"><a href='/item/?M1=6&M2=337&M3=821&M4=0&M5=0' >중국</a>
-					</li><li class='blank'><a >&nbsp;</a></li>
-				</ul>
-
-			</li>
-			<li class="">
-				<h4><a >스쿠버다이빙 </a></h4>
-
-				<ul class="subMenu sub3Depth">
-					<li class="subM01 end"><a href='/item/?M1=6&M2=338&M3=347&M4=0&M5=0' >일본 (오키나와)</a>
-					</li>
-					<li class="subM02 end"><a href='/item/?M1=6&M2=338&M3=348&M4=0&M5=0' >동남아</a>
-					</li><li class='blank'><a >&nbsp;</a></li>
-				</ul>
-
-			</li>
 			<li class="on">
-				<h4><a >낚시/캠핑</a></h4>
-
+				<h4><a  href='/SubMain/index.asp?sq=12&subkind=1' >서울출발</a></h4>
 				<ul class="subMenu sub3Depth">
-					<li class="subM01 end"><a href='/item/?M1=6&M2=550&M3=551&M4=0&M5=0' >일본</a>
-					</li><li class='blank'><a >&nbsp;</a></li>
+					<li class="subM01"><a href='/SubMain/Areaindex.asp?sq=11&subkind=2'  >일본</a>
+					</li>
+					<li class="subM02"><a href='/SubMain/Areaindex.asp?sq=15&subkind=2'  >동남아</a>
+					</li>
+					<li class="subM03"><a href='/SubMain/Areaindex.asp?sq=17&subkind=2'  >중국/홍콩/대만</a>
+					</li>
+					<li class="subM04"><a href='/SubMain/Areaindex.asp?sq=18&subkind=2'  >유럽</a>
+					</li>
+					<li class="subM05 end"><a href='/SubMain/Areaindex.asp?sq=19&subkind=2'  >남태평양/미주/대양주/인도</a>
+						<ul class="sub4Depth">
+								<li class="subS01" ><a href='/item/?M1=1&M2=8&M3=14&M4=93&M5=0'  target="_self">괌</a>
+								</li>
+								<li class="subS02" ><a href='/item/?M1=1&M2=8&M3=14&M4=94&M5=0'  target="_self">사이판</a>
+								</li>
+								<li class="subS03" ><a href='/item/?M1=1&M2=8&M3=14&M4=95&M5=0'  target="_self">팔라우</a>
+								</li>
+								<li class="subS04" ><a href='javascript:MobileLeftClick2("dpl", 0);' class='subMore' target="_self">미국/캐나다</a>
+									<ul class="sub4DepthSub" id='dpl0' >
+										<li class=""><a href='/item/?M1=1&M2=8&M3=14&M4=97&M5=98' >하와이</a></li>
+										<li class=""><a href='/item/?M1=1&M2=8&M3=14&M4=97&M5=99' >뉴욕/동부</a></li>
+										<li class=""><a href='/item/?M1=1&M2=8&M3=14&M4=97&M5=102' >샌프란시스코/라스베가스</a></li>
+										<li class=""><a href='/item/?M1=1&M2=8&M3=14&M4=97&M5=599' >캐나다/멕시코(칸쿤)</a></li>
+									</ul>
+								</li>
+								<li class="subS05" ><a href='/item/?M1=1&M2=8&M3=14&M4=867&M5=0'  target="_self">인도</a>
+								</li></ul>
+					</li><li class='blank'><a>&nbsp;</a></li>
 				</ul>
-
+			</li>
+			<li class="">
+				<h4><a  href='/SubMain/index.asp?sq=13&subkind=1' >부산출발</a></h4>
+			</li>
+			<li class="">
+				<h4><a  href='/SubMain/areaindex.asp?sq=14&subkind=1' >대구출발</a></h4>
 			</li>
 		</ul>
 	

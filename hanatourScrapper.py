@@ -179,7 +179,7 @@ for packageUrl in packagesUrlList:
                     print >> detailProductFile, temp
                     detailProductFile.close()
                     
-                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")                    
+                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
                     detailProductList = open('detailProductFile.txt')
                     #idx = 1;
                     try:

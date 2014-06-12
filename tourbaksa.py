@@ -52,6 +52,15 @@ class clsDetailProduct():
         self.price = ''
         self.status = ''
         self.url = ''
+        
+#oracle 10g 접속정보
+host = 'hnctech73.iptime.org'
+port = 1521
+dbase = 'ora11g'
+login = 'bigtour'
+passwrd = 'bigtour'
+#dsn = cx_Oracle.makedsn(host, port, dbase)
+#con = cx_Oracle.connect(login, passwrd, dsn)
 
 # 시간 변수들..
 today = datetime.date.today()
@@ -172,7 +181,9 @@ for level1 in menulist:
                                             detailProductHtml = open('detailProductHtml.txt')
                                             try:
                                                 detailProductCls = clsDetailProduct()
-                                                con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                                                #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                                                dsn = cx_Oracle.makedsn(host, port, dbase)
+                                                con = cx_Oracle.connect(login, passwrd, dsn)
                                                 for detailProduct in detailProductHtml:
                                                     #print 'Detail Product : ' + detailProduct
                                                     if detailProduct.find('startDate">') > -1:
@@ -202,7 +213,7 @@ for level1 in menulist:
                                             print >> exceptFile, 'Detail Product URL Error', sys.exc_info()[0]
                                             pass
                                         
-                                        #break
+                                        break
                                     
                             except:
                                 print >> exceptFile, 'Depart List Parcing Error', sys.exc_info()[0]
@@ -218,8 +229,8 @@ for level1 in menulist:
                 print >> exceptFile, 'Region url error', sys.exc_info()[0]
                 pass
     
-            #break
-        #break
+            break
+        break
     break
 
 exceptFile.close()
