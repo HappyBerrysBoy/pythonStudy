@@ -1,125 +1,18 @@
-<tbody id="ViewItemList_JTBS206_1" name="ViewItemList_JTBS206_1" >					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42631&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.01(화) </td>						
-<td class="price">219,000원</td>						
+<tbody id="ViewItemList_JHBS5_3" name="ViewItemList_JHBS5_3" >					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JHBSOZ&EV_SEQ=980&Good_YY=JHBS&Good_SEQ=5&airIDX=3&M1=1&M2=8&M3=9&M4=26&M5=817'" >						
+<td class="startDate">06.20(금) </td>						
+<td class="price">719,000원</td>						
 <td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42631&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42632&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.02(수) </td>						
-<td class="price">219,000원</td>						
+<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JHBSOZ&EV_SEQ=980&Good_YY=JHBS&Good_SEQ=5&airIDX=3&M1=1&M2=8&M3=9&M4=26&M5=817'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JHBSOZ&EV_SEQ=981&Good_YY=JHBS&Good_SEQ=5&airIDX=3&M1=1&M2=8&M3=9&M4=26&M5=817'" >						
+<td class="startDate">06.22(일) </td>						
+<td class="price">689,000원</td>						
 <td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42632&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42633&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.03(목) </td>						
-<td class="price">219,000원</td>						
+<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JHBSOZ&EV_SEQ=981&Good_YY=JHBS&Good_SEQ=5&airIDX=3&M1=1&M2=8&M3=9&M4=26&M5=817'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JHBSOZ&EV_SEQ=982&Good_YY=JHBS&Good_SEQ=5&airIDX=3&M1=1&M2=8&M3=9&M4=26&M5=817'" >						
+<td class="startDate">06.27(금) </td>						
+<td class="price">719,000원</td>						
 <td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42633&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42634&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.04(금) </td>						
-<td class="price">219,000원</td>						
+<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JHBSOZ&EV_SEQ=982&Good_YY=JHBS&Good_SEQ=5&airIDX=3&M1=1&M2=8&M3=9&M4=26&M5=817'">예약접수</button></td>					</tr>					<tr class="lastTr"  style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JHBSOZ&EV_SEQ=983&Good_YY=JHBS&Good_SEQ=5&airIDX=3&M1=1&M2=8&M3=9&M4=26&M5=817'" >						
+<td class="startDate">06.29(일) </td>						
+<td class="price">689,000원</td>						
 <td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type3" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42634&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약마감</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42635&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.05(토) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42635&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42636&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.06(일) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42636&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42637&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.07(월) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42637&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42638&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.08(화) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42638&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42639&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.09(수) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42639&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42640&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.10(목) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42640&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42641&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.11(금) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42641&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42642&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.12(토) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42642&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42643&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.13(일) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42643&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42644&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.14(월) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42644&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42645&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.15(화) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42645&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42646&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.16(수) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42646&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42647&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.17(목) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42647&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42648&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.18(금) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type3" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42648&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약마감</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42649&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.19(토) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42649&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42650&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.20(일) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42650&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42651&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.21(월) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42651&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42652&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.22(화) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42652&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42653&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.23(수) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42653&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42654&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.24(목) </td>						
-<td class="price">219,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42654&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42655&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.25(금) </td>						
-<td class="price">314,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42655&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42656&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.26(토) </td>						
-<td class="price">314,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42656&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42657&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.27(일) </td>						
-<td class="price">314,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42657&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42658&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.28(월) </td>						
-<td class="price">314,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42658&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42659&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.29(화) </td>						
-<td class="price">314,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42659&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42660&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.30(수) </td>						
-<td class="price">314,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42660&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>					<tr class="lastTr"  style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42661&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'" >						
-<td class="startDate">07.31(목) </td>						
-<td class="price">314,000원</td>						
-<td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JTBSJL&EV_SEQ=42661&Good_YY=JTBS&Good_SEQ=206&airIDX=1&M1=1&M2=8&M3=9&M4=15&M5=617'">예약접수</button></td>					</tr>				</tbody>			</table>			
+<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JHBSOZ&EV_SEQ=983&Good_YY=JHBS&Good_SEQ=5&airIDX=3&M1=1&M2=8&M3=9&M4=26&M5=817'">예약접수</button></td>					</tr>				</tbody>			</table>			<p></p>			<input type="hidden" name="ItemCntAll_JHBS5_3"  id="ItemCntAll_JHBS5_3"    value="1">			<input type="hidden" name="ItemCnt_JHBS5_3"  id="ItemCnt_JHBS5_3"   value="0">			<div id="itemBlockJHBS5_3" name="itemBlockJHBS5_3" style="display:none;width:0px;height:0px;"></div>
+		</div>	</div></div>]]></Results>

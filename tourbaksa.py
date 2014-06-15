@@ -10,6 +10,7 @@ from time import localtime, strftime, sleep
 from datetime import timedelta
 import sys
 import cx_Oracle
+import savefilegethtml
 
 #여행코드 영어4자리 + 숫자
 # 영어 4자리가 뜻하는건... 첫번째 자리 : 국가, 두번째 자리 : 지역 세번째 자리 : 여행종류(P:패키지, H:허니문, G:골프, C:크루즈, S:유럽??, 등..), 네번재 자리 : 출발지역(S:서울, B:부산, D:대구)
@@ -75,16 +76,17 @@ thisMonth = strftime("%Y", time) + strftime("%m", time)
 homepageUrl = 'http://www.tourbaksa.com'
 homepageHtml = urllib2.urlopen(homepageUrl).read()
 homepageHtml = homepageHtml[homepageHtml.find('<div class="menuList">'):homepageHtml.find('<ul class="etcMenu">') + len('<ul class="etcMenu">')]
-homepageHtmlFile = open('tourbaksaHomepageHtml.txt', 'w')
-print >> homepageHtmlFile, homepageHtml
-homepageHtmlFile.close()
+homepageHtml = savefilegethtml.htmlToList(homepageHtml, 'tourbaksaHomepageHtml.txt')
+#homepageHtmlFile = open('tourbaksaHomepageHtml.txt', 'w')
+#print >> homepageHtmlFile, homepageHtml
+#homepageHtmlFile.close()
 
 menulist = list()           # 메뉴 Url 들을 담고 있을 clsProduct들의 List
 productGroupCls = clsTotalGroup()
 tourkindGroupCls = clsTourKindGroup()
 regionUrlGroupCls = clsRegionUrlGroup()
 
-homepageHtml = open('tourbaksaHomepageHtml.txt')
+#homepageHtml = open('tourbaksaHomepageHtml.txt')
 for each_line in homepageHtml:
     if each_line.find('<ul id="city') > -1:
         if len(productGroupCls.tourkindgroup) > 0:
@@ -111,7 +113,7 @@ for each_line in homepageHtml:
     elif each_line.find('class="etcMenu"') > -1:
         menulist.append(productGroupCls)
         
-homepageHtml.close()
+#homepageHtml.close()
 
 exceptFile = open('tourbaksaException.txt', 'w')
 
@@ -123,13 +125,14 @@ for level1 in menulist:
             
             try:
                 print >> exceptFile, level3.url
-                regionHtml = urllib2.urlopen(level3.url).read()
-                regionHtml = regionHtml[regionHtml.find('<div class="leftArea">'):regionHtml.find('</nav><!-- //lnb -->')]
-                regionHtmlFile = open('tourbaksaRegionHtml.txt', 'w')
-                print >> regionHtmlFile, regionHtml
-                regionHtmlFile.close()
+                regionHtml = savefilegethtml.getHtml(level3.url, '<div class="leftArea">', '</nav><!-- //lnb -->', 'tourbaksaRegionHtml.txt', '', '')
+                #regionHtml = urllib2.urlopen(level3.url).read()
+                #regionHtml = regionHtml[regionHtml.find('<div class="leftArea">'):regionHtml.find('</nav><!-- //lnb -->')]
+                #regionHtmlFile = open('tourbaksaRegionHtml.txt', 'w')
+                #print >> regionHtmlFile, regionHtml
+                #regionHtmlFile.close()
                 
-                regionHtml = open('tourbaksaRegionHtml.txt')
+                #regionHtml = open('tourbaksaRegionHtml.txt')
                 for each_line in regionHtml:
                     if each_line.find('<li class="') > -1 and each_line.find('M1=') > -1:
                         cityClass = clsCityUrlGroup()
@@ -139,13 +142,14 @@ for level1 in menulist:
                         print 'Depart Url : ' + cityClass.url
                         try:
                             print >> exceptFile, cityClass.url
-                            departListHtml = urllib2.urlopen(cityClass.url).read()
-                            departListHtml = departListHtml[departListHtml.find('<div class="list"  id="itemList" >'):]
-                            departListHtmlFile = open('tourbaksaDepartListHtml.txt', 'w')
-                            print >> departListHtmlFile, departListHtml
-                            departListHtmlFile.close()
+                            departListHtml = savefilegethtml.getHtml(cityClass.url, '<div class="list"  id="itemList" >', '', 'tourbaksaDepartListHtml.txt')
+                            #departListHtml = urllib2.urlopen(cityClass.url).read()
+                            #departListHtml = departListHtml[departListHtml.find('<div class="list"  id="itemList" >'):]
+                            #departListHtmlFile = open('tourbaksaDepartListHtml.txt', 'w')
+                            #print >> departListHtmlFile, departListHtml
+                            #departListHtmlFile.close()
                             
-                            departListHtml = open('tourbaksaDepartListHtml.txt')
+                            #departListHtml = open('tourbaksaDepartListHtml.txt')
                             try:
                                 productList = clsProductList()
                                 for departList in departListHtml:
@@ -171,14 +175,16 @@ for level1 in menulist:
 
                                         try:
                                             print >> exceptFile, detailProductUrl
+                                            #detailProductHtml = savefilegethtml.getHtml(detailProductUrl, '<tbody id', '<p class="seeMore"', '<td class=', '\r\n<td class=')
                                             detailProductHtml = urllib2.urlopen(detailProductUrl).read()
                                             detailProductHtml = detailProductHtml[detailProductHtml.find('<tbody id'):detailProductHtml.find('<p class="seeMore"')]
                                             detailProductHtml = detailProductHtml.replace('<td class=', '\r\n<td class=')
-                                            detailProductHtmlFile = open('detailProductHtml.txt', 'w')
-                                            print >> detailProductHtmlFile, detailProductHtml
-                                            detailProductHtmlFile.close()
+                                            detailProductHtml = savefilegethtml.htmlToList(detailProductHtml, 'detailProductHtml.txt')
+                                            #detailProductHtmlFile = open('detailProductHtml.txt', 'w')
+                                            #print >> detailProductHtmlFile, detailProductHtml
+                                            #detailProductHtmlFile.close()
                                             
-                                            detailProductHtml = open('detailProductHtml.txt')
+                                            #detailProductHtml = open('detailProductHtml.txt')
                                             try:
                                                 detailProductCls = clsDetailProduct()
                                                 #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
@@ -202,12 +208,13 @@ for level1 in menulist:
                                                         cursor = con.cursor()
                                                         cursor.execute(query)
                                                         con.commit()
+                                                        #break
                                                         
                                             except:
                                                 print >> exceptFile, 'Detail Product Parcing Error', sys.exc_info()[0]
                                                 pass
                                             finally:
-                                                detailProductHtml.close()
+                                                #detailProductHtml.close()
                                                 con.close()
                                         except:
                                             print >> exceptFile, 'Detail Product URL Error', sys.exc_info()[0]
@@ -219,12 +226,12 @@ for level1 in menulist:
                                 print >> exceptFile, 'Depart List Parcing Error', sys.exc_info()[0]
                                 pass
                             
-                            departListHtml.close()
+                            #departListHtml.close()
                         except:
                             print >> exceptFile, 'Depart Url Error', sys.exc_info()[0]
                             pass
 
-                regionHtml.close()
+                #regionHtml.close()
             except:
                 print >> exceptFile, 'Region url error', sys.exc_info()[0]
                 pass

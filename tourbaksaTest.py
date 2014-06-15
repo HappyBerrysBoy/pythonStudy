@@ -171,9 +171,9 @@ for level1 in menulist:
                             
                             detailProductHtml = open('detailProductHtml.txt')
                             detailProductCls = clsDetailProduct()
-                            #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-                            dsn = cx_Oracle.makedsn(host, port, dbase)
-                            con = cx_Oracle.connect(login, passwrd, dsn)
+                            con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                            #dsn = cx_Oracle.makedsn(host, port, dbase)
+                            #con = cx_Oracle.connect(login, passwrd, dsn)
                             for detailProduct in detailProductHtml:
                                 #print 'Detail Product : ' + detailProduct
                                 if detailProduct.find('startDate">') > -1:

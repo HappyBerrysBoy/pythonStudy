@@ -165,19 +165,13 @@
             <li id="10101" class=""><a href="/Product/Package/PackageRegionMain?MenuCode=10101"><span class="depth_2_title ">유럽</span></a>
                 <div class="box ">
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010135">스페인 - 바르셀로나 직항</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010136">발칸/서유럽_OZ베니스직항</a></span>
                             <ul class="depth4">
                             </ul>
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010136">아시아나 전세기_베니스 직항</a></span>
-                            <ul class="depth4">
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010134">추석 &amp; 6월, 10월 연휴상품</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010134">추석 &amp; 10월 연휴상품</a></span>
                             <ul class="depth4">
                             </ul>
                         </li>
@@ -544,7 +538,7 @@
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010932">태항산 / 태산</a></span>
                             <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=101093201">제남 연계</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101093201">제남직항-최단거리</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101093202">청도/정주/북경 연계</a></li>
                             </ul>
                         </li>
@@ -655,8 +649,8 @@
                                 <li><a href="/Product/Package/PackageList?MenuCode=101110102">괌 4일 (오전출발)</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101110109">괌 5일 (오전출발)</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101110103">괌 5일 (오후출발)</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101110106">괌 6일 (오후출발)</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101110108">Superclass</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101110106">호텔로 찾기_괌</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -696,7 +690,7 @@
                     </ul>
                 </div>
             </li>
-            <li id="10112" class=""><a href="/Product/Package/PackageRegionMain?MenuCode=10112"><span class="depth_2_title ">미주/캐나다/중남미</span></a>
+            <li id="10112" class=""><a href="/Product/Package/PackageList?MenuCode=10112"><span class="depth_2_title ">미주/캐나다/중남미</span></a>
                 <div class="box ">
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011220">2014년 연휴상품</a></span>
@@ -815,7 +809,7 @@
             <li id="10113" class=""><a href="/Product/Package/PackageRegionMain?MenuCode=10113"><span class="depth_2_title ">인도/중동/아프리카</span></a>
                 <div class="box ">
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011301">인도/네팔 /스리랑카/부탄</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011301">인도/네팔 /스리랑카</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=101130101">단기 (6일-10일)</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101130102">장기 (11일-15일)</a></li>
@@ -1722,6 +1716,12 @@
                     </ul>
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1060205">후아힌</a></span>
+                            <ul class="depth4">
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1060206">카오락</a></span>
                             <ul class="depth4">
                             </ul>
                         </li>

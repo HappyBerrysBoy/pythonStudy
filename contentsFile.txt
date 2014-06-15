@@ -1,4 +1,0 @@
-
-{"sort_no":"0","pkg_mst_code":"ERP312","sMonth":"201408","min_amt":"799000","max_amt":"899000","mst_name":"유럽의 방콕 블라디보스톡 3일","t_content":"","img_seq":"P000185052","dy_list":"3,7","content":"","tour_day":"3~4","start_dy":"화,토","orderSeq":""},
-{"sort_no":"1","pkg_mst_code":"ERP314","sMonth":"201407","min_amt":"1190000","max_amt":"1190000","mst_name":"블라디보스톡과 하바롭프스크 4일","t_content":"","img_seq":"P000421386","dy_list":"5","content":"","tour_day":"5","start_dy":"목","orderSeq":""},
-{"sort_no":"2","pkg_mst_code":"ERP321","sMonth":"201407","min_amt":"2190000","max_amt":"2190000","mst_name":"캄차카의 자연체험","t_content":"캄차카의 자연, 강을 따라 뗏목 보트, 낚시, 야영)","img_seq":"P000006180","dy_list":"5","content":"캄차카의 자연, 강을 따라 뗏목 보트, 낚시, 야영)","tour_day":"5","start_dy":"목","orderSeq":""}

@@ -72,7 +72,6 @@ class subList():
         return 'http://www.modetour.com/Package/List.aspx?startLocation=' + self.startLocation + '&location=' + self.location + '&location1=' + self.location1 + '&Theme=' + self.Theme + '&Theme1=' + self.Theme1 + '&MLoc=' + self.MLoc
 
 
-print "Scraping Start : %s" % time.ctime()
 sleepTime = 0.5
 
 mainpage = ''
@@ -295,7 +294,6 @@ exceptFile.close()
 print("==========Product List==========")
 print(productList)
 print('Normal Process: ' + str(normalCnt) + ', Parcing Error: ' + str(parcingErr) + ', Parcing Error2 : ' + str(parcingErr2) + ', URL Error: ' + str(urlErr))
-print "End : %s" % datetime.date.today()
 """
 
 #aa = requests.get("http://www.modetour.com/Package/List.aspx?startLocation=ICN&location=LOC4&location1=LOC4^LOC3&Theme=THE88&Theme1=THE88&MLoc=01")

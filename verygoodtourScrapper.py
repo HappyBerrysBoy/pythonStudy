@@ -11,6 +11,7 @@ from time import localtime, strftime, sleep
 from datetime import timedelta
 import sys
 import cx_Oracle
+import savefilegethtml
 
 class clsProductGroup():
     def __init__(self):
@@ -44,18 +45,17 @@ time = time.localtime()
 fromDate = strftime("%Y", time) + strftime("%m", time) + strftime("%d", time) + strftime("%H", time) + strftime("%M", time)
 toDate = strftime("%Y", nextTime) + strftime("%m", nextTime) + strftime("%d", nextTime) + strftime("%H", nextTime) + strftime("%M", nextTime)
 thisMonth = strftime("%Y", time) + strftime("%m", time)
-        
-sitemapUrl = 'http://www.verygoodtour.com/Content/SiteMap.html'
-sitemapHtml = urllib2.urlopen(sitemapUrl).read()
-
-sitemapHtmlFile = open('sitemapHtml.txt', 'w')
-print >> sitemapHtmlFile, sitemapHtml
-sitemapHtmlFile.close()
 
 exceptFile = open('verygoodtourException.txt', 'w')
-
+        
+sitemapUrl = 'http://www.verygoodtour.com/Content/SiteMap.html'
+sitemapHtml = savefilegethtml.getHtml(sitemapUrl, '', '', 'sitemapHtml.txt')
+#sitemapHtml = urllib2.urlopen(sitemapUrl).read()
+#sitemapHtmlFile = open('sitemapHtml.txt', 'w')
+#print >> sitemapHtmlFile, sitemapHtml
+#sitemapHtmlFile.close()
+#sitemapHtml = open('sitemapHtml.txt')
 menulist = list()           # 메뉴 Url 들을 담고 있을 clsProduct들의 List
-sitemapHtml = open('sitemapHtml.txt')
 try:
     for each_line in sitemapHtml:
         if len(each_line.strip()) > 0 and each_line.find('<li>') > -1 and each_line.find('/Product/Package/PackageList') > -1 and each_line.find('id=') < 0:
@@ -79,13 +79,14 @@ for menu in menulist:
         print '=============================================================================================================='
         print 'PackageList Url : ' + menu.url
         print >> exceptFile, menu.url
-        regionHtml = urllib2.urlopen(menu.url).read()
-        regionHtml = regionHtml[regionHtml.find('<div id="list_proviewM">'):regionHtml.find('function BingPaging()')]
-        regionHtmlFile = open('regionHtml.txt', 'w')
-        print >> regionHtmlFile, regionHtml
-        regionHtmlFile.close()
+        regionHtml = savefilegethtml.getHtml(menu.url, '<div id="list_proviewM">', 'function BingPaging()', 'regionHtml.txt')
+        #regionHtml = urllib2.urlopen(menu.url).read()
+        #regionHtml = regionHtml[regionHtml.find('<div id="list_proviewM">'):regionHtml.find('function BingPaging()')]
+        #regionHtmlFile = open('regionHtml.txt', 'w')
+        #print >> regionHtmlFile, regionHtml
+        #regionHtmlFile.close()
         
-        regionHtml = open('regionHtml.txt')
+        #regionHtml = open('regionHtml.txt')
         try:
             for each_line in regionHtml:
                 if each_line.find('img_ov_text2') > -1:
@@ -98,16 +99,17 @@ for menu in menulist:
                         productListUrl = 'http://www.verygoodtour.com/Product/Package/PackageItem?MasterCode=' + mastercode + '&Month=' + strftime("%m", time) + '&Year=' + strftime("%Y", time)
                         print 'ProductGroup Url : ' + productListUrl
                         print >> exceptFile, productListUrl
-                        productListHtml = urllib2.urlopen(productListUrl).read()
-                        productListHtmlFile = open('productListHtml.txt', 'w')
-                        print >> productListHtmlFile, productListHtml
-                        productListHtmlFile.close()
+                        productListHtml = savefilegethtml.getHtml(productListUrl, '', '', 'productListHtml.txt')
+                        #productListHtml = urllib2.urlopen(productListUrl).read()
+                        #productListHtmlFile = open('productListHtml.txt', 'w')
+                        #print >> productListHtmlFile, productListHtml
+                        #productListHtmlFile.close()
     
                         #최종 상품들 잡아넣자..
                         try:
                             con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")                    
                             productCls = clsProduct()
-                            productListHtml = open('productListHtml.txt')
+                            #productListHtml = open('productListHtml.txt')
                             for product in productListHtml:
                                 if product.find('class="pro_date"') > -1:
                                     productCls = clsProduct()
@@ -138,6 +140,7 @@ for menu in menulist:
                                     cursor = con.cursor()
                                     cursor.execute(query)
                                     con.commit()
+                                    break
                                     #print >> productListFile, productCls.toString()
                         except IndexError as iErr:
                             print iErr.message + '(' + product + ')'
@@ -145,21 +148,19 @@ for menu in menulist:
                             print >> exceptFile, "Parcing Error:", sys.exc_info()[0]
                             pass
                         finally:
-                            productListHtml.close()
+                            #productListHtml.close()
                             cursor.close()
                             con.close()
-                        
+                    break    
         except:
             print >> exceptFile, "Parcing or URL Error:", sys.exc_info()[0]
             pass
-        finally:
-            regionHtml.close()
             
     except:
         print >> exceptFile, "URL Open Error:", sys.exc_info()[0]
         pass
     
-    #break
-sitemapHtml.close()
+    break
+#sitemapHtml.close()
 productListFile.close()
 exceptFile.close()

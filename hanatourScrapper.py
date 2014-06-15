@@ -10,6 +10,8 @@ from time import localtime, strftime
 from datetime import timedelta
 import urllib2
 import cx_Oracle
+import savefilegethtml
+import sys
 
 #fnSetMstList({"head":{"tot_cnt":"17","pub_area_code":"A","pub_country":"TH","pub_city":"","dept_code":"","DY_LIST":"","page_num":"1","page_len":"20","flatfile_yn":"N"}, 
 #"cont":[
@@ -90,17 +92,18 @@ honeymoonUrl = 'http://www.hanatour.com/asp/booking/honeymoon/hr-main.asp?hanaco
 golfUrl = 'http://www.hanatour.com/asp/booking/golf/golf-main.asp?hanacode=main_q_pack_golf'
 cruiseUrl = 'http://www.hanatour.com/asp/booking/cruise/cruise-main.asp?hanacode=main_q_pack_cruise'
 
+exceptFile = open('hanatourException.txt', 'w')
+
 packagesUrlHtml = urllib2.urlopen(packagesUrl).read()
 packagesUrlList = packagesUrlHtml[packagesUrlHtml.find('</form><span class="free_go">'):packagesUrlHtml.find('</dl></div></div>')]
-
 packagesUrlList = packagesUrlList.replace('http://', '\r\nhttp://')
-packagesUrlFile = open('packagesUrlFile.txt', 'w')
-print >> packagesUrlFile, packagesUrlList
-packagesUrlFile.close()
+packagesUrlList = savefilegethtml.htmlToList(packagesUrlList, 'packagesUrlFile.txt')
+#packagesUrlFile = open('packagesUrlFile.txt', 'w')
+#print >> packagesUrlFile, packagesUrlList
+#packagesUrlFile.close()
 
-exceptFile = open('hanatourException.txt', 'w')
-packageRealUrlList = open('packageRealUrlFile.txt', 'w')
-packagesUrlList = open('packagesUrlFile.txt')
+#packagesUrlList = open('packagesUrlFile.txt')
+#packageRealUrlList = open('packageRealUrlFile.txt', 'w')
 currCountry = ''
 for packageUrl in packagesUrlList:
     #print packageUrl
@@ -117,7 +120,7 @@ for packageUrl in packagesUrlList:
             else:
                 jsonUrl = packageUrl.split('"')[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
             print jsonUrl
-            print >> packageRealUrlList, jsonUrl
+            #print >> packageRealUrlList, jsonUrl
             #http://www.hanatour.com/asp/booking/productpackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=HKT&etc_code=W&hanacode=honey_GNB_HKT
             try:
                 packageClass = clsPackage()
@@ -133,13 +136,13 @@ for packageUrl in packagesUrlList:
                 packageClass.page_len = valueParcing(html, 'page_len":"', '","flatfile_yn')
                 packageClass.flatfile_yn = valueParcing(html, 'flatfile_yn":"', '"}, "cont"')
                 #packageClass.toString()
-                contents = html[html.find('[{"sort_no":') + 1:html.find('] })')].replace('{', '\r\n{')
-                contentsFile = open('contentsFile.txt', 'w')
-                print >> contentsFile, contents
-                contentsFile.close()
-                contentsList = open('contentsFile.txt')
+                contentsList = savefilegethtml.getHtmlList(html, '{"sort_no":', '] })', 'contentsFile.txt', '{', '\r\n{')
+                #contents = html[html.find('[{"sort_no":') + 1:html.find('] })')].replace('{', '\r\n{')
+                #contentsFile = open('contentsFile.txt', 'w')
+                #print >> contentsFile, contents
+                #contentsFile.close()
+                #contentsList = open('contentsFile.txt')
                 
-                saveFile = open('hanatourProductList.txt', 'w')                
                 for product in contentsList:
                     #print product
                     if len(product.strip()) < 1:
@@ -174,16 +177,16 @@ for packageUrl in packagesUrlList:
                     
                     if detailProducthtml.find('[{"pcode"') < 0:
                         continue
-                    temp = detailProducthtml[detailProducthtml.find('[{"pcode"') + 1:detailProducthtml.find('] })')].replace('{', '\r\n{')
-                    detailProductFile = open('detailProductFile.txt', 'w')
-                    print >> detailProductFile, temp
-                    detailProductFile.close()
+                    detailProductList = savefilegethtml.getHtmlList(detailProducthtml, '{"pcode"', '] })', 'detailProductFile.txt', '{', '\r\n{')
+                    #temp = detailProducthtml[detailProducthtml.find('[{"pcode"') + 1:detailProducthtml.find('] })')].replace('{', '\r\n{')
+                    #detailProductFile = open('detailProductFile.txt', 'w')
+                    #print >> detailProductFile, temp
+                    #detailProductFile.close()
+                    #detailProductList = open('detailProductFile.txt')
                     
                     con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-                    detailProductList = open('detailProductFile.txt')
                     #idx = 1;
                     try:
-                        
                         for detailProduct in detailProductList:
                             #print 'detail Product : ' + detailProduct
                             if len(detailProduct.strip()) < 1:
@@ -220,10 +223,11 @@ for packageUrl in packagesUrlList:
                             query += "to_date('" + detailClass.sday + "'),'" + detailClass.tday + "','package','',to_char(sysdate, 'yyyymmdd'),''," + detailClass.amt + ",'" + lastUrl
                             query += "',to_date('" + detailClass.aday + "'),'','" + detailClass.lminute + "','" + detailClass.acode +"')"
                             
-                            #print >> saveFile, query
                             cursor = con.cursor()
                             cursor.execute(query)
                             con.commit()
+                            
+                            break
                             #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
                         #>>> cursor = con.cursor()
                         #>>> cursor.execute("select * from tab")
@@ -236,19 +240,20 @@ for packageUrl in packagesUrlList:
                         print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
                         pass
                     finally:
-                        detailProductList.close()
+                        #detailProductList.close()
                         con.close() 
                     
-                contentsList.close()
-                saveFile.close()
+                    break
+                #contentsList.close()
+                    
             except:
                 print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
                 pass
             
-            #break
-        
-packagesUrlList.close()
-packageRealUrlList.close()
+            break
+
+#packagesUrlList.close()
+#packageRealUrlList.close()
 exceptFile.close()
 
 #productPackage/pk- 값이 존재하고... etc_code=P 인것..이 패키지

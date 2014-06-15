@@ -13,6 +13,7 @@ from time import localtime, strftime, sleep
 from datetime import timedelta
 import cx_Oracle
 import sys
+import savefilegethtml
 
 class classPackage():
     def __init__(self):
@@ -132,10 +133,11 @@ try:
                                 print 'Detail Product URL : ' + detailProductUrl
                                 
                                 print >> exceptFile, detailProductUrl
-                                detailProductHtml = urllib2.urlopen(detailProductUrl).read()
-                                tempFile = open('ybtourTempFile.txt', 'w')
-                                print >> tempFile, detailProductHtml
-                                tempFile.close()
+                                detailProductList = savefilegethtml.getHtml(detailProductUrl, '', '', 'ybtourTempFile.txt')
+                                #detailProductHtml = urllib2.urlopen(detailProductUrl).read()
+                                #tempFile = open('ybtourTempFile.txt', 'w')
+                                #print >> tempFile, detailProductHtml
+                                #tempFile.close()
                                 
                                 """
                                 self.departDay = ''
@@ -152,7 +154,7 @@ try:
 
                                 try:
                                     con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-                                    detailProductList = open('ybtourTempFile.txt')
+                                    #detailProductList = open('ybtourTempFile.txt')
                                     flag = False
                                     ybtourproductfile = open('ybtourproductfile.txt', 'a')
                                     clsProduct = classProduct()
@@ -201,6 +203,7 @@ try:
                                                 cursor = con.cursor()
                                                 cursor.execute(query)
                                                 con.commit()
+                                                break
                                             
                                         #productClassList.append(clsProduct)
                                     
@@ -210,7 +213,7 @@ try:
                                     pass
                                 finally:
                                     ybtourproductfile.close()
-                                    detailProductList.close()
+                                    #detailProductList.close()
                                     con.close()
                             break
                     except ValueError as err:

@@ -1,0 +1,2 @@
+http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=BKK&etc_code=P&hanacode=overseas_GNB_AE_TH_BKK
+http://www.hanatour.com/asp/booking/productPackage/pk-11001-list.asp?area=A&pub_country=TH&pub_city=BKK&tour_scheduled_year=2014&tour_scheduled_month=06&tour_scheduled_day=&pkg_code=&tour_old_year=2014&tour_old_month=06&pkg_mst_code=AAP100&tour_scheduled_dt=2014-06&etc_code=P&hanacode=overseas_GNB_AE_TH_BKK

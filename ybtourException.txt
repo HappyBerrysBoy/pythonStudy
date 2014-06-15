@@ -3,5 +3,19 @@ http://www.ybtour.co.kr/GoodSearch/Area_Menu_XML.asp?ML=2&MCD=A01
 http://www.ybtour.co.kr/GoodSearch/Area_Menu_XML.asp?ML=3&MCD=A01_01
 http://www.ybtour.co.kr/Goods/overseas/list.asp?sub_area_cd=1510
 http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201490&startDT=201406
-Parcing or Query Error: <class 'cx_Oracle.DatabaseError'>
-Parcing or Query Error: <type 'exceptions.NameError'>
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201491&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201496&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201374&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201455&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150200621&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150200830&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150200889&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201013&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201244&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201310&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201250&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=1502012122&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201129&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201345&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201348&startDT=201406
+http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201467&startDT=201406
