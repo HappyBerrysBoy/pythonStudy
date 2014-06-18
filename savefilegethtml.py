@@ -53,3 +53,18 @@ def openFile(filename):
     content.close()
     #os.remove(filename)
     return returnList
+    
+#Master 여행상품 조회 쿼리 Return
+def getMasterTourInfo(tagn_id, prd_no, cntt_div, nt_cd, arr_city, prd_nm, tr_div, dmst_div, prd_desc, prd_desc_md):
+    query = "insert into t_prd values ('" + tagn_id + "','" + prd_no + "','" + cntt_div + "','" + nt_cd + "','" + arr_city + "','" + prd_nm
+    query += "','" + tr_div + "','" + dmst_div + "','" + prd_desc + "','" + prd_desc_md + "')"
+    return query
+    
+#Detail 여행상품 조회 쿼리 Return
+def getDetailTourInfo(tagn_id, prd_no, prd_seq, prd_dtl_nm, dep_dt, arr_dt, tr_term, dep_arpt, arr_arpt, arln_id, prd_st, prd_url, prd_fee_ad, prd_fee_ch, prd_fee_bb, cmps_seat, exg_div):
+    query = "insert into t_prd_dtl values ('" + tagn_id + "','" + prd_no + "','" + prd_seq + "','" + prd_dtl_nm + "',to_date('" + dep_dt + "', 'yyyymmddhh24mi'),to_date('" + arr_dt + "', 'yyyymmddhh24mi'),'"
+    query += tr_term + "','" + dep_arpt + "','" + arr_arpt + "','" + arln_id + "','" + prd_st + "','" + prd_url + "'," + prd_fee_ad + "," + prd_fee_ch + "," + prd_fee_bb + "," + cmps_seat + ",'" + exg_div + "',sysdate)"
+    return query
+    
+    
+    

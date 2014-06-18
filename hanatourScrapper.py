@@ -57,8 +57,8 @@ class clsProduct():
 class clsDetailProduct():
     def __init__(self):
         self.pcode = ''
-        self.sday = ''
-        self.stime = ''
+        self.dday = ''
+        self.dtime = ''
         self.aday = ''
         self.atime = ''
         self.acode = ''
@@ -69,6 +69,7 @@ class clsDetailProduct():
         self.pname = ''
         self.amt = ''
         self.lminute = ''
+        self.url = ''
 
     def toString(self):
         print 'pcode:'+self.pcode+',sday:'+self.sday+',stime:'+self.stime+',aday:'+self.aday+',atime:'+self.atime+',acode:'+self.acode+',aline:'+self.aline+',tday:'+self.tday+',grade:'+self.grade+',gname:'+self.gname+',pname:'+self.pname+',amt:'+self.amt+',lminute:'+self.lminute
@@ -76,6 +77,29 @@ class clsDetailProduct():
 def valueParcing(html, idx1, idx2):
     return html[html.find(idx1) + len(idx1):html.find(idx2)]
 
+def getDepartCity(html):
+    print 'Region.........................................................' + html
+    if html.find('province_PUS') > -1:
+        print '1'
+        return 'Busan'
+    elif html.find('province_TAE') > -1:
+        print '2'
+        return 'Daegu'
+    elif html.find('province_KWJ') > -1:
+        print '3'
+        return 'Gwangju'
+    elif html.find('province_CJJ') > -1:
+        print '4'
+        return 'Chungju'
+    elif html.find('province_CJU') > -1:
+        print '5'
+        return 'Jeju'
+    elif html.find('province_GW') > -1:
+        print '6'
+        return 'Kangwon'
+    else:
+        print '7'
+        return 'Seoul'
 
 # 시간 변수들..
 today = datetime.date.today()
@@ -98,34 +122,37 @@ packagesUrlHtml = urllib2.urlopen(packagesUrl).read()
 packagesUrlList = packagesUrlHtml[packagesUrlHtml.find('</form><span class="free_go">'):packagesUrlHtml.find('</dl></div></div>')]
 packagesUrlList = packagesUrlList.replace('http://', '\r\nhttp://')
 packagesUrlList = savefilegethtml.htmlToList(packagesUrlList, 'packagesUrlFile.txt')
-#packagesUrlFile = open('packagesUrlFile.txt', 'w')
-#print >> packagesUrlFile, packagesUrlList
-#packagesUrlFile.close()
 
-#packagesUrlList = open('packagesUrlFile.txt')
-#packageRealUrlList = open('packageRealUrlFile.txt', 'w')
+
+packageList = list()
+packageList.append('start')
 currCountry = ''
+departCity = ''
 for packageUrl in packagesUrlList:
-    #print packageUrl
-    if packageUrl.find('/productPackage/pk-') > -1 and packageUrl.find('etc_code=' + mode) > -1:
-        #print 'original : ' + packageUrl
-        if packageUrl.find('target="_self') > -1 and mode == 'P':
-            currCountry = packageUrl.split('>')[1].split('<')[0]
-            print 'currcountry : ' + currCountry
-        else:
-            #print packageUrl
-            jsonUrl = ''
-            if mode == 'P':
-                jsonUrl = packageUrl.split("'")[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
+    try:
+        #print packageUrl
+        if packageUrl.find('/productPackage/pk-') > -1 and packageUrl.find('etc_code=' + mode) > -1:
+            #print 'original : ' + packageUrl
+            if packageUrl.find('target="_self') > -1 and mode == 'P':
+                currCountry = packageUrl.split('>')[1].split('<')[0]
+                departCity = getDepartCity(packageUrl)
+                print 'currcountry : ' + currCountry
+                
+                print >> exceptFile, 'currcountry : ' + currCountry
             else:
-                jsonUrl = packageUrl.split('"')[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
-            print jsonUrl
-            #print >> packageRealUrlList, jsonUrl
-            #http://www.hanatour.com/asp/booking/productpackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=HKT&etc_code=W&hanacode=honey_GNB_HKT
-            try:
-                con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                #print packageUrl
+                jsonUrl = ''
+                if mode == 'P':
+                    jsonUrl = packageUrl.split("'")[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
+                else:
+                    jsonUrl = packageUrl.split('"')[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
+                print jsonUrl
+                print >> exceptFile, 'Package Url : ' + jsonUrl
+                #print >> packageRealUrlList, jsonUrl
+                #http://www.hanatour.com/asp/booking/productpackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=HKT&etc_code=W&hanacode=honey_GNB_HKT
+
                 packageClass = clsPackage()
-                print >> exceptFile, jsonUrl
+                print >> exceptFile, 'Json Url : ' + jsonUrl
                 html = urllib2.urlopen(jsonUrl).read()
                 packageClass.tot_cnt = valueParcing(html, 'tot_cnt":"', '","pub')
                 packageClass.pub_area_code = valueParcing(html, 'pub_area_code":"', '","pub_country')
@@ -137,132 +164,137 @@ for packageUrl in packagesUrlList:
                 packageClass.page_len = valueParcing(html, 'page_len":"', '","flatfile_yn')
                 packageClass.flatfile_yn = valueParcing(html, 'flatfile_yn":"', '"}, "cont"')
                 packageClass.toString()
+                
                 contentsList = savefilegethtml.getHtmlList(html, '{"sort_no":', '] })', 'contentsFile.txt', '{', '\r\n{')
                 
-                #contents = html[html.find('[{"sort_no":') + 1:html.find('] })')].replace('{', '\r\n{')
-                #contentsFile = open('contentsFile.txt', 'w')
-                #print >> contentsFile, contents
-                #contentsFile.close()
-                #contentsList = open('contentsFile.txt')
+                contents = html[html.find('[{"sort_no":') + 1:html.find('] })')].replace('{', '\r\n{')
+                #contentsList = savefilegethtml.htmlToList(contents, 'contentsFile.txt')
+                contentsFile = open('contentsFile.txt', 'w')
+                print >> contentsFile, contents
+                contentsFile.close()
+                contentsList = open('contentsFile.txt')
                 
                 for product in contentsList:
-                    print 'product : ' + product
-                    if len(product.strip()) < 1:
-                        continue
-                    productClass = clsProduct()
-                    productClass.sort_no = valueParcing(product, 'sort_no":"', '","pkg_mst_code')
-                    productClass.pkg_mst_code = valueParcing(product, 'pkg_mst_code":"', '","sMonth')
-                    productClass.sMonth = valueParcing(product, 'sMonth":"', '","min_amt')
-                    productClass.min_amt = valueParcing(product, 'min_amt":"', '","max_amt')
-                    productClass.max_amt = valueParcing(product, 'max_amt":"', '","mst_name')
-                    productClass.mst_name = valueParcing(product, 'mst_name":"', '","t_content')
-                    productClass.t_content = valueParcing(product, 't_content":"', '","img_seq')
-                    productClass.img_seq = valueParcing(product, 'img_seq":"', '","dy_list')
-                    productClass.dy_list = valueParcing(product, 'dy_list":"', '","content')
-                    productClass.content = valueParcing(product, 'content":"', '","tour_day')
-                    productClass.tour_day = valueParcing(product, 'tour_day":"', '","start_dy')
-                    productClass.start_dy = valueParcing(product, 'start_dy":"', '","orderSeq')
-                    productClass.orderSeq = valueParcing(product, 'orderSeq":"', '"}')
-                    #productClass.toString()
-                    
-                    #query = "insert into t_prd values ('" + productClass.pkg_mst_code + "','" + 
-                    #cursor = con.cursor()
-                    #cursor.execute(query)
-                    #con.commit()                           
-                    
-                    
-                    cityCode = jsonUrl[jsonUrl.find('&hanacode=') + len('&hanacode='):]
-                    detailProductUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-11001-list.asp?'
-                    detailProductUrl += 'area=' + packageClass.pub_area_code + '&pub_country=' +packageClass.pub_country+ '&pub_city=' + packageClass.pub_city
-                    detailProductUrl += '&tour_scheduled_year='+strftime("%Y", time)+'&tour_scheduled_month='+strftime("%m", time)+'&tour_scheduled_day=&pkg_code=&tour_old_year='+strftime("%Y", time)
-                    detailProductUrl += '&tour_old_month='+strftime("%m", time)+'&pkg_mst_code='+productClass.pkg_mst_code
-                    detailProductUrl += '&tour_scheduled_dt='+strftime("%Y", time)+'-'+strftime("%m", time)+'&etc_code=P&hanacode='+ cityCode
-                    print 'last url.....: ' + detailProductUrl
-                    
-                    print >> exceptFile, detailProductUrl
-                    detailProducthtml = urllib2.urlopen(detailProductUrl).read()
-                    
-                    #cont":[{"pcode":"PPP411140612KE5","sdate":"06/12 (목) 20:50","adate":"06/16 (월) 08:05","acode":"KE","aline":"대한항공","tday":"5","grade":"12","gname":"하나팩클래식","pname":"팔라우 5일[Luxury]팔라우퍼시픽리조트[용궁+유네스코+젤리피쉬]","amt":"1999000","lminute":"2"},                    
-                    
-                    if detailProducthtml.find('[{"pcode"') < 0:
-                        continue
-                    detailProductList = savefilegethtml.getHtmlList(detailProducthtml, '{"pcode"', '] })', 'detailProductFile.txt', '{', '\r\n{')
-                    #temp = detailProducthtml[detailProducthtml.find('[{"pcode"') + 1:detailProducthtml.find('] })')].replace('{', '\r\n{')
-                    #detailProductFile = open('detailProductFile.txt', 'w')
-                    #print >> detailProductFile, temp
-                    #detailProductFile.close()
-                    #detailProductList = open('detailProductFile.txt')
-                    
-                    #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-                    #idx = 1;
+                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
                     try:
+                        #print 'product : ' + product
+                        if len(product.strip()) < 1:
+                            continue
+                        if packageList.count(valueParcing(product, 'pkg_mst_code":"', '","sMonth')) > 0:
+                            continue
+                        
+                        productClass = clsProduct()
+                        productClass.sort_no = valueParcing(product, 'sort_no":"', '","pkg_mst_code')
+                        productClass.pkg_mst_code = valueParcing(product, 'pkg_mst_code":"', '","sMonth')
+                        productClass.sMonth = valueParcing(product, 'sMonth":"', '","min_amt')
+                        productClass.min_amt = valueParcing(product, 'min_amt":"', '","max_amt')
+                        productClass.max_amt = valueParcing(product, 'max_amt":"', '","mst_name').replace("'", "")
+                        productClass.mst_name = valueParcing(product, 'mst_name":"', '","t_content').replace("'", "").decode('utf-8')
+                        productClass.t_content = valueParcing(product, 't_content":"', '","img_seq').replace("'", "")
+                        productClass.img_seq = valueParcing(product, 'img_seq":"', '","dy_list')
+                        productClass.dy_list = valueParcing(product, 'dy_list":"', '","content')
+                        productClass.content = valueParcing(product, '"content":"', '","tour_day').replace("'", "").decode('utf-8')
+                        productClass.tour_day = valueParcing(product, 'tour_day":"', '","start_dy')
+                        productClass.start_dy = valueParcing(product, 'start_dy":"', '","orderSeq')
+                        productClass.orderSeq = valueParcing(product, 'orderSeq":"', '"}')
+                        #productClass.toString()
+                        packageList.append(productClass.pkg_mst_code)
+                        
+                        query = savefilegethtml.getMasterTourInfo('hanatour', productClass.pkg_mst_code, packageClass.pub_area_code, packageClass.pub_country, packageClass.pub_city, productClass.mst_name, mode, 'A', productClass.content, '')
+                        print >> exceptFile ,query
+                        cursor = con.cursor()
+                        cursor.execute(query)
+                        con.commit()                           
+                        
+                        
+                        cityCode = jsonUrl[jsonUrl.find('&hanacode=') + len('&hanacode='):]
+                        detailProductUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-11001-list.asp?'
+                        detailProductUrl += 'area=' + packageClass.pub_area_code + '&pub_country=' +packageClass.pub_country+ '&pub_city=' + packageClass.pub_city
+                        detailProductUrl += '&tour_scheduled_year='+strftime("%Y", time)+'&tour_scheduled_month='+strftime("%m", time)+'&tour_scheduled_day=&pkg_code=&tour_old_year='+strftime("%Y", time)
+                        detailProductUrl += '&tour_old_month='+strftime("%m", time)+'&pkg_mst_code='+productClass.pkg_mst_code
+                        detailProductUrl += '&tour_scheduled_dt='+strftime("%Y", time)+'-'+strftime("%m", time)+'&etc_code=P&hanacode='+ cityCode
+                        print 'last url.....: ' + detailProductUrl
+                        
+                        print >> exceptFile, 'detailProductUrl : ' + detailProductUrl
+                        detailProducthtml = urllib2.urlopen(detailProductUrl).read()
+                        
+                        #cont":[{"pcode":"PPP411140612KE5","sdate":"06/12 (목) 20:50","adate":"06/16 (월) 08:05","acode":"KE","aline":"대한항공","tday":"5","grade":"12","gname":"하나팩클래식","pname":"팔라우 5일[Luxury]팔라우퍼시픽리조트[용궁+유네스코+젤리피쉬]","amt":"1999000","lminute":"2"},                    
+                        
+                        if detailProducthtml.find('[{"pcode"') < 0:
+                            continue
+                        
+                        #detailProductList = savefilegethtml.getHtmlList(detailProducthtml, '{"pcode"', '] })', 'detailProductFile.txt', '{', '\r\n{')
+                        temp = detailProducthtml[detailProducthtml.find('[{"pcode"') + 1:detailProducthtml.find('] })')].replace('{', '\r\n{')
+                        #detailProductList = savefilegethtml.htmlToList(temp, 'detailProductFile.txt')
+                        detailProductFile = open('detailProductFile.txt', 'w')
+                        print >> detailProductFile, temp
+                        detailProductFile.close()
+                        detailProductList = open('detailProductFile.txt')
+                        
+                        #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                        #idx = 1;
                         for detailProduct in detailProductList:
                             #print 'detail Product : ' + detailProduct
-                            if len(detailProduct.strip()) < 1:
-                                continue
-                            detailClass = clsDetailProduct()
-                            detailClass.pcode = valueParcing(detailProduct, 'pcode":"', '","sdate')
-                            sDate = valueParcing(detailProduct, 'sdate":"', '","adate')
-                            aDate = valueParcing(detailProduct, 'adate":"', '","acode')
-                            detailClass.sday = strftime("%Y", time) + '/' + sDate.split('(')[0].strip()
-                            detailClass.stime = sDate.split(')')[1].strip()
-                            detailClass.aday = strftime("%Y", time) + '/' + aDate.split('(')[0].strip()
-                            detailClass.atime = aDate.split(')')[1].strip()
-                            detailClass.acode = valueParcing(detailProduct, 'acode":"', '","aline')
-                            detailClass.aline = valueParcing(detailProduct, 'aline":"', '","tday')
-                            detailClass.tday = valueParcing(detailProduct, 'tday":"', '","grade')
-                            detailClass.grade = valueParcing(detailProduct, 'grade":"', '","gname')
-                            detailClass.gname = valueParcing(detailProduct, 'gname":"', '","pname').decode('utf-8')
-                            detailClass.pname = valueParcing(detailProduct, 'pname":"', '","amt').decode('utf-8')
-                            detailClass.amt = valueParcing(detailProduct, 'amt":"', '","lminute')
-                            detailClass.lminute = valueParcing(detailProduct, 'lminute":"', '"}')
-                            
-                            lastUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-12000.asp?pkg_code=' + detailClass.pcode
-                            #detailClass.toString()
-                            #print idx
-                            #idx += 1
-                            #query = "insert into product_test values(product_seq.nextval,'hanatour','"
-                            #query += cityCode + "','" + detailClass.pname + "','" + 
-                            
-                           # query = "insert into product_test values (product_seq.nextval, '" + tag_div + "','" + reg_div + "','" + prd_nm + "','" + air_cd + "','" + st_city
-                            #query += "',to_date('" + st_dt + "'),'" + tr_term + "','" + tr_div + "','" + dmst_div + "','" + sel_dt + "','" + st_time + "'," + prd_fee + ",'" + prd_url
-                            #query += "',to_date('" + arr_day + "'),'" + arr_time + "','" + prd_status + "')"                        
-                            
-                            query = "insert into product_test values (product_seq.nextval, 'hanatour','" + cityCode[len(cityCode)-3:] + "','" + detailClass.pname + "','ICN',"
-                            query += "to_date('" + detailClass.sday + "'),'" + detailClass.tday + "','package','',to_char(sysdate, 'yyyymmdd'),''," + detailClass.amt + ",'" + lastUrl
-                            query += "',to_date('" + detailClass.aday + "'),'','" + detailClass.lminute + "','" + detailClass.acode +"')"
-                            
-                            cursor = con.cursor()
-                            cursor.execute(query)
-                            con.commit()
-                            
-                            #break
-                            #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-                        #>>> cursor = con.cursor()
-                        #>>> cursor.execute("select * from tab")
-                        #<cx_Oracle.Cursor on <cx_Oracle.Connection to bigtour@hnctech73.iptime.org:1521/ora11g>>
-                        #>>> print cursor.fetchall()
-                        #[('T_PRD', 'TABLE', None), ('T_PRD_DTL', 'TABLE', None)]
-                        #>>> cursor.close()
-                        #>>> con.close() 
+                            try:
+                                if len(detailProduct.strip()) < 1:
+                                    continue
+                                detailClass = clsDetailProduct()
+                                detailClass.pcode = valueParcing(detailProduct, 'pcode":"', '","sdate')
+                                sDate = valueParcing(detailProduct, 'sdate":"', '","adate')
+                                aDate = valueParcing(detailProduct, 'adate":"', '","acode')
+                                detailClass.dday = strftime("%Y", time) + sDate.split('(')[0].strip().replace('/', '')
+                                detailClass.dtime = sDate.split(')')[1].strip().replace(':', '')
+                                detailClass.aday = strftime("%Y", time) + aDate.split('(')[0].strip().replace('/', '')
+                                detailClass.atime = aDate.split(')')[1].strip().replace(':', '')
+                                detailClass.acode = valueParcing(detailProduct, 'acode":"', '","aline')
+                                detailClass.aline = valueParcing(detailProduct, 'aline":"', '","tday')
+                                detailClass.tday = valueParcing(detailProduct, 'tday":"', '","grade')
+                                detailClass.grade = valueParcing(detailProduct, 'grade":"', '","gname')
+                                detailClass.gname = valueParcing(detailProduct, 'gname":"', '","pname').replace("'", "").decode('utf-8')
+                                detailClass.pname = valueParcing(detailProduct, 'pname":"', '","amt').replace("'", "").decode('utf-8')
+                                detailClass.amt = valueParcing(detailProduct, 'amt":"', '","lminute')
+                                detailClass.lminute = valueParcing(detailProduct, 'lminute":"', '"}')
+                                detailClass.url = 'http://www.hanatour.com/asp/booking/productPackage/pk-12000.asp?pkg_code=' + detailClass.pcode
+                                #detailClass.toString()
+                                #print idx
+                                #idx += 1
+                                
+                                query = savefilegethtml.getDetailTourInfo('hanatour', productClass.pkg_mst_code, detailClass.pcode, detailClass.pname, detailClass.dday+detailClass.dtime, detailClass.aday+detailClass.atime, detailClass.tday, departCity, '', detailClass.acode, detailClass.lminute, detailClass.url, detailClass.amt, '0', '0', '0', '') 
+                                print >> exceptFile ,query                                    
+                                cursor = con.cursor()
+                                cursor.execute(query)
+                                con.commit()
+                                
+                                #break
+                                #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                            #>>> cursor = con.cursor()
+                            #>>> cursor.execute("select * from tab")
+                            #<cx_Oracle.Cursor on <cx_Oracle.Connection to bigtour@hnctech73.iptime.org:1521/ora11g>>
+                            #>>> print cursor.fetchall()
+                            #[('T_PRD', 'TABLE', None), ('T_PRD_DTL', 'TABLE', None)]
+                            #>>> cursor.close()
+                            #>>> con.close() 
+                            except cx_Oracle.DatabaseError as dberr:
+                                print >> exceptFile, 'Depth 34 : ' + str(dberr)
+                                pass
+                            except:
+                                print >> exceptFile, 'Depth 4 : ' + str(sys.exc_info()[0])
+                                pass
+                    except cx_Oracle.IntegrityError as dberr:
+                        print >> exceptFile, 'Depth 33 : ' + str(dberr)
+                        pass
                     except:
-                        print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
+                        print >> exceptFile, 'Depth 3 : ' + str(sys.exc_info()[0])
                         pass
                     finally:
-                        #detailProductList.close()
-                        con.close() 
-                    
-                    break
-                #contentsList.close()
-                    
-            except:
-                print >> exceptFile, "Parcing or Query Error:", sys.exc_info()[0]
-                pass
-            
-            break
+                        con.close()
+                        
+                    #break
+                #break
+    except:
+        print >> exceptFile, 'Depth 1 : ' + str(sys.exc_info()[0])
+        pass            
 
-#packagesUrlList.close()
-#packageRealUrlList.close()
 exceptFile.close()
 
 #productPackage/pk- 값이 존재하고... etc_code=P 인것..이 패키지
