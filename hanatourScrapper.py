@@ -123,6 +123,7 @@ for packageUrl in packagesUrlList:
             #print >> packageRealUrlList, jsonUrl
             #http://www.hanatour.com/asp/booking/productpackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=HKT&etc_code=W&hanacode=honey_GNB_HKT
             try:
+                con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
                 packageClass = clsPackage()
                 print >> exceptFile, jsonUrl
                 html = urllib2.urlopen(jsonUrl).read()
@@ -135,8 +136,9 @@ for packageUrl in packagesUrlList:
                 packageClass.page_num = valueParcing(html, 'page_num":"', '","page_len')
                 packageClass.page_len = valueParcing(html, 'page_len":"', '","flatfile_yn')
                 packageClass.flatfile_yn = valueParcing(html, 'flatfile_yn":"', '"}, "cont"')
-                #packageClass.toString()
+                packageClass.toString()
                 contentsList = savefilegethtml.getHtmlList(html, '{"sort_no":', '] })', 'contentsFile.txt', '{', '\r\n{')
+                
                 #contents = html[html.find('[{"sort_no":') + 1:html.find('] })')].replace('{', '\r\n{')
                 #contentsFile = open('contentsFile.txt', 'w')
                 #print >> contentsFile, contents
@@ -144,7 +146,7 @@ for packageUrl in packagesUrlList:
                 #contentsList = open('contentsFile.txt')
                 
                 for product in contentsList:
-                    #print product
+                    print 'product : ' + product
                     if len(product.strip()) < 1:
                         continue
                     productClass = clsProduct()
@@ -162,6 +164,13 @@ for packageUrl in packagesUrlList:
                     productClass.start_dy = valueParcing(product, 'start_dy":"', '","orderSeq')
                     productClass.orderSeq = valueParcing(product, 'orderSeq":"', '"}')
                     #productClass.toString()
+                    
+                    #query = "insert into t_prd values ('" + productClass.pkg_mst_code + "','" + 
+                    #cursor = con.cursor()
+                    #cursor.execute(query)
+                    #con.commit()                           
+                    
+                    
                     cityCode = jsonUrl[jsonUrl.find('&hanacode=') + len('&hanacode='):]
                     detailProductUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-11001-list.asp?'
                     detailProductUrl += 'area=' + packageClass.pub_area_code + '&pub_country=' +packageClass.pub_country+ '&pub_city=' + packageClass.pub_city
@@ -184,7 +193,7 @@ for packageUrl in packagesUrlList:
                     #detailProductFile.close()
                     #detailProductList = open('detailProductFile.txt')
                     
-                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                    #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
                     #idx = 1;
                     try:
                         for detailProduct in detailProductList:
@@ -227,7 +236,7 @@ for packageUrl in packagesUrlList:
                             cursor.execute(query)
                             con.commit()
                             
-                            break
+                            #break
                             #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
                         #>>> cursor = con.cursor()
                         #>>> cursor.execute("select * from tab")
