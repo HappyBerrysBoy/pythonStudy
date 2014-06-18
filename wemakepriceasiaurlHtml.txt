@@ -1,0 +1,2330 @@
+section_list">
+				<ul class="list_combine list_row_type3 lst_shopping ul_count_class">
+					
+<li class=" " item_id="0" deadline="" latest="1401930001" open="" over="" deal_id="269189" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/269189/990100/?source=990100&no=11" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[싱가포르]유니버셜,플라이어 입장권">	
+
+		<span class="box_best">
+<strong class="ico_comm ico_best1">BEST1</strong>		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/269189/0a9d93daea5280fc7e7ea5b29b9e19e6aedc3196.jpg" alt="[싱가포르]유니버셜,플라이어 입장권" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">싱가폴 관광지입장권 무료배송</span>
+			<strong class="tit_desc">[싱가포르]유니버셜,플라이어 입장권</strong>
+
+			<!-- <span class="txt_desc">싱가폴 관광지입장권 무료배송</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">21,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">127</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+	
+			<span class="gr">무료배송</span>
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_pass" class="tit_cut"><span class="tit">입장권.패스</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="1" deadline="" latest="1402966802" open="" over="" deal_id="276230" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276230/990100/?source=990100&no=12" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[보라카이]9~11월 얼리버드 자유여행">	
+
+		<span class="box_best">
+<strong class="ico_comm ico_best2">BEST2</strong>		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276230/81897d2a1ffcf4816349971b4aa8c27fba9c0af2.jpg" alt="[보라카이]9~11월 얼리버드 자유여행" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 150,000원 별도</span>
+			<strong class="tit_desc">[보라카이]9~11월 얼리버드 자유여행</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 150,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">399,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">6</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="2" deadline="" latest="1402880403" open="" over="" deal_id="274785" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274785/990100/?source=990100&no=13" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[나트랑]7~8월出 휴양지, 나트랑자유">	
+
+		<span class="box_best">
+<strong class="ico_comm ico_best3">BEST3</strong>		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274785/37d6694c60e59f9033dc8697a0735dc9b84b149f.jpg" alt="[나트랑]7~8월出 휴양지, 나트랑자유" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 163,300원 별도</span>
+			<strong class="tit_desc">[나트랑]7~8월出 휴양지, 나트랑자유</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 163,300원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">399,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">22</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="3" deadline="" latest="1402362004" open="" over="1" deal_id="270467" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/270467/990100/?source=990100&no=14" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[푸켓]시내중심 특급리조트 자유여행">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/270467/3b8c29e1b6355f119348d43c6f8ec4e8be8f7590.jpg" alt="[푸켓]시내중심 특급리조트 자유여행" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 180,000원 별도</span>
+			<strong class="tit_desc">[푸켓]시내중심 특급리조트 자유여행</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 180,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">299,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">44</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="4" deadline="" latest="1401411605" open="" over="" deal_id="264923" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/264923/990100/?source=990100&no=15" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[몰디브]5성, 앳모스피어 카니푸쉬!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201405/264923/84bb84f31636018a199f69bf9a035f84e724c298.jpg" alt="[몰디브]5성, 앳모스피어 카니푸쉬!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 약450,000원 별도</span>
+			<strong class="tit_desc">[몰디브]5성, 앳모스피어 카니푸쉬!</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 약450,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">2,149,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">2</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_maldives" class="tit_cut"><span class="tit">★몰디브</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="5" deadline="" latest="1401411606" open="" over="" deal_id="265038" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/265038/990100/?source=990100&no=16" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[몰디브]아름다운라군, 후두란푸시!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201405/265038/07332f9446da1194556a31a003d09bbd08bc4f8e.jpg" alt="[몰디브]아름다운라군, 후두란푸시!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 약 450,000원 별도</span>
+			<strong class="tit_desc">[몰디브]아름다운라군, 후두란푸시!</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 약 450,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">1,739,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_maldives" class="tit_cut"><span class="tit">★몰디브</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="6" deadline="" latest="1401411607" open="" over="1" deal_id="264998" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/264998/990100/?source=990100&no=17" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[몰디브]4성,헬렝겔리 리조트">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201405/264998/880050f265a7b94fbc041b49bfbe43288b43dd3f.jpg" alt="[몰디브]4성,헬렝겔리 리조트" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 약450,000원 별도</span>
+			<strong class="tit_desc">[몰디브]4성,헬렝겔리 리조트</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 약450,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">1,679,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_maldives" class="tit_cut"><span class="tit">★몰디브</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="7" deadline="" latest="1401411608" open="" over="" deal_id="264968" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/264968/990100/?source=990100&no=18" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[몰디브] 클럽라날히 올인크루시브!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201405/264968/fb522cdb6237c5432a9e2f9c8cc563ce0e21af29.jpg" alt="[몰디브] 클럽라날히 올인크루시브!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 약450,000원 별도</span>
+			<strong class="tit_desc">[몰디브] 클럽라날히 올인크루시브!</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 약450,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">1,649,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_maldives" class="tit_cut"><span class="tit">★몰디브</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="8" deadline="" latest="1402448409" open="" over="1" deal_id="272069" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/272069/990100/?source=990100&no=19" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[발리]국적기탑승 럭셔리자유여행!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/272069/38117594d18a2caa48c4ed66a227933202eaf40d.jpg" alt="[발리]국적기탑승 럭셔리자유여행!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 160,000원 별도</span>
+			<strong class="tit_desc">[발리]국적기탑승 럭셔리자유여행!</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 160,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">799,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">4</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="9" deadline="" latest="1402362010" open="" over="1" deal_id="270211" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/270211/990100/?source=990100&no=20" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[시하누크빌]초특급 골드카드포함">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/270211/e4c997f278d055dd7f220e3479a323eb227e9df2.jpg" alt="[시하누크빌]초특급 골드카드포함" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 165,000원 별도</span>
+			<strong class="tit_desc">[시하누크빌]초특급 골드카드포함</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 165,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">749,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">5</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="10" deadline="" latest="1400115611" open="" over="" deal_id="256134" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/256134/990100/?source=990100&no=21" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[싱가포르]성수기 직항 왕복권 5일">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201405/256134/b78923fec4179313b45ed7605c23e22f5927d683.jpg" alt="[싱가포르]성수기 직항 왕복권 5일" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 179,200원 별도</span>
+			<strong class="tit_desc">[싱가포르]성수기 직항 왕복권 5일</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 179,200원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">710,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">2</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="11" deadline="" latest="1402621212" open="" over="1" deal_id="274155" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274155/990100/?source=990100&no=22" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[보라카이]6~10월,초특급 아샤2 자유">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274155/6266549632413f13b20e7d7e4967d8788e904ae7.jpg" alt="[보라카이]6~10월,초특급 아샤2 자유" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 별도, 항공별 상이</span>
+			<strong class="tit_desc">[보라카이]6~10월,초특급 아샤2 자유</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 별도, 항공별 상이</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">699,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">26</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="12" deadline="" latest="1402534813" open="" over="1" deal_id="273200" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/273200/990100/?source=990100&no=23" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[보홀]보홀데이투어+발리카삭호핑!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/273200/3b4bfb661fe34fb599e1076b41ebf7b845cfe5ea.jpg" alt="[보홀]보홀데이투어+발리카삭호핑!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 135,000원 별도</span>
+			<strong class="tit_desc">[보홀]보홀데이투어+발리카삭호핑!</strong>
+
+			<!-- <span class="txt_desc">유류할증료 135,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">699,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="13" deadline="" latest="1402448414" open="" over="" deal_id="272091" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/272091/990100/?source=990100&no=24" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[카오락]JW메리엇 성수기 무료룸업!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/272091/4751139c7a11b8809a38b9c7c82348fe17422b46.jpg" alt="[카오락]JW메리엇 성수기 무료룸업!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 180,000원별도</span>
+			<strong class="tit_desc">[카오락]JW메리엇 성수기 무료룸업!</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 180,000원별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">699,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">19</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_svfam" class="tit_cut"><span class="tit">방학★가족여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="14" deadline="" latest="1403053215" open="1" over="" deal_id="276861" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276861/990100/?source=990100&no=25" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[발리]7~8월성수기 패키지 5일">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_open">오늘오픈</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276861/053e9f672e69e955c49603758343e42653247e48.jpg" alt="[발리]7~8월성수기 패키지 5일" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 130,000원 별도</span>
+			<strong class="tit_desc">[발리]7~8월성수기 패키지 5일</strong>
+
+			<!-- <span class="txt_desc">유류할증료 130,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">629,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="15" deadline="" latest="1401498016" open="" over="" deal_id="266714" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/266714/990100/?source=990100&no=26" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[세부]황제패키지(마사지3회+잠수함)">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201405/266714/7f64ca389156955a0df1bf0ae5c7cbe9573b51dd.jpg" alt="[세부]황제패키지(마사지3회+잠수함)" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 120,000원 별도</span>
+			<strong class="tit_desc">[세부]황제패키지(마사지3회+잠수함)</strong>
+
+			<!-- <span class="txt_desc">유류할증료 120,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">599,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">64</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/ph" class="tit_cut"><span class="tit">필리핀추천여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="16" deadline="" latest="1402621217" open="" over="1" deal_id="274122" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274122/990100/?source=990100&no=27" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[세부] 6~8월出초특급크림슨 자유">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274122/d2b60c71a7be3e896a12be58dc99dab83f07e631.jpg" alt="[세부] 6~8월出초특급크림슨 자유" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX144,000원 별도</span>
+			<strong class="tit_desc">[세부] 6~8월出초특급크림슨 자유</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX144,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">559,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">4</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/ph" class="tit_cut"><span class="tit">필리핀추천여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="17" deadline="" latest="1402621218" open="" over="" deal_id="276239" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276239/990100/?source=990100&no=28" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[세부]준특급PKG, 호핑투어+1일자유!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276239/d7f109e504ff6c38ce03240b19a65b96c4943b61.jpg" alt="[세부]준특급PKG, 호핑투어+1일자유!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세 별도, 항공별 상이</span>
+			<strong class="tit_desc">[세부]준특급PKG, 호핑투어+1일자유!</strong>
+
+			<!-- <span class="txt_desc">유류세 별도, 항공별 상이</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">549,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">10</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="18" deadline="" latest="1402621219" open="" over="" deal_id="273242" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/273242/990100/?source=990100&no=29" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[보라카이]준특급,오션클럽 자유여행">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/273242/204a7f902ed89c92f20203ee94b62216454b3009.jpg" alt="[보라카이]준특급,오션클럽 자유여행" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 150,000원 별도</span>
+			<strong class="tit_desc">[보라카이]준특급,오션클럽 자유여행</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 150,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">549,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="19" deadline="" latest="1402534820" open="" over="" deal_id="273155" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/273155/990100/?source=990100&no=30" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[베트남]캄보디아+하롱베이 특급PKG">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/273155/e609752190e304a0a97c3978cee9d1bc56ebfa6c.jpg" alt="[베트남]캄보디아+하롱베이 특급PKG" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 130,000원 별도</span>
+			<strong class="tit_desc">[베트남]캄보디아+하롱베이 특급PKG</strong>
+
+			<!-- <span class="txt_desc">유류할증료 130,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">549,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">2</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="20" deadline="" latest="1402966821" open="" over="" deal_id="276234" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276234/990100/?source=990100&no=31" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[보라카이]부산출발 엔젤플레이스PKG">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276234/f42dadd28b0cd39f5856f87233912e8eda346718.jpg" alt="[보라카이]부산출발 엔젤플레이스PKG" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세 130,000원 별도</span>
+			<strong class="tit_desc">[보라카이]부산출발 엔젤플레이스PKG</strong>
+
+			<!-- <span class="txt_desc">유류세 130,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">499,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jcs" class="tit_cut"><span class="tit">지방 출발 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="21" deadline="" latest="1402621222" open="" over="" deal_id="274135" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274135/990100/?source=990100&no=32" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[세부]이슬라리조트 룸UP 패키지">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274135/3200cd708b87f879ace68fc2f1cb1244e357856b.jpg" alt="[세부]이슬라리조트 룸UP 패키지" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세 별도, 항공별 상이</span>
+			<strong class="tit_desc">[세부]이슬라리조트 룸UP 패키지</strong>
+
+			<!-- <span class="txt_desc">유류세 별도, 항공별 상이</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">499,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">13</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="22" deadline="" latest="1402621223" open="" over="1" deal_id="274061" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274061/990100/?source=990100&no=33" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[코타키나발루]호핑포함 자유여행">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274061/939da264d3a0a9bdf44e5d273e88a51a3c745da3.jpg" alt="[코타키나발루]호핑포함 자유여행" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 137,000원 별도</span>
+			<strong class="tit_desc">[코타키나발루]호핑포함 자유여행</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 137,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">499,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">4</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="23" deadline="" latest="1403053224" open="1" over="" deal_id="276884" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276884/990100/?source=990100&no=34" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[푸켓]초특급 블루마린 씨뷰룸UP">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_open">오늘오픈</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276884/6ab69582abc4ba41f5a8863bb1e674d616a967ee.jpg" alt="[푸켓]초특급 블루마린 씨뷰룸UP" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 116,000원 별도</span>
+			<strong class="tit_desc">[푸켓]초특급 블루마린 씨뷰룸UP</strong>
+
+			<!-- <span class="txt_desc">유류할증료 116,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">479,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="24" deadline="" latest="1403053225" open="1" over="" deal_id="276893" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276893/990100/?source=990100&no=35" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[세부]아시아나/준특급PKG+호핑">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_open">오늘오픈</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276893/50e932635de1f1b4d31217a03c0564f4877a1de8.jpg" alt="[세부]아시아나/준특급PKG+호핑" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 120,000원 별도</span>
+			<strong class="tit_desc">[세부]아시아나/준특급PKG+호핑</strong>
+
+			<!-- <span class="txt_desc">유류할증료 120,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">449,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="25" deadline="" latest="1403053226" open="1" over="" deal_id="276847" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276847/990100/?source=990100&no=36" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[푸켓]신규오픈 더참 리조트/스파D">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_open">오늘오픈</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276847/5f92e40f3ac48c2836db9d7e5f09b9abf7270b40.jpg" alt="[푸켓]신규오픈 더참 리조트/스파D" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 115,300 별도</span>
+			<strong class="tit_desc">[푸켓]신규오픈 더참 리조트/스파D</strong>
+
+			<!-- <span class="txt_desc">유류할증료 115,300 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">449,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="26" deadline="" latest="1402966827" open="" over="" deal_id="276166" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276166/990100/?source=990100&no=37" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[베트남]다낭/호이안/후에 패키지">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276166/c26592798515579a1da8e6ba16603bbbf5a912d4.jpg" alt="[베트남]다낭/호이안/후에 패키지" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 113,000원 별도</span>
+			<strong class="tit_desc">[베트남]다낭/호이안/후에 패키지</strong>
+
+			<!-- <span class="txt_desc">유류할증료 113,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">449,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="27" deadline="" latest="1402534828" open="" over="1" deal_id="273205" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/273205/990100/?source=990100&no=38" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[보라카이]라운지&대박쿠폰, 자유!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/273205/01332808f9ac13c1b661b4a83cae45b73c1fe5ce.jpg" alt="[보라카이]라운지&대박쿠폰, 자유!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 150,000원 별도</span>
+			<strong class="tit_desc">[보라카이]라운지&대박쿠폰, 자유!</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 150,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">449,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">15</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="28" deadline="" latest="1401930029" open="" over="1" deal_id="269219" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/269219/990100/?source=990100&no=39" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[발리]6~8월, 성수기 완벽자유여행">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/269219/d0869db82ce99f89943013c15553637cca9aeb12.jpg" alt="[발리]6~8월, 성수기 완벽자유여행" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 180,000원 별도</span>
+			<strong class="tit_desc">[발리]6~8월, 성수기 완벽자유여행</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 180,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">449,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">17</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="29" deadline="" latest="1403053230" open="1" over="" deal_id="276697" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276697/990100/?source=990100&no=40" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[마닐라]초특급 엣쟈 샹그릴라PKG">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_open">오늘오픈</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276697/2d7303bdbbef929b23cd77f2ed6bceb062100dbb.jpg" alt="[마닐라]초특급 엣쟈 샹그릴라PKG" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 96,700원 별도</span>
+			<strong class="tit_desc">[마닐라]초특급 엣쟈 샹그릴라PKG</strong>
+
+			<!-- <span class="txt_desc">유류할증료 96,700원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">429,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="30" deadline="" latest="1402966831" open="" over="" deal_id="276223" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276223/990100/?source=990100&no=41" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[보라카이]펠리니스PKG,1일자유!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276223/efffa733785bce935f9e4a0087fbb4a5b23aa39e.jpg" alt="[보라카이]펠리니스PKG,1일자유!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 135,000원 별도</span>
+			<strong class="tit_desc">[보라카이]펠리니스PKG,1일자유!</strong>
+
+			<!-- <span class="txt_desc">유류할증료 135,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">399,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">2</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/ph" class="tit_cut"><span class="tit">필리핀추천여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="31" deadline="" latest="1402966832" open="" over="" deal_id="276076" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276076/990100/?source=990100&no=42" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[캄보디아]앙코르왓 초특급 패키지!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276076/fdf98b2e349ba971c90572cc6f1ec054157944e2.jpg" alt="[캄보디아]앙코르왓 초특급 패키지!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 115,300원 별도</span>
+			<strong class="tit_desc">[캄보디아]앙코르왓 초특급 패키지!</strong>
+
+			<!-- <span class="txt_desc">유류할증료 115,300원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">399,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">4</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="32" deadline="" latest="1402707633" open="" over="" deal_id="274824" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274824/990100/?source=990100&no=43" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[다낭]베트남의 숨은보석, 품격자유!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274824/117da264c56a65d1044eb46059b2b7b27f8c908a.jpg" alt="[다낭]베트남의 숨은보석, 품격자유!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 157,000원 별도</span>
+			<strong class="tit_desc">[다낭]베트남의 숨은보석, 품격자유!</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 157,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">399,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">20</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="33" deadline="" latest="1402362034" open="" over="" deal_id="270334" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/270334/990100/?source=990100&no=44" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[하노이]7~8월 오후출발 패키지 5일">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/270334/e628ec3976b8a6a7b4777ac16ed489b489121d41.jpg" alt="[하노이]7~8월 오후출발 패키지 5일" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 120,000원 별도</span>
+			<strong class="tit_desc">[하노이]7~8월 오후출발 패키지 5일</strong>
+
+			<!-- <span class="txt_desc">유류할증료 120,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">399,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">7</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_sv" class="tit_cut"><span class="tit">추천! 여름휴가</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="34" deadline="" latest="1402362035" open="" over="1" deal_id="270224" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/270224/990100/?source=990100&no=45" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[파타야]6~8월出 초특급 센타라 자유">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/270224/141b65ad2ffcfc228fc7519c2c17b7710b16a420.jpg" alt="[파타야]6~8월出 초특급 센타라 자유" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 150,000원 별도</span>
+			<strong class="tit_desc">[파타야]6~8월出 초특급 센타라 자유</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 150,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">399,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">31</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_forwomen" class="tit_cut"><span class="tit">여성 추천여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="35" deadline="" latest="1401843636" open="" over="" deal_id="268236" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/268236/990100/?source=990100&no=46" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[다낭]호이안&씨엠립 초특급일정 6일">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/268236/89a5264fab765edbc22be01e7eb15a327d051caa.jpg" alt="[다낭]호이안&씨엠립 초특급일정 6일" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 138,800원 별도</span>
+			<strong class="tit_desc">[다낭]호이안&씨엠립 초특급일정 6일</strong>
+
+			<!-- <span class="txt_desc">유류할증료 138,800원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">399,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">56</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_forwomen" class="tit_cut"><span class="tit">여성 추천여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="36" deadline="" latest="1400720437" open="" over="" deal_id="261404" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/261404/990100/?source=990100&no=47" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[캄보디아/부산出]조기예약 7~10월">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201405/261404/932ae9aaca732b1d7b20bbbf95a1c42c4c52d25d.jpg" alt="[캄보디아/부산出]조기예약 7~10월" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세 126,700원 별도</span>
+			<strong class="tit_desc">[캄보디아/부산出]조기예약 7~10월</strong>
+
+			<!-- <span class="txt_desc">유류세 126,700원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">376,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">19</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jcs" class="tit_cut"><span class="tit">지방 출발 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="37" deadline="" latest="1402534838" open="" over="" deal_id="272214" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/272214/990100/?source=990100&no=48" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[파타야]+방콕 5성급하드락리조트3박">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/272214/ffd1743692529c342b1fdedfdc2b3b258ecaf496.jpg" alt="[파타야]+방콕 5성급하드락리조트3박" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 100,000원 불포함</span>
+			<strong class="tit_desc">[파타야]+방콕 5성급하드락리조트3박</strong>
+
+			<!-- <span class="txt_desc">유류할증료 100,000원 불포함</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">369,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">51</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="38" deadline="" latest="1402621239" open="" over="1" deal_id="273898" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/273898/990100/?source=990100&no=49" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[보라카이]몽땅포함 풀PKG, 다시떴다">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/273898/0c1dfcf05da09e7e9176f4b2864b28807159c905.jpg" alt="[보라카이]몽땅포함 풀PKG, 다시떴다" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 140,000원 별도</span>
+			<strong class="tit_desc">[보라카이]몽땅포함 풀PKG, 다시떴다</strong>
+
+			<!-- <span class="txt_desc">유류할증료 140,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">359,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">17</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="39" deadline="" latest="1402966840" open="" over="" deal_id="276238" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276238/990100/?source=990100&no=50" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[보라카이]풀팩+버그카,푸카쉘투어~!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276238/51e68fbb857a9f3cab35b65158695bab094268c8.jpg" alt="[보라카이]풀팩+버그카,푸카쉘투어~!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 130,000원 별도</span>
+			<strong class="tit_desc">[보라카이]풀팩+버그카,푸카쉘투어~!</strong>
+
+			<!-- <span class="txt_desc">유류할증료 130,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">349,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">9</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_svfam" class="tit_cut"><span class="tit">방학★가족여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="40" deadline="" latest="1402534841" open="" over="1" deal_id="272211" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/272211/990100/?source=990100&no=51" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[방콕파타야]초특급풀만(6~8월특가)">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/272211/d5d730b2c817227f58adf678924b87e3a4a25323.jpg" alt="[방콕파타야]초특급풀만(6~8월특가)" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 100,000원 불포함</span>
+			<strong class="tit_desc">[방콕파타야]초특급풀만(6~8월특가)</strong>
+
+			<!-- <span class="txt_desc">유류할증료 100,000원 불포함</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">349,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">263</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="41" deadline="" latest="1402275642" open="" over="" deal_id="268600" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/268600/990100/?source=990100&no=52" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[마닐라] 제주항공 품격골프 3박5일">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/268600/f4ee0b1e43c4ab384907dbf072b0ae2080cd9a5a.jpg" alt="[마닐라] 제주항공 품격골프 3박5일" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 123,800원 별도</span>
+			<strong class="tit_desc">[마닐라] 제주항공 품격골프 3박5일</strong>
+
+			<!-- <span class="txt_desc">유류할증료 123,800원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">349,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/golf" class="tit_cut"><span class="tit">골프 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="42" deadline="" latest="1402707643" open="" over="" deal_id="274808" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274808/990100/?source=990100&no=53" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[푸켓] 특급 안다만 리조트 PKG">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274808/b95d5161f36407601c4ab6b1384e25c182aa364e.jpg" alt="[푸켓] 특급 안다만 리조트 PKG" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 115,300원 별도</span>
+			<strong class="tit_desc">[푸켓] 특급 안다만 리조트 PKG</strong>
+
+			<!-- <span class="txt_desc">유류할증료 115,300원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">329,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">24</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="43" deadline="" latest="1403053244" open="1" over="" deal_id="276854" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276854/990100/?source=990100&no=54" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[세부]부산出/국적기/이슬라패키지">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_open">오늘오픈</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276854/65b12025ef6d7d95aa061c1b58f0fb7c9770b072.jpg" alt="[세부]부산出/국적기/이슬라패키지" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세 별도 항공사별 상이</span>
+			<strong class="tit_desc">[세부]부산出/국적기/이슬라패키지</strong>
+
+			<!-- <span class="txt_desc">유류세 별도 항공사별 상이</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">299,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="44" deadline="" latest="1403053245" open="1" over="" deal_id="276823" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276823/990100/?source=990100&no=55" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[싱가포르]7~9월出/자유여행VS패키지">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_open">오늘오픈</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276823/05c80cc39f34aaa796447e20de850fec83c551fb.jpg" alt="[싱가포르]7~9월出/자유여행VS패키지" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 180,000원 별도</span>
+			<strong class="tit_desc">[싱가포르]7~9월出/자유여행VS패키지</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 180,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">299,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/pkg" class="tit_cut"><span class="tit">패키지 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="45" deadline="" latest="1402707646" open="" over="" deal_id="274851" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274851/990100/?source=990100&no=56" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[하노이] 하롱베이,옌뜨 특급 패키지">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274851/8e43edd44c1e3983b9804e4eab1851ce24e1129e.jpg" alt="[하노이] 하롱베이,옌뜨 특급 패키지" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 120,000원 별도</span>
+			<strong class="tit_desc">[하노이] 하롱베이,옌뜨 특급 패키지</strong>
+
+			<!-- <span class="txt_desc">유류할증료 120,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">299,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">8</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="46" deadline="" latest="1402707647" open="" over="" deal_id="274779" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274779/990100/?source=990100&no=57" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[라오스]공항픽업 포함, 자유여행">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274779/8a83602aafd16a662c42829e5d9071398947e3ab.jpg" alt="[라오스]공항픽업 포함, 자유여행" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 별도, 항공별상이</span>
+			<strong class="tit_desc">[라오스]공항픽업 포함, 자유여행</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 별도, 항공별상이</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">299,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/t_wev" class="tit_cut"><span class="tit">주말반짝여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="47" deadline="" latest="1402621248" open="" over="1" deal_id="274039" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/274039/990100/?source=990100&no=58" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[치앙마이]준특급호텔+코끼리트래킹">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_close">오늘마감</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/274039/e226b3e8dab9229696358c3bcbbaa82b11e52cc4.jpg" alt="[치앙마이]준특급호텔+코끼리트래킹" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 105,000원 별도</span>
+			<strong class="tit_desc">[치앙마이]준특급호텔+코끼리트래킹</strong>
+
+			<!-- <span class="txt_desc">유류할증료 105,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">299,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="48" deadline="" latest="1402448449" open="" over="" deal_id="272034" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/272034/990100/?source=990100&no=59" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[캄보디아]부산出 7~10월出 실속 PKG">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/272034/b46823b55d6775245f013552468b62fd6df121cf.jpg" alt="[캄보디아]부산出 7~10월出 실속 PKG" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류할증료 130,000원 별도</span>
+			<strong class="tit_desc">[캄보디아]부산出 7~10월出 실속 PKG</strong>
+
+			<!-- <span class="txt_desc">유류할증료 130,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">299,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">51</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="49" deadline="" latest="1398474050" open="" over="" deal_id="247859" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/247859/990100/?source=990100&no=60" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[푸켓]6~8월出 특급리조트 자유여행">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201404/247859/5ad683537e95040b97d8062517bbf34ea653aae3.jpg" alt="[푸켓]6~8월出 특급리조트 자유여행" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 190,000원 별도</span>
+			<strong class="tit_desc">[푸켓]6~8월出 특급리조트 자유여행</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 190,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">299,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">56</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/jau" class="tit_cut"><span class="tit">자유 여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+<li class=" " item_id="50" deadline="" latest="1403053251" open="1" over="" deal_id="276737" category_code="4" parent_id="">
+<span class="link type03" >
+<a href="/deal/adeal/276737/990100/?source=990100&no=61" loc_info="990100/990102" onclick="set_loc_cookie(this);"  name="recommed_deal_link" alt="[세부]땡처리 7~8월 항공권특집!">	
+
+		<span class="box_best">
+		</span>
+<span class="box_sticker"><em class="ico_comm ico_today_open">오늘오픈</em></span>
+		
+		<span class="box_thumb">
+						<img  class="lazy" src="http://image.wemakeprice.com/images/front/common/img_blank.gif" original="http://image.wemakeprice.com/dealimg/201406/276737/43575b6c4f6bb654fdd8f4ccd636ed01bd53d2b7.jpg" alt="[세부]땡처리 7~8월 항공권특집!" />
+					</span>
+		<span class="box_desc">
+			<span class="standardinfo">유류세+TAX 150,000원 별도</span>
+			<strong class="tit_desc">[세부]땡처리 7~8월 항공권특집!</strong>
+
+			<!-- <span class="txt_desc">유류세+TAX 150,000원 별도</span> -->
+			<span class="txt_info ">				
+				 
+					<span class="discount ico_comm ico_wprice">위메프 프라이스</span>
+								
+				<span class="price">
+					<span class="prime">
+										</span>
+					<span class="sale">279,000<span class="won">원</span></span>
+				</span>
+			</span>
+
+			<span class="txt_num"><strong class="point">0</strong>
+개 구매		   	</span>
+		   			</span>
+		<span class="bg_layer"></span>
+			</a>
+
+	<span class="card_option">
+		<span class="option_l">
+				<span class="bl">무이자3</span>
+	
+		</span>	
+		<span class="option_r cut">
+			<a href="/promotion/ph" class="tit_cut"><span class="tit">필리핀추천여행</span><img src="http://image.wemakeprice.com/images/2013/common/btn_c_more.png"></a>
+		</span>	
+	</span>
+	<span class="box_line"></span>
+	</span>
+</li>
+
+				</ul>
+			</div>
+		
+		
+	</div>
+<!-- <span class="update" id="last_update_time"></span> -->
+<style>
+.sorter a {display:block;width:100%;height:100%}
+</style>
+<script>
+
