@@ -5,13 +5,11 @@ Created on Wed Jun 04 00:08:33 2014
 @author: KSC
 """
 
-import time, datetime
-from time import localtime, strftime
-from datetime import timedelta
 import urllib2
 import cx_Oracle
 import savefilegethtml
 import sys
+import datetime
 
 #fnSetMstList({"head":{"tot_cnt":"17","pub_area_code":"A","pub_country":"TH","pub_city":"","dept_code":"","DY_LIST":"","page_num":"1","page_len":"20","flatfile_yn":"N"}, 
 #"cont":[
@@ -106,13 +104,9 @@ def getDepartCity(html):
         return 'Seoul'
 
 # 시간 변수들..
-today = datetime.date.today()
-nextYear = today + timedelta(days=365)
-nextTime = nextYear.timetuple()
-time = time.localtime()
-fromDate = strftime("%Y", time) + strftime("%m", time) + strftime("%d", time) + strftime("%H", time) + strftime("%M", time)
-toDate = strftime("%Y", nextTime) + strftime("%m", nextTime) + strftime("%d", nextTime) + strftime("%H", nextTime) + strftime("%M", nextTime)
-thisMonth = strftime("%Y", time) + strftime("%m", time)
+targetYear = sys.argv[1]
+targetMonth = sys.argv[2]
+scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
 mainUrls = list()
 packageCls = clsMenuUrls('P', 'http://www.hanatour.com/asp/booking/oversea/oversea-main.asp?hanacode=overseas_M_bi')
@@ -129,8 +123,8 @@ mainUrls.append(cruiseUrl)
 #etc_code=W/P/A/B/K/Y/J/C  'W' : honeymoon, 'A': free, 'P' : package, 'B' : AirTel, 'K' : Tracking, 'Y' : Leports, 'J' : 성지순례, 'C' : Cruise
 #</form><span class="free_go">
 #</dl></div></div>
-
-exceptFile = open('hanatourException.txt', 'w')
+exceptFileName = 'hanatourException' + scrappingStartTime + '.txt'
+exceptFile = open(exceptFileName, 'w')
 packageList = list()
 packageList.append('start')
 currCountry = ''
@@ -143,7 +137,7 @@ for mainUrl in mainUrls:
     packagesUrlHtml = urllib2.urlopen(mainUrl.url).read()
     packagesUrlList = packagesUrlHtml[packagesUrlHtml.find('</form><span class="free_go">'):packagesUrlHtml.find('</dl></div></div>')]
     packagesUrlList = packagesUrlList.replace('http://', '\r\nhttp://')
-    packagesUrlList = savefilegethtml.htmlToList(packagesUrlList, 'packagesUrlFile.txt')
+    packagesUrlList = savefilegethtml.htmlToList(packagesUrlList, savefilegethtml.chkExistFile('packagesUrlFile.txt'))
     # w:honeymoon, p:packages, g:golf, c:cruise    
     mode = mainUrl.mode
     try:
@@ -184,14 +178,15 @@ for mainUrl in mainUrls:
                         packageClass.flatfile_yn = valueParcing(html, 'flatfile_yn":"', '"}, "cont"')
                         packageClass.toString()
                         
-                        contentsList = savefilegethtml.getHtmlList(html, '{"sort_no":', '] })', 'contentsFile.txt', '{', '\r\n{')
+                        #contentsList = savefilegethtml.getHtmlList(html, '{"sort_no":', '] })', savefilegethtml.chkExistFile('contentsFile.txt'), '{', '\r\n{')
                         
                         contents = html[html.find('[{"sort_no":') + 1:html.find('] })')].replace('{', '\r\n{')
+                        contentsFileName = savefilegethtml.chkExistFile('contentsFile.txt')
                         #contentsList = savefilegethtml.htmlToList(contents, 'contentsFile.txt')
-                        contentsFile = open('contentsFile.txt', 'w')
+                        contentsFile = open(contentsFileName, 'w')
                         print >> contentsFile, contents
                         contentsFile.close()
-                        contentsList = open('contentsFile.txt')
+                        contentsList = open(contentsFileName)
                         
                         for product in contentsList:
                             con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
@@ -202,7 +197,7 @@ for mainUrl in mainUrls:
                                     continue
                                 
                                 if packageList.count(pkg_mst_code) > 0:
-                                    print >> exceptFile, 'duplicated code : ' + str(pkg_mst_code) + ':' + str(packageList)
+                                    #print >> exceptFile, 'duplicated code : ' + str(pkg_mst_code) + ':' + str(packageList)
                                     continue
                                 
                                 productClass = clsProduct()
@@ -223,18 +218,18 @@ for mainUrl in mainUrls:
                                 packageList.append(productClass.pkg_mst_code)
                                 
                                 query = savefilegethtml.getMasterMergeQuery('hanatour', productClass.pkg_mst_code, packageClass.pub_area_code, packageClass.pub_country, packageClass.pub_city, productClass.mst_name, mode, 'A', productClass.content, '')
-                                print >> exceptFile ,query
+                                #print >> exceptFile ,query
                                 cursor = con.cursor()
                                 cursor.execute(query)
-                                con.commit()                           
+                                con.commit()
                                 
                                 
                                 cityCode = jsonUrl[jsonUrl.find('&hanacode=') + len('&hanacode='):]
                                 detailProductUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-11001-list.asp?'
                                 detailProductUrl += 'area=' + packageClass.pub_area_code + '&pub_country=' +packageClass.pub_country+ '&pub_city=' + packageClass.pub_city
-                                detailProductUrl += '&tour_scheduled_year='+strftime("%Y", time)+'&tour_scheduled_month='+strftime("%m", time)+'&tour_scheduled_day=&pkg_code=&tour_old_year='+strftime("%Y", time)
-                                detailProductUrl += '&tour_old_month='+strftime("%m", time)+'&pkg_mst_code='+productClass.pkg_mst_code
-                                detailProductUrl += '&tour_scheduled_dt='+strftime("%Y", time)+'-'+strftime("%m", time)+'&etc_code=P&hanacode='+ cityCode
+                                detailProductUrl += '&tour_scheduled_year='+targetYear+'&tour_scheduled_month='+targetMonth+'&tour_scheduled_day=&pkg_code=&tour_old_year='+targetYear
+                                detailProductUrl += '&tour_old_month='+targetMonth+'&pkg_mst_code='+productClass.pkg_mst_code
+                                detailProductUrl += '&tour_scheduled_dt='+targetYear+'-'+targetMonth+'&etc_code=P&hanacode='+ cityCode
                                 if departCity != 'Seoul':
                                     detailProductUrl += '&start_city=' + departCity
                                 print 'last url.....: ' + detailProductUrl
@@ -250,10 +245,11 @@ for mainUrl in mainUrls:
                                 #detailProductList = savefilegethtml.getHtmlList(detailProducthtml, '{"pcode"', '] })', 'detailProductFile.txt', '{', '\r\n{')
                                 temp = detailProducthtml[detailProducthtml.find('[{"pcode"') + 1:detailProducthtml.find('] })')].replace('{', '\r\n{')
                                 #detailProductList = savefilegethtml.htmlToList(temp, 'detailProductFile.txt')
-                                detailProductFile = open('detailProductFile.txt', 'w')
+                                detailProductFilename = savefilegethtml.chkExistFile('detailProductFile.txt')
+                                detailProductFile = open(detailProductFilename, 'w')
                                 print >> detailProductFile, temp
                                 detailProductFile.close()
-                                detailProductList = open('detailProductFile.txt')
+                                detailProductList = open(detailProductFilename)
                                 
                                 #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
                                 #idx = 1;
@@ -266,9 +262,9 @@ for mainUrl in mainUrls:
                                         detailClass.pcode = valueParcing(detailProduct, 'pcode":"', '","sdate')
                                         sDate = valueParcing(detailProduct, 'sdate":"', '","adate')
                                         aDate = valueParcing(detailProduct, 'adate":"', '","acode')
-                                        detailClass.dday = strftime("%Y", time) + sDate.split('(')[0].strip().replace('/', '')
+                                        detailClass.dday = targetYear + sDate.split('(')[0].strip().replace('/', '')
                                         detailClass.dtime = sDate.split(')')[1].strip().replace(':', '')
-                                        detailClass.aday = strftime("%Y", time) + aDate.split('(')[0].strip().replace('/', '')
+                                        detailClass.aday = targetYear + aDate.split('(')[0].strip().replace('/', '')
                                         detailClass.atime = aDate.split(')')[1].strip().replace(':', '')
                                         detailClass.acode = valueParcing(detailProduct, 'acode":"', '","aline')
                                         detailClass.aline = valueParcing(detailProduct, 'aline":"', '","tday')
@@ -284,7 +280,7 @@ for mainUrl in mainUrls:
                                         #idx += 1
                                         
                                         query = savefilegethtml.getDetailMergeQuery('hanatour', productClass.pkg_mst_code, detailClass.pcode, detailClass.pname, detailClass.dday+detailClass.dtime, detailClass.aday+detailClass.atime, detailClass.tday, departCity, '', detailClass.acode, detailClass.lminute, detailClass.url, detailClass.amt, '0', '0', '0', '') 
-                                        print >> exceptFile ,query                                    
+                                        #print >> exceptFile ,query                                    
                                         cursor = con.cursor()
                                         cursor.execute(query)
                                         con.commit()
@@ -299,13 +295,16 @@ for mainUrl in mainUrls:
                                     #>>> cursor.close()
                                     #>>> con.close() 
                                     except cx_Oracle.DatabaseError as dberr:
-                                        print >> exceptFile, 'Depth 34 : ' + str(dberr)
+                                        print >> exceptFile, 'Depth 44 : ' + str(dberr)
                                         pass
                                     except:
                                         print >> exceptFile, 'Depth 4 : ' + str(sys.exc_info()[0])
                                         pass
                             except cx_Oracle.IntegrityError as dberr:
                                 print >> exceptFile, 'Depth 33 : ' + str(dberr)
+                                pass
+                            except UnicodeEncodeError as err2:
+                                print >> exceptFile, 'Depth 34 : ' + str(err2) + '::' + str(err2.args) + '::' + str(err2.message)
                                 pass
                             except:
                                 print >> exceptFile, 'Depth 3 : ' + str(sys.exc_info()[0])
@@ -317,10 +316,13 @@ for mainUrl in mainUrls:
                         #break
                                 
             except AttributeError as err:
-                print >> exceptFile, 'Depth 1 : ' + str(err)
+                print >> exceptFile, 'Depth 22 : ' + str(err)
+                pass
+            except TypeError as err2:
+                print >> exceptFile, 'Depth 23 : ' + str(err2)
                 pass
             except:
-                print >> exceptFile, 'Depth 1 : ' + str(sys.exc_info()[0])
+                print >> exceptFile, 'Depth 2 : ' + str(sys.exc_info()[0])
                 pass
                 
         #break

@@ -1,39 +1,39 @@
 <div class="domestic">
-      <h2><img src="http://img.modetour.co.kr/modetour/2014/common/hn_domestic.png" alt="±¹³»¿©Çà" width="52" height="14"></h2>
+      <h2><img src="http://img.modetour.co.kr/modetour/2014/common/hn_domestic.png" alt="êµ­ë‚´ì—¬í–‰" width="52" height="14"></h2>
       <ul>
-        <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC837&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB');return false;" alt="±¹³»" class="bt_jeju"><span>Á¦ÁÖ</span></a><div class="sub_item" style="right:-76px;">
+        <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC837&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB');return false;" alt="êµ­ë‚´" class="bt_jeju"><span>ì œì£¼</span></a><div class="sub_item" style="right:-76px;">
             <div class="list">
-              <h3 class="hn_jeju">¸ðµÎÅõ¾î Á¦ÁÖ¿©Çà</h3>
+              <h3 class="hn_jeju">ëª¨ë‘íˆ¬ì–´ ì œì£¼ì—¬í–‰</h3>
               <ul>
-                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC837&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB'); return false;" alt="_">±¹³»Á¦ÁÖ È¨</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC986&amp;location1=LOC986^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="Á¦ÁÖ">ÆÐÅ°Áö(¹ö½º°ü±¤)</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC987&amp;location1=LOC987^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="Á¦ÁÖ">ÀÚÀ¯¿©Çà</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC988&amp;location1=LOC988^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="Á¦ÁÖ">Çã´Ï¹®</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC989&amp;location1=LOC989^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="Á¦ÁÖ">Áö¹æÃâ¹ß</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1045&amp;location1=LOC1045^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB'); return false;" alt="_">Á¦ÁÖ°ñÇÁ</a></li>
-                <li><a href="/Ticket/JeJu/Main.aspx?mloc=0601" style="color:#5083EF;">Á¦ÁÖÇÒÀÎÄíÆù</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC837&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB'); return false;" alt="_">êµ­ë‚´ì œì£¼ í™ˆ</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC986&amp;location1=LOC986^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="ì œì£¼">íŒ¨í‚¤ì§€(ë²„ìŠ¤ê´€ê´‘)</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC987&amp;location1=LOC987^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="ì œì£¼">ìžìœ ì—¬í–‰</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC988&amp;location1=LOC988^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="ì œì£¼">í—ˆë‹ˆë¬¸</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC989&amp;location1=LOC989^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="ì œì£¼">ì§€ë°©ì¶œë°œ</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1045&amp;location1=LOC1045^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB'); return false;" alt="_">ì œì£¼ê³¨í”„</a></li>
+                <li><a href="/Ticket/JeJu/Main.aspx?mloc=0601" style="color:#5083EF;">ì œì£¼í• ì¸ì¿ í°</a></li>
               </ul>
             </div>
-            <div class="banner" id="gnbBannerLOC837" onmousedown="ACEL_TRACKING('BC','AT347/GNB_¹è³Ê');"></div>
+            <div class="banner" id="gnbBannerLOC837" onmousedown="ACEL_TRACKING('BC','AT347/GNB_ë°°ë„ˆ');"></div>
           </div>
         </li>
-        <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC985&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_');return false;" alt="±¹³»" class="bt_domestic"><span>³»·ú</span></a><div class="sub_item" style="right:-76px;">
+        <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC985&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_');return false;" alt="êµ­ë‚´" class="bt_domestic"><span>ë‚´ë¥™</span></a><div class="sub_item" style="right:-76px;">
             <div class="list">
-              <h3 class="hn_domestic">¸ðµÎÅõ¾î ³»·ú¿©Çà</h3>
+              <h3 class="hn_domestic">ëª¨ë‘íˆ¬ì–´ ë‚´ë¥™ì—¬í–‰</h3>
               <ul>
-                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC985&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB'); return false;" alt="_">±¹³»³»·ú È¨</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC991&amp;location1=LOC991^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_'); return false;" alt="±¹³»³»·ú">ÇÑ±¹ÀÌ¾ß±â</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1034&amp;location1=LOC1034^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_'); return false;" alt="±¹³»³»·ú">¹ö½º¿©Çà</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1035&amp;location1=LOC1035^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_'); return false;" alt="±¹³»³»·ú">±âÂ÷¿©Çà</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC993&amp;location1=LOC993^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_'); return false;" alt="±¹³»³»·ú">¼¶¿©Çà</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1046&amp;location1=LOC1046^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB'); return false;" alt="_">³»·ú°ñÇÁ</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC985&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB'); return false;" alt="_">êµ­ë‚´ë‚´ë¥™ í™ˆ</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC991&amp;location1=LOC991^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_'); return false;" alt="êµ­ë‚´ë‚´ë¥™">í•œêµ­ì´ì•¼ê¸°</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1034&amp;location1=LOC1034^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_'); return false;" alt="êµ­ë‚´ë‚´ë¥™">ë²„ìŠ¤ì—¬í–‰</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1035&amp;location1=LOC1035^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_'); return false;" alt="êµ­ë‚´ë‚´ë¥™">ê¸°ì°¨ì—¬í–‰</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC993&amp;location1=LOC993^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB_'); return false;" alt="êµ­ë‚´ë‚´ë¥™">ì„¬ì—¬í–‰</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1046&amp;location1=LOC1046^LOC985&amp;MLoc=01" onclick="TopNextPage(this,'AT332','GNB'); return false;" alt="_">ë‚´ë¥™ê³¨í”„</a></li>
               </ul>
             </div>
-            <div class="banner" id="gnbBannerLOC985" onmousedown="ACEL_TRACKING('BC','AT348/GNB_±¹³»³»·ú_¹è³Ê');"></div>
+            <div class="banner" id="gnbBannerLOC985" onmousedown="ACEL_TRACKING('BC','AT348/GNB_êµ­ë‚´ë‚´ë¥™_ë°°ë„ˆ');"></div>
           </div>
         </li>
-        <li><a href="/LiveBooking/AirDomestic/Main.aspx?MLoc=0302" onclick="TopNextPage(this,'AT333','GNB_');return false;" alt="±¹³»" class="bt_air"><span>Ç×°ø</span></a></li>
-        <li><a href="/Hotel/Domestic.aspx?MLoc=24" onclick="TopNextPage(this,'AT334','GNB_');return false;" alt="±¹³»" class="bt_hotel"><span>¼÷¹Ú</span></a></li>
+        <li><a href="/LiveBooking/AirDomestic/Main.aspx?MLoc=0302" onclick="TopNextPage(this,'AT333','GNB_');return false;" alt="êµ­ë‚´" class="bt_air"><span>í•­ê³µ</span></a></li>
+        <li><a href="/Hotel/Domestic.aspx?MLoc=24" onclick="TopNextPage(this,'AT334','GNB_');return false;" alt="êµ­ë‚´" class="bt_hotel"><span>ìˆ™ë°•</span></a></li>
       </ul>
     </div>
     
