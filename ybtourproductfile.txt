@@ -133,3 +133,38 @@ airCode:아시아나항공
 URL:http://www.ybtour.co.kr/goods/overseas/view.asp?ev_ym=201406&ev_seq=60506&good_cd=150201348, Name:[OZ연합]프랑스 완전일주 9일
 Price:3590000
 Status:예약가능
+departday:06/30, departtime:13:45, arrDay:07/09, arrTime:10:40
+airCode:아시아나항공
+URL:http://www.ybtour.co.kr/goods/overseas/view.asp?ev_ym=201406&ev_seq=83088&good_cd=150201491, Name:★최고의루트★영/프/스/이 서유럽4국 10일
+Price:2190000
+Status:예약가능
+departday:06/25, departtime:21:45, arrDay:07/02, arrTime:20:15
+airCode:우즈벡
+URL:http://www.ybtour.co.kr/goods/overseas/view.asp?ev_ym=201406&ev_seq=12209&good_cd=150200621, Name:[L♡VEiN유럽]바티칸+루브르+베르사유 달콤한 서유럽3개국8일[HY]
+Price:1390000
+Status:예약마감
+departday:06/27, departtime:00:55, arrDay:07/02, arrTime:14:40
+airCode:케이엘엠네덜란드항공
+URL:http://www.ybtour.co.kr/goods/overseas/view.asp?ev_ym=201406&ev_seq=19045&good_cd=150200889, Name:▶[대한항공마일적립]◁ 베네룩스3국+파리6일(KL)
+Price:1590000
+Status:예약가능
+departday:06/27, departtime:10:10, arrDay:07/04, arrTime:08:30
+airCode:우즈벡
+URL:http://www.ybtour.co.kr/goods/overseas/view.asp?ev_ym=201406&ev_seq=12227&good_cd=150201013, Name:[러브인유럽]세계3대박물관§영프스이§서유럽4국8일 HY
+Price:1590000
+Status:예약마감
+departday:06/28, departtime:12:30, arrDay:07/05, arrTime:13:40
+airCode:아시아나항공
+URL:http://www.ybtour.co.kr/goods/overseas/view.asp?ev_ym=201406&ev_seq=12292&good_cd=150200830, Name:[OZ직항☆주말출도착]프/스/이/독 서유럽4국8일
+Price:2390000
+Status:예약가능
+departday:06/24, departtime:13:45, arrDay:06/29, arrTime:16:30
+airCode:대한항공
+URL:http://www.ybtour.co.kr/goods/overseas/view.asp?ev_ym=201406&ev_seq=60502&good_cd=150201345, Name:[KE연합]스위스 완전 일주 6일
+Price:2990000
+Status:예약마감
+departday:06/28, departtime:12:30, arrDay:07/06, arrTime:13:50
+airCode:아시아나항공
+URL:http://www.ybtour.co.kr/goods/overseas/view.asp?ev_ym=201406&ev_seq=60507&good_cd=150201348, Name:[OZ연합]프랑스 완전일주 9일
+Price:3590000
+Status:예약가능

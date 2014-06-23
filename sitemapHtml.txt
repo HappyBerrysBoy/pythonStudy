@@ -44,20 +44,13 @@
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020202">푸켓 풀빌라</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020205">카오락(골드카드)</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020212">푸켓 자유여행</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101020213">크라비</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101020213">크라비_7월 23일 직항 취항</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020209">Superclass</a></li>
                             </ul>
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010219">스리랑카_마음을 맑히는 여행</a></span>
-                            <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=101021902">스리랑카 직항</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010209">인도차이나자연에 열리는 마음</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010209">인도차이나 자연에 열리는 마음</a></span>
                             <ul class="depth4">
                                 <li><a href="/Event/EventReview?evtSeq=2968&amp;MenuCode=101020911">우리끼리 가는 여행</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020909">관광+휴양 | 관광+골프</a></li>
@@ -103,7 +96,7 @@
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010212">홍콩여심은 여심, 女心은旅心</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010212">홍콩 여심은 여심, 女心은旅心</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021201">홍콩|마카오|심천</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021202">홍콩자유여행</a></li>
@@ -157,6 +150,13 @@
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010221">필리핀 연계</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=101022101">팔라완 I 코론 I 보홀 I 엘니도 </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010219">스리랑카_마음을 맑히는 여행</a></span>
+                            <ul class="depth4">
+                                <li><a href="/Product/Package/PackageList?MenuCode=101021902">스리랑카 직항</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -490,7 +490,8 @@
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010934">백두산_하얼빈</a></span>
                             <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=101093401">서파ㅣ북파ㅣ페리대련ㅣ장춘ㅣ심양</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101093401">백두산 단독 상품</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101093402">백두산 연합 상품</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -566,7 +567,7 @@
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010935">홍콩여심은 여심, 女心은旅心</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010935">홍콩 여심은 여심, 女心은旅心</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=101093501">홍콩|마카오|심천</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101093502">홍콩자유여행</a></li>
@@ -585,6 +586,12 @@
             </li>
             <li id="10110" class=""><a href="/Product/Package/PackageRegionMain?MenuCode=10110"><span class="depth_2_title ">호주/뉴질랜드/피지</span></a>
                 <div class="box ">
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011016">추석 &amp; 10월 연휴상품</a></span>
+                            <ul class="depth4">
+                            </ul>
+                        </li>
+                    </ul>
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011001">호주는 넓고 갈곳도 많다</a></span>
                             <ul class="depth4">
@@ -690,7 +697,7 @@
                     </ul>
                 </div>
             </li>
-            <li id="10112" class=""><a href="/Product/Package/PackageList?MenuCode=10112"><span class="depth_2_title ">미주/캐나다/중남미</span></a>
+            <li id="10112" class=""><a href="/Product/Package/PackageRegionMain?MenuCode=10112"><span class="depth_2_title ">미주/캐나다/중남미</span></a>
                 <div class="box ">
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011220">2014년 연휴상품</a></span>
@@ -699,7 +706,7 @@
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011221">캐나다 단풍메이플로드를 따라_조기예약 </a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011221">캐나다 단풍 메이플로드를 따라_조기예약 </a></span>
                             <ul class="depth4">
                             </ul>
                         </li>
@@ -817,7 +824,7 @@
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011302">중동(이스라엘I요르단I레바논아랍에미레이트I이란)</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011302">중동(이스라엘I요르단I레바논 아랍에미레이트I이란)</a></span>
                             <ul class="depth4">
                             </ul>
                         </li>
@@ -836,30 +843,50 @@
                     </ul>
                 </div>
             </li>
-            <li id="10117" class=""><a href="/Product/Package/PackageList?MenuCode=10117"><span class="depth_2_title ">성지순례</span></a>
+            <li id="10121" class=""><a href="/Product/Package/PackageRegionMain?MenuCode=10121"><span class="depth_2_title ">몰디브/스리랑카</span></a>
                 <div class="box ">
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011702">기독교 </a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1012103">7월 이벤트</a></span>
                             <ul class="depth4">
                             </ul>
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011704">가톨릭</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1012102">자유로운 섬 몰디브</a></span>
                             <ul class="depth4">
+                                <li><a href="/Product/Package/PackageList?MenuCode=101210202">몰디브 </a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101210204">홍콩+몰디브</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101210205">방콕+몰디브</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101210208">싱가폴+몰디브</a></li>
                             </ul>
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011705">불교</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1012101">스리랑카_마음을 맑히는 여행</a></span>
                             <ul class="depth4">
+                                <li><a href="/Product/Package/PackageList?MenuCode=101210101">스리랑카 직항</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li id="10120" class=""><a href="/Product/Package/PackageList?MenuCode=10120"><span class="depth_2_title ">크루즈</span></a>
-                <div class="box no_contents">
+            <li id="10117" class=""><a href="/Product/Package/PackageList?MenuCode=10117"><span class="depth_2_title ">성지순례/크루즈</span></a>
+                <div class="box ">
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011707">성지순례 </a></span>
+                            <ul class="depth4">
+                                <li><a href="/Product/Package/PackageList?MenuCode=101170701">기독교</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101170702">카톨릭</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101170703">불교</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1011708">크루즈</a></span>
+                            <ul class="depth4">
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </li>
             <li class="block"></li>                
@@ -994,7 +1021,7 @@
             <li id="10206" class=""><a href="/Product/Free/FreeRegionMain?MenuCode=10206"><span class="depth_2_title ">동남아</span></a>
                 <div class="box ">
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020601">홍콩|마카오|대만</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020601">홍콩 | 마카오 | 대만</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060101">홍콩자유여행</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060102">CX 에어텔</a></li>
@@ -1006,23 +1033,12 @@
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020604">싱가폴|빈탄</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020604">싱가폴 | 빈탄</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060401">시아홀리데이</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060402">싱가폴 자유여행</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060403">빈탄 자유여행</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060404">싱가폴 플러스 자유여행</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020605">태국</a></span>
-                            <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060501">방콕</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060504">파타야</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060502">푸켓</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060508">태국 플러스 자유여행</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060509">ROH 어린이무료</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -1037,7 +1053,19 @@
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020606">발리|말레이시아</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020608">인도차이나</a></span>
+                            <ul class="depth4">
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060802">캄보디아</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060801">씨엠립|앙코르와트</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060803">베트남</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060804">하노이|호치민</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060806">다낭/나트랑</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060805">라오스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020606">발리 | 말레이시아</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060601">발리|자카르타</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060606">말레이시아</a></li>
@@ -1048,13 +1076,13 @@
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020608">인도차이나</a></span>
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020605">태국</a></span>
                             <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060802">캄보디아</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060801">씨엠립|앙코르와트</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060803">베트남</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060804">하노이|호치민</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102060805">라오스</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060501">방콕</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060504">파타야</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060502">푸켓</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060508">태국 플러스 자유여행</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060509">ROH 어린이무료</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -1172,14 +1200,12 @@
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1020915">몰디브</a></span>
                             <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=102091502">스피드보트</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102091507">씨플레인</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102091508">도메스틱</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102091509">사진 한장에 화보 한 컷</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102091510">수족관 같은 수중환경</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102091511">화보 한 컷과 수중 환경</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102091502">스피드보트 지역</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102091507">수상비행기 지역 </a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102091508">국내선 지역 </a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102091510">수상빌라 리조트 </a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102091511">풀빌라 리조트 </a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102091512">올인클루시브</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=102091513">플랜티넘플랜</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -1922,6 +1948,16 @@
                     </ul>
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1061103">타히티</a></span>
+                            <ul class="depth4">
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="10616" class=""><a href="/Product/Package/PackageList?MenuCode=10616"><span class="depth_2_title ">말레이지아</span></a>
+                <div class="box ">
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1061601">코타키나바루 </a></span>
                             <ul class="depth4">
                             </ul>
                         </li>

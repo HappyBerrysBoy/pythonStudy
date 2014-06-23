@@ -1,2 +1,0 @@
-http://www.verygoodtour.com/Product/Package/PackageList?MenuCode=1010201&PageSize=200
-http://www.verygoodtour.com/Product/Package/PackageItem?MasterCode=APP5081&Month=06&Year=2014

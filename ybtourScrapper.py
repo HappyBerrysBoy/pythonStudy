@@ -49,7 +49,11 @@ fromDate = strftime("%Y", time) + strftime("%m", time) + strftime("%d", time) + 
 toDate = strftime("%Y", nextTime) + strftime("%m", nextTime) + strftime("%d", nextTime) + strftime("%H", nextTime) + strftime("%M", nextTime)
 thisMonth = strftime("%Y", time) + strftime("%m", time)
 
-exceptFile = open('ybtourException.txt', 'w')
+targetYear = ''#sys.argv[1]
+targetMonth = ''#sys.argv[2]
+scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
+
+exceptFile = open('ybtourException' + scrappingStartTime + '.txt', 'w')
 ml1List = list()
 ml2List = list()
 ml3List = list()
@@ -154,6 +158,15 @@ try:
 
                                 try:
                                     con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                                    
+                                    
+                                    #query = savefilegethtml.getMasterMergeQuery('ybtour', productCode, '', '', sublist.name, productName, tourtype, 'A', productComment, '')  # A : 해외(Abroad)
+                                    #print query
+                                    #cursor = con.cursor()
+                                    #cursor.execute(query)
+                                    #con.commit()                            
+                                            
+                                            
                                     #detailProductList = open('ybtourTempFile.txt')
                                     flag = False
                                     ybtourproductfile = open('ybtourproductfile.txt', 'a')
@@ -196,13 +209,15 @@ try:
                                                 print >> ybtourproductfile, 'Status:' + clsProduct.status
                                             elif parcer.strip() == '</tr>':
                                                 flag = False
-                                                query = "insert into product_test values (product_seq.nextval, 'ybtour','" + str(subpackage.menuCode) + "','" + str(clsProduct.productName) + "','ICN',"
-                                                query += "to_date('" + strftime("%Y", time)+'/'+str(clsProduct.departDay) + "'),'" + str(clsProduct.period) + "','"+str(urlMap[package.menuCode])+"','',to_char(sysdate, 'yyyymmdd'),'',"
-                                                query += str(clsProduct.price) + ",'" + str(clsProduct.url) + "',to_date('" + strftime("%Y", time)+'/'+str(clsProduct.arriveDay) + "'),'','" 
-                                                query += str(clsProduct.status) + "','" + str(clsProduct.airCode) + "')"
-                                                cursor = con.cursor()
-                                                cursor.execute(query)
-                                                con.commit()
+                                                
+                                                
+                                                #query = savefilegethtml.getDetailMergeQuery('ybtour', detailProduct, prd_code, prd_nm, st_dt+st_time, arr_day+arr_time, tr_term, sublist.startLocation, '', air_cd, prd_status, prd_url, prd_fee, '0', '0', '0', '') 
+                                                #print query
+                                                #cursor = con.cursor()
+                                                #cursor.execute(query)
+                                                #con.commit()
+                                                
+                                                
                                                 break
                                             
                                         #productClassList.append(clsProduct)

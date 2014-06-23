@@ -10,7 +10,9 @@ import xmltodict
 import urllib2
 import re
 import cx_Oracle
+import sys
 import savefilegethtml
+import datetime
 
 #classes..
 class subMain():
@@ -60,6 +62,7 @@ class subList():
         else:
             self.Theme1 = ''
         self.MLoc = line[line.find('MLoc=') + len('MLoc='):line.find(' ') - 1]
+        self.name = line.split('">')[1].split('<')[0].decode('utf-8')
         return self
     
     def printToString(self):
@@ -137,22 +140,10 @@ except:
 
 #print(packageResponse)
 
-subUrls = open('modePackageUrls.txt', 'w')
-openPackageFile = open('packageurls.txt')
-for each_line in openPackageFile:
-    if each_line.strip()[:3] == '<dt' or each_line.strip()[:3] == '<dd':
-        #print(each_line)
-        sublist = subList()
-        result = sublist.getParam(each_line)
-        #print(sublist.makeURL())
-        #print >> subUrls, each_line
-        print >> subUrls, sublist.makeURL()
-subUrls.close()
-openPackageFile.close()
-
 # 시간 변수들..
-targetYear = '2014'#sys.argv[1]
-targetMonth = '07'#sys.argv[2]
+targetYear = sys.argv[1]
+targetMonth = sys.argv[2]
+scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
 idx = 0
 normalCnt = 0
@@ -161,125 +152,107 @@ parcingErr2 = 0
 urlErr = 0
 productList = list()
 productList.append('START')
-subUrls = open('modePackageUrls.txt')
-exceptFile = open('modeTourException.txt', 'w')
+exceptFile = open('modeTourException' + scrappingStartTime + '.txt', 'w')
 
-for each_line in subUrls:
-    anCode = each_line[each_line.find('location=') + len('location=LOC'):each_line.find('&location1=')]
-    themeCode = each_line[each_line.find('Theme=') + len('Theme='):each_line.find('&Theme1=')]
-    productUrl = 'http://www.modetour.com/XML/Package/Get_ProductList.aspx?AN=' + anCode + '&Ct=&PL=10000&Pd=&Pn=1&TN=' + themeCode
-    
-    print('Product URL : ' + productUrl)
-    print >> exceptFile, productUrl
-    productListOpener = urllib2.urlopen(productUrl)
-    productListGet = productListOpener.read()
+openPackageFile = open('packageurls.txt')
+con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
 
-
-    pcodeList = re.findall(r'\bPcode="[\w]*', productListGet)
-    
-    for pcode in pcodeList:
-        detailProduct = pcode.split('"')[1]
-        type(detailProduct)
-        #print('detailProduct : ' + detailProduct)
+for each_line in openPackageFile:
+    if each_line.strip()[:3] == '<dt' or each_line.strip()[:3] == '<dd':
+        #print(each_line)
+        sublist = subList()
+        sublist.getParam(each_line)
+        #print(sublist.makeURL())
+        #print >> subUrls, each_line
+        #print >> subUrls, sublist.makeURL()
+        listUrls = sublist.makeURL()
+        anCode = listUrls[listUrls.find('location=') + len('location=LOC'):listUrls.find('&location1=')]
+        themeCode = listUrls[listUrls.find('Theme=') + len('Theme='):listUrls.find('&Theme1=')]
+        productUrl = 'http://www.modetour.com/XML/Package/Get_ProductList.aspx?AN=' + anCode + '&Ct=&PL=1000&Pd=&Pn=1&TN=' + themeCode
         
-        if productList.count(detailProduct) == 0:
-            productList.append(detailProduct)
-            #print('productList : ' + productList)
-            
-            tmpUrl = 'http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=' + targetMonth + '&Pcode=' + detailProduct + '&Pd=&Type=01'
-            print('Detail Product URL : ' + tmpUrl)
-            print >> exceptFile, tmpUrl
-            #import cx_Oracle
-            #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-            #>>> cursor = con.cursor()
-            #>>> cursor.execute("select * from tab")
-            #<cx_Oracle.Cursor on <cx_Oracle.Connection to bigtour@hnctech73.iptime.org:1521/ora11g>>
-            #>>> print cursor.fetchall()
-            #[('T_PRD', 'TABLE', None), ('T_PRD_DTL', 'TABLE', None)]
-            #>>> cursor.close()
-            #>>> con.close() 
-            
-            con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+        try:
+            print('Product URL : ' + productUrl)
+            print >> exceptFile, productUrl
+            productListGet = urllib2.urlopen(productUrl).read()
+            try:
+                pcodeList = re.findall(r'\bPcode="[\w]*', productListGet)
+                
+                for pcode in pcodeList:
+                    detailProduct = pcode.split('"')[1]
+                    
+                    if productList.count(detailProduct) == 0:
+                        productList.append(detailProduct)
+                        #print('productList : ' + productList)
+                        
+                        tmpUrl = 'http://www.modetour.com/Xml/Package/Get_Pcode.aspx?Ct=&Month=' + targetMonth + '&Pcode=' + detailProduct + '&Pd=&Type=01'
+                        print('Detail Product URL : ' + tmpUrl)
+                        print >> exceptFile, tmpUrl
 
-            detailUrl = requests.get(tmpUrl).text
-            tree = xmltodict.parse(detailUrl)
-            for t in tree['ModeSangPum']['SangList']:
-                reg_div = anCode
-                print reg_div
-                prd_nm = t['SName']['#text']
-                print prd_nm
-                air_cd = t['SAirCode']
-                print air_cd
-                st_city = ''
-                st_dt = t['SPriceDay']['#text']
-                print st_dt
-                #st_time = t['SstartTime']
-                st_time = ''
-                arr_day = t['SArrivalDay']['#text']
-                print arr_day
-                #arr_time = t['SArrivalTime']
-                arr_time = ''
-                tr_term = t['SDay']
-                print tr_term
-                tr_div = themeCode
-                print tr_div
-                sel_dt = ''
-                dmst_div = travle_kind
-                print dmst_div
-                prd_fee = t['SPrice']
-                print prd_fee
-                prd_status = t['SDetailState']['#text']
-                print prd_status
-                prd_url = ''
-                
-                """
-                query = "insert into product_test values (product_seq.nextval, '" + tag_div + "','" + reg_div + "','" + prd_nm + "','" + st_city
-                query += "',to_date('" + st_dt + "'),'" + tr_term + "','" + tr_div + "','" + dmst_div + "','" + sel_dt + "','" + st_time + "'," + prd_fee + ",'" + prd_url
-                query += "',to_date('" + arr_day + "'),'" + arr_time + "','" + prd_status + "','" + air_cd + "')"
-                
-                
-                query = savefilegethtml.getMasterMergeQuery('hanatour', productClass.pkg_mst_code, packageClass.pub_area_code, packageClass.pub_country, packageClass.pub_city, productClass.mst_name, mode, 'A', productClass.content, '')
-                cursor = con.cursor()
-                cursor.execute(query)
-                con.commit()       
-                
-                query = savefilegethtml.getDetailMergeQuery('hanatour', productClass.pkg_mst_code, detailClass.pcode, detailClass.pname, detailClass.dday+detailClass.dtime, detailClass.aday+detailClass.atime, detailClass.tday, departCity, '', detailClass.acode, detailClass.lminute, detailClass.url, detailClass.amt, '0', '0', '0', '') 
-                cursor = con.cursor()
-                cursor.execute(query)
-                con.commit()
-                
-                """
-                #print >> exceptFile, query
-                
-                #print(query)
-                #DB에 입력하는 쿼리..
-                break
-                #print(t['SName']['#text'])
-                #print(t['SNight'])
-                #print(t['SDay'])
-                #print(t['SPrice'])
-                #print(t['SAirCode'])
-                #print(t['SAirName'])
-                #print(t['SPriceDay']['#text'])
-                #print(t['SArrivalDay']['#text'])
-                #print(t['SPriceNum']['#text'])
-                #print(t['SMeet'])
-                #print(t['SstartAir'])
-                #print(t['SstartTime'])
-                #print(t['SArrivalTime'])
-                #print(t['SDetailState']['#text'])
-                
-            normalCnt += 1
-            cursor.close()
-            con.close()
+                        try:                
+                            detailUrl = requests.get(tmpUrl).text
+                            tree = xmltodict.parse(detailUrl)
+                            productCode = tree['ModeSangPum']['SCode']
+                            productName = tree['ModeSangPum']['STitle']
+                            productComment = tree['ModeSangPum']['SCont']
+                            query = savefilegethtml.getMasterMergeQuery('modetour', productCode, '', '', sublist.name, productName, 'P', 'A', productComment, '')
+                            #print query
+                            cursor = con.cursor()
+                            cursor.execute(query)
+                            con.commit()                            
+                            
+                            for t in tree['ModeSangPum']['SangList']:
+                                tag_div = ''
+                                reg_div = anCode
+                                prd_nm = t['SName']['#text']
+                                air_cd = t['SAirCode']
+                                st_city = ''
+                                st_dt = t['SPriceDay']['#text']
+                                st_time = t['SstartTime'].replace(':', '')
+                                #st_time = ''
+                                arr_day = t['SArrivalDay']['#text']
+                                arr_time = t['SArrivalTime'].replace(':', '')
+                                arr_time = ''
+                                tr_term = t['SDay']
+                                tr_div = themeCode
+                                sel_dt = ''
+                                dmst_div = travle_kind
+                                prd_fee = t['SPrice']
+                                prd_status = t['SDetailState']['#text']
+                                prd_code = t['SPriceNum']['#text']
+                                flynum = t['SstartAir']
+                                #period = t['SNight']  #기간이 아니라... 잠자는 횟수임.. 1박2일이면.. 1
+                                airline = t['SAirName']
+                                prd_url = 'http://www.modetour.com/Package/Itinerary.aspx?startLocation='+sublist.startLocation+'&location='+sublist.location+'&location1='+sublist.location1+'&theme='+sublist.Theme+'&theme1='+sublist.Theme1+'&MLoc='+sublist.MLoc+'&Pnum='+prd_code
+                                #print 'product url:' + prd_url
+                                #print >> exceptFile, query
+                                query = savefilegethtml.getDetailMergeQuery('modetour', productCode, prd_code, prd_nm, st_dt+st_time, arr_day+arr_time, tr_term, sublist.startLocation, '', air_cd, prd_status, prd_url, prd_fee, '0', '0', '0', '') 
+                                #print query
+                                cursor = con.cursor()
+                                cursor.execute(query)
+                                con.commit()
+                                #break
+                                #print(t['SMeet'])
+                        except:
+                            parcingErr2 += 1
+                            print >> exceptFile, "Depth 3 : Parcing or Query Error:", sys.exc_info()[0]
+                            pass
+                        normalCnt += 1
+                    break
+            except:
+                print >> exceptFile, "Depth 2 : Parcing or Query Error:", sys.exc_info()[0]
+                pass
+            
+        except urllib2.URLError as err:
+            print >> exceptFile, "Depth 1 : Parcing or Query Error:", sys.exc_info()[0]
+            pass
         
         break
-        
-    break
-
-productListOpener.close()
-subUrls.close()
+openPackageFile.close()
+con.close()
 exceptFile.close()
+
+
+#Daum 쇼핑하우는 통신판매중개자로서 상품주문, 배송 및 환불의 의무와 책임은 각 판매업체에 있습니다. 위 내용에 대한 저작권 및 법적 책임은 자료제공사 또는 글쓴이에 있으며 Daum의 입장과 다를 수 있습니다.
 
 print("==========Product List==========")
 print(productList)
