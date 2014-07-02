@@ -112,7 +112,7 @@ try:
                 idx += 1
                 print '=============================================================================================================='
                 print 'PackageList Url : ' + productGroupCls.url
-                print >> exceptFile, productGroupCls.url
+                print >> exceptFile, 'PackageList Url : ' + productGroupCls.url
                 regionHtml = savefilegethtml.getHtml(productGroupCls.url, '<div id="list_proviewM">', 'function BingPaging()', 'regionHtml.txt')
                 #regionHtml = urllib2.urlopen(menu.url).read()
                 #regionHtml = regionHtml[regionHtml.find('<div id="list_proviewM">'):regionHtml.find('function BingPaging()')]
@@ -137,7 +137,7 @@ try:
                                 productList.append(mastercode)
                                 productListUrl = 'http://www.verygoodtour.com/Product/Package/PackageItem?MasterCode=' + mastercode + '&Month=' + targetMonth + '&Year=' + targetYear
                                 print 'ProductGroup Url : ' + productListUrl
-                                print >> exceptFile, productListUrl
+                                print >> exceptFile, 'ProductGroup Url : ' + productListUrl
                                 productListHtml = savefilegethtml.getHtml(productListUrl, '', '', 'productListHtml.txt')
                                 productName = each_line.split('<a href="#n">')[1].split('</a')[0].replace("'", "").strip().decode('utf-8')
                                 productComment = each_line.split('pkg_list_centents">')[1].split('</a')[0].replace("'", "").strip().decode('utf-8')
@@ -207,14 +207,24 @@ try:
                                             con.commit()
                                             #break
                                 except IndexError as iErr:
-                                    print iErr.message + '(' + product + ')'
+                                    print iErr
+                                    pass
                                 except:
                                     print 'data base error!!!'
                                     print >> exceptFile, "Parcing Error:", sys.exc_info()[0]
                                     pass
                             #break
+                except cx_Oracle.IntegrityError as dberr2:
+                    print dberr2
+                    print >> exceptFile, dberr2
+                    pass
+                except cx_Oracle.DatabaseError as dberr:
+                    print dberr
+                    print >> exceptFile, dberr
+                    pass
                 except UnicodeDecodeError as err:
                     print err
+                    print >> exceptFile, err
                     pass
                 except:
                     print >> exceptFile, "Parcing or URL Error:", sys.exc_info()[0]

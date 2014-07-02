@@ -1,0 +1,43 @@
+http://www.tourbaksa.com/SubMain/Areaindex.asp?sq=11&subkind=2
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=15&M5=617
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JTBS&gs=82&AirIDX=1&sd=20140701&M1=1&M2=8&M3=9&M4=15&M5=617
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=16&M5=618
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JOBS&gs=214&AirIDX=3&sd=20140701&M1=1&M2=8&M3=9&M4=16&M5=618
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=620&M5=621
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JKBS&gs=301&AirIDX=7&sd=20140701&M1=1&M2=8&M3=9&M4=620&M5=621
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=620&M5=622
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JIBS&gs=25&AirIDX=1&sd=20140701&M1=1&M2=8&M3=9&M4=620&M5=622
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=626&M5=627
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JBBS&gs=118&AirIDX=2&sd=20140701&M1=1&M2=8&M3=9&M4=626&M5=627
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=21&M5=629
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JWBS&gs=36&AirIDX=1&sd=20140701&M1=1&M2=8&M3=9&M4=21&M5=629
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=21&M5=630
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JWBS&gs=10&AirIDX=7&sd=20140701&M1=1&M2=8&M3=9&M4=21&M5=630
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=631&M5=632
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JJBS&gs=35&AirIDX=2&sd=20140701&M1=1&M2=8&M3=9&M4=631&M5=632
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=633&M5=634
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JSBS&gs=11&AirIDX=3&sd=20140701&M1=1&M2=8&M3=9&M4=633&M5=634
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=26&M5=816
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JHBS&gs=28&AirIDX=1&sd=20140701&M1=1&M2=8&M3=9&M4=26&M5=816
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=26&M5=817
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JHBS&gs=5&AirIDX=3&sd=20140701&M1=1&M2=8&M3=9&M4=26&M5=817
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=24&M5=0
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JNBS&gs=11&AirIDX=1&sd=20140701&M1=1&M2=8&M3=9&M4=24&M5=0
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=23&M5=0
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JDBS&gs=44&AirIDX=1&sd=20140701&M1=1&M2=8&M3=9&M4=23&M5=0
+Detail Product URL Error <type 'exceptions.AttributeError'>
+http://www.tourbaksa.com/item/?M1=1&M2=8&M3=9&M4=29&M5=32
+http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JWBS&gs=35&AirIDX=4&sd=20140701&M1=1&M2=8&M3=9&M4=29&M5=32
+Detail Product URL Error <type 'exceptions.AttributeError'>

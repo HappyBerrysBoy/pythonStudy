@@ -9,7 +9,8 @@ import urllib2
 import cx_Oracle
 import savefilegethtml
 import sys
-import datetime
+import time, datetime
+import codes
 
 #fnSetMstList({"head":{"tot_cnt":"17","pub_area_code":"A","pub_country":"TH","pub_city":"","dept_code":"","DY_LIST":"","page_num":"1","page_len":"20","flatfile_yn":"N"}, 
 #"cont":[
@@ -35,7 +36,7 @@ class clsPackage():
         self.productList = list()
     
     def toString(self):
-        print 'tot_cnt:'+self.tot_cnt+',pub_area_code:'+self.pub_area_code+',pub_country:'+self.pub_country+',pub_city:'+self.pub_city+',dept_code:'+self.dept_code+',DY_LIST:'+self.DY_LIST+',page_num:'+self.page_num+',page_len:'+self.page_len+',flatfile_yn:'+self.flatfile_yn
+        return 'tot_cnt:'+self.tot_cnt+',pub_area_code:'+self.pub_area_code+',pub_country:'+self.pub_country+',pub_city:'+self.pub_city+',dept_code:'+self.dept_code+',DY_LIST:'+self.DY_LIST+',page_num:'+self.page_num+',page_len:'+self.page_len+',flatfile_yn:'+self.flatfile_yn
         
 class clsProduct():
     def __init__(self):
@@ -54,7 +55,7 @@ class clsProduct():
         self.orderSeq = ''
         
     def toString(self):
-        print 'sort_no:'+self.sort_no+',pkg_mst_code:'+self.pkg_mst_code+',sMonth:'+self.sMonth+',min_amt:'+self.min_amt+',max_amt:'+self.max_amt+',mst_name:'+self.mst_name+',t_content:'+self.t_content+',img_seq:'+self.img_seq+',dy_list:'+self.dy_list+',content:'+self.content+',tour_day:'+self.tour_day+',start_dy:'+self.start_dy+',orderSeq:'+self.orderSeq
+        return 'sort_no:'+self.sort_no+',pkg_mst_code:'+self.pkg_mst_code+',sMonth:'+self.sMonth+',min_amt:'+self.min_amt+',max_amt:'+self.max_amt+',mst_name:'+self.mst_name+',t_content:'+self.t_content+',img_seq:'+self.img_seq+',dy_list:'+self.dy_list+',content:'+self.content+',tour_day:'+self.tour_day+',start_dy:'+self.start_dy+',orderSeq:'+self.orderSeq
 
 class clsDetailProduct():
     def __init__(self):
@@ -74,7 +75,7 @@ class clsDetailProduct():
         self.url = ''
 
     def toString(self):
-        print 'pcode:'+self.pcode+',sday:'+self.sday+',stime:'+self.stime+',aday:'+self.aday+',atime:'+self.atime+',acode:'+self.acode+',aline:'+self.aline+',tday:'+self.tday+',grade:'+self.grade+',gname:'+self.gname+',pname:'+self.pname+',amt:'+self.amt+',lminute:'+self.lminute
+        return 'pcode:'+self.pcode+',sday:'+self.sday+',stime:'+self.stime+',aday:'+self.aday+',atime:'+self.atime+',acode:'+self.acode+',aline:'+self.aline+',tday:'+self.tday+',grade:'+self.grade+',gname:'+self.gname+',pname:'+self.pname+',amt:'+self.amt+',lminute:'+self.lminute
 
 def valueParcing(html, idx1, idx2):
     return html[html.find(idx1) + len(idx1):html.find(idx2)]
@@ -82,30 +83,32 @@ def valueParcing(html, idx1, idx2):
 def getDepartCity(html):
     print 'Region.........................................................' + html
     if html.find('province_PUS') > -1:
-        print '1'
+        print html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_TAE') > -1:
-        print '2'
+        print html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_KWJ') > -1:
-        print '3'
+        print html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_CJJ') > -1:
-        print '4'
+        print html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_CJU') > -1:
-        print '5'
+        print html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_GW') > -1:
-        print '6'
+        print html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     else:
-        print '7'
-        return 'Seoul'
+        print 'ICN'
+        return 'ICN'
 
 # 시간 변수들..
-targetYear = sys.argv[1]
-targetMonth = sys.argv[2]
+#targetYear = sys.argv[1]
+#targetMonth = sys.argv[2]
+targetYear = '2014'
+targetMonth = '07'
 scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
 mainUrls = list()
@@ -125,11 +128,12 @@ mainUrls.append(cruiseUrl)
 #</dl></div></div>
 exceptFileName = 'hanatourException' + scrappingStartTime + '.txt'
 exceptFile = open(exceptFileName, 'w')
+print >> exceptFile, "Start : %s" % time.ctime()
 packageList = list()
 packageList.append('start')
 currCountry = ''
 for mainUrl in mainUrls:
-    departCity = 'Seoul'
+    departCity = 'ICN'
     # 개별 test중...
     #if mainUrl.mode != 'P':
         #continue
@@ -167,6 +171,8 @@ for mainUrl in mainUrls:
         
                         packageClass = clsPackage()
                         html = urllib2.urlopen(jsonUrl).read()
+                        if html.find('sort_no') < 0:
+                            continue
                         packageClass.tot_cnt = valueParcing(html, 'tot_cnt":"', '","pub')
                         packageClass.pub_area_code = valueParcing(html, 'pub_area_code":"', '","pub_country')
                         packageClass.pub_country = valueParcing(html, 'pub_country":"', '","pub_city')
@@ -176,7 +182,7 @@ for mainUrl in mainUrls:
                         packageClass.page_num = valueParcing(html, 'page_num":"', '","page_len')
                         packageClass.page_len = valueParcing(html, 'page_len":"', '","flatfile_yn')
                         packageClass.flatfile_yn = valueParcing(html, 'flatfile_yn":"', '"}, "cont"')
-                        packageClass.toString()
+                        print packageClass.toString()
                         
                         #contentsList = savefilegethtml.getHtmlList(html, '{"sort_no":', '] })', savefilegethtml.chkExistFile('contentsFile.txt'), '{', '\r\n{')
                         
@@ -214,23 +220,31 @@ for mainUrl in mainUrls:
                                 productClass.tour_day = valueParcing(product, 'tour_day":"', '","start_dy')
                                 productClass.start_dy = valueParcing(product, 'start_dy":"', '","orderSeq')
                                 productClass.orderSeq = valueParcing(product, 'orderSeq":"', '"}')
-                                #productClass.toString()
+                                #print productClass.toString()
                                 packageList.append(productClass.pkg_mst_code)
                                 
-                                query = savefilegethtml.getMasterMergeQuery('hanatour', productClass.pkg_mst_code, packageClass.pub_area_code, packageClass.pub_country, packageClass.pub_city, productClass.mst_name, mode, 'A', productClass.content, '')
-                                #print >> exceptFile ,query
+                                # 2014. 6. 29. 정규식으로 이름에서 국가, 도시 코드 빼오도록.. 테스트 디비로 저장..
+                                print productClass.mst_name
+                                print type(productClass.mst_name)
+                                codeList = codes.getCityCode(productClass.mst_name)
+                                nationList = codeList[0]
+                                cityList = codeList[1]
+                                query = savefilegethtml.getMasterMergeQueryTest1('hanatour', productClass.pkg_mst_code, packageClass.pub_area_code, packageClass.pub_country, packageClass.pub_city, productClass.mst_name, mode, 'A', productClass.content, '', nationList, cityList)
+                                
+                                #query = savefilegethtml.getMasterMergeQuery('hanatour', productClass.pkg_mst_code, packageClass.pub_area_code, packageClass.pub_country, packageClass.pub_city, productClass.mst_name, mode, 'A', productClass.content, '')
+                                #print query
                                 cursor = con.cursor()
                                 cursor.execute(query)
                                 con.commit()
                                 
-                                
+                                """
                                 cityCode = jsonUrl[jsonUrl.find('&hanacode=') + len('&hanacode='):]
                                 detailProductUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-11001-list.asp?'
                                 detailProductUrl += 'area=' + packageClass.pub_area_code + '&pub_country=' +packageClass.pub_country+ '&pub_city=' + packageClass.pub_city
                                 detailProductUrl += '&tour_scheduled_year='+targetYear+'&tour_scheduled_month='+targetMonth+'&tour_scheduled_day=&pkg_code=&tour_old_year='+targetYear
                                 detailProductUrl += '&tour_old_month='+targetMonth+'&pkg_mst_code='+productClass.pkg_mst_code
                                 detailProductUrl += '&tour_scheduled_dt='+targetYear+'-'+targetMonth+'&etc_code=P&hanacode='+ cityCode
-                                if departCity != 'Seoul':
+                                if departCity != 'ICN':
                                     detailProductUrl += '&start_city=' + departCity
                                 print 'last url.....: ' + detailProductUrl
                                 
@@ -253,6 +267,7 @@ for mainUrl in mainUrls:
                                 
                                 #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
                                 #idx = 1;
+                                
                                 for detailProduct in detailProductList:
                                     #print 'detail Product : ' + detailProduct
                                     try:
@@ -275,11 +290,13 @@ for mainUrl in mainUrls:
                                         detailClass.amt = valueParcing(detailProduct, 'amt":"', '","lminute')
                                         detailClass.lminute = valueParcing(detailProduct, 'lminute":"', '"}')
                                         detailClass.url = 'http://www.hanatour.com/asp/booking/productPackage/pk-12000.asp?pkg_code=' + detailClass.pcode
-                                        #detailClass.toString()
+                                        #print detailClass.toString()
                                         #print idx
                                         #idx += 1
                                         
-                                        query = savefilegethtml.getDetailMergeQuery('hanatour', productClass.pkg_mst_code, detailClass.pcode, detailClass.pname, detailClass.dday+detailClass.dtime, detailClass.aday+detailClass.atime, detailClass.tday, departCity, '', detailClass.acode, detailClass.lminute, detailClass.url, detailClass.amt, '0', '0', '0', '') 
+                                        # 2014. 6. 29. 정규식으로 이름에서 국가, 도시 코드 빼오도록..
+                                        query = savefilegethtml.getDetailMergeQueryTest1('hanatour', productClass.pkg_mst_code, detailClass.pcode, detailClass.pname, detailClass.dday+detailClass.dtime, detailClass.aday+detailClass.atime, detailClass.tday, departCity, '', detailClass.acode, detailClass.lminute, detailClass.url, detailClass.amt, '0', '0', '0', '') 
+                                        #query = savefilegethtml.getDetailMergeQuery('hanatour', productClass.pkg_mst_code, detailClass.pcode, detailClass.pname, detailClass.dday+detailClass.dtime, detailClass.aday+detailClass.atime, detailClass.tday, departCity, '', detailClass.acode, detailClass.lminute, detailClass.url, detailClass.amt, '0', '0', '0', '') 
                                         #print >> exceptFile ,query                                    
                                         cursor = con.cursor()
                                         cursor.execute(query)
@@ -300,36 +317,45 @@ for mainUrl in mainUrls:
                                     except:
                                         print >> exceptFile, 'Depth 4 : ' + str(sys.exc_info()[0])
                                         pass
+                                """    
                             except cx_Oracle.IntegrityError as dberr:
                                 print >> exceptFile, 'Depth 33 : ' + str(dberr)
+                                print 'Depth 33 : ' + str(dberr)
                                 pass
                             except UnicodeEncodeError as err2:
                                 print >> exceptFile, 'Depth 34 : ' + str(err2) + '::' + str(err2.args) + '::' + str(err2.message)
+                                print 'Depth 34 : ' + str(err2) + '::' + str(err2.args) + '::' + str(err2.message)
                                 pass
                             except:
                                 print >> exceptFile, 'Depth 3 : ' + str(sys.exc_info()[0])
+                                print 'Depth 3 : ' + str(sys.exc_info()[0])
                                 pass
                             finally:
                                 con.close()
                                 
-                            #break
-                        #break
+                            break
+                        break
                                 
             except AttributeError as err:
                 print >> exceptFile, 'Depth 22 : ' + str(err)
+                print 'Depth 22 : ' + str(err)
                 pass
             except TypeError as err2:
                 print >> exceptFile, 'Depth 23 : ' + str(err2)
+                print 'Depth 23 : ' + str(err2)
                 pass
             except:
                 print >> exceptFile, 'Depth 2 : ' + str(sys.exc_info()[0])
+                print 'Depth 2 : ' + str(sys.exc_info()[0])
                 pass
                 
-        #break
+        break
     except:
         print >> exceptFile, 'Depth 1 : ' + str(sys.exc_info()[0])
+        print 'Depth 1 : ' + str(sys.exc_info()[0])
         pass
 
+print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()
 
 

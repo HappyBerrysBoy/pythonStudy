@@ -78,6 +78,82 @@
 			</thead>
 			<tbody>
 
+				<tr>
+				
+					<td><input type="checkbox" name="goods_id" value="201408424;" class="ir" /><input type="hidden"  name="goods_id2" value="201408424"/></td>
+					<td><span class="blue">08/07 (목) 00:50</span><br /><span>08/16 (토) 16:40</span></td>
+					<td><span class="logo" title="카타르항공" alt="카타르항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_QR03.gif' align='absmiddle' border=0 alt='카타르항공' title='카타르항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=424&good_cd=190201320">중세의 나라 코카서스 3개국 10일</a></td>
+					<td><span>
+					8박10일
+					
+					</span></td>
+					<td class="blue">4,590,000원 
+					
+					</td>
+					<td class="red">예약가능</td>
+				</tr>
+
+				<tr>
+				
+					<td><input type="checkbox" name="goods_id" value="201408425;" class="ir" /><input type="hidden"  name="goods_id2" value="201408425"/></td>
+					<td><span class="blue">08/14 (목) 00:50</span><br /><span>08/23 (토) 16:40</span></td>
+					<td><span class="logo" title="카타르항공" alt="카타르항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_QR03.gif' align='absmiddle' border=0 alt='카타르항공' title='카타르항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=425&good_cd=190201320">중세의 나라 코카서스 3개국 10일</a></td>
+					<td><span>
+					8박10일
+					
+					</span></td>
+					<td class="blue">4,590,000원 
+					
+					</td>
+					<td class="red">예약가능</td>
+				</tr>
+
+				<tr>
+				
+					<td><input type="checkbox" name="goods_id" value="201408426;" class="ir" /><input type="hidden"  name="goods_id2" value="201408426"/></td>
+					<td><span class="blue">08/21 (목) 00:50</span><br /><span>08/30 (토) 16:40</span></td>
+					<td><span class="logo" title="카타르항공" alt="카타르항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_QR03.gif' align='absmiddle' border=0 alt='카타르항공' title='카타르항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=426&good_cd=190201320">중세의 나라 코카서스 3개국 10일</a></td>
+					<td><span>
+					8박10일
+					
+					</span></td>
+					<td class="blue">4,590,000원 
+					
+					</td>
+					<td class="red">예약가능</td>
+				</tr>
+
+				<tr>
+				
+					<td><input type="checkbox" name="goods_id" value="201408427;" class="ir" /><input type="hidden"  name="goods_id2" value="201408427"/></td>
+					<td><span class="blue">08/28 (목) 00:50</span><br /><span>09/06 (토) 16:40</span></td>
+					<td><span class="logo" title="카타르항공" alt="카타르항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_QR03.gif' align='absmiddle' border=0 alt='카타르항공' title='카타르항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=427&good_cd=190201320">중세의 나라 코카서스 3개국 10일</a></td>
+					<td><span>
+					8박10일
+					
+					</span></td>
+					<td class="blue">4,590,000원 
+					
+					</td>
+					<td class="red">예약가능</td>
+				</tr>
+
 				<!--tr class="bg"><!-- 배경컬러 있는것 클래스 생성// -->
 					<!--td><input type="checkbox" /></td>
 					<td><span class="blue">01/15 (일) 23:55</span><br /><span>01/21 (토) 16:30</span></td>

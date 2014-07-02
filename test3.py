@@ -9,105 +9,110 @@ import datetime
 import sys
 import cx_Oracle
 import savefilegethtml
+import codes
+import urllib2
 
-class clsProductGroup():
+def valueParcing(html, idx1, idx2):
+    return html[html.find(idx1) + len(idx1):html.find(idx2)]
+ 
+class clsPackage():
     def __init__(self):
-        self.name = ''
-        self.menucode = ''
-        self.url = ''
-
+        self.tot_cnt = 0
+        self.pub_area_code = ''
+        self.pub_country = ''
+        self.pub_city = ''
+        self.dept_code = ''
+        self.DY_LIST = ''
+        self.page_num = ''
+        self.page_len = ''
+        self.flatfile_yn = ''
+        self.productList = list()
+    
+    def toString(self):
+        return 'tot_cnt:'+self.tot_cnt+',pub_area_code:'+self.pub_area_code+',pub_country:'+self.pub_country+',pub_city:'+self.pub_city+',dept_code:'+self.dept_code+',DY_LIST:'+self.DY_LIST+',page_num:'+self.page_num+',page_len:'+self.page_len+',flatfile_yn:'+self.flatfile_yn
+ 
+ 
 class clsProduct():
     def __init__(self):
-        self.sDay = ''
-        self.sTime = ''
-        self.aDay = ''
-        self.aTime = ''
-        self.aCode = ''
-        self.period = ''
-        self.code = ''
-        self.status = ''
-        self.name = ''
-        self.price = ''
-        self.booked = ''
-        self.url = ''
+        self.sort_no = ''
+        self.pkg_mst_code = ''
+        self.sMonth = ''
+        self.min_amt = ''
+        self.max_amt = ''
+        self.mst_name = ''
+        self.t_content = ''
+        self.img_seq = ''
+        self.dy_list = ''
+        self.content = ''
+        self.tour_day = ''
+        self.start_dy = ''
+        self.orderSeq = ''
         
     def toString(self):
-        return 'Code:'+self.code+',sDay:'+self.sDay+',sTime:'+self.sTime+',aDay:'+self.aDay+',aTime:'+self.aTime+',aCode:'+self.aCode+',Period:'+self.period+',status:'+self.status+',name:'+self.name+',price:'+self.price+',booked:'+self.booked
+        return 'sort_no:'+self.sort_no+',pkg_mst_code:'+self.pkg_mst_code+',sMonth:'+self.sMonth+',min_amt:'+self.min_amt+',max_amt:'+self.max_amt+',mst_name:'+self.mst_name+',t_content:'+self.t_content+',img_seq:'+self.img_seq+',dy_list:'+self.dy_list+',content:'+self.content+',tour_day:'+self.tour_day+',start_dy:'+self.start_dy+',orderSeq:'+self.orderSeq
+    
 
-def getTourType(idx):
-    if idx == 0:
-        return 'P'
-    elif idx == 1:
-        return 'F'
-    elif idx == 2:
-        return 'D'
-    elif idx == 3:
-        return 'B'
-    elif idx == 4:
-        return 'W'
-    elif idx == 5:
-        return 'G'
-    elif idx == 6:
-        return 'L'
-    elif idx == 7:
-        return 'A'
-    elif idx == 8:
-        return 'H'
-    elif idx == 9:
-        return '법인'
-        
-productListHtml = savefilegethtml.getHtml('http://www.verygoodtour.com/Product/Package/PackageItem?MasterCode=APP5028&Month=06&Year=2014', '', '', 'productListHtml.txt')
+packageClass = clsPackage()
+jsonUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=PYX&etc_code=P&hanacode=overseas_GNB_AE_TH_PYX'
+html = urllib2.urlopen(jsonUrl).read()
+packageClass.tot_cnt = valueParcing(html, 'tot_cnt":"', '","pub')
+packageClass.pub_area_code = valueParcing(html, 'pub_area_code":"', '","pub_country')
+packageClass.pub_country = valueParcing(html, 'pub_country":"', '","pub_city')
+packageClass.pub_city = valueParcing(html, 'pub_city":"', '","dept_code')
+packageClass.dept_code = valueParcing(html, 'dept_code":"', '","DY_LIST')
+packageClass.DY_LIST = valueParcing(html, 'DY_LIST":"', '","page_num')
+packageClass.page_num = valueParcing(html, 'page_num":"', '","page_len')
+packageClass.page_len = valueParcing(html, 'page_len":"', '","flatfile_yn')
+packageClass.flatfile_yn = valueParcing(html, 'flatfile_yn":"', '"}, "cont"')
+print packageClass.toString()
 
-#최종 상품들 잡아넣자..
-con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")                    
-productCls = clsProduct()
-#productListHtml = open('productListHtml.txt')
-for product in productListHtml:
-    #print 'product : ' + product
-    if product.find('pro_date') > -1:
-        productCls = clsProduct()
-        productCls.sDay = '2014' + product.split('pro_date">')[1].split('(')[0].strip().replace('/', '')
-        productCls.sTime = product.split('<br/>')[0].split(')')[1].strip().replace(':', '')
-        productCls.aDay = '2014' + product.split('<span>')[1].split('(')[0].strip().replace('/', '')
-        productCls.aTime = product.split('<span>')[1].split(')')[1].split('<')[0].strip().replace(':', '')
-    elif product.find('<img src=') > -1 and product.find('pro_detail') < 0:
-        productCls.aCode = product.split("alt='")[1].split("'")[0].decode('utf-8')
-    elif (product.find('박') > -1 or product.find('일') > -1) and product.find('class=') < 0:
-        productCls.period = product.split('박')[1].split('일')[0].strip()
-    elif product.find('class="pro_detail tl"') > -1:
-        productCls.code = product.split("DetailPage('")[1].split("'")[0]
-        productCls.url = 'http://www.verygoodtour.com/Product/Package/PackageDetail?ProCode=' + productCls.code + '&MenuCode='
-        #http://www.verygoodtour.com/Product/Package/PackageDetail?ProCode=APP5099-140612LJ&MenuCode=1010201
-        tmp = len(product.split('</td>')[0].split('>'))
-        productCls.name = product.split('</td>')[0].split('>')[tmp - 1].decode('utf-8')
-    elif product.find('pro_price') > -1:
-        productCls.price = product.split('원')[0].split('>')[1].replace(',', '')
-    elif product.find('class="pro_condition"') > -1:
-        productCls.booked = product.split('title="')[1].split('"')[0].decode('utf-8')
-    elif product.find('</tr>') > -1:
-        #print productCls.toString()
-        #query... 등등
-        #print mastercode
-        #print productCls.code
-        #print productCls.name
-        #print productCls.sDay+productCls.sTime
-        #print productCls.aDay+productCls.aTime
-        #print productCls.period
-        #print departCity
-        #print productCls.aCode
-        #print productCls.booked
-        #print productCls.url
-        #print productCls.price
-        print 'productCls.code : ' + productCls.code
-        if productCls.code.strip() == '':
+#contentsList = savefilegethtml.getHtmlList(html, '{"sort_no":', '] })', savefilegethtml.chkExistFile('contentsFile.txt'), '{', '\r\n{')
+
+contents = html[html.find('[{"sort_no":') + 1:html.find('] })')].replace('{', '\r\n{')
+contentsFileName = savefilegethtml.chkExistFile('contentsFile.txt')
+#contentsList = savefilegethtml.htmlToList(contents, 'contentsFile.txt')
+contentsFile = open(contentsFileName, 'w')
+print >> contentsFile, contents
+contentsFile.close()
+contentsList = open(contentsFileName)
+
+con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+
+for product in contentsList:
+    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+    try:
+        pkg_mst_code = valueParcing(product, 'pkg_mst_code":"', '","sMonth')
+        #print 'product : ' + product
+        if len(product.strip()) < 1:
             continue
         
-        query = savefilegethtml.getDetailMergeQuery('vgtour', 'APP5028', productCls.code, productCls.name, productCls.sDay+productCls.sTime, productCls.aDay+productCls.aTime, productCls.period, 'ICN', '', productCls.aCode, productCls.booked, productCls.url, productCls.price, '0', '0', '0', '') 
+        productClass = clsProduct()
+        productClass.sort_no = valueParcing(product, 'sort_no":"', '","pkg_mst_code')
+        productClass.pkg_mst_code = pkg_mst_code
+        productClass.sMonth = valueParcing(product, 'sMonth":"', '","min_amt')
+        productClass.min_amt = valueParcing(product, 'min_amt":"', '","max_amt')
+        productClass.max_amt = valueParcing(product, 'max_amt":"', '","mst_name').replace("'", "")
+        productClass.mst_name = valueParcing(product, 'mst_name":"', '","t_content').replace("'", "").decode('utf-8')
+        productClass.t_content = valueParcing(product, 't_content":"', '","img_seq').replace("'", "")
+        productClass.img_seq = valueParcing(product, 'img_seq":"', '","dy_list')
+        productClass.dy_list = valueParcing(product, 'dy_list":"', '","content')
+        productClass.content = valueParcing(product, '"content":"', '","tour_day').replace("'", "").decode('utf-8')
+        productClass.tour_day = valueParcing(product, 'tour_day":"', '","start_dy')
+        productClass.start_dy = valueParcing(product, 'start_dy":"', '","orderSeq')
+        productClass.orderSeq = valueParcing(product, 'orderSeq":"', '"}')
+        
+        # 2014. 6. 29. 정규식으로 이름에서 국가, 도시 코드 빼오도록.. 테스트 디비로 저장..
+        
+        codeList = codes.getCityCode(productClass.mst_name)
+        nationList = codeList[0]
+        cityList = codeList[1]
+        print codeList
+        query = savefilegethtml.getMasterMergeQueryTest1('hanatour', productClass.pkg_mst_code, packageClass.pub_area_code, packageClass.pub_country, packageClass.pub_city, productClass.mst_name, 'P', 'A', productClass.content, '', nationList, cityList)
         print query
         cursor = con.cursor()
         cursor.execute(query)
         con.commit()
-        #break
-
+    except:
+        pass
 
 con.close()

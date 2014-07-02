@@ -1,0 +1,305 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link href="/common/friday.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	scrollbar-face-color: #ffffff;
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-3dlight-color: #ffffff;
+	scrollbar-darkshadow-color: #ffffff;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #ffffff;
+}
+-->
+</style>
+<script language="javascript">
+function frmSubmit(){
+	var mmm = document.frm.sel_ym.value
+    //parent.go_iframe6(mmm,C60201315);
+    document.frm.submit();
+}
+
+
+</script>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="overflow-x:hidden; overflow-y:hidden;">
+<form name="frm" >
+		<input type="hidden" name="htype" value="">
+		<input type="hidden" name="good_cd" value="C60201315">
+
+		<input type="hidden" name="event_ev_ym" value="">
+		<input type="hidden" name="event_ev_seq" value="">
+		<input type="hidden" name="chk_no" value="">
+		<input type="hidden" name="sub_cd" value="">
+		<input type="hidden" name="good_added" value="">
+		
+
+		
+	<table width="648"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="119"><img src="images/title_sub01_price.gif" width="119" height="20"></td>
+        <td valign="bottom" class="FRIDAYRED"><!-- <b>:: 일정별</b> 기준 --></td>
+      </tr>
+    </table>
+	<!--기간 및 가격-->
+      <table width="648" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="2"><img src="images/trans.gif" width="10" height="10"></td>
+        </tr>
+        <tr>
+          <td><img src="images/text_02.gif" alt="하나. 출발일을 선택해주세요."></td>
+          <td><img src="images/text_03.gif" alt="둘. 원하시는 항공사를 선택해주세요."></td>
+        </tr>
+        <tr>
+          <td height="5"></td>
+          <td height="5"></td>
+        </tr>
+		
+        <tr>
+          <td width="245"  valign=top>
+			<!-- 달력 Start -->
+					 <table width="240" height="164" border="0" cellpadding="0" cellspacing="0" background="images/diary_back.gif">
+            <tr>
+              <td width="70" height="35" align="center">
+			  <!--
+			  <a href="program_include.asp?good_cd=C60201315&sel_ym=201407&sel_click=pre">
+			  <img src="images/icon_001.gif" alt="이전달" width="4" height="8" border=0></a>
+			  <span class="FRIDAYBOARD"><b> 2014.08 </b></span>
+			  
+			  <a href="program_include.asp?good_cd=C60201315&sel_ym=201409&sel_click=next">
+			  <img src="images/icon_002.gif" alt="다음달" width="4" height="8" border=0></a>
+			  -->
+
+
+										
+										<select name="sel_ym" class="FRIDAYGO2" Onchange="javascript:frmSubmit();" height="10" >
+											
+
+															<option value="201406"    > 2014.06 </option>
+
+														
+
+															<option value="201407"    > 2014.07 </option>
+
+														
+
+															<option value="201408"   Selected > 2014.08 </option>
+
+														
+
+															<option value="201409"    > 2014.09 </option>
+
+														
+
+															<option value="201410"    > 2014.10 </option>
+
+														
+
+															<option value="201411"    > 2014.11 </option>
+
+														
+
+															<option value="201412"    > 2014.12 </option>
+
+														
+																<option value="201501"   >2015.01</option>
+															
+																<option value="201502"   >2015.02</option>
+															
+																<option value="201503"   >2015.03</option>
+															
+																<option value="201504"   >2015.04</option>
+															
+																<option value="201505"   >2015.05</option>
+															
+										</select>
+
+			  </td>
+              <td height="35">
+			  <table BORDER=0 align="center" CELLPADDING=0 CELLSPACING=1>
+                <tr>
+                  <td><img src="images/d_1.gif" alt="일"></td>
+                  <td><img src="images/d_2.gif" alt="월"></td>
+                  <td><img src="images/d_3.gif" alt="화"></td>
+                  <td><img src="images/d_4.gif" alt="수"></td>
+                  <td><img src="images/d_5.gif" alt="목"></td>
+                  <td><img src="images/d_6.gif" alt="금"></td>
+                  <td><img src="images/d_7.gif" alt="토"></td>
+                </tr>
+              </table></td>
+              </tr>
+            <tr>
+              <td width="70" class="FRIDAYBOARD" align="center"><img src="images/31.gif" width="53" height="60" alt="31" title="31"><br>
+                <img src="images/text_today.gif" alt="Today"><br>
+                2014.06.27</td>
+              <td>
+                <table BORDER=0 align="center" CELLPADDING=0 CELLSPACING=1>
+			<tr><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td>
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140801');"><img src="images/s_1.gif" border=0  width=21 height=19 alt="1" title="1"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140802');"><img src="images/s_2.gif" border=0  width=21 height=19 alt="2" title="2"></a></td>
+					</tr><tr>
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140803');"><img src="images/s_3.gif" border=0  width=21 height=19 alt="3" title="3"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140804');"><img src="images/s_4.gif" border=0  width=21 height=19 alt="4" title="4"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140805');"><img src="images/s_5.gif" border=0  width=21 height=19 alt="5" title="5"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140806');"><img src="images/s_6.gif" border=0  width=21 height=19 alt="6" title="6"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140807');"><img src="images/s_7.gif" border=0  width=21 height=19 alt="7" title="7"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140808');"><img src="images/s_8.gif" border=0  width=21 height=19 alt="8" title="8"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140809');"><img src="images/s_9.gif" border=0  width=21 height=19 alt="9" title="9"></a></td>
+					</tr><tr>
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140810');"><img src="images/s_10.gif" border=0  width=21 height=19 alt="10" title="10"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140811');"><img src="images/s_11.gif" border=0  width=21 height=19 alt="11" title="11"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140812');"><img src="images/s_12.gif" border=0  width=21 height=19 alt="12" title="12"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140813');"><img src="images/s_13.gif" border=0  width=21 height=19 alt="13" title="13"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140814');"><img src="images/s_14.gif" border=0  width=21 height=19 alt="14" title="14"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140815');"><img src="images/s_15.gif" border=0  width=21 height=19 alt="15" title="15"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140816');"><img src="images/s_16.gif" border=0  width=21 height=19 alt="16" title="16"></a></td>
+					</tr><tr>
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140817');"><img src="images/s_17.gif" border=0  width=21 height=19 alt="17" title="17"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140818');"><img src="images/s_18.gif" border=0  width=21 height=19 alt="18" title="18"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140819');"><img src="images/s_19.gif" border=0  width=21 height=19 alt="19" title="19"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140820');"><img src="images/s_20.gif" border=0  width=21 height=19 alt="20" title="20"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140821');"><img src="images/s_21.gif" border=0  width=21 height=19 alt="21" title="21"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140822');"><img src="images/s_22.gif" border=0  width=21 height=19 alt="22" title="22"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140823');"><img src="images/s_23.gif" border=0  width=21 height=19 alt="23" title="23"></a></td>
+					</tr><tr>
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140824');"><img src="images/s_24.gif" border=0  width=21 height=19 alt="24" title="24"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140825');"><img src="images/s_25.gif" border=0  width=21 height=19 alt="25" title="25"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140826');"><img src="images/s_26.gif" border=0  width=21 height=19 alt="26" title="26"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140827');"><img src="images/s_27.gif" border=0  width=21 height=19 alt="27" title="27"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140828');"><img src="images/s_28.gif" border=0  width=21 height=19 alt="28" title="28"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140829');"><img src="images/s_29.gif" border=0  width=21 height=19 alt="29" title="29"></a></td>
+					
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140830');"><img src="images/s_30.gif" border=0  width=21 height=19 alt="30" title="30"></a></td>
+					</tr><tr>
+					<td width=21 height=19><a href="javascript:fn_goodDetail('20140831');"><img src="images/s1_31.gif" border=0  width=21 height=19 alt="31" title="31"></a></td>
+					<td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td></tr>
+                </table>
+				</td>
+              </tr>
+            </table>
+		  <!-- 달력 End -->
+		  </td>
+          <td width="397" valign="top">
+           <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="5"><img src="images/airbox_topleft.gif" width="5" height="25"></td>
+              <td background="images/airbox_topbg.gif">&nbsp;</td>
+              <td width="5"><img src="images/airbox_topright.gif" width="5" height="25"></td>
+            </tr>
+            <tr>
+              <td width="5" background="images/airbox_midleft_10.gif">&nbsp;</td>
+              <td height="114" valign="top" bgcolor="#FAFAFA">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			
+                <tr>
+                  <td>
+					
+					<input name="radiobutton" type="radio" onClick="fn_price('C60201315','140831','12385','에어뉴질랜드','1,839,000','')" >
+					
+				  </td>
+                  <td class="FRIDAYSPACING" ><img src="images/NZ.gif" width="32" height="25" onError="this.src='images/ZZ.gif'" alt="에어뉴질랜드"></td>
+                  <td class="FRIDAYSPACING">에어뉴질랜드<br></td>
+                  <td width="3" class="FRIDAYSPACING"></td>
+                  <td class="FRIDAYSPACING" width="220"><b><FONT COLOR=#FF7A73>5박8일 </FONT>￦1,839,000부터<br>[오클랜드2+크라이스쳐치3]<br><font color=royalblue>와이모토 동굴+HOT POOLS,제트 보트</td>
+                </tr>
+				
+              </table></td>
+              <td width="5" background="images/airbox_midright.gif">&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="5"><img src="images/airbox_botleft.gif" width="5" height="25"></td>
+              <td background="images/airbox_botbg.gif">&nbsp;</td>
+              <td width="5"><img src="images/airbox_botright.gif" width="5" height="25"></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td colspan="2"><img src="images/trans.gif" width="5" height="5"></td>
+        </tr>
+	<script language="JavaScript" type="text/JavaScript">
+	function fn_goodDetail(start_day){
+		location.href = 'program_include.asp?good_cd=C60201315&good_added=&sel_day='+ start_day ;
+	}
+
+	function fn_price(good_cd, ev_ym, ev_seq, air_nm, adult_price,proc_cd){
+	var str = '';
+
+		str = str+ '<table width=100% border=0 cellpadding=3 cellspacing=1>';
+		str = str+ '<tr>';
+	    str = str+ '<td width="30" height="15"></td>';
+	    str = str+ '</tr>';
+		str = str+ '<tr>';
+		str = str+ '<td bgcolor=#FFFFFF class=FRIDAYGRAY>고객님이 선택하신 <b>2014</b>년 <b>08</b>월 <b>31</b>일 <b><font color=#527298>'+air_nm+ '</font></b>을 이용한 요금은 <span class=FRIDAYstyle4>'+adult_price+'</span>원 입니다. </td> ';
+		str = str+ '</tr>';
+		str = str+ '<tr>';
+	    str = str+ '<td width="30" height="10"></td>';
+	    str = str+ '</tr>';
+	    str = str+ '<tr>';
+	    str = str+ '<td><img src="images/img_help.gif" height="65" alt="1. 지금 선택하신 요금은 각 조번별 최저가 기준 요금입니다. 2.정확한 요금과 출발 가능 여부는 담당자에게 꼭 재확인 받으시기 바랍니다. 3. 출발날짜, 여행지에 상관없이 1인부터 자유롭게 출발가능합니다."></td>';
+	    str = str+ '</tr>';
+	    str = str+ '<tr>';
+
+		if (proc_cd != '05'){
+	    	str = str+ '<td align="right"><a href="schedule_ev.asp?good_cd='+good_cd+'&good_cd_master='+good_cd+'&ev_ym='+ev_ym+'&ev_seq='+ev_seq+'" target="_parent"><img src="images/button_01.gif" width="80" height="23" border=0 alt="상세일정 보기"></a> <a href="/friday/reservation/reserve_form.asp?ev_ym='+ev_ym+'&ev_seq='+ev_seq+'" target="_parent"><img src="images/button_02.gif" width="60" height="23" border=0 alt="예약하기"></a></td>';
+		}
+		else {
+	    	str = str+ '<td align="right"><a href="schedule_ev.asp?good_cd='+good_cd+'&good_cd_master='+good_cd+'&ev_ym='+ev_ym+'&ev_seq='+ev_seq+'&proc_cd=05" target="_parent"><img src="images/button_01.gif" width="80" height="23" border=0 alt="상세일정 보기"></a> <img src="images/button_02_off.gif" width="60" height="23" border=0></td>';
+		}
+	    str = str+ '</tr>';
+		str = str+ '</table>';
+
+	    priceDiv.innerHTML = str ;
+	    InitInnerContents()
+	}
+	</script>
+		
+        <tr>
+          <td colspan="2">
+			 <span id='priceDiv'><table><tr><td height='170' width='620' align=center class="FRIDAYSPACING"><!--<b><font color=blue>↑</font></b> 위 항공사를 선택하면 가격과 상세일정을 보실 수 있으며, 인터넷으로 예약가능합니다.--><img src='images/txt_01.gif' alt="위 항공사를 선택하면 가격과 상세일정을 보실 수 있으며, 인터넷으로 예약가능합니다."></td></tr></table></span>
+		  </td>
+        </tr>
+		
+      </table>
+	<script language="JavaScript">
+	
+	</script>
+	<!--//기간 및 가격-->
+</form>
+</body>
+
+<script language="Javascript" type="text/Javascript">
+function InitInnerContents(){
+ self.resizeTo(document.body.scrollWidth,document.body.scrollHeight);
+
+}
+</script>

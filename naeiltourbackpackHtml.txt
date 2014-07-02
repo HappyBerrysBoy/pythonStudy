@@ -1,0 +1,231 @@
+<div id="left_mn">
+    <table class="left_img1" cellpadding="0" cellspacing="0" border="0" width="196">
+        <tr>
+            <td><a href="http://www.naeiltour.co.kr/backpack/index.asp" target="_self"><img src="images/leftmn_img.gif" alt="여행지역"></a></td>
+        </tr>
+        <tr>
+			<td><img src="images/leftmn_b1_on.gif" onClick="javascript:explain(document.all.menu1);" style="cursor:hand" alt="유럽" width="196" height="28"></a></td>
+		</tr>
+	</table>
+	<div class="Submenu" id="menu1" >
+	<table class="left_img1" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td><img src="images/leftmn_bts1.gif" alt="유럽 호텔팩"></td>
+        </tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=40&detail=1122&menuId=AA" class="leftmn_font">- BEST</font></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=40&detail=1123&menuId=AA" class="leftmn_font">- FREE & EASY</a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=40&detail=1124&menuId=AA" class="leftmn_font">- LIGHT</a></td>
+		</tr>
+		<tr><td height="10" class="left_line"></td></tr>
+		<tr>
+			<td><img src="images/leftmn_bts2.gif" alt="유럽단체배낭"></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=40&detail=1125&menuId=AA" class="leftmn_font">- BEST</a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=40&detail=1126&menuId=AA" class="leftmn_font">- FREE & EASY</a></td>
+		</tr>
+		<tr><td height="10" class="left_line"></td></tr>
+		<tr>
+			<td><img src="images/leftmn_bts3.gif" alt="유럽뒤집기"></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=40&detail=1128&menuId=AA" class="leftmn_font">- 서유럽</a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=40&detail=1129&menuId=AA" class="leftmn_font">- 동유럽</a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=40&detail=1130&menuId=AA" class="leftmn_font">- 북유럽</a></td>
+		</tr>
+		<tr><td height="10" class="left_line"></td></tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=40&detail=1131&menuId=AA"><img src="images/leftmn_bts4.gif" alt="테마뒤집기" border="0"></a></td>
+		</tr>
+		<tr><td height="10" class="left_line"></td></tr>
+	</table>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><img src="images/leftmn_b2_off.gif" onClick="javascript:explain(document.all.menu2);" style="cursor:hand" alt="지중해"></td>
+		</tr>
+	</table>
+	<div class="Submenu" id="menu2" style="DISPLAY: none">
+	<table class="left_img1" width="100%" border="0" cellspacing="0" cellpadding="0">  
+		<tr>
+			<td><a href="/backpack/list.asp?area=41&gotp=1&list_good_cd=141&detail=1103&naviNum=AA"><img src="images/leftmn_sea1.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=41&gotp=1&detail=1104&viewSchDate=&menuId=AA"><img src="images/leftmn_sea2.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=41&gotp=1&detail=1108&viewSchDate=&menuId=AA"><img src="images/leftmn_sea3.gif"></a></td>
+		</tr>
+	</table>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><img src="images/leftmn_b3_off.gif" onClick="javascript:explain(document.all.menu3);" style="cursor:hand" alt="호주/뉴질랜드"></td>
+		</tr>
+	</table>
+	<div class="Submenu" id="menu3" style="DISPLAY: none">
+	<table class="left_img1" width="100%" border="0" cellspacing="0" cellpadding="0">
+       	<tr>
+			<td><a href="/backpack/list.asp?area=60&gotp=1&list_good_cd=160&detail=1601&naviNum=AB"><img src="images/leftmn_au1.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=60&gotp=1&detail=1602&viewSchDate=&menuId=AB"><img src="images/leftmn_au2.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=60&gotp=1&detail=1607&viewSchDate=&menuId=AB"><img src="images/leftmn_au3.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=60&gotp=1&detail=1608&viewSchDate=&menuId=AB"><img src="images/leftmn_au4.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=60&gotp=1&detail=1604&viewSchDate=&menuId=AB"><img src="images/leftmn_au5.gif"></a></td>
+		</tr>
+	</table>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><img src="images/leftmn_b4_off.gif" onClick="javascript:explain(document.all.menu4);" style="cursor:hand" alt="일본"></td>
+		</tr>
+	</table>
+	<div class="Submenu" id="menu4" style="DISPLAY: none">
+	<table class="left_img1" width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><a href="/backpack/list.asp?area=30&gotp=1&list_good_cd=130&detail=1301&naviNum=AE"><img src="images/leftmn_jp1.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=30&gotp=1&detail=1302&viewSchDate=&menuId=AE"><img src="images/leftmn_jp2.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=30&gotp=1&detail=1303&viewSchDate=&menuId=AE"><img src="images/leftmn_jp3.gif"></a></td>
+		</tr>
+		<!-- 
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=30&list_good_cd=B30&detail=B304&naviNum=AE" class="leftmn_font">일본 버스팩(부산출발)</a></td>
+		</tr>
+		<tr><td height="10" class="left_line"></td></tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=30&list_good_cd=B30&detail=B305&naviNum=AE" class="leftmn_font">일본 레일팩(부산출발)</a></td>
+		</tr>
+		<tr><td height="10" class="left_line"></td></tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=30&list_good_cd=B30&detail=B306&naviNum=AE" class="leftmn_font">일본 선박팩(부산출발)</a></td>
+		</tr> 
+		-->
+	</table>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><img src="images/leftmn_b5_off.gif" onClick="javascript:explain(document.all.menu5);" style="cursor:hand" alt="인도/네팔"></td>
+		</tr>
+	</table>
+	<div class="Submenu" id="menu5" style="DISPLAY: none">
+	<table class="left_img1" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td><a href="/backpack/list.asp?gotp=1&area=90&list_good_cd=190&detail=1901&naviNum=AE"><img src="images/leftmn_india1.gif" alt="인도 호텔팩"></a></td>
+        </tr>
+		<!-- <tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=90&list_good_cd=190&detail=1901&naviNum=AE" class="leftmn_font">- BEST</a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=90&detail=1908&menuId=AE" class="leftmn_font">- FREE & EASY</a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=90&detail=1907&menuId=AE" class="leftmn_font">- LIGHT</a></td>
+		</tr> -->
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=90&detail=1902&menuId=AE"><img src="images/leftmn_india2.gif" alt="인도단체배낭"></a></td>
+		</tr>
+		<!-- <tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=90&detail=1902&menuId=AE" class="leftmn_font">- BEST</a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=90&detail=1909&menuId=AE" class="leftmn_font">- FREE & EASY</a></td>
+		</tr> -->
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=90&detail=1905&menuId=AE"><img src="images/leftmn_india3.gif" alt="네팔 호텔팩" border="0"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?gotp=1&area=90&detail=1904&menuId=AE"><img src="images/leftmn_india4.gif" alt="인도|네팔 테마뒤집기" border="0"></a></td>
+		</tr>
+		<tr>
+		</tr>
+	</table>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><img src="images/leftmn_b6_off.gif" onClick="javascript:explain(document.all.menu6);" style="cursor:hand" alt="중국"></td>
+		</tr>
+	</table>
+	<div class="Submenu" id="menu6" style="DISPLAY: none">
+	<table class="left_img1" width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><a href="/backpack/list.asp?area=20&gotp=1&list_good_cd=120&detail=1201&naviNum=AE"><img src="images/leftmn_ch1.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=20&gotp=1&detail=1203&viewSchDate=&menuId=AE"><img src="images/leftmn_ch2.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=20&gotp=1&detail=1204&viewSchDate=&menuId=AE"><img src="images/leftmn_ch3.gif"></a></td>
+		</tr>
+	</table>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><img src="images/leftmn_b7_off.gif" onClick="javascript:explain(document.all.menu7);" style="cursor:hand" alt="동남아"></td>
+		</tr>
+	</table>
+	<div class="Submenu" id="menu7" style="DISPLAY: none">
+	<table class="left_img1" width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><a href="/backpack/list.asp?area=10&gotp=1&list_good_cd=110&detail=1110&naviNum=AC"><img src="images/leftmn_as1.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=10&gotp=1&detail=1112&viewSchDate=&menuId=AC"><img src="images/leftmn_as2.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=10&gotp=1&detail=1118&viewSchDate=&menuId=AC"><img src="images/leftmn_as3.gif"></a></td>
+		</tr>
+	</table>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><img src="images/leftmn_b8_off.gif" onClick="javascript:explain(document.all.menu8);" style="cursor:hand" alt="미주/캐나다"></td>
+		</tr>
+	</table>
+	<div class="Submenu" id="menu8" style="DISPLAY: none">
+	<table class="left_img1" width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><a href="/backpack/list.asp?area=50&gotp=1&detail=1501&viewSchDate=&menuId=AD"><img src="images/leftmn_am1.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=50&gotp=1&detail=1505&viewSchDate=&menuId=AD"><img src="images/leftmn_am2.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=50&gotp=1&detail=1506&viewSchDate=&menuId=AD"><img src="images/leftmn_am3.gif"></a></td>
+		</tr>
+		<tr>
+			<td><a href="/backpack/list.asp?area=50&gotp=1&detail=1502&viewSchDate=&menuId=AD"><img src="images/leftmn_am4.gif"></a></td>
+		</tr>
+	</table>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><a href="/africa/index.asp" target="_blank"><img src="images/leftmn_b9_off.gif" alt="아프리카"></a></td>
+		</tr>
+		<tr>
+			<td><img src="images/leftmn_b10_off.gif" alt="배낭플러스"></td>
+		</tr>
+	</table>
+<!-- </div>
+

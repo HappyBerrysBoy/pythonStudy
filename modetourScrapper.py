@@ -12,7 +12,8 @@ import re
 import cx_Oracle
 import sys
 import savefilegethtml
-import datetime
+import time, datetime
+import codes
 
 #classes..
 class subMain():
@@ -60,7 +61,7 @@ class subList():
         self.thing = 0
     
     def getParam(self, line):
-        print 'Line Info : ' + line
+        #print 'Line Info : ' + line
         self.startLocation = line[line.find('startLocation=') + len('startLocation='):line.find('amp;') - 1]
         line = line[line.find('amp;') + len('amp;'):]
         self.location = line[line.find('location=') + len('location='):line.find('amp;') - 1]
@@ -128,6 +129,7 @@ urlErr = 0
 productList = list()
 productList.append('START')
 exceptFile = open('modeTourException' + scrappingStartTime + '.txt', 'w')
+print >> exceptFile, "Start : %s" % time.ctime()
 
 departCity = ''
 tourtype = ''
@@ -172,6 +174,7 @@ for each_line in openOverseas:
                             print('Product URL : ' + productUrl)
                             print >> exceptFile, productUrl
                             productListGet = urllib2.urlopen(productUrl).read()
+                            
                             try:
                                 pcodeList = re.findall(r'\bPcode="[\w]*', productListGet)
                                 
@@ -192,46 +195,62 @@ for each_line in openOverseas:
                                             productCode = tree['ModeSangPum']['SCode']
                                             productName = tree['ModeSangPum']['STitle'].replace("'", "")
                                             productComment = tree['ModeSangPum']['SCont'].replace("'", "")
-                                            query = savefilegethtml.getMasterMergeQuery('modetour', productCode, '', '', sublist.name, productName, tourtype, 'A', productComment, '')  # A : 해외(Abroad)
+                                            
+                                            #print productName
+                                            codeList = codes.getCityCode(sublist.name, productName)
+                                            nationList = codeList[0]
+                                            cityList = codeList[1]
+                                            
+                                            #print nationList
+                                            #print cityList
+                                            #print codeList
+                                            query = savefilegethtml.getMasterMergeQueryTest1('modutour', productCode, '', '', sublist.name, productName, tourtype, 'A', productComment, '', nationList, cityList)  # A : 해외(Abroad)
+                                            #query = savefilegethtml.getMasterMergeQuery('modutour', productCode, '', '', sublist.name, productName, tourtype, 'A', productComment, '')  # A : 해외(Abroad)
                                             #print query
                                             cursor = con.cursor()
                                             cursor.execute(query)
                                             con.commit()
                                             
                                             for t in tree['ModeSangPum']['SangList']:
-                                                tag_div = ''
-                                                reg_div = anCode
-                                                prd_nm = t['SName']['#text'].replace("'", "")
-                                                air_cd = t['SAirCode']
-                                                st_city = ''
-                                                st_dt = t['SPriceDay']['#text']
-                                                st_time = t['SstartTime'].replace(':', '')
-                                                #st_time = ''
-                                                arr_day = t['SArrivalDay']['#text']
-                                                arr_time = t['SArrivalTime'].replace(':', '')
-                                                arr_time = ''
-                                                tr_term = t['SDay']
-                                                tr_div = themeCode
-                                                sel_dt = ''
-                                                prd_fee = t['SPrice']
-                                                prd_status = t['SDetailState']['#text']
-                                                prd_code = t['SPriceNum']['#text']
-                                                flynum = t['SstartAir']
-                                                #period = t['SNight']  #기간이 아니라... 잠자는 횟수임.. 1박2일이면.. 1
-                                                airline = t['SAirName']
-                                                prd_url = 'http://www.modetour.com/Package/Itinerary.aspx?startLocation='+sublist.startLocation+'&location='+sublist.location+'&location1='+sublist.location1+'&theme='+sublist.Theme+'&theme1='+sublist.Theme1+'&MLoc='+sublist.MLoc+'&Pnum='+prd_code
-                                                #print 'product url:' + prd_url
-                                                #print >> exceptFile, query
-                                                query = savefilegethtml.getDetailMergeQuery('modetour', productCode, prd_code, prd_nm, st_dt+st_time, arr_day+arr_time, tr_term, sublist.startLocation, '', air_cd, prd_status, prd_url, prd_fee, '0', '0', '0', '') 
-                                                #print query
-                                                cursor = con.cursor()
-                                                cursor.execute(query)
-                                                con.commit()
-                                                #break
+                                                try:
+                                                    tag_div = ''
+                                                    reg_div = anCode
+                                                    prd_nm = t['SName']['#text'].replace("'", "")
+                                                    air_cd = t['SAirCode'][:2]
+                                                    st_city = ''
+                                                    st_dt = t['SPriceDay']['#text']
+                                                    st_time = t['SstartTime'].replace(':', '')
+                                                    #st_time = ''
+                                                    arr_day = t['SArrivalDay']['#text']
+                                                    arr_time = t['SArrivalTime'].replace(':', '')
+                                                    arr_time = ''
+                                                    tr_term = t['SDay']
+                                                    tr_div = themeCode
+                                                    sel_dt = ''
+                                                    prd_fee = t['SPrice']
+                                                    prd_status = t['SDetailState']['#text']
+                                                    prd_code = t['SPriceNum']['#text']
+                                                    flynum = t['SstartAir']
+                                                    #period = t['SNight']  #기간이 아니라... 잠자는 횟수임.. 1박2일이면.. 1
+                                                    airline = t['SAirName']
+                                                    prd_url = 'http://www.modetour.com/Package/Itinerary.aspx?startLocation='+sublist.startLocation+'&location='+sublist.location+'&location1='+sublist.location1+'&theme='+sublist.Theme+'&theme1='+sublist.Theme1+'&MLoc='+sublist.MLoc+'&Pnum='+prd_code
+                                                    #print 'product url:' + prd_url
+                                                    query = savefilegethtml.getDetailMergeQuery('modutour', productCode, prd_code, prd_nm, st_dt+st_time, arr_day+arr_time, tr_term, sublist.startLocation, '', air_cd, prd_status, prd_url, prd_fee, '0', '0', '0', '') 
+                                                    #print >> exceptFile, query
+                                                    #print query
+                                                    cursor = con.cursor()
+                                                    cursor.execute(query)
+                                                    con.commit()
+                                                    normalCnt += 1
+                                                    #break
+                                                except:
+                                                    parcingErr2 += 1
+                                                    print >> exceptFile, "Depth 33 : type Error:", sys.exc_info()[0]
+                                                    pass
+                                                
                                                 #print(t['SMeet'])
-                                        except KeyError as keyerr:
-                                            pass
                                         except TypeError as typeerr:
+                                            urlErr += 1
                                             reg_div = anCode
                                             prd_nm = tree['ModeSangPum']['SangList']['SName']['#text'].replace("'", "")
                                             air_cd = tree['ModeSangPum']['SangList']['SAirCode']
@@ -252,31 +271,34 @@ for each_line in openOverseas:
                                             cursor = con.cursor()
                                             cursor.execute(query)
                                             con.commit()
-                                            print >> exceptFile, query
+                                            #print >> exceptFile, query
                                             print >> exceptFile, "Depth 33 : type Error:", sys.exc_info()[0]
                                             pass
                                         except:
-                                            parcingErr2 += 1
-                                            print >> exceptFile, "Depth 3 : Parcing or Query Error:", sys.exc_info()[0]
+                                            urlErr += 1
+                                            print >> exceptFile, sys.exc_info()[0]
                                             pass
-                                        normalCnt += 1
                                     #break
                             except:
+                                urlErr += 1
                                 print >> exceptFile, "Depth 2 : Parcing or Query Error:", sys.exc_info()[0]
                                 pass
                             
                         except urllib2.URLError as err:
+                            urlErr += 1
                             print >> exceptFile, "Depth 1 : Parcing or Query Error:", sys.exc_info()[0]
                             pass
                         
                         #break
-                
             except:
+                urlErr += 1
                 print >> exceptFile, "Depth 0 :  Error:", sys.exc_info()[0]
                 pass
             finally:
                 openPackageFile.close()
                 con.close()
+            
+            #break
         """elif each_line.find('List') > -1:
             sublist = subList()
             result = sublist.getParam(each_line)
@@ -287,6 +309,8 @@ for each_line in openOverseas:
 #overseasMainUrlsFile.close()
 openOverseas.close()
 openDomestics.close()
+print >> exceptFile, "End : %s" % time.ctime()
+exceptFile.close()
 
 #menuDistrict = overseasMainUrls.pop()
 #menuPremium = overseasMainUrls.pop()
@@ -307,7 +331,7 @@ except:
     print('Error Second Page Loading...')
 """
 #print(packageResponse)
-
+"""
 openPackageFile = open('packageurls.txt')
 con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
 
@@ -383,7 +407,7 @@ for each_line in openPackageFile:
                                 cursor = con.cursor()
                                 cursor.execute(query)
                                 con.commit()
-                                #break
+                                break
                                 #print(t['SMeet'])
                         except KeyError as keyerr:
                             pass
@@ -416,7 +440,7 @@ for each_line in openPackageFile:
                             print >> exceptFile, "Depth 3 : Parcing or Query Error:", sys.exc_info()[0]
                             pass
                         normalCnt += 1
-                    #break
+                    break
             except:
                 print >> exceptFile, "Depth 2 : Parcing or Query Error:", sys.exc_info()[0]
                 pass
@@ -425,11 +449,11 @@ for each_line in openPackageFile:
             print >> exceptFile, "Depth 1 : Parcing or Query Error:", sys.exc_info()[0]
             pass
         
-        #break
+        break
 openPackageFile.close()
 con.close()
 exceptFile.close()
-
+"""
 
 #Daum 쇼핑하우는 통신판매중개자로서 상품주문, 배송 및 환불의 의무와 책임은 각 판매업체에 있습니다. 위 내용에 대한 저작권 및 법적 책임은 자료제공사 또는 글쓴이에 있으며 Daum의 입장과 다를 수 있습니다.
 
@@ -449,5 +473,3 @@ blue : 예약가능(여유 좌석 내에서 예약이 가능하지만, 단체의
 green : 대기예약(여유 죄석이 없거나 출발이 임박하여 예약가능 시간이 지나 담당자와의 확인이 필요한 상황입니다.)
 기타색.. : 예약마감(판매가 종료된 상품입니다. 다른 상품이나 다른 날짜를 이용해 주시기 바랍니다)
 """
-
-

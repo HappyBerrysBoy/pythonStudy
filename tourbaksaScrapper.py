@@ -5,15 +5,16 @@ Created on Wed Jun 11 21:09:59 2014
 @author: KSC
 """
 import urllib2
-import time, datetime
-from time import localtime, strftime, sleep
-from datetime import timedelta
+import datetime
 import sys
 import cx_Oracle
 import savefilegethtml
+import re
+import codes
 
 #여행코드 영어4자리 + 숫자
 # 영어 4자리가 뜻하는건... 첫번째 자리 : 국가, 두번째 자리 : 지역 세번째 자리 : 여행종류(P:패키지, H:허니문, G:골프, C:크루즈, S:유럽??, 등..), 네번재 자리 : 출발지역(S:서울, B:부산, D:대구)
+# 예약마감, 바로예약, 예약접수
 
 class clsRegionUrlGroup():
     def __init__(self):
@@ -41,11 +42,15 @@ class clsProductList():
         self.productCode = ''
         self.productname = ''
         self.period = ''
-        self.departAirport = ''
-        self.arriveAirport = ''
+        self.comment = ''
+        #self.arriveAirport = ''
         self.dTime = ''
         self.aTime = ''
         self.airCode = ''
+        self.night = ''
+    
+    def toString(self):
+        return 'productCode:'+self.productCode+',productName:'+self.productname+',period:'+self.period+',comment:'+self.comment+',dTime:'+self.dTime+',aTime:'+self.aTime+',airCode:'+self.airCode+',night:'+self.night
 
 class clsDetailProduct():
     def __init__(self):
@@ -53,24 +58,15 @@ class clsDetailProduct():
         self.price = ''
         self.status = ''
         self.url = ''
+        self.detailCode = ''
         
-#oracle 10g 접속정보
-host = 'hnctech73.iptime.org'
-port = 1521
-dbase = 'ora11g'
-login = 'bigtour'
-passwrd = 'bigtour'
-#dsn = cx_Oracle.makedsn(host, port, dbase)
-#con = cx_Oracle.connect(login, passwrd, dsn)
-
+    def toString(self):
+        return 'dDay:'+self.dDay+',Price:'+self.price+',status:'+self.status+',url:'+self.url
+        
 # 시간 변수들..
-today = datetime.date.today()
-nextYear = today + timedelta(days=365)
-nextTime = nextYear.timetuple()
-time = time.localtime()
-fromDate = strftime("%Y", time) + strftime("%m", time) + strftime("%d", time) + strftime("%H", time) + strftime("%M", time)
-toDate = strftime("%Y", nextTime) + strftime("%m", nextTime) + strftime("%d", nextTime) + strftime("%H", nextTime) + strftime("%M", nextTime)
-thisMonth = strftime("%Y", time) + strftime("%m", time)
+targetYear = '2014'#sys.argv[1]
+targetMonth = '07'#sys.argv[2]
+scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
 
 homepageUrl = 'http://www.tourbaksa.com'
@@ -93,11 +89,11 @@ for each_line in homepageHtml:
             menulist.append(productGroupCls)
         productGroupCls = clsTotalGroup()
         if each_line.find('city1') > -1:
-            productGroupCls.departCity = 'seoul'
+            productGroupCls.departCity = 'ICN'
         elif each_line.find('city2') > -1:
-            productGroupCls.departCity = 'busan'
+            productGroupCls.departCity = 'PUS'
         else:
-            productGroupCls.departCity = 'daegu'
+            productGroupCls.departCity = 'DK'
     elif each_line.find('href="/submain/?') > -1 or each_line.find('href="/SubMain/index.asp?') > -1 or (each_line.find('<li>') < 0 and (each_line.find('Areaindex.asp') > -1 or each_line.find('areaindex.asp') > -1)):
         tourkindGroupCls = clsTourKindGroup()
         tourkindGroupCls.url = each_line.split('href="')[1].split('">')[0]
@@ -115,13 +111,13 @@ for each_line in homepageHtml:
         
 #homepageHtml.close()
 
-exceptFile = open('tourbaksaException.txt', 'w')
+exceptFile = open('tourbaksaException'+scrappingStartTime+'.txt', 'w')
 
 # 메뉴에 다 잘들어 갔나 확인..
 for level1 in menulist:
     for level2 in level1.tourkindgroup:
         for level3 in level2.regionUrlGroup:
-            print 'Depart Cith : ' + level1.departCity + ', TourKind:' + level2.tourkind + ', Region : ' + level3.region + '(' + level3.url + ')'
+            print 'Depart City : ' + level1.departCity + ', TourKind:' + level2.tourkind + ', Region : ' + level3.region + '(' + level3.url + ')'
             
             try:
                 print >> exceptFile, level3.url
@@ -135,8 +131,9 @@ for level1 in menulist:
                 #regionHtml = open('tourbaksaRegionHtml.txt')
                 for each_line in regionHtml:
                     if each_line.find('<li class="') > -1 and each_line.find('M1=') > -1:
+                        #print each_line
                         cityClass = clsCityUrlGroup()
-                        cityClass.city = each_line.split('</a>')[0].split("' >")[1]
+                        cityClass.city = each_line.split('</a>')[0].split(">")[2]
                         cityClass.url = homepageUrl + each_line.split("href='")[1].split("'")[0]
                         
                         print 'Depart Url : ' + cityClass.url
@@ -152,26 +149,33 @@ for level1 in menulist:
                             #departListHtml = open('tourbaksaDepartListHtml.txt')
                             try:
                                 productList = clsProductList()
+                                con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
                                 for departList in departListHtml:
                                     if departList.find('<h4>') > -1:
                                         productList = clsProductList()
-                                        productList.productname = departList.split('>-->')[1].split('</h4>')[0]
+                                        productList.productname = departList.split('>-->')[1].split('</h4>')[0].replace("'", "")
                                     elif departList.find('<p class="note">') > -1:
                                         tmpTxt = departList.split('<p class="note">')[1].split('→')[0]
-                                        productList.departAirport = tmpTxt[:len(tmpTxt)-5].strip()
+                                        productList.comment = tmpTxt[:len(tmpTxt)-5].strip()
                                         productList.dTime = tmpTxt[len(tmpTxt)-5:].strip()
                                         tmpList = departList.split(':')
                                         productList.aTime = tmpList[len(tmpList)-2][len(tmpList[len(tmpList)-2])-2:] + ':' + tmpList[len(tmpList)-1][:2]
                                     elif departList.find('class="detail">') > -1:
-                                        productList.period = departList.split('class="detail">')[1].split('박'.decode('utf-8'))[0]
+                                        
+                                        productList.night = re.findall(r"\d", departList.split('class="detail">')[1])[0]
+                                        productList.period = re.findall(r"\d", departList.split('class="detail">')[1])[1]                                        
+                                        
+                                        #productList.period = departList.split('class="detail">')[1].split('박'.decode('utf-8'))[0]
+                                        #productList.night = departList.split('class="detail">')[1].split('박'.decode('utf-8'))[0]
                                         productList.airCode = departList.split('alt="')[1].split('"')[0]
                                         productList.productCode = departList.split('"itemNum detail">')[1].split('<')[0]
                                     elif departList.find('<div style="') > -1:
                                         #sample.. 에릅네...'http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JTBS&gs=215&AirIDX=3&sd=20140601&M1=1&M2=8&M3=9&M4=15&M5=617'
                                         detailProductUrl = homepageUrl + '/xml/item_Index_List.asp?gy='+productList.productCode[:4]+'&gs='+productList.productCode[4:].split('-')[0]
-                                        detailProductUrl += '&AirIDX='+productList.productCode.split('-')[1]+'&sd='+strftime("%Y", time) + strftime("%m", time) + strftime("%d", time)+'&'
+                                        detailProductUrl += '&AirIDX='+productList.productCode.split('-')[1]+'&sd='+targetYear + targetMonth + '01&'
                                         detailProductUrl += cityClass.url.split('?')[1]
                                         print 'Detail Product Url : ' + detailProductUrl
+                                        #print productList.toString()
 
                                         try:
                                             print >> exceptFile, detailProductUrl
@@ -185,25 +189,42 @@ for level1 in menulist:
                                             #detailProductHtmlFile.close()
                                             
                                             #detailProductHtml = open('detailProductHtml.txt')
+                                            #print type(productList.productname.decode('unicode-escape'))
+                                            #print type(cityClass.city.decode('unicode-escape'))
+                                            print productList.productname
+                                            print cityClass.city
+                                            print type(productList.productname)
+                                            codeList = codes.getCityCode(productList.productname.encode('utf-16'), cityClass.citydecode.encode('utf-16'))
+                                            #codeList = codes.getCityCode(unicode(productList.productname, 'str'), unicode(cityClass.city.decode, 'str'))
+                                            nationList = codeList[0]
+                                            cityList = codeList[1]
+                                            
+                                            query = savefilegethtml.getMasterMergeQueryTest1('tourbaksa', productList.productCode, '', level3.region, cityClass.city, productList.productname, level2.tourkind, 'A', productList.comment, '', nationList, cityList)  # A : 해외(Abroad)
+                                            #query = savefilegethtml.getMasterMergeQuery('tourbaksa', productList.productCode, '', level3.region, cityClass.city, productList.productname, level2.tourkind, 'A', productList.comment, '')  # A : 해외(Abroad)
+                                            #print query
+                                            cursor = con.cursor()
+                                            cursor.execute(query)
+                                            con.commit()
+                                            #print 'main query : ' + query
+                                            """
                                             try:
                                                 detailProductCls = clsDetailProduct()
-                                                #con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-                                                dsn = cx_Oracle.makedsn(host, port, dbase)
-                                                con = cx_Oracle.connect(login, passwrd, dsn)
+
                                                 for detailProduct in detailProductHtml:
                                                     #print 'Detail Product : ' + detailProduct
                                                     if detailProduct.find('startDate">') > -1:
                                                         detailProductCls = clsDetailProduct()
-                                                        detailProductCls.dDay = strftime("%Y", time) + detailProduct.split('startDate">')[1].split('(')[0].replace('.', '')    #20140611
+                                                        detailProductCls.dDay = targetYear + detailProduct.split('startDate">')[1].split('(')[0].replace('.', '')    #20140611
                                                     elif detailProduct.find('price">') > -1:
-                                                        detailProductCls.price = detailProduct.split('price">')[1].split('원'.decode('utf-8'))[0].replace(',', '')       #130000
+                                                        #detailProductCls.price = detailProduct.split('price">')[1].split('원')[0].replace(',', '')       #130000
+                                                        detailProductCls.price = re.findall(r'\d+', detailProduct.split('price">')[1].replace(',', ''))[0]
                                                     elif detailProduct.find('<td class="reservation">') > -1:
                                                         detailProductCls.url = homepageUrl + detailProduct.split("location.href='")[1].split("'")[0]
                                                         detailProductCls.status = detailProduct.split('</button>')[0].split('>')[2]
-                                                        query = "insert into product_test values (product_seq.nextval, 'tourbaksa','" + level3.region[:5] + "','"   # Region 늘릴필요 있음... 10자리로 모자름..
-                                                        query += productList.productname + "','" + level1.departCity + "',to_date('" + detailProductCls.dDay + "'),'" + productList.period 
-                                                        query += "','package','',to_char(sysdate, 'yyyymmdd'),''," + detailProductCls.price + ",'" + detailProductCls.url
-                                                        query += "','','','" + detailProductCls.status + "','" + productList.airCode +"')"
+                                                        detailProductCls.detailCode = detailProduct.split('EV_YM=')[1].split('&')[0] + detailProduct.split('EV_SEQ=')[1].split('&')[0]
+                                                        #print detailProductCls.toString()
+
+                                                        query = savefilegethtml.getDetailMergeQuery('tourbaksa', productList.productCode, detailProductCls.detailCode, productList.productname, detailProductCls.dDay, '', productList.period, level1.departCity, '', productList.airCode, detailProductCls.status, detailProductCls.url, detailProductCls.price, '0', '0', '0', '', productList.night) 
                                                         #print 'Query : ' + query
                                                         cursor = con.cursor()
                                                         cursor.execute(query)
@@ -213,9 +234,7 @@ for level1 in menulist:
                                             except:
                                                 print >> exceptFile, 'Detail Product Parcing Error', sys.exc_info()[0]
                                                 pass
-                                            finally:
-                                                #detailProductHtml.close()
-                                                con.close()
+                                            """
                                         except:
                                             print >> exceptFile, 'Detail Product URL Error', sys.exc_info()[0]
                                             pass
@@ -225,6 +244,8 @@ for level1 in menulist:
                             except:
                                 print >> exceptFile, 'Depart List Parcing Error', sys.exc_info()[0]
                                 pass
+                            finally:
+                                con.close()
                             
                             #departListHtml.close()
                         except:
@@ -232,6 +253,8 @@ for level1 in menulist:
                             pass
 
                 #regionHtml.close()
+            except IndexError as ierr:
+                print >> exceptFile, ierr
             except:
                 print >> exceptFile, 'Region url error', sys.exc_info()[0]
                 pass

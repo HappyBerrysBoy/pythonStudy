@@ -1,0 +1,153 @@
+top_menu">
+		<li class="logo"><a href="/GMT/index.asp"><img src="/GMT/images/logo.gif" alt="싱글로가는 골프엠티 GMT" /></a></li>
+		
+		<li class="menu01" onMouseOver="top01.src='/GMT/images/menu1_over.gif';"  onmouseout="top01.src='/GMT/images/menu1_off.gif';"><a href="/GMT/theme_list.asp"><img src="/GMT/images/menu1_off.gif" alt="테마골프" name="top01" id="top01" /></a>
+		
+			<ul class="tm_bg th" ><li><a href="/GMT/theme_list.asp?g_type=91" onMouseOver="top01.src='/GMT/images/menu1_over.gif';"  onmouseout="top01.src='/GMT/images/menu1_off.gif';">
+					<table width="100%"  border="0" onclick="location.href='/GMT/theme_list.asp?g_type=91';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"  />실력 쑥쑥, 마스터링</td></tr></table></a></li>
+				<li><a href="/GMT/theme_list.asp?g_type=92" onMouseOver="top01.src='/GMT/images/menu1_over.gif';"  onmouseout="top01.src='/GMT/images/menu1_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/theme_list.asp?area=ch&g_type=92';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>행복 충전, 힐링</td></tr></table></a>
+				</li>
+				<li><a href="/GMT/theme_list.asp?area=ch&g_type=93" onMouseOver="top01.src='/GMT/images/menu1_over.gif';"  onmouseout="top01.src='/GMT/images/menu1_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/theme_list.asp?area=ch&g_type=93';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>엣지있는 스타일링</td></tr></table>
+					</a></li>
+			</ul>
+		</li>
+		<li class="menuli" ><img src="/GMT/images/menu_bar.gif"  alt="" /></li>
+		
+		<li class="menu02" onMouseOver="top02.src='/GMT/images/menu2_over.gif';"  onmouseout="top02.src='/GMT/images/menu2_off.gif';"><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F201"><img src="/GMT/images/menu2_off.gif" alt="중국" name="top02" id="top02" /></a>
+		
+			<ul class="ch_bg ch" >
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F201" onMouseOver="top02.src='/GMT/images/menu2_over.gif';"  onmouseout="top02.src='/GMT/images/menu2_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F201';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>청도</td></tr></table>
+				</a></li>
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F202" onMouseOver="top02.src='/GMT/images/menu2_over.gif';"  onmouseout="top02.src='/GMT/images/menu2_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F202';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>연태/위해/대련</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F203" onMouseOver="top02.src='/GMT/images/menu2_over.gif';"  onmouseout="top02.src='/GMT/images/menu2_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F203';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>상해/황산/하문/계림/곤명</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F204" onMouseOver="top02.src='/GMT/images/menu2_over.gif';"  onmouseout="top02.src='/GMT/images/menu2_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F204';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>해남도/광주/주해/마카오</td></tr></table>
+					</a></li>
+			</ul>
+		</li>
+		<li class="menuli" ><img src="/GMT/images/menu_bar.gif"  alt="" /></li>
+		
+		<li class="menu03" onMouseOver="top03.src='/GMT/images/menu3_over.gif';"  onmouseout="top03.src='/GMT/images/menu3_off.gif';"><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F301"><img src="/GMT/images/menu3_off.gif" alt="일본" name="top03" id="top03" /></a>
+		
+			<ul class="jp_bg jp" >
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F301" onMouseOver="top03.src='/GMT/images/menu3_over.gif';"  onmouseout="top03.src='/GMT/images/menu3_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F301';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>후쿠오카/나가사키/오이타/구마모토</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F302" onMouseOver="top03.src='/GMT/images/menu3_over.gif';"  onmouseout="top03.src='/GMT/images/menu3_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F302';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>미야자끼/가고시마/오키나와</td></tr></table>
+					</a></li>
+				<!-- <li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F303" onMouseOver="top03.src='/GMT/images/menu3_over.gif';"  onmouseout="top03.src='/GMT/images/menu3_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F303';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>동경/오사카/나고야/히로시마</td></tr></table>
+					</a></li> -->
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F304" onMouseOver="top03.src='/GMT/images/menu3_over.gif';"  onmouseout="top03.src='/GMT/images/menu3_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F304';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>북해도/아키타/아오모리</td></tr></table>
+					</a></li>
+			</ul>
+		</li>
+		<li class="menuli" ><img src="/GMT/images/menu_bar.gif"  alt="" /></li>
+		
+		<li class="menu04" onMouseOver="top04.src='/GMT/images/menu4_over.gif';"  onmouseout="top04.src='/GMT/images/menu4_off.gif';"><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F101"><img src="/GMT/images/menu4_off.gif" alt="동남아" name="top04" id="top04" /></a>
+		
+			<ul class="ea_bg ea" >
+				<li ><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F101" onMouseOver="top04.src='/GMT/images/menu4_over.gif';"  onmouseout="top04.src='/GMT/images/menu4_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F101';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>방콕/파타야/푸켓</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F102" onMouseOver="top04.src='/GMT/images/menu4_over.gif';"  onmouseout="top04.src='/GMT/images/menu4_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F102';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>치앙마이/칸차나부리</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F103" onMouseOver="top04.src='/GMT/images/menu4_over.gif';"  onmouseout="top04.src='/GMT/images/menu4_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F103';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>마닐라 /클락/세부/보라카이</td></tr></table>
+					</a></li>
+				<!--<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F104" onMouseOver="top04.src='/GMT/images/menu4_over.gif';"  onmouseout="top04.src='/GMT/images/menu4_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F104';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>클락/세부</td></tr></table>
+					</a></li>-->
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F105" onMouseOver="top04.src='/GMT/images/menu4_over.gif';"  onmouseout="top04.src='/GMT/images/menu4_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F105';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>말레이시아/싱가폴/발리/자카르타</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F106" onMouseOver="top04.src='/GMT/images/menu4_over.gif';"  onmouseout="top04.src='/GMT/images/menu4_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F106';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>베트남/라오스/캄보디아/미얀먀</td></tr></table>
+					</a></li>
+			</ul>
+		</li>
+		<li class="menuli" ><img src="/GMT/images/menu_bar.gif"  alt="" /></li>
+		
+		<li class="menu05" onMouseOver="top05.src='/GMT/images/menu5_over.gif';"  onmouseout="top05.src='/GMT/images/menu5_off.gif';"><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=70&sub_area_cd=F701"><img src="/GMT/images/menu5_off.gif" alt="괌/사이판/남태평양" name="top05" id="top05" /></a>
+		
+			<ul class="etc_bg et" >
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=70&sub_area_cd=F701" onMouseOver="top05.src='/GMT/images/menu5_over.gif';"  onmouseout="top05.src='/GMT/images/menu5_off.gif';">
+					<table width="100" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=70&sub_area_cd=F701';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>괌/하와이</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=50&sub_area_cd=F702" onMouseOver="top05.src='/GMT/images/menu5_over.gif';"  onmouseout="top05.src='/GMT/images/menu5_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=50&sub_area_cd=F702';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>사이판/호주</td></tr></table>
+					</a></li>
+				<!--<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=60&sub_area_cd=F601" onMouseOver="top05.src='/GMT/images/menu5_over.gif';"  onmouseout="top05.src='/GMT/images/menu5_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=60&sub_area_cd=F601';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>호주</td></tr></table>
+					</a></li>-->
+				
+				<!--<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=70&sub_area_cd=F702" onMouseOver="top05.src='/GMT/images/menu5_over.gif';"  onmouseout="top05.src='/GMT/images/menu5_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=70&sub_area_cd=F702';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>사이판</td></tr></table>
+					</a></li>-->
+			</ul>
+		</li>
+		
+
+		<li class="menuli" ><img src="/GMT/images/menu_bar.gif"  alt="" /></li>
+		
+		<li class="menu07" onMouseOver="top07.src='/GMT/images/menu7_over.gif';"  onmouseout="top07.src='/GMT/images/menu7_off.gif';"><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F110&busan=Y"><img src="/GMT/images/menu7_off.gif" alt="부산출발" name="top07" id="top07" /></a>
+		
+			<ul class="bu_bg bu" >
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F110&busan=Y" onMouseOver="top07.src='/GMT/images/menu7_over.gif';"  onmouseout="top07.src='/GMT/images/menu7_off.gif';">
+					<table width="150" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F110&busan=Y';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>태국/베트남/캄보디아</td></tr></table>
+					</a></li>
+					<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F111&busan=Y" onMouseOver="top07.src='/GMT/images/menu7_over.gif';"  onmouseout="top07.src='/GMT/images/menu7_off.gif';">
+					<table width="150" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=10&sub_area_cd=F111&busan=Y';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>마닐라/세부/보라카이</td></tr></table>
+					</a></li>
+					<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F210&busan=Y" onMouseOver="top07.src='/GMT/images/menu7_over.gif';"  onmouseout="top07.src='/GMT/images/menu7_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=20&sub_area_cd=F210&busan=Y';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>중국</td></tr></table>
+					</a></li>
+					<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F310&busan=Y" onMouseOver="top07.src='/GMT/images/menu7_over.gif';"  onmouseout="top07.src='/GMT/images/menu7_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F310&busan=Y';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>일본</td></tr></table>
+					</a></li>
+					<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=70&sub_area_cd=F710&busan=Y" onMouseOver="top07.src='/GMT/images/menu7_over.gif';"  onmouseout="top07.src='/GMT/images/menu7_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=70&sub_area_cd=F710&busan=Y';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>괌/사이판</td></tr></table>
+					</a></li>
+			</ul>
+		</li>
+
+		
+		<li class="menuli" ><img src="/GMT/images/menu_bar.gif"  alt="" /></li>
+		
+		<li class="menu06" onMouseOver="top06.src='/GMT/images/menu6_over.gif';"  onmouseout="top06.src='/GMT/images/menu6_off.gif';"><a href="/GMT/event/event.asp"><img src="/GMT/images/menu6_off.gif" alt="커뮤니티/이벤트" name="top06" id="top06" /></a>
+		
+		<ul class="comm_bg com" >
+				<li><a href="/GMT/community/notice.asp" onMouseOver="top06.src='/GMT/images/menu6_on_over.gif';"  onmouseout="top06.src='/GMT/images/menu6_on.gif';">
+					<table width="100" border="0" onclick="location.href='/GMT/community/notice.asp';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>공지/뉴스</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/event/event.asp" onMouseOver="top06.src='/GMT/images/menu6_on_over.gif';"  onmouseout="top06.src='/GMT/images/menu6_on.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/event/event.asp';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>진행 이벤트</td></tr></table>
+					</a></li>
+				<li><a href="/tip/talk/board_list.asp?board_code=naeil_comqna&s_code=C" onMouseOver="top06.src='/GMT/images/menu6_on_over.gif';"  onmouseout="top06.src='/GMT/images/menu6_on.gif';" target="_blank">
+					<table width="100%" border="0" onclick="window.open('/tip/talk/board_list.asp?board_code=naeil_comqna&s_code=C')" ><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>묻고 답하기</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/community/faq.asp" onMouseOver="top06.src='/GMT/images/menu6_on_over.gif';"  onmouseout="top06.src='/GMT/images/menu6_on.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/community/faq.asp';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>자주 묻는 질문</td></tr></table>
+					</a></li>
+			</ul>
+		</li>
+	</ul>
+	
+</div>
+<!--마우스 오버시 나오는 서브메뉴, 서브메뉴의 길이에 따라 가로값이 변함, 기본사이즈는 가로 200 -->
+	
+<!--스카이배너-->
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--
+

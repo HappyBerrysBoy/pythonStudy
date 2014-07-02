@@ -1,0 +1,41 @@
+HDropdown-orange-classic">
+        <li class="tit"><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=40&sub_area_cd=5401"><img src="/jagiya/images/nav/gnb01_sub01_off.gif" alt="유럽"></a></li>
+        <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=40&sub_area_cd=5402"><img src="/jagiya/images/nav/gnb01_sub02_off.gif" alt="지중해"></a></li>
+        <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=50&sub_area_cd=5504"><img src="/jagiya/images/nav/gnb01_sub03_off.gif" alt="미주/하와이"></a>
+          <ul class="usa_bg am">
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=50&sub_area_cd=5504"><img src="/jagiya/images/nav/gnb01_sub06_01.png" alt="하와이"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=50&sub_area_cd=5505"><img src="/jagiya/images/nav/gnb01_sub06_02.png" alt="미서부"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=50&sub_area_cd=5506"><img src="/jagiya/images/nav/gnb01_sub6_03.png" alt="칸쿤"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=70&sub_area_cd=5701"><img src="/jagiya/images/nav/gnb01_sub6_04.png" alt="괌/사이판"></a></li>
+          </ul>
+        </li>
+        <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=60&sub_area_cd=5602"><img src="/jagiya/images/nav/gnb01_sub04_off.gif" alt="남태평양"></a>
+          <ul class="aus_bg aus">
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=60&sub_area_cd=5602"><img src="/jagiya/images/nav/gnb01_sub04_01.png" alt="호주"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=60&sub_area_cd=5601"><img src="/jagiya/images/nav/gnb01_sub04_02.png" alt="피지"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=2&step_area=60&sub_area_cd=2602"><img src="/jagiya/images/nav/gnb01_sub04_03.png" alt="뉴칼레도니아"></a></li>
+          </ul>
+        </li>
+        <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5104"><img src="/jagiya/images/nav/gnb01_sub05_off.gif" alt="동남아"></a>
+          <ul class="ea_bg ea">
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5104"><img src="/jagiya/images/nav/gnb01_sub05_01.png" alt="발리"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5107"><img src="/jagiya/images/nav/gnb01_sub05_02.png" alt="푸켓"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5106"><img src="/jagiya/images/nav/gnb01_sub05_08.png" alt="크라비"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5108"><img src="/jagiya/images/nav/gnb01_sub05_03.png" alt="코사무이"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5101"><img src="/jagiya/images/nav/gnb01_sub05_04.png" alt="세부"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5102"><img src="/jagiya/images/nav/gnb01_sub05_05.png" alt="보라카이"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5110"><img src="/jagiya/images/nav/gnb01_sub05_09.png" alt="코타키나발루"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5111"><img src="/jagiya/images/nav/gnb01_sub05_10.png" alt="랑카위"></a></li>
+            <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5112"><img src="/jagiya/images/nav/gnb01_sub05_11.png" alt="관광/휴양"></a></li>
+          </ul>
+        </li>
+        <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=80&sub_area_cd=5801"><img src="/jagiya/images/nav/gnb01_sub06_off.gif" alt="모리셔스/세이셀"></a></li>
+        <li><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=10&sub_area_cd=5109"><img src="/jagiya/images/nav/gnb01_sub07_off.gif" alt="몰디브"></a></li>
+        <li class="bar1"><a href="/jagiya/honeymoon/list.asp?menuId=DA&gotp=5&step_area=30&sub_area_cd=5301"><img src="/jagiya/images/nav/gnb01_sub08_off.gif" alt="일본"></a></li>
+        <li class="bar"><a href="/jagiya/honeymoon/list_t.asp?menuId=DA&gotp=5&spec_cd=50"><img src="/jagiya/images/nav/gnb02_sub01_off.gif" alt="스페셜"></a></li>
+        <li class="p_r_5px"><img src="/jagiya/images/nav/gnb02_sub02_off.gif" alt="커뮤니티/이벤트" usemap="#cum_event" border="0"></li>
+      </ul>
+    </section>
+  </div>
+</div>
+

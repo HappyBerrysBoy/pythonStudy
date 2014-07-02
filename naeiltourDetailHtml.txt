@@ -1,0 +1,292 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link href="/common/friday.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	scrollbar-face-color: #ffffff;
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-3dlight-color: #ffffff;
+	scrollbar-darkshadow-color: #ffffff;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #ffffff;
+}
+-->
+</style>
+<script language="javascript">
+function frmSubmit(){
+	var mmm = document.frm.sel_ym.value
+    //parent.go_iframe6(mmm,C60201318);
+    document.frm.submit();
+}
+
+
+</script>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="overflow-x:hidden; overflow-y:hidden;">
+<form name="frm" >
+		<input type="hidden" name="htype" value="">
+		<input type="hidden" name="good_cd" value="C60201318">
+
+		<input type="hidden" name="event_ev_ym" value="">
+		<input type="hidden" name="event_ev_seq" value="">
+		<input type="hidden" name="chk_no" value="">
+		<input type="hidden" name="sub_cd" value="">
+		<input type="hidden" name="good_added" value="">
+		
+
+		
+	<table width="648"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="119"><img src="images/title_sub01_price.gif" width="119" height="20"></td>
+        <td valign="bottom" class="FRIDAYRED"><!--  --></td>
+      </tr>
+    </table>
+	<!--기간 및 가격-->
+      <table width="648" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="2"><img src="images/trans.gif" width="10" height="10"></td>
+        </tr>
+        <tr>
+          <td><img src="images/text_02.gif" alt="하나. 출발일을 선택해주세요."></td>
+          <td><img src="images/text_03.gif" alt="둘. 원하시는 항공사를 선택해주세요."></td>
+        </tr>
+        <tr>
+          <td height="5"></td>
+          <td height="5"></td>
+        </tr>
+		
+        <tr>
+          <td width="245"  valign=top>
+			<!-- 달력 Start -->
+					 <table width="240" height="164" border="0" cellpadding="0" cellspacing="0" background="images/diary_back.gif">
+            <tr>
+              <td width="70" height="35" align="center">
+			  <!--
+			  <a href="program_include.asp?good_cd=C60201318&sel_ym=201407&sel_click=pre">
+			  <img src="images/icon_001.gif" alt="이전달" width="4" height="8" border=0></a>
+			  <span class="FRIDAYBOARD"><b> 2014.08 </b></span>
+			  
+			  <a href="program_include.asp?good_cd=C60201318&sel_ym=201409&sel_click=next">
+			  <img src="images/icon_002.gif" alt="다음달" width="4" height="8" border=0></a>
+			  -->
+
+
+										
+										<select name="sel_ym" class="FRIDAYGO2" Onchange="javascript:frmSubmit();" height="10" >
+											
+
+															<option value="201406"    > 2014.06 </option>
+
+														
+
+															<option value="201407"    > 2014.07 </option>
+
+														
+
+															<option value="201408"   Selected > 2014.08 </option>
+
+														
+
+															<option value="201409"    > 2014.09 </option>
+
+														
+
+															<option value="201410"    > 2014.10 </option>
+
+														
+
+															<option value="201411"    > 2014.11 </option>
+
+														
+
+															<option value="201412"    > 2014.12 </option>
+
+														
+																<option value="201501"   >2015.01</option>
+															
+																<option value="201502"   >2015.02</option>
+															
+																<option value="201503"   >2015.03</option>
+															
+																<option value="201504"   >2015.04</option>
+															
+																<option value="201505"   >2015.05</option>
+															
+										</select>
+
+			  </td>
+              <td height="35">
+			  <table BORDER=0 align="center" CELLPADDING=0 CELLSPACING=1>
+                <tr>
+                  <td><img src="images/d_1.gif" alt="일"></td>
+                  <td><img src="images/d_2.gif" alt="월"></td>
+                  <td><img src="images/d_3.gif" alt="화"></td>
+                  <td><img src="images/d_4.gif" alt="수"></td>
+                  <td><img src="images/d_5.gif" alt="목"></td>
+                  <td><img src="images/d_6.gif" alt="금"></td>
+                  <td><img src="images/d_7.gif" alt="토"></td>
+                </tr>
+              </table></td>
+              </tr>
+            <tr>
+              <td width="70" class="FRIDAYBOARD" align="center"><br><br><br><br>
+                <img src="images/text_today.gif" alt="Today"><br>
+                2014.06.27</td>
+              <td>
+                <table BORDER=0 align="center" CELLPADDING=0 CELLSPACING=1>
+			<tr><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td>
+					<td width=21 height=19><img src="images/s3_1.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_2.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					</tr><tr>
+					<td width=21 height=19><img src="images/s3_3.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_4.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_5.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_6.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_7.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_8.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_9.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					</tr><tr>
+					<td width=21 height=19><img src="images/s3_10.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_11.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_12.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_13.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_14.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_15.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_16.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					</tr><tr>
+					<td width=21 height=19><img src="images/s3_17.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_18.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_19.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_20.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_21.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_22.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_23.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					</tr><tr>
+					<td width=21 height=19><img src="images/s3_24.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_25.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_26.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_27.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_28.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_29.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					
+					<td width=21 height=19><img src="images/s3_30.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					</tr><tr>
+					<td width=21 height=19><img src="images/s3_31.gif" border=0 onClick="javascript:alert('선택하신 날짜의 행사가 없습니다. \n\n 다른 날짜를 선택해 주세요. ');"  width=21 height=19></td>
+					<td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td><td width=21 height=19></td></tr>
+                </table>
+				</td>
+              </tr>
+            </table>
+		  <!-- 달력 End -->
+		  </td>
+          <td width="397" valign="top">
+           <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="5"><img src="images/airbox_topleft.gif" width="5" height="25"></td>
+              <td background="images/airbox_topbg.gif">&nbsp;</td>
+              <td width="5"><img src="images/airbox_topright.gif" width="5" height="25"></td>
+            </tr>
+            <tr>
+              <td width="5" background="images/airbox_midleft_10.gif">&nbsp;</td>
+              <td height="114" valign="top" bgcolor="#FAFAFA">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr><td height=25 width=380 colspan=5 align=center><img src='images/noimg_01_p.gif'></td>
+              </table></td>
+              <td width="5" background="images/airbox_midright.gif">&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="5"><img src="images/airbox_botleft.gif" width="5" height="25"></td>
+              <td background="images/airbox_botbg.gif">&nbsp;</td>
+              <td width="5"><img src="images/airbox_botright.gif" width="5" height="25"></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td colspan="2"><img src="images/trans.gif" width="5" height="5"></td>
+        </tr>
+	<script language="JavaScript" type="text/JavaScript">
+	function fn_goodDetail(start_day){
+		location.href = 'program_include.asp?good_cd=C60201318&good_added=&sel_day='+ start_day ;
+	}
+
+	function fn_price(good_cd, ev_ym, ev_seq, air_nm, adult_price,proc_cd){
+	var str = '';
+
+		str = str+ '<table width=100% border=0 cellpadding=3 cellspacing=1>';
+		str = str+ '<tr>';
+	    str = str+ '<td width="30" height="15"></td>';
+	    str = str+ '</tr>';
+		str = str+ '<tr>';
+		str = str+ '<td bgcolor=#FFFFFF class=FRIDAYGRAY>고객님이 선택하신 <b></b>년 <b></b>월 <b></b>일 <b><font color=#527298>'+air_nm+ '</font></b>을 이용한 요금은 <span class=FRIDAYstyle4>'+adult_price+'</span>원 입니다. </td> ';
+		str = str+ '</tr>';
+		str = str+ '<tr>';
+	    str = str+ '<td width="30" height="10"></td>';
+	    str = str+ '</tr>';
+	    str = str+ '<tr>';
+	    str = str+ '<td><img src="images/img_help.gif" height="65" alt="1. 지금 선택하신 요금은 각 조번별 최저가 기준 요금입니다. 2.정확한 요금과 출발 가능 여부는 담당자에게 꼭 재확인 받으시기 바랍니다. 3. 출발날짜, 여행지에 상관없이 1인부터 자유롭게 출발가능합니다."></td>';
+	    str = str+ '</tr>';
+	    str = str+ '<tr>';
+
+		if (proc_cd != '05'){
+	    	str = str+ '<td align="right"><a href="schedule_ev.asp?good_cd='+good_cd+'&good_cd_master='+good_cd+'&ev_ym='+ev_ym+'&ev_seq='+ev_seq+'" target="_parent"><img src="images/button_01.gif" width="80" height="23" border=0 alt="상세일정 보기"></a> <a href="/friday/reservation/reserve_form.asp?ev_ym='+ev_ym+'&ev_seq='+ev_seq+'" target="_parent"><img src="images/button_02.gif" width="60" height="23" border=0 alt="예약하기"></a></td>';
+		}
+		else {
+	    	str = str+ '<td align="right"><a href="schedule_ev.asp?good_cd='+good_cd+'&good_cd_master='+good_cd+'&ev_ym='+ev_ym+'&ev_seq='+ev_seq+'&proc_cd=05" target="_parent"><img src="images/button_01.gif" width="80" height="23" border=0 alt="상세일정 보기"></a> <img src="images/button_02_off.gif" width="60" height="23" border=0></td>';
+		}
+	    str = str+ '</tr>';
+		str = str+ '</table>';
+
+	    priceDiv.innerHTML = str ;
+	    InitInnerContents()
+	}
+	</script>
+		
+        <tr>
+          <td colspan="2" height=50>
+				 </td>
+        </tr>
+		
+      </table>
+	<script language="JavaScript">
+	
+	</script>
+	<!--//기간 및 가격-->
+</form>
+</body>
+
+<script language="Javascript" type="text/Javascript">
+function InitInnerContents(){
+ self.resizeTo(document.body.scrollWidth,document.body.scrollHeight);
+
+}
+</script>

@@ -1,0 +1,46 @@
+travel_top_section">
+	<p class="caption"><strong>출발일</strong>을 클릭하시면 해당 상품의 <strong>상세 정보</strong>를 보실 수 있습니다.</p>
+				
+
+			<div class="fb-root"></div>
+				<div class="travelList_wrap" id="goodFocus210201414">
+					<div class="thumb_wrap">
+						<p class="thumb">
+						
+							<a href="/Goods/HoneyMoon/view.asp?good_cd=210201414&sub_area_cd=21Y3">
+						
+								<img src="http://cdn.ybtour.co.kr/images/good_img/10/21020140014_0001b.jpg" width="150" height="110" alt="[클럽메드] [패키지] 카비라 OZ항공 4일(매일)" title="[클럽메드] [패키지] 카비라 OZ항공 4일(매일)" />
+							</a>
+						</p>
+						<!--
+						<p class="fb_like_btn" style="z-index:0"></p><!-- 페이스북 좋아요// -->
+					</div>
+					<div class="info_wrap">
+						<div class="lt_wrap">
+							<h2>
+						
+								<a href="/Goods/HoneyMoon/view.asp?good_cd=210201414&sub_area_cd=21Y3">
+						[클럽메드] [패키지] 카비라 OZ항공 4일(매일)<span>상품번호<em>
+							210201414
+							</em></span></a></h2>
+							<p class="route"></p>
+							<p class="desc"></p>
+						</div>
+						<div class="rt_wrap">
+							<p class="price">￦ 1,790,000~</p>
+							<p class="balloons"><span>이 상품에 관심을 가진 분 <strong>1358 명</strong></span></p>
+													
+							<a href="/Goods/HoneyMoon/view.asp?good_cd=210201414&sub_area_cd=21Y3">
+						
+								<img src="/images/sub/btn_product_view_at.gif"  style="margin-top:10px;" alt="출발일 보기" title="출발일 보기"/>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="lncview_210201414"></div>
+				<!--div id="ajax_indicator" style="display:none;"><p style="top:300px;right:;position:fixed;"><img src="/Images/common/load.gif"/></p></div-->
+
+
+		<div id="lncview_000000"></div>
+	</div>
+<form name="
