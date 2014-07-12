@@ -16,18 +16,12 @@ import sys
 import cx_Oracle
 import savefilegethtml
 import time, datetime
+import codes
+import tourUtil
 import re
 
 # 공백 : 예약가능, 03 : 마감임박, 05 : 마감
-def getStatus(code):
-    if code.strip() == '':
-        return 'A'
-    elif code.strip() == '03':
-        return 'C'
-    elif code.strip() == '05':
-        return 'F'
-    else:
-        return 'No Status'
+
 
 class clsRegionUrl():
     def __init__(self):
@@ -63,7 +57,7 @@ class clsProduct():
 
 def searchProduct(filename, productcode, productName, period, targetUrl, listUrl, productDetailUrl, departCity, tourkind, dmst_div, country='', city='', comment=''):
     detailHtml = savefilegethtml.getHtml(targetUrl, '', '', 'naeiltourDetailHtml.txt')
-    print >> filename, targetUrl
+    print >> filename, 'TargetUrl : ', targetUrl
     departDayList = list()
     for detail_each_line in detailHtml:
         if detail_each_line.find("fn_goodDetail('") > -1:
@@ -73,7 +67,17 @@ def searchProduct(filename, productcode, productName, period, targetUrl, listUrl
     try:
         con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
 
-        query = savefilegethtml.getMasterMergeQuery('naeiltour', productcode, '', country, city, productName, tourkind, dmst_div, comment, '')  # A : 해외(Abroad)
+        codeList = codes.getCityCode(productName, city, comment, country)
+        cityList = codeList[0]
+        nationList = codeList[1]
+        
+        #print nationList
+        #print cityList
+        
+        #print nationList
+        #print cityList
+        query = savefilegethtml.getMasterMergeQueryTest1('naeiltour', productcode, '', country, city, productName, tourkind, dmst_div, comment, '', nationList, cityList)  # A : 해외(Abroad)
+        #query = savefilegethtml.getMasterMergeQuery('naeiltour', productcode, '', country, city, productName, tourkind, dmst_div, comment, '', nationList, cityList)  # A : 해외(Abroad)
         #print query
         cursor = con.cursor()
         cursor.execute(query)
@@ -95,9 +99,13 @@ def searchProduct(filename, productcode, productName, period, targetUrl, listUrl
                             productCls.productCode = productSplit[1]
                             productCls.dDay = productSplit[3]
                             productCls.code = productSplit[5]
-                            productCls.airCode = productSplit[7]
+                            if tourkind == 'W' or tourkind == 'G':
+                                productCls.airCode = product[product.find('.gif') - 2:product.find('.gif')]
+                            else:
+                                productCls.airCode = productSplit[7]            # 한글 공항코드... but 우리는 영문2자리 공항코드가 필요하다...
                             productCls.price = productSplit[9].replace(',', '')
-                            productCls.status = getStatus(productSplit[11])                    # 공백 : 예약가능, 03 : 마감임박, 05 : 마감
+                            #print productSplit[11]
+                            productCls.status = codes.getStatus('naeiltour', productSplit[11])                    # 공백 : 예약가능, 03 : 마감임박, 05 : 마감
                             #if tourkind == 'W':
                                 #productCls.city = productSplit[13]
                             productCls.url = productDetailUrl + productcode + '&sel_day=' + productCls.dDay
@@ -105,96 +113,154 @@ def searchProduct(filename, productcode, productName, period, targetUrl, listUrl
                             productCls.dTime = ''
                             productCls.aDay = ''
                             productCls.aTime = ''
-                            if period != '':
+                                
+                        if period != '' and tourkind == 'F':
+                            if product.find('<td width="134">') > -1:
                                 productCls.period = period
                                 #print productCls.toString()
-                                query = savefilegethtml.getDetailMergeQuery('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', '') 
+                                productCls.airCode = product[product.find('.gif') - 2:product.find('.gif')]
+                                query = savefilegethtml.getDetailMergeQueryTest1('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', '') 
+                                #query = savefilegethtml.getDetailMergeQuery('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', '') 
                                 #print query
                                 cursor = con.cursor()
                                 cursor.execute(query)
                                 con.commit()
                                 #break
                         
-                        if period == '' and tourkind == 'F' and product.find('idth="220">') > -1:
-                            if product.find('(') > -1:
-                                productCls.night = re.findall(r"\d", product.split('(')[1])[0]
-                                productCls.period = re.findall(r"\d", product.split('(')[1])[1]
-                            elif product.find('[') > -1:
-                                productCls.night = re.findall(r"\d", product.split('[')[1])[0]
-                                productCls.period = re.findall(r"\d", product.split('[')[1])[1]
-                            #print productCls.toString()
-                            query = savefilegethtml.getDetailMergeQuery('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', productCls.night) 
-                            #print 'Query : ' + query
-                            cursor = con.cursor()
-                            cursor.execute(query)
-                            con.commit()
-                            #break
-                        
-                        if period == '' and tourkind == 'W' and product.find('valign="middle"') > -1:
-                            if product.find('(') > -1:
-                                productCls.night = re.findall(r"\d", product.split('(')[1])[0]
-                                productCls.period = re.findall(r"\d", product.split('(')[1])[1]
-                            elif product.find('[') > -1:
-                                productCls.night = re.findall(r"\d", product.split('[')[1])[0]
-                                productCls.period = re.findall(r"\d", product.split('[')[1])[1]
-                            #print productCls.toString()
-                            query = savefilegethtml.getDetailMergeQuery('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', productCls.night) 
-                            #print 'Query : ' + query
-                            cursor = con.cursor()
-                            cursor.execute(query)
-                            con.commit()
-                            #break
-                        
-                        if period == '' and tourkind == 'G' and product.find('valign="middle"') > -1:
-                            if product.find('(') > -1:
-                                productCls.night = re.findall(r"\d", product.split('(')[1])[0]
-                                productCls.period = re.findall(r"\d", product.split('(')[1])[1]
-                            elif product.find('[') > -1:
-                                productCls.night = re.findall(r"\d", product.split('[')[1])[0]
-                                productCls.period = re.findall(r"\d", product.split('[')[1])[1]
-                            #print productCls.toString()
-                            query = savefilegethtml.getDetailMergeQuery('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', productCls.night) 
-                            #print 'Query : ' + query
-                            cursor = con.cursor()
-                            cursor.execute(query)
-                            con.commit()
-                            #break
-                        
-                        if period == '' and tourkind == 'D' and product.find('idth="220">') > -1:
-                            if product.find('(') > -1:
-                                productCls.night = re.findall(r"\d", product.split('[')[1])[0]
-                                productCls.period = re.findall(r"\d", product.split('')[1])[1]
-                            else:
-                                productCls.night = re.findall(r"\d", product.split('COLOR=#FF7A73>')[1])[0]
-                                productCls.period = re.findall(r"\d", product.split('COLOR=#FF7A73>')[1])[1]
-                                
-                            if product.find('COLOR=BLUE>') > -1:
-                                departCity = 'PUS'
-                            else:
-                                departCity = 'ICN'
+                        if period == '' and tourkind == 'F':
+                            if product.find('<td class="FRIDAYSPACING" >') > -1 and product.find('.gif') > -1:
+                                productCls.airCode = product[product.find('.gif') - 2:product.find('.gif')]
                             
-                            #print productCls.toString()
-                            query = savefilegethtml.getDetailMergeQuery('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', productCls.night) 
-                            #print 'Query : ' + query
-                            cursor = con.cursor()
-                            cursor.execute(query)
-                            con.commit()
-                            #break
-                    except UnicodeDecodeError as err4:
-                        print >> filename, err4
-                    except IndexError as err3:
-                        print >> filename, err3
-                        pass
+                            if product.find('idth="220">') > -1:
+                                """
+                                # 날짜 가져오는 부분... 종류가 너무 많아서 좀 수정
+                                if product.find('(') > -1:
+                                    productCls.night = re.findall(r"\d", product.split('(')[1])[0]
+                                    productCls.period = re.findall(r"\d", product.split('(')[1])[1]
+                                elif product.find('[') > -1:
+                                    productCls.night = re.findall(r"\d", product.split('[')[1])[0]
+                                    productCls.period = re.findall(r"\d", product.split('[')[1])[1]
+                                """
+                                splitText = product.decode('cp949').split(u'박')
+                                if len(splitText) > 1:
+                                    tmpText = re.findall(u'[\^0-9]+', tourUtil.getRemovedHtmlTag(splitText[0]))
+                                    productCls.night = tmpText[len(tmpText)-1].encode('utf-8')
+                                    tmpText = re.findall(u'[\^0-9]+', tourUtil.getRemovedHtmlTag(splitText[1]))
+                                    productCls.period = tmpText[0].encode('utf-8')
+                                else:
+                                    productCls.night = '0'
+                                    productCls.period = '0'
+                                #############################################################################################
+                                #print productCls.toString()
+                                query = savefilegethtml.getDetailMergeQueryTest1('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', productCls.night) 
+                                #print 'Query : ' + query
+                                cursor = con.cursor()
+                                cursor.execute(query)
+                                con.commit()
+                        
+                        if period == '' and tourkind == 'W':
+                            if product.find('valign="middle"') > -1:
+                                """
+                                if product.find('(') > -1:
+                                    productCls.night = re.findall(r"\d", product.split('(')[1])[0]
+                                    productCls.period = re.findall(r"\d", product.split('(')[1])[1]
+                                elif product.find('[') > -1:
+                                    productCls.night = re.findall(r"\d", product.split('[')[1])[0]
+                                    productCls.period = re.findall(r"\d", product.split('[')[1])[1]
+                                """
+                                splitText = product.decode('cp949').split(u'박')
+                                if len(splitText) > 1:
+                                    tmpText = re.findall(u'[\^0-9]+', tourUtil.getRemovedHtmlTag(splitText[0]))
+                                    productCls.night = tmpText[len(tmpText)-1].encode('utf-8')
+                                    tmpText = re.findall(u'[\^0-9]+', tourUtil.getRemovedHtmlTag(splitText[1]))
+                                    productCls.period = tmpText[0].encode('utf-8')
+                                else:
+                                    productCls.night = '0'
+                                    productCls.period = '0'
+                                #############################################################################################
+                                #print productCls.toString()
+                                query = savefilegethtml.getDetailMergeQueryTest1('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', productCls.night) 
+                                #print 'Query : ' + query
+                                cursor = con.cursor()
+                                cursor.execute(query)
+                                con.commit()
+                                #break
+                        
+                        if period == '' and tourkind == 'G':
+                            if  product.find('valign="middle"') > -1:
+                                """
+                                if product.find('(') > -1:
+                                    productCls.night = re.findall(r"\d", product.split('(')[1])[0]
+                                    productCls.period = re.findall(r"\d", product.split('(')[1])[1]
+                                elif product.find('[') > -1:
+                                    productCls.night = re.findall(r"\d", product.split('[')[1])[0]
+                                    productCls.period = re.findall(r"\d", product.split('[')[1])[1]
+                                """
+                                splitText = product.decode('cp949').split(u'박')
+                                if len(splitText) > 1:
+                                    tmpText = re.findall(u'[\^0-9]+', tourUtil.getRemovedHtmlTag(splitText[0]))
+                                    productCls.night = tmpText[len(tmpText)-1].encode('utf-8')
+                                    tmpText = re.findall(u'[\^0-9]+', tourUtil.getRemovedHtmlTag(splitText[1]))
+                                    productCls.period = tmpText[0].encode('utf-8')
+                                else:
+                                    productCls.night = '0'
+                                    productCls.period = '0'
+                                #############################################################################################
+                                #print productCls.toString()
+                                query = savefilegethtml.getDetailMergeQueryTest1('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', productCls.night) 
+                                #print 'Query : ' + query
+                                cursor = con.cursor()
+                                cursor.execute(query)
+                                con.commit()
+                                #break
+                        
+                        if period == '' and tourkind == 'D':
+                            if product.find('<td class="FRIDAYSPACING" >') > -1 and product.find('.gif') > -1:
+                                productCls.airCode = product[product.find('.gif') - 2:product.find('.gif')]
+                                
+                            if product.find('idth="220">') > -1:
+                                """
+                                if product.find('(') > -1:
+                                    productCls.night = re.findall(r"\d", product.split('[')[1])[0]
+                                    productCls.period = re.findall(r"\d", product.split('')[1])[1]
+                                else:
+                                    productCls.night = re.findall(r"\d", product.split('COLOR=#FF7A73>')[1])[0]
+                                    productCls.period = re.findall(r"\d", product.split('COLOR=#FF7A73>')[1])[1]
+                                """
+                                splitText = product.decode('cp949').split(u'박')
+                                if len(splitText) > 1:
+                                    tmpText = re.findall(u'[\^0-9]+', tourUtil.getRemovedHtmlTag(splitText[0]))
+                                    productCls.night = tmpText[len(tmpText)-1].encode('utf-8')
+                                    tmpText = re.findall(u'[\^0-9]+', tourUtil.getRemovedHtmlTag(splitText[1]))
+                                    productCls.period = tmpText[0].encode('utf-8')
+                                else:
+                                    productCls.night = '0'
+                                    productCls.period = '0'
+                                #############################################################################################
+                                if product.find('COLOR=BLUE>') > -1:
+                                    departCity = 'PUS'
+                                else:
+                                    departCity = 'ICN'
+                                
+                                #print productCls.toString()
+                                query = savefilegethtml.getDetailMergeQueryTest1('naeiltour', productcode, productCls.code, productCls.productname, '20' + productCls.dDay, '', productCls.period, departCity, '', productCls.airCode, productCls.status, productCls.url, productCls.price, '0', '0', '0', '', productCls.night) 
+                                #print 'Query : ' + query
+                                cursor = con.cursor()
+                                cursor.execute(query)
+                                con.commit()
+                                #break
+                                
                     except cx_Oracle.DatabaseError as err1:
                         print >> filename, err1
                         pass
                     except:
                         print >> filename, "Depth3 Error:", sys.exc_info()[0]
                         pass
+                #break
             except:
                 print >> filename, "Depth2 Error:", sys.exc_info()[0]
                 pass
-            
+       
     except:
         print >> filename, "Depth1 Error:", sys.exc_info()[0]
         pass
@@ -205,13 +271,17 @@ print "Start : %s" % time.ctime()
 
 targetYear = sys.argv[1]
 targetMonth = sys.argv[2]
+#targetYear = '2014'
+#targetMonth = '07'
 scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 homepageUrl = 'http://www.naeiltour.co.kr'
 
 exceptFile = open('naeiltourException' + scrappingStartTime + '.txt', 'w')
+print >> exceptFile, "Start : %s" % time.ctime()
 
 #배낭여행 시작========================================
 print '@@@@@@@@@@@@@ backpack start @@@@@@@@@@@@@@@@@@@@'
+print >> exceptFile, '@@@@@@@@@@@@@ backpack start @@@@@@@@@@@@@@@@@@@@'
 backpackUrl = 'http://www.naeiltour.co.kr/backpack/eu_main.asp?area=40'
 mainHtml = savefilegethtml.getHtml(backpackUrl, '<div id="left_mn">', '<div id="left_mn2">', 'naeiltourbackpackHtml.txt')
 
@@ -245,25 +315,31 @@ except:
 try:
     for menu in backpackMenuList:
         #tit_position2 부산출발 검색조건..
+        print menu.url
         productListHtml = savefilegethtml.getHtml(menu.url, '<div id="sub_box2">', 'function btn(ckbtn){', 'productListHtml.txt')
         
         for each_line in productListHtml:
             if each_line.find('<h1 class="bic_h">') > -1:
                 productName = each_line.split('bic_h">')[2].split('<')[0]
-                productNameSplit = productName.split(' ')
-                period = productNameSplit[len(productNameSplit)-1].replace('일', '')
+                #productNameSplit = productName.split(' ')
+                #period = productNameSplit[len(productNameSplit)-1].replace('일', '')
+                productNameSplit = re.findall('[\^0-9]+', tourUtil.getRemovedHtmlTag(each_line))
+                period = productNameSplit[len(productNameSplit)-1]
                 
-            if each_line.find('<span class="goods_text">') > -1:
-                comment = each_line.split('px;">')[1].split('<')[0]
+            #if each_line.find('<span class="goods_text">') > -1:            # 여행 설명이 잘 적혀 있긴 하지만.. 내일투어에서는 국가 정보가 있는 걸 보조로 가져가야 할듯..
+                #tourRoute = each_line.split('px;">')[1].split('<')[0]
+            if each_line.find('<span class="travel_box">') > -1:
+                tourRoute = tourUtil.getRemovedHtmlTag(each_line)
             
             if each_line.find("sview('") > -1:
                 productCode = each_line.split("sview('")[1].split("'")[0]
                 code2 = each_line.split("sview('")[1].split("'")[2]
                 detailUrl = 'http://www.naeiltour.co.kr/backpack/program_include_list.asp?good_cd='+ productCode + '&sel_ym=' + targetYear + targetMonth
+                print >> exceptFile, 'DetailUrl : ', detailUrl
                 
                 listUrl = 'http://www.naeiltour.co.kr/backpack/program_include_list.asp?good_cd='
                 productDetailUrl = 'http://www.naeiltour.co.kr/backpack/show.asp?good_cd='
-                searchProduct(exceptFile, productCode, productName, period, detailUrl, listUrl, productDetailUrl, 'ICN', 'F', 'A', menu.country, menu.region, comment)
+                searchProduct(exceptFile, productCode, productName, period, detailUrl, listUrl, productDetailUrl, 'ICN', 'F', 'A', menu.country, menu.region, tourRoute)
                 #break
         #break
 except:
@@ -273,6 +349,7 @@ except:
 
 #자유여행 시작========================================
 print '@@@@@@@@@@@@@ freetour start @@@@@@@@@@@@@@@@@@@@'
+print >> exceptFile, '@@@@@@@@@@@@@ freetour start @@@@@@@@@@@@@@@@@@@@'
 freetourUrl = 'http://www.naeiltour.co.kr/friday/eu/index.asp'
 mainHtml = savefilegethtml.getHtml(freetourUrl, '<div id="Leftmenu" style="align:left;">', '<!-- Theme Select -->', 'naeiltourfreetourkHtml.txt')
 
@@ -324,6 +401,7 @@ try:
         
         for product_line in productHtml:
             if product_line.find('<td height="137"') > -1:
+                #print product_line
                 productName = product_line.split('alt="')[1].split('"')[0]
                 productUrl = homepageUrl + product_line.split('..')[1].split("'")[0]
                 productCode = product_line.split('good_cd=')[1].split('&')[0]
@@ -332,7 +410,7 @@ try:
                 #바로 출발일 http://www.naeiltour.co.kr/friday/program/program_include.asp?good_cd=24020052
                 productScheduleUrl = homepageUrl + '/friday/program/program_include.asp?good_cd=' + productCode + '&sel_ym=' + targetYear + targetMonth
                 print productScheduleUrl
-                
+                print >> exceptFile, 'DetailUrl : ', productScheduleUrl
                 #detailProduct = urllib2.urlopen(productScheduleUrl).read()
                 #http://www.naeiltour.co.kr/friday/friday.asp?good_cd=24020052&nat_cd=FR&city_cd=&sub_area_cd=
                 listUrl = 'http://www.naeiltour.co.kr/friday/program/program_include.asp?good_cd='
@@ -348,6 +426,7 @@ except:
 
 #허니문 시작========================================
 print '@@@@@@@@@@@@@ honeymoon start @@@@@@@@@@@@@@@@@@@@'
+print >> exceptFile, '@@@@@@@@@@@@@ honeymoon start @@@@@@@@@@@@@@@@@@@@'
 honeymoonUrl = 'http://www.naeiltour.co.kr/jagiya/main.asp'
 mainHtml = savefilegethtml.getHtml(honeymoonUrl, 'HDropdown-orange-classic', '<map name="cum_event" id="cum_event">', 'naeiltourhoneykHtml.txt')
 
@@ -386,9 +465,11 @@ try:
         
         for region in regionHtml:
             if region.find('<li >') > -1:
+                #print region
                 productName = region.split('alt="')[1].split('"')[0]
                 productCode = region.split('good_cd=')[1].split('&')[0]
                 productListUrl = homepageUrl + '/jagiya/honeymoon/program_include.asp?good_cd=' + productCode + '&sel_ym=' + targetYear + targetMonth
+                print >> exceptFile, 'DetailUrl : ', productListUrl
                 
                 listUrl = 'http://www.naeiltour.co.kr/jagiya/honeymoon/program_include.asp?good_cd='
                 productDetailUrl = 'http://www.naeiltour.co.kr/jagiya/honeymoon/view.asp?good_cd='
@@ -403,6 +484,7 @@ except:
 
 #골프 시작========================================
 print '@@@@@@@@@@@@@ golf start @@@@@@@@@@@@@@@@@@@@'
+print >> exceptFile, '@@@@@@@@@@@@@ golf start @@@@@@@@@@@@@@@@@@@@'
 golfUrl = 'http://www.naeiltour.co.kr/GMT/index.asp'
 mainHtml = savefilegethtml.getHtml(golfUrl, 'top_menu', 'function move(num) {', 'naeiltourgolfkHtml.txt')
 
@@ -441,11 +523,13 @@ try:
         productListUrl = ''
         
         for region in regionHtml:
+            #print region
             if region.find("view.asp?good_cd=") > -1:
                 print region
                 productName = region.split('title">')[1].split('<')[0]
                 productCode = region.split('good_cd=')[1].split('&')[0]
                 productListUrl = homepageUrl + '/GMT/goods/program_include.asp?good_cd=' + productCode + '&sel_ym=' + targetYear + targetMonth
+                print >> exceptFile, 'DetailUrl : ', productListUrl
                 
                 listUrl = 'http://www.naeiltour.co.kr/GMT/goods/program_include.asp?good_cd='
                 productDetailUrl = 'http://www.naeiltour.co.kr/GMT/goods/view.asp?good_cd='
@@ -461,6 +545,7 @@ except:
 #부산출발 시작========================================
 
 print '@@@@@@@@@@@@@ busan start @@@@@@@@@@@@@@@@@@@@'
+print >> exceptFile, '@@@@@@@@@@@@@ busan start @@@@@@@@@@@@@@@@@@@@'
 notseoulUrl = 'http://www.naeiltour.co.kr/naeil21/list_friday.asp?menuId=DA&step_area=40&sub_area_cd=C409'
 mainHtml = savefilegethtml.getHtml(notseoulUrl, '<div id="Leftmenu" style="align:left;">', '<!-- Theme Select -->', 'naeiltourbusankHtml.txt')
 
@@ -516,15 +601,15 @@ try:
         
         for region in regionHtml:
             if region.find('<td height="137"') > -1:
+                #print region
                 productName = region.split('alt="')[1].split('"')[0]
                 productCode = region.split('good_cd=')[1].split('&')[0]
-                #productListUrl = homepageUrl + region.split("window.open('")[1].split("'")[0]
                 productScheduleUrl = homepageUrl + '/friday/program/program_include.asp?good_cd=' + productCode + '&sel_ym=' + targetYear + targetMonth
+                print >> exceptFile, 'DetailUrl : ', productScheduleUrl
     
                 listUrl = 'http://www.naeiltour.co.kr/friday/program/program_include.asp?good_cd='
                 productDetailUrl = 'http://www.naeiltour.co.kr/friday/friday.asp?good_cd='
                 searchProduct(exceptFile, productCode, productName, '', productScheduleUrl, listUrl, productDetailUrl, 'PUS', 'D', 'A', regionList.country, regionList.region, '')
-                #C4020071
                 #break
         #break  
 except AttributeError as err:
@@ -533,5 +618,5 @@ except AttributeError as err:
     pass                          
 #부산출발 완료========================================
 
+print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()
-print "End : %s" % time.ctime()

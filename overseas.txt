@@ -12,8 +12,8 @@
                 <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC8&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_'); return false;" alt="패키지">남태평양/괌/사이판</a></li>
                 <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC9&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_'); return false;" alt="패키지">유럽</a></li>
                 <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC7&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_'); return false;" alt="패키지">미주/중남미/하와이</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC10&amp;location1=LOC10&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_'); return false;" alt="패키지">인도/서남아</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC10&amp;location1=LOC782&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_'); return false;" alt="패키지">아프리카</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC10&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_'); return false;" alt="패키지">몰디브/뉴칼레도니아 외</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC782&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_'); return false;" alt="패키지">인도/아프리카</a></li>
                 <li><a href="/Package/subMain2.aspx?startLocation=PUS&amp;id=LOC261&amp;type=2&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB'); return false;" alt="_">지방출발</a></li>
               </ul>
             </div>
@@ -31,7 +31,8 @@
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_'); return false;" alt="자유">남태평양/괌/사이판</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC9&amp;location1=LOC9&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_'); return false;" alt="자유">유럽</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_'); return false;" alt="자유">미주/중남미/하와이</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC10&amp;location1=LOC10&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_'); return false;" alt="자유">인도/서남아</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC10&amp;location1=LOC10&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_'); return false;" alt="패키지">몰디브/뉴칼레도니아 외</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC782&amp;location1=LOC782&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_'); return false;" alt="패키지">인도/아프리카</a></li>
                 <li><a href="/LiveBooking/Rail/Main.aspx?MLoc=04" onclick="TopNextPage(this,'AT322','GNB_'); return false;" style="color:#5083EF;">철도/패스</a></li>
               </ul>
             </div>
@@ -43,14 +44,13 @@
               <h3 class="hn_honey">모두투어 허니문</h3>
               <ul>
                 <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE3&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB'); return false;" alt="_">허니문홈</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC3&amp;location1=LOC3&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">동남아시아/몰디브</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC3&amp;location1=LOC3&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">동남아시아</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC6&amp;location1=LOC6&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">중국/홍콩</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC5&amp;location1=LOC5&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">일본</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">남태평양/괌/사이판</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC9&amp;location1=LOC9&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">유럽</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">미주/칸쿤/하와이</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC10&amp;location1=LOC10&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">인도/서남아</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC782&amp;location1=LOC782&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">아프리카</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC10&amp;location1=LOC10&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">몰디브/뉴칼레도니아 외</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC988&amp;location1=LOC988^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_'); return false;" alt="허니문">국내제주</a></li>
               </ul>
             </div>
@@ -83,7 +83,6 @@
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE211&amp;Theme1=THE211&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_'); return false;" alt="크루즈">남태평양/괌/사이판</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC9&amp;location1=LOC9&amp;Theme=THE211&amp;Theme1=THE211&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_'); return false;" alt="크루즈">유럽</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE211&amp;Theme1=THE211&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_'); return false;" alt="크루즈">미주/중남미/하와이</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC10&amp;location1=LOC10&amp;Theme=THE211&amp;Theme1=THE211&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_'); return false;" alt="크루즈">인도/서남아</a></li>
               </ul>
             </div>
             <div class="banner" id="gnbBannerTHE211" onmousedown="ACEL_TRACKING('BC','AT345/GNB_크루즈_배너');"></div>
@@ -100,7 +99,8 @@
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT326','GNB_'); return false;" alt="JM">남태평양/괌/사이판</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC9&amp;location1=LOC9&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT326','GNB_'); return false;" alt="JM">유럽</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT326','GNB_'); return false;" alt="JM">미주/중남미/하와이</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC10&amp;location1=LOC10&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT326','GNB_'); return false;" alt="JM">인도/서남아</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC10&amp;location1=LOC10&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT326','GNB_'); return false;" alt="JM">몰디브/뉴칼레도니아 외</a></li>
+                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC782&amp;location1=LOC782&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT326','GNB_'); return false;" alt="JM">인도/아프리카</a></li>
               </ul>
             </div>
             <div class="banner" id="gnbBannerTHE210" onmousedown="ACEL_TRACKING('BC','AT346/GNB_JM_배너');"></div>
@@ -198,6 +198,7 @@
                     <dl>
                       <dt tabindex="0">대구출발</dt>
                       <dd><a href="/Package/List.aspx?startLocation=TAE&amp;location=LOC268&amp;location1=LOC268&amp;Theme=THE117&amp;Theme1=THE117&amp;MLoc=01" onclick="TopNextPage(this,'AT329','GNB_'); return false;" alt="대구출발">중국</a></dd>
+                      <dd><a href="/Package/List.aspx?startLocation=TAE&amp;location=LOC322&amp;location1=LOC322&amp;Theme=THE117&amp;Theme1=THE117&amp;MLoc=01" onclick="TopNextPage(this,'AT329','GNB_'); return false;" alt="대구출발">동남아시아</a></dd>
                     </dl>
                     <div class="horizon" style="height:10px;">
                       <hr>

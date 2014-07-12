@@ -5,10 +5,13 @@ Created on Tue Jun 10 23:37:36 2014
 @author: KSC
 """
 
-import datetime
+import time, datetime
 import sys
 import cx_Oracle
 import savefilegethtml
+import codes
+import tourUtil
+import tourQuery
 
 class clsProductGroup():
     def __init__(self):
@@ -30,6 +33,7 @@ class clsProduct():
         self.price = ''
         self.booked = ''
         self.url = ''
+        self.night = ''
         
     def toString(self):
         return 'Code:'+self.code+',sDay:'+self.sDay+',sTime:'+self.sTime+',aDay:'+self.aDay+',aTime:'+self.aTime+',aCode:'+self.aCode+',Period:'+self.period+',status:'+self.status+',name:'+self.name+',price:'+self.price+',booked:'+self.booked
@@ -55,13 +59,19 @@ def getTourType(idx):
         return 'H'
     elif idx == 9:
         return '법인'
+    else:
+        return 'None'
     
 # 시간 변수들..
+tourAgency = 'vgtour'
 targetYear = sys.argv[1]
 targetMonth = sys.argv[2]
+#targetYear = '2014'
+#targetMonth = '07'
 scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
 exceptFile = open('verygoodtourException' + scrappingStartTime + '.txt', 'w')
+print >> exceptFile, "Start : %s" % time.ctime()
         
 sitemapUrl = 'http://www.verygoodtour.com/Content/SiteMap.html'
 sitemapHtml = savefilegethtml.getHtml(sitemapUrl, '', '', 'sitemapHtml.txt')
@@ -109,10 +119,11 @@ try:
             #print 'name:' + productCls.name + ', url:' + productCls.url
             
             try:
-                idx += 1
                 print '=============================================================================================================='
                 print 'PackageList Url : ' + productGroupCls.url
                 print >> exceptFile, 'PackageList Url : ' + productGroupCls.url
+                #if productGroupCls.url.find('1020101') < 0:
+                    #continue
                 regionHtml = savefilegethtml.getHtml(productGroupCls.url, '<div id="list_proviewM">', 'function BingPaging()', 'regionHtml.txt')
                 #regionHtml = urllib2.urlopen(menu.url).read()
                 #regionHtml = regionHtml[regionHtml.find('<div id="list_proviewM">'):regionHtml.find('function BingPaging()')]
@@ -141,48 +152,85 @@ try:
                                 productListHtml = savefilegethtml.getHtml(productListUrl, '', '', 'productListHtml.txt')
                                 productName = each_line.split('<a href="#n">')[1].split('</a')[0].replace("'", "").strip().decode('utf-8')
                                 productComment = each_line.split('pkg_list_centents">')[1].split('</a')[0].replace("'", "").strip().decode('utf-8')
-                                #productListHtml = urllib2.urlopen(productListUrl).read()
-                                #productListHtmlFile = open('productListHtml.txt', 'w')
-                                #print >> productListHtmlFile, productListHtml
-                                #productListHtmlFile.close()
                                 
-                                #print 'mastercode : ' + mastercode
                                 if mastercode.strip() == '' or productName.strip() == '' or productComment.strip() == '':
                                     continue
                                 
-                                query = savefilegethtml.getMasterMergeQuery('vgtour', mastercode, '', '', productGroupCls.name, productName, tourType, region, productComment, '')  # A : 해외(Abroad)
+                                
+                                codeList = codes.getCityCode(productName, productGroupCls.name, productComment)
+                                cityList = codeList[0]
+                                nationList = codeList[1]
+                                continentList = codeList[2]
+                                
+                                query = tourQuery.getMasterMergeQuery(tourAgency, mastercode, productName, tourType, region, productComment, '')  # A : 해외(Abroad)
+                                #query = savefilegethtml.getMasterMergeQuery('vgtour', mastercode, '', '', productGroupCls.name, productName, tourType, region, productComment, '')  # A : 해외(Abroad)
                                 #print query
                                 cursor = con.cursor()
                                 cursor.execute(query)
+                                codes.insertRegionData(tourAgency, mastercode, cityList, nationList, continentList)
                                 con.commit()
+            
             
                                 #최종 상품들 잡아넣자..
                                 try:
-                                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")                    
                                     productCls = clsProduct()
                                     #productListHtml = open('productListHtml.txt')
+                                    departConfirm = False
                                     for product in productListHtml:
                                         #print 'product : ' + product
                                         if product.find('pro_date') > -1:
                                             productCls = clsProduct()
-                                            productCls.sDay = targetYear + product.split('pro_date">')[1].split('(')[0].strip().replace('/', '')
-                                            productCls.sTime = product.split('<br/>')[0].split(')')[1].strip().replace(':', '')
-                                            productCls.aDay = targetYear + product.split('<span>')[1].split('(')[0].strip().replace('/', '')
-                                            productCls.aTime = product.split('<span>')[1].split(')')[1].split('<')[0].strip().replace(':', '')
+                                            departConfirm = False
+                                            #productCls.sDay = targetYear + product.split('pro_date">')[1].split('(')[0].strip().replace('/', '')
+                                            #productCls.sTime = product.split('<br/>')[0].split(')')[1].strip().replace(':', '')
+                                            #productCls.aDay = targetYear + product.split('<span>')[1].split('(')[0].strip().replace('/', '')
+                                            #productCls.aTime = product.split('<span>')[1].split(')')[1].split('<')[0].strip().replace(':', '')
+                                            daySplit = tourUtil.getNumArray(tourUtil.getRemovedHtmlTag(product))
+                                            productCls.sDay = ''
+                                            productCls.sTime = ''
+                                            productCls.aDay = ''
+                                            productCls.aTime = ''
+                                            
+                                            if len(daySplit) > 1:
+                                                productCls.sDay = '2014' + daySplit[0] + daySplit[1]
+                                            if len(daySplit) > 3:
+                                                productCls.sTime = daySplit[2] + daySplit[3]
+                                            if len(daySplit) > 5:
+                                                productCls.aDay = '2014' + daySplit[4] + daySplit[5]
+                                            if len(daySplit) > 7:
+                                                productCls.aTime = daySplit[6] + daySplit[7]
                                         elif product.find('<img src=') > -1 and product.find('pro_detail') < 0:
-                                            productCls.aCode = product.split("alt='")[1].split("'")[0].decode('utf-8')
+                                            #productCls.aCode = product.split("alt='")[1].split("'")[0].decode('utf-8')      # 이건 한글 항공사 뽑아오는부분.. 영문2자리로 뽑자.. gif 파일명에서 뽑자
+                                            productCls.aCode = product[product.find('.gif') - 4:product.find('.gif') - 2]
                                         elif (product.find('박') > -1 or product.find('일') > -1) and product.find('class=') < 0:
+                                            productCls.night = product.split('박')[0].split('>')[1].strip()
                                             productCls.period = product.split('박')[1].split('일')[0].strip()
                                         elif product.find('class="pro_detail tl"') > -1:
                                             productCls.code = product.split("DetailPage('")[1].split("'")[0]
                                             productCls.url = 'http://www.verygoodtour.com/Product/Package/PackageDetail?ProCode=' + productCls.code + '&MenuCode=' + productGroupCls.menucode
                                             #http://www.verygoodtour.com/Product/Package/PackageDetail?ProCode=APP5099-140612LJ&MenuCode=1010201
                                             tmp = len(product.split('</td>')[0].split('>'))
-                                            productCls.name = product.split('</td>')[0].split('>')[tmp - 1].decode('utf-8')
+                                            #print >> exceptFile, product.split('</td>')[0].split('>')[tmp - 1]
+                                            if product.find('출발확정') > -1:
+                                                departConfirm = True
+                                            productCls.name = product.split('</td>')[0].split('>')[tmp - 1].replace("'", "").decode('utf-8')
                                         elif product.find('pro_price') > -1:
                                             productCls.price = product.split('원')[0].split('>')[1].replace(',', '')
                                         elif product.find('class="pro_condition"') > -1:
-                                            productCls.booked = product.split('title="')[1].split('"')[0].decode('utf-8')
+                                            #print >> exceptFile, product.split('title="')[1].split('"')[0]
+                                            
+                                            if product.find('예약마감') > -1:
+                                                productCls.booked = codes.getStatus('verygoodtour', '예약마감')
+                                            elif product.find('대기예약') > -1:
+                                                productCls.booked = codes.getStatus('verygoodtour', '대기예약')
+                                            elif departConfirm:
+                                                productCls.booked = codes.getStatus('verygoodtour', '출발확정')
+                                            elif product.find('예약하기') > -1 or product.find('석') > -1:
+                                                productCls.booked = codes.getStatus('verygoodtour', '예약하기')
+                                            else:
+                                                productCls.booked = codes.getStatus('verygoodtour', 'None')
+                                                
+                                            #productCls.booked = product.split('title="')[1].split('"')[0].split(' ')[0].decode('utf-8')
                                         elif product.find('</tr>') > -1:
                                             #print productCls.toString()
                                             #query... 등등
@@ -200,32 +248,17 @@ try:
                                             if productCls.code.strip() == '':
                                                 continue
                                             
-                                            query = savefilegethtml.getDetailMergeQuery('vgtour', mastercode, productCls.code, productCls.name, productCls.sDay+productCls.sTime, productCls.aDay+productCls.aTime, productCls.period, departCity, '', productCls.aCode, productCls.booked, productCls.url, productCls.price, '0', '0', '0', '') 
+                                            query = tourQuery.getDetailMergeQuery(tourAgency, mastercode, productCls.code, productCls.name, productCls.sDay+productCls.sTime, productCls.aDay+productCls.aTime, productCls.period, departCity, '', productCls.aCode, productCls.booked, productCls.url, productCls.price, '0', '0', '0', '', productCls.night) 
                                             #print query
                                             cursor = con.cursor()
                                             cursor.execute(query)
                                             con.commit()
                                             #break
-                                except IndexError as iErr:
-                                    print iErr
-                                    pass
                                 except:
                                     print 'data base error!!!'
                                     print >> exceptFile, "Parcing Error:", sys.exc_info()[0]
                                     pass
                             #break
-                except cx_Oracle.IntegrityError as dberr2:
-                    print dberr2
-                    print >> exceptFile, dberr2
-                    pass
-                except cx_Oracle.DatabaseError as dberr:
-                    print dberr
-                    print >> exceptFile, dberr
-                    pass
-                except UnicodeDecodeError as err:
-                    print err
-                    print >> exceptFile, err
-                    pass
                 except:
                     print >> exceptFile, "Parcing or URL Error:", sys.exc_info()[0]
                     pass
@@ -242,4 +275,5 @@ except:
     pass
 
 #sitemapHtml.close()
+print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()

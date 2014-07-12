@@ -1,93 +1,16 @@
-<div id="sub_box2">
-				<p class="tit_position3">
-					
-					<input id="" class="blind" type="radio" name="birth_type" checked ></input> ¼­¿ïÃâ¹ß
-					
-				</p>
-				<p class="tit_position2">
-					
-						<input id="" class="blind" type="radio" name="birth_type"  onclick="location.href='/backpack/list.asp?gotp=B&area=50&detail=B502&menuId=AD' "></input> ºÎ»êÃâ¹ß
-					
-				</p>
-				<span class="text2">
-				<ul>
-					<li class="pp"><a href="/backpack/list.asp?gotp=1&area=50&detail=1502&menuId=AD&orderby=C" >ÃßÃµ¼ø</a> /</li>
-					<li class="pp"><a href="/backpack/list.asp?gotp=1&area=50&detail=1502&menuId=AD&orderby=P" >ÀÎ±â¼ø</a> /</li>
-					<li class="pp"><a href="/backpack/list.asp?gotp=1&area=50&detail=1502&menuId=AD&orderby=H" >³ôÀº °¡°Ý¼ø</a> /</li>
-					<li class="pp"><a href="/backpack/list.asp?gotp=1&area=50&detail=1502&menuId=AD&orderby=L" >³·Àº °¡°Ý¼ø</a></li>
-				</ul>
-				</span>
-			</div>
-			
 
-		<form name="form1">
-			
-
-			<div id="goods_list">
-				<h1 class="bic_h"><a href="show.asp?gotp=1&detail=1502&area=&good_cd=15020098" class="bic_h">[¹Ì±¹] ´ÜÃ¼¹è³¶ ºñ¹ÙÃ¼ 15ÀÏ</a></h1>
-				<!-- <h2>À¯·´> À¯·´È£ÅÚÆÑ> BEST</h2> -->
-				<p class="images_goods"><img src="/images/good_img/50/15020090008_0006B.JPG" alt=" "></p>
-				<span class="goods_text"><a href="show.asp?gotp=1&detail=1502&area=&good_cd=15020098" style="font-size: 12px;">È¥ÀÚ °¡´Â ºÎ´ãÀº ³¡!!<BR>                                                        ÃÖ°íÀÇ °ü±¤µµ½Ã¸¸À» ¸ð¾Æ Àü¹® ÀÎ¼ÖÀÚµéÀÇ µµ¿òÀ» ¹Þ±âµµ ÇÏ¸ç,<BR>                 ÀÚÀ¯·Ó°Ô ¿©Çàµµ ÇÒ ¼ö ÀÖ´Â ÃÖÀûÀÇ ÇÁ·Î±×·¥ÀÔ´Ï´Ù.</a></span>
-				<span class="travel_box">»÷ÇÁ¶õ½Ã½ºÄÚ¤Ó·Î½º¾ØÁ©·¹½º¤Ó¶ó½ºº£°¡½º¤Ó½ÃÄ«°í¤Ó´º¿å</span>
-				<p class="goods_price"><span class="gray2">3,770,000¿ø</span><img src="images/bl3.gif"><span class="orang_big2">2,990,000¿ø~</span></p>
-				<span class="goods_bt"><input type="checkbox" name="checkbox" id="checkbox" onclick="btn('vs15020098');" value="15020098" style="margin-top:9px;" /><a href="javascript:naeilvs();"><img src="images/tra_tt.gif" name="vs15020098" id="vs15020098" border="0" alt="¿©Çàºñ±³"></a><a href="javascript:;" onclick="sview('15020098','0');"><img src="images/btn15.gif" alt="Ãâ¹ßÀÏ º¸±â ¹öÆ°"></a></span>
-			</div>
-			<div id="hcal0" style="display:none;padding:0 0 0 15px;"><!--  style="z-index:9999;position:absolute;visibility:hidden;text-align:center;padding-left:10px; " -->
-				<!-- <a name="loc"> --><!-- border:1px solid #bcbcbc; style="border:1px solid #FF0000;"-->
-				<iframe src="" width='765' height='370' marginwidth='0' marginheight='0' frameborder='no' scrolling='no' name="iframe_list0" id="iframe_list0" target="_self"></iframe>
-			</div>
-			
-
-			<div id="goods_list">
-				<h1 class="bic_h"><a href="show.asp?gotp=1&detail=1502&area=&good_cd=150200910" class="bic_h">[¹Ì±¹] ´ÜÃ¼¹è³¶ Æ÷¸£Å× 15ÀÏ</a></h1>
-				<!-- <h2>À¯·´> À¯·´È£ÅÚÆÑ> BEST</h2> -->
-				<p class="images_goods"><img src="/images/good_img/50/15020090010_0002B.JPG" alt=" "></p>
-				<span class="goods_text"><a href="show.asp?gotp=1&detail=1502&area=&good_cd=150200910" style="font-size: 12px;">¹Ì¼­ºÎ¿Í ¸¶ÀÌ¾Ö¹Ì ±×¸®°í µ¿ºÎ¸¦ ÇÑ ¼Õ¿¡ °Å¸ÓÁæ ¼ö ÀÖ´Â ÃÖ°íÀÇ Âù½º! <BR>´ÙÃ¤·Î¿î ¿©ÇàÀ» Áñ±â´Â ¿©Çà°´¿¡°Ô ÀÎ±â°¡ ¸¹Àº »óÇ° ÀÔ´Ï´Ù.</a></span>
-				<span class="travel_box">»÷ÇÁ¶õ½Ã½ºÄÚ¤Ó·Î½º¾ØÁ©·¹½º¤Ó¸¶ÀÌ¾Ö¹Ì¤Ó´º¿å¤Ó¿ö½ÌÅÏ</span>
-				<p class="goods_price"><span class="gray2">3,590,000¿ø</span><img src="images/bl3.gif"><span class="orang_big2">2,890,000¿ø~</span></p>
-				<span class="goods_bt"><input type="checkbox" name="checkbox" id="checkbox" onclick="btn('vs150200910');" value="150200910" style="margin-top:9px;" /><a href="javascript:naeilvs();"><img src="images/tra_tt.gif" name="vs150200910" id="vs150200910" border="0" alt="¿©Çàºñ±³"></a><a href="javascript:;" onclick="sview('150200910','1');"><img src="images/btn15.gif" alt="Ãâ¹ßÀÏ º¸±â ¹öÆ°"></a></span>
-			</div>
-			<div id="hcal1" style="display:none;padding:0 0 0 15px;"><!--  style="z-index:9999;position:absolute;visibility:hidden;text-align:center;padding-left:10px; " -->
-				<!-- <a name="loc"> --><!-- border:1px solid #bcbcbc; style="border:1px solid #FF0000;"-->
-				<iframe src="" width='765' height='370' marginwidth='0' marginheight='0' frameborder='no' scrolling='no' name="iframe_list1" id="iframe_list1" target="_self"></iframe>
-			</div>
-			
-
-			<div id="goods_list">
-				<h1 class="bic_h"><a href="show.asp?gotp=1&detail=1502&area=&good_cd=150200911" class="bic_h">[¹Ì±¹] ´ÜÃ¼¹è³¶ Ä­Å¸ºô·¹ 20ÀÏ</a></h1>
-				<!-- <h2>À¯·´> À¯·´È£ÅÚÆÑ> BEST</h2> -->
-				<p class="images_goods"><img src="/images/good_img/50/15020090011_0002B.JPG" alt=" "></p>
-				<span class="goods_text"><a href="show.asp?gotp=1&detail=1502&area=&good_cd=150200911" style="font-size: 12px;">´º¿å¿¡¼­ ½ÃÀÛÇØ¼­ ÈÞ¾çÁö ÇÏ¿ÍÀÌ±îÁö ÇÔ²² Æ÷ÇÔµÈ »óÇ°À¸·Î <br>¹Ì±¹ µ¿ºÎ¼­ºÎÀÇ ´ÙÃ¤·Î¿î ¸Å·Â°ú ÇÔ²² ÇÏ¿ÍÀÌÀÇ ¹®È­¸¦ ÇÔ²²<br>Áñ±æ ¼ö ÀÖ´Â ÇÁ·Î±×·¥ÀÔ´Ï´Ù.</a></span>
-				<span class="travel_box">´º¿å¤Ó½ÃÄ«°í¤Ó¶ó½ºº£°¡½º¤Ó·Î½º¾ØÁ©·¹½º¤Ó»÷ÇÁ¶õ½Ã½ºÄÚ¤ÓÇÏ¿ÍÀÌ</span>
-				<p class="goods_price"><span class="gray2">4,590,000¿ø</span><img src="images/bl3.gif"><span class="orang_big2">3,990,000¿ø~</span></p>
-				<span class="goods_bt"><input type="checkbox" name="checkbox" id="checkbox" onclick="btn('vs150200911');" value="150200911" style="margin-top:9px;" /><a href="javascript:naeilvs();"><img src="images/tra_tt.gif" name="vs150200911" id="vs150200911" border="0" alt="¿©Çàºñ±³"></a><a href="javascript:;" onclick="sview('150200911','2');"><img src="images/btn15.gif" alt="Ãâ¹ßÀÏ º¸±â ¹öÆ°"></a></span>
-			</div>
-			<div id="hcal2" style="display:none;padding:0 0 0 15px;"><!--  style="z-index:9999;position:absolute;visibility:hidden;text-align:center;padding-left:10px; " -->
-				<!-- <a name="loc"> --><!-- border:1px solid #bcbcbc; style="border:1px solid #FF0000;"-->
-				<iframe src="" width='765' height='370' marginwidth='0' marginheight='0' frameborder='no' scrolling='no' name="iframe_list2" id="iframe_list2" target="_self"></iframe>
-			</div>
-			
-
-			<div id="goods_list">
-				<h1 class="bic_h"><a href="show.asp?gotp=1&detail=1502&area=&good_cd=15020109" class="bic_h">[Ä³³ª´Ù] ´ÜÃ¼ ¹è³¶ ¾Æ´ÙÁö¿À 15ÀÏ</a></h1>
-				<!-- <h2>À¯·´> À¯·´È£ÅÚÆÑ> BEST</h2> -->
-				<p class="images_goods"><img src="/images/good_img/50/15020100009_0002B.JPG" alt=" "></p>
-				<span class="goods_text"><a href="show.asp?gotp=1&detail=1502&area=&good_cd=15020109" style="font-size: 12px;">À¯¼­ ±íÀº ³¶¸¸ÀÇ µµ½Ã ºòÅä¸®¾Æ, Àþ°í ¾×Æ¼ºêÇÑ ÈÖ½½·¯, <BR>µµ½Ã¿Í ÀÚ¿¬ÀÌ ¾î¿ì·¯Áø ¹êÄí¹ö¿Í ÇÔ²² <BR>·ÎÅ° »ê¸Æ±îÁö µ¹¾Æº¸½Ç ¼ö ÀÖ´Â »óÇ° ÀÔ´Ï´Ù.</a></span>
-				<span class="travel_box">º¥Äí¹ö¤ÓºòÅä¸®¾Æ¤ÓÈÖ½½·¯¤Ó¹êÇÁ¤ÓÄ¶°Å¸®¤Ó³ªÀÌ¾Æ°¡¶ó¤ÓÅä·ÐÅä</span>
-				<p class="goods_price"><span class="gray2">3,550,000¿ø</span><img src="images/bl3.gif"><span class="orang_big2">2,950,000¿ø~</span></p>
-				<span class="goods_bt"><input type="checkbox" name="checkbox" id="checkbox" onclick="btn('vs15020109');" value="15020109" style="margin-top:9px;" /><a href="javascript:naeilvs();"><img src="images/tra_tt.gif" name="vs15020109" id="vs15020109" border="0" alt="¿©Çàºñ±³"></a><a href="javascript:;" onclick="sview('15020109','3');"><img src="images/btn15.gif" alt="Ãâ¹ßÀÏ º¸±â ¹öÆ°"></a></span>
-			</div>
-			<div id="hcal3" style="display:none;padding:0 0 0 15px;"><!--  style="z-index:9999;position:absolute;visibility:hidden;text-align:center;padding-left:10px; " -->
-				<!-- <a name="loc"> --><!-- border:1px solid #bcbcbc; style="border:1px solid #FF0000;"-->
-				<iframe src="" width='765' height='370' marginwidth='0' marginheight='0' frameborder='no' scrolling='no' name="iframe_list3" id="iframe_list3" target="_self"></iframe>
-			</div>
-			
-			<!-- left:200; top:0; display:none;cellpadding:0px;filter:alpha(opacity=85); opacity:0.3; -moz-opacity:0.3; -->
-			<input type="hidden" name="totalcount" value="4">
-		</form>
-		</div>
-    </div>
-</div>
-<script>
-<!--
-
+            <tr>
+            <td colspan="7">ê²€ìƒ‰ëœ ìƒí’ˆì´ ì—†ìŠµë‹ˆë‹¤.</td>
+        </tr>
+<script type="text/javascript">
+    //<![CDATA[
+    $(function () {
+        $(".listB_menu").delegate(".table_ov", "mouseenter", function () {
+            $(this).find("td").css("background", "#f5f5f5");
+        });
+        $(".listB_menu").delegate(".table_ov", "mouseleave", function () {
+            $(this).find("td").css("background", "#fff");
+        });
+    });
+    //]]>
+</script>

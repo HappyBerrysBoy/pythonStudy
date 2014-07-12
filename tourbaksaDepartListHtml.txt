@@ -4,234 +4,36 @@
 							<div class="pointBox">
 								<div>
 									
-									<h3>[한 번에 ALL KILL] 항공권 + 숙박권 + 도요타 렌터카 </h3>
+									<h3>일본 자전거 여행 1탄, 일본 3대 명산 다이센(大山)으로~!</h3>
 									<p class="price">
 										
-												<span class="colorOrg">469,000원</span> ~ 1,049,000원
+												<span class="colorOrg">259,000원</span> ~ 259,000원
 												
-										<!--<span class="itemNum">[JWBS35]</span>-->
+										<!--<span class="itemNum">[JNBS31]</span>-->
 									</p>
 								</div>
-								<img src="http://image.tourbaksa.com/New/item/2012/12/20121227214038.jpg" alt=""  width='129' height='82'/>
+								<img src="http://image.tourbaksa.com/New/item/2012/10/20121020164257.jpg" alt=""  width='129' height='82'/>
 							</div>
 								<ul class="itemList">
 								<li>
-									<div id="ItemGroupJWBS35_4">
+									<div id="ItemGroupJNBS31_1">
 										<div class="leftSide">
-											<h4><!--<a href="javascript:Loding_items('JWBS', '35', '4', '20140701', 'false', this);">-->[실속형] 나하시내 호텔 루트 인 나하 토마리코 3박4일</h4>
-											<p class="note">항공권+숙박권+전일정 렌터카(1000cc)+여행자보험 ALL IN ONE!</p>
+											<h4><!--<a href="javascript:Loding_items('JNBS', '31', '1', '20140701', 'false', this);">-->★돗토리현 다이센(大山)★ 바다와 산 그리고 도시, 자전거로 떠나는 여행  </h4>
+											<p class="note">목요일) 동해항 출발 18:00 → 금요일) 사카이미나토 도착 09:00</p>
 											<div>
-												<span class="detail">3박4일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/LJ.gif" onerror="this.src='/images/item/air/default.gif';"  class="imgVC" alt="진에어" /> 진에어</span><span class="itemNum detail">JWBS35-4</span>
+												<span class="detail">3박4일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/DB.gif" onerror="this.src='/images/item/air/11.gif';"  class="imgVC" alt="DBS훼리" /> DBS훼리</span><span class="itemNum detail">JNBS31-1</span>
 											</div>
 										</div>
 										<div class="rightSide">
 											<p class="price">
 												
-														<span class="colorOrg2">469,000원</span> ~ 779,000원
+														<span class="colorOrg2">259,000원</span> ~ 259,000원
 														
 											</p>
-											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('JWBS', '35', '4', '20140701', 'false', this);">출발일 보기</button></div>
+											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('JNBS', '31', '1', '20140701', 'false', this);">출발일 보기</button></div>
 										</div>
 									</div>
-									<div style="display:none;" id="DetailJWBS35_4" ></div>
-								</li>
-					
-								<li>
-									<div id="ItemGroupJWBS35_3">
-										<div class="leftSide">
-											<h4><!--<a href="javascript:Loding_items('JWBS', '35', '3', '20140701', 'false', this);">-->[고급형] 라구나가든 리조트+1급 더블트리힐튼나하 3박4일</h4>
-											<p class="note">항공권+숙박권+전일정 렌터카(1000cc)+여행자보험 ALL IN ONE!</p>
-											<div>
-												<span class="detail">3박4일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/LJ.gif" onerror="this.src='/images/item/air/default.gif';"  class="imgVC" alt="진에어" /> 진에어</span><span class="itemNum detail">JWBS35-3</span>
-											</div>
-										</div>
-										<div class="rightSide">
-											<p class="price">
-												
-														<span class="colorOrg2">649,000원</span> ~ 1,049,000원
-														
-											</p>
-											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('JWBS', '35', '3', '20140701', 'false', this);">출발일 보기</button></div>
-										</div>
-									</div>
-									<div style="display:none;" id="DetailJWBS35_3" ></div>
-								</li>
-					</ul>
-	</div>
-
-						<div class="tabCon ship01">
-							<div class="pointBox">
-								<div>
-									
-									<h3>[HI-PASS★에어카텔] ONE CLICK으로 항공+호텔+렌터카까지 한번에 끝!</h3>
-									<p class="price">
-										
-												<span class="colorOrg">539,000원</span> ~ 1,257,000원
-												
-										<!--<span class="itemNum">[JBBS113]</span>-->
-									</p>
-								</div>
-								<img src="http://image.tourbaksa.com/New/item/2013/10/20131011112307.jpg" alt=""  width='129' height='82'/>
-							</div>
-								<ul class="itemList">
-								<li>
-									<div id="ItemGroupJBBS113_3">
-										<div class="leftSide">
-											<h4><!--<a href="javascript:Loding_items('JBBS', '113', '3', '20140701', 'false', this);">-->【에어카텔】진에어라서 가능한 착한♥에어카텔 3박4일</h4>
-											<p class="note">☞ 왕복항공권(진에어)+호텔3박+렌터카 포함.</p>
-											<div>
-												<span class="detail">3박4일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/LJ.gif" onerror="this.src='/images/item/air/default.gif';"  class="imgVC" alt="진에어" /> 진에어</span><span class="itemNum detail">JBBS113-3</span>
-											</div>
-										</div>
-										<div class="rightSide">
-											<p class="price">
-												
-														<span class="colorOrg2">539,000원</span> ~ 999,000원
-														
-											</p>
-											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('JBBS', '113', '3', '20140701', 'false', this);">출발일 보기</button></div>
-										</div>
-									</div>
-									<div style="display:none;" id="DetailJBBS113_3" ></div>
-								</li>
-					
-								<li>
-									<div id="ItemGroupJBBS113_4">
-										<div class="leftSide">
-											<h4><!--<a href="javascript:Loding_items('JBBS', '113', '4', '20140701', 'false', this);">-->【에어카텔】진에어라서 가능한 착한♥에어카텔 4박5일</h4>
-											<p class="note">☞ 왕복항공권(진에어)+호텔4박+렌터카 포함.</p>
-											<div>
-												<span class="detail">4박5일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/LJ.gif" onerror="this.src='/images/item/air/default.gif';"  class="imgVC" alt="진에어" /> 진에어</span><span class="itemNum detail">JBBS113-4</span>
-											</div>
-										</div>
-										<div class="rightSide">
-											<p class="price">
-												
-														<span class="colorOrg2">664,000원</span> ~ 1,062,000원
-														
-											</p>
-											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('JBBS', '113', '4', '20140701', 'false', this);">출발일 보기</button></div>
-										</div>
-									</div>
-									<div style="display:none;" id="DetailJBBS113_4" ></div>
-								</li>
-					
-								<li>
-									<div id="ItemGroupJBBS113_1">
-										<div class="leftSide">
-											<h4><!--<a href="javascript:Loding_items('JBBS', '113', '1', '20140701', 'false', this);">-->【에어카텔】One Click으로 더욱 편해진 홋카이도 3박4일</h4>
-											<p class="note">☞ 왕복항공권(대한항공)+호텔3박+렌터카 포함.</p>
-											<div>
-												<span class="detail">3박4일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/KE.gif" onerror="this.src='/images/item/air/default.gif';"  class="imgVC" alt="대한항공" /> 대한항공</span><span class="itemNum detail">JBBS113-1</span>
-											</div>
-										</div>
-										<div class="rightSide">
-											<p class="price">
-												
-														<span class="colorOrg2">813,000원</span> ~ 1,143,000원
-														
-											</p>
-											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('JBBS', '113', '1', '20140701', 'false', this);">출발일 보기</button></div>
-										</div>
-									</div>
-									<div style="display:none;" id="DetailJBBS113_1" ></div>
-								</li>
-					
-								<li>
-									<div id="ItemGroupJBBS113_2">
-										<div class="leftSide">
-											<h4><!--<a href="javascript:Loding_items('JBBS', '113', '2', '20140701', 'false', this);">-->【에어카텔】One Click으로 더욱 편해진 홋카이도 4박5일</h4>
-											<p class="note">☞ 왕복항공권(대한항공)+호텔4박+렌터카 포함.</p>
-											<div>
-												<span class="detail">4박5일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/KE.gif" onerror="this.src='/images/item/air/default.gif';"  class="imgVC" alt="대한항공" /> 대한항공</span><span class="itemNum detail">JBBS113-2</span>
-											</div>
-										</div>
-										<div class="rightSide">
-											<p class="price">
-												
-														<span class="colorOrg2">914,000원</span> ~ 1,257,000원
-														
-											</p>
-											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('JBBS', '113', '2', '20140701', 'false', this);">출발일 보기</button></div>
-										</div>
-									</div>
-									<div style="display:none;" id="DetailJBBS113_2" ></div>
-								</li>
-					</ul>
-	</div>
-
-						<div class="tabCon ship01">
-							<div class="pointBox">
-								<div>
-									
-									<h3>[ROMANTIC♡NAGASAKI] 나가사키 직/항을 이용하면 가격혜택이 좋다</h3>
-									<p class="price">
-										
-												<span class="colorOrg">349,000원</span> ~ 639,000원
-												
-										<!--<span class="itemNum">[JKBS268]</span>-->
-									</p>
-								</div>
-								<img src="http://image.tourbaksa.com/New/item/2013/10/20131023112620.jpg" alt=""  width='129' height='82'/>
-							</div>
-								<ul class="itemList">
-								<li>
-									<div id="ItemGroupJKBS268_7">
-										<div class="leftSide">
-											<h4><!--<a href="javascript:Loding_items('JKBS', '268', '7', '20140701', 'false', this);">-->[렌트 ro 나가사키] 뛰뛰"빵빵 =33 여행에 날개를 달다 ☜여행☞ 나가사키 렌트카팩</h4>
-											<p class="note">◈금출발◈ 운젠 * 사세보 * 나가사키를 자유롭게 꽉꽉채우다</p>
-											<div>
-												<span class="detail">2박3일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/LJ.gif" onerror="this.src='/images/item/air/default.gif';"  class="imgVC" alt="진에어" /> 진에어</span><span class="itemNum detail">JKBS268-7</span>
-											</div>
-										</div>
-										<div class="rightSide">
-											<p class="price">
-												
-														<span class="colorOrg2">349,000원</span> ~ 639,000원
-														
-											</p>
-											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('JKBS', '268', '7', '20140701', 'false', this);">출발일 보기</button></div>
-										</div>
-									</div>
-									<div style="display:none;" id="DetailJKBS268_7" ></div>
-								</li>
-					</ul>
-	</div>
-
-						<div class="tabCon ship01">
-							<div class="pointBox">
-								<div>
-									
-									<h3>▩ 한국인 가이드와 함께하는 북큐슈 핵심 지역 1일 버스 투어</h3>
-									<p class="price">
-										
-												<span class="colorOrg">49,000원</span> ~ 49,000원
-												
-										<!--<span class="itemNum">[JKUS3]</span>-->
-									</p>
-								</div>
-								<img src="http://image.tourbaksa.com/New/item/2013/4/20130429132421.jpg" alt=""  width='129' height='82'/>
-							</div>
-								<ul class="itemList">
-								<li>
-									<div id="ItemGroupJKUS3_2">
-										<div class="leftSide">
-											<h4><!--<a href="javascript:Loding_items('JKUS', '3', '2', '20140701', 'false', this);">-->[유유1일버스투어] 벳푸+유후인 ＠ 8명 모객시 출발</h4>
-											<p class="note">다자이후텐만구 ▶ 유후인+벳푸 ▶ 후쿠오카시내</p>
-											<div>
-												<span class="detail">0박1일</span><span class="detail liner"><img src="http://www.tourbaksa.com/images/item/air/LT.gif" onerror="this.src='/images/item/air/default.gif';"  class="imgVC" alt="현지투어" /> 현지투어</span><span class="itemNum detail">JKUS3-2</span>
-											</div>
-										</div>
-										<div class="rightSide">
-											<p class="price">
-												
-														<span class="colorOrg2">49,000원</span> ~ 49,000원
-														
-											</p>
-											<div class="viewDate"><button class="btnYellow" onclick="Loding_items('JKUS', '3', '2', '20140701', 'false', this);">출발일 보기</button></div>
-										</div>
-									</div>
-									<div style="display:none;" id="DetailJKUS3_2" ></div>
+									<div style="display:none;" id="DetailJNBS31_1" ></div>
 								</li>
 					</ul>
 	</div>
@@ -335,6 +137,7 @@
 					<li class="personal_info"><a href="/corp/TermsConditions.asp?gubun=AG4">개인정보취급방침</a></li>
 					<li><a href="/corp/alliance/service_adjoin_list.asp">제휴및광고문의</a></li>
 					<li><a href="http://corp.tourbaksa.com/map/map_01_1.asp" target="_blank">찾아오시는길</a></li>
+					<li><a href="http://www.tourbaksa.com/corp/TermsConditions.asp?gubun=AG8" target="_blank">개인정보처리위탁</a></li>
 				</ul>
 				<a href="javascript:ScrollMove('wrapper');" class="btnTop">TOP</a>
 			</div>
@@ -347,7 +150,7 @@
 					<!-- 마크업 수정 : 2013-09-05 -->
 					<span>㈜여행박사 │ 대표 : 주성진 황주영 │ 본사 : 서울시 용산구 한강대로 313 부산지사 : 부산광역시 중구 대청로 148 </span>
 					<span>사업자등록번호 : 105-87-26271 │ 통신판매업신고번호 : 제2010 서울용산 00927호 │ 부가통신사업 신고번호 : 021922 </span>
-					<span>대표전화 : 서울 070-7017-2100 부산 070-7012-7000 │ 팩스 : 02-6008-5717 │ <a href="http://www.tourbaksa.com/corp/TermsConditions.asp?gubun=AG8" style="color:#848484;">외부용역안내</a></span>
+					<span>대표전화 : 서울 070-7017-2100 부산 070-7012-7000 │ 팩스 : 02-6008-5717  <!--│<a href="http://www.tourbaksa.com/corp/TermsConditions.asp?gubun=AG8" style="color:#848484;">외주용역안내</a>--></span>
 					<span>우리 회사는 15억원의 보증보험에 가입되어 있습니다. </span>
 				</address><!-- //마크업 수정 : 2013-09-05 -->
 				<em>Copyright(c) TOURBAKSA.COM All Rights Reserved.</em>

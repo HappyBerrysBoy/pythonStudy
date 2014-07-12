@@ -1,0 +1,460 @@
+Start : Wed Jul 09 21:56:12 2014
+main URL Start!!!!!!!(P) :http://www.hanatour.com/asp/booking/oversea/oversea-main.asp?hanacode=overseas_M_bi
+currcountry : 태국
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=BKK&etc_code=P&hanacode=overseas_GNB_AE_TH_BKK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=PYX&etc_code=P&hanacode=overseas_GNB_AE_TH_PYX
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=AUB&etc_code=P&hanacode=overseas_GNB_AE_TH_CR7
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=CR7&etc_code=P&hanacode=overseas_GNB_AE_TH_AUB
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=BKK&product_name=%uB2E4%uAD6D%uAC00&etc_code=P&hanacode=overseas_GNB_AE_ALL_BCA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=HKT&etc_code=P&hanacode=overseas_GNB_AE_TH_HKT
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=CNX&etc_code=P&hanacode=overseas_GNB_AE_TH_CNX
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=RYG&product_name=%uB77C%uC6A9&etc_code=P&hanacode=overseas_GNB_AE_TH_RYG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=USM&etc_code=P&hanacode=overseas_GNB_AE_TH_USM
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=HHQ&etc_code=P&hanacode=overseas_GNB_AE_TH_HHQ
+currcountry : 필리핀
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=CEB&etc_code=P&hanacode=overseas_GNB_AE_PH_CEB
+Depth 2 : <class 'cx_Oracle.DatabaseError'>
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=KLO&etc_code=P&hanacode=overseas_GNB_AE_PH_KLO
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=MNL&etc_code=P&hanacode=overseas_GNB_AE_PH_MNL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&product_name=%uB9C8%uB2D0%uB77C/%uBCF4%uB77C%uCE74%uC774&etc_code=P&hanacode=overseas_GNB_AE_PH_MNL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=BT3&etc_code=P&hanacode=overseas_GNB_AE_PH_PRW
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=P&pub_country=&pub_city=ENI
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=CRK&etc_code=P&hanacode=overseas_GNB_AE_PH_CRK
+currcountry : 베트남&amp;캄보디아
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=VN&etc_code=P&hanacode=overseas_GNB_AE_VN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=VN&pub_city=HAN&etc_code=P&hanacode=overseas_GNB_AE_VN_HAN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=VN&pub_city=DAD&etc_code=P&hanacode=overseas_GNB_AE_VN_DAD
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=VN&pub_city=NHA&etc_code=P&hanacode=overseas_GNB_AE_VN_NHA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_city=SGN&etc_code=P&hanacode=overseas_GNB_AE_VN_SGN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=VN&product_name=%uB2E4%uAD6D%uAC00&etc_code=P&hanacode=overseas_GNB_AE_ALL_VNA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=VN&product_name=%uC559%uCF54&etc_code=P&hanacode=overseas_GNB_AE_ALL_VNC
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=KH&etc_code=P&hanacode=overseas_GNB_AE_VN_CAM
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=KH&pub_city=REP&etc_code=P&hanacode=overseas_GNB_AE_KH_KHREP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=KH&pub_city=PNH&etc_code=P&hanacode=overseas_GNB_AE_KH_PNH
+currcountry : 인도네시아
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=ID&pub_city=DPS&etc_code=P&hanacode=overseas_GNB_AE_ID_DPS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=ID&pub_city=AMI&etc_code=P&hanacode=overseas_GNB_AE_ID_AMI
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=A&pub_country=ID&pub_city=JKT&hanacode=overseas_GNB_AE_ID_JK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=A&pub_country=ID&pub_city=JOG&hanacode=overseas_GNB_AE_ID_JOG
+currcountry : 말레이시아
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MY&pub_city=BKI&etc_code=P&hanacode=overseas_GNB_AE_MY_BKI
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MY&pub_city=KUL&etc_code=P&hanacode=overseas_GNB_AE_MY_KUL
+Depth 3 : <class 'urllib2.URLError'>
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=A&pub_country=MY&pub_city=CK7&hanacode=overseas_GNB_AE_MY_PDS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MY&pub_city=LGK&etc_code=P&hanacode=overseas_GNB_AE_MY_LGK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=A&pub_country=MY&pub_city=JHB&start_city=JCN&hanacode=overseas_GNB_AE_MY_JHB
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MY&product_name=%uB2E4%uAD6D%uAC00&etc_code=P&hanacode=overseas_GNB_AE_ALL_MAL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MY&pub_city=KUL&product_name=%uB2E4%uAD6D%uAC00&etc_code=P&hanacode=overseas_GNB_AE_ALL_MALK
+currcountry : 싱가포르
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=SG&pub_city=SIN&etc_code=P&hanacode=overseas_GNB_AE_ST_SG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=ID&pub_city=BIF&etc_code=P&hanacode=overseas_GNB_AE_ST_BIF
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=ID&pub_city=BTH&etc_code=P&hanacode=overseas_GNB_AE_ST_BAT
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=SG&pub_city=SIN&product_name=%uB2E4%uAD6D%uAC00&etc_code=P&hanacode=overseas_GNB_AE_ALL_SIG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=SG&pub_city=SIN&product_name=%uBCA0%uD2B8%uB0A8&etc_code=P&hanacode=overseas_GNB_AE_ALL_SIGA
+currcountry : 대만
+currcountry : 이색여행
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=IN&etc_code=P&hanacode=overseas_GNB_AE_IN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MM&etc_code=P&hanacode=overseas_GNB_AE_MM
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=NP&etc_code=P&hanacode=overseas_GNB_AE_NP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=LA&etc_code=P&hanacode=overseas_GNB_AE_LA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=LK&etc_code=P&hanacode=overseas_GNB_AE_LK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MV&etc_code=P&hanacode=overseas_GNB_AE_MV
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=CQ&etc_code=P&hanacode=overseas_GNB_CN_etc" target="">특수지역</a></strong></li><li><strong><a href="
+
+Depth 2 : <class 'urllib2.HTTPError'>
+currcountry : 관동(간토)
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=TYO&etc_code=P&hanacode=overseas_GNB_JP_kanto_TYO
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=YOK&etc_code=P&hanacode=overseas_GNB_JP_kanto_YOK
+Depth 2 : <class 'cx_Oracle.DatabaseError'>
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=HKO&etc_code=P&hanacode=overseas_GNB_JP_kanto_HKO
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=BT8&hanacode=overseas_GNB_JP_kanto_BT8
+currcountry : 관서(간사이)
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=OSA&etc_code=P&hanacode=overseas_GNB_JP_kansai_OSA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=UKY&etc_code=P&hanacode=overseas_GNB_JP_kansai_UKY
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=ARN&etc_code=P&hanacode=overseas_GNB_JP_kansai_ARN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=UKB&etc_code=P&hanacode=overseas_GNB_JP_kansai_UKB
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=SHM&etc_code=P&hanacode=overseas_GNB_JP_kansai_SHM
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=QKY&hanacode=overseas_GNB_JP_kansai_WKY
+currcountry : 규슈/오키나와
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=FUK&etc_code=P&hanacode=overseas_GNB_JP_JKJN_FUK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=KMJ&etc_code=P&hanacode=overseas_GNB_JP_JKJN_KMJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=NGS&etc_code=P&hanacode=overseas_GNB_JP_JKJN_NGS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=BPU&etc_code=P&hanacode=overseas_GNB_JP_JKJN_BPU
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=KOJ&etc_code=P&hanacode=overseas_GNB_JP_JKJN_KOJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=KMI&etc_code=P&hanacode=overseas_GNB_JP_JKJN_KMI
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=HSG&hanacode=overseas_GNB_JP_JKJN_HSG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=B45&etc_code=P&hanacode=overseas_GNB_JP_JKJN_B45
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=B46&etc_code=P&hanacode=overseas_GNB_JP_JKJN_B46
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=B07&etc_code=P&hanacode=overseas_GNB_JP_JKJN_B07
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=JW&etc_code=P&hanacode=overseas_GNB_JP_OKA
+currcountry : 홋카이도/토호쿠
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=SPK&etc_code=P&hanacode=overseas_GNB_JP_JS_SPK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=994&etc_code=P&hanacode=overseas_GNB_JP_JS_OTR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=AKJ&etc_code=P&hanacode=overseas_GNB_JP_JS_AKJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=HKD&etc_code=P&hanacode=overseas_GNB_JP_JS_HKD
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=993&hanacode=overseas_GNB_JP_JS_NBR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=AL3&etc_code=P&hanacode=overseas_GNB_JP_JS_FRN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=AL1&etc_code=P&hanacode=overseas_GNB_JP_AL1
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=AL4&etc_code=P&hanacode=overseas_GNB_JP_AL4
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=AK9&etc_code=P&hanacode=overseas_GNB_JP_AK9
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=AOJ&hanacode=overseas_GNB_JP_JAJD_AOJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=AXT&etc_code=P&hanacode=overseas_GNB_JP_JAJD_AXT
+currcountry : 호쿠리쿠/중부
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=TOY&etc_code=P&hanacode=overseas_GNB_JP_JAJD_TOY
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=KMQ&etc_code=P&hanacode=overseas_GNB_JP_JAJD_KMQ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=A49&hanacode=overseas_GNB_JP_JAJD_KNZ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=QSZ&hanacode=overseas_GNB_JP_kanto_FSZ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=NGO&hanacode=overseas_GNB_JP_kansai_NGO
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=CK9&etc_code=P&hanacode=overseas_GNB_JP_kanto_KRZ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=CI9&hanacode=overseas_GNB_JP_kansai_NGO
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=B19&hanacode=overseas_GNB_JP_kansai_NGO
+currcountry : 주고쿠/시코쿠
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=YGJ&etc_code=P&hanacode=overseas_GNB_JP_JYJM_YGJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=AR1&hanacode=overseas_GNB_JP_JYJM_TTJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=HIJ&etc_code=P&hanacode=overseas_GNB_JP_JYJM_HIJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=CK0&etc_code=P&hanacode=overseas_GNB_JP_JYJM_YMG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=OKJ&hanacode=overseas_GNB_JP_JAJD_OKJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=MYJ&hanacode=overseas_GNB_JP_JYJM_MYJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=J&pub_country=JP&pub_city=TAK&hanacode=overseas_GNB_JP_JYJM_TAK
+currcountry : 고치
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=JH&etc_code=P&hanacode=overseas_GNB_JP_JP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&etc_code=P&start_city=PUS&combi_yn=5&hanacode=overseas_GNB_province_PUS_JP
+currcountry : 호주
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=SYD&etc_code=P&hanacode=overseas_GNB_P_AU_SYD
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=OOL&etc_code=P&hanacode=overseas_GNB_P_AU_OOL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=MEL&etc_code=P&hanacode=overseas_GNB_P_AU_MEL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=CNS&etc_code=P&hanacode=overseas_GNB_P_AU_CNS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=AU&pub_city=BNE&hanacode=overseas_GNB_P_AU_BNE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=PTE&etc_code=P&hanacode=overseas_GNB_P_AU_PSP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=AU&pub_city=AV8&hanacode=overseas_GNB_P_AU_URG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=AU&pub_city=PER&hanacode=overseas_GNB_P_AU_PER
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=AU&pub_city=CBR&hanacode=overseas_GNB_P_AU_CBR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=AU&pub_city=HBA&hanacode=overseas_GNB_P_AU_TEZ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=AU&pub_city=AS8&hanacode=overseas_GNB_P_AU_PRE
+currcountry : 뉴질랜드
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=NZ&pub_city=AKL&etc_code=P&hanacode=overseas_GNB_P_NZ_AKL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=NZ&pub_city=ROT&hanacode=overseas_GNB_P_NZ_LTR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=NZ&pub_city=ZQN&etc_code=P&hanacode=overseas_GNB_P_NZ_QST
+currcountry : 크라이스트처치
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=GU&etc_code=P&hanacode=overseas_GNB_P_GU
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=MP&etc_code=P&hanacode=overseas_GNB_P_SPN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=PW&pub_city=&hanacode=overseas_GNB_P_PW
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=FJ&etc_code=P&hanacode=overseas_GNB_P_FJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=NC&etc_code=P&hanacode=overseas_GNB_P_NC
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=VU&etc_code=P&hanacode=overseas_GNB_P_VU
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=PF&etc_code=P&hanacode=overseas_GNB_P_PT
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=MP&pub_city=TIQ&hanacode=overseas_GNB_P_TIN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=D&pub_country=MP&pub_city=ROP&hanacode=overseas_GNB_P_ROT
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&product_name=%uC5F0%uACC4&etc_code=P&hanacode=overseas_GNB_P_AUNZ
+currcountry : 서유럽
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=GB&etc_code=P&hanacode=overseas_GNB_E_westE_GB
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=FR&etc_code=P&hanacode=overseas_GNB_E_westE_FR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=CH&pub_city=&hanacode=overseas_GNB_E_westE_CH
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=IT&pub_city=&hanacode=overseas_GNB_E_westE_IT
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=DE&etc_code=P&hanacode=overseas_GNB_E_westE_DE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=NL&etc_code=P&hanacode=overseas_GNB_E_westE_NL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=BE&pub_city=&hanacode=overseas_GNB_E_westE_BEL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=LU&pub_city=&hanacode=overseas_GNB_E_westE_LUX
+currcountry : 동유럽/발칸
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=CZ&etc_code=P&hanacode=overseas_GNB_E_eastE_CZ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=HU&pub_city=&hanacode=overseas_GNB_E_eastE_HU
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=AT&etc_code=P&hanacode=overseas_GNB_E_eastE_AT
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=PL&pub_city=&hanacode=overseas_GNB_E_eastE_PL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=DE&pub_city=&hanacode=overseas_GNB_E_eastE_DE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=SK&etc_code=P&hanacode=overseas_GNB_E_eastE_SK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=SI&etc_code=P&hanacode=overseas_GNB_E_eastE_SI
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=HR&etc_code=P&hanacode=overseas_GNB_E_eastE_HR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=RO&etc_code=P&hanacode=overseas_GNB_E_eastE_RO
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=BG&etc_code=P&hanacode=overseas_GNB_E_eastE_BG
+currcountry : 러시아/북유럽
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=RU&etc_code=P&hanacode=overseas_GNB_E_RUnorthE_RU
+Depth 2 : <class 'cx_Oracle.DatabaseError'>
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=NO&etc_code=P&hanacode=overseas_GNB_E_RUnorthE_NO
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=SE&etc_code=P&hanacode=overseas_GNB_E_RUnorthE_SE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=DK&etc_code=P&hanacode=overseas_GNB_E_RUnorthE_DK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=FI&etc_code=P&hanacode=overseas_GNB_E_RUnorthE_FI
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=LT&etc_code=P&hanacode=overseas_GNB_E_RUnorthE_LT
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=UA&etc_code=P&hanacode=overseas_GNB_E_RUnorthE_UA
+currcountry : 지중해
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=TR&etc_code=P&hanacode=overseas_GNB_E_EM_TR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=GR&etc_code=P&hanacode=overseas_GNB_E_EM_GR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=EG&etc_code=P&hanacode=overseas_GNB_E_EM_EG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=ES&etc_code=P&hanacode=overseas_GNB_E_EM_ES
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=PT&etc_code=P&hanacode=overseas_GNB_E_EM_PT
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=MA&pub_city=&hanacode=overseas_GNB_E_EM_MC
+currcountry : 아프리카
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=F&pub_country=KE&etc_code=P&hanacode=overseas_GNB_F_FC_KE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=F&pub_country=ZA&etc_code=P&hanacode=overseas_GNB_F_FC_ZA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=F&pub_country=TZ&etc_code=P&hanacode=overseas_GNB_F_FC_TZ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=F&pub_country=ZM&etc_code=P&hanacode=overseas_GNB_F_FC_ZM
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=F&pub_country=ZW&etc_code=P&hanacode=overseas_GNB_F_FC_ZW
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=F&pub_country=BW&etc_code=P&hanacode=overseas_GNB_F_FC_BW
+currcountry : 중동
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=AE&etc_code=P&hanacode=overseas_GNB_E_M_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=IL&pub_city=&hanacode=overseas_GNB_E_M_IL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=JO&etc_code=P&hanacode=overseas_GNB_E_M_JO
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=P&area=E&pub_country=IR&pub_city=&hanacode=overseas_GNB_E_M_IR
+currcountry : 중앙아시아
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=UZ&etc_code=P&hanacode=overseas_GNB_E_EC_UZ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=KZ&etc_code=P&hanacode=overseas_GNB_E_EC_KZ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=FQ&etc_code=P&hanacode=overseas_GNB_E_etc" target="">특수지역</a></strong></li><li><strong><a href="
+
+Depth 2 : <class 'urllib2.HTTPError'>
+currcountry : 미국
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=LAX&etc_code=P&hanacode=overseas_GNB_H_US_LAX
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=SFO&etc_code=P&hanacode=overseas_GNB_H_US_SFO
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=LAS&etc_code=P&hanacode=overseas_GNB_H_US_LAS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=NYC&etc_code=P&hanacode=overseas_GNB_H_US_NYC
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=WAS&etc_code=P&hanacode=overseas_GNB_H_US_WAS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=ANC&etc_code=P&hanacode=overseas_GNB_H_US_ASK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=SEA&etc_code=P&hanacode=overseas_GNB_H_US_SEA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=ORL&etc_code=P&hanacode=overseas_GNB_H_US_ORL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=MIA&etc_code=P&hanacode=overseas_GNB_H_US_MIA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=BOS&etc_code=P&hanacode=overseas_GNB_H_US_BOS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=CHI&etc_code=P&hanacode=overseas_GNB_H_US_CHI
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=ATL&etc_code=P&hanacode=overseas_GNB_H_US_ATL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=WYS&etc_code=P&hanacode=overseas_GNB_H_US_YST
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=DTT&etc_code=P&hanacode=overseas_GNB_H_US_DTW
+currcountry : 하와이
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=HNL&etc_code=P&hanacode=overseas_GNB_H_HH_OAH
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=OGG&etc_code=P&hanacode=overseas_GNB_H_HH_OGG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=ITO&etc_code=P&hanacode=overseas_GNB_H_HH_BGI
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=LIH&etc_code=P&hanacode=overseas_GNB_H_HH_LIH
+currcountry : 캐나다
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YVR&etc_code=P&hanacode=overseas_GNB_H_CA_YVR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YYJ&etc_code=P&hanacode=overseas_GNB_H_CA_VVJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YYC&etc_code=P&hanacode=overseas_GNB_H_CA_YYC
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YOW&etc_code=P&hanacode=overseas_GNB_H_CA_YOW
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YTO&etc_code=P&hanacode=overseas_GNB_H_CA_YYZ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YWS&etc_code=P&hanacode=overseas_GNB_H_CA_VWS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YBA&etc_code=P&hanacode=overseas_GNB_H_CA_YBA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YGK&etc_code=P&hanacode=overseas_GNB_H_CA_YGK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=XLV&etc_code=P&hanacode=overseas_GNB_H_CA_XLV
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YQB&etc_code=P&hanacode=overseas_GNB_H_CA_YQB
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&pub_city=YMQ&etc_code=P&hanacode=overseas_GNB_H_CA_YUL
+currcountry : 중남미
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=BR&etc_code=P&hanacode=overseas_GNB_H_SCSS_BR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=CL&etc_code=P&hanacode=overseas_GNB_H_SCSS_CL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=MX&etc_code=P&hanacode=overseas_GNB_H_SCSS_MX
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=AR&etc_code=P&hanacode=overseas_GNB_H_SCSS_AR
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=PE&etc_code=P&hanacode=overseas_GNB_H_SCSS_PE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=CU&etc_code=P&hanacode=overseas_GNB_H_SCSS_CU
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=PA&pub_city=PTY&etc_code=P&hanacode=overseas_GNB_H_SCSS_PA
+currcountry : 부산출발-동남아
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=HKT&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=MNL&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=CEB&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=KLO&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=SG&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=ID&pub_city=DPS&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=VN&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=KH&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MM&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=LA&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=P&start_city=PUS&subject=%uD0C0%uC774%uD398%uC774&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=P&start_city=PUS&subject=%uAE4C%uC624%uC29D&hanacode=overseas_GNB_province_PUS_CN
+currcountry : 부산출발-중국
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=BJS&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=SHA&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=CGO&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=SJW&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=HK&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=DYG&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&etc_code=P&start_city=PUS&subject=%uBC31%uB450%uC0B0&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=CTU&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=SIA&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=YMA&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=KWL&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=KMG&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=TAO&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=WEH&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=CAN&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_CN
+currcountry : 부산출발-일본
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=TYO&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_JP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=OSA&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_JP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=FUK&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_JP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=TOY&&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_JP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=SPK&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_JP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=JH&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_JP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=OKA&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_JP
+currcountry : 부산출발-기타
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=HW&pub_country=US&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=HU&pub_country=US&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=HE&pub_country=US&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=HA&pub_country=US&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=CA&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=HH&pub_country=US&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=EW&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=EE&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=EN&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=EM&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=NZ&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=GU&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=MP&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=SS&etc_code=P&start_city=PUS&hanacode=overseas_GNB_province_PUS_etc
+currcountry : 대구출발
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=BJS&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_BJS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=SHA&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_SHA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=DYG&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_DYG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=HGH&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_HGH
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=YMA&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_YMA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=BYC&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_BYC
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=A41&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_A41
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=KWL&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_KWL
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=SIA&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_SIA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=KMG&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_KMG
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=B26&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_B26
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=HK&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_HK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=JP&etc_code=P&start_city=TAE&hanacode=overseas_GNB_province_TAE_JP
+currcountry : 광주출발
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=P&start_city=MWX&hanacode=overseas_GNB_province_KWJ_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=P&start_city=MWX&hanacode=overseas_GNB_province_KWJ_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&etc_code=P&start_city=KWJ&hanacode=overseas_GNB_province_KWJ_JP
+currcountry : 청주출발
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=P&start_city=CJJ&hanacode=overseas_GNB_province_CJJ_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=P&start_city=CJJ&hanacode=overseas_GNB_province_CJJ_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&etc_code=P&start_city=CJJ&hanacode=overseas_GNB_province_CJJ_JP
+currcountry : 제주출발
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=P&start_city=CJU&hanacode=overseas_GNB_province_CJU_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=P&start_city=CJU&hanacode=overseas_GNB_province_CJU_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&etc_code=P&start_city=CJU&hanacode=overseas_GNB_province_CJU_JP
+currcountry : 강원출발
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&etc_code=P&start_city=DGH&hanacode=overseas_GNB_province_GW_JP
+Depth 3 : <class 'urllib2.HTTPError'>
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&etc_code=P&start_city=AE9&hanacode=overseas_GNB_province_GW_EU
+Depth 3 : <class 'urllib2.HTTPError'>
+main URL Start!!!!!!!(W) :http://www.hanatour.com/asp/booking/honeymoon/hr-main.asp?hanacode=main_q_pack_honey
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=KLO&etc_code=W&hanacode=honey_GNB_BORA
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=FJ&pub_city=NAN&etc_code=W&hanacode=honey_GNB_PW
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=GU&etc_code=W&hanacode=honey_GNB_GU
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=PA&etc_code=W&hanacode=honey_GNB_AU
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&etc_code=W&hanacode=honey_GNB_E
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=BT3&etc_code=W&hanacode=honey_GNB_more_AE_02','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=USM&etc_code=W&hanacode=honey_GNB_more_AE_03','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=VN&pub_city=DAD&etc_code=W&hanacode=honey_GNB_more_AE_07','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MY&pub_city=BKI&etc_code=W&hanacode=honey_GNB_more_AE_08','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MY&pub_city=LGK&etc_code=W&hanacode=honey_GNB_more_AE_09','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=ID&pub_city=BIF&etc_code=W&hanacode=honey_GNB_more_AE_10','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=PA&etc_code=W&hanacode=honey_GNB_more_P
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=MP&pub_city=SPN&etc_code=W&hanacode=honey_GNB_more_P_01','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=MP&pub_city=TIQ&etc_code=W&hanacode=honey_GNB_more_P_02','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=PW&etc_code=W&hanacode=honey_GNB_more_P_03','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=NC&etc_code=W&hanacode=honey_GNB_more_P_04','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=PF&etc_code=W&hanacode=honey_GNB_more_P_05','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=SYD&etc_code=W&hanacode=honey_GNB_more_P_06','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=OOL&etc_code=W&hanacode=honey_GNB_more_P_07','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=MEL&etc_code=W&hanacode=honey_GNB_more_P_08','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=CNS&etc_code=W&hanacode=honey_GNB_more_P_09','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=AU&pub_city=HTI&etc_code=W&hanacode=honey_GNB_more_P_10','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=NZ&etc_code=W&hanacode=honey_GNB_more_P_11','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&etc_code=W&hanacode=honey_GNB_more_E
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=FR&etc_code=W&hanacode=honey_GNB_E_01','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=CH&etc_code=W&hanacode=honey_GNB_E_02','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=IT&etc_code=W&hanacode=honey_GNB_E_03','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=CZ&etc_code=W&hanacode=honey_GNB_E_04','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=AT&etc_code=W&hanacode=honey_GNB_E_05','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=GR&etc_code=W&hanacode=honey_GNB_E_06','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=TR&etc_code=W&hanacode=honey_GNB_E_07','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&pub_country=ES&etc_code=W&hanacode=honey_GNB_E_08','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=FC&pub_country=MU&etc_code=W&hanacode=honey_GNB_E_09','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=FC&pub_country=SC&etc_code=W&hanacode=honey_GNB_E_10','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&etc_code=W&hanacode=honey_GNB_more_H
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=LAX&etc_code=W&hanacode=honey_GNB_H_02','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=LAS&etc_code=W&hanacode=honey_GNB_H_03','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=NYC&etc_code=W&hanacode=honey_GNB_H_04','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&pub_country=US&pub_city=MIA&etc_code=W&hanacode=honey_GNB_H_06','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=MX&pub_city=CUN&etc_code=W&hanacode=honey_GNB_H_05','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=MX&pub_city=SJD&etc_code=W&hanacode=honey_GNB_H_07','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=C&pub_country=BS&pub_city=NAS&etc_code=W&hanacode=honey_GNB_H_08','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=TYO&etc_code=W&hanacode=honey_GNB_JP_02','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=SPK&etc_code=W&hanacode=honey_GNB_JP_03','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=OSA&etc_code=W&hanacode=honey_GNB_JP_04','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=OKA&etc_code=W&hanacode=honey_GNB_JP_05','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=HK&pub_city=HKG&etc_code=W&hanacode=honey_GNB_more_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=HK&pub_city=HKG&etc_code=W&hanacode=honey_GNB_CN_02','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=CN&pub_city=SYX&etc_code=W&hanacode=honey_GNB_CN_02','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=K&pub_city=CJU&etc_code=W&hanacode=honey_GNB_more_AK
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=K&pub_city=CJU&etc_code=W&hanacode=honey_GNB_more_AK_01','_self');
+main URL Start!!!!!!!(G) :http://www.hanatour.com/asp/booking/golf/golf-main.asp?hanacode=main_q_pack_golf
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&etc_code=G&hanacode=golf_GNB_overseas_AE
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=CRK&etc_code=G&hanacode=golf_GNB_overseas_AE_CRK','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=PH&pub_city=MNL&etc_code=G&hanacode=golf_GNB_overseas_AE_MNL','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&etc_code=G&hanacode=golf_GNB_overseas_AE_TH','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=TH&pub_city=CNX&etc_code=G&hanacode=golf_GNB_overseas_AE_CNX','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MY&etc_code=G&hanacode=golf_GNB_overseas_AE_MY','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=ID&etc_code=G&hanacode=golf_GNB_overseas_AE_SIN','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=VN&etc_code=G&hanacode=golf_GNB_overseas_AE_VN','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=KH&etc_code=G&hanacode=golf_GNB_overseas_AE_KH','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=LA&etc_code=G&hanacode=overseas_GNB_overseas_AE_LA','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&pub_country=MM&pub_city=RGN&etc_code=G&hanacode=golf_GNB_overseas_AE_MM','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&pub_country=TW&etc_code=G&hanacode=golf_GNB_overseas_AE_TW','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=CS&etc_code=G&hanacode=golf_GNB_overseas_CN
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=TAO&hanacode=overseas_GNB_CN_TAO','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=YNT&hanacode=overseas_GNB_CN_YNT','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=WEH&hanacode=overseas_GNB_CN_WEH','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=DLC&hanacode=overseas_GNB_CN_CBS_DLC','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=YNJ&hanacode=overseas_GNB_CN_CBS_YNJ','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=SHA&hanacode=overseas_GNB_CN','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=YMA&hanacode=overseas_GNB_CN_SHATXN_YMA','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=kMG&hanacode=overseas_GNB_CN_KMGSYX_KMG','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=BJS&hanacode=overseas_GNB_CN_PEKSHA_PEK','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=kWL&hanacode=overseas_GNB_CN_KMGSYX_KWL','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=CH&etc_code=G&hanacode=golf_GNB_overseas_CN_SZX','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=CI&etc_code=G&hanacode=golf_GNB_overseas_CN_CIG','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&pub_country=CN&pub_city=xmn&hanacode=overseas_GNB_CN_KMGSYX_XMN','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=JK&etc_code=G&hanacode=golf_GNB_overseas_JP
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=FUK&etc_code=G&hanacode=overseas_GNB_JP_JKJN_FUK','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=NGS&etc_code=G&hanacode=overseas_GNB_JP_JKJN_NGS','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=KMI&etc_code=G&hanacode=overseas_GNB_JP_JKJN_KMI','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=KOJ&etc_code=G&hanacode=overseas_GNB_JP_JKJN_KOJ','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=JW&etc_code=G&hanacode=overseas_GNB_JP_OKA','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=SPK&etc_code=G&hanacode=overseas_GNB_JP_JS_SPK','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&pub_country=JP&pub_city=OSA&etc_code=G&hanacode=overseas_GNB_JP_kansai_OSA','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=G&area=J&pub_country=JP&pub_city=NGO&hanacode=overseas_GNB_JP_kansai_NGO','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?etc_code=G&area=J&pub_country=JP&pub_city=MYJ&hanacode=overseas_GNB_JP_JYJM_MYJ','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=GU&etc_code=G&hanacode=golf_GNB_overseas_P
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=GU&etc_code=G&hanacode=golf_GNB_overseas_P_GU','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&pub_country=MP&etc_code=G&hanacode=golf_GNB_overseas_P_PSG','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&etc_code=G&hanacode=golf_GNB_overseas_E
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&etc_code=G&hanacode=golf_GNB_overseas_E_W','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&etc_code=G&hanacode=golf_GNB_overseas_E_UZ','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&etc_code=G&hanacode=golf_GNB_overseas_H
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&etc_code=G&hanacode=golf_GNB_overseas_H_HH','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&etc_code=G&hanacode=golf_GNB_overseas_H_US','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=K&pub_country=KR&etc_code=G&product_name=%uACBD%uAE30%uB3C4&hanacode=golf_GNB_domestic_GG','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=K&pub_country=KR&etc_code=G&product_name=%uCDA9%uCCAD&hanacode=golf_GNB_domestic_CC','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=K&pub_country=KR&etc_code=G&product_name=%uAC15%uC6D0&hanacode=golf_GNB_domestic_GW','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=K&pub_country=KR&etc_code=G&product_name=%uACBD%uC0C1&hanacode=golf_GNB_domestic_GS','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=K&pub_country=KR&etc_code=G&product_name=%uC804%uB77C&hanacode=golf_GNB_domestic_JL','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=K&pub_country=KR&etc_code=G&product_name=%uC81C%uC8FC&hanacode=golf_GNB_domestic_JJ','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=G&start_city=PUS&hanacode=golf_GNB_province_PUS
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=G&start_city=PUS&hanacode=golf_GNB_province_PUS','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&start_city=PUS&hanacode=golf_GNB_province_PUS','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&etc_code=G&start_city=PUS&hanacode=golf_GNB_province_PUS','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=D&etc_code=G&start_city=PUS&hanacode=golf_GNB_province_PUS','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&etc_code=G&start_city=PUS&hanacode=golf_GNB_province_PUS','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=G&start_city=KWJ&hanacode=golf_GNB_province_KWJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=G&start_city=MWX&hanacode=golf_GNB_province_KWJ','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&start_city=MWX&hanacode=golf_GNB_province_KWJ','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=G&start_city=CJJ&hanacode=golf_GNB_province_CJJ
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=G&start_city=CJJ&hanacode=golf_GNB_province_CJJ','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=G&start_city=CJJ&hanacode=golf_GNB_province_CJJ','_self');
+main URL Start!!!!!!!(C) :http://www.hanatour.com/asp/booking/cruise/cruise-main.asp?hanacode=main_q_pack_cruise
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=C&hanacode=cruise_GNB_A
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=A&etc_code=C&hanacode=cruise_GNB_A_AE','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=B&etc_code=C&hanacode=cruise_GNB_A_CN','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=CC&etc_code=C&hanacode=cruise_GNB_A_KCJ','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=J&etc_code=C&hanacode=cruise_GNB_A_JP','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=EM&etc_code=C&hanacode=cruise_GNB_E_EM
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=E&etc_code=C&hanacode=cruise_GNB_E
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=EA&etc_code=C&hanacode=cruise_GNB_E_ME','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=EW&etc_code=C&tour_scheduled_year=2014&tour_scheduled_month=07&hanacode=cruise_GNB_EW','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=G&etc_code=C&hanacode=cruise_GNB_H
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=HA&etc_code=C&hanacode=cruise_GNB_H_CS','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=SC&etc_code=C&hanacode=cruise_GNB_H_CS','_self');
+Package Url : http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=HH&etc_code=C&hanacode=cruise_GNB_H_HH','_self');
+End : Wed Jul 09 22:28:47 2014

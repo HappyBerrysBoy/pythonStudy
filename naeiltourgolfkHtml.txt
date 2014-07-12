@@ -43,11 +43,12 @@ top_menu">
 				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F302" onMouseOver="top03.src='/GMT/images/menu3_over.gif';"  onmouseout="top03.src='/GMT/images/menu3_off.gif';">
 					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F302';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>미야자끼/가고시마/오키나와</td></tr></table>
 					</a></li>
-				<!-- <li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F303" onMouseOver="top03.src='/GMT/images/menu3_over.gif';"  onmouseout="top03.src='/GMT/images/menu3_off.gif';">
-					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F303';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>동경/오사카/나고야/히로시마</td></tr></table>
-					</a></li> -->
+				
 				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F304" onMouseOver="top03.src='/GMT/images/menu3_over.gif';"  onmouseout="top03.src='/GMT/images/menu3_off.gif';">
 					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F304';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>북해도/아키타/아오모리</td></tr></table>
+					</a></li>
+				<li><a href="/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F303" onMouseOver="top03.src='/GMT/images/menu3_over.gif';"  onmouseout="top03.src='/GMT/images/menu3_off.gif';">
+					<table width="100%" border="0" onclick="location.href='/GMT/list.asp?menuId=DA&gotp=F&step_area=30&sub_area_cd=F303';"><tr><td style="color:#FFF;text-align:left;padding-left:5px;" onmouseover="this.style.color='#c5e204'" onMouseOut="this.style.color='#FFF'"><img src="/GMT/images/sub_icon.gif"  style="margin-top:10px;margin-right:10px;" border="0"/>오사카/나고야/마츠코</td></tr></table>
 					</a></li>
 			</ul>
 		</li>

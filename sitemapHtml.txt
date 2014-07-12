@@ -26,13 +26,13 @@
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010201">태국_여유롭고 건강한 휴식</a></span>
                             <ul class="depth4">
                                 <li><a href="/Event/EventPlanReview?evtSeq=2893&amp;MenuCode=101020101">쉐라톤일까 자인일까</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101020112">방콕ㅣ파타야 3성급</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101020103">방콕ㅣ파타야 4성급</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101020102">방콕ㅣ파타야 5성급</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101020109">치앙마이ㅣ치앙라이</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101020114">코사무이ㅣ코사멧ㅣ코창</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101020111">칸차나부리ㅣ아유타야</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101020110">방콕_ 항공/호텔/에어텔</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101020112">방콕l파타야 일급/준특급</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101020103">방콕l파타야 특급</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101020102">방콕l파타야 초특급</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101020109">녹색정원 치앙마이</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101020114">코사무이l칸자나부리l아유타야</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101020110">방콕_항공권l에어텔</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101020111">방콕연계상품(홍콩l캄보디아)</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020108">Superclass</a></li>
                             </ul>
                         </li>
@@ -44,7 +44,7 @@
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020202">푸켓 풀빌라</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020205">카오락(골드카드)</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020212">푸켓 자유여행</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101020213">크라비_7월 23일 직항 취항</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101020213">크라비</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101020209">Superclass</a></li>
                             </ul>
                         </li>
@@ -96,28 +96,11 @@
                         </li>
                     </ul>
                     <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010212">홍콩 여심은 여심, 女心은旅心</a></span>
-                            <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=101021201">홍콩|마카오|심천</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101021202">홍콩자유여행</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101021203">Superclass</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101021205">홍콩연계상품(대만|싱가폴)</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010213">싱가폴</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021301">싱가폴 | 바탐 | 빈탄</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021303">싱가폴 자유여행</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021304">싱가폴+홍콩 연계</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010214">대만</a></span>
-                            <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=101021401">대만|야류|화련</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -137,8 +120,8 @@
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021611">2014년 연휴 상품</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021602">보라카이직항_오전출발</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021608">보라카이직항_오후출발</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101021614">세부 3성, 4성 리조트</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101021603">세부 5성 리조트</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101021614">세부 일급/준특급 리조트 </a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101021603">세부 초특급 리조트 </a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021604">세부 시티호텔 | 풀빌라</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021601">마닐라</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101021607">필리핀 자유여행</a></li>
@@ -166,6 +149,12 @@
                 <div class="box ">
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010136">발칸/서유럽_OZ베니스직항</a></span>
+                            <ul class="depth4">
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010137">8월 14일_유럽 가기 좋은 날</a></span>
                             <ul class="depth4">
                             </ul>
                         </li>
@@ -368,6 +357,27 @@
                     </ul>
                 </div>
             </li>
+            <li id="10122" class=""><a href="/Product/Package/PackageRegionMain?MenuCode=10122"><span class="depth_2_title ">홍콩/대만</span></a>
+                <div class="box ">
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1012201">홍콩 여심은 여심, 女心은旅心</a></span>
+                            <ul class="depth4">
+                                <li><a href="/Product/Package/PackageList?MenuCode=101220101">홍콩|마카오|심천</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101220102">홍콩자유여행 </a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101220103">Superclass </a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101220104">홍콩연계상품(대만|싱가폴)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1012202">대만 </a></span>
+                            <ul class="depth4">
+                                <li><a href="/Product/Package/PackageList?MenuCode=101220201">대만|야류|화련</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li id="10108" class=""><a href="/Product/Package/PackageRegionMain?MenuCode=10108"><span class="depth_2_title ">일본</span></a>
                 <div class="box ">
                     <ul class="depth_3">
@@ -379,7 +389,7 @@
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010802">훗카이도_숲,호수,온천</a></span>
                             <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=101080201">삿포로/오타루/노보리벳츠아사히카와/삿포로하코다테/삿포로</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101080201">삿포로/오타루/노보리벳츠아사히카와/비에이/후라노쿠시로/아바시리/시레토코</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -452,6 +462,14 @@
             <li id="10109" class=""><a href="/Product/Package/PackageRegionMain?MenuCode=10109"><span class="depth_2_title ">중국</span></a>
                 <div class="box ">
                     <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010941">여름방학 추천지역</a></span>
+                            <ul class="depth4">
+                                <li><a href="/Product/Package/PackageList?MenuCode=101094101">중국의 PIC_하이커우</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101094102">잊지못할체험_내몽골</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010902">북경</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=101090201">만리장성ㅣ자금성ㅣ용경협백석산 (공중초원과 협곡)</a></li>
@@ -490,7 +508,7 @@
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010934">백두산_하얼빈</a></span>
                             <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=101093401">백두산 단독 상품</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101093401">백두산 단독 상품 / 항공이동</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101093402">백두산 연합 상품</a></li>
                             </ul>
                         </li>
@@ -563,22 +581,6 @@
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010924">Superclass</a></span>
                             <ul class="depth4">
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010935">홍콩 여심은 여심, 女心은旅心</a></span>
-                            <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=101093501">홍콩|마카오|심천</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101093502">홍콩자유여행</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=101093503">Superclass</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="depth_3">
-                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1010936">대만</a></span>
-                            <ul class="depth4">
-                                <li><a href="/Product/Package/PackageList?MenuCode=101093601">대만|야류|화련</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -858,6 +860,7 @@
                                 <li><a href="/Product/Package/PackageList?MenuCode=101210204">홍콩+몰디브</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101210205">방콕+몰디브</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=101210208">싱가폴+몰디브</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=101210209">몰디브+쿠알라룸푸르</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -1071,6 +1074,7 @@
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060606">말레이시아</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060603">쿠알라룸푸르</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060604">랑카위|페낭</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102060608">코타키나발루</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102060607">말레이시아 플러스 자유여행</a></li>
                             </ul>
                         </li>
@@ -1169,6 +1173,7 @@
                                 <li><a href="/Product/Package/PackageList?MenuCode=102090903">사이판 5일 - 오후출발</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102090904">팔라우 </a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=102090905">뉴칼레도니아 </a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=102090910">피지</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -1406,7 +1411,7 @@
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1030603">자연이 열리는_인도차이나</a></span>
                             <ul class="depth4">
                                 <li><a href="/Product/Package/PackageList?MenuCode=103060302">시엠립 | 앙코르와트</a></li>
-                                <li><a href="/Product/Package/PackageList?MenuCode=103060301">하노이 | 하롱베이 | 다낭</a></li>
+                                <li><a href="/Product/Package/PackageList?MenuCode=103060301">다낭 직항ㅣ하노이&amp;하롱베이 </a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=103060309">베트남 &amp; 캄보디아</a></li>
                                 <li><a href="/Product/Package/PackageList?MenuCode=103060303">라오스 | 미얀마</a></li>
                             </ul>
@@ -1815,6 +1820,12 @@
                     </ul>
                     <ul class="depth_3">
                         <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1060502">오하우+마우이</a></span>
+                            <ul class="depth4">
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="depth_3">
+                        <li><span class="depth_3_title"><a href="/Product/Package/PackageList?MenuCode=1060507">오하우+빅아일랜드(코나)</a></span>
                             <ul class="depth4">
                             </ul>
                         </li>

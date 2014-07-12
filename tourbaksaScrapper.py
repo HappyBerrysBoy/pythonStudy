@@ -5,12 +5,13 @@ Created on Wed Jun 11 21:09:59 2014
 @author: KSC
 """
 import urllib2
-import datetime
+import time, datetime
 import sys
 import cx_Oracle
 import savefilegethtml
 import re
 import codes
+import tourQuery
 
 #여행코드 영어4자리 + 숫자
 # 영어 4자리가 뜻하는건... 첫번째 자리 : 국가, 두번째 자리 : 지역 세번째 자리 : 여행종류(P:패키지, H:허니문, G:골프, C:크루즈, S:유럽??, 등..), 네번재 자리 : 출발지역(S:서울, B:부산, D:대구)
@@ -64,10 +65,15 @@ class clsDetailProduct():
         return 'dDay:'+self.dDay+',Price:'+self.price+',status:'+self.status+',url:'+self.url
         
 # 시간 변수들..
-targetYear = '2014'#sys.argv[1]
-targetMonth = '07'#sys.argv[2]
+tourAgency = 'tourbaksa'
+targetYear = sys.argv[1]
+targetMonth = sys.argv[2]
+#targetYear = '2014'
+#targetMonth = '07'
 scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 homepageUrl = 'http://www.tourbaksa.com'
 homepageHtml = urllib2.urlopen(homepageUrl).read()
@@ -93,7 +99,7 @@ for each_line in homepageHtml:
         elif each_line.find('city2') > -1:
             productGroupCls.departCity = 'PUS'
         else:
-            productGroupCls.departCity = 'DK'
+            productGroupCls.departCity = 'TAE'
     elif each_line.find('href="/submain/?') > -1 or each_line.find('href="/SubMain/index.asp?') > -1 or (each_line.find('<li>') < 0 and (each_line.find('Areaindex.asp') > -1 or each_line.find('areaindex.asp') > -1)):
         tourkindGroupCls = clsTourKindGroup()
         tourkindGroupCls.url = each_line.split('href="')[1].split('">')[0]
@@ -112,6 +118,9 @@ for each_line in homepageHtml:
 #homepageHtml.close()
 
 exceptFile = open('tourbaksaException'+scrappingStartTime+'.txt', 'w')
+print >> exceptFile, "Start : %s" % time.ctime()
+
+print menulist
 
 # 메뉴에 다 잘들어 갔나 확인..
 for level1 in menulist:
@@ -122,13 +131,7 @@ for level1 in menulist:
             try:
                 print >> exceptFile, level3.url
                 regionHtml = savefilegethtml.getHtml(level3.url, '<div class="leftArea">', '</nav><!-- //lnb -->', 'tourbaksaRegionHtml.txt', '', '')
-                #regionHtml = urllib2.urlopen(level3.url).read()
-                #regionHtml = regionHtml[regionHtml.find('<div class="leftArea">'):regionHtml.find('</nav><!-- //lnb -->')]
-                #regionHtmlFile = open('tourbaksaRegionHtml.txt', 'w')
-                #print >> regionHtmlFile, regionHtml
-                #regionHtmlFile.close()
                 
-                #regionHtml = open('tourbaksaRegionHtml.txt')
                 for each_line in regionHtml:
                     if each_line.find('<li class="') > -1 and each_line.find('M1=') > -1:
                         #print each_line
@@ -140,13 +143,7 @@ for level1 in menulist:
                         try:
                             print >> exceptFile, cityClass.url
                             departListHtml = savefilegethtml.getHtml(cityClass.url, '<div class="list"  id="itemList" >', '', 'tourbaksaDepartListHtml.txt')
-                            #departListHtml = urllib2.urlopen(cityClass.url).read()
-                            #departListHtml = departListHtml[departListHtml.find('<div class="list"  id="itemList" >'):]
-                            #departListHtmlFile = open('tourbaksaDepartListHtml.txt', 'w')
-                            #print >> departListHtmlFile, departListHtml
-                            #departListHtmlFile.close()
                             
-                            #departListHtml = open('tourbaksaDepartListHtml.txt')
                             try:
                                 productList = clsProductList()
                                 con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
@@ -167,7 +164,8 @@ for level1 in menulist:
                                         
                                         #productList.period = departList.split('class="detail">')[1].split('박'.decode('utf-8'))[0]
                                         #productList.night = departList.split('class="detail">')[1].split('박'.decode('utf-8'))[0]
-                                        productList.airCode = departList.split('alt="')[1].split('"')[0]
+                                        #productList.airCode = departList.split('alt="')[1].split('"')[0]        # 이거는 한글 여행사 코드이고... 영문가져오는거 새로 아랫줄에서..
+                                        productList.airCode = departList[departList.find('.gif') - 2:departList.find('.gif')]
                                         productList.productCode = departList.split('"itemNum detail">')[1].split('<')[0]
                                     elif departList.find('<div style="') > -1:
                                         #sample.. 에릅네...'http://www.tourbaksa.com/xml/item_Index_List.asp?gy=JTBS&gs=215&AirIDX=3&sd=20140601&M1=1&M2=8&M3=9&M4=15&M5=617'
@@ -179,52 +177,58 @@ for level1 in menulist:
 
                                         try:
                                             print >> exceptFile, detailProductUrl
-                                            #detailProductHtml = savefilegethtml.getHtml(detailProductUrl, '<tbody id', '<p class="seeMore"', '<td class=', '\r\n<td class=')
                                             detailProductHtml = urllib2.urlopen(detailProductUrl).read()
                                             detailProductHtml = detailProductHtml[detailProductHtml.find('<tbody id'):detailProductHtml.find('<p class="seeMore"')]
                                             detailProductHtml = detailProductHtml.replace('<td class=', '\r\n<td class=')
                                             detailProductHtml = savefilegethtml.htmlToList(detailProductHtml, 'detailProductHtml.txt')
-                                            #detailProductHtmlFile = open('detailProductHtml.txt', 'w')
-                                            #print >> detailProductHtmlFile, detailProductHtml
-                                            #detailProductHtmlFile.close()
                                             
-                                            #detailProductHtml = open('detailProductHtml.txt')
-                                            #print type(productList.productname.decode('unicode-escape'))
-                                            #print type(cityClass.city.decode('unicode-escape'))
-                                            print productList.productname
-                                            print cityClass.city
-                                            print type(productList.productname)
-                                            codeList = codes.getCityCode(productList.productname.encode('utf-16'), cityClass.citydecode.encode('utf-16'))
-                                            #codeList = codes.getCityCode(unicode(productList.productname, 'str'), unicode(cityClass.city.decode, 'str'))
-                                            nationList = codeList[0]
-                                            cityList = codeList[1]
                                             
-                                            query = savefilegethtml.getMasterMergeQueryTest1('tourbaksa', productList.productCode, '', level3.region, cityClass.city, productList.productname, level2.tourkind, 'A', productList.comment, '', nationList, cityList)  # A : 해외(Abroad)
-                                            #query = savefilegethtml.getMasterMergeQuery('tourbaksa', productList.productCode, '', level3.region, cityClass.city, productList.productname, level2.tourkind, 'A', productList.comment, '')  # A : 해외(Abroad)
+                                            codeList = codes.getCityCode(productList.productname, cityClass.city, productList.comment, level3.region)
+                                            cityList = codeList[0]
+                                            nationList = codeList[1]
+                                            continentList = codeList[2]
+                                            
+                                            query = tourQuery.getMasterMergeQuery(tourAgency, productList.productCode, productList.productname, level2.tourkind, 'A', productList.comment, '')  # A : 해외(Abroad)
                                             #print query
                                             cursor = con.cursor()
                                             cursor.execute(query)
+                                            codes.insertRegionData(tourAgency, productList.productCode, cityList, nationList, continentList)
                                             con.commit()
-                                            #print 'main query : ' + query
-                                            """
+                                            
+                                            
                                             try:
                                                 detailProductCls = clsDetailProduct()
+                                                waitSeat = False
 
                                                 for detailProduct in detailProductHtml:
                                                     #print 'Detail Product : ' + detailProduct
                                                     if detailProduct.find('startDate">') > -1:
                                                         detailProductCls = clsDetailProduct()
+                                                        waitSeat = False
                                                         detailProductCls.dDay = targetYear + detailProduct.split('startDate">')[1].split('(')[0].replace('.', '')    #20140611
                                                     elif detailProduct.find('price">') > -1:
                                                         #detailProductCls.price = detailProduct.split('price">')[1].split('원')[0].replace(',', '')       #130000
                                                         detailProductCls.price = re.findall(r'\d+', detailProduct.split('price">')[1].replace(',', ''))[0]
+                                                    elif detailProduct.find('status') > -1:
+                                                        if detailProduct.find('대기예약'.encode('cp949')) > -1:
+                                                            waitSeat = True
                                                     elif detailProduct.find('<td class="reservation">') > -1:
                                                         detailProductCls.url = homepageUrl + detailProduct.split("location.href='")[1].split("'")[0]
-                                                        detailProductCls.status = detailProduct.split('</button>')[0].split('>')[2]
+                                                        if detailProduct.find('예약마감'.encode('cp949')) > -1:
+                                                            detailProductCls.status = codes.getStatus('tourbaksa', '예약마감')
+                                                        elif detailProduct.find('바로예약'.encode('cp949')) > -1:
+                                                            detailProductCls.status = codes.getStatus('tourbaksa', '바로예약')
+                                                        elif waitSeat and detailProduct.find('예약접수'.encode('cp949')) > -1:
+                                                            detailProductCls.status = codes.getStatus('tourbaksa', '대기예약')
+                                                        elif detailProduct.find('예약접수'.encode('cp949')) > -1:
+                                                            detailProductCls.status = codes.getStatus('tourbaksa', '예약접수')
+                                                        else:
+                                                            detailProductCls.status = codes.getStatus('tourbaksa', 'None')
+                                                        #detailProductCls.status = detailProduct.split('</button>')[0].split('>')[2]
                                                         detailProductCls.detailCode = detailProduct.split('EV_YM=')[1].split('&')[0] + detailProduct.split('EV_SEQ=')[1].split('&')[0]
                                                         #print detailProductCls.toString()
-
-                                                        query = savefilegethtml.getDetailMergeQuery('tourbaksa', productList.productCode, detailProductCls.detailCode, productList.productname, detailProductCls.dDay, '', productList.period, level1.departCity, '', productList.airCode, detailProductCls.status, detailProductCls.url, detailProductCls.price, '0', '0', '0', '', productList.night) 
+                                                        
+                                                        query = tourQuery.getDetailMergeQuery(tourAgency, productList.productCode, detailProductCls.detailCode, productList.productname, detailProductCls.dDay, '', productList.period, level1.departCity, '', productList.airCode, detailProductCls.status, detailProductCls.url, detailProductCls.price, '0', '0', '0', '', productList.night) 
                                                         #print 'Query : ' + query
                                                         cursor = con.cursor()
                                                         cursor.execute(query)
@@ -234,33 +238,33 @@ for level1 in menulist:
                                             except:
                                                 print >> exceptFile, 'Detail Product Parcing Error', sys.exc_info()[0]
                                                 pass
-                                            """
+                                            
                                         except:
                                             print >> exceptFile, 'Detail Product URL Error', sys.exc_info()[0]
                                             pass
                                         
-                                        break
+                                        #break
                                     
                             except:
                                 print >> exceptFile, 'Depart List Parcing Error', sys.exc_info()[0]
                                 pass
                             finally:
+                                con.commit()
                                 con.close()
                             
-                            #departListHtml.close()
                         except:
                             print >> exceptFile, 'Depart Url Error', sys.exc_info()[0]
                             pass
 
-                #regionHtml.close()
             except IndexError as ierr:
                 print >> exceptFile, ierr
             except:
                 print >> exceptFile, 'Region url error', sys.exc_info()[0]
                 pass
     
-            break
-        break
-    break
+            #break
+        #break
+    #break
 
+print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()

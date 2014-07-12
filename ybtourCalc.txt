@@ -1,0 +1,348 @@
+tday">출발일&nbsp;&nbsp;7월 10일</p>
+	<div class="calendar">
+		<table >
+			<colgroup>
+				<col width="30" span="7" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th class="sun" >일</th>
+					<th>월</th>
+					<th>화</th>
+					<th>수</th>
+					<th>목</th>
+					<th>금</th>
+					<th>토</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr><!-- 첫줄 클래스// -->	
+ <tr><td></td><td></td>
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">1</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">2</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">3</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">4</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="#1592ec">5</font>				
+							
+						
+					</a>
+				</td>
+				
+</tr> <tr>
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="#ec1515">6</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">7</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">8</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">9</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">10</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11178">
+								
+							<font color="#ec1515"><strong>11</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11179">
+								
+							<font color="#ec1515"><strong>12</font>				
+							
+						
+					</a>
+				</td>
+				
+</tr> <tr>
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11180">
+								
+							<font color="#ec1515"><strong>13</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11181">
+								
+							<font color="#ec1515"><strong>14</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11182">
+								
+							<font color="#ec1515"><strong>15</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11183">
+								
+							<font color="#ec1515"><strong>16</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11184">
+								
+							<font color="#ec1515"><strong>17</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11185">
+								
+							<font color="#ec1515"><strong>18</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11186">
+								
+							<font color="#ec1515"><strong>19</font>				
+							
+						
+					</a>
+				</td>
+				
+</tr> <tr>
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11187">
+								
+							<font color="#ec1515"><strong>20</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11188">
+								
+							<font color="#ec1515"><strong>21</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11189">
+								
+							<font color="#ec1515"><strong>22</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11190">
+								
+							<font color="#ec1515"><strong>23</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11191">
+								
+							<font color="#ec1515"><strong>24</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11192">
+								
+							<font color="#ec1515"><strong>25</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11193">
+								
+							<font color="#ec1515"><strong>26</font>				
+							
+						
+					</a>
+				</td>
+				
+</tr> <tr>
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11194">
+								
+							<font color="#ec1515"><strong>27</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11195">
+								
+							<font color="#ec1515"><strong>28</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11196">
+								
+							<font color="#ec1515"><strong>29</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11197">
+								
+							<font color="#ec1515"><strong>30</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201407&ev_seq=11198">
+								
+							<font color="#ec1515"><strong>31</font>				
+							
+						
+					</a>
+				</td>
+				
+
+</tr>				
+
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="

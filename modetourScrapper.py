@@ -14,6 +14,7 @@ import sys
 import savefilegethtml
 import time, datetime
 import codes
+import tourQuery
 
 #classes..
 class subMain():
@@ -117,8 +118,11 @@ openDomestics = open('domestics.txt')
 #전체 List 말고 대표 메뉴만 가도 다 나오는듯...
 # 일단 해외여행만... 국내여행을 별도로...
 # 시간 변수들..
+tourAgency = 'modutour'
 targetYear = sys.argv[1]
 targetMonth = sys.argv[2]
+#targetYear = '2014'
+#targetMonth = '07'
 scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
 idx = 0
@@ -197,57 +201,62 @@ for each_line in openOverseas:
                                             productComment = tree['ModeSangPum']['SCont'].replace("'", "")
                                             
                                             #print productName
-                                            codeList = codes.getCityCode(sublist.name, productName)
-                                            nationList = codeList[0]
-                                            cityList = codeList[1]
+                                            codeList = codes.getCityCode(sublist.name, productName, productComment)
+                                            cityList = codeList[0]
+                                            nationList = codeList[1]
+                                            continentList = codeList[2]
                                             
-                                            #print nationList
-                                            #print cityList
-                                            #print codeList
-                                            query = savefilegethtml.getMasterMergeQueryTest1('modutour', productCode, '', '', sublist.name, productName, tourtype, 'A', productComment, '', nationList, cityList)  # A : 해외(Abroad)
-                                            #query = savefilegethtml.getMasterMergeQuery('modutour', productCode, '', '', sublist.name, productName, tourtype, 'A', productComment, '')  # A : 해외(Abroad)
+                                            # Master 상품 입력
+                                            query = tourQuery.getMasterMergeQuery(tourAgency, productCode, productName, tourtype, 'A', productComment, '')
                                             #print query
                                             cursor = con.cursor()
                                             cursor.execute(query)
+                                            # Region Data 삭제
+                                            codes.insertRegionData(tourAgency, productCode, cityList, nationList, continentList)
                                             con.commit()
                                             
+                                            #query = savefilegethtml.getMasterMergeQueryTest1('modutour', productCode, '', '', sublist.name, productName, tourtype, 'A', productComment, '', nationList, cityList)  # A : 해외(Abroad)
+                                            #query = savefilegethtml.getMasterMergeQuery('modutour', productCode, '', '', sublist.name, productName, tourtype, 'A', productComment, '')  # A : 해외(Abroad)
+                                            #print query
+                                            #cursor = con.cursor()
+                                            #cursor.execute(query)
+                                            #con.commit()
+                                            
+                                            if not tree['ModeSangPum'].has_key('SangList'):
+                                                continue
+                                            
                                             for t in tree['ModeSangPum']['SangList']:
-                                                try:
-                                                    tag_div = ''
-                                                    reg_div = anCode
-                                                    prd_nm = t['SName']['#text'].replace("'", "")
-                                                    air_cd = t['SAirCode'][:2]
-                                                    st_city = ''
-                                                    st_dt = t['SPriceDay']['#text']
-                                                    st_time = t['SstartTime'].replace(':', '')
-                                                    #st_time = ''
-                                                    arr_day = t['SArrivalDay']['#text']
-                                                    arr_time = t['SArrivalTime'].replace(':', '')
-                                                    arr_time = ''
-                                                    tr_term = t['SDay']
-                                                    tr_div = themeCode
-                                                    sel_dt = ''
-                                                    prd_fee = t['SPrice']
-                                                    prd_status = t['SDetailState']['#text']
-                                                    prd_code = t['SPriceNum']['#text']
-                                                    flynum = t['SstartAir']
-                                                    #period = t['SNight']  #기간이 아니라... 잠자는 횟수임.. 1박2일이면.. 1
-                                                    airline = t['SAirName']
-                                                    prd_url = 'http://www.modetour.com/Package/Itinerary.aspx?startLocation='+sublist.startLocation+'&location='+sublist.location+'&location1='+sublist.location1+'&theme='+sublist.Theme+'&theme1='+sublist.Theme1+'&MLoc='+sublist.MLoc+'&Pnum='+prd_code
-                                                    #print 'product url:' + prd_url
-                                                    query = savefilegethtml.getDetailMergeQuery('modutour', productCode, prd_code, prd_nm, st_dt+st_time, arr_day+arr_time, tr_term, sublist.startLocation, '', air_cd, prd_status, prd_url, prd_fee, '0', '0', '0', '') 
-                                                    #print >> exceptFile, query
-                                                    #print query
-                                                    cursor = con.cursor()
-                                                    cursor.execute(query)
-                                                    con.commit()
-                                                    normalCnt += 1
-                                                    #break
-                                                except:
-                                                    parcingErr2 += 1
-                                                    print >> exceptFile, "Depth 33 : type Error:", sys.exc_info()[0]
-                                                    pass
-                                                
+                                                tag_div = ''
+                                                reg_div = anCode
+                                                prd_nm = t['SName']['#text'].replace("'", "")
+                                                air_cd = t['SAirCode'][:2]
+                                                st_city = ''
+                                                st_dt = t['SPriceDay']['#text']
+                                                st_time = t['SstartTime'].replace(':', '')
+                                                #st_time = ''
+                                                arr_day = t['SArrivalDay']['#text']
+                                                arr_time = t['SArrivalTime'].replace(':', '')
+                                                arr_time = ''
+                                                tr_term = t['SDay']
+                                                tr_div = themeCode
+                                                sel_dt = ''
+                                                prd_fee = t['SPrice']['#text']
+                                                prd_status = codes.getStatus('modetour', t['SDetailState']['#text'])
+                                                prd_code = t['SPriceNum']['#text']
+                                                flynum = t['SstartAir']
+                                                #period = t['SNight']  #기간이 아니라... 잠자는 횟수임.. 1박2일이면.. 1
+                                                airline = t['SAirName']
+                                                prd_url = 'http://www.modetour.com/Package/Itinerary.aspx?startLocation='+sublist.startLocation+'&location='+sublist.location+'&location1='+sublist.location1+'&theme='+sublist.Theme+'&theme1='+sublist.Theme1+'&MLoc='+sublist.MLoc+'&Pnum='+prd_code
+                                                #print 'product url:' + prd_url
+                                                query = tourQuery.getDetailMergeQuery(tourAgency, productCode, prd_code, prd_nm, st_dt+st_time, arr_day+arr_time, tr_term, sublist.startLocation, '', air_cd, prd_status, prd_url, prd_fee, '0', '0', '0', '') 
+                                                #print >> exceptFile, query
+                                                #print query
+                                                cursor = con.cursor()
+                                                cursor.execute(query)
+                                                con.commit()
+                                                normalCnt += 1
+                                                #break
+                                            
                                                 #print(t['SMeet'])
                                         except TypeError as typeerr:
                                             urlErr += 1
@@ -296,6 +305,7 @@ for each_line in openOverseas:
                 pass
             finally:
                 openPackageFile.close()
+                con.commit()
                 con.close()
             
             #break

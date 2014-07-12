@@ -11,6 +11,7 @@ import savefilegethtml
 import sys
 import time, datetime
 import codes
+import tourQuery
 
 #fnSetMstList({"head":{"tot_cnt":"17","pub_area_code":"A","pub_country":"TH","pub_city":"","dept_code":"","DY_LIST":"","page_num":"1","page_len":"20","flatfile_yn":"N"}, 
 #"cont":[
@@ -81,7 +82,7 @@ def valueParcing(html, idx1, idx2):
     return html[html.find(idx1) + len(idx1):html.find(idx2)]
 
 def getDepartCity(html):
-    print 'Region.........................................................' + html
+    #print 'Region.........................................................' + html
     if html.find('province_PUS') > -1:
         print html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
@@ -105,10 +106,11 @@ def getDepartCity(html):
         return 'ICN'
 
 # 시간 변수들..
-#targetYear = sys.argv[1]
-#targetMonth = sys.argv[2]
-targetYear = '2014'
-targetMonth = '07'
+tourAgency = 'hanatour'
+targetYear = sys.argv[1]
+targetMonth = sys.argv[2]
+#targetYear = '2014'
+#targetMonth = '07'
 scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
 mainUrls = list()
@@ -224,20 +226,13 @@ for mainUrl in mainUrls:
                                 packageList.append(productClass.pkg_mst_code)
                                 
                                 # 2014. 6. 29. 정규식으로 이름에서 국가, 도시 코드 빼오도록.. 테스트 디비로 저장..
-                                print productClass.mst_name
-                                print type(productClass.mst_name)
-                                codeList = codes.getCityCode(productClass.mst_name)
-                                nationList = codeList[0]
-                                cityList = codeList[1]
-                                query = savefilegethtml.getMasterMergeQueryTest1('hanatour', productClass.pkg_mst_code, packageClass.pub_area_code, packageClass.pub_country, packageClass.pub_city, productClass.mst_name, mode, 'A', productClass.content, '', nationList, cityList)
+                                #print productClass.mst_name
+                                #print type(productClass.mst_name)
+                                codeList = codes.getCityCode(productClass.mst_name, packageClass.pub_city, productClass.content, packageClass.pub_country)
+                                cityList = codeList[0]
+                                nationList = codeList[1]
+                                continentList = codeList[2]
                                 
-                                #query = savefilegethtml.getMasterMergeQuery('hanatour', productClass.pkg_mst_code, packageClass.pub_area_code, packageClass.pub_country, packageClass.pub_city, productClass.mst_name, mode, 'A', productClass.content, '')
-                                #print query
-                                cursor = con.cursor()
-                                cursor.execute(query)
-                                con.commit()
-                                
-                                """
                                 cityCode = jsonUrl[jsonUrl.find('&hanacode=') + len('&hanacode='):]
                                 detailProductUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-11001-list.asp?'
                                 detailProductUrl += 'area=' + packageClass.pub_area_code + '&pub_country=' +packageClass.pub_country+ '&pub_city=' + packageClass.pub_city
@@ -248,7 +243,20 @@ for mainUrl in mainUrls:
                                     detailProductUrl += '&start_city=' + departCity
                                 print 'last url.....: ' + detailProductUrl
                                 
-                                print >> exceptFile, 'detailProductUrl : ' + detailProductUrl
+                                #if len(nationList) == 0 and len(cityList) == 0:
+                                    #print >> exceptFile, packageClass.pub_city + ' : ', valueParcing(product, 'mst_name":"', '","t_content').replace("'", "").decode('utf-8')
+                                    #print >> exceptFile, 'detailProductUrl : ' + detailProductUrl                                
+                                
+                                # Master 상품 입력
+                                query = tourQuery.getMasterMergeQuery(tourAgency, productClass.pkg_mst_code, productClass.mst_name, mode, 'A', productClass.content, '')
+                                #print query
+                                cursor = con.cursor()
+                                cursor.execute(query)
+                                # Region Data 삭제
+                                codes.insertRegionData(tourAgency, productClass.pkg_mst_code, cityList, nationList, continentList)
+                                con.commit()
+                                
+                                """
                                 detailProducthtml = urllib2.urlopen(detailProductUrl).read()
                                 
                                 #cont":[{"pcode":"PPP411140612KE5","sdate":"06/12 (목) 20:50","adate":"06/16 (월) 08:05","acode":"KE","aline":"대한항공","tday":"5","grade":"12","gname":"하나팩클래식","pname":"팔라우 5일[Luxury]팔라우퍼시픽리조트[용궁+유네스코+젤리피쉬]","amt":"1999000","lminute":"2"},                    
@@ -288,14 +296,14 @@ for mainUrl in mainUrls:
                                         detailClass.gname = valueParcing(detailProduct, 'gname":"', '","pname').replace("'", "").decode('utf-8')
                                         detailClass.pname = valueParcing(detailProduct, 'pname":"', '","amt').replace("'", "").decode('utf-8')
                                         detailClass.amt = valueParcing(detailProduct, 'amt":"', '","lminute')
-                                        detailClass.lminute = valueParcing(detailProduct, 'lminute":"', '"}')
+                                        detailClass.lminute = codes.getStatus('hanatour', valueParcing(detailProduct, 'lminute":"', '"}'))
                                         detailClass.url = 'http://www.hanatour.com/asp/booking/productPackage/pk-12000.asp?pkg_code=' + detailClass.pcode
                                         #print detailClass.toString()
                                         #print idx
                                         #idx += 1
                                         
                                         # 2014. 6. 29. 정규식으로 이름에서 국가, 도시 코드 빼오도록..
-                                        query = savefilegethtml.getDetailMergeQueryTest1('hanatour', productClass.pkg_mst_code, detailClass.pcode, detailClass.pname, detailClass.dday+detailClass.dtime, detailClass.aday+detailClass.atime, detailClass.tday, departCity, '', detailClass.acode, detailClass.lminute, detailClass.url, detailClass.amt, '0', '0', '0', '') 
+                                        query = tourQuery.getDetailMergeQuery(tourAgency, productClass.pkg_mst_code, detailClass.pcode, detailClass.pname, detailClass.dday+detailClass.dtime, detailClass.aday+detailClass.atime, detailClass.tday, departCity, '', detailClass.acode, detailClass.lminute, detailClass.url, detailClass.amt, '0', '0', '0', '') 
                                         #query = savefilegethtml.getDetailMergeQuery('hanatour', productClass.pkg_mst_code, detailClass.pcode, detailClass.pname, detailClass.dday+detailClass.dtime, detailClass.aday+detailClass.atime, detailClass.tday, departCity, '', detailClass.acode, detailClass.lminute, detailClass.url, detailClass.amt, '0', '0', '0', '') 
                                         #print >> exceptFile ,query                                    
                                         cursor = con.cursor()
@@ -317,7 +325,7 @@ for mainUrl in mainUrls:
                                     except:
                                         print >> exceptFile, 'Depth 4 : ' + str(sys.exc_info()[0])
                                         pass
-                                """    
+                                """
                             except cx_Oracle.IntegrityError as dberr:
                                 print >> exceptFile, 'Depth 33 : ' + str(dberr)
                                 print 'Depth 33 : ' + str(dberr)
@@ -331,10 +339,11 @@ for mainUrl in mainUrls:
                                 print 'Depth 3 : ' + str(sys.exc_info()[0])
                                 pass
                             finally:
+                                con.commit()
                                 con.close()
                                 
-                            break
-                        break
+                            #break
+                        #break
                                 
             except AttributeError as err:
                 print >> exceptFile, 'Depth 22 : ' + str(err)

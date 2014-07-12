@@ -7,7 +7,7 @@
                         </div>
                         <div class="pro_contents">
                         <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
-                            <p class="content"><span class="title"><a href="#n"> 유류할증료 포함]이스라엘[북부갈릴리]+요르단[페트라]+이스탄불 8일-TK</a></span><br/><a href="#n" class="pkg_list_centents"></a></p>
+                            <p class="content"><span class="title"><a href="#n"> [유류할증료 포함]이스라엘[북부갈릴리]+요르단[페트라]+이스탄불 8일-TK</a></span><br/><a href="#n" class="pkg_list_centents"></a></p>
                             <div class="pro_contents_in">
                                 <p class="text_box">
                                     <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>MPX112</span>
@@ -70,7 +70,7 @@
                                 </p>
                                 <div class="bt">
                                     <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX133_2014-07-06"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                    <p class="close" id="startday_MPX133_2014-07-13"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                                 </p>
                                 <div class="bt">
                                     <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX136_2014-07-01"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                    <p class="close" id="startday_MPX136_2014-07-15"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                                 </p>
                                 <div class="bt">
                                     <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX330_2014-06-29"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                    <p class="close" id="startday_MPX330_2014-07-13"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                                 </p>
                                 <div class="bt">
                                     <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX331_2014-06-29"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                    <p class="close" id="startday_MPX331_2014-07-13"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
                                 </div>
                             </div>
                         </div>

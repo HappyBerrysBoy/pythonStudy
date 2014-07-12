@@ -1,0 +1,82 @@
+<table class="table1">
+						<tbody>
+						<tr>
+							<th><img src="/images/sub/th_detail01.gif" alt="출발일" /></th>
+							<td>
+								2014 년 07 월 27일(<font color='#e61b1b'>일</font>)&nbsp; [19:30] (OZ763)<br>
+								2014 년 07 월 28일(월)&nbsp; [:]
+							</td>
+						</tr>
+						<tr>
+							<th><img src="/images/sub/th_detail02.gif" alt="귀국일" /></th>
+							<td>
+								2014 년 08 월 01일(금) &nbsp;[:] (OZ604)<br>
+								2014 년 08 월 01일(금) &nbsp;[10:55]
+							</td>
+						</tr>
+							<tr>
+							<th><img src="/images/sub/th_detail03.gif" alt="상품가격" /></th>
+							<td class="bold">성인 <em> 2,736,000원</em></td>
+						</tr>
+						<!-- 2017.02.17 롯데 카드 막기 -->
+						<!--
+						
+						<tr>
+							<td colspan="2" class="bg">
+							
+								<span class="red"><b>노랑풍선 롯데카드 3%할인 / 1%적립상품</b></span>
+							
+							<a onclick="javascript:fnLotte();"><img src="/images/lotte/icn_lotte.gif" style="padding-left:5px;" alt="카드신청" title="카드신청" /></a>
+							<div id="lotte_banner" name="lotte_banner" style="position:absolute; left:437px; top:200px; z-index:99;display:none;" ><a href="http://www.lottecard.co.kr/app/view/if/gate.jsp?b_id=10834_10882_11128&vt_cd_knd_c=P02116-A02116" target="_blank"><img src="/images/lotte/layer_lotte.jpg" style="cursor:hand;" border="0" alt="노랑풍선 롯데카드 바로DC서비스 신청 (1시간내 발급)" title="노랑풍선 롯데카드 바로DC서비스 신청 (1시간내 발급)" /></div>
+							</td>
+						</tr>
+						
+						-->
+						<!--유류할증료추가-->
+						<tr>
+							<th><img src="/images/sub/th_detail140416.gif" alt="유류할증료" title="유류할증료" /></th>
+						<td class="bold">
+							
+							별도문의
+							
+						</td>
+						</tr>
+<!--유류할증료추가-->
+						<tr>
+							<th><img src="/images/sub/th_detail04.gif" alt="이용항공" /></th>
+							<td><img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 title='아시아나항공' alt='아시아나항공' />&nbsp;아시아나항공&nbsp;</td>
+						</tr>
+<!-- 
+						<tr>
+							<th><img src="/images/sub/th_detail05.gif" alt="예약인원" /></th>
+							<td class="bold">남은좌석 : <strong>2 석</strong><span> (최소출발인원 : 0)</span>
+							</td>
+						</tr>
+ -->
+						<tr>
+							<th><img src="/images/sub/th_detail06.gif" alt="방문도시" /></th>
+							<td>인천-발리-인천</td>
+						</tr>
+						</tbody>
+					</table>
+					<table class="table2">
+						<col width="40%" /><col width="25%" /><col width="35%" />
+						<thead>
+						<tr>
+							<th><img src="/images/sub/th_detail07.gif" alt="이용항공" /></th>
+							<th><img src="/images/sub/th_detail10.gif" alt="구분" /></th>
+							<th><img src="/images/sub/th_detail09.gif" alt="상품가" /></th>
+						</tr>
+						</thead>
+						<tbody>
+
+						<tr>
+							<td class="lt"><input type="radio" name="viwradio" onClick="javascript:goGoodsViewHoneyMoon('201407', 11070)" checked /><img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='OZ' />아시아나항공</td>
+							<td><strong>슈페리어발코니</strong></td>
+							<td><em>2,736,000원 </em></td>
+						</tr>
+									
+						</tbody>
+					</table>
+				</div>
+				

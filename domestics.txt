@@ -11,6 +11,7 @@
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC988&amp;location1=LOC988^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="제주">허니문</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC989&amp;location1=LOC989^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB_'); return false;" alt="제주">지방출발</a></li>
                 <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1045&amp;location1=LOC1045^LOC837&amp;MLoc=01" onclick="TopNextPage(this,'AT331','GNB'); return false;" alt="_">제주골프</a></li>
+                <li><a href="/Jeju/intro.aspx?MLoc=0605" style="color:#5083EF;">제주여행만들기 <b style="font:normal 10px Tahoma; color:#E03535;">OPEN</b></a></li>
                 <li><a href="/Ticket/JeJu/Main.aspx?mloc=0601" style="color:#5083EF;">제주할인쿠폰</a></li>
               </ul>
             </div>
