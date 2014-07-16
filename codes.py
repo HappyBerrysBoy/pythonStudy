@@ -145,6 +145,172 @@ def getStatus(tour, status):
             return getStatusCode('WR')
         else:
             return getStatusCode('NO')
+    elif tour == 'tour2000':
+        if status == '예약마감':
+            return getStatusCode('RF')
+        elif status == '예약가능':
+            return getStatusCode('RS')
+        elif status == '출발가능':
+            return getStatusCode('DF')
+        elif status == '대기예약':
+            return getStatusCode('WR')
+        else:
+            return getStatusCode('NO')
+    elif tour == '...':
+        if status == 'gray':
+            return getStatusCode('RF')
+        elif status == 'blue':
+            return getStatusCode('RS')
+        elif status == 'red':
+            return getStatusCode('DF')
+        elif status == 'green':
+            return getStatusCode('WR')
+        else:
+            return getStatusCode('NO')
+            
+            
+def getTourKindCode(kind):
+    if kind == 'Package':
+        return 'P'
+    elif kind == 'Free':
+        return 'F'
+    elif kind == 'Honeymoon':
+        return 'W'
+    elif kind == 'Golf':
+        return 'G'
+    elif kind == 'Cruise':
+        return 'C'
+    elif kind == 'Domestic':
+        return 'D'
+    else:
+        return 'No'
+            
+            
+def getTourKind(tour, status):
+    if tour == 'hanatour':
+        if status == 'P':
+            return getTourKindCode('Package')
+        elif status == 'W':
+            return getTourKindCode('Honeymoon')
+        elif status == 'G':
+            return getTourKindCode('Golf')
+        elif status == 'C':
+            return getTourKindCode('Cruise')
+        elif status == 'D':
+            return getTourKindCode('Domestic')
+        else:
+            return getTourKindCode('None')
+            
+    elif tour == 'modetour':
+        if status == '패키지':
+            return getTourKindCode('Package')
+        elif status == '자유':
+            return getTourKindCode('Free')
+        elif status == '허니문':
+            return getTourKindCode('Honeymoon')
+        elif status == '골프':
+            return getTourKindCode('Golf')
+        elif status == '크루즈':
+            return getTourKindCode('Cruise')
+        elif status == 'JM':
+            return getTourKindCode('Package')
+        elif status == '부산·지방출발':
+            return getTourKindCode('Package')
+        else:
+            return getTourKindCode('NO')
+            
+    elif tour == 'ybtour':
+        if status == 'P':
+            return getTourKindCode('Package')
+        elif status == 'F':
+            return getTourKindCode('Free')
+        elif status == 'W':
+            return getTourKindCode('Honeymoon')
+        elif status == 'G':
+            return getTourKindCode('Golf')
+        elif status == 'D':
+            return getTourKindCode('Domestic')
+        elif status == 'PUS':
+            return getTourKindCode('Package')
+        elif status == 'C':
+            return getTourKindCode('Cruise')
+        else:
+            return getTourKindCode('NO')
+            """            
+    elif tour == 'naeiltour':
+        if status == '05':
+            return getStatusCode('RF')
+        elif status == '':
+            return getStatusCode('RS')
+        elif status == '03':
+            return getStatusCode('DF')
+        elif status == 'green':
+            return getStatusCode('WR')
+        else:
+            return getStatusCode('NO')
+            """
+    elif tour == 'tourbaksa':
+        if status == '키즈투어':
+            return getTourKindCode('Package')
+        elif status == '국내여행':
+            return getTourKindCode('Domestic')
+        elif status == '골프':
+            return getTourKindCode('Golf')
+        elif status == '크루즈':
+            return getTourKindCode('Cruise')
+        elif status == '해외패키지':
+            return getTourKindCode('Package')
+        elif status == '레저/스포츠':
+            return getTourKindCode('Package')
+        elif status == '해외자유':
+            return getTourKindCode('Free')
+        elif status == '허니문':
+            return getTourKindCode('Honeymoon')
+        else:
+            return getTourKindCode('NO')
+            
+    elif tour == 'verygoodtour':
+        if status == 'P':
+            return getTourKindCode('Package')
+        elif status == 'F':
+            return getTourKindCode('Free')
+        elif status == 'D':
+            return getTourKindCode('Domestic')
+        elif status == 'PUS':
+            return getTourKindCode('Package')
+        elif status == 'W':
+            return getTourKindCode('Honeymoon')
+        elif status == 'G':
+            return getTourKindCode('Golf')
+        elif status == 'Luxury':
+            return getTourKindCode('Package')
+        elif status == 'Air':
+            return getTourKindCode('Air')
+        elif status == 'Hotel':
+            return getTourKindCode('Hotel')
+        elif status == 'Company':
+            return getTourKindCode('Company')
+        else:
+            return getTourKindCode('No')
+            
+    elif tour == 'tour2000':
+        if status == '해외여행':
+            return getTourKindCode('Package')
+        elif status == '자유여행':
+            return getTourKindCode('Free')
+        elif status == '국내여행':
+            return getTourKindCode('Domestic')
+        elif status == '허니문':
+            return getTourKindCode('Honeymoon')
+        elif status == '골프':
+            return getTourKindCode('Golf')
+        elif status == '실시간 항공':
+            return getTourKindCode('Air')
+        elif status == '호텔':
+            return getTourKindCode('Hotel')
+        else:
+            return getTourKindCode('No')
+            
     elif tour == '...':
         if status == 'gray':
             return getStatusCode('RF')
@@ -279,10 +445,10 @@ def getCityCode(productname, city='', comment='', nation=''):
 
     delOverlapRegion(cities, nations, continents)
     
+    #print '******************'
     #print cities
     #print nations
     #print continents
-    #print '******************'
 
     #print cities
     #print nations

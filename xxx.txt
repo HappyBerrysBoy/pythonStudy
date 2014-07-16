@@ -3,243 +3,82 @@ travel_top_section">
 				
 
 			<div class="fb-root"></div>
-				<div class="travelList_wrap" id="goodFocus38020132">
+				<div class="travelList_wrap" id="goodFocusP9920141">
 					<div class="thumb_wrap">
 						<p class="thumb">
 						
-							<a href="javascript:lncView('38020132','201407/201410', '2014-07-01', '1');">
+							<a href="javascript:lncView('P9920141','201407/201409', '2014-07-01', '1');">
 						
-								<img src="http://cdn.ybtour.co.kr/images/good_img/80/38020130002_0001b.jpg" width="150" height="110" alt="▒미야자키:니치난▒ 무제한 6일※일(108홀)" title="▒미야자키:니치난▒ 무제한 6일※일(108홀)" />
+								<img src="http://cdn.ybtour.co.kr/images/good_img/99/P9920140001_0001b.jpg" width="150" height="110" alt="●토출발●CRUISE ONLY●알래스카 크루즈 8일" title="●토출발●CRUISE ONLY●알래스카 크루즈 8일" />
 							</a>
 						</p>
 						<!--
-						<p class="fb_like_btn" style="z-index:495"></p> --><!-- 페이스북 좋아요// -->
+						<p class="fb_like_btn" style="z-index:99"></p> --><!-- 페이스북 좋아요// -->
 
 					</div>
 					<div class="info_wrap">
 						<div class="lt_wrap">
 							<h2>
 						
-								<a href="javascript:lncView('38020132','201407/201410', '2014-07-01', '1');">
-						▒미야자키:니치난▒ 무제한 6일※일(108홀)<span>상품번호<em>
-							38020132
+								<a href="javascript:lncView('P9920141','201407/201409', '2014-07-01', '1');">
+						●토출발●CRUISE ONLY●알래스카 크루즈 8일<span>상품번호<em>
+							P9920141
 							</em></span></a></h2>
-							<p class="route">※ 인천-미야자키(5)-인천</p>
-							<p class="desc"> ▶ 풍부한 미네랄과 다양한 효능을 지닌 탄산수소 온천수로 라운드의 피로를 풀수 있는 유럽 스타일의 안락한 니치난 리조트 C.C </p>
+							<p class="route">시애틀→해상→주노→스캐그웨이→글레이셔만국립공원→케치칸→빅토리아B.C→시애틀</p>
+							<p class="desc">①항공권 소지자를 위한 CRUISE ONLY 특가 객실 제공②인솔자가 동행하지 않는 자유 여행으로 저렴한 알래스카 크루즈 여행 가능③5성급 프리미엄 미국 선사 프린세스 크루즈에서 보유한 대형 선박 109,000톤 골든 호 이용</p>
 						</div>
 						<div class="rt_wrap">
-							<p class="price">￦ 1,099,000~</p>
-							<p class="balloons"><span>이 상품에 관심을 가진 분 <strong>1961 명</strong></span></p>
+							<p class="price">￦ 790,000~</p>
+							<p class="balloons"><span>이 상품에 관심을 가진 분 <strong>321 명</strong></span></p>
 						
-							<a href="javascript:lncView('38020132','201407/201410', '2014-07-01', '1');">
+							<a href="javascript:lncView('P9920141','201407/201409', '2014-07-01', '1');">
 						
 								<img src="/images/sub/btn_startday.gif"  style="margin-top:10px;" alt="출발일 보기" title="출발일 보기"/>
 							</a>
 						</div>
 					</div>
 				</div>
-				<div id="lncview_38020132"></div>
+				<div id="lncview_P9920141"></div>
 				<!--div id="ajax_indicator" style="display:none;"><p style="top:300px;right:;position:fixed;"><img src="/Images/common/load.gif"/></p></div-->
 
 
 			<div class="fb-root"></div>
-				<div class="travelList_wrap" id="goodFocus380200934">
+				<div class="travelList_wrap" id="goodFocusP9920142">
 					<div class="thumb_wrap">
 						<p class="thumb">
 						
-							<a href="javascript:lncView('380200934','201407/201410', '2014-07-01', '1');">
+							<a href="javascript:lncView('P9920142','201407/201408', '2014-07-01', '1');">
 						
-								<img src="http://cdn.ybtour.co.kr/images/good_img/80/38020090034_0002b.jpg" width="150" height="110" alt="[힐링 골프] 미야자키 아이와 C.C 3일 ★2인출발 가능" title="[힐링 골프] 미야자키 아이와 C.C 3일 ★2인출발 가능" />
+								<img src="http://cdn.ybtour.co.kr/images/good_img/99/P9920140002_0003b.jpg" width="150" height="110" alt="●일출발●CRUISE ONLY●알래스카 크루즈 8일" title="●일출발●CRUISE ONLY●알래스카 크루즈 8일" />
 							</a>
 						</p>
 						<!--
-						<p class="fb_like_btn" style="z-index:494"></p> --><!-- 페이스북 좋아요// -->
+						<p class="fb_like_btn" style="z-index:98"></p> --><!-- 페이스북 좋아요// -->
 
 					</div>
 					<div class="info_wrap">
 						<div class="lt_wrap">
 							<h2>
 						
-								<a href="javascript:lncView('380200934','201407/201410', '2014-07-01', '1');">
-						[힐링 골프] 미야자키 아이와 C.C 3일 ★2인출발 가능<span>상품번호<em>
-							380200934
+								<a href="javascript:lncView('P9920142','201407/201408', '2014-07-01', '1');">
+						●일출발●CRUISE ONLY●알래스카 크루즈 8일<span>상품번호<em>
+							P9920142
 							</em></span></a></h2>
-							<p class="route">※ 일본-미야자키(2)-인천<BR></p>
-							<p class="desc">코리아나 호텔에서 운영하는 아이와 리조트 !! 맛있는 음식과 여유롭게 즐기는 라운딩!!</p>
+							<p class="route">시애틀→인사이드패시지→케치칸→트레이시암피요르드→주노→스캐그웨이→해상→빅토리아B.C→시애틀</p>
+							<p class="desc">①항공권 소지자를 위한 CRUISE ONLY 특가 객실 제공②인솔자가 동행하지 않는 자유 여행으로 저렴한 알래스카 크루즈 여행 가능③5성급 프리미엄 미국 선사 프린세스 크루즈에서 보유한 대형 선박 109,000톤 골든 호 이용</p>
 						</div>
 						<div class="rt_wrap">
-							<p class="price">￦ 899,000~</p>
-							<p class="balloons"><span>이 상품에 관심을 가진 분 <strong>7120 명</strong></span></p>
+							<p class="price">￦ 690,000~</p>
+							<p class="balloons"><span>이 상품에 관심을 가진 분 <strong>552 명</strong></span></p>
 						
-							<a href="javascript:lncView('380200934','201407/201410', '2014-07-01', '1');">
+							<a href="javascript:lncView('P9920142','201407/201408', '2014-07-01', '1');">
 						
 								<img src="/images/sub/btn_startday.gif"  style="margin-top:10px;" alt="출발일 보기" title="출발일 보기"/>
 							</a>
 						</div>
 					</div>
 				</div>
-				<div id="lncview_380200934"></div>
-				<!--div id="ajax_indicator" style="display:none;"><p style="top:300px;right:;position:fixed;"><img src="/Images/common/load.gif"/></p></div-->
-
-
-			<div class="fb-root"></div>
-				<div class="travelList_wrap" id="goodFocus380201120">
-					<div class="thumb_wrap">
-						<p class="thumb">
-						
-							<a href="javascript:lncView('380201120','201407/201411', '2014-07-01', '1');">
-						
-								<img src="http://cdn.ybtour.co.kr/images/good_img/80/38020110020_0001b.jpg" width="150" height="110" alt="[온천과함께하는] 미야자키 니치난 3일 ★2인출발가능" title="[온천과함께하는] 미야자키 니치난 3일 ★2인출발가능" />
-							</a>
-						</p>
-						<!--
-						<p class="fb_like_btn" style="z-index:493"></p> --><!-- 페이스북 좋아요// -->
-
-					</div>
-					<div class="info_wrap">
-						<div class="lt_wrap">
-							<h2>
-						
-								<a href="javascript:lncView('380201120','201407/201411', '2014-07-01', '1');">
-						[온천과함께하는] 미야자키 니치난 3일 ★2인출발가능<span>상품번호<em>
-							380201120
-							</em></span></a></h2>
-							<p class="route">※ 인천-미야자키(3)-인천<br>
-<FONT color=#ff69b4><b>2인 라운딩가능~!★★</font></b></p>
-							<p class="desc"> ▶ 풍부한 미네랄과 다양한 효능을 지닌 탄산수소 온천수로 라운드의 피로를 풀수 있는 유럽 스타일의 안락한 니치난 리조트 C.C </p>
-						</div>
-						<div class="rt_wrap">
-							<p class="price">￦ 899,000~</p>
-							<p class="balloons"><span>이 상품에 관심을 가진 분 <strong>2398 명</strong></span></p>
-						
-							<a href="javascript:lncView('380201120','201407/201411', '2014-07-01', '1');">
-						
-								<img src="/images/sub/btn_startday.gif"  style="margin-top:10px;" alt="출발일 보기" title="출발일 보기"/>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div id="lncview_380201120"></div>
-				<!--div id="ajax_indicator" style="display:none;"><p style="top:300px;right:;position:fixed;"><img src="/Images/common/load.gif"/></p></div-->
-
-
-			<div class="fb-root"></div>
-				<div class="travelList_wrap" id="goodFocus380200030">
-					<div class="thumb_wrap">
-						<p class="thumb">
-						
-							<a href="javascript:lncView('380200030','201407/201410', '2014-07-01', '1');">
-						
-								<img src="http://cdn.ybtour.co.kr/images/good_img/80/38020000030_0002b.jpg" width="150" height="110" alt="[미야자키♨온천욕] 쉐라톤♥톰왓슨+피닉스 3일(54홀)" title="[미야자키♨온천욕] 쉐라톤♥톰왓슨+피닉스 3일(54홀)" />
-							</a>
-						</p>
-						<!--
-						<p class="fb_like_btn" style="z-index:492"></p> --><!-- 페이스북 좋아요// -->
-
-					</div>
-					<div class="info_wrap">
-						<div class="lt_wrap">
-							<h2>
-						
-								<a href="javascript:lncView('380200030','201407/201410', '2014-07-01', '1');">
-						[미야자키♨온천욕] 쉐라톤♥톰왓슨+피닉스 3일(54홀)<span>상품번호<em>
-							380200030
-							</em></span></a></h2>
-							<p class="route">※ 인천-미야자키(2)-인천</p>
-							<p class="desc">▶큐슈 최남담의 포근한 기후, 미야쟈키의 고품격 골프여행! 초특급의 쉐라톤 오션 그랜드 호텔 투숙 + 톰왓슨 C.C. + 피닉스 C.C 이름만으로 명성이 높은 품격 골프장에서 최고의 여행을 누리세요~</p>
-						</div>
-						<div class="rt_wrap">
-							<p class="price">￦ 1,299,000~</p>
-							<p class="balloons"><span>이 상품에 관심을 가진 분 <strong>2679 명</strong></span></p>
-						
-							<a href="javascript:lncView('380200030','201407/201410', '2014-07-01', '1');">
-						
-								<img src="/images/sub/btn_startday.gif"  style="margin-top:10px;" alt="출발일 보기" title="출발일 보기"/>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div id="lncview_380200030"></div>
-				<!--div id="ajax_indicator" style="display:none;"><p style="top:300px;right:;position:fixed;"><img src="/Images/common/load.gif"/></p></div-->
-
-
-			<div class="fb-root"></div>
-				<div class="travelList_wrap" id="goodFocus38020138">
-					<div class="thumb_wrap">
-						<p class="thumb">
-						
-							<a href="javascript:lncView('38020138','201407/201409', '2014-07-01', '1');">
-						
-								<img src="http://cdn.ybtour.co.kr/images/good_img/80/38020130008_0001b.jpg" width="150" height="110" alt="[유류세포함]◈가고시마◈ 3색 골프 3일(54홀)" title="[유류세포함]◈가고시마◈ 3색 골프 3일(54홀)" />
-							</a>
-						</p>
-						<!--
-						<p class="fb_like_btn" style="z-index:491"></p> --><!-- 페이스북 좋아요// -->
-
-					</div>
-					<div class="info_wrap">
-						<div class="lt_wrap">
-							<h2>
-						
-								<a href="javascript:lncView('38020138','201407/201409', '2014-07-01', '1');">
-						[유류세포함]◈가고시마◈ 3색 골프 3일(54홀)<span>상품번호<em>
-							38020138
-							</em></span></a></h2>
-							<p class="route">인천-가고시마(2)-인천</p>
-							<p class="desc">연중 온난한 규슈 최남단 명문 토너먼트 코스에서 즐기는 가고시마 교쎄라 골프여행!매일 다른 골프장에서 라운딩. </p>
-						</div>
-						<div class="rt_wrap">
-							<p class="price">￦ 1,049,000~</p>
-							<p class="balloons"><span>이 상품에 관심을 가진 분 <strong>276 명</strong></span></p>
-						
-							<a href="javascript:lncView('38020138','201407/201409', '2014-07-01', '1');">
-						
-								<img src="/images/sub/btn_startday.gif"  style="margin-top:10px;" alt="출발일 보기" title="출발일 보기"/>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div id="lncview_38020138"></div>
-				<!--div id="ajax_indicator" style="display:none;"><p style="top:300px;right:;position:fixed;"><img src="/Images/common/load.gif"/></p></div-->
-
-
-			<div class="fb-root"></div>
-				<div class="travelList_wrap" id="goodFocus380200958">
-					<div class="thumb_wrap">
-						<p class="thumb">
-						
-							<a href="javascript:lncView('380200958','201407/201411', '2014-07-01', '1');">
-						
-								<img src="http://cdn.ybtour.co.kr/images/good_img/80/38020090058_0006b.jpg" width="150" height="110" alt="[가고시마]기리시마 케슬 온천 3일(54홀)" title="[가고시마]기리시마 케슬 온천 3일(54홀)" />
-							</a>
-						</p>
-						<!--
-						<p class="fb_like_btn" style="z-index:490"></p> --><!-- 페이스북 좋아요// -->
-
-					</div>
-					<div class="info_wrap">
-						<div class="lt_wrap">
-							<h2>
-						
-								<a href="javascript:lncView('380200958','201407/201411', '2014-07-01', '1');">
-						[가고시마]기리시마 케슬 온천 3일(54홀)<span>상품번호<em>
-							380200958
-							</em></span></a></h2>
-							<p class="route">※ 인천-가고시마-기리시마(2)-가고시마-인천</p>
-							<p class="desc">♣ 겨울골프 여행의 진수, 규슈 남단의 포근한 지역~!! 라운드의 즐거움과 안락한 온천의 즐거움까지.. 누리십시오~!!</p>
-						</div>
-						<div class="rt_wrap">
-							<p class="price">￦ 899,000~</p>
-							<p class="balloons"><span>이 상품에 관심을 가진 분 <strong>233 명</strong></span></p>
-						
-							<a href="javascript:lncView('380200958','201407/201411', '2014-07-01', '1');">
-						
-								<img src="/images/sub/btn_startday.gif"  style="margin-top:10px;" alt="출발일 보기" title="출발일 보기"/>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div id="lncview_380200958"></div>
+				<div id="lncview_P9920142"></div>
 				<!--div id="ajax_indicator" style="display:none;"><p style="top:300px;right:;position:fixed;"><img src="/Images/common/load.gif"/></p></div-->
 
 

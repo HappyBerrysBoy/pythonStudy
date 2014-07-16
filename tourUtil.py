@@ -17,6 +17,22 @@ def getNumArray(html):
 def getNumArrayUnicode(html):
     return re.findall(u'[\^0-9]+', html)
     
+def getTagAttr(html, tag, attr):
+    if len(html.split('<' + tag)) > 0:
+        lst = html.split('<' + tag)[1].split('>')[0]
+        if lst.find(attr) > -1:
+            if len(lst.split(attr + '="')) > 0:
+                return lst.split(attr + '="')[1].split('"')[0]
+            elif len(lst.split(attr + "='")) > 0:
+                return lst.split(attr + "='")[1].split("'")[0]
+            else:
+                return ''
+        else:
+            return ''
+        return ''
+    else:
+        return ''
+
     
 """
 aa = '<td class="pro_date">07/28 (월) 09:10<br/><span>08/17 (<span style="color:red;margin-bottom:0;">일</span>) 05:50</span></td>'

@@ -20,8 +20,8 @@ import tourQuery
 #"start_dy":"매일","orderSeq":""},
 class clsMenuUrls():
     def __init__(self, p_mode, p_url):
-        self.url = p_url
         self.mode = p_mode
+        self.url = p_url
 
 class clsPackage():
     def __init__(self):
@@ -114,14 +114,17 @@ targetMonth = sys.argv[2]
 scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
 mainUrls = list()
-packageCls = clsMenuUrls('P', 'http://www.hanatour.com/asp/booking/oversea/oversea-main.asp?hanacode=overseas_M_bi')
-honeymonCls = clsMenuUrls('W', 'http://www.hanatour.com/asp/booking/honeymoon/hr-main.asp?hanacode=main_q_pack_honey')
-golfCls = clsMenuUrls('G', 'http://www.hanatour.com/asp/booking/golf/golf-main.asp?hanacode=main_q_pack_golf')
-cruiseUrl = clsMenuUrls('C', 'http://www.hanatour.com/asp/booking/cruise/cruise-main.asp?hanacode=main_q_pack_cruise')
+packageCls = clsMenuUrls(codes.getTourKind('hanatour', 'P'), 'http://www.hanatour.com/asp/booking/oversea/oversea-main.asp?hanacode=overseas_M_bi')        # Package
+honeymonCls = clsMenuUrls(codes.getTourKind('hanatour', 'W'), 'http://www.hanatour.com/asp/booking/honeymoon/hr-main.asp?hanacode=main_q_pack_honey')      # Honeymoon
+golfCls = clsMenuUrls(codes.getTourKind('hanatour', 'G'), 'http://www.hanatour.com/asp/booking/golf/golf-main.asp?hanacode=main_q_pack_golf')              # Golf
+cruiseUrl = clsMenuUrls(codes.getTourKind('hanatour', 'C'), 'http://www.hanatour.com/asp/booking/cruise/cruise-main.asp?hanacode=main_q_pack_cruise')      # Cruise
+jejuUrl = clsMenuUrls(codes.getTourKind('hanatour', 'D'), 'http://www.hanatour.com/asp/booking/local/local-cheju.asp?hanacode=main_q_dom_jeju')            # Jeju
+
 mainUrls.append(packageCls)
 mainUrls.append(honeymonCls)
 mainUrls.append(golfCls)
 mainUrls.append(cruiseUrl)
+mainUrls.append(jejuUrl)
 
 #productPackage/pk- 값이 존재하고... etc_code=P 인것..이 패키지
 #pkg_mst_code 값이 있는 경우는.. 바로 세부조회 내용임...(날짜 선택하는..) 이런 경우도 있김 있음..
@@ -134,6 +137,7 @@ print >> exceptFile, "Start : %s" % time.ctime()
 packageList = list()
 packageList.append('start')
 currCountry = ''
+con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
 for mainUrl in mainUrls:
     departCity = 'ICN'
     # 개별 test중...
@@ -141,16 +145,23 @@ for mainUrl in mainUrls:
         #continue
     print >> exceptFile, 'main URL Start!!!!!!!(' + mainUrl.mode + ') :' + mainUrl.url
     packagesUrlHtml = urllib2.urlopen(mainUrl.url).read()
-    packagesUrlList = packagesUrlHtml[packagesUrlHtml.find('</form><span class="free_go">'):packagesUrlHtml.find('</dl></div></div>')]
+    packagesUrlList = packagesUrlHtml[packagesUrlHtml.find('</form><span class="free_go">'):packagesUrlHtml.find('</div></div>')]
     packagesUrlList = packagesUrlList.replace('http://', '\r\nhttp://')
     packagesUrlList = savefilegethtml.htmlToList(packagesUrlList, savefilegethtml.chkExistFile('packagesUrlFile.txt'))
     # w:honeymoon, p:packages, g:golf, c:cruise    
     mode = mainUrl.mode
+    
     try:
+        jejuStart = False
         for packageUrl in packagesUrlList:
             try:
                 #print packageUrl
-                if packageUrl.find('/productPackage/pk-') > -1 and packageUrl.find('etc_code=' + mode) > -1:
+                if mode == 'D' and packageUrl.find('http://image1.hanatour.com/domestic/main/subgnb_menu_jeju_off.gif') > -1:
+                    jejuStart = True
+                elif mode == 'D' and jejuStart and packageUrl.find('/local/do-22000.asp') > -1:
+                    jejuStart = False
+            
+                if (packageUrl.find('/productPackage/pk-') > -1 and packageUrl.find('etc_code=' + mode) > -1) or (mode == 'D' and jejuStart and packageUrl.find('/productPackage/pk-') > -1):
                     #print 'original : ' + packageUrl
                     if packageUrl.find('target="_self') > -1 and mode == 'P':
                         currCountry = packageUrl.split('>')[1].split('<')[0]
@@ -158,14 +169,31 @@ for mainUrl in mainUrls:
                         print 'currcountry : ' + currCountry
                         
                         print >> exceptFile, 'currcountry : ' + currCountry
-                        
                     else:
                         #print packageUrl
                         jsonUrl = ''
-                        if mode == 'P':
-                            jsonUrl = packageUrl.split("'")[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
-                        else:
-                            jsonUrl = packageUrl.split('"')[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
+                        #if mode == 'P':
+                        jsonUrl = packageUrl.replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp').split("'")[0].split('"')[0]
+                        #else:
+                            #jsonUrl = packageUrl.split('"')[0].replace('amp;', '').replace('pk-11000.asp', 'pk-11000-list.asp')
+                        if mode == 'D' and jsonUrl == 'http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?area=K&pub_country=KR&pub_city=CJU&etc_code=P':
+                            continue
+                        
+                        if mode == 'D':
+                            if jsonUrl.find('AF9') > -1:
+                                departCity = 'AF9'
+                            elif jsonUrl.find('PUS') > -1:
+                                departCity = 'PUS'
+                            elif jsonUrl.find('TAE') > -1:
+                                departCity = 'TAE'
+                            elif jsonUrl.find('CJJ') > -1:
+                                departCity = 'CJJ'
+                            elif jsonUrl.find('KWJ') > -1:
+                                departCity = 'KWJ'
+                            else:
+                                departCity = 'ICN'
+                        
+                        
                         print jsonUrl
                         print >> exceptFile, 'Package Url : ' + jsonUrl
                         #print >> packageRealUrlList, jsonUrl
@@ -197,7 +225,7 @@ for mainUrl in mainUrls:
                         contentsList = open(contentsFileName)
                         
                         for product in contentsList:
-                            con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+
                             try:
                                 pkg_mst_code = valueParcing(product, 'pkg_mst_code":"', '","sMonth')
                                 #print 'product : ' + product
@@ -238,25 +266,32 @@ for mainUrl in mainUrls:
                                 detailProductUrl += 'area=' + packageClass.pub_area_code + '&pub_country=' +packageClass.pub_country+ '&pub_city=' + packageClass.pub_city
                                 detailProductUrl += '&tour_scheduled_year='+targetYear+'&tour_scheduled_month='+targetMonth+'&tour_scheduled_day=&pkg_code=&tour_old_year='+targetYear
                                 detailProductUrl += '&tour_old_month='+targetMonth+'&pkg_mst_code='+productClass.pkg_mst_code
-                                detailProductUrl += '&tour_scheduled_dt='+targetYear+'-'+targetMonth+'&etc_code=P&hanacode='+ cityCode
+                                detailProductUrl += '&tour_scheduled_dt='+targetYear+'-'+targetMonth+'&etc_code=P&hanacode='
+                                if mode != 'D':
+                                    detailProductUrl += cityCode
+                                    
                                 if departCity != 'ICN':
                                     detailProductUrl += '&start_city=' + departCity
                                 print 'last url.....: ' + detailProductUrl
+                                print >> exceptFile, 'Last Url : ', detailProductUrl
                                 
                                 #if len(nationList) == 0 and len(cityList) == 0:
                                     #print >> exceptFile, packageClass.pub_city + ' : ', valueParcing(product, 'mst_name":"', '","t_content').replace("'", "").decode('utf-8')
                                     #print >> exceptFile, 'detailProductUrl : ' + detailProductUrl                                
                                 
+                                dmst_div = 'A'
+                                if mode == 'D':
+                                    dmst_div = 'D'
+                                    
                                 # Master 상품 입력
-                                query = tourQuery.getMasterMergeQuery(tourAgency, productClass.pkg_mst_code, productClass.mst_name, mode, 'A', productClass.content, '')
+                                query = tourQuery.getMasterMergeQuery(tourAgency, productClass.pkg_mst_code, productClass.mst_name, mode, dmst_div, productClass.content, '')
                                 #print query
                                 cursor = con.cursor()
                                 cursor.execute(query)
+                                con.commit()
                                 # Region Data 삭제
                                 codes.insertRegionData(tourAgency, productClass.pkg_mst_code, cityList, nationList, continentList)
-                                con.commit()
                                 
-                                """
                                 detailProducthtml = urllib2.urlopen(detailProductUrl).read()
                                 
                                 #cont":[{"pcode":"PPP411140612KE5","sdate":"06/12 (목) 20:50","adate":"06/16 (월) 08:05","acode":"KE","aline":"대한항공","tday":"5","grade":"12","gname":"하나팩클래식","pname":"팔라우 5일[Luxury]팔라우퍼시픽리조트[용궁+유네스코+젤리피쉬]","amt":"1999000","lminute":"2"},                    
@@ -311,21 +346,13 @@ for mainUrl in mainUrls:
                                         con.commit()
                                         
                                         #break
-                                        #>>> con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
-                                    #>>> cursor = con.cursor()
-                                    #>>> cursor.execute("select * from tab")
-                                    #<cx_Oracle.Cursor on <cx_Oracle.Connection to bigtour@hnctech73.iptime.org:1521/ora11g>>
-                                    #>>> print cursor.fetchall()
-                                    #[('T_PRD', 'TABLE', None), ('T_PRD_DTL', 'TABLE', None)]
-                                    #>>> cursor.close()
-                                    #>>> con.close() 
                                     except cx_Oracle.DatabaseError as dberr:
                                         print >> exceptFile, 'Depth 44 : ' + str(dberr)
                                         pass
                                     except:
                                         print >> exceptFile, 'Depth 4 : ' + str(sys.exc_info()[0])
                                         pass
-                                """
+                                
                             except cx_Oracle.IntegrityError as dberr:
                                 print >> exceptFile, 'Depth 33 : ' + str(dberr)
                                 print 'Depth 33 : ' + str(dberr)
@@ -338,9 +365,6 @@ for mainUrl in mainUrls:
                                 print >> exceptFile, 'Depth 3 : ' + str(sys.exc_info()[0])
                                 print 'Depth 3 : ' + str(sys.exc_info()[0])
                                 pass
-                            finally:
-                                con.commit()
-                                con.close()
                                 
                             #break
                         #break
@@ -358,7 +382,7 @@ for mainUrl in mainUrls:
                 print 'Depth 2 : ' + str(sys.exc_info()[0])
                 pass
                 
-        break
+        #break
     except:
         print >> exceptFile, 'Depth 1 : ' + str(sys.exc_info()[0])
         print 'Depth 1 : ' + str(sys.exc_info()[0])
@@ -366,7 +390,8 @@ for mainUrl in mainUrls:
 
 print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()
-
+con.commit()
+con.close()
 
 """
 http://www.hanatour.com/asp/booking/productPackage/pk-11000-list.asp?

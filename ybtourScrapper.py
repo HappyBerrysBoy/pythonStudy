@@ -9,13 +9,12 @@ import xmltodict
 import urllib2
 import re
 import time, datetime
-import cx_Oracle
 import sys
 import savefilegethtml
 import codes
 import tourUtil
 import tourQuery
-
+import cx_Oracle
         
 class classPackage():
     def __init__(self):
@@ -66,6 +65,7 @@ ml1List = list()
 ml2List = list()
 ml3List = list()
 productClassList = list()
+con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
 try:
     print '===========================================MainUrl==========================================='
     mainUrl = defaultUrl + 'ML=1&MCD='
@@ -79,18 +79,18 @@ try:
     urlMap['A03'] = 'airtel'    # airtel
     urlMap['A06'] = 'Honeymoon' # Honeymoon
     urlMap['A09'] = 'Overseas'  # Golf
-    urlMap['A12'] = 'Domestic'
-    urlMap['A15'] = 'Busan'
-    urlMap['A18'] = 'Cruise'
+    urlMap['A12'] = 'Overseas'  # 국내 여행... but.. 주소는 Overseas를 사용하네..
+    urlMap['A15'] = 'Overseas'  # 지역 출발... but 주소는 Overseas를 사용
+    urlMap['A18'] = 'Overseas'    # Cruise but 주소는 Overseas
     
     packageMap = dict()
-    packageMap['A01'] = 'P'
-    packageMap['A03'] = 'F'
-    packageMap['A06'] = 'W'
-    packageMap['A09'] = 'G'
-    packageMap['A12'] = 'D'
-    packageMap['A15'] = 'B'
-    packageMap['A18'] = 'C'
+    packageMap['A01'] = codes.getTourKind('ybtour', 'P')
+    packageMap['A03'] = codes.getTourKind('ybtour', 'F')
+    packageMap['A06'] = codes.getTourKind('ybtour', 'W')
+    packageMap['A09'] = codes.getTourKind('ybtour', 'G')
+    packageMap['A12'] = codes.getTourKind('ybtour', 'D')
+    packageMap['A15'] = codes.getTourKind('ybtour', 'PUS')
+    packageMap['A18'] = codes.getTourKind('ybtour', 'C')
     
     for pack in packageListDict['ROOT']['List']:
         try:
@@ -102,8 +102,8 @@ try:
             ml1List.append(package)
             #print 'MenuCD:' + pack['MenuCD'] + ', MenuNM:' + pack['MenuNM'] + ', GoodTypeCD:' + pack['GoodTypeCD'] + ', SBAR:' + pack['SBAR']
             
-            #if package.menuCode != 'A09':
-                #continue
+            if package.menuCode == 'A03':
+                continue
             
             print '===========================================Sub1 URL==========================================='
             subUrl = defaultUrl + 'ML=2&MCD=' + package.menuCode
@@ -125,12 +125,16 @@ try:
                     
                     print '===========================================Sub2 URL==========================================='
                     sub2Url = defaultUrl + 'ML=3&MCD=' + subpackage.menuCode
+                    
+                    #if sub2Url == 'http://www.ybtour.co.kr/GoodSearch/Area_Menu_XML.asp?ML=3&MCD=A12_03':
+                        #print ''
+                    
                     print 'Sub2 URL : ' + sub2Url
                     print >> exceptFile, 'Sub2 URL : ', sub2Url
                     packageSub2ListXml = urllib2.urlopen(sub2Url).read()
                     packageSub2ListDict = xmltodict.parse(packageSub2ListXml)
                     
-                    con = tourQuery.getOracleConnection()
+                    #con = tourQuery.getOracleConnection()
                     for packSub2 in packageSub2ListDict['ROOT']['List']:
                         try:
                             sub2package = classPackage()
@@ -154,11 +158,10 @@ try:
                             else:
                                 dmst_div = 'A'
                                 
-
                             #if not (str(sub2package.sbar) == '1511' or sub2package.sbar == 1511):
                                 #continue
                             
-                            con = tourQuery.getOracleConnection()
+                            #con = tourQuery.getOracleConnection()
 
                             defaultproductListUrl = 'http://www.ybtour.co.kr/Goods/' + urlMap[package.menuCode] + '/list.asp?sub_area_cd=' + str(sub2package.sbar)
                             print 'List URL : ' + defaultproductListUrl
@@ -178,7 +181,7 @@ try:
                                 #if pdName.find('<p class="desc">') > 0:
                                     #productCommentList.append(pdName.split('desc">')[1].split('<')[0].replace("'", "").strip().decode('utf-8'))
                                 if pdName.find('<p class="route">') > 0:
-                                    productCommentList.append(tourUtil.getRemovedHtmlTag(pdName).strip().decode('utf-8'))
+                                    productCommentList.append(tourUtil.getRemovedHtmlTag(pdName).strip().replace("'", "").decode('utf-8'))
                                     
                             #today = today.replace(month = today.month + 1)
                             codeIdx = 0
@@ -187,15 +190,14 @@ try:
                                 detailProduct = pcode.split('s')[1]
                                 
                                 detailProductUrl = ''
-                                if package.menuCode == 'A01' or package.menuCode == 'A09':       # 출발일정 눌렀을때 List가 펼쳐지는 경우랑, 페이지가 이동하는 경우 나눔..
+                                if not (package.menuCode == 'A03' or package.menuCode == 'A06'):       # 출발일정 눌렀을때 List가 펼쳐지는 경우랑, 페이지가 이동하는 경우 나눔..
                                     detailProductUrl = ''
-                                    if package.menuCode == 'A01':
-                                        detailProductUrl = 'http://www.ybtour.co.kr/Goods/' + urlMap[package.menuCode] + '/inc_evList_ajax.asp?goodCD=' + detailProduct + '&startDT=' + targetYear + targetMonth
-                                    elif package.menuCode == 'A09':
-                                        # 골프인 경우 기간을 뒤에 한달까지 넣어야 하네... ㅅㅂ...
-                                        # ex : http://www.ybtour.co.kr/Goods/Overseas/inc_cal_ajax.asp?goodCD=310200915&fstartDT=201407/201408
-                                        detailProductUrl = 'http://www.ybtour.co.kr/Goods/' + urlMap[package.menuCode] + '/inc_cal_ajax.asp?goodCD=' + detailProduct + '&startDT=' + targetYear + targetMonth + '/' + targetYear + targetMonth
+                                    #if package.menuCode == 'A01':
+                                    detailProductUrl = 'http://www.ybtour.co.kr/Goods/' + urlMap[package.menuCode] + '/inc_evList_ajax.asp?goodCD=' + detailProduct + '&startDT=' + targetYear + targetMonth
                                         
+                                    #if detailProductUrl == 'http://www.ybtour.co.kr/Goods/Overseas/inc_evList_ajax.asp?goodCD=JAA2013113&startDT=201407':
+                                        #print ''
+                                    
                                     print 'Detail Product URL : ' + detailProductUrl
                                     print >> exceptFile, 'Detail Product URL : ', detailProductUrl
                                     detailProductList = savefilegethtml.getHtml(detailProductUrl, '', '', 'ybtourTempFile.txt')
@@ -218,8 +220,8 @@ try:
                                         codeIdx += 1
                                         cursor = con.cursor()
                                         cursor.execute(query)
-                                        codes.insertRegionData(tourAgency, detailProduct, cityList, nationList, continentList)
                                         con.commit()
+                                        codes.insertRegionData(tourAgency, detailProduct, cityList, nationList, continentList)
                                         
                                         flag = False
                                         clsProduct = classProduct()
@@ -267,6 +269,7 @@ try:
                                                         query = tourQuery.getDetailMergeQuery(tourAgency, detailProduct, clsProduct.detailcode, clsProduct.productName, targetYear+clsProduct.departDay+clsProduct.departTime, targetYear+clsProduct.arriveDay+clsProduct.arriveTime, clsProduct.period, departCity, '', clsProduct.airCode, clsProduct.status, clsProduct.url, clsProduct.price, '0', '0', '0', '') 
                                                         #query = savefilegethtml.getDetailMergeQuery('ybtour', detailProduct, clsProduct.detailcode, clsProduct.productName, targetYear+clsProduct.departDay+clsProduct.departTime, targetYear+clsProduct.arriveDay+clsProduct.arriveTime, clsProduct.period, departCity, '', clsProduct.airCode, clsProduct.status, clsProduct.url, clsProduct.price, '0', '0', '0', '') 
                                                         #print query
+                                                        con.commit()
                                                         cursor = con.cursor()
                                                         cursor.execute(query)
                                                         con.commit()
@@ -322,20 +325,23 @@ try:
                                             pass
                                             
                                             
-                                    con = tourQuery.getOracleConnection()
+                                    #con = tourQuery.getOracleConnection()
                                     
                                     codeLists = codes.getCityCode(productNameList[codeIdx], sub2package.menuName, productCommentList[codeIdx], subpackage.menuName)
                                     cityList = codeLists[0]
                                     nationList = codeLists[1]
-                                    continentList = codeList[2]
-                                    
+                                    continentList = codeLists[2]
+                                    #print cityList
+                                    #print nationList
+                                    #print continentList
+                                        
                                     query = tourQuery.getMasterMergeQuery(tourAgency, detailProduct, productNameList[codeIdx], packageMap[package.menuCode], dmst_div, productCommentList[codeIdx], '')
 
                                     #print query
                                     cursor = con.cursor()
                                     cursor.execute(query)
-                                    codes.insertRegionData(tourAgency, detailProduct, cityList, nationList, continentList)
                                     con.commit()
+                                    codes.insertRegionData(tourAgency, detailProduct, cityList, nationList, continentList)
                                     
                                     
                                     # 저장된 날짜들을 기준으로 세부 페이지 호출.... ㄷㄷㄷ
@@ -348,7 +354,7 @@ try:
                                             chkDepartInfo = False
                                             chkArriveInfo = False
                                             chkAirlineInfo = False
-                                            period = ''
+                                            period = 0
                                             dDay = ''
                                             dTime = ''
                                             aDay = ''
@@ -383,16 +389,17 @@ try:
                                                         airCode = detailInfo[detailInfo.find('.gif') - 4:detailInfo.find('.gif') - 2]
                                                     elif chkAirlineInfo and detailInfo.find('<strong>') > -1:
                                                         numArray = tourUtil.getNumArray(tourUtil.getRemovedHtmlTag(detailInfo))
-                                                        if len(numArray) > 1:
-                                                            dTime = numArray[0] + numArray[1]
+                                                        for tmp in numArray:
+                                                            period += int(tmp)
                                                     elif chkAirlineInfo and detailInfo.find('<em>') > -1:
                                                         price = re.sub('[^0-9]', '', tourUtil.getRemovedHtmlTag(detailInfo))
                                                         
-                                                        query = tourQuery.getDetailMergeQuery(tourAgency, detailProduct, productSeq, productNameList[codeIdx], targetYear+targetMonth+dDay+dTime, targetYear+targetMonth+aDay, '0', departCity, '', airCode, cal.status, url, price, '0', '0', '0', '') 
+                                                        query = tourQuery.getDetailMergeQuery(tourAgency, detailProduct, productSeq, productNameList[codeIdx], targetYear+targetMonth+dDay, targetYear+targetMonth+aDay, str(period), departCity, '', airCode, cal.status, url, price, '0', '0', '0', '') 
                                                         #print query
                                                         cursor = con.cursor()
                                                         cursor.execute(query)
                                                         con.commit()
+                                                        #break
                                                 except:
                                                     print >> exceptFile, "Free2 Parcing Error:", sys.exc_info()[0]
                                                     pass
@@ -430,10 +437,6 @@ try:
     								
     							<font color="#666666"><strong>26</font>
                                     """
-                                    
-                                    
-                                
-                                
                             #break
                         except ValueError as err:
                             print 'ML3-2 Parcing Error : ' + err.message
@@ -442,9 +445,6 @@ try:
                             print "ML3 Parcing Error:", sys.exc_info()[0]
                             print >> exceptFile, "ML3 Parcing Error:", sys.exc_info()[0]
                             pass
-                        finally:
-                            con.commit()
-                            con.close()
                         
                     #break
                 except:
@@ -460,6 +460,9 @@ except:
     print "urllib2 Error(Main) error:", sys.exc_info()[0]
     print >> exceptFile, "urllib2 Error(Main) error:", sys.exc_info()[0]
     pass
+finally:
+    con.commit()
+    con.close()    
 
 print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()

@@ -1,0 +1,26 @@
+class="overseas_list_content">
+                <dl>
+                  <dt>상품코드</dt>
+                  <dd>A-AB-2014-35</dd>
+                </dl>
+                <dl>
+                  <dt>여행기간</dt>
+                  <dd>2박 3일</dd>
+                </dl>
+                <dl>
+                  <dt>출발요일</dt>
+                  <dd> 일, 월, 화, 수, 목, 금, 토&nbsp;</dd>
+                </dl>
+        	        <dl>
+                  <dt>이용교통</dt>
+                  <dd>버스</dd>
+                </dl>
+                <dl>
+                  <dt>상품가격</dt>
+                  <dd class="text_pinkB">446,000원 ~ 496,000원</dd>
+                </dl>
+                <dl>
+                  <dt>상품 설명</dt>
+                  <dd>고품격 휴양 울릉도를 원하신가요? 바로 이 패키지가 당신의 만족을 시킬수 있는 패키지 상품이다.</dd>
+                </dl>
+            </div> 

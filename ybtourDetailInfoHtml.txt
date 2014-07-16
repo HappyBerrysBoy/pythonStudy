@@ -3,20 +3,20 @@
 						<tr>
 							<th><img src="/images/sub/th_detail01.gif" alt="출발일" /></th>
 							<td>
-								2014 년 07 월 27일(<font color='#e61b1b'>일</font>)&nbsp; [19:30] (OZ763)<br>
-								2014 년 07 월 28일(월)&nbsp; [:]
+								2014 년 08 월 26일(화)&nbsp; [08:50] (OZ603)<br>
+								2014 년 08 월 27일(수)&nbsp; [:]
 							</td>
 						</tr>
 						<tr>
 							<th><img src="/images/sub/th_detail02.gif" alt="귀국일" /></th>
 							<td>
-								2014 년 08 월 01일(금) &nbsp;[:] (OZ604)<br>
-								2014 년 08 월 01일(금) &nbsp;[10:55]
+								2014 년 08 월 29일(금) &nbsp;[:] (OZ604)<br>
+								2014 년 08 월 29일(금) &nbsp;[18:55]
 							</td>
 						</tr>
 							<tr>
 							<th><img src="/images/sub/th_detail03.gif" alt="상품가격" /></th>
-							<td class="bold">성인 <em> 2,736,000원</em></td>
+							<td class="bold">성인 <em> 1,069,000원</em></td>
 						</tr>
 						<!-- 2017.02.17 롯데 카드 막기 -->
 						<!--
@@ -37,7 +37,8 @@
 							<th><img src="/images/sub/th_detail140416.gif" alt="유류할증료" title="유류할증료" /></th>
 						<td class="bold">
 							
-							별도문의
+							<em>110,100원<br></em>
+							<img src="/images/sub/view_text.gif" alt="유류할증료" title="유류할증료" />
 							
 						</td>
 						</tr>
@@ -49,13 +50,13 @@
 <!-- 
 						<tr>
 							<th><img src="/images/sub/th_detail05.gif" alt="예약인원" /></th>
-							<td class="bold">남은좌석 : <strong>2 석</strong><span> (최소출발인원 : 0)</span>
+							<td class="bold">예약 : <strong>0 명</strong><br />남은좌석 : <strong>16 석</strong><span> (최소출발인원 : 2)</span>
 							</td>
 						</tr>
  -->
 						<tr>
 							<th><img src="/images/sub/th_detail06.gif" alt="방문도시" /></th>
-							<td>인천-발리-인천</td>
+							<td><font color=darkslateblue>월드리조트 호텔(3박) - 사이판관광+마나가섬+호텔식+선셋BBQ</td>
 						</tr>
 						</tbody>
 					</table>
@@ -71,9 +72,9 @@
 						<tbody>
 
 						<tr>
-							<td class="lt"><input type="radio" name="viwradio" onClick="javascript:goGoodsViewHoneyMoon('201407', 11070)" checked /><img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='OZ' />아시아나항공</td>
-							<td><strong>슈페리어발코니</strong></td>
-							<td><em>2,736,000원 </em></td>
+							<td class="lt"><input type="radio" name="viwradio" onClick="javascript:goGoodsViewHoneyMoon('201408', 11167)" checked /><img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='OZ' />아시아나항공</td>
+							<td><strong>08:50</strong></td>
+							<td><em>1,069,000원</em></td>
 						</tr>
 									
 						</tbody>

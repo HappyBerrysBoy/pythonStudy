@@ -80,18 +80,18 @@
 
 				<tr>
 				
-					<td><input type="checkbox" name="goods_id" value="201408424;" class="ir" /><input type="hidden"  name="goods_id2" value="201408424"/></td>
-					<td><span class="blue">08/07 (목) 00:50</span><br /><span>08/16 (토) 16:40</span></td>
-					<td><span class="logo" title="카타르항공" alt="카타르항공">
+					<td><input type="checkbox" name="goods_id" value="20140836852;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836852"/></td>
+					<td><span class="blue">08/03 (일) 18:00</span><br /><span>08/10 (일) 17:35</span></td>
+					<td><span class="logo" title="대한항공" alt="대한항공">
 						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
-					<img src='/images/air/air/AP_QR03.gif' align='absmiddle' border=0 alt='카타르항공' title='카타르항공'>
+					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
 					</span></td>
-					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=424&good_cd=190201320">중세의 나라 코카서스 3개국 10일</a></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36852&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
 					<td><span>
-					8박10일
+					7박8일
 					
 					</span></td>
-					<td class="blue">4,590,000원 
+					<td class="blue">990,000원 
 					
 					</td>
 					<td class="red">예약가능</td>
@@ -99,18 +99,18 @@
 
 				<tr>
 				
-					<td><input type="checkbox" name="goods_id" value="201408425;" class="ir" /><input type="hidden"  name="goods_id2" value="201408425"/></td>
-					<td><span class="blue">08/14 (목) 00:50</span><br /><span>08/23 (토) 16:40</span></td>
-					<td><span class="logo" title="카타르항공" alt="카타르항공">
+					<td><input type="checkbox" name="goods_id" value="20140836853;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836853"/></td>
+					<td><span class="blue">08/10 (일) 18:00</span><br /><span>08/17 (일) 17:35</span></td>
+					<td><span class="logo" title="대한항공" alt="대한항공">
 						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
-					<img src='/images/air/air/AP_QR03.gif' align='absmiddle' border=0 alt='카타르항공' title='카타르항공'>
+					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
 					</span></td>
-					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=425&good_cd=190201320">중세의 나라 코카서스 3개국 10일</a></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36853&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
 					<td><span>
-					8박10일
+					7박8일
 					
 					</span></td>
-					<td class="blue">4,590,000원 
+					<td class="blue">990,000원 
 					
 					</td>
 					<td class="red">예약가능</td>
@@ -118,18 +118,18 @@
 
 				<tr>
 				
-					<td><input type="checkbox" name="goods_id" value="201408426;" class="ir" /><input type="hidden"  name="goods_id2" value="201408426"/></td>
-					<td><span class="blue">08/21 (목) 00:50</span><br /><span>08/30 (토) 16:40</span></td>
-					<td><span class="logo" title="카타르항공" alt="카타르항공">
+					<td><input type="checkbox" name="goods_id" value="20140836854;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836854"/></td>
+					<td><span class="blue">08/17 (일) 18:00</span><br /><span>08/24 (일) 17:35</span></td>
+					<td><span class="logo" title="대한항공" alt="대한항공">
 						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
-					<img src='/images/air/air/AP_QR03.gif' align='absmiddle' border=0 alt='카타르항공' title='카타르항공'>
+					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
 					</span></td>
-					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=426&good_cd=190201320">중세의 나라 코카서스 3개국 10일</a></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36854&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
 					<td><span>
-					8박10일
+					7박8일
 					
 					</span></td>
-					<td class="blue">4,590,000원 
+					<td class="blue">890,000원 
 					
 					</td>
 					<td class="red">예약가능</td>
@@ -137,18 +137,37 @@
 
 				<tr>
 				
-					<td><input type="checkbox" name="goods_id" value="201408427;" class="ir" /><input type="hidden"  name="goods_id2" value="201408427"/></td>
-					<td><span class="blue">08/28 (목) 00:50</span><br /><span>09/06 (토) 16:40</span></td>
-					<td><span class="logo" title="카타르항공" alt="카타르항공">
+					<td><input type="checkbox" name="goods_id" value="20140836855;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836855"/></td>
+					<td><span class="blue">08/24 (일) 18:00</span><br /><span>08/31 (일) 17:35</span></td>
+					<td><span class="logo" title="대한항공" alt="대한항공">
 						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
-					<img src='/images/air/air/AP_QR03.gif' align='absmiddle' border=0 alt='카타르항공' title='카타르항공'>
+					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
 					</span></td>
-					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=427&good_cd=190201320">중세의 나라 코카서스 3개국 10일</a></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36855&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
 					<td><span>
-					8박10일
+					7박8일
 					
 					</span></td>
-					<td class="blue">4,590,000원 
+					<td class="blue">690,000원 
+					
+					</td>
+					<td class="red">예약가능</td>
+				</tr>
+
+				<tr>
+				
+					<td><input type="checkbox" name="goods_id" value="20140836856;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836856"/></td>
+					<td><span class="blue">08/31 (일) 18:00</span><br /><span>09/07 (일) 17:35</span></td>
+					<td><span class="logo" title="대한항공" alt="대한항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36856&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
+					<td><span>
+					7박8일
+					
+					</span></td>
+					<td class="blue">690,000원 
 					
 					</td>
 					<td class="red">예약가능</td>

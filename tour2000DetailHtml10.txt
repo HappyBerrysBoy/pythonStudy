@@ -1,0 +1,44 @@
+
+		<div class="overseas_boxOn" >
+        	<ul>
+                <li>
+					<a  class="overseas_pointer_left">←</a>
+				</li>
+
+				<li><a href="javascript:fnc_GoStartDay ('AAB201435','201407','','','');" >7월</a></li>
+
+				<li><a href="javascript:fnc_GoStartDay ('AAB201435','201408','','','');" >8월</a></li>
+
+                <li>
+                	<a  class="overseas_pointer_right">→</a>
+                </li>
+                <li class="list_r">
+                	<span class="text_pink mr5">■ 예약가능</span>
+                    <span class="text_blau mr5">■ 출발가능</span>
+                    <span class="text_green mr5">■ 대기예약</span>
+                    <span class="text_grayLightSmall">■ 예약마감</span>
+                </li>
+			</ul>
+
+            <table>
+                <colgroup>
+                    <col width="110" />
+                    <col width="140" />
+                    <col width="90" />
+                    <col width="60" />
+                    <col width="410" />
+                    <col width="90" />
+                </colgroup>
+                <tr>
+                    <th>출발/도착시간</th>
+                    <th>교통편</th>
+                    <th>상품가격</th>
+                    <th>잔여석</th>
+                    <th>행사명</th>
+                    <th>예약하기</th>
+                </tr>
+
+            </table>
+
+        </div>
+        <!-- overseas_boxOn// -->

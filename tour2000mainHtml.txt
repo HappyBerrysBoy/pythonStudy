@@ -1,0 +1,110 @@
+<div class="navi_wholeMenu_box">
+
+		<!-- 실시간 항공 -->
+		<div >
+			<h4 class="text_pinkB14 mb10">실시간 항공</h4>
+			<ul>
+				<li><a href="http://ticket.tour2000.co.kr/booking/BkSpcDiscount.lts?kind=area&fareType=A/Y/S/H&areaCode=A7&arrCityCode=">주요도시 특가</a></li>
+				<li><a href="http://ticket.tour2000.co.kr/booking/BkSpcDiscount.lts?kind=area&fareType=S&areaCode=&arrCityCode=&eventType=A">반짝세일</a></li>
+				<li><a href="http://ticket.tour2000.co.kr/booking/BkSpcDiscount.lts?kind=area&fareType=W&areaCode=A1">학생할인</a></li>
+				<li><a href="http://ticket.tour2000.co.kr/booking/BkSpcDiscount.lts?kind=area&areaCode=A7&arrCityCode=&fareType=Z">비즈니스</a></li>
+				<li><a href="http://ticket.tour2000.co.kr/booking/BkSpcDiscount.lts?kind=area&areaCode=A7&arrCityCode=&fareType=X">지방출발</a></li>
+				<li><a href="/MyPage/Group_Ticket/Group_Request.asp">법인/단체</a></li>
+				<li><a href="http://ticket.tour2000.co.kr/booking/BkSpcDiscount.lts?kind=area&fareType=H&areaCode=A3&eventType=C">공동구매</a></li>
+			</ul>
+		</div>
+
+		<!-- 해외여행 -->
+		<div >
+			<h4 class="text_pinkB14 mb10">해외여행</h4>
+			<ul>
+				<li><a href="/Overseas_Pack/index.asp?AREA_CD=30">동남아</a></li>
+				<li><a href="/Overseas_Pack/index.asp?AREA_CD=50">유럽/인도</a></li>
+				<li><a href="/Overseas_Pack/index.asp?AREA_CD=20">중국/홍콩/대만</a></li>
+				<li><a href="/Overseas_Pack/index.asp?AREA_CD=10">일본</a></li>
+				<li><a href="/Overseas_Pack/index.asp?AREA_CD=40">미주/캐나다</a></li>
+				<li><a href="/Overseas_Pack/index.asp?AREA_CD=60">호주/뉴질랜드</a></li>
+				<li><a href="/Overseas_Pack/index.asp?AREA_CD=70">괌/사이판/팔라우</a></li>
+			</ul>
+		</div>
+
+		<!-- 자유여행 -->
+		<div >
+			<h4 class="text_pinkB14 mb10">자유여행</h4>
+			<ul>
+				<li><a href="/Overseas_Free/Goods_List.asp?h_area_cd=20&sub_area_cd=2010">중국</a></li>
+				<li><a href="/Overseas_Free/Goods_List.asp?h_area_cd=70&sub_area_cd=7010">괌/사이판</a></li>
+				<li><a href="/Overseas_Free/Goods_List.asp?h_area_cd=40&sub_area_cd=4010">하와이</a></li>
+			</ul>
+		</div>
+
+		<!-- 허니문 -->
+		<div >
+			<h4 class="text_pinkB14 mb10">허니문</h4>
+			<ul>
+				<li><a href="/Overseas_Honey/Goods_List.asp?h_area_cd=30&sub_area_cd=3010">필리핀</a></li>
+				<li><a href="/Overseas_Honey/Goods_List.asp?h_area_cd=60&sub_area_cd=6010">몰디브</a></li>
+				<li><a href="/Overseas_Honey/Goods_List.asp?h_area_cd=70&sub_area_cd=7001">미주/하와이</a></li>
+			</ul>
+		</div>
+
+		<!-- 골프 -->
+		<!--<div >
+			<h4 class="text_pinkB14 mb10">골프</h4>
+			<ul>
+				<li><a href="/Overseas_Golf/Goods_List.asp?h_area_cd=30&sub_area_cd=3050">동남아</a></li>
+				<li><a href="/overseas_Golf/Goods_List.asp?h_area_cd=20&sub_area_cd=2060">중국</a></li>
+				<li><a href="/Overseas_Golf/Goods_List.asp?h_area_cd=10&sub_area_cd=1020">일본</a></li>
+				<li><a href="/domestic/domestic_Jeju.asp?cpCode=golfpkg">국내골프</a></li>
+			</ul>
+		</div>-->
+
+		<!-- KOREA TOUR -->
+		<div >
+			<h4 class="text_pinkB14 mb10">국내여행</h4>
+			<ul>
+				<li><a href="/domestic/domestic_Jeju.asp?cpCode=real">국내항공권 예약</a></li>
+				<li><a href="/hotelbooking/index.asp">국내호텔</a></li>
+				<li><a href="/Domestic/index.asp?AREA_CD=AA">제주여행</a></li>
+				<li><a href="/Domestic/index.asp?AREA_CD=AB">내륙/테마여행</a></li>
+                <li><a href="/Domestic/eng/index.asp">English</a></li>
+                <li><a href="/Domestic/japan/index.asp">Japanese</a></li>
+                <li><a href="/Domestic/china/index.asp">Chinese</a></li>
+			</ul>
+		</div>
+
+
+		<!-- 호텔 -->
+		<div >
+			<h4 class="text_pinkB14 mb10">호텔</h4>
+			<ul>
+				<li><a href="/hotelbooking/index.asp?AREA_CD=KR">국내</a></li>
+				<li><a href="/hotelbooking/index.asp?AREA_CD=JP">일본</a></li>
+				<li><a href="/hotelbooking/index.asp?AREA_CD=CN">중국</a></li>
+				<li><a href="/hotelbooking/index.asp?AREA_CD=MY">동남아</a></li>
+				<li><a href="/hotelbooking/index.asp?AREA_CD=FR">유럽</a></li>
+				<li><a href="/hotelbooking/index.asp?AREA_CD=KR">대양주</a></li>
+				<li><a href="/hotelbooking/index.asp?AREA_CD=US">미주</a></li>
+			</ul>
+		</div>
+        
+        <!-- 홈쇼핑 -->
+		<div >
+			<h4 class="text_pinkB14 mb10">홈쇼핑</h4>
+			<ul>
+				<li><a href="/homeshopping/">홈쇼핑</a></li>
+				
+			</ul>
+		</div>
+        
+		<!-- 범인/상용 -->
+		<div >
+			<h4 class="text_pinkB14 mb10">법인/상용</h4>
+			<ul>
+				<li><a href="/mice/mice_01.asp">법인/상용</a></li>
+			</ul>
+		</div>
+		<p><a href="javascript:void(0);" class="navi_a9 closed"> 닫기    </a></p>
+
+	</div><!-- navi_wholeMenu_box// -->
+</div>

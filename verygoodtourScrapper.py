@@ -7,11 +7,11 @@ Created on Tue Jun 10 23:37:36 2014
 
 import time, datetime
 import sys
-import cx_Oracle
 import savefilegethtml
 import codes
 import tourUtil
 import tourQuery
+import cx_Oracle
 
 class clsProductGroup():
     def __init__(self):
@@ -40,27 +40,27 @@ class clsProduct():
 
 def getTourType(idx):
     if idx == 0:
-        return 'P'
+        return codes.getTourKind('verygoodtour', 'P')
     elif idx == 1:
-        return 'F'
+        return codes.getTourKind('verygoodtour', 'F')
     elif idx == 2:
-        return 'D'
+        return codes.getTourKind('verygoodtour', 'D')
     elif idx == 3:
-        return 'B'
+        return codes.getTourKind('verygoodtour', 'PUS')
     elif idx == 4:
-        return 'W'
+        return codes.getTourKind('verygoodtour', 'W')
     elif idx == 5:
-        return 'G'
+        return codes.getTourKind('verygoodtour', 'G')
     elif idx == 6:
-        return 'L'
+        return codes.getTourKind('verygoodtour', 'Luxury')
     elif idx == 7:
-        return 'A'
+        return codes.getTourKind('verygoodtour', 'Air')
     elif idx == 8:
-        return 'H'
+        return codes.getTourKind('verygoodtour', 'Hotel')
     elif idx == 9:
-        return '법인'
+        return codes.getTourKind('verygoodtour', 'Company')
     else:
-        return 'None'
+        return 'No'
     
 # 시간 변수들..
 tourAgency = 'vgtour'
@@ -88,7 +88,7 @@ depthIdx = 0
 idx = 0
 productList = list()        # 중복으로 같은 상품 안가져 오도록 List에 넣고.. 없는 것들만 들고오도록..
 productList.append('START')
-
+con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
 try:
     for each_line in sitemapHtml:
         if each_line.find('class="depth_2 ') > -1:
@@ -135,14 +135,14 @@ try:
                 try:
                     mastercode = ''
                     
-                    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                    con = tourQuery.getOracleConnection()
                     for each_line in regionHtml:
                         if each_line.find('img_ov_text2') > -1:
                             #Detail Product List 가져오는 URL...
                             mastercode = each_line.split("('")[1].split("')")[0]
                         elif each_line.find('class="title"') > -1:
                             if productList.count(mastercode) > 0:
-                                print 'MasterCode : ' + mastercode + '  ==>filtering.. same mastercode'
+                                #print 'MasterCode : ' + mastercode + '  ==>filtering.. same mastercode'
                                 print >> exceptFile, 'MasterCode : ' + mastercode + '  ==>filtering.. same mastercode'
                             else:
                                 productList.append(mastercode)
@@ -156,20 +156,19 @@ try:
                                 if mastercode.strip() == '' or productName.strip() == '' or productComment.strip() == '':
                                     continue
                                 
-                                
                                 codeList = codes.getCityCode(productName, productGroupCls.name, productComment)
                                 cityList = codeList[0]
                                 nationList = codeList[1]
                                 continentList = codeList[2]
+                                
                                 
                                 query = tourQuery.getMasterMergeQuery(tourAgency, mastercode, productName, tourType, region, productComment, '')  # A : 해외(Abroad)
                                 #query = savefilegethtml.getMasterMergeQuery('vgtour', mastercode, '', '', productGroupCls.name, productName, tourType, region, productComment, '')  # A : 해외(Abroad)
                                 #print query
                                 cursor = con.cursor()
                                 cursor.execute(query)
-                                codes.insertRegionData(tourAgency, mastercode, cityList, nationList, continentList)
                                 con.commit()
-            
+                                codes.insertRegionData(tourAgency, mastercode, cityList, nationList, continentList)
             
                                 #최종 상품들 잡아넣자..
                                 try:
@@ -262,8 +261,6 @@ try:
                 except:
                     print >> exceptFile, "Parcing or URL Error:", sys.exc_info()[0]
                     pass
-                finally:
-                    con.close()
                     
             except:
                 print >> exceptFile, "URL Open Error:", sys.exc_info()[0]
@@ -277,3 +274,5 @@ except:
 #sitemapHtml.close()
 print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()
+con.commit()
+con.close()

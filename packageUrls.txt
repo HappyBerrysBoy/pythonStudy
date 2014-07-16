@@ -1,206 +1,187 @@
 <div class="submain">
-      <h3 class="hide">골프</h3>
+      <h3 class="hide">국내내륙</h3>
       <ul>
-        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC3&amp;location1=LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프" class="bt_ea"><span>동남아시아</span></a><div class="depth2">
-            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC3&amp;location1=LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프">동남아시아 전체보기</a></h4>
+        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC991&amp;location1=LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙" class="bt_korea_stories"><span>한국이야기</span></a><div class="depth2" style="left:111px; width:500px;">
+            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC991&amp;location1=LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙">한국이야기 전체보기</a></h4>
             <div class="outline" style="height:300px;">
-              <div class="cols">
+              <div class="cols" style="width:50%;">
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC4&amp;location1=LOC4^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">태국</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC12&amp;location1=LOC12^LOC4^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">방콕</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC19&amp;location1=LOC19^LOC4^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">치앙마이</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC13&amp;location1=LOC13^LOC4^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">파타야</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC14&amp;location1=LOC14^LOC4^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">푸켓</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC17&amp;location1=LOC17^LOC4^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">후아힌</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC18&amp;location1=LOC18^LOC4^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">칸차나부리</a></dd>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1006&amp;location1=LOC1006^LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙_한국이야기">한국일주 7일</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1007&amp;location1=LOC1007^LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙_한국이야기">서남부권 4일</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1008&amp;location1=LOC1008^LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙_한국이야기">동남부권 4일</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1083&amp;location1=LOC1083^LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙_한국이야기">백두대간 4일</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1084&amp;location1=LOC1084^LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙_한국이야기">남해안 4일</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1085&amp;location1=LOC1085^LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙_한국이야기">한려수도 3일</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1012&amp;location1=LOC1012^LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙_한국이야기">강원권 3일</a></dt>
                 </dl>
               </div>
-              <div class="cols">
+              <div class="cols" style="width:50%;">
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC24&amp;location1=LOC24^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">필리핀</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC110&amp;location1=LOC110^LOC24^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">마닐라</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC111&amp;location1=LOC111^LOC24^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">세부</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC112&amp;location1=LOC112^LOC24^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">보라카이</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC113&amp;location1=LOC113^LOC24^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">클락</a></dd>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1086&amp;location1=LOC1086^LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙_한국이야기">남해일주 3일</a></dt>
                 </dl>
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1104&amp;location1=LOC1104&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">타이완</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1118&amp;location1=LOC1118^LOC1104^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">타이페이</a></dd>
-                </dl>
-              </div>
-              <div class="cols">
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC783&amp;location1=LOC783^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">베트남</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC788&amp;location1=LOC788^LOC783^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">하노이</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC789&amp;location1=LOC789^LOC783^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">호치민</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC790&amp;location1=LOC790^LOC783^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">다낭</a></dd>
-                </dl>
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC784&amp;location1=LOC784^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">캄보디아</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC785&amp;location1=LOC785^LOC784^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">캄보디아(앙코르왓)</a></dd>
-                </dl>
-              </div>
-              <div class="cols">
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC23&amp;location1=LOC23^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">말레이시아|브루나이</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC107&amp;location1=LOC107^LOC23^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">코타키나발루</a></dd>
-                </dl>
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC542&amp;location1=LOC542^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">인도네시아</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC543&amp;location1=LOC543^LOC542^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">발리</a></dd>
-                </dl>
-              </div>
-              <div class="cols">
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC21&amp;location1=LOC21^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">싱가포르|빈탄</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC101&amp;location1=LOC101^LOC21^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">싱가포르</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC102&amp;location1=LOC102^LOC21^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">빈탄</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC103&amp;location1=LOC103^LOC21^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">바탐</a></dd>
-                </dl>
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC793&amp;location1=LOC793^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">미얀마</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC828&amp;location1=LOC828^LOC793^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">양곤|바간|만달레이|헤호</a></dd>
-                </dl>
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC794&amp;location1=LOC794^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">라오스</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC829&amp;location1=LOC829^LOC794^LOC3&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="골프_동남아">비엔티엔/루앙푸라방</a></dd>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1087&amp;location1=LOC1087^LOC991^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT321','GNB_');return false;" alt="국내내륙_한국이야기">다도해 3일</a></dt>
                 </dl>
               </div>
             </div>
             <div class="section_link">
               <ul>
-                <li><a href="/Package/Submain2.aspx?startLocation=ICN&amp;id=LOC3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="동남아">패키지</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC3&amp;location1=LOC3&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="동남아">허니문</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC3&amp;location1=LOC3&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="동남아">자유여행</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC3&amp;location1=LOC3&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="동남아">프리미엄여행(JM)</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC3&amp;location1=LOC3&amp;Theme=THE211&amp;Theme1=THE211&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="동남아">크루즈</a></li>
-                <li><a href="/Package/List.aspx?startLocation=PUS&amp;location=LOC322&amp;location1=LOC322&amp;Theme=THE132&amp;Theme1=THE132&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="동남아_골프">부산출발</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE88&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">패키지</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE3&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">허니문</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE4&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">자유여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE5&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">골프여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE210&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">프리미엄여행(JM)</a></li>
               </ul>
             </div>
           </div>
         </li>
-        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC6&amp;location1=LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프" class="bt_cn"><span>중국/홍콩</span></a><div class="depth2" style="left:198px; width:500px;">
-            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC6&amp;location1=LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프">중국/홍콩 전체보기</a></h4>
-            <div class="outline" style="height:300px;">
-              <div class="cols" style="width:49%;">
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC299&amp;location1=LOC299^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">홍콩|마카오</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC303&amp;location1=LOC303^LOC299^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">홍콩/심천</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC305&amp;location1=LOC305^LOC299^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">마카오</a></dd>
-                </dl>
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC932&amp;location1=LOC932^LOC700^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">황산</a></dt>
-                </dl>
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC57&amp;location1=LOC57^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">하이난</a></dt>
-                </dl>
-              </div>
-              <div class="cols" style="width:49%;">
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC707&amp;location1=LOC707^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">곤명|여강</a></dt>
-                </dl>
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC175&amp;location1=LOC175^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">청도|위해|제남|연태</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC174&amp;location1=LOC174^LOC175^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">청도</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC483&amp;location1=LOC483^LOC175^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">위해</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC945&amp;location1=LOC945^LOC175^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">연태</a></dd>
-                </dl>
-                <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC164&amp;location1=LOC164^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">계림|하문|우루무치</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC165&amp;location1=LOC165^LOC164^LOC6&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="골프_중국">계림(양삭)</a></dd>
-                </dl>
-              </div>
-            </div>
-            <div class="section_link">
-              <ul>
-                <li><a href="/Package/Submain2.aspx?startLocation=ICN&amp;id=LOC6&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="중국">패키지</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC6&amp;location1=LOC6&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="중국">허니문</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC6&amp;location1=LOC6&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="중국">자유여행</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC6&amp;location1=LOC6&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="중국">프리미엄여행(JM)</a></li>
-                <li><a href="/Package/List.aspx?startLocation=PUS&amp;location=LOC262&amp;location1=LOC262&amp;Theme=THE132&amp;Theme1=THE132&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="중국_골프">부산출발</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC5&amp;location1=LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프" class="bt_jp"><span>일본</span></a><div class="depth2" style="left:277px; width:300px;">
-            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC5&amp;location1=LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프">일본 전체보기</a></h4>
+        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1034&amp;location1=LOC1034^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="국내내륙" class="bt_bus_tour"><span>버스여행</span></a><div class="depth2" style="left:194px; width:450px;">
+            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1034&amp;location1=LOC1034^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="국내내륙">버스여행 전체보기</a></h4>
             <div class="outline" style="height:300px;">
               <div class="cols" style="width:100%;">
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC30&amp;location1=LOC30^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">큐슈</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC137&amp;location1=LOC137^LOC30^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">후쿠오카/벳부/유후인/아소</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC142&amp;location1=LOC142^LOC30^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">하우스텐보스/나가사키</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC145&amp;location1=LOC145^LOC30^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">가고시마/미야자키</a></dd>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1036&amp;location1=LOC1036^LOC1034^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="국내내륙_버스">경상도</a></dt>
                 </dl>
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC33&amp;location1=LOC33^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">오키나와</a></dt>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1037&amp;location1=LOC1037^LOC1034^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="국내내륙_버스">전라도</a></dt>
                 </dl>
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC798&amp;location1=LOC798^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">야마구치</a></dt>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1038&amp;location1=LOC1038^LOC1034^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="국내내륙_버스">강원도</a></dt>
                 </dl>
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC31&amp;location1=LOC31^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">북해도</a></dt>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC148&amp;location1=LOC148^LOC31^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">삿뽀로/도야/노보리벳츠/오타루</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC153&amp;location1=LOC153^LOC31^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">아사히키와/후라노/비에이</a></dd>
-                  <dd><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC152&amp;location1=LOC152^LOC31^LOC5&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="골프_일본">하코다테</a></dd>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1039&amp;location1=LOC1039^LOC1034^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT322','GNB_');return false;" alt="국내내륙_버스">기타지역</a></dt>
                 </dl>
               </div>
             </div>
             <div class="section_link">
               <ul>
-                <li><a href="/Package/Submain2.aspx?startLocation=ICN&amp;id=LOC5&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="일본">패키지</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC5&amp;location1=LOC5&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="일본">허니문</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC5&amp;location1=LOC5&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="일본">자유여행</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC5&amp;location1=LOC5&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="일본">프리미엄여행(JM)</a></li>
-                <li><a href="/Package/List.aspx?startLocation=PUS&amp;location=LOC263&amp;location1=LOC263&amp;Theme=THE132&amp;Theme1=THE132&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="일본_골프">부산출발</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE88&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">패키지</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE3&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">허니문</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE4&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">자유여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE5&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">골프여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE210&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">프리미엄여행(JM)</a></li>
               </ul>
             </div>
           </div>
         </li>
-        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT324','GNB_');return false;" alt="골프" class="bt_pac"><span>남태평양/괌/사이판</span></a><div class="depth2" style="left:328px; width:300px;">
-            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT324','GNB_');return false;" alt="골프">남태평양/괌/사이판 전체보기</a></h4>
+        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1035&amp;location1=LOC1035^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="국내내륙" class="bt_train_tour"><span>기차여행</span></a><div class="depth2" style="left:264px; width:450px;">
+            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1035&amp;location1=LOC1035^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="국내내륙">기차여행 전체보기</a></h4>
             <div class="outline" style="height:300px;">
               <div class="cols" style="width:100%;">
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC64&amp;location1=LOC64^LOC8&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT324','GNB_');return false;" alt="골프_남태평양">괌</a></dt>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1040&amp;location1=LOC1040^LOC1035^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="국내내륙_기차">경상도</a></dt>
                 </dl>
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC65&amp;location1=LOC65^LOC8&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT324','GNB_');return false;" alt="골프_남태평양">사이판</a></dt>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1041&amp;location1=LOC1041^LOC1035^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="국내내륙_기차">전라도</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1042&amp;location1=LOC1042^LOC1035^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="국내내륙_기차">강원도</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1043&amp;location1=LOC1043^LOC1035^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT323','GNB_');return false;" alt="국내내륙_기차">기타지역</a></dt>
                 </dl>
               </div>
             </div>
             <div class="section_link">
               <ul>
-                <li><a href="/Package/Submain2.aspx?startLocation=ICN&amp;id=LOC8&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="남태평양">패키지</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="남태평양">허니문</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="남태평양">자유여행</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="남태평양">프리미엄여행(JM)</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC8&amp;location1=LOC8&amp;Theme=THE211&amp;Theme1=THE211&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="남태평양">크루즈</a></li>
-                <li><a href="/Package/List.aspx?startLocation=PUS&amp;location=LOC520&amp;location1=LOC520&amp;Theme=THE132&amp;Theme1=THE132&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="남태평양_골프">부산출발</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE88&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">패키지</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE3&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">허니문</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE4&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">자유여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE5&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">골프여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE210&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">프리미엄여행(JM)</a></li>
               </ul>
             </div>
           </div>
         </li>
-        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="골프" class="bt_hawaii"><span>하와이</span></a><div class="depth2" style="left:464px; width:300px;">
-            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="골프">하와이 전체보기</a></h4>
+        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC993&amp;location1=LOC993^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT324','GNB_');return false;" alt="국내내륙" class="bt_island_tour"><span>섬여행</span></a><div class="depth2" style="left:336px; width:450px;">
+            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC993&amp;location1=LOC993^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT324','GNB_');return false;" alt="국내내륙">섬여행 전체보기</a></h4>
             <div class="outline" style="height:300px;">
               <div class="cols" style="width:100%;">
                 <dl>
-                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC81&amp;location1=LOC81^LOC7&amp;Theme=THE5&amp;Theme1=THE5&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="골프_미주">하와이</a></dt>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1004&amp;location1=LOC1004^LOC993^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT324','GNB_');return false;" alt="국내내륙_섬">울릉도</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1005&amp;location1=LOC1005^LOC993^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT324','GNB_');return false;" alt="국내내륙_섬">홍도/흑산도</a></dt>
                 </dl>
               </div>
             </div>
             <div class="section_link">
               <ul>
-                <li><a href="/Package/Submain2.aspx?startLocation=ICN&amp;id=LOC7&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="미주">패키지</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE3&amp;Theme1=THE3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="미주">허니문</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE4&amp;Theme1=THE4&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="미주">자유여행</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE210&amp;Theme1=THE210&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="미주">프리미엄여행(JM)</a></li>
-                <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC7&amp;location1=LOC7&amp;Theme=THE211&amp;Theme1=THE211&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB_');return false;" alt="미주">크루즈</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE88&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">패키지</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE3&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">허니문</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE4&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">자유여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE5&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">골프여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE210&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">프리미엄여행(JM)</a></li>
               </ul>
             </div>
           </div>
         </li>
+        <li style="display:none;"><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC994&amp;location1=LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙" class="bt_seoul_tour"><span>서울시티투어</span></a><div class="depth2" style="left:394px; width:450px;">
+            <h4><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC994&amp;location1=LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙">서울시티투어 전체보기</a></h4>
+            <div class="outline" style="height:300px;">
+              <div class="cols" style="width:50%;">
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1023&amp;location1=LOC1023^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">부산출발</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1024&amp;location1=LOC1024^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">창원출발</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1025&amp;location1=LOC1025^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">대전출발</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1026&amp;location1=LOC1026^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">구포출발</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1027&amp;location1=LOC1027^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">진주출발</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1028&amp;location1=LOC1028^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">김천구미출발</a></dt>
+                </dl>
+              </div>
+              <div class="cols" style="width:50%;">
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1029&amp;location1=LOC1029^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">신경주출발</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1030&amp;location1=LOC1030^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">마산출발</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1031&amp;location1=LOC1031^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">밀양출발</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1032&amp;location1=LOC1032^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">동대구출발</a></dt>
+                </dl>
+                <dl>
+                  <dt><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1033&amp;location1=LOC1033^LOC994^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙_서울시티">울산출발</a></dt>
+                </dl>
+              </div>
+            </div>
+            <div class="section_link">
+              <ul>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE88&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">패키지</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE3&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">허니문</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE4&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">자유여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE5&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">골프여행</a></li>
+                <li><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=THE210&amp;type=3&amp;MLoc=01" onclick="TopNextPage(this,'AT320','GNB');return false;" alt="_">프리미엄여행(JM)</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="/Package/List.aspx?startLocation=ICN&amp;location=LOC1046&amp;location1=LOC1046^LOC985&amp;Theme=THE88&amp;Theme1=THE88&amp;MLoc=01" onclick="TopNextPage(this,'AT325','GNB_');return false;" alt="국내내륙" class="bt_domestic_golf"><span>내륙골프</span></a></li>
       </ul>
+      <div class="addon"><a href="/LiveBooking/AirDomestic/Main.aspx?MLoc=0302"><img src="http://img.modetour.co.kr/modetour/2014/common/btn_domestic_local.gif" alt="국내항공"></a><a href="/Package/subMain2.aspx?startLocation=ICN&amp;id=LOC837&amp;type=3&amp;MLoc=01"><img src="http://img.modetour.co.kr/modetour/2014/common/btn_domestic_jeju.gif" alt="국내제주"></a></div>
     </div>
     

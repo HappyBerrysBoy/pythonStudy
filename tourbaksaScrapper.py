@@ -7,11 +7,11 @@ Created on Wed Jun 11 21:09:59 2014
 import urllib2
 import time, datetime
 import sys
-import cx_Oracle
 import savefilegethtml
 import re
 import codes
 import tourQuery
+import cx_Oracle
 
 #여행코드 영어4자리 + 숫자
 # 영어 4자리가 뜻하는건... 첫번째 자리 : 국가, 두번째 자리 : 지역 세번째 자리 : 여행종류(P:패키지, H:허니문, G:골프, C:크루즈, S:유럽??, 등..), 네번재 자리 : 출발지역(S:서울, B:부산, D:대구)
@@ -103,7 +103,8 @@ for each_line in homepageHtml:
     elif each_line.find('href="/submain/?') > -1 or each_line.find('href="/SubMain/index.asp?') > -1 or (each_line.find('<li>') < 0 and (each_line.find('Areaindex.asp') > -1 or each_line.find('areaindex.asp') > -1)):
         tourkindGroupCls = clsTourKindGroup()
         tourkindGroupCls.url = each_line.split('href="')[1].split('">')[0]
-        tourkindGroupCls.tourkind = each_line.split('>')[1].split('<')[0]
+        #tourkindGroupCls.tourkind = each_line.split('>')[1].split('<')[0]  # Code명 통일하자..
+        tourkindGroupCls.tourkind = codes.getTourKind('tourbaksa', each_line.split('>')[1].split('<')[0].strip().decode('cp949'))
     elif each_line.find('<li>') > -1 and each_line.find('<!--') < 0 and each_line.find('-->') < 0 and (each_line.find('Areaindex') > -1 or each_line.find('areaindex') > -1 or each_line.find('M1=') > -1):
         regionUrlGroupCls = clsRegionUrlGroup()
         regionUrlGroupCls.region = each_line.split('</a>')[0].split('">')[1]
@@ -121,6 +122,8 @@ exceptFile = open('tourbaksaException'+scrappingStartTime+'.txt', 'w')
 print >> exceptFile, "Start : %s" % time.ctime()
 
 print menulist
+
+con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
 
 # 메뉴에 다 잘들어 갔나 확인..
 for level1 in menulist:
@@ -146,7 +149,7 @@ for level1 in menulist:
                             
                             try:
                                 productList = clsProductList()
-                                con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+                                
                                 for departList in departListHtml:
                                     if departList.find('<h4>') > -1:
                                         productList = clsProductList()
@@ -188,12 +191,13 @@ for level1 in menulist:
                                             nationList = codeList[1]
                                             continentList = codeList[2]
                                             
+                                            
                                             query = tourQuery.getMasterMergeQuery(tourAgency, productList.productCode, productList.productname, level2.tourkind, 'A', productList.comment, '')  # A : 해외(Abroad)
                                             #print query
                                             cursor = con.cursor()
                                             cursor.execute(query)
-                                            codes.insertRegionData(tourAgency, productList.productCode, cityList, nationList, continentList)
                                             con.commit()
+                                            codes.insertRegionData(tourAgency, productList.productCode, cityList, nationList, continentList)
                                             
                                             
                                             try:
@@ -248,9 +252,6 @@ for level1 in menulist:
                             except:
                                 print >> exceptFile, 'Depart List Parcing Error', sys.exc_info()[0]
                                 pass
-                            finally:
-                                con.commit()
-                                con.close()
                             
                         except:
                             print >> exceptFile, 'Depart Url Error', sys.exc_info()[0]
@@ -268,3 +269,5 @@ for level1 in menulist:
 
 print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()
+con.commit()
+con.close()

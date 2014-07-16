@@ -7,7 +7,7 @@
                         </div>
                         <div class="pro_contents">
                         <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
-                            <p class="content"><span class="title"><a href="#n"> [유류할증료 포함]이스라엘[북부갈릴리]+요르단[페트라]+이스탄불 8일-TK</a></span><br/><a href="#n" class="pkg_list_centents"></a></p>
+                            <p class="content"><span class="title"><a href="#n"> 이스라엘[북부갈릴리+브엘쉐바]/요르단[페트라]8일-TK</a></span><br/><a href="#n" class="pkg_list_centents"></a></p>
                             <div class="pro_contents_in">
                                 <p class="text_box">
                                     <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>MPX112</span>
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
-                    <div class="img_ov event event_select"><span class="event_icon00">이벤트</span><a href="/Product/Package/PackageDetail?ProCode=MPX112-141201&PriceSeq=0"><span class="date">12월 01일 월요일</span><span class="contents">[유류할증료 포함]이스라엘[북부갈릴리+브엘쉐바]/요르단[페트라]8일-TK</span></a></div>
+                    <div class="img_ov event event_select"><span class="event_icon00">이벤트</span><a href="/Product/Package/PackageDetail?ProCode=MPX112-141201&PriceSeq=0"><span class="date">12월 01일 월요일</span><span class="contents">이스라엘[북부갈릴리+브엘쉐바]/요르단[페트라]8일-TK</span></a></div>
                     <div class="box_list" style="clear:both;">
                         <iframe src="" id="ProductListItem_MPX112" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_MPX112')" title="이벤트 상품"></iframe>
                     </div>
@@ -34,7 +34,7 @@
                         </div>
                         <div class="pro_contents">
                         <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
-                            <p class="content"><span class="title"><a href="#n"> [유류할증료포함] 이스라엘[단에서 브엘쉐바까지/중앙산악지역]+ 요르단[페트라]10일</a></span><br/><a href="#n" class="pkg_list_centents">이스라엘과 요르단의 성지를 순례합니다. </a></p>
+                            <p class="content"><span class="title"><a href="#n"> 이스라엘[단에서 브엘쉐바까지/중앙산악지역]+ 요르단[페트라]10일</a></span><br/><a href="#n" class="pkg_list_centents">이스라엘과 요르단의 성지를 순례합니다. </a></p>
                             <div class="pro_contents_in">
                                 <p class="text_box">
                                     <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>MPX137</span>
@@ -49,36 +49,9 @@
                         </div>
                     </div>
                     <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
-                    <div class="img_ov event event_select"><span class="event_icon00">이벤트</span><a href="/Product/Package/PackageDetail?ProCode=MPX137-141208&PriceSeq=0"><span class="date">12월 08일 월요일</span><span class="contents">[유류할증료포함] 이스라엘[단에서 브엘쉐바까지/중앙산악지역]+ 요르단[페트라]10..</span></a></div>
+                    <div class="img_ov event event_select"><span class="event_icon00">이벤트</span><a href="/Product/Package/PackageDetail?ProCode=MPX137-141208&PriceSeq=0"><span class="date">12월 08일 월요일</span><span class="contents">이스라엘[단에서 브엘쉐바까지/중앙산악지역]+ 요르단[페트라]10일</span></a></div>
                     <div class="box_list" style="clear:both;">
                         <iframe src="" id="ProductListItem_MPX137" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_MPX137')" title="이벤트 상품"></iframe>
-                    </div>
-                </div>
-                <div class="img_ov_text2 box" onclick="MasterPage('MPX133')"><!--선택 :select  ||  선택안함 : 없음-->
-                    <div class="box_in">
-                        <div class="pro_check">
-                            <img width="88" height="66" src="http://contents.verygoodtour.com/content/220/IL/0000/JRS/image/10891_2.jpg" alt="유류할증료까지 포함! 이스라엘 집중탐방 여정입니다." />
-                        </div>
-                        <div class="pro_contents">
-                        <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
-                            <p class="content"><span class="title"><a href="#n"> [합리적인가격-1회한정][유류할증료포함][이스라엘 집중탐방] 이스라엘일주 [맛사다+북부갈릴리]+ 이스탄불야경투어 7일</a></span><br/><a href="#n" class="pkg_list_centents">유류할증료까지 포함! 이스라엘 집중탐방 여정입니다.</a></p>
-                            <div class="pro_contents_in">
-                                <p class="text_box">
-                                    <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>MPX133</span>
-                                    <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>6박7일</span>
-                                    <span class="price">2,690,000<span>원</span> ~ </span>
-                                </p>
-                                <div class="bt">
-                                    <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX133_2014-07-13"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
-                    <div class="img_ov event"><span class="event_icon00">이벤트</span><a href="/Product/Package/PackageDetail?ProCode=&PriceSeq=0"><span class="date"></span><span class="contents"></span></a></div>
-                    <div class="box_list" style="clear:both;">
-                        <iframe src="" id="ProductListItem_MPX133" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_MPX133')" title="이벤트 상품"></iframe>
                     </div>
                 </div>
                 <div class="img_ov_text2 box" onclick="MasterPage('MPX136')"><!--선택 :select  ||  선택안함 : 없음-->
@@ -88,7 +61,7 @@
                         </div>
                         <div class="pro_contents">
                         <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
-                            <p class="content"><span class="title"><a href="#n"> [유류할증료포함][핵심일주]이스라엘+터키[소아시아 일곱교회] 10일 TK</a></span><br/><a href="#n" class="pkg_list_centents">이스라엘과 터키의 성지를 순례합니다. </a></p>
+                            <p class="content"><span class="title"><a href="#n"> [핵심일주]이스라엘+터키[소아시아 일곱교회] 10일 TK</a></span><br/><a href="#n" class="pkg_list_centents">이스라엘과 터키의 성지를 순례합니다. </a></p>
                             <div class="pro_contents_in">
                                 <p class="text_box">
                                     <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>MPX136</span>
@@ -115,7 +88,7 @@
                         </div>
                         <div class="pro_contents">
                         <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
-                            <p class="content"><span class="title"><a href="#n"> [유류할증료포함]소아시아[수리아 안디옥] / 그리스[빌립보+메테오라]12일 TK</a></span><br/><a href="#n" class="pkg_list_centents">터키지역의  소아시아 일곱교회와 그리스 북부지역까지 한번에 둘러보실수 있습니다.</a></p>
+                            <p class="content"><span class="title"><a href="#n"> 소아시아[수리아 안디옥] / 그리스[빌립보+메테오라]12일 TK</a></span><br/><a href="#n" class="pkg_list_centents">터키지역의  소아시아 일곱교회와 그리스 북부지역까지 한번에 둘러보실수 있습니다.</a></p>
                             <div class="pro_contents_in">
                                 <p class="text_box">
                                     <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>MPX330</span>
@@ -124,13 +97,13 @@
                                 </p>
                                 <div class="bt">
                                     <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX330_2014-07-13"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                    <p class="close" id="startday_MPX330_2014-07-20"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
-                    <div class="img_ov event event_select"><span class="event_icon00">이벤트</span><a href="/Product/Package/PackageDetail?ProCode=MPX330-141005&PriceSeq=0"><span class="date">10월 05일 일요일</span><span class="contents">[유류할증료포함]터키[소아시아/ WiFI 버스사용]그리스[빌립보+메테오라]12일</span></a></div>
+                    <div class="img_ov event event_select"><span class="event_icon00">이벤트</span><a href="/Product/Package/PackageDetail?ProCode=MPX330-141005&PriceSeq=0"><span class="date">10월 05일 일요일</span><span class="contents">터키[소아시아/수리아 안디옥+ WiFI 버스사용]그리스[빌립보+메테오라]12일</span></a></div>
                     <div class="box_list" style="clear:both;">
                         <iframe src="" id="ProductListItem_MPX330" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_MPX330')" title="이벤트 상품"></iframe>
                     </div>
@@ -151,7 +124,7 @@
                                 </p>
                                 <div class="bt">
                                     <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX331_2014-07-13"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                    <p class="close" id="startday_MPX331_2014-07-20"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
                                 </div>
                             </div>
                         </div>
