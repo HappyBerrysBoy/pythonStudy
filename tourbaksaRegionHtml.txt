@@ -1,88 +1,53 @@
 <div class="leftArea">
 	<h2 class="hidden">LNB</h2>
-	<nav id="lnb" class="lnb0"><!-- 2013-09-02 class추가 및 마크업 수정 -->
+	<nav id="lnb" class="lnb0">
 
 		<div class="topTitleArea">
-			<h3 class="">해외자유</h3>
+			<h3 class="">레저/스포츠</h3>
 		</div>
 		<ul class="clearfix">
-			<li class="on">
-				<h4><a  href='/SubMain/index.asp?sq=12&subkind=1' >서울출발</a></h4>
-				<ul class="subMenu sub3Depth">
-					<li class="subM01 on"><a href='/SubMain/Areaindex.asp?sq=11&subkind=2'  >일본</a>
-						<ul class="sub4Depth">
-								<li class="subS01" ><a href='javascript:MobileLeftClick2("dpl", 0);' class='subMore' target="_self">도쿄</a>
-									<ul class="sub4DepthSub" id='dpl0' >
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=15&M5=617' >도쿄/시즈오카</a></li>
-									</ul>
-								</li>
-								<li class="subS02" ><a href='javascript:MobileLeftClick2("dpl", 1);' class='subMore' target="_self">오사카</a>
-									<ul class="sub4DepthSub" id='dpl1' >
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=16&M5=618' >오사카/교토/나라/고베</a></li>
-									</ul>
-								</li>
-								<li class="subS03" ><a href='javascript:MobileLeftClick2("dpl", 2);' class='subMore' target="_self">큐슈</a>
-									<ul class="sub4DepthSub" id='dpl2' >
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=620&M5=621' >후쿠오카/유후인/벳부<br>아소/나가사키/구마모토</a></li>
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=620&M5=622' >미야자키/가고시마<br>야쿠시마</a></li>
-									</ul>
-								</li>
-								<li class="subS04" ><a href='javascript:MobileLeftClick2("dpl", 3);' class='subMore' target="_self">홋카이도</a>
-									<ul class="sub4DepthSub" id='dpl3' >
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=626&M5=627' >삿포로/오타루/노보리베츠<br>도야/하코다테</a></li>
-									</ul>
-								</li>
-								<li class="subS05" ><a href='javascript:MobileLeftClick2("dpl", 4);' class='subMore' target="_self">오키나와</a>
-									<ul class="sub4DepthSub" id='dpl4' >
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=21&M5=629' >오키나와본섬(나하)</a></li>
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=21&M5=630' >이시카키/미야코지마</a></li>
-									</ul>
-								</li>
-								<li class="subS06" ><a href='javascript:MobileLeftClick2("dpl", 5);' class='subMore' target="_self">나고야</a>
-									<ul class="sub4DepthSub" id='dpl5' >
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=631&M5=632' >나고야/게로/다카야마</a></li>
-									</ul>
-								</li>
-								<li class="subS07" ><a href='javascript:MobileLeftClick2("dpl", 6);' class='subMore' target="_self">시코쿠</a>
-									<ul class="sub4DepthSub" id='dpl6' >
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=633&M5=634' >마츠야마/다카마츠/고치</a></li>
-									</ul>
-								</li>
-								<li class="subS08" ><a href='javascript:MobileLeftClick2("dpl", 7);' class='subMore' target="_self">호쿠리쿠</a>
-									<ul class="sub4DepthSub" id='dpl7' >
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=26&M5=816' >가나자와/카가온천</a></li>
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=26&M5=817' >도야마/알펜루트/오쿠히다</a></li>
-									</ul>
-								</li>
-								<li class="subS09" ><a href='/item/?M1=1&M2=8&M3=9&M4=24&M5=0'  target="_self">돗토리/시마네</a>
-								</li>
-								<li class="subS10" ><a href='/item/?M1=1&M2=8&M3=9&M4=23&M5=0'  target="_self">아키타/아오모리/니가타</a>
-								</li>
-								<li class="subS11" ><a href='javascript:MobileLeftClick2("dpl", 8);' class='subMore' target="_self">테마여행</a>
-									<ul class="sub4DepthSub" id='dpl8' >
-										<li class=""><a href='/item/?M1=1&M2=8&M3=9&M4=29&M5=32' >에어카텔<br>(항공+렌터카+호텔)</a></li>
-									</ul>
-								</li></ul>
-						<div class='btn_spmenu'><a href="/item/?M1=1&M2=8&M3=9&M4=806&M5=0" target="_self"><span>1일 버스투어</span></a></div>
-						<div class='btn_spmenu'><a href="/item/?M1=1&M2=8&M3=9&M4=807&M5=0" target="_self"><span>우리가족 단독패키지</span></a></div>
-						<div class='btn_spmenu'><a href="/submain/areaindex.asp?sq=43&subkind=2" target="_self"><span>트레킹/스쿠버다이빙</span></a></div>
 
+			<li class="">
+				<h4><a >트레킹</a></h4>
+
+				<ul class="subMenu sub3Depth">
+					<li class="subM01"><a >일본</a>
+						<ul class="sub4Depth clearfix">
+							<li class="subS01"><a href='/item/?M1=6&M2=337&M3=818&M4=819&M5=0'  target="_self" >큐슈 올레길</a>
+							</li>
+							<li class="subS02"><a href='/item/?M1=6&M2=337&M3=818&M4=823&M5=0'  target="_self" >큐슈</a>
+							</li>
+							<li class="subS03"><a href='/item/?M1=6&M2=337&M3=818&M4=820&M5=0'  target="_self" >야쿠시마</a>
+							</li>
+							<li class="subS04"><a href='/item/?M1=6&M2=337&M3=818&M4=825&M5=0'  target="_self" >기타지역</a>
+							</li>
+						</ul>
 					</li>
-					<li class="subM02"><a href='/SubMain/Areaindex.asp?sq=15&subkind=2'  >동남아</a>
-					</li>
-					<li class="subM03"><a href='/SubMain/Areaindex.asp?sq=17&subkind=2'  >중국/홍콩/대만</a>
-					</li>
-					<li class="subM04"><a href='/SubMain/Areaindex.asp?sq=18&subkind=2'  >유럽</a>
-					</li>
-					<li class="subM05 end"><a href='/SubMain/Areaindex.asp?sq=19&subkind=2'  >남태평양/미주/대양주/인도</a>
-					</li><li class='blank'><a>&nbsp;</a></li>
-				</ul>
+					<li class="subM02 end"><a href='/item/?M1=6&M2=337&M3=821&M4=0&M5=0' >중국</a>
+					</li><li class='blank'><a >&nbsp;</a></li>
+				</ul>				
+
 			</li>
 			<li class="">
-				<h4><a  href='/SubMain/index.asp?sq=13&subkind=1' >부산출발</a></h4>
+				<h4><a >스쿠버다이빙 </a></h4>
+
+				<ul class="subMenu sub3Depth">
+					<li class="subM01 end"><a href='/item/?M1=6&M2=338&M3=347&M4=0&M5=0' >일본 (오키나와)</a>
+					</li>
+					<li class="subM02 end"><a href='/item/?M1=6&M2=338&M3=348&M4=0&M5=0' >동남아</a>
+					</li><li class='blank'><a >&nbsp;</a></li>
+				</ul>				
+
 			</li>
-			<li class="">
-				<h4><a  href='/SubMain/areaindex.asp?sq=14&subkind=1' >대구출발</a></h4>
+			<li class="on">
+				<h4><a >낚시/캠핑</a></h4>
+
+				<ul class="subMenu sub3Depth">
+					<li class="subM01 end"><a href='/item/?M1=6&M2=550&M3=551&M4=0&M5=0' >일본</a>
+					</li><li class='blank'><a >&nbsp;</a></li>
+				</ul>				
+
 			</li>
 		</ul>
+		
 	

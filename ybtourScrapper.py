@@ -50,10 +50,10 @@ class classCalc():
 defaultUrl = 'http://www.ybtour.co.kr/GoodSearch/Area_Menu_XML.asp?'
 
 tourAgency = 'ybtour'
-#targetYear = '2014'
-#targetMonth = '07'
-targetYear = sys.argv[1]
-targetMonth = sys.argv[2]
+targetYear = '2014'
+targetMonth = '07'
+#targetYear = sys.argv[1]
+#targetMonth = sys.argv[2]
 scrappingStartTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S%f")
 
 departCity = ''
@@ -194,7 +194,9 @@ try:
                                     detailProductUrl = ''
                                     #if package.menuCode == 'A01':
                                     detailProductUrl = 'http://www.ybtour.co.kr/Goods/' + urlMap[package.menuCode] + '/inc_evList_ajax.asp?goodCD=' + detailProduct + '&startDT=' + targetYear + targetMonth
-                                        
+                                    
+                                    #detailProductUrl = 'http://www.ybtour.co.kr/Goods/overseas/inc_evList_ajax.asp?goodCD=150201119&startDT=201408'
+                                    
                                     #if detailProductUrl == 'http://www.ybtour.co.kr/Goods/Overseas/inc_evList_ajax.asp?goodCD=JAA2013113&startDT=201407':
                                         #print ''
                                     
@@ -204,28 +206,34 @@ try:
                                     
                                     try:
                                         # 2014. 06. 29. 여행상품명에서 국가, 도시코드 가져오는 부분으로 적용..
-                                        codeLists = codes.getCityCode(productNameList[codeIdx], sub2package.menuName, productCommentList[codeIdx], subpackage.menuName)
+                                        #codeLists = codes.getCityCode(productNameList[codeIdx], sub2package.menuName, productCommentList[codeIdx], subpackage.menuName)
+                                        codeLists = codes.getCityCode(productNameList[codeIdx], productCommentList[codeIdx])
                                         cityList = codeLists[0]
                                         nationList = codeLists[1]
                                         continentList = codeLists[2]
+                                        siteList = codeList[3]              # 2014. 8. 3. site 추가
                                         
-                                        #print cityList
-                                        #print nationList
-                                        #print continentList
+                                        if len(cityList) == 0 and len(nationList) == 0 and len(continentList) == 0:
+                                            codeList = codes.getCityCode(sub2package.menuName)
+                                            cityList = codeList[0]
+                                            nationList = codeList[1]
+                                            continentList = codeList[2]
+                                            siteList = codeList[3]              # 2014. 8. 3. site 추가
                                         
                                         query = tourQuery.getMasterMergeQuery(tourAgency, detailProduct, productNameList[codeIdx], packageMap[package.menuCode], dmst_div, productCommentList[codeIdx], '')
                                     
-                                        #print query
+                                        print query
                                         
                                         codeIdx += 1
                                         cursor = con.cursor()
                                         cursor.execute(query)
                                         con.commit()
-                                        codes.insertRegionData(tourAgency, detailProduct, cityList, nationList, continentList)
+                                        codes.insertRegionData(tourAgency, detailProduct, cityList, nationList, continentList, siteList)
                                         
                                         flag = False
                                         clsProduct = classProduct()
                                         for parcer in detailProductList:
+                                            print parcer
                                             try:
                                                 if parcer.strip()[:len('<td><input type="checkbox"')] == '<td><input type="checkbox"':
                                                     flag = True
@@ -279,7 +287,8 @@ try:
                                                 print >> exceptFile, "ML5 Parcing Error:", sys.exc_info()[0]
                                                 pass
                                             
-                                        #break
+                                        break
+                                        
                                     except UnicodeEncodeError as err1:
                                         print >> exceptFile, err1
                                         pass
@@ -327,21 +336,28 @@ try:
                                             
                                     #con = tourQuery.getOracleConnection()
                                     
-                                    codeLists = codes.getCityCode(productNameList[codeIdx], sub2package.menuName, productCommentList[codeIdx], subpackage.menuName)
+                                    # 2014. 7. 23. 카테고리의 국가는 넣지 않기로 함...
+                                    #codeLists = codes.getCityCode(productNameList[codeIdx], sub2package.menuName, productCommentList[codeIdx], subpackage.menuName)
+                                    codeLists = codes.getCityCode(productNameList[codeIdx], productCommentList[codeIdx])
                                     cityList = codeLists[0]
                                     nationList = codeLists[1]
                                     continentList = codeLists[2]
-                                    #print cityList
-                                    #print nationList
-                                    #print continentList
+                                    siteList = codeList[3]              # 2014. 8. 3. site 추가
+                                    
+                                    if len(cityList) == 0 and len(nationList) == 0 and len(continentList) == 0:
+                                        codeList = codes.getCityCode(sub2package.menuName)
+                                        cityList = codeList[0]
+                                        nationList = codeList[1]
+                                        continentList = codeList[2]
+                                        siteList = codeList[3]              # 2014. 8. 3. site 추가
                                         
                                     query = tourQuery.getMasterMergeQuery(tourAgency, detailProduct, productNameList[codeIdx], packageMap[package.menuCode], dmst_div, productCommentList[codeIdx], '')
-
+                                    
                                     #print query
                                     cursor = con.cursor()
                                     cursor.execute(query)
                                     con.commit()
-                                    codes.insertRegionData(tourAgency, detailProduct, cityList, nationList, continentList)
+                                    codes.insertRegionData(tourAgency, detailProduct, cityList, nationList, continentList, siteList)
                                     
                                     
                                     # 저장된 날짜들을 기준으로 세부 페이지 호출.... ㄷㄷㄷ
@@ -409,35 +425,8 @@ try:
                                             pass
                                         
                                     codeIdx += 1
-                                    """
-                                    예약 불가능한 날짜
-                                    <td width="27" height="21" align="center" class="font_num" style="background-color:;">
-    								
-    							<font color="#ec1515">6</font>
                                     
-                                    얘약가능한 날짜
-                                    <td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
-    								
-    								<a href="view.asp?ev_ym=201407&ev_seq=35620">
-    								
-    							<font color="#ec1515"><strong>7</font>	
-                                    
-                                    대기 가능 날짜
-                                    <td width="27" height="21" align="center" class="font_num" style="border: 2px solid #F15F5F; background-color:#EDC6C6;">
-    								
-    								<a href="view.asp?ev_ym=201407&ev_seq=23484">
-    																	
-    							<font color="white"><strong>11</font></div>
-    
-                                    
-                                    예약 마감된 날짜
-                                    <td width="27" height="21" align="center" class="font_num" style="background-color:#ececec;">
-    								
-    								<a href="view.asp?ev_ym=201407&ev_seq=35639">
-    								
-    							<font color="#666666"><strong>26</font>
-                                    """
-                            #break
+                            break
                         except ValueError as err:
                             print 'ML3-2 Parcing Error : ' + err.message
                             pass
@@ -446,12 +435,12 @@ try:
                             print >> exceptFile, "ML3 Parcing Error:", sys.exc_info()[0]
                             pass
                         
-                    #break
+                    break
                 except:
                     print "ML2 Parcing error:", sys.exc_info()[0]
                     print >> exceptFile, "ML2 Parcing Error:", sys.exc_info()[0]
                     pass
-            #break
+            break
         except:
             print "ML1 Parcing error:", sys.exc_info()[0]
             print >> exceptFile, "ML1 Parcing Error:", sys.exc_info()[0]
@@ -461,6 +450,9 @@ except:
     print >> exceptFile, "urllib2 Error(Main) error:", sys.exc_info()[0]
     pass
 finally:
+    query = tourQuery.updDepArrYMD(tourAgency, targetYear, targetMonth)
+    cursor = con.cursor()
+    cursor.execute(query)
     con.commit()
     con.close()    
 

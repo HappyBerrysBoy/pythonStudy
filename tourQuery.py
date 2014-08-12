@@ -43,9 +43,9 @@ def delMasterRegionQuery(tagn_id, prd_no):
     return query
 
    #Master 여행상품 조회 쿼리 Return
-def crtMasterRegionQuery(tagn_id, prd_no, tr_area_seq, tr_cntt, tr_nt_cd, tr_city_cd):
-    query = "insert into ttr_tr_area (tagn_id, prd_no, tr_area_seq, tr_cntt, tr_nt_cd, tr_city_cd) values ("
-    query += "'" + tagn_id + "','" + prd_no + "','" + tr_area_seq + "','" + tr_cntt + "','" + tr_nt_cd + "','" + tr_city_cd + "')"
+def crtMasterRegionQuery(tagn_id, prd_no, tr_area_seq, tr_cntt, tr_nt_cd, tr_city_cd, tr_site_cd):
+    query = "insert into ttr_tr_area (tagn_id, prd_no, tr_area_seq, tr_cntt, tr_nt_cd, tr_city_cd, tr_site_cd) values ("
+    query += "'" + tagn_id + "','" + prd_no + "','" + tr_area_seq + "','" + tr_cntt + "','" + tr_nt_cd + "','" + tr_city_cd + "','" + tr_site_cd + "')"
     return query
     
 #Detail 여행상품 조회 쿼리 Return
@@ -61,6 +61,13 @@ def getDetailMergeQuery(tagn_id, prd_no, prd_seq, prd_dtl_nm, dep_dt, arr_dt, tr
     query += "when not matched then insert (TAGN_ID, PRD_NO, PRD_SEQ, PRD_DTL_NM, DEP_DT, ARR_DT, TR_TERM, DEP_ARPT, ARR_ARPT, ARLN_ID, PRD_ST, PRD_URL, PRD_FEE_AD, PRD_FEE_CH, PRD_FEE_BB, CMPS_SEAT, EXG_DIV, SEL_DT, TR_TERM_BAK) "
     query += "values ( b.tagn_id , b.prd_no , b.PRD_SEQ , b.PRD_DTL_NM , to_date(b.DEP_DT, 'yyyymmddhh24mi') , to_date(b.ARR_DT, 'yyyymmddhh24mi') , b.TR_TERM , b.DEP_ARPT , b.ARR_ARPT , b.ARLN_ID ,"
     query += "b.PRD_ST , b.PRD_URL , b.PRD_FEE_AD , b.PRD_FEE_CH , b.PRD_FEE_BB , b.CMPS_SEAT , b.EXG_DIV , sysdate, b.TR_TERM_BAK )"
+    return query
+
+def updDepArrYMD(tagn_id, targetYear, targetMonth):
+    query = "update t_prd_dtl set "
+    query += "dep_dt_ymd=to_char(dep_dt,'yyyymmdd'), dep_dt_hm=to_char(dep_dt,'hh24mi'), dep_dt_wd=to_char(dep_dt,'d'), "
+    query += "arr_dt_ymd=to_char(arr_dt,'yyyymmdd'), arr_dt_hm=to_char(arr_dt,'hh24mi'), arr_dt_wd=to_char(arr_dt,'d') "
+    query += " where tagn_id = '" + tagn_id + "' and to_char(dep_dt, 'yyyymm') = '" + targetYear + targetMonth + "'"
     return query
 
 def getCode(codes):

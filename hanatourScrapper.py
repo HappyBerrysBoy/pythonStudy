@@ -84,25 +84,25 @@ def valueParcing(html, idx1, idx2):
 def getDepartCity(html):
     #print 'Region.........................................................' + html
     if html.find('province_PUS') > -1:
-        print html.split('province_')[1].split('_')[0]
+        print >> exceptFile, 'Start City : ', html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_TAE') > -1:
-        print html.split('province_')[1].split('_')[0]
+        print >> exceptFile, 'Start City : ', html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_KWJ') > -1:
-        print html.split('province_')[1].split('_')[0]
+        print >> exceptFile, 'Start City : ', html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_CJJ') > -1:
-        print html.split('province_')[1].split('_')[0]
+        print >> exceptFile, 'Start City : ', html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_CJU') > -1:
-        print html.split('province_')[1].split('_')[0]
+        print >> exceptFile, 'Start City : ', html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     elif html.find('province_GW') > -1:
-        print html.split('province_')[1].split('_')[0]
+        print >> exceptFile, 'Start City : ', html.split('province_')[1].split('_')[0]
         return html.split('province_')[1].split('_')[0]
     else:
-        print 'ICN'
+        print >> exceptFile, 'Start City : ICN'
         return 'ICN'
 
 # 시간 변수들..
@@ -160,8 +160,9 @@ for mainUrl in mainUrls:
                     jejuStart = True
                 elif mode == 'D' and jejuStart and packageUrl.find('/local/do-22000.asp') > -1:
                     jejuStart = False
-            
-                if (packageUrl.find('/productPackage/pk-') > -1 and packageUrl.find('etc_code=' + mode) > -1) or (mode == 'D' and jejuStart and packageUrl.find('/productPackage/pk-') > -1):
+             
+                #if (packageUrl.find('/productPackage/pk-') > -1 and packageUrl.find('etc_code=' + mode) > -1) or (mode == 'D' and jejuStart and packageUrl.find('/productPackage/pk-') > -1):
+                if (packageUrl.find('/productPackage/pk-') > -1 and packageUrl.find('target=""') < 0) or (mode == 'D' and jejuStart and packageUrl.find('/productPackage/pk-') > -1):
                     #print 'original : ' + packageUrl
                     if packageUrl.find('target="_self') > -1 and mode == 'P':
                         currCountry = packageUrl.split('>')[1].split('<')[0]
@@ -254,12 +255,13 @@ for mainUrl in mainUrls:
                                 packageList.append(productClass.pkg_mst_code)
                                 
                                 # 2014. 6. 29. 정규식으로 이름에서 국가, 도시 코드 빼오도록.. 테스트 디비로 저장..
-                                #print productClass.mst_name
-                                #print type(productClass.mst_name)
-                                codeList = codes.getCityCode(productClass.mst_name, packageClass.pub_city, productClass.content, packageClass.pub_country)
+                                # 2014. 7. 23. 카테고리의 국가는 넣지 않기로 함...
+                                #codeList = codes.getCityCode(productClass.mst_name, packageClass.pub_city, productClass.content, packageClass.pub_country)
+                                codeList = codes.getCityCode(productClass.mst_name, packageClass.pub_city, productClass.content)
                                 cityList = codeList[0]
                                 nationList = codeList[1]
                                 continentList = codeList[2]
+                                siteList = codeList[3]              # 2014. 8. 3. site 추가
                                 
                                 cityCode = jsonUrl[jsonUrl.find('&hanacode=') + len('&hanacode='):]
                                 detailProductUrl = 'http://www.hanatour.com/asp/booking/productPackage/pk-11001-list.asp?'
@@ -290,7 +292,7 @@ for mainUrl in mainUrls:
                                 cursor.execute(query)
                                 con.commit()
                                 # Region Data 삭제
-                                codes.insertRegionData(tourAgency, productClass.pkg_mst_code, cityList, nationList, continentList)
+                                codes.insertRegionData(tourAgency, productClass.pkg_mst_code, cityList, nationList, continentList, siteList)
                                 
                                 detailProducthtml = urllib2.urlopen(detailProductUrl).read()
                                 
@@ -390,6 +392,11 @@ for mainUrl in mainUrls:
 
 print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()
+
+query = tourQuery.updDepArrYMD(tourAgency, targetYear, targetMonth)
+cursor = con.cursor()
+cursor.execute(query)
+
 con.commit()
 con.close()
 

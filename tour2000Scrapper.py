@@ -63,12 +63,21 @@ class clsProductDetail():
 def insertData(productCls, detailUrl, regionUrl, tourAgency, kind, dmst_div):
     print 'Product Url : ', productCls.url
     print >> exceptFile, 'Product Url : ', productCls.url
-    detailProductHtml = savefilegethtml.getHtml(productCls.url, '', '', 'tour2000DetailHtml'+targetMonth+'.txt')
     
-    codeList = codes.getCityCode(productCls.name.decode('utf-8'), detailUrl.name.decode('utf-8'), regionUrl.name.decode('utf-8'))
+     # 2014. 7. 23. 카테고리의 국가는 넣지 않기로 함...
+    #codeList = codes.getCityCode(productCls.name.decode('utf-8'), detailUrl.name.decode('utf-8'), regionUrl.name.decode('utf-8'))
+    codeList = codes.getCityCode(productCls.name.decode('utf-8'))
     cityList = codeList[0]
     nationList = codeList[1]
     continentList = codeList[2]
+    siteList = codeList[3]              # 2014. 8. 3. site 추가
+    
+    if len(cityList) == 0 and len(nationList) == 0 and len(continentList) == 0:
+        codeList = codes.getCityCode(detailUrl.name.decode('utf-8'))
+        cityList = codeList[0]
+        nationList = codeList[1]
+        continentList = codeList[2]
+        siteList = codeList[3]              # 2014. 8. 3. site 추가
     
     # Master 상품 입력
     query = tourQuery.getMasterMergeQuery(tourAgency, productCls.code, productCls.name.decode('utf-8'), menu.kind, dmst_div, '', '')
@@ -77,8 +86,9 @@ def insertData(productCls, detailUrl, regionUrl, tourAgency, kind, dmst_div):
     cursor.execute(query)
     con.commit()
     # Region Data 삭제
-    codes.insertRegionData(tourAgency, productCls.code, cityList, nationList, continentList)
+    codes.insertRegionData(tourAgency, productCls.code, cityList, nationList, continentList, siteList)
     
+    detailProductHtml = savefilegethtml.getHtml(productCls.url, '', '', 'tour2000DetailHtml'+targetMonth+'.txt')
     pl10Idx = 0
     for detailProduct in detailProductHtml:
         try:
@@ -136,7 +146,7 @@ def insertData(productCls, detailUrl, regionUrl, tourAgency, kind, dmst_div):
         except:
             print >> exceptFile, 'detail parcing Error : ', sys.exc_info()[0]
             pass
-
+    
 
 # 시간 변수들..
 tourAgency = 'tour2000'
@@ -360,6 +370,10 @@ for menu in menuList:
         print >> exceptFile, 'product url Error : ', sys.exc_info()[0]
         pass
 
+query = tourQuery.updDepArrYMD(tourAgency, targetYear, targetMonth)
+cursor = con.cursor()
+cursor.execute(query)
+con.commit()
 con.close()
 print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()

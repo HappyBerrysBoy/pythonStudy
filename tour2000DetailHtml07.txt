@@ -40,114 +40,6 @@
 
                 <tr>
                     <td>
-						<a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140718&ev_seq=367&goods_cd=AAB201435&sub_area_cd=">
-	                    	<span class="text_pink">07/18(금) 00:00</span><br />07/20(일) 00:00
-	                    </a>
-                    </td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140718&ev_seq=367&goods_cd=AAB201435&sub_area_cd=">
-					버스
-					</td>
-                    <td ><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140718&ev_seq=367&goods_cd=AAB201435&sub_area_cd=" class="text_redB">496,000원</td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140718&ev_seq=367&goods_cd=AAB201435&sub_area_cd="><span class="text_pink">10</span></a></td>
-                    <td >
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140718&ev_seq=367&goods_cd=AAB201435&sub_area_cd=">[고품격-휴양형] 귀족처럼 즐기는 울릉도/독도 섬여행(2박3일)</a></p>
-                        <p class="pl10"></p>
-                    </td>
-                    <td><img src="/images_081222/button/list_re2.gif" style="cursor:pointer;" onclick="Login_Chk_Res('/reservation/reservation.asp', 'ev%5Fym%3D140718%26ev%5Fseq%3D367%26goods%5Fcd%3DAAB201435','','')"></td>
-                  </tr>
-
-                <tr>
-                    <td>
-						<a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140719&ev_seq=398&goods_cd=AAB201435&sub_area_cd=">
-	                    	<span class="text_pink">07/19(토) 00:00</span><br />07/21(월) 00:00
-	                    </a>
-                    </td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140719&ev_seq=398&goods_cd=AAB201435&sub_area_cd=">
-					버스
-					</td>
-                    <td ><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140719&ev_seq=398&goods_cd=AAB201435&sub_area_cd=" class="text_redB">496,000원</td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140719&ev_seq=398&goods_cd=AAB201435&sub_area_cd="><span class="text_pink">10</span></a></td>
-                    <td >
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140719&ev_seq=398&goods_cd=AAB201435&sub_area_cd=">[고품격-휴양형] 귀족처럼 즐기는 울릉도/독도 섬여행(2박3일)</a></p>
-                        <p class="pl10"></p>
-                    </td>
-                    <td><img src="/images_081222/button/list_re2.gif" style="cursor:pointer;" onclick="Login_Chk_Res('/reservation/reservation.asp', 'ev%5Fym%3D140719%26ev%5Fseq%3D398%26goods%5Fcd%3DAAB201435','','')"></td>
-                  </tr>
-
-                <tr>
-                    <td>
-						<a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140720&ev_seq=378&goods_cd=AAB201435&sub_area_cd=">
-	                    	<span class="text_pink">07/20(일) 00:00</span><br />07/22(화) 00:00
-	                    </a>
-                    </td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140720&ev_seq=378&goods_cd=AAB201435&sub_area_cd=">
-					버스
-					</td>
-                    <td ><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140720&ev_seq=378&goods_cd=AAB201435&sub_area_cd=" class="text_redB">476,000원</td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140720&ev_seq=378&goods_cd=AAB201435&sub_area_cd="><span class="text_blau">10</span></a></td>
-                    <td >
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140720&ev_seq=378&goods_cd=AAB201435&sub_area_cd=">[고품격-휴양형] 귀족처럼 즐기는 울릉도/독도 섬여행(2박3일)</a></p>
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140720&ev_seq=378&goods_cd=AAB201435&sub_area_cd="><img src='/images_081222/icon/ico_proc_10.gif' align='absmiddle' alt='출발확정'> </a></p>
-                    </td>
-                    <td><img src="/images_081222/button/list_re1.gif" style="cursor:pointer;" onclick="Login_Chk_Res('/reservation/reservation.asp','ev%5Fym%3D140720%26ev%5Fseq%3D378%26goods%5Fcd%3DAAB201435','','')"></td>
-                  </tr>
-
-                <tr>
-                    <td>
-						<a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140721&ev_seq=375&goods_cd=AAB201435&sub_area_cd=">
-	                    	<span class="text_pink">07/21(월) 00:00</span><br />07/23(수) 00:00
-	                    </a>
-                    </td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140721&ev_seq=375&goods_cd=AAB201435&sub_area_cd=">
-					버스
-					</td>
-                    <td ><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140721&ev_seq=375&goods_cd=AAB201435&sub_area_cd=" class="text_redB">476,000원</td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140721&ev_seq=375&goods_cd=AAB201435&sub_area_cd="><span class="text_blau">10</span></a></td>
-                    <td >
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140721&ev_seq=375&goods_cd=AAB201435&sub_area_cd=">[고품격-휴양형] 귀족처럼 즐기는 울릉도/독도 섬여행(2박3일)</a></p>
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140721&ev_seq=375&goods_cd=AAB201435&sub_area_cd="><img src='/images_081222/icon/ico_proc_10.gif' align='absmiddle' alt='출발확정'> </a></p>
-                    </td>
-                    <td><img src="/images_081222/button/list_re1.gif" style="cursor:pointer;" onclick="Login_Chk_Res('/reservation/reservation.asp','ev%5Fym%3D140721%26ev%5Fseq%3D375%26goods%5Fcd%3DAAB201435','','')"></td>
-                  </tr>
-
-                <tr>
-                    <td>
-						<a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140722&ev_seq=338&goods_cd=AAB201435&sub_area_cd=">
-	                    	<span class="text_pink">07/22(화) 00:00</span><br />07/24(목) 00:00
-	                    </a>
-                    </td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140722&ev_seq=338&goods_cd=AAB201435&sub_area_cd=">
-					버스
-					</td>
-                    <td ><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140722&ev_seq=338&goods_cd=AAB201435&sub_area_cd=" class="text_redB">476,000원</td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140722&ev_seq=338&goods_cd=AAB201435&sub_area_cd="><span class="text_blau">10</span></a></td>
-                    <td >
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140722&ev_seq=338&goods_cd=AAB201435&sub_area_cd=">[고품격-휴양형] 귀족처럼 즐기는 울릉도/독도 섬여행(2박3일)</a></p>
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140722&ev_seq=338&goods_cd=AAB201435&sub_area_cd="><img src='/images_081222/icon/ico_proc_10.gif' align='absmiddle' alt='출발확정'> </a></p>
-                    </td>
-                    <td><img src="/images_081222/button/list_re1.gif" style="cursor:pointer;" onclick="Login_Chk_Res('/reservation/reservation.asp','ev%5Fym%3D140722%26ev%5Fseq%3D338%26goods%5Fcd%3DAAB201435','','')"></td>
-                  </tr>
-
-                <tr>
-                    <td>
-						<a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140723&ev_seq=352&goods_cd=AAB201435&sub_area_cd=">
-	                    	<span class="text_pink">07/23(수) 00:00</span><br />07/25(금) 00:00
-	                    </a>
-                    </td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140723&ev_seq=352&goods_cd=AAB201435&sub_area_cd=">
-					버스
-					</td>
-                    <td ><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140723&ev_seq=352&goods_cd=AAB201435&sub_area_cd=" class="text_redB">476,000원</td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140723&ev_seq=352&goods_cd=AAB201435&sub_area_cd="><span class="text_blau">10</span></a></td>
-                    <td >
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140723&ev_seq=352&goods_cd=AAB201435&sub_area_cd=">[고품격-휴양형] 귀족처럼 즐기는 울릉도/독도 섬여행(2박3일)</a></p>
-                        <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140723&ev_seq=352&goods_cd=AAB201435&sub_area_cd="><img src='/images_081222/icon/ico_proc_10.gif' align='absmiddle' alt='출발확정'> </a></p>
-                    </td>
-                    <td><img src="/images_081222/button/list_re1.gif" style="cursor:pointer;" onclick="Login_Chk_Res('/reservation/reservation.asp','ev%5Fym%3D140723%26ev%5Fseq%3D352%26goods%5Fcd%3DAAB201435','','')"></td>
-                  </tr>
-
-                <tr>
-                    <td>
 						<a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140724&ev_seq=344&goods_cd=AAB201435&sub_area_cd=">
 	                    	<span class="text_pink">07/24(목) 00:00</span><br />07/26(토) 00:00
 	                    </a>
@@ -156,12 +48,12 @@
 					버스
 					</td>
                     <td ><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140724&ev_seq=344&goods_cd=AAB201435&sub_area_cd=" class="text_redB">476,000원</td>
-                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140724&ev_seq=344&goods_cd=AAB201435&sub_area_cd="><span class="text_blau">10</span></a></td>
+                    <td><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140724&ev_seq=344&goods_cd=AAB201435&sub_area_cd="><span class="text_grayLightSmall">0</span></a></td>
                     <td >
                         <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140724&ev_seq=344&goods_cd=AAB201435&sub_area_cd=">[고품격-휴양형] 귀족처럼 즐기는 울릉도/독도 섬여행(2박3일)</a></p>
                         <p class="pl10"><a href="/Overseas_Common/Goods_Detail.asp?ev_ym=140724&ev_seq=344&goods_cd=AAB201435&sub_area_cd="><img src='/images_081222/icon/ico_proc_10.gif' align='absmiddle' alt='출발확정'> </a></p>
                     </td>
-                    <td><img src="/images_081222/button/list_re1.gif" style="cursor:pointer;" onclick="Login_Chk_Res('/reservation/reservation.asp','ev%5Fym%3D140724%26ev%5Fseq%3D344%26goods%5Fcd%3DAAB201435','','')"></td>
+                    <td><img src='/images_081222/button/list_re3.gif'></td>
                   </tr>
 
                 <tr>

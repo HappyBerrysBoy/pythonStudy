@@ -180,25 +180,34 @@ for level1 in menulist:
 
                                         try:
                                             print >> exceptFile, detailProductUrl
-                                            detailProductHtml = urllib2.urlopen(detailProductUrl).read()
-                                            detailProductHtml = detailProductHtml[detailProductHtml.find('<tbody id'):detailProductHtml.find('<p class="seeMore"')]
-                                            detailProductHtml = detailProductHtml.replace('<td class=', '\r\n<td class=')
-                                            detailProductHtml = savefilegethtml.htmlToList(detailProductHtml, 'detailProductHtml.txt')
                                             
-                                            
-                                            codeList = codes.getCityCode(productList.productname, cityClass.city, productList.comment, level3.region)
+                                            # 2014. 7. 23. 카테고리의 국가는 넣지 않기로 함...
+                                            #codeList = codes.getCityCode(productList.productname, cityClass.city, productList.comment, level3.region)
+                                            codeList = codes.getCityCode(productList.productname, productList.comment)
                                             cityList = codeList[0]
                                             nationList = codeList[1]
                                             continentList = codeList[2]
+                                            siteList = codeList[3]              # 2014. 8. 3. site 추가
                                             
+                                            if len(cityList) == 0 and len(nationList) == 0 and len(continentList) == 0:
+                                                codeList = codes.getCityCode(cityClass.city)
+                                                cityList = codeList[0]
+                                                nationList = codeList[1]
+                                                continentList = codeList[2]
+                                                siteList = codeList[3]              # 2014. 8. 3. site 추가
                                             
                                             query = tourQuery.getMasterMergeQuery(tourAgency, productList.productCode, productList.productname, level2.tourkind, 'A', productList.comment, '')  # A : 해외(Abroad)
                                             #print query
                                             cursor = con.cursor()
                                             cursor.execute(query)
                                             con.commit()
-                                            codes.insertRegionData(tourAgency, productList.productCode, cityList, nationList, continentList)
+                                            codes.insertRegionData(tourAgency, productList.productCode, cityList, nationList, continentList, siteList)
                                             
+                                            
+                                            detailProductHtml = urllib2.urlopen(detailProductUrl).read()
+                                            detailProductHtml = detailProductHtml[detailProductHtml.find('<tbody id'):detailProductHtml.find('<p class="seeMore"')]
+                                            detailProductHtml = detailProductHtml.replace('<td class=', '\r\n<td class=')
+                                            detailProductHtml = savefilegethtml.htmlToList(detailProductHtml, 'detailProductHtml.txt')
                                             
                                             try:
                                                 detailProductCls = clsDetailProduct()
@@ -243,6 +252,7 @@ for level1 in menulist:
                                                 print >> exceptFile, 'Detail Product Parcing Error', sys.exc_info()[0]
                                                 pass
                                             
+                                            
                                         except:
                                             print >> exceptFile, 'Detail Product URL Error', sys.exc_info()[0]
                                             pass
@@ -269,5 +279,9 @@ for level1 in menulist:
 
 print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()
+
+query = tourQuery.updDepArrYMD(tourAgency, targetYear, targetMonth)
+cursor = con.cursor()
+cursor.execute(query)
 con.commit()
 con.close()

@@ -1,4 +1,4 @@
-tday">출발일&nbsp;&nbsp;7월 14일</p>
+tday">출발일&nbsp;&nbsp;8월 4일</p>
 	<div class="calendar">
 		<table >
 			<colgroup>
@@ -17,7 +17,7 @@ tday">출발일&nbsp;&nbsp;7월 14일</p>
 			</thead>
 			<tbody>
 			<tr><!-- 첫줄 클래스// -->	
- <tr><td></td><td></td>
+ <tr><td></td><td></td><td></td><td></td><td></td>
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
 							<font color="">1</font>				
@@ -29,16 +29,16 @@ tday">출발일&nbsp;&nbsp;7월 14일</p>
 
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="">2</font>				
+							<font color="#1592ec">2</font>				
 							
 						
 					</a>
 				</td>
 				
-
+</tr> <tr>
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="">3</font>				
+							<font color="#ec1515">3</font>				
 							
 						
 					</a>
@@ -56,16 +56,16 @@ tday">출발일&nbsp;&nbsp;7월 14일</p>
 
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="#1592ec">5</font>				
+							<font color="">5</font>				
 							
 						
 					</a>
 				</td>
 				
-</tr> <tr>
+
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="#ec1515">6</font>				
+							<font color="">6</font>				
 							
 						
 					</a>
@@ -92,43 +92,47 @@ tday">출발일&nbsp;&nbsp;7월 14일</p>
 
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="">9</font>				
-							
-						
-					</a>
-				</td>
-				
-
-							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
-								
-							<font color="">10</font>				
-							
-						
-					</a>
-				</td>
-				
-
-							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
-								
-							<font color="">11</font>				
-							
-						
-					</a>
-				</td>
-				
-
-							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
-								
-							<font color="#1592ec">12</font>				
+							<font color="#1592ec">9</font>				
 							
 						
 					</a>
 				</td>
 				
 </tr> <tr>
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201408&ev_seq=33318">
+								
+							<font color="#ec1515"><strong>10</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
+								
+								<a href="view.asp?ev_ym=201408&ev_seq=33323">
+								
+							<font color="#ec1515"><strong>11</font>				
+							
+						
+					</a>
+				</td>
+				
+
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="#ec1515">13</font>				
+							<font color="">12</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">13</font>				
 							
 						
 					</a>
@@ -155,25 +159,18 @@ tday">출발일&nbsp;&nbsp;7월 14일</p>
 
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="">16</font>				
+							<font color="#1592ec">16</font>				
 							
 						
 					</a>
 				</td>
 				
-
-							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+</tr> <tr>
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
 								
-							<font color="">17</font>				
-							
-						
-					</a>
-				</td>
-				
-
-							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								<a href="view.asp?ev_ym=201408&ev_seq=33319">
 								
-							<font color="">18</font>				
+							<font color="#ec1515"><strong>17</font>				
 							
 						
 					</a>
@@ -182,18 +179,27 @@ tday">출발일&nbsp;&nbsp;7월 14일</p>
 
 							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
 								
-								<a href="view.asp?ev_ym=201407&ev_seq=11166">
+								<a href="view.asp?ev_ym=201408&ev_seq=33324">
 								
-							<font color="#ec1515"><strong>19</font>				
+							<font color="#ec1515"><strong>18</font>				
 							
 						
 					</a>
 				</td>
 				
-</tr> <tr>
+
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="#ec1515">20</font>				
+							<font color="">19</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">20</font>				
 							
 						
 					</a>
@@ -220,25 +226,18 @@ tday">출발일&nbsp;&nbsp;7월 14일</p>
 
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="">23</font>				
+							<font color="#1592ec">23</font>				
 							
 						
 					</a>
 				</td>
 				
-
-							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+</tr> <tr>
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
 								
-							<font color="">24</font>				
-							
-						
-					</a>
-				</td>
-				
-
-							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								<a href="view.asp?ev_ym=201408&ev_seq=33320">
 								
-							<font color="">25</font>				
+							<font color="#ec1515"><strong>24</font>				
 							
 						
 					</a>
@@ -247,18 +246,27 @@ tday">출발일&nbsp;&nbsp;7월 14일</p>
 
 							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
 								
-								<a href="view.asp?ev_ym=201407&ev_seq=11167">
+								<a href="view.asp?ev_ym=201408&ev_seq=33325">
 								
-							<font color="#ec1515"><strong>26</font>				
+							<font color="#ec1515"><strong>25</font>				
 							
 						
 					</a>
 				</td>
 				
-</tr> <tr>
+
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="#ec1515">27</font>				
+							<font color="">26</font>				
+							
+						
+					</a>
+				</td>
+				
+
+							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+								
+							<font color="">27</font>				
 							
 						
 					</a>
@@ -285,16 +293,18 @@ tday">출발일&nbsp;&nbsp;7월 14일</p>
 
 							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
 								
-							<font color="">30</font>				
+							<font color="#1592ec">30</font>				
 							
 						
 					</a>
 				</td>
 				
-
-							<td width="27" height="21" align="center" class="font_num" style="background-color:;">
+</tr> <tr>
+							<td width="27" height="21" align="center" class="font_num" style="background-color:#f5dede;">
 								
-							<font color="">31</font>				
+								<a href="view.asp?ev_ym=201408&ev_seq=33321">
+								
+							<font color="#ec1515"><strong>31</font>				
 							
 						
 					</a>

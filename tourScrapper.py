@@ -27,6 +27,8 @@ def getTourScrapFile(name):
         return 'wemakepriceScrapper.py'
     elif name == 'ybtour':
         return 'ybtourScrapper.py'
+    elif name == 'lottetour':
+        return 'lottetourScrapper.py'
 
 tourCompany = sys.argv[1]
 scrapYear = sys.argv[2]

@@ -156,11 +156,20 @@ try:
                                 if mastercode.strip() == '' or productName.strip() == '' or productComment.strip() == '':
                                     continue
                                 
-                                codeList = codes.getCityCode(productName, productGroupCls.name, productComment)
+                                # 2014. 7. 23. 카테고리의 국가는 넣지 않기로 함...
+                                #codeList = codes.getCityCode(productName, productGroupCls.name, productComment)
+                                codeList = codes.getCityCode(productName, productComment)
                                 cityList = codeList[0]
                                 nationList = codeList[1]
                                 continentList = codeList[2]
+                                siteList = codeList[3]              # 2014. 8. 3. site 추가
                                 
+                                if len(cityList) == 0 and len(nationList) == 0 and len(continentList) == 0:
+                                    codeList = codes.getCityCode(productGroupCls.name)
+                                    cityList = codeList[0]
+                                    nationList = codeList[1]
+                                    continentList = codeList[2]
+                                    siteList = codeList[3]              # 2014. 8. 3. site 추가
                                 
                                 query = tourQuery.getMasterMergeQuery(tourAgency, mastercode, productName, tourType, region, productComment, '')  # A : 해외(Abroad)
                                 #query = savefilegethtml.getMasterMergeQuery('vgtour', mastercode, '', '', productGroupCls.name, productName, tourType, region, productComment, '')  # A : 해외(Abroad)
@@ -168,8 +177,9 @@ try:
                                 cursor = con.cursor()
                                 cursor.execute(query)
                                 con.commit()
-                                codes.insertRegionData(tourAgency, mastercode, cityList, nationList, continentList)
-            
+                                codes.insertRegionData(tourAgency, mastercode, cityList, nationList, continentList, siteList)
+                                
+                                
                                 #최종 상품들 잡아넣자..
                                 try:
                                     productCls = clsProduct()
@@ -191,11 +201,11 @@ try:
                                             productCls.aTime = ''
                                             
                                             if len(daySplit) > 1:
-                                                productCls.sDay = '2014' + daySplit[0] + daySplit[1]
+                                                productCls.sDay = targetYear + daySplit[0] + daySplit[1]
                                             if len(daySplit) > 3:
                                                 productCls.sTime = daySplit[2] + daySplit[3]
                                             if len(daySplit) > 5:
-                                                productCls.aDay = '2014' + daySplit[4] + daySplit[5]
+                                                productCls.aDay = targetYear + daySplit[4] + daySplit[5]
                                             if len(daySplit) > 7:
                                                 productCls.aTime = daySplit[6] + daySplit[7]
                                         elif product.find('<img src=') > -1 and product.find('pro_detail') < 0:
@@ -257,6 +267,7 @@ try:
                                     print 'data base error!!!'
                                     print >> exceptFile, "Parcing Error:", sys.exc_info()[0]
                                     pass
+                                
                             #break
                 except:
                     print >> exceptFile, "Parcing or URL Error:", sys.exc_info()[0]
@@ -274,5 +285,9 @@ except:
 #sitemapHtml.close()
 print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()
+
+query = tourQuery.updDepArrYMD(tourAgency, targetYear, targetMonth)
+cursor = con.cursor()
+cursor.execute(query)
 con.commit()
 con.close()

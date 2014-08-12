@@ -57,7 +57,6 @@
 							<li><a href="/hotel/hoteltrees/?v_path=U">미주호텔</a></li>
 						</ul>
 					</li>
-					
 					<li>
 						<a href="http://air.tourbaksa.com">해외항공</a>
 						<ul>
@@ -71,7 +70,6 @@
 							<li><a href="http://air2.tourbaksa.com/options/">특별서비스 신청</a></li> -->
 						</ul>
 					</li>
-					
 					<li>
 						<a href="/Pass/">패스/티켓</a>
 						<ul>

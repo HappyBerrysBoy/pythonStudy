@@ -54,6 +54,33 @@
                         <iframe src="" id="ProductListItem_MPX137" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_MPX137')" title="이벤트 상품"></iframe>
                     </div>
                 </div>
+                <div class="img_ov_text2 box" onclick="MasterPage('MPX133')"><!--선택 :select  ||  선택안함 : 없음-->
+                    <div class="box_in">
+                        <div class="pro_check">
+                            <img width="88" height="66" src="http://contents.verygoodtour.com/content/220/IL/0000/JRS/image/10891_2.jpg" alt="유류할증료까지 포함! 이스라엘 집중탐방 여정입니다." />
+                        </div>
+                        <div class="pro_contents">
+                        <!--슈퍼클래스 여부에 맞춰 이미지 생성 contents 확인 -->
+                            <p class="content"><span class="title"><a href="#n"> [합리적인가격-1회한정][이스라엘 집중탐방] 이스라엘일주 [맛사다+북부갈릴리]+ 이스탄불야경투어 7일</a></span><br/><a href="#n" class="pkg_list_centents">유류할증료까지 포함! 이스라엘 집중탐방 여정입니다.</a></p>
+                            <div class="pro_contents_in">
+                                <p class="text_box">
+                                    <span class="pro_code"><img src="/images/2013/list/pro_1.gif" alt="상품코드"/>MPX133</span>
+                                    <span class="pro_day"><img src="/images/2013/list/pro_2.gif" alt="여행기간"/>6박7일</span>
+                                    <span class="price">2,590,000<span>원</span> ~ </span>
+                                </p>
+                                <div class="bt">
+                                    <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
+                                    <p class="close" id="startday_MPX133_2014-08-10"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--이벤트 상품 키고 끄기 class값에 event_select부여-->
+                    <div class="img_ov event event_select"><span class="event_icon00">이벤트</span><a href="/Product/Package/PackageDetail?ProCode=MPX133-140810&PriceSeq=0"><span class="date">08월 10일 일요일</span><span class="contents">[합리적인가격][이스라엘 성지] 이스라엘일주 [맛사다+북부갈릴리]+ 이스탄불야경..</span></a></div>
+                    <div class="box_list" style="clear:both;">
+                        <iframe src="" id="ProductListItem_MPX133" width="760" height="100%" frameborder="0" scrolling="no" onload="mwIframeHeightResize('ProductListItem_MPX133')" title="이벤트 상품"></iframe>
+                    </div>
+                </div>
                 <div class="img_ov_text2 box" onclick="MasterPage('MPX136')"><!--선택 :select  ||  선택안함 : 없음-->
                     <div class="box_in">
                         <div class="pro_check">
@@ -70,7 +97,7 @@
                                 </p>
                                 <div class="bt">
                                     <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX136_2014-07-15"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                    <p class="close" id="startday_MPX136_2014-08-05"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +124,7 @@
                                 </p>
                                 <div class="bt">
                                     <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX330_2014-07-20"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                    <p class="close" id="startday_MPX330_2014-08-10"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +151,7 @@
                                 </p>
                                 <div class="bt">
                                     <p class="detail" style="display:none;"><img src="/images/2013/list/detail.jpg" alt="자세히보기"/></p>
-                                    <p class="close" id="startday_MPX331_2014-07-20"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
+                                    <p class="close" id="startday_MPX331_2014-08-10"><a href="#n"><img src="/images/2013/list/start_view.jpg" alt="출발일보기"/></a></p>
                                 </div>
                             </div>
                         </div>

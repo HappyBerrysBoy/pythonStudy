@@ -8,15 +8,15 @@
 <!--
 	function fnBkView(){		//////// 상품 비교하기
 		var obj = document.frmCart;
-		var i =0 ;  
+		var i =0 ;
 		count=0 ;
 
-		obj.msgindex2.value = "";	
+		obj.msgindex2.value = "";
 
 		obj.msgindex.value ="";
 		while (i < obj.elements.length)
 		{
-			if ((obj.elements[i].name == "goods_id" ) && (obj.elements[i].checked)){     
+			if ((obj.elements[i].name == "goods_id" ) && (obj.elements[i].checked)){
 				obj.msgindex.value += obj.elements[i].value + ",";
 				count++;
 			}
@@ -34,11 +34,11 @@
 		{
 			if (obj.goods_id[i].checked == true)
 			{
-				obj.msgindex2.value += obj.goods_id2[i].value + ",";	
+				obj.msgindex2.value += obj.goods_id2[i].value + ",";
 
 //				alert(obj.goods_id2[i].value);
 			}
-		}		
+		}
 
 	//	return;
 
@@ -79,98 +79,174 @@
 			<tbody>
 
 				<tr>
-				
-					<td><input type="checkbox" name="goods_id" value="20140836852;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836852"/></td>
-					<td><span class="blue">08/03 (일) 18:00</span><br /><span>08/10 (일) 17:35</span></td>
-					<td><span class="logo" title="대한항공" alt="대한항공">
+
+					<td><input type="checkbox" name="goods_id" value="2014082015;" class="ir" /><input type="hidden"  name="goods_id2" value="2014082015"/></td>
+					<td><span class="blue">08/05 (화) 10:20</span><br /><span>08/13 (수) 09:20</span></td>
+					<td><span class="logo" title="아시아나항공" alt="아시아나항공">
 						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
-					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
+					<img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='아시아나항공' title='아시아나항공'>
 					</span></td>
-					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36852&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=2015&good_cd=150201119">[BEST]아시아나직항 터키/그리스+메테오라(암벽위수도원) 9일(OZ)</a></td>
 					<td><span>
-					7박8일
-					
+					8박9일
+
 					</span></td>
-					<td class="blue">990,000원 
+					<td class="blue">2,671,400원
+					
+					</td>
+					<td class="blue">예약대기<br><img src='/images/common/icon_reservation.gif' border='0' style='vertical-align:top;margin:0;' title='출발확정' alt='출발확정' /></td>
+				</tr>
+
+				<tr>
+
+					<td><input type="checkbox" name="goods_id" value="2014082016;" class="ir" /><input type="hidden"  name="goods_id2" value="2014082016"/></td>
+					<td><span class="blue">08/07 (목) 10:20</span><br /><span>08/15 (금) 09:20</span></td>
+					<td><span class="logo" title="아시아나항공" alt="아시아나항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='아시아나항공' title='아시아나항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=2016&good_cd=150201119">[BEST]아시아나직항 터키/그리스+메테오라(암벽위수도원) 9일(OZ)</a></td>
+					<td><span>
+					8박9일
+
+					</span></td>
+					<td class="blue">2,571,400원
+					
+					</td>
+					<td class="blue">예약대기<br><img src='/images/common/icon_reservation.gif' border='0' style='vertical-align:top;margin:0;' title='출발확정' alt='출발확정' /></td>
+				</tr>
+
+				<tr>
+
+					<td><input type="checkbox" name="goods_id" value="2014082017;" class="ir" /><input type="hidden"  name="goods_id2" value="2014082017"/></td>
+					<td><span class="blue">08/12 (화) 10:20</span><br /><span>08/20 (수) 09:20</span></td>
+					<td><span class="logo" title="아시아나항공" alt="아시아나항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='아시아나항공' title='아시아나항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=2017&good_cd=150201119">[BEST]아시아나직항 터키/그리스+메테오라(암벽위수도원) 9일(OZ)</a></td>
+					<td><span>
+					8박9일
+
+					</span></td>
+					<td class="blue">2,371,400원
+					
+					</td>
+					<td class="blue">예약대기<br><img src='/images/common/icon_reservation.gif' border='0' style='vertical-align:top;margin:0;' title='출발확정' alt='출발확정' /></td>
+				</tr>
+
+				<tr>
+
+					<td><input type="checkbox" name="goods_id" value="2014082018;" class="ir" /><input type="hidden"  name="goods_id2" value="2014082018"/></td>
+					<td><span class="blue">08/14 (목) 10:20</span><br /><span>08/22 (금) 09:20</span></td>
+					<td><span class="logo" title="아시아나항공" alt="아시아나항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='아시아나항공' title='아시아나항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=2018&good_cd=150201119">[BEST]아시아나직항 터키/그리스+메테오라(암벽위수도원) 9일(OZ)</a></td>
+					<td><span>
+					8박9일
+
+					</span></td>
+					<td class="blue">2,271,400원
+					<img src='/images/common/icon_specialprice_01.gif' align='absmiddle' title='특가' alt='특가' />
+					</td>
+					<td class="red">예약가능<br><img src='/images/common/icon_reservation.gif' border='0' style='vertical-align:top;margin:0;' title='출발확정' alt='출발확정' /></td>
+				</tr>
+
+				<tr>
+
+					<td><input type="checkbox" name="goods_id" value="2014082019;" class="ir" /><input type="hidden"  name="goods_id2" value="2014082019"/></td>
+					<td><span class="blue">08/19 (화) 10:20</span><br /><span>08/27 (수) 09:20</span></td>
+					<td><span class="logo" title="아시아나항공" alt="아시아나항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='아시아나항공' title='아시아나항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=2019&good_cd=150201119">[BEST]아시아나직항 터키/그리스+메테오라(암벽위수도원) 9일(OZ)</a></td>
+					<td><span>
+					8박9일
+
+					</span></td>
+					<td class="blue">2,071,400원
+					
+					</td>
+					<td class="blue">예약대기<br><img src='/images/common/icon_reservation.gif' border='0' style='vertical-align:top;margin:0;' title='출발확정' alt='출발확정' /></td>
+				</tr>
+
+				<tr>
+
+					<td><input type="checkbox" name="goods_id" value="2014082020;" class="ir" /><input type="hidden"  name="goods_id2" value="2014082020"/></td>
+					<td><span class="blue">08/21 (목) 10:20</span><br /><span>08/29 (금) 09:20</span></td>
+					<td><span class="logo" title="아시아나항공" alt="아시아나항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='아시아나항공' title='아시아나항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=2020&good_cd=150201119">[BEST]아시아나직항 터키/그리스+메테오라(암벽위수도원) 9일(OZ)</a></td>
+					<td><span>
+					8박9일
+
+					</span></td>
+					<td class="blue">1,871,400원
+					
+					</td>
+					<td class="red">예약가능<br><img src='/images/common/icon_reservation.gif' border='0' style='vertical-align:top;margin:0;' title='출발확정' alt='출발확정' /></td>
+				</tr>
+
+				<tr>
+
+					<td><input type="checkbox" name="goods_id" value="2014082021;" class="ir" /><input type="hidden"  name="goods_id2" value="2014082021"/></td>
+					<td><span class="blue">08/26 (화) 10:20</span><br /><span>09/03 (수) 09:20</span></td>
+					<td><span class="logo" title="아시아나항공" alt="아시아나항공">
+						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
+					<img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='아시아나항공' title='아시아나항공'>
+					</span></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=2021&good_cd=150201119">[BEST]아시아나직항 터키/그리스+메테오라(암벽위수도원) 9일(OZ)</a></td>
+					<td><span>
+					8박9일
+
+					</span></td>
+					<td class="blue">1,771,400원
 					
 					</td>
 					<td class="red">예약가능</td>
 				</tr>
 
 				<tr>
-				
-					<td><input type="checkbox" name="goods_id" value="20140836853;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836853"/></td>
-					<td><span class="blue">08/10 (일) 18:00</span><br /><span>08/17 (일) 17:35</span></td>
-					<td><span class="logo" title="대한항공" alt="대한항공">
+
+					<td><input type="checkbox" name="goods_id" value="2014082022;" class="ir" /><input type="hidden"  name="goods_id2" value="2014082022"/></td>
+					<td><span class="blue">08/28 (목) 10:20</span><br /><span>09/05 (금) 09:20</span></td>
+					<td><span class="logo" title="아시아나항공" alt="아시아나항공">
 						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
-					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
+					<img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='아시아나항공' title='아시아나항공'>
 					</span></td>
-					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36853&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=2022&good_cd=150201119">[BEST]아시아나직항 터키/그리스+메테오라(암벽위수도원) 9일(OZ)</a></td>
 					<td><span>
-					7박8일
-					
+					8박9일
+
 					</span></td>
-					<td class="blue">990,000원 
+					<td class="blue">1,871,400원
 					
 					</td>
 					<td class="red">예약가능</td>
 				</tr>
 
 				<tr>
-				
-					<td><input type="checkbox" name="goods_id" value="20140836854;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836854"/></td>
-					<td><span class="blue">08/17 (일) 18:00</span><br /><span>08/24 (일) 17:35</span></td>
-					<td><span class="logo" title="대한항공" alt="대한항공">
-						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
-					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
-					</span></td>
-					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36854&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
-					<td><span>
-					7박8일
-					
-					</span></td>
-					<td class="blue">890,000원 
-					
-					</td>
-					<td class="red">예약가능</td>
-				</tr>
 
-				<tr>
-				
-					<td><input type="checkbox" name="goods_id" value="20140836855;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836855"/></td>
-					<td><span class="blue">08/24 (일) 18:00</span><br /><span>08/31 (일) 17:35</span></td>
-					<td><span class="logo" title="대한항공" alt="대한항공">
+					<td><input type="checkbox" name="goods_id" value="20140878729;" class="ir" /><input type="hidden"  name="goods_id2" value="20140878729"/></td>
+					<td><span class="blue">08/30 (토) 01:20</span><br /><span>09/08 (월) 16:00</span></td>
+					<td><span class="logo" title="카타르항공" alt="카타르항공">
 						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
-					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
+					<img src='/images/air/air/AP_QR03.gif' align='absmiddle' border=0 alt='카타르항공' title='카타르항공'>
 					</span></td>
-					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36855&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
+					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=78729&good_cd=150201119">[OZ마일리지적립]★도하시티관광포함★터키그리스10일[QR]</a></td>
 					<td><span>
-					7박8일
-					
-					</span></td>
-					<td class="blue">690,000원 
-					
-					</td>
-					<td class="red">예약가능</td>
-				</tr>
+					8박9일
 
-				<tr>
-				
-					<td><input type="checkbox" name="goods_id" value="20140836856;" class="ir" /><input type="hidden"  name="goods_id2" value="20140836856"/></td>
-					<td><span class="blue">08/31 (일) 18:00</span><br /><span>09/07 (일) 17:35</span></td>
-					<td><span class="logo" title="대한항공" alt="대한항공">
-						<!-- 2014.03.25 김주신 대리 요청 크루즈 이미지 수정 -->
-					<img src='/images/air/air/AP_KE03.gif' align='absmiddle' border=0 alt='대한항공' title='대한항공'>
 					</span></td>
-					<td class="lt"><a href="/goods/overseas/view.asp?ev_ym=201408&ev_seq=36856&good_cd=P9920142">[실속] ●일출발●CRUISE ONLY●알래스카 크루즈 8일</a></td>
-					<td><span>
-					7박8일
-					
-					</span></td>
-					<td class="blue">690,000원 
+					<td class="blue">1,678,000원
 					
 					</td>
-					<td class="red">예약가능</td>
+					<td class="red">예약가능<br><img src='/images/common/icon_reservation.gif' border='0' style='vertical-align:top;margin:0;' title='출발확정' alt='출발확정' /></td>
 				</tr>
 
 				<!--tr class="bg"><!-- 배경컬러 있는것 클래스 생성// -->
@@ -188,16 +264,16 @@
 	</form>
 <SCRIPT LANGUAGE="JavaScript">
 <!--
-	$(document).ready(function() 
+	$(document).ready(function()
 		{
 			$("#data_list_table").tablesorter({
-				sortList: [[1,0], [5,0]], 
+				sortList: [[1,0], [5,0]],
 				headers: {
 					0 : { sorter : false }
 				}
 			});
 		}
-	); 
+	);
 //-->
 </SCRIPT>
 	<!--// 상품비교 list -->

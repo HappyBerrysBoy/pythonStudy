@@ -11,7 +11,18 @@ import cx_Oracle
 import tourQuery
 
 def getCodes(cityCode, nationCode, continentCode, cityNationCode, nationCnttCode):
-    con = cx_Oracle.connect("bigtour/bigtour@hnctech73.iptime.org:1521/ora11g")
+    con = cx_Oracle.connect("bigtour/bigtour@221.167.94.198:1521/ora11g")
+    
+    query = 'select * from tmp_site'
+    cursor = con.cursor()
+    cursor.execute(query)
+    for row in cursor:
+        #print type(row[2])
+        siteCityCode[row[2]] = row[1]
+        siteCode[row[3].decode('cp949')] = row[2]
+        #nationCode[row[5].decode('cp949')] = row[0]
+        #nationCode[row[0]] = row[0]
+    
     query = 'select * from tmp_city'
     cursor = con.cursor()
     cursor.execute(query)
@@ -34,6 +45,7 @@ def getCodes(cityCode, nationCode, continentCode, cityNationCode, nationCnttCode
         nationCode[row[1].decode('cp949')] = row[0]
         nationCode[row[0]] = row[0]
         nationCnttCode[row[0]] = row[8]
+        
     query = 'select * from tmp_cntt'
     cursor = con.cursor()
     cursor.execute(query)
@@ -46,9 +58,11 @@ def getCodes(cityCode, nationCode, continentCode, cityNationCode, nationCnttCode
         continentCode[row[0]] = row[0]
     con.close()
 
+siteCode = dict()
 cityCode = dict()
 nationCode = dict()
 continentCode = dict()
+siteCityCode = dict()
 cityNationCode = dict()
 nationCnttCode = dict()
 
@@ -153,6 +167,26 @@ def getStatus(tour, status):
         elif status == '출발가능':
             return getStatusCode('DF')
         elif status == '대기예약':
+            return getStatusCode('WR')
+        else:
+            return getStatusCode('NO')
+    elif tour == 'onlinetour':
+        if status == 'Finish':
+            return getStatusCode('RF')
+        elif status == 'Avail':
+            return getStatusCode('RS')
+        elif status == 'Confirm':
+            return getStatusCode('DF')
+        elif status == '대기예약':
+            return getStatusCode('WR')
+        else:
+            return getStatusCode('NO')
+    elif tour == 'lottetour':
+        if status == '01':
+            return getStatusCode('RS')
+        elif status == '03':
+            return getStatusCode('RF')
+        elif status == '04':
             return getStatusCode('WR')
         else:
             return getStatusCode('NO')
@@ -311,6 +345,38 @@ def getTourKind(tour, status):
         else:
             return getTourKindCode('No')
             
+    elif tour == 'onlinetour':
+        if status == '해외패키지':
+            return getTourKindCode('Package')
+        elif status == '해외자유배낭':
+            return getTourKindCode('Free')
+        elif status == '국내여행':
+            return getTourKindCode('Domestic')
+        elif status == '허니문':
+            return getTourKindCode('Honeymoon')
+        elif status == '골프':
+            return getTourKindCode('Golf')
+        elif status == '부산출발':
+            return getTourKindCode('Package')
+        elif status == '제주여행':
+            return getTourKindCode('Domestic')
+        else:
+            return getTourKindCode('No')
+            
+    elif tour == 'lottetour':
+        if status == 'package':
+            return getTourKindCode('Package')
+        elif status == 'fit':
+            return getTourKindCode('Free')
+        elif status == 'honeymoon _open':
+            return getTourKindCode('Honeymoon')
+        elif status == 'golf':
+            return getTourKindCode('Golf')
+        elif status == 'cruise line':
+            return getTourKindCode('Cruise')
+        else:
+            return getTourKindCode('No')
+            
     elif tour == '...':
         if status == 'gray':
             return getStatusCode('RF')
@@ -323,54 +389,133 @@ def getTourKind(tour, status):
         else:
             return getStatusCode('NO')
 
-def setNTCityCode(keys, cities, nations, continents):
+def setNTCityCode(keys, cities, nations, continents, sites):
+    global siteCode
+    global cityCode
+    global nationCode
+    global continentCode
+    global siteCityCode
+    global cityNationCode
+    global nationCnttCode
+            
     for key in keys:
         try:
             #print 'nationkey : ', key.encode('cp549')
             #print key
             #if a == 'a':
                 #print key
-            encodedKey = key.encode('utf-8')
-            if cityCode.has_key(key):
-                cCode = cityCode[key]
-                cities.add(cCode)
-                nations.add(cityNationCode[cCode])
-                continents.add(nationCnttCode[cityNationCode[cCode]])
+        
+            if siteCode.has_key(key):
+                sCode = siteCode[key]
+                ctCode = siteCityCode[sCode]
+                ntCode = cityNationCode[ctCode]
+                cntCode = nationCnttCode[ntCode]
+                sites.add(sCode)
+                cities.add(ctCode)
+                nations.add(ntCode)
+                continents.add(cntCode)
+                continue
+            elif cityCode.has_key(key):
+                ctCode = cityCode[key]
+                ntCode = cityNationCode[ctCode]
+                cntCode = nationCnttCode[ntCode]
+                cities.add(ctCode)
+                nations.add(ntCode)
+                continents.add(cntCode)
+                continue
             elif nationCode.has_key(key):
-                cCode = nationCode[key]
-                nations.add(cCode)
-                continents.add(nationCnttCode[cCode])
+                ntCode = nationCode[key]
+                nations.add(ntCode)
+                continents.add(nationCnttCode[ntCode])
+                continue
             elif continentCode.has_key(key):
-                cCode = continentCode[key]
-                continents.add(cCode)
+                continents.add(continentCode[key])
+                continue
+                
+            encodedKey = key.encode('utf-8')
+            if siteCode.has_key(encodedKey):
+                sCode = siteCode[encodedKey]
+                ctCode = siteCityCode[sCode]
+                ntCode = cityNationCode[ctCode]
+                cntCode = nationCnttCode[ntCode]
+                sites.add(sCode)
+                cities.add(ctCode)
+                nations.add(ntCode)
+                continents.add(cntCode)
+                continue
             elif cityCode.has_key(encodedKey):
-                cCode = cityCode[encodedKey]
-                cities.add(cCode)
-                nations.add(cityNationCode[cCode])
-                continents.add(nationCnttCode[cityNationCode[cCode]])
+                ctCode = cityCode[encodedKey]
+                ntCode = cityNationCode[ctCode]
+                cntCode = nationCnttCode[ntCode]
+                cities.add(ctCode)
+                nations.add(ntCode)
+                continents.add(cntCode)
+                continue
             elif nationCode.has_key(encodedKey):
-                cCode = nationCode[encodedKey]
-                nations.add(cCode)
-                continents.add(nationCnttCode[cCode])
+                ntCode = nationCode[encodedKey]
+                nations.add(ntCode)
+                continents.add(nationCnttCode[ntCode])
+                continue
             elif continentCode.has_key(encodedKey):
                 continents.add(continentCode[encodedKey])
+                continue
+            """
+            cp949Encoded = key.encode('cp949')
+            if cityCode.has_key(cp949Encoded):
+                cCode = cityCode[cp949Encoded]
+                cities.add(cCode)
+                nations.add(cityNationCode[cCode])
+                continents.add(nationCnttCode[cityNationCode[cCode]])
+                continue
+            elif nationCode.has_key(cp949Encoded):
+                cCode = nationCode[cp949Encoded]
+                nations.add(cCode)
+                continents.add(nationCnttCode[cCode])
+                continue
+            elif continentCode.has_key(cp949Encoded):
+                continents.add(continentCode[cp949Encoded])
+                continue
+            """
         except:
             print 'Key : ', key
             print 'Codes Error', sys.exc_info()[0]
             pass
 
 
-def delOverlapRegion(cities, nations, continents):
+def delOverlapRegion(cities, nations, continents, sites):
+    global siteCityCode
+    global cityNationCode
+    global nationCnttCode
+    
+    for site in sites:
+        try:
+            ct = siteCityCode[site]
+            cities.remove(ct)
+        except:
+            pass
+    
+    for site in sites:
+        try:
+            ct = siteCityCode[site]
+            nt = cityNationCode[ct]
+            nations.remove(nt)
+        except:
+            pass
+    
+    for site in sites:
+        try:
+            ct = siteCityCode[site]
+            nt = cityNationCode[ct]
+            cntt = nationCnttCode[nt]
+            continents.remove(cntt)
+        except:
+            pass
     
     #print '==============='
     for city in cities:
         try:
             nt = cityNationCode[city]
-            #print city + ':' + nt
             nations.remove(nt)
-            #print cities
-            #print nations
-            #print continents
         except:
             pass
     #print '==============='    
@@ -378,72 +523,107 @@ def delOverlapRegion(cities, nations, continents):
         try:
             nt = cityNationCode[city]
             cntt = nationCnttCode[nt]
-            #print city + ':' + nt
-            #print nt + ':' + cntt
             continents.remove(cntt)
-            #print cities
-            #print nations
-            #print continents
         except:
             pass
     #print '==============='    
     for nation in nations:
         try:
-            #print nation + ':' + nationCnttCode[nation]
             continents.remove(nationCnttCode[nation])
-            #print cities
-            #print nations
-            #print continents
         except:
             pass
+        
+def parceCode(content):
+    keys = ''
+    
+    if type(content).__name__ == 'str':
+        try:
+            if len(content) == len(re.findall(u'[a-zA-Z0-9]', content.decode('cp949'))):
+                keys = re.findall(u'[a-zA-Z0-9]+', content.decode('cp949'))
+            else:
+                keys = re.findall(u'[\uac00-\ud7a3]+', content.decode('cp949'))
+        except:
+            if len(content) == len(re.findall(u'[a-zA-Z0-9]', content.decode('utf-8'))):
+                keys = re.findall(u'[a-zA-Z0-9]+', content.decode('utf-8'))
+            else:
+                keys = re.findall(u'[\uac00-\ud7a3]+', content.decode('utf-8'))
+    else:
+        keys = re.findall(u'[\uac00-\ud7a3]+', content)
+        
+    return keys
 
 def getCityCode(productname, city='', comment='', nation=''):
+    sites = set()
     cities = set()
     nations = set()
     continents = set()
     
-    productnameKeys = ''
-    cityKeys = ''
-    commentKeys = ''
-    nationKeys = ''
-    
+    productnameKeys = parceCode(productname)
+    cityKeys = parceCode(city)
+    commentKeys = parceCode(comment)
+    nationKeys = parceCode(nation)
+    """
     if type(productname).__name__ == 'str':
-        productnameKeys = re.findall(u'[\uac00-\ud7a3]+', productname.decode('cp949'))
+        try:
+            productnameKeys = re.findall(u'[\uac00-\ud7a3]+', productname.decode('cp949'))
+        except:
+            productnameKeys = re.findall(u'[\uac00-\ud7a3]+', productname.decode('utf-8'))
     else:
         productnameKeys = re.findall(u'[\uac00-\ud7a3]+', productname)
         
     if type(city).__name__ == 'str':
-        if len(city) == len(re.findall(u'[a-zA-Z0-9]', city.decode('cp949'))):
-            cityKeys = re.findall(u'[a-zA-Z0-9]+', city.decode('cp949'))
-        else:
-            cityKeys = re.findall(u'[\uac00-\ud7a3]+', city.decode('cp949'))
+        try:
+            if len(city) == len(re.findall(u'[a-zA-Z0-9]', city.decode('cp949'))):
+                cityKeys = re.findall(u'[a-zA-Z0-9]+', city.decode('cp949'))
+            else:
+                cityKeys = re.findall(u'[\uac00-\ud7a3]+', city.decode('cp949'))
+        except:
+            if len(city) == len(re.findall(u'[a-zA-Z0-9]', city.decode('utf-8'))):
+                cityKeys = re.findall(u'[a-zA-Z0-9]+', city.decode('utf-8'))
+            else:
+                cityKeys = re.findall(u'[\uac00-\ud7a3]+', city.decode('utf-8'))
     else:
         cityKeys = re.findall(u'[\uac00-\ud7a3]+', city)
        
     if type(comment).__name__ == 'str':
-        commentKeys = re.findall(u'[\uac00-\ud7a3]+', comment.decode('cp949'))
+        try:
+            commentKeys = re.findall(u'[\uac00-\ud7a3]+', comment.decode('cp949'))
+        except:
+            commentKeys = re.findall(u'[\uac00-\ud7a3]+', comment.decode('utf-8'))
     else:
         commentKeys = re.findall(u'[\uac00-\ud7a3]+', comment)
     
     if type(nation).__name__ == 'str':
-        if len(nation) == len(re.findall(u'[a-zA-Z0-9]', nation.decode('cp949'))):
-            nationKeys = re.findall(u'[a-zA-Z0-9]+', nation.decode('cp949'))
-        else:
-            nationKeys = re.findall(u'[\uac00-\ud7a3]+', nation.decode('cp949'))
+        try:
+            if len(nation) == len(re.findall(u'[a-zA-Z0-9]', nation.decode('cp949'))):
+                nationKeys = re.findall(u'[a-zA-Z0-9]+', nation.decode('cp949'))
+            else:
+                nationKeys = re.findall(u'[\uac00-\ud7a3]+', nation.decode('cp949'))
+        except:
+            if len(nation) == len(re.findall(u'[a-zA-Z0-9]', nation.decode('utf-8'))):
+                nationKeys = re.findall(u'[a-zA-Z0-9]+', nation.decode('utf-8'))
+            else:
+                nationKeys = re.findall(u'[\uac00-\ud7a3]+', nation.decode('utf-8'))
     else:
         nationKeys = re.findall(u'[\uac00-\ud7a3]+', nation)
         
-    setNTCityCode(productnameKeys, cities, nations, continents)
-    setNTCityCode(cityKeys, cities, nations, continents)
-    setNTCityCode(commentKeys, cities, nations, continents)
-    setNTCityCode(nationKeys, cities, nations, continents)
+    """    
+    #print productnameKeys
+    #print cityKeys
+    #print commentKeys
+    #print nationKeys
+    
+    setNTCityCode(productnameKeys, cities, nations, continents, sites)
+    setNTCityCode(cityKeys, cities, nations, continents, sites)
+    setNTCityCode(commentKeys, cities, nations, continents, sites)
+    setNTCityCode(nationKeys, cities, nations, continents, sites)
 
     #print '==============='
     #print cities
     #print nations
     #print continents
 
-    delOverlapRegion(cities, nations, continents)
+    delOverlapRegion(cities, nations, continents, sites)
     
     #print '******************'
     #print cities
@@ -458,23 +638,48 @@ def getCityCode(productname, city='', comment='', nation=''):
     nationCity.append(cities)
     nationCity.append(nations)
     nationCity.append(continents)    
+    nationCity.append(sites)
     return nationCity
 
 
-def insertRegionData(agency, prd_no, cityList, nationList, continentList):
+def insertRegionData(agency, prd_no, cityList, nationList, continentList, siteList):
+    global siteCode
+    global cityCode
+    global nationCode
+    global continentCode
+    global siteCityCode
+    global cityNationCode
+    global nationCnttCode
+    
     con = tourQuery.getOracleConnection()
     query = tourQuery.delMasterRegionQuery(agency, prd_no)
+    #print query
     cursor = con.cursor()
     cursor.execute(query)
     con.commit()
     # Region Insert
     
     regionSeq = 0
+    
+    for site in siteList:
+        try:
+            ct = siteCityCode[site]
+            nt = cityNationCode[ct]
+            cntt = nationCnttCode[nt]
+            query = tourQuery.crtMasterRegionQuery(agency, prd_no, str(regionSeq), cntt, nt, ct, site)
+            #print query
+            cursor = con.cursor()
+            cursor.execute(query)
+            regionSeq += 1
+        except:
+            pass
+    
     for city in cityList:
         try:
             nt = cityNationCode[city]
             cntt = nationCnttCode[nt]
-            query = tourQuery.crtMasterRegionQuery(agency, prd_no, str(regionSeq), cntt, nt, city)
+            query = tourQuery.crtMasterRegionQuery(agency, prd_no, str(regionSeq), cntt, nt, city, '')
+            #print query
             cursor = con.cursor()
             cursor.execute(query)
             regionSeq += 1
@@ -484,7 +689,7 @@ def insertRegionData(agency, prd_no, cityList, nationList, continentList):
     for nation in nationList:
         try:
             cntt = nationCnttCode[nation]
-            query = tourQuery.crtMasterRegionQuery(agency, prd_no, str(regionSeq), cntt, nation, '')
+            query = tourQuery.crtMasterRegionQuery(agency, prd_no, str(regionSeq), cntt, nation, '', '')
             cursor = con.cursor()
             cursor.execute(query)
             regionSeq += 1
@@ -493,7 +698,7 @@ def insertRegionData(agency, prd_no, cityList, nationList, continentList):
         
     for continent in continentList:
         try:
-            query = tourQuery.crtMasterRegionQuery(agency, prd_no, str(regionSeq), continent, '', '')
+            query = tourQuery.crtMasterRegionQuery(agency, prd_no, str(regionSeq), continent, '', '', '')
             cursor = con.cursor()
             cursor.execute(query)
             regionSeq += 1

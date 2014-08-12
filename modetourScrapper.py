@@ -194,10 +194,20 @@ for each_line in openUrlList:
                                             productComment = tree['ModeSangPum']['SCont'].replace("'", "")
                                             
                                             #print productName
-                                            codeList = codes.getCityCode(sublist.name, productName, productComment)
+                                            # 2014. 7. 23. 카테고리의 국가는 넣지 않기로 함...
+                                            #codeList = codes.getCityCode(sublist.name, productName, productComment)
+                                            codeList = codes.getCityCode(productName, productComment)
                                             cityList = codeList[0]
                                             nationList = codeList[1]
                                             continentList = codeList[2]
+                                            siteList = codeList[3]              # 2014. 8. 3. site 추가
+                                            
+                                            if len(cityList) == 0 and len(nationList) == 0 and len(continentList) == 0:
+                                                codeList = codes.getCityCode(sublist.name)
+                                                cityList = codeList[0]
+                                                nationList = codeList[1]
+                                                continentList = codeList[2]
+                                                siteList = codeList[3]              # 2014. 8. 3. site 추가
                                             
                                             # Master 상품 입력
                                             query = tourQuery.getMasterMergeQuery(tourAgency, productCode, productName, tourtype, 'A', productComment, '')
@@ -206,26 +216,21 @@ for each_line in openUrlList:
                                             cursor.execute(query)
                                             con.commit()
                                             # Region Data 삭제
-                                            codes.insertRegionData(tourAgency, productCode, cityList, nationList, continentList)
+                                            codes.insertRegionData(tourAgency, productCode, cityList, nationList, continentList, siteList)
                                             
                                             if not tree['ModeSangPum'].has_key('SangList'):
                                                 continue
                                             
                                             for t in tree['ModeSangPum']['SangList']:
-                                                tag_div = ''
                                                 reg_div = anCode
                                                 prd_nm = t['SName']['#text'].replace("'", "")
                                                 air_cd = t['SAirCode'][:2]
-                                                st_city = ''
                                                 st_dt = t['SPriceDay']['#text']
                                                 st_time = t['SstartTime'].replace(':', '')
-                                                #st_time = ''
                                                 arr_day = t['SArrivalDay']['#text']
                                                 arr_time = t['SArrivalTime'].replace(':', '')
-                                                arr_time = ''
                                                 tr_term = t['SDay']
                                                 tr_div = themeCode
-                                                sel_dt = ''
                                                 prd_fee = t['SPrice']['#text']
                                                 prd_status = codes.getStatus('modetour', t['SDetailState']['#text'])
                                                 prd_code = t['SPriceNum']['#text']
@@ -244,7 +249,9 @@ for each_line in openUrlList:
                                                 #break
                                             
                                                 #print(t['SMeet'])
+                                            
                                         except TypeError as typeerr:
+                                            
                                             try:
                                                 reg_div = anCode
                                                 prd_nm = tree['ModeSangPum']['SangList']['SName']['#text'].replace("'", "")
@@ -270,6 +277,7 @@ for each_line in openUrlList:
                                                 print >> exceptFile, "Depth 34 : Internal Exception:", sys.exc_info()[0]
                                                 pass
                                             #print >> exceptFile, query
+                                            
                                             pass
                                         except:
                                             urlErr += 1
@@ -302,6 +310,10 @@ for each_line in openUrlList:
 openUrlList.close()
 print >> exceptFile, "End : %s" % time.ctime()
 exceptFile.close()
+
+query = tourQuery.updDepArrYMD(tourAgency, targetYear, targetMonth)
+cursor = con.cursor()
+cursor.execute(query)
 con.commit()
 con.close()
 #Daum 쇼핑하우는 통신판매중개자로서 상품주문, 배송 및 환불의 의무와 책임은 각 판매업체에 있습니다. 위 내용에 대한 저작권 및 법적 책임은 자료제공사 또는 글쓴이에 있으며 Daum의 입장과 다를 수 있습니다.

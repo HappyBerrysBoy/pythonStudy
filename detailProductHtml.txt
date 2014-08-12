@@ -1,6 +1,18 @@
-<tbody id="ViewItemList_JOBS63_1" name="ViewItemList_JOBS63_1" >					<tr class="lastTr"  style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JOBS7C&EV_SEQ=17582&Good_YY=JOBS&Good_SEQ=63&airIDX=1&M1=1&M2=8&M3=9&M4=16&M5=618'" >						
-<td class="startDate">10.03(금) </td>						
-<td class="price">560,000원</td>						
+<tbody id="ViewItemList_JNBS31_1" name="ViewItemList_JNBS31_1" >					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JNBSDB&EV_SEQ=861&Good_YY=JNBS&Good_SEQ=31&airIDX=1&M1=6&M2=550&M3=551&M4=0&M5=0'" >						
+<td class="startDate">08.07(목) </td>						
+<td class="price">319,000원</td>						
 <td class="status"><span class="">&nbsp;</td>						
-<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JOBS7C&EV_SEQ=17582&Good_YY=JOBS&Good_SEQ=63&airIDX=1&M1=1&M2=8&M3=9&M4=16&M5=618'">예약접수</button></td>					</tr>				</tbody>			</table>			<p></p>			<input type="hidden" name="ItemCntAll_JOBS63_1"  id="ItemCntAll_JOBS63_1"    value="1">			<input type="hidden" name="ItemCnt_JOBS63_1"  id="ItemCnt_JOBS63_1"   value="0">			<div id="itemBlockJOBS63_1" name="itemBlockJOBS63_1" style="display:none;width:0px;height:0px;"></div>
+<td class="reservation"><button class="deBtn type3" onclick="location.href='/item/detail.asp?EV_YM=JNBSDB&EV_SEQ=861&Good_YY=JNBS&Good_SEQ=31&airIDX=1&M1=6&M2=550&M3=551&M4=0&M5=0'">예약마감</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JNBSDB&EV_SEQ=862&Good_YY=JNBS&Good_SEQ=31&airIDX=1&M1=6&M2=550&M3=551&M4=0&M5=0'" >						
+<td class="startDate">08.14(목) </td>						
+<td class="price">319,000원</td>						
+<td class="status"><span class="">&nbsp;</td>						
+<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JNBSDB&EV_SEQ=862&Good_YY=JNBS&Good_SEQ=31&airIDX=1&M1=6&M2=550&M3=551&M4=0&M5=0'">예약접수</button></td>					</tr>					<tr   style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JNBSDB&EV_SEQ=863&Good_YY=JNBS&Good_SEQ=31&airIDX=1&M1=6&M2=550&M3=551&M4=0&M5=0'" >						
+<td class="startDate">08.21(목) </td>						
+<td class="price">319,000원</td>						
+<td class="status"><span class="">&nbsp;</td>						
+<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JNBSDB&EV_SEQ=863&Good_YY=JNBS&Good_SEQ=31&airIDX=1&M1=6&M2=550&M3=551&M4=0&M5=0'">예약접수</button></td>					</tr>					<tr class="lastTr"  style="cursor:pointer" onclick="location.href='/item/detail.asp?EV_YM=JNBSDB&EV_SEQ=864&Good_YY=JNBS&Good_SEQ=31&airIDX=1&M1=6&M2=550&M3=551&M4=0&M5=0'" >						
+<td class="startDate">08.28(목) </td>						
+<td class="price">319,000원</td>						
+<td class="status"><span class="">&nbsp;</td>						
+<td class="reservation"><button class="deBtn type4" onclick="location.href='/item/detail.asp?EV_YM=JNBSDB&EV_SEQ=864&Good_YY=JNBS&Good_SEQ=31&airIDX=1&M1=6&M2=550&M3=551&M4=0&M5=0'">예약접수</button></td>					</tr>				</tbody>			</table>			<p></p>			<input type="hidden" name="ItemCntAll_JNBS31_1"  id="ItemCntAll_JNBS31_1"    value="1">			<input type="hidden" name="ItemCnt_JNBS31_1"  id="ItemCnt_JNBS31_1"   value="0">			<div id="itemBlockJNBS31_1" name="itemBlockJNBS31_1" style="display:none;width:0px;height:0px;"></div>
 		</div>	</div></div>]]></Results>

@@ -1,0 +1,22 @@
+class="travel_body">
+					
+				</ul>
+				<script type="text/javascript">
+					// 상품 사진 없을 경우 준비 중으로 표시
+					jQuery( 'div.li_head div.product div.photo img' ).error( function() {
+						jQuery( this ).attr( 'src', '/images/no_img_400x300.gif' );
+					} );
+					function popTourlists(action,idx) {
+						if (!jQuery('#tourlist_info_container_'+idx)) return;
+						var popLayer = jQuery('#tourlist_info_container_'+idx);
+
+						if (action === 'over') {
+							popLayer.css('display', 'block');
+						} else {
+							popLayer.css('display', 'none');
+						}
+					}
+				</script>
+			</div>
+
+			<div 

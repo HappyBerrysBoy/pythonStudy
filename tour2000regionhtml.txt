@@ -13,7 +13,7 @@ overseas_list_menu">
 			<a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB20145&SUB_AREA_CD=AB07"><img src="http://file.tour2000.co.kr/images/goods/AB/AAB201452014530111451448.jpg" width="420" height="320" onerror="this.src='/images_081222/pkg/no100_75.gif';" alt="[여름휴가/매일출발-묵호항] 울릉도/독도 (2박3일) 섬여행"></a>
 			<h5><a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB20145&SUB_AREA_CD=AB07">[여름휴가/매일출발-묵호항] 울릉도/독도 (2박3일) 섬여행</a></h5>
 			<p class="overseas_list_big_left">
-			<span class="text_blackNumberBigB">270,000</span>
+			<span class="text_blackNumberBigB">310,000</span>
 			<span class="text_black">원~</span>
 			</p>
 			<p class="overseas_list_big_right"><a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB20145&SUB_AREA_CD=AB07">바로가기</a></p>
@@ -25,7 +25,7 @@ overseas_list_menu">
 			<a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB201426&SUB_AREA_CD=AB07"><img src="http://file.tour2000.co.kr/images/goods/AB/AAB201426201449185218441.JPG" width="420" height="320" onerror="this.src='/images_081222/pkg/no100_75.gif';" alt="[강릉항-매일출발] 동해의 끝섬! 독도/울릉도여행 (2박3일)"></a>
 			<h5><a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB201426&SUB_AREA_CD=AB07">[강릉항-매일출발] 동해의 끝섬! 독도/울릉도여행 (2박3일)</a></h5>
 			<p class="overseas_list_big_left">
-			<span class="text_blackNumberBigB">279,000</span>
+			<span class="text_blackNumberBigB">310,000</span>
 			<span class="text_black">원~</span>
 			</p>
 			<p class="overseas_list_big_right"><a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB201426&SUB_AREA_CD=AB07">바로가기</a></p>
@@ -97,7 +97,7 @@ overseas_list_menu">
 			<a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB201427&SUB_AREA_CD=AB07"><img src="http://file.tour2000.co.kr/images/goods/AB/AAB20142720144251752369416.jpg" width="420" height="320" onerror="this.src='/images_081222/pkg/no100_75.gif';" alt="[KTX] 제주 속에 섬! 추자도 낭만 기차여행 1박2일"></a>
 			<h5><a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB201427&SUB_AREA_CD=AB07">[KTX] 제주 속에 섬! 추자도 낭만 기차여행 1박2일</a></h5>
 			<p class="overseas_list_big_left">
-			<span class="text_blackNumberBigB">228,200</span>
+			<span class="text_blackNumberBigB">248,200</span>
 			<span class="text_black">원~</span>
 			</p>
 			<p class="overseas_list_big_right"><a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB201427&SUB_AREA_CD=AB07">바로가기</a></p>
@@ -133,7 +133,7 @@ overseas_list_menu">
 			<a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB20142&SUB_AREA_CD=AB07"><img src="http://file.tour2000.co.kr/images/goods/AB/AAB201422014319166198979.jpg" width="420" height="320" onerror="this.src='/images_081222/pkg/no100_75.gif';" alt="[기획] 울릉도 트래킹| 울릉도 옛길 트래킹(걷기) (2박3일)"></a>
 			<h5><a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB20142&SUB_AREA_CD=AB07">[기획] 울릉도 트래킹| 울릉도 옛길 트래킹(걷기) (2박3일)</a></h5>
 			<p class="overseas_list_big_left">
-			<span class="text_blackNumberBigB">285,000</span>
+			<span class="text_blackNumberBigB">330,000</span>
 			<span class="text_black">원~</span>
 			</p>
 			<p class="overseas_list_big_right"><a href="/Overseas_common/overseas_goods.asp?goods_cd=AAB20142&SUB_AREA_CD=AB07">바로가기</a></p>

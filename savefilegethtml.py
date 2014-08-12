@@ -15,7 +15,9 @@ def getHtml(url, startParcer, endParcer, filename, replaceFirst='', replaceSecon
     if startParcer != '' and endParcer != '':
         returnHtml = returnHtml[returnHtml.find(startParcer):returnHtml.find(endParcer)]
     elif startParcer != '' and endParcer == '':
+        #print returnHtml
         returnHtml = returnHtml[returnHtml.find(startParcer):]
+        #print returnHtml
     elif startParcer == '' and endParcer != '':
         returnHtml = returnHtml[:returnHtml.find(endParcer)]
         

@@ -3,60 +3,35 @@
 						<tr>
 							<th><img src="/images/sub/th_detail01.gif" alt="출발일" /></th>
 							<td>
-								2014 년 08 월 26일(화)&nbsp; [08:50] (OZ603)<br>
-								2014 년 08 월 27일(수)&nbsp; [:]
+								2014 년 08 월 31일(<font color='#e61b1b'>일</font>)&nbsp; [19:25] (SQ015)<br>
+								2014 년 09 월 01일(월)&nbsp; [:]
 							</td>
 						</tr>
 						<tr>
 							<th><img src="/images/sub/th_detail02.gif" alt="귀국일" /></th>
 							<td>
-								2014 년 08 월 29일(금) &nbsp;[:] (OZ604)<br>
-								2014 년 08 월 29일(금) &nbsp;[18:55]
+								2014 년 09 월 05일(금) &nbsp;[:] (SQ602)<br>
+								2014 년 09 월 05일(금) &nbsp;[07:10]
 							</td>
 						</tr>
-							<tr>
+
+
+						<tr>
 							<th><img src="/images/sub/th_detail03.gif" alt="상품가격" /></th>
-							<td class="bold">성인 <em> 1,069,000원</em></td>
+							<td class="bold">성인 <em> 2,060,000원</em><br />
+							<span>(유류할증료 등 항공운임 총액 포함)</span><br/>
+							<span>- 기본상품가격 : 1,830,000원</span><br/>
+							<span>- 유류할증료 : 230,000원</span><br/>
+							<span>* 유류할증료는 유가와 환율에 따라 변동될 수 있습니다.</span>
 						</tr>
-						<!-- 2017.02.17 롯데 카드 막기 -->
-						<!--
-						
-						<tr>
-							<td colspan="2" class="bg">
-							
-								<span class="red"><b>노랑풍선 롯데카드 3%할인 / 1%적립상품</b></span>
-							
-							<a onclick="javascript:fnLotte();"><img src="/images/lotte/icn_lotte.gif" style="padding-left:5px;" alt="카드신청" title="카드신청" /></a>
-							<div id="lotte_banner" name="lotte_banner" style="position:absolute; left:437px; top:200px; z-index:99;display:none;" ><a href="http://www.lottecard.co.kr/app/view/if/gate.jsp?b_id=10834_10882_11128&vt_cd_knd_c=P02116-A02116" target="_blank"><img src="/images/lotte/layer_lotte.jpg" style="cursor:hand;" border="0" alt="노랑풍선 롯데카드 바로DC서비스 신청 (1시간내 발급)" title="노랑풍선 롯데카드 바로DC서비스 신청 (1시간내 발급)" /></div>
-							</td>
-						</tr>
-						
-						-->
-						<!--유류할증료추가-->
-						<tr>
-							<th><img src="/images/sub/th_detail140416.gif" alt="유류할증료" title="유류할증료" /></th>
-						<td class="bold">
-							
-							<em>110,100원<br></em>
-							<img src="/images/sub/view_text.gif" alt="유류할증료" title="유류할증료" />
-							
-						</td>
-						</tr>
-<!--유류할증료추가-->
 						<tr>
 							<th><img src="/images/sub/th_detail04.gif" alt="이용항공" /></th>
-							<td><img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 title='아시아나항공' alt='아시아나항공' />&nbsp;아시아나항공&nbsp;</td>
+							<td><img src='/images/air/air/AP_SQ03.gif' align='absmiddle' border=0 title='싱가폴항공' alt='싱가폴항공' />&nbsp;싱가폴항공&nbsp;</td>
 						</tr>
-<!-- 
-						<tr>
-							<th><img src="/images/sub/th_detail05.gif" alt="예약인원" /></th>
-							<td class="bold">예약 : <strong>0 명</strong><br />남은좌석 : <strong>16 석</strong><span> (최소출발인원 : 2)</span>
-							</td>
-						</tr>
- -->
+
 						<tr>
 							<th><img src="/images/sub/th_detail06.gif" alt="방문도시" /></th>
-							<td><font color=darkslateblue>월드리조트 호텔(3박) - 사이판관광+마나가섬+호텔식+선셋BBQ</td>
+							<td>인천-싱가폴-롬복-싱가폴-인천</td>
 						</tr>
 						</tbody>
 					</table>
@@ -72,11 +47,17 @@
 						<tbody>
 
 						<tr>
-							<td class="lt"><input type="radio" name="viwradio" onClick="javascript:goGoodsViewHoneyMoon('201408', 11167)" checked /><img src='/images/air/air/AP_OZ03.gif' align='absmiddle' border=0 alt='OZ' />아시아나항공</td>
-							<td><strong>08:50</strong></td>
-							<td><em>1,069,000원</em></td>
+							<td class="lt"><input type="radio" name="viwradio" onClick="javascript:goGoodsViewHoneyMoon('201408', 33321)" checked /><img src='/images/air/air/AP_SQ03.gif' align='absmiddle' border=0 alt='SQ' />싱가폴항공</td>
+							<td><strong>싱가폴1박+쉐라톤3박</strong></td>
+							<td><em>2,060,000원</em></td>
 						</tr>
-									
+						
+						<tr>
+							<td class="lt"><input type="radio" name="viwradio" onClick="javascript:goGoodsViewHoneyMoon('201408', 33334)"  /><img src='/images/air/air/AP_GA03.gif' align='absmiddle' border=0 alt='GA' />가루다인도네시아항공</td>
+							<td><strong>쉐라톤4박</strong></td>
+							<td><em>2,410,000원</em></td>
+						</tr>
+						
 						</tbody>
 					</table>
 				</div>
